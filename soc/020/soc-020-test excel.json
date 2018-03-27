@@ -1,0 +1,19 @@
+{
+	"params": {
+		"ZA_BOD": {
+			"label": "Cena posudkového lekára za bod",
+			"value": 0.023236
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon pre soc. poisťovňu",
+			"if": "vv.typ='soc'",
+			"value": null,
+			"calc": "vv.bodyCelkom*ZA_BOD"
+		}
+	],
+	"kontrola": [],
+	"title": "VLD"
+}

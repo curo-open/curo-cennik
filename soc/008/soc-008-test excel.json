@@ -1,0 +1,19 @@
+{
+	"params": {
+		"ZA_BOD": {
+			"label": "Cena posudkového lekára za bod",
+			"value": 0.023236
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon pre soc. poisťovňu",
+			"if": "",
+			"value": null,
+			"calc": "vvs.bodyCelkom*ZA_BOD"
+		}
+	],
+	"kontrola": [],
+	"title": "pediater"
+}

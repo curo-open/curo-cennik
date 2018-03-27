@@ -1,0 +1,110 @@
+{
+	"params": {
+		"IDK": {
+			"label": "NASTAVENIA IDK",
+			"value": 0.01
+		}
+	},
+	"pacient": [
+		{
+			"label": "do 1 roku",
+			"if": "p|vekMedzi(0, 1)",
+			"value": 6.49,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 1 do 5 rokov vratane",
+			"if": "p|vekMedzi(1, 6)",
+			"value": 5.17,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 6 do 14 rokov vratane",
+			"if": "p|vekMedzi(6, 15)",
+			"value": 3.4,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 15 do 18 rokov vratane",
+			"if": "p|vekMedzi(15, 19)",
+			"value": 2.33,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 19 do 29 rokov vratane",
+			"if": "p|vekMedzi(19, 30)",
+			"value": 2.22,
+			"calc": "IDK+cena"
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && d.od|has('jeNeodkladna') && vv.jeSVaZL",
+			"value": 0.0073,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && d.od|has('jeNeodkladna') && !vv.jeSVaZL",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventívne zdravotné výkony",
+			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '953']",
+			"value": 0.045,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventívna prehliadka",
+			"if": "vv.kod in ['160']",
+			"value": 0.041,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.0266,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.0482,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Návšteva služba",
+			"if": "vv.kod in ['25', '26', '29']",
+			"value": 0.0237,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571a']",
+			"value": 4.4,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Odbery ",
+			"if": "vv.kod in ['250D']",
+			"value": 1.05,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702Z']",
+			"value": 4.18,
+			"calc": "vv.pocet*cena"
+		}
+	],
+	"kontrola": [],
+	"title": "pediater"
+}
