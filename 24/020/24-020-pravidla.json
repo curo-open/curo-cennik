@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.629489
+			"value": 0.572263
 		}
 	},
 	"pacient": [
@@ -94,13 +94,13 @@
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.jeSVaZL",
+			"if": "!p.kapitacia && vv.typ=='SVaLZ'",
 			"value": 0.0078,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"if": "!p.kapitacia && vv.typ!='SVaLZ'",
 			"value": 0.0193,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -108,7 +108,7 @@
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
 			"value": 0.048972,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*180*cena"
 		},
 		{
 			"label": "Určenie glykémie glukometrom",
@@ -132,7 +132,7 @@
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
 			"value": 0.048972,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
