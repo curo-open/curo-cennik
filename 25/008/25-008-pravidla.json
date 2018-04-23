@@ -1,0 +1,124 @@
+{
+	"params": {
+		"IDK": {
+			"label": "IDK",
+			"value": 0.01
+		},
+		"KPS": {
+			"label": "KPS",
+			"value": 1
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		}
+	},
+	"pacient": [
+		{
+			"label": "do 1 roku",
+			"if": "p.kapitacia && p|vekMedzi(0, 1)",
+			"value": 6.63,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 1 do 2 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(1, 3)",
+			"value": 5.85,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 3 do 5 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(3, 6)",
+			"value": 5.01,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 6 do 9 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(6, 10)",
+			"value": 3.37,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 10 do 19 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(10, 20)",
+			"value": 2.58,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "od 20 do 28 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(20, 29)",
+			"value": 2.03,
+			"calc": "IDK+cena"
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|has('jeNeodkladna')",
+			"value": 0.006639,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaZL",
+			"value": 0.007303,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"value": 0.018257,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventívne zdravotné výkony",
+			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '953']",
+			"value": 0.041,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventívna prehliadka",
+			"if": "vv.kod in ['160']",
+			"value": 0.041,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventivne zdravotne vykony (142)",
+			"if": "vv.kod in ['142']",
+			"value": 0.041,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.041,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Návšteva služba",
+			"if": "vv.kod in ['25', '26']",
+			"value": 0.016597,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571a']",
+			"value": 4.4,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 13,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Odbery ",
+			"if": "vv.kod in ['250D']",
+			"value": 1.05,
+			"calc": "vv.pocet*cena"
+		}
+	],
+	"kontrola": [],
+	"title": "pediater"
+}

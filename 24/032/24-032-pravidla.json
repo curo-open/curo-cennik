@@ -1,0 +1,26 @@
+{
+	"params": {
+		"PPSO": {
+			"label": "Počet poistencov v spádovej oblasti",
+			"value": 1
+		}
+	},
+	"pacient": [
+		{
+			"label": "Paušálna úhrada za poistencov v spádovej oblasti",
+			"if": "",
+			"value": 0.039434,
+			"calc": "PPSO*cena"
+		}
+	],
+	"vykon": [
+		{
+			"label": "Výkony",
+			"if": "",
+			"value": 0.0251,
+			"calc": "vv.bodyCelkom*cena"
+		}
+	],
+	"kontrola": [],
+	"title": "LSPP"
+}
