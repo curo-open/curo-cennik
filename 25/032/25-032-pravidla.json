@@ -16,12 +16,6 @@
 	"vykon": [
 		{
 			"label": "Výkony",
-			"if": "",
-			"value": 0.023735,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkony",
 			"if": "vv.kod in ['50']",
 			"value": 0.37,
 			"calc": "vv.bodyCelkom*cena"
@@ -36,6 +30,12 @@
 			"label": "Výkony",
 			"if": "vv.kod in ['60']",
 			"value": 0.45,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "",
+			"value": 0.023735,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],
