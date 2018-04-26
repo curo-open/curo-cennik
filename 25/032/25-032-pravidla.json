@@ -34,7 +34,7 @@
 		},
 		{
 			"label": "Výkony",
-			"if": "",
+			"if": "1",
 			"value": 0.023735,
 			"calc": "vv.bodyCelkom*cena"
 		}

@@ -16,7 +16,7 @@
 	"vykon": [
 		{
 			"label": "Výkony",
-			"if": "",
+			"if": "1",
 			"value": 0.0251,
 			"calc": "vv.bodyCelkom*cena"
 		}

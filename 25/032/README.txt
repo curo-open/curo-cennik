@@ -27,7 +27,7 @@ Autor: curo.sk
 │            0.37 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['50']                                             │
 │            0.26 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['35']                                             │
 │            0.45 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['60']                                             │
-│        0.023735 │ vv.bodyCelkom*cena        │ Výkony                                        │                                                              │
+│        0.023735 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
