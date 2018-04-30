@@ -87,7 +87,7 @@
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek nad 85 ",
+			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
 			"value": 3.18,
 			"calc": "IDK+cena"

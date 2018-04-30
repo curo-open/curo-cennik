@@ -30,7 +30,7 @@ Autor: curo.sk
 │ vek od 70 do 75 │          2.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
 │ vek od 75 do 80 │          2.77 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
 │ vek od 80 do 85 │          3.11 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek nad 85      │          3.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ vek od 85+      │          3.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 

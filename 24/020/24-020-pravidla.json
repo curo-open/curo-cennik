@@ -27,7 +27,7 @@
 		{
 			"label": "vek od 46 do 52",
 			"if": "p|vekMedzi(46, 52)",
-			"value": 1.95,
+			"value": 1.97,
 			"calc": "IDK+cena"
 		},
 		{
@@ -39,7 +39,7 @@
 		{
 			"label": "vek od 54 do 58",
 			"if": "p|vekMedzi(54, 58)",
-			"value": 2.25,
+			"value": 2.52,
 			"calc": "IDK+cena"
 		},
 		{
@@ -73,7 +73,7 @@
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek nad 88 ",
+			"label": "vek od 88+ ",
 			"if": "p|vekMedzi(88)",
 			"value": 3.59,
 			"calc": "IDK+cena"

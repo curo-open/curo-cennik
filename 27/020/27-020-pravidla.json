@@ -25,7 +25,7 @@
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek nad 81 ",
+			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
 			"value": 3.05,
 			"calc": "IDK+cena"

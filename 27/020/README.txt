@@ -19,7 +19,7 @@ Autor: curo.sk
 │ vek od 18 do 51 │          2.22 │ IDK+cena │ p|vekMedzi(18, 51) │
 │ vek od 51 do 61 │          2.41 │ IDK+cena │ p|vekMedzi(51, 61) │
 │ vek od 61 do 81 │          2.85 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek nad 81      │          3.05 │ IDK+cena │ p|vekMedzi(81)     │
+│ vek od 81+      │          3.05 │ IDK+cena │ p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
