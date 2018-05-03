@@ -123,6 +123,109 @@
 			"calc": "vv.pocet*cena"
 		}
 	],
-	"kontrola": [],
+	"kontrola": [
+		{
+			"label": "Preventivný výkon 142 mimo dovoleného rozpǎtia (1-4 tyždne) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"142\"]')",
+			"check": "p.vekTyzdnov >= 0 || p.vekTyzdnov < 4",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 143 mimo dovoleného rozpǎtia (2-5 tyždne) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"143\"]')",
+			"check": "p.vekTyzdnov >= 2 || p.vekTyzdnov < 5",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 143a mimo dovoleného rozpǎtia (5-8 tyždne) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"143a\"]')",
+			"check": "p.vekTyzdnov >= 5 || p.vekTyzdnov < 8",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 144 mimo dovoleného rozpǎtia (8-11 tyždne) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"144\"]')",
+			"check": "p.vekTyzdnov >= 8 || p.vekTyzdnov < 11",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 145 mimo dovoleného rozpǎtia (3-5 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"145\"]')",
+			"check": "p.vekMesiacov >= 3 || p.vekMesiacov < 5",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 145a mimo dovoleného rozpǎtia (5-7 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"145a\"]')",
+			"check": "p.vekMesiacov >= 5 || p.vekMesiacov < 7",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146 mimo dovoleného rozpǎtia (7-9 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146\"]')",
+			"check": "p.vekMesiacov >= 7 || p.vekMesiacov < 9",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146a mimo dovoleného rozpǎtia (9-11 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146a\"]')",
+			"check": "p.vekMesiacov >= 9 || p.vekMesiacov < 11",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146b mimo dovoleného rozpǎtia (11-13 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146b\"]')",
+			"check": "p.vekMesiacov >= 11 || p.vekMesiacov < 13",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146c mimo dovoleného rozpǎtia (13-24 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146c\"]')",
+			"check": "p.vekMesiacov >= 13 || p.vekMesiacov < 24",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148 mimo dovoleného rozpǎtia (25-48 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148\"]')",
+			"check": "p.vekMesiacov >= 25 || p.vekMesiacov < 48",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148a mimo dovoleného rozpǎtia (49-60 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148a\"]')",
+			"check": "p.vekMesiacov >= 49 || p.vekMesiacov < 60",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148b mimo dovoleného rozpǎtia (61-84 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148b\"]')",
+			"check": "p.vekMesiacov >= 61 || p.vekMesiacov < 84",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148c mimo dovoleného rozpǎtia (97-120 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148c\"]')",
+			"check": "p.vekMesiacov >= 97 || p.vekMesiacov < 120",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149 mimo dovoleného rozpǎtia (121-144 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149\"]')",
+			"check": "p.vekMesiacov >= 121 || p.vekMesiacov < 144",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149a mimo dovoleného rozpǎtia (145-168 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149a\"]')",
+			"check": "p.vekMesiacov >= 145 || p.vekMesiacov < 168",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149b mimo dovoleného rozpǎtia (169-192 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149b\"]')",
+			"check": "p.vekMesiacov >= 169 || p.vekMesiacov < 192",
+			"severity": 0
+		}
+	],
 	"title": "pediater"
 }
