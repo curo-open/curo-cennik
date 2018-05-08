@@ -142,13 +142,13 @@
 		},
 		{
 			"label": "EKG",
-			"if": "vv.kod in ['5702zv']",
+			"if": "vv.kod in ['5702ZV']",
 			"value": 4.2,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "CRP",
-			"if": "vv.kod in ['4571a']",
+			"if": "vv.kod in ['4571A']",
 			"value": 4,
 			"calc": "vv.pocet*cena"
 		},

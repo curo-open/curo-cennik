@@ -40,7 +40,7 @@ Autor: curo.sk
 │          0.0266 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
 │          0.0266 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
 │          0.0076 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
-│          0.0116 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a']                                          │
+│          0.0116 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A']                                          │
 │          0.0237 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
 │                 │                           │                                               │ ,'30','40','41','64']                                        │

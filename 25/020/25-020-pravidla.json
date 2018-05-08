@@ -144,7 +144,7 @@
 		},
 		{
 			"label": "EKG pri preventívnej prehliadke",
-			"if": "vv.kod in ['5702p']",
+			"if": "vv.kod in ['5702P','5702']",
 			"value": 0.007635,
 			"calc": "vv.pocet*550*cena"
 		},

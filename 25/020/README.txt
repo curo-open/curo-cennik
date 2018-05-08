@@ -46,7 +46,7 @@ Autor: curo.sk
 │           0.041 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
 │            0.04 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │        0.039899 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
-│        0.007635 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702p']                                          │
+│        0.007635 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P','5702']                                   │
 │           0.041 │ vv.pocet*70*cena          │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │           0.041 │ vv.pocet*70*cena          │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
 │        0.016597 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
