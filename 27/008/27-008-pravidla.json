@@ -40,13 +40,13 @@
 	"vykon": [
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && d.od|has('jeNeodkladna') && vv.jeSVaZL",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.jeSVaZL",
 			"value": 0.0073,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && d.od|has('jeNeodkladna') && !vv.jeSVaZL",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !vv.jeSVaZL",
 			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena"
 		},

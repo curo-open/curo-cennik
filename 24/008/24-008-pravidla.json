@@ -46,7 +46,7 @@
 	"vykon": [
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|has('jeNeodkladna')",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": 0.020072,
 			"calc": "vv.bodyCelkom*cena"
 		},
