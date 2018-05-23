@@ -1,0 +1,43 @@
+{
+	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 2235
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.024504,
+			"calc": "vv.pocet*50*cena"
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.024504,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.024504,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0.0078,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": 0.022171,
+			"calc": "vv.bodyCelkom*cena"
+		}
+	],
+	"kontrola": [],
+	"title": "chirurg"
+}

@@ -8,7 +8,7 @@
 	"pacient": [
 		{
 			"label": "Paušálna úhrada za poistencov v spádovej oblasti",
-			"if": "",
+			"if": "p.zaSpad",
 			"value": 0.039434,
 			"calc": "PPSO*cena"
 		}
