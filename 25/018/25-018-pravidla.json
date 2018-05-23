@@ -68,12 +68,6 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Preventívne vykony",
-			"if": "1",
-			"value": 0.041,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
@@ -101,6 +95,12 @@
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventívne vykony",
+			"if": "1",
+			"value": 0.041,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],
