@@ -27,13 +27,12 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0229 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│          0.0229 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 │        0.007635 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │           0.022 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│                 │ IPP1                      │ Lieky/Pripočitateľné položky                  │ vv.kod in ['60','62','63','60R','503','504','505']           │
-│                 │ IPP2                      │ Lieky/Pripočitateľné položky                  │ vv.kod in ['1544A','1594','1240','820','822','825']          │
-│                 │ IPP3                      │ Lieky/Pripočitateľné položky                  │ vv.kod in ['3286','3288','3306','3335','3337','867','869','3 │
-│                 │                           │                                               │ 351','3364','841','842','845']                               │
+│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│          0.0229 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

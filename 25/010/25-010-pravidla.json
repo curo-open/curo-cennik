@@ -30,12 +30,6 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony",
-			"if": "1",
-			"value": 0.0229,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": 0.007635,
@@ -48,22 +42,28 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Lieky/Pripočitateľné položky",
-			"if": "vv.kod in ['60','62','63','60R','503','504','505']",
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
 			"value": null,
 			"calc": "IPP1"
 		},
 		{
-			"label": "Lieky/Pripočitateľné položky",
-			"if": "vv.kod in ['1544A','1594','1240','820','822','825']",
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
 			"value": null,
 			"calc": "IPP2"
 		},
 		{
-			"label": "Lieky/Pripočitateľné položky",
-			"if": "vv.kod in ['3286','3288','3306','3335','3337','867','869','3351','3364','841','842','845']",
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
 			"value": null,
 			"calc": "IPP3"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.0229,
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],
