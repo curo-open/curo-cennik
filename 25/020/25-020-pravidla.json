@@ -271,7 +271,7 @@
 			"severity": 0
 		},
 		{
-			"label": "Preventivka: chýba Stratifikácia CMP(H00006) vyšetrenie, môžte to vykázať",
+			"label": "Preventivka: chýba Stratifikácia CMP(H0006) vyšetrenie, môžte to vykázať",
 			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
 			"check": "d['t-stratifikacia-cmp']",
 			"severity": 0

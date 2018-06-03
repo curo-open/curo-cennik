@@ -80,7 +80,7 @@ Autor: curo.sk
 │ Chyba: EKG 15P/5702P vykázane s │     0      │ vv.kod in ['15P']                                    │ d.vv|ma('kod in ["5702P"]')                          │
 │ úbežne                          │            │                                                      │                                                      │
 │ Preventivka: chýba Stratifikáci │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d['t-stratifikacia-cmp']                             │
-│ a CMP(H00006) vyšetrenie, môžte │            │ 40                                                   │                                                      │
+│ a CMP(H0006) vyšetrenie, môžte  │            │ 40                                                   │                                                      │
 │ to vykázať                      │            │                                                      │                                                      │
 │ Preventivka: chýba EKG(15P/5702 │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d.vv|ma('kod in ["15P","5702P"]')                    │
 │ P) vyšetrenie, môžte to vykázať │            │ 40                                                   │                                                      │
