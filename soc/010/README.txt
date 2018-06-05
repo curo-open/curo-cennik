@@ -1,6 +1,6 @@
-                                                                        ===============
-                                                                        Cenník pediater
-                                                                        ===============
+                                                                         ==============
+                                                                         Cenník chirurg
+                                                                         ==============
 
 Autor: curo.sk
 

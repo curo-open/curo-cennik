@@ -1,6 +1,6 @@
-                                                                        ===============
-                                                                        Cenník pediater
-                                                                        ===============
+                                                                    =======================
+                                                                    Cenník dermatovenerolog
+                                                                    =======================
 
 Autor: curo.sk
 
