@@ -147,7 +147,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "EKG",
+			"label": "EKG (5702Z,5702ZV)",
 			"if": "vv.kod in ['5702ZV','5702Z']",
 			"value": 4.2,
 			"calc": "vv.pocet*cena"
