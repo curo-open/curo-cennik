@@ -45,7 +45,7 @@ Autor: curo.sk
 │          0.0193 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
 │        0.048972 │ vv.pocet*390*cena         │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
 │              10 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
-│          0.0078 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
+│          0.0078 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │             4.2 │ vv.pocet*cena             │ EKG (5702Z,5702ZV)                            │ vv.kod in ['5702ZV','5702Z']                                 │
 │               4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571A']                                          │
 │               6 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │

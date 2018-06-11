@@ -11,7 +11,7 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.0193,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*50*cena"
 		},
 		{
 			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
@@ -27,9 +27,21 @@
 		},
 		{
 			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['60','62','63']",
+			"if": "vv.kod in ['60']",
 			"value": 0.022529,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*420*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['62']",
+			"value": 0.022529,
+			"calc": "vv.pocet*270*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63']",
+			"value": 0.022529,
+			"calc": "vv.pocet*210*cena"
 		},
 		{
 			"label": "Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763sp;763sn",

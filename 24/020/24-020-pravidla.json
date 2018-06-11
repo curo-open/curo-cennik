@@ -142,7 +142,7 @@
 		},
 		{
 			"label": "EKG",
-			"if": "vv.kod in ['5702']",
+			"if": "vv.kod in ['5702','5702C']",
 			"value": 0.0078,
 			"calc": "vv.bodyCelkom*cena"
 		},
