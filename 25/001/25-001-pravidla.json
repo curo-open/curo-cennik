@@ -110,7 +110,7 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.007635,
+			"value": 0.007303,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
