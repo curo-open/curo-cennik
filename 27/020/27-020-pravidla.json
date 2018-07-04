@@ -35,7 +35,7 @@
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": 0.15,
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

@@ -51,50 +51,50 @@ Autor: curo.sk
 ┌─────────────────────────────────┬────────────┬──────────────────────────────────────────────────────┬──────────────────────────────────────────────────────┐
 │ Popis                           │ Dôležitosť │ Ak platí ...                                         │ tak má platiť                                        │
 ├─────────────────────────────────┼────────────┼──────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
-│ Preventivný výkon 142 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["142"]')             │ p.vekTyzdnov >= 0 || p.vekTyzdnov < 4                │
-│ leného rozpǎtia (1-4 tyždne)    │            │                                                      │                                                      │
-│ Preventivný výkon 143 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["143"]')             │ p.vekTyzdnov >= 2 || p.vekTyzdnov < 5                │
-│ leného rozpǎtia (2-5 tyždne)    │            │                                                      │                                                      │
-│ Preventivný výkon 143a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["143a"]')            │ p.vekTyzdnov >= 5 || p.vekTyzdnov < 8                │
-│ oleného rozpǎtia (5-8 tyždne)   │            │                                                      │                                                      │
-│ Preventivný výkon 144 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["144"]')             │ p.vekTyzdnov >= 8 || p.vekTyzdnov < 11               │
-│ leného rozpǎtia (8-11 tyždne)   │            │                                                      │                                                      │
-│ Preventivný výkon 145 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["145"]')             │ p.vekMesiacov >= 3 || p.vekMesiacov < 5              │
-│ leného rozpǎtia (3-5 mesiacov)  │            │                                                      │                                                      │
-│ Preventivný výkon 145a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["145a"]')            │ p.vekMesiacov >= 5 || p.vekMesiacov < 7              │
-│ oleného rozpǎtia (5-7 mesiacov) │            │                                                      │                                                      │
+│ Preventivný výkon 142 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["142"]')             │ pacient.vekDni|vTyzdnoch >= 0 || pacient.vekDni|vTyz │
+│ leného rozpǎtia (1-4 tyždne)    │            │                                                      │ dnoch < 4                                            │
+│ Preventivný výkon 143 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["143"]')             │ pacient.vekDni|vTyzdnoch >= 2 || pacient.vekDni|vTyz │
+│ leného rozpǎtia (2-5 tyždne)    │            │                                                      │ dnoch < 5                                            │
+│ Preventivný výkon 143a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["143a"]')            │ pacient.vekDni|vTyzdnoch >= 5 || pacient.vekDni|vTyz │
+│ oleného rozpǎtia (5-8 tyždne)   │            │                                                      │ dnoch < 8                                            │
+│ Preventivný výkon 144 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["144"]')             │ pacient.vekDni|vTyzdnoch >= 8 || pacient.vekDni|vTyz │
+│ leného rozpǎtia (8-11 tyždne)   │            │                                                      │ dnoch < 11                                           │
+│ Preventivný výkon 145 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["145"]')             │ pacient.vekDni|vMesiacoch >= 3 || pacient.vekDni|vMe │
+│ leného rozpǎtia (3-5 mesiacov)  │            │                                                      │ siacoch < 5                                          │
+│ Preventivný výkon 145a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["145a"]')            │ pacient.vekDni|vMesiacoch >= 5 || pacient.vekDni|vMe │
+│ oleného rozpǎtia (5-7 mesiacov) │            │                                                      │ siacoch < 7                                          │
 │                                 │            │                                                      │                                                      │
-│ Preventivný výkon 146 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["146"]')             │ p.vekMesiacov >= 7 || p.vekMesiacov < 9              │
-│ leného rozpǎtia (7-9 mesiacov)  │            │                                                      │                                                      │
-│ Preventivný výkon 146a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["146a"]')            │ p.vekMesiacov >= 9 || p.vekMesiacov < 11             │
-│ oleného rozpǎtia (9-11 mesiacov │            │                                                      │                                                      │
+│ Preventivný výkon 146 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["146"]')             │ pacient.vekDni|vMesiacoch >= 7 || pacient.vekDni|vMe │
+│ leného rozpǎtia (7-9 mesiacov)  │            │                                                      │ siacoch < 9                                          │
+│ Preventivný výkon 146a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["146a"]')            │ pacient.vekDni|vMesiacoch >= 9 || pacient.vekDni|vMe │
+│ oleného rozpǎtia (9-11 mesiacov │            │                                                      │ siacoch < 11                                         │
 │ )                               │            │                                                      │                                                      │
-│ Preventivný výkon 146b mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["146b"]')            │ p.vekMesiacov >= 11 || p.vekMesiacov < 13            │
-│ oleného rozpǎtia (11-13 mesiaco │            │                                                      │                                                      │
+│ Preventivný výkon 146b mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["146b"]')            │ pacient.vekDni|vMesiacoch >= 11 || pacient.vekDni|vM │
+│ oleného rozpǎtia (11-13 mesiaco │            │                                                      │ esiacoch < 13                                        │
 │ v)                              │            │                                                      │                                                      │
-│ Preventivný výkon 146c mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["146c"]')            │ p.vekMesiacov >= 13 || p.vekMesiacov < 24            │
-│ oleného rozpǎtia (13-24 mesiaco │            │                                                      │                                                      │
+│ Preventivný výkon 146c mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["146c"]')            │ pacient.vekDni|vMesiacoch >= 13 || pacient.vekDni|vM │
+│ oleného rozpǎtia (13-24 mesiaco │            │                                                      │ esiacoch < 24                                        │
 │ v)                              │            │                                                      │                                                      │
-│ Preventivný výkon 148 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["148"]')             │ p.vekMesiacov >= 25 || p.vekMesiacov < 48            │
-│ leného rozpǎtia (25-48 mesiacov │            │                                                      │                                                      │
+│ Preventivný výkon 148 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["148"]')             │ pacient.vekDni|vMesiacoch >= 25 || pacient.vekDni|vM │
+│ leného rozpǎtia (25-48 mesiacov │            │                                                      │ esiacoch < 48                                        │
 │ )                               │            │                                                      │                                                      │
-│ Preventivný výkon 148a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["148a"]')            │ p.vekMesiacov >= 49 || p.vekMesiacov < 60            │
-│ oleného rozpǎtia (49-60 mesiaco │            │                                                      │                                                      │
+│ Preventivný výkon 148a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["148a"]')            │ pacient.vekDni|vMesiacoch >= 49 || pacient.vekDni|vM │
+│ oleného rozpǎtia (49-60 mesiaco │            │                                                      │ esiacoch < 60                                        │
 │ v)                              │            │                                                      │                                                      │
-│ Preventivný výkon 148b mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["148b"]')            │ p.vekMesiacov >= 61 || p.vekMesiacov < 84            │
-│ oleného rozpǎtia (61-84 mesiaco │            │                                                      │                                                      │
+│ Preventivný výkon 148b mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["148b"]')            │ pacient.vekDni|vMesiacoch >= 61 || pacient.vekDni|vM │
+│ oleného rozpǎtia (61-84 mesiaco │            │                                                      │ esiacoch < 84                                        │
 │ v)                              │            │                                                      │                                                      │
-│ Preventivný výkon 148c mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["148c"]')            │ p.vekMesiacov >= 97 || p.vekMesiacov < 120           │
-│ oleného rozpǎtia (97-120 mesiac │            │                                                      │                                                      │
+│ Preventivný výkon 148c mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["148c"]')            │ pacient.vekDni|vMesiacoch >= 97 || pacient.vekDni|vM │
+│ oleného rozpǎtia (97-120 mesiac │            │                                                      │ esiacoch < 120                                       │
 │ ov)                             │            │                                                      │                                                      │
-│ Preventivný výkon 149 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["149"]')             │ p.vekMesiacov >= 121 || p.vekMesiacov < 144          │
-│ leného rozpǎtia (121-144 mesiac │            │                                                      │                                                      │
+│ Preventivný výkon 149 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["149"]')             │ pacient.vekDni|vMesiacoch >= 121 || pacient.vekDni|v │
+│ leného rozpǎtia (121-144 mesiac │            │                                                      │ Mesiacoch < 144                                      │
 │ ov)                             │            │                                                      │                                                      │
-│ Preventivný výkon 149a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["149a"]')            │ p.vekMesiacov >= 145 || p.vekMesiacov < 168          │
-│ oleného rozpǎtia (145-168 mesia │            │                                                      │                                                      │
+│ Preventivný výkon 149a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["149a"]')            │ pacient.vekDni|vMesiacoch >= 145 || pacient.vekDni|v │
+│ oleného rozpǎtia (145-168 mesia │            │                                                      │ Mesiacoch < 168                                      │
 │ cov)                            │            │                                                      │                                                      │
-│ Preventivný výkon 149b mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["149b"]')            │ p.vekMesiacov >= 169 || p.vekMesiacov < 192          │
-│ oleného rozpǎtia (169-192 mesia │            │                                                      │                                                      │
+│ Preventivný výkon 149b mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["149b"]')            │ pacient.vekDni|vMesiacoch >= 169 || pacient.vekDni|v │
+│ oleného rozpǎtia (169-192 mesia │            │                                                      │ Mesiacoch < 192                                      │
 │ cov)                            │            │                                                      │                                                      │
 └─────────────────────────────────┴────────────┴──────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘
 
