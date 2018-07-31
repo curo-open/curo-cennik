@@ -9,73 +9,73 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p|vekMedzi(18, 20)",
-			"value": 2.87,
+			"value": 3.14,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p|vekMedzi(20, 28)",
-			"value": 1.86,
+			"value": 2.3,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p|vekMedzi(28, 46)",
-			"value": 1.95,
+			"value": 2.13,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p|vekMedzi(46, 52)",
-			"value": 1.97,
+			"value": 2.15,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p|vekMedzi(52, 54)",
-			"value": 2.14,
+			"value": 2.34,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p|vekMedzi(54, 58)",
-			"value": 2.52,
+			"value": 2.75,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p|vekMedzi(58, 62)",
-			"value": 2.7,
+			"value": 2.95,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p|vekMedzi(62, 65)",
-			"value": 2.88,
+			"value": 3.15,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p|vekMedzi(65, 69)",
-			"value": 3.05,
+			"value": 3.33,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p|vekMedzi(69, 73)",
-			"value": 3.3,
+			"value": 3.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p|vekMedzi(73, 88)",
-			"value": 3.63,
+			"value": 3.97,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p|vekMedzi(88)",
-			"value": 3.59,
+			"value": 3.92,
 			"calc": "IDK+cena"
 		}
 	],
@@ -89,43 +89,43 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.013278,
+			"value": 0.022973,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && vv.typ=='SVaLZ'",
-			"value": 0.0078,
+			"value": 0.00819,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && vv.typ!='SVaLZ'",
-			"value": 0.0193,
+			"value": 0.022089,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
-			"value": 0.048972,
+			"value": 0.04851,
 			"calc": "vv.pocet*180*cena"
 		},
 		{
 			"label": "Určenie glykémie glukometrom",
 			"if": "vv.kod in ['3671']",
-			"value": 0.018257,
+			"value": 0.020895,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.044,
+			"value": 0.04851,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
-			"value": 0.0193,
+			"value": 0.022089,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -137,7 +137,7 @@
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 10,
+			"value": 10.5,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -149,19 +149,19 @@
 		{
 			"label": "EKG (5702Z,5702ZV)",
 			"if": "vv.kod in ['5702ZV','5702Z']",
-			"value": 4.2,
+			"value": 4.41,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "CRP",
-			"if": "vv.kod in ['4571A']",
+			"if": "vv.kod in ['4571A','4571a']",
 			"value": 4,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Vykon 10",
 			"if": "vv.kod in ['10']",
-			"value": 6,
+			"value": 8,
 			"calc": "vv.pocet*cena"
 		}
 	],

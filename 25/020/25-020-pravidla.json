@@ -113,6 +113,18 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 10",
+			"if": "vv.kod in ['10']",
+			"value": 0.016597,
+			"calc": "vv.pocet*390*cena"
+		},
+		{
+			"label": "Vstupná prehliadka (výkon 60)",
+			"if": "vv.kod in ['60']",
+			"value": 0.016597,
+			"calc": "vv.pocet*390*cena"
+		},
+		{
 			"label": "Preventívne prehliadky ",
 			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
 			"value": 0.045,
@@ -139,13 +151,25 @@
 		{
 			"label": "EKG pri preventívnej prehliadke (15P)",
 			"if": "vv.kod in ['15P']",
-			"value": 0.039899,
+			"value": 0.039833,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "EKG pri preventívnej prehliadke",
-			"if": "vv.kod in ['5702P','5702']",
+			"if": "vv.kod in ['5702P']",
 			"value": 0.007635,
+			"calc": "vv.pocet*550*cena"
+		},
+		{
+			"label": "EKG pri preventívnej prehliadke",
+			"if": "vv.kod in ['5702']",
+			"value": 0.007303,
+			"calc": "vv.pocet*550*cena"
+		},
+		{
+			"label": "Celodenné snímanie tlaku",
+			"if": "vv.kod in ['5715','5716']",
+			"value": 0.016597,
 			"calc": "vv.pocet*550*cena"
 		},
 		{
@@ -193,13 +217,13 @@
 		{
 			"label": "Inicialne I10",
 			"if": "vv.kod in ['H0003']",
-			"value": 8.6,
+			"value": 12,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Kontrolne I10",
 			"if": "vv.kod in ['H0004']",
-			"value": 8.6,
+			"value": 12,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -211,7 +235,7 @@
 		{
 			"label": "Stratifikacia CMP",
 			"if": "vv.kod in ['H0006']",
-			"value": 3.8,
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -253,9 +277,9 @@
 			"severity": 0
 		},
 		{
-			"label": "Preventivka: chýba Stratifikácia CMP vyšetrenie",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 50",
-			"check": "d.vv|ma('kod==\"H0006\"')",
+			"label": "Možnosť vykázať výkon 10",
+			"if": "d.vv|ma('kod in [\"60\", \"H0003\", \"H0004\", \"H0004\"]')",
+			"check": "d.vv|ma('kod==\"10\"')",
 			"severity": 0
 		},
 		{
@@ -268,12 +292,6 @@
 			"label": "Chyba: EKG 15P/5702P vykázane súbežne",
 			"if": "vv.kod in ['15P']",
 			"check": "d.vv|ma('kod in [\"5702P\"]')",
-			"severity": 0
-		},
-		{
-			"label": "Preventivka: chýba Stratifikácia CMP(H0006) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
-			"check": "d['t-stratifikacia-cmp']",
 			"severity": 0
 		},
 		{
