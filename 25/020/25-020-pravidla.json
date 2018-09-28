@@ -278,7 +278,7 @@
 		},
 		{
 			"label": "Možnosť vykázať výkon 10",
-			"if": "d.vv|ma('kod in [\"60\", \"H0003\", \"H0004\", \"H0004\"]')",
+			"if": "d.vv|ma('kod in [\"60\", \"H0003\", \"H0004\"]')",
 			"check": "d.vv|ma('kod==\"10\"')",
 			"severity": 0
 		},

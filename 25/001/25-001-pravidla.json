@@ -62,7 +62,7 @@
 		{
 			"label": "Výkon 765p",
 			"if": "vv.kod in ['765p']",
-			"value": 0.022,
+			"value": 0.0229,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

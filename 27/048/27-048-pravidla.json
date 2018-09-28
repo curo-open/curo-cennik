@@ -1,0 +1,86 @@
+{
+	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 8.8,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 62",
+			"if": "vv.kod in ['62']",
+			"value": 5.94,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 63",
+			"if": "vv.kod in ['63']",
+			"value": 4.62,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 760sp;760sn;760pp;760pn",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
+			"value": 0.045,
+			"calc": "vv.pocet*1350*cena"
+		},
+		{
+			"label": "Výkon 763sp;763sn;763pp;763pn",
+			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
+			"value": 0.045,
+			"calc": "vv.pocet*2369*cena"
+		},
+		{
+			"label": "Výkon 763p",
+			"if": "vv.kod in ['763p']",
+			"value": 0.045,
+			"calc": "vv.pocet*2369*cena"
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0.0073,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Stacionár",
+			"if": "",
+			"value": 14.99,
+			"calc": "vv.pocet*cena"
+		}
+	],
+	"kontrola": [
+		{
+			"label": "Výkony 760*, 763* sú vykázané pod zlou diagnózou",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p']",
+			"check": "vv.diagnoza in ['Z12.1']",
+			"severity": 0
+		}
+	],
+	"title": "gastroenterolog"
+}

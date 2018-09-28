@@ -1,0 +1,114 @@
+{
+	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 0.9
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 1.45
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 2.45
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 75900
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['60']",
+			"value": 0.0229,
+			"calc": "vv.pocet*420*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['62']",
+			"value": 0.0229,
+			"calc": "vv.pocet*270*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63']",
+			"value": 0.0229,
+			"calc": "vv.pocet*210*cena"
+		},
+		{
+			"label": "Výkon 763P, 763M",
+			"if": "vv.kod in ['763P','763M']",
+			"value": 0.041,
+			"calc": "vv.pocet*210*cena"
+		},
+		{
+			"label": "Výkon 250x",
+			"if": "vv.kod in ['250x']",
+			"value": 2.98,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8899 - Stacionár",
+			"if": "vv.kod in ['8899']",
+			"value": 15.54,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.0229,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0.007635,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": 0.0229,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.0229,
+			"calc": "vv.bodyCelkom*cena"
+		}
+	],
+	"kontrola": [
+		{
+			"label": "Výkony 760*, 763* sú vykázané pod zlou diagnózou",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p']",
+			"check": "vv.diagnoza in ['Z12.1']",
+			"severity": 0
+		}
+	],
+	"title": "gastroenterolog"
+}

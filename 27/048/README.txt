@@ -1,6 +1,6 @@
-                                                                         ==============
-                                                                         Cenník chirurg
-                                                                         ==============
+                                                                     ======================
+                                                                     Cenník gastroenterolog
+                                                                     ======================
 
 Autor: curo.sk
 
@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬───────┐
 │ Názov a hodnota │ Popis │
 ├─────────────────┼───────┤
-│ LIMIT = 2235    │ Limit │
+│ LIMIT = 0       │ Limit │
 └─────────────────┴───────┘
 
 
@@ -22,16 +22,25 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.024504 │ vv.pocet*50*cena          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│        0.024504 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│          0.0078 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│             8.8 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│            5.94 │ vv.pocet*cena             │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│            4.62 │ vv.pocet*cena             │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│           0.045 │ vv.pocet*1350*cena        │ Výkon 760sp;760sn;760pp;760pn                 │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
+│           0.045 │ vv.pocet*2369*cena        │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
+│           0.045 │ vv.pocet*2369*cena        │ Výkon 763p                                    │ vv.kod in ['763p']                                           │
+│           0.022 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│          0.0073 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│           0.022 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│           0.022 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│           14.99 │ vv.pocet*cena             │ Stacionár                                     │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   KONTROLA DEKURZU
 ┌─────────────────────────────────┬────────────┬──────────────────────────────────────────────────────┬──────────────────────────────────────────────────────┐
 │ Popis                           │ Dôležitosť │ Ak platí ...                                         │ tak má platiť                                        │
+├─────────────────────────────────┼────────────┼──────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+│ Výkony 760*, 763* sú vykázané p │     0      │ vv.kod in ['760sp','760sn','760pp','760pn','763sp',' │ vv.diagnoza in ['Z12.1']                             │
+│ od zlou diagnózou               │            │ 763sn','763pp','763pn','763p']                       │                                                      │
 └─────────────────────────────────┴────────────┴──────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘
 
