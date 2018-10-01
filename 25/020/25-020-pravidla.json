@@ -168,9 +168,15 @@
 		},
 		{
 			"label": "Celodenné snímanie tlaku",
-			"if": "vv.kod in ['5715','5716']",
+			"if": "vv.kod in ['5715']",
 			"value": 0.016597,
 			"calc": "vv.pocet*550*cena"
+		},
+		{
+			"label": "Celodenné snímanie tlaku - vyhodnotenie",
+			"if": "vv.kod in ['5716']",
+			"value": 0.016597,
+			"calc": "vv.pocet*240*cena"
 		},
 		{
 			"label": "Očkovanie",
