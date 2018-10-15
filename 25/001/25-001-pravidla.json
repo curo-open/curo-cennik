@@ -68,19 +68,19 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 0.022,
+			"value": 0.0229,
 			"calc": "vv.pocet*420*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 0.022,
+			"value": 0.0229,
 			"calc": "vv.pocet*270*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.022,
+			"value": 0.0229,
 			"calc": "vv.pocet*210*cena"
 		},
 		{
