@@ -2,32 +2,32 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.03
+			"value": 0.69
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 2.22,
+			"value": 2.26,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 2.41,
+			"value": 2.46,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 2.85,
+			"value": 2.91,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 3.05,
+			"value": 3.11,
 			"calc": "IDK+cena"
 		}
 	],
@@ -35,7 +35,7 @@
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": 0.015,
+			"value": 0.018,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -47,19 +47,19 @@
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": 0.015,
+			"value": 0.018,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 16.43,
+			"value": 16.61,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Preventívne zisťovanie cukru v krvi",
 			"if": "vv.kod in ['3671']",
-			"value": 0.045,
+			"value": 0.0455,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -71,37 +71,43 @@
 		{
 			"label": "Očkovanie proti hepatitíde A",
 			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0482,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B",
 			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0482,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
 			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0482,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti pneumokokom",
 			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0482,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti kliestovej encefalitide",
 			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0482,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti tetanu",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0482,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie proti osýpkam",
+			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
+			"value": 0.0482,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -119,7 +125,7 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29']",
-			"value": 0.0237,
+			"value": 0.025,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -131,13 +137,13 @@
 		{
 			"label": "TOKS pozitívny",
 			"if": "vv.kod in ['159a']",
-			"value": 6.04,
+			"value": 8,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS negatívny",
 			"if": "vv.kod in ['159z']",
-			"value": 6.04,
+			"value": 8,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -149,7 +155,7 @@
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.045,
+			"value": 0.0455,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -174,6 +180,36 @@
 			"label": "24h meranie tlaku",
 			"if": "vv.kod in ['5715']",
 			"value": 9,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "USG",
+			"if": "vv.kod in ['5300','5301']",
+			"value": 0.0073,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "ABI (H0008)",
+			"if": "vv.kod in ['H0008']",
+			"value": 4.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Kognitívny deficit",
+			"if": "vv.kod in ['163']",
+			"value": 6,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Inicialne/Kontrolne I10",
+			"if": "vv.kod in ['Y0041']",
+			"value": 8,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Inicialne/Kontrolne E78",
+			"if": "vv.kod in ['Y0042']",
+			"value": 8,
 			"calc": "vv.pocet*cena"
 		}
 	],
@@ -227,5 +263,7 @@
 			"severity": 0
 		}
 	],
+	"liekByCode": {},
+	"liekByAtc": {},
 	"title": "VLD"
 }

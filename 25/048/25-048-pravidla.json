@@ -110,5 +110,11 @@
 			"severity": 0
 		}
 	],
+	"liekByCode": {
+		"7044A'": {
+			"price": 4.99118
+		}
+	},
+	"liekByAtc": {},
 	"title": "gastroenterolog"
 }
