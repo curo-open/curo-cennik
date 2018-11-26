@@ -68,20 +68,38 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.pocet*420*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.pocet*270*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.pocet*210*cena"
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0238,
+			"calc": "vv.pocet*210*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63']",
+			"value": 0.0238,
+			"calc": "vv.pocet*150*cena"
+		},
+		{
+			"label": "Výkon 765p",
+			"if": "vv.kod in ['765p']",
+			"value": 0.0238,
+			"calc": "vv.pocet*946*cena"
 		},
 		{
 			"label": "Pripočitateľné položky",
@@ -104,7 +122,7 @@
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.0238,
+			"value": 0.0229,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -116,18 +134,54 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.0238,
+			"value": 0.022,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0238,
+			"value": 0.0229,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['60']",
+			"value": 0.0238,
+			"calc": "vv.pocet*420*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['62']",
+			"value": 0.0238,
+			"calc": "vv.pocet*270*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63']",
+			"value": 0.0238,
+			"calc": "vv.pocet*210*cena"
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0238,
+			"calc": "vv.pocet*210*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63']",
+			"value": 0.0238,
+			"calc": "vv.pocet*150*cena"
+		},
+		{
+			"label": "Výkon 765p",
+			"if": "vv.kod in ['765p']",
+			"value": 0.0238,
+			"calc": "vv.pocet*946*cena"
 		}
 	],
 	"kontrola": [],
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "vnútorné lekárstvo"
+	"title": "vnútorné lekárstvo TH"
 }

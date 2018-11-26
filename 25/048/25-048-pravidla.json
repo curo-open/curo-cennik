@@ -44,26 +44,38 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.pocet*420*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.pocet*270*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.pocet*210*cena"
 		},
 		{
-			"label": "Výkon 763P, 763M",
-			"if": "vv.kod in ['763P','763M']",
-			"value": 0.041,
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0238,
 			"calc": "vv.pocet*210*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63']",
+			"value": 0.0238,
+			"calc": "vv.pocet*150*cena"
+		},
+		{
+			"label": "Výkon 765p",
+			"if": "vv.kod in ['765p']",
+			"value": 0.0238,
+			"calc": "vv.pocet*946*cena"
 		},
 		{
 			"label": "Výkon 250x",
@@ -80,7 +92,7 @@
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -92,20 +104,20 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0229,
+			"value": 0.0238,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [
 		{
 			"label": "Výkony 760*, 763* sú vykázané pod zlou diagnózou",
-			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p']",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p','765p']",
 			"check": "vv.diagnoza in ['Z12.1']",
 			"severity": 0
 		}

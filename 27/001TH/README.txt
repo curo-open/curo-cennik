@@ -1,19 +1,15 @@
-                                                                   =========================
-                                                                   Cenník vnútorné lekárstvo
-                                                                   =========================
+                                                                  ============================
+                                                                  Cenník vnútorné lekárstvo TH
+                                                                  ============================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────────────────────┐
-│ Názov a hodnota │ Popis                 │
-├─────────────────┼───────────────────────┤
-│ IPP1 = 0.9      │ IPP1                  │
-│ IPP2 = 1.16     │ IPP2                  │
-│ IPP3 = 1.96     │ IPP3                  │
-│ LIMIT = 75900   │ Limit                 │
-│ EL_POBOCKA = 1  │ Používa el. pobočku ? │
-└─────────────────┴───────────────────────┘
+┌─────────────────┬───────┐
+│ Názov a hodnota │ Popis │
+├─────────────────┼───────┤
+│ LIMIT = 0       │ Limit │
+└─────────────────┴───────┘
 
 
   CENY ZA PACIENTA
@@ -26,25 +22,22 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0202 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
-│        0.011618 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            0.02 │ vv.pocet*cena             │ Výkon 1a                                      │ vv.kod in ['1a']                                             │
+│        0.007303 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
-│        0.007635 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
-│        0.011618 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│           0.041 │ vv.bodyCelkom*cena        │ Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763 │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
-│                 │                           │ sp;763sn                                      │ 763sp','763sn']                                              │
-│          0.0229 │ vv.bodyCelkom*cena        │ Výkon 765p                                    │ vv.kod in ['765p']                                           │
-│          0.0229 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│          0.0229 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│          0.0229 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│          0.0238 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│        0.007303 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0238 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│        0.007303 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
+│             8.4 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│            5.67 │ vv.pocet*cena             │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│            64.5 │ vv.pocet*cena             │ Výkon 760sp;760sn;760pp;760pn                 │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
+│             129 │ vv.pocet*cena             │ Výkon 763p                                    │ vv.kod in ['763p']                                           │
+│             129 │ vv.pocet*cena             │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
+│               5 │ vv.pocet*cena             │ Výkon Y0018                                   │ vv.kod in ['Y0018']                                          │
+│            4.56 │ vv.pocet*cena             │ Výkon Y0023                                   │ vv.kod in ['Y0023']                                          │
+│           0.021 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│          0.0073 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│           0.021 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│           0.021 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
