@@ -6,11 +6,11 @@
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 1.16
+			"value": 1.45
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 1.96
+			"value": 2.45
 		},
 		"LIMIT": {
 			"label": "Limit",
