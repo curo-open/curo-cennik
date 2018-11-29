@@ -279,7 +279,7 @@
 		{
 			"label": "Preventivka: možno chýba TOKS výkon/vyšetrenie",
 			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
-			"check": "d.vv|ma('kod in [\"159a\", \"159z\", \"159x\"]')",
+			"check": "d.vv|ma('kod in [\"159\", \"159a\", \"159z\", \"159x\"]')",
 			"severity": 0
 		},
 		{
