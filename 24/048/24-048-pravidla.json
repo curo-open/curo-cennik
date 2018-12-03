@@ -57,7 +57,14 @@
 		}
 	],
 	"kontrola": [],
-	"liekByCode": {},
+	"liekByCode": {
+		"7044a": {
+			"price": 133.1
+		},
+		"0358b": {
+			"price": 2012.24
+		}
+	},
 	"liekByAtc": {},
 	"title": "gastroenterolog"
 }
