@@ -41,8 +41,8 @@ Autor: curo.sk
 │        0.006639 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │        0.007303 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │        0.018257 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
-│        0.016597 │ vv.pocet*390*cena         │ Výkon 10                                      │ vv.kod in ['10']                                             │
-│        0.016597 │ vv.pocet*390*cena         │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
+│        0.016597 │ vv.pocet*180*cena         │ Výkon 10                                      │ vv.kod in ['10']                                             │
+│        0.016597 │ vv.pocet*350*cena         │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
 │           0.045 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
 │           0.044 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
 │           0.041 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │

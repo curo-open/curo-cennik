@@ -116,13 +116,13 @@
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
 			"value": 0.016597,
-			"calc": "vv.pocet*390*cena"
+			"calc": "vv.pocet*180*cena"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
 			"value": 0.016597,
-			"calc": "vv.pocet*390*cena"
+			"calc": "vv.pocet*350*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
