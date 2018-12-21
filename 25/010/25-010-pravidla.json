@@ -67,7 +67,11 @@
 		}
 	],
 	"kontrola": [],
-	"liekByCode": {},
+	"liekByCode": {
+		"00502": {
+			"price": 0.118
+		}
+	},
 	"liekByAtc": {},
 	"title": "chirurg"
 }
