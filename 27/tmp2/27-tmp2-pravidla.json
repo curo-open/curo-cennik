@@ -1,0 +1,183 @@
+{
+	"params": {
+		"": {
+			"label": "NASTAVENIA IDK",
+			"value": 0.03
+		}
+	},
+	"pacient": [
+		{
+			"label": "vek od 18 do 51",
+			"if": "p|vekMedzi(18, 51)",
+			"value": 2.22,
+			"calc": ""
+		},
+		{
+			"label": "vek od 51 do 61",
+			"if": "p|vekMedzi(51, 61)",
+			"value": 2.41,
+			"calc": ""
+		},
+		{
+			"label": "vek od 61 do 81",
+			"if": "p|vekMedzi(61, 81)",
+			"value": 2.85,
+			"calc": ""
+		},
+		{
+			"label": "vek od 81+",
+			"if": "p|vekMedzi(81)",
+			"value": 3.05,
+			"calc": ""
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
+			"value": 0.015,
+			"calc": ""
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
+			"value": 0.0073,
+			"calc": ""
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
+			"value": 0.015,
+			"calc": ""
+		},
+		{
+			"label": "Preventívne prehliadky",
+			"if": "vv.kod in ['160']",
+			"value": 16.43,
+			"calc": ""
+		},
+		{
+			"label": "Preventívne zisťovanie cukru v krvi",
+			"if": "vv.kod in ['3671']",
+			"value": 0.045,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie proti chrípke",
+			"if": "vv.diagnoza=='Z25.1' && vv.kod in ['252b']",
+			"value": 0.0482,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie proti hepatitíde A",
+			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
+			"value": 0.0266,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie proti hepatitíde B",
+			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
+			"value": 0.0266,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie proti meningitíde",
+			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
+			"value": 0.0266,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie proti pneumokokom",
+			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
+			"value": 0.0266,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie proti kliestovej encefalitide",
+			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
+			"value": 0.0266,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie proti tetanu",
+			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
+			"value": 0.0266,
+			"calc": ""
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702']",
+			"value": 0.0076,
+			"calc": ""
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571A']",
+			"value": 0.0116,
+			"calc": ""
+		},
+		{
+			"label": "Návštevná služba",
+			"if": "vv.kod in ['25','26','29']",
+			"value": 0.0237,
+			"calc": ""
+		},
+		{
+			"label": "Vykony pocas navstevy",
+			"if": "d.vv|ma('kod in [\"25\",\"26\",\"29\"]') && vv.kod in ['4','5','6','30','40','41','64']",
+			"value": 0.015,
+			"calc": ""
+		},
+		{
+			"label": "TOKS pozitívny",
+			"if": "vv.kod in ['159a']",
+			"value": 6.04,
+			"calc": ""
+		},
+		{
+			"label": "TOKS negatívny",
+			"if": "vv.kod in ['159z']",
+			"value": 6.04,
+			"calc": ""
+		},
+		{
+			"label": "TOKS znehodnotený",
+			"if": "vv.kod in ['159x']",
+			"value": 2.01,
+			"calc": ""
+		},
+		{
+			"label": "Cholesterol ako cast PP",
+			"if": "vv.kod in ['159b']",
+			"value": 0.045,
+			"calc": ""
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 10,
+			"calc": ""
+		},
+		{
+			"label": "EKG (5702Z)",
+			"if": "vv.kod in ['5702Z']",
+			"value": 4.18,
+			"calc": ""
+		},
+		{
+			"label": "INR",
+			"if": "vv.kod in ['3842a']",
+			"value": 5,
+			"calc": ""
+		},
+		{
+			"label": "24h meranie tlaku",
+			"if": "vv.kod in ['5715']",
+			"value": 9,
+			"calc": ""
+		}
+	],
+	"kontrola": [],
+	"liekByCode": {},
+	"liekByAtc": {}
+}

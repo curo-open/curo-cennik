@@ -1,0 +1,171 @@
+{
+	"params": {
+		"": {
+			"label": "NASTAVENIA IDK",
+			"value": 0
+		}
+	},
+	"pacient": [
+		{
+			"label": "vek od 18 do 20",
+			"if": "p|vekMedzi(18, 20)",
+			"value": 3.14,
+			"calc": ""
+		},
+		{
+			"label": "vek od 20 do 28",
+			"if": "p|vekMedzi(20, 28)",
+			"value": 2.3,
+			"calc": ""
+		},
+		{
+			"label": "vek od 28 do 46",
+			"if": "p|vekMedzi(28, 46)",
+			"value": 2.13,
+			"calc": ""
+		},
+		{
+			"label": "vek od 46 do 52",
+			"if": "p|vekMedzi(46, 52)",
+			"value": 2.15,
+			"calc": ""
+		},
+		{
+			"label": "vek od 52 do 54",
+			"if": "p|vekMedzi(52, 54)",
+			"value": 2.34,
+			"calc": ""
+		},
+		{
+			"label": "vek od 54 do 58",
+			"if": "p|vekMedzi(54, 58)",
+			"value": 2.75,
+			"calc": ""
+		},
+		{
+			"label": "vek od 58 do 62",
+			"if": "p|vekMedzi(58, 62)",
+			"value": 2.95,
+			"calc": ""
+		},
+		{
+			"label": "vek od 62 do 65",
+			"if": "p|vekMedzi(62, 65)",
+			"value": 3.15,
+			"calc": ""
+		},
+		{
+			"label": "vek od 65 do 69",
+			"if": "p|vekMedzi(65, 69)",
+			"value": 3.33,
+			"calc": ""
+		},
+		{
+			"label": "vek od 69 do 73",
+			"if": "p|vekMedzi(69, 73)",
+			"value": 3.6,
+			"calc": ""
+		},
+		{
+			"label": "vek od 73 do 88",
+			"if": "p|vekMedzi(73, 88)",
+			"value": 3.97,
+			"calc": ""
+		},
+		{
+			"label": "vek od 88+ ",
+			"if": "p|vekMedzi(88)",
+			"value": 3.92,
+			"calc": ""
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
+			"value": 0.020072,
+			"calc": ""
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.022973,
+			"calc": ""
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.typ=='SVaLZ'",
+			"value": 0.00819,
+			"calc": ""
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && vv.typ!='SVaLZ'",
+			"value": 0.022089,
+			"calc": ""
+		},
+		{
+			"label": "TOKS",
+			"if": "vv.kod in ['159a','159b','159x','159z']",
+			"value": 0.04851,
+			"calc": "180"
+		},
+		{
+			"label": "Určenie glykémie glukometrom",
+			"if": "vv.kod in ['3671']",
+			"value": 0.020895,
+			"calc": ""
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.04851,
+			"calc": ""
+		},
+		{
+			"label": "Návštevná služba",
+			"if": "vv.kod in ['25','26','29','30']",
+			"value": 0.022089,
+			"calc": ""
+		},
+		{
+			"label": "Preventina prehliadka",
+			"if": "vv.kod in ['160']",
+			"value": 0.048972,
+			"calc": "390"
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 10.5,
+			"calc": ""
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702','5702C']",
+			"value": 0.0078,
+			"calc": ""
+		},
+		{
+			"label": "EKG (5702Z,5702ZV)",
+			"if": "vv.kod in ['5702ZV','5702Z']",
+			"value": 4.41,
+			"calc": ""
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571A','4571a']",
+			"value": 4,
+			"calc": ""
+		},
+		{
+			"label": "Vykon 10",
+			"if": "vv.kod in ['10']",
+			"value": 8,
+			"calc": ""
+		}
+	],
+	"kontrola": [],
+	"liekByCode": {},
+	"liekByAtc": {}
+}

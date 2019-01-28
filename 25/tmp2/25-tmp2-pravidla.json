@@ -1,0 +1,261 @@
+{
+	"params": {
+		"": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		}
+	},
+	"pacient": [
+		{
+			"label": "vek od 18 do 20",
+			"if": "p.kapitacia && p|vekMedzi(18, 20)",
+			"value": 2.58,
+			"calc": ""
+		},
+		{
+			"label": "vek od 20 do 29",
+			"if": "p.kapitacia && p|vekMedzi(20, 29)",
+			"value": 2.03,
+			"calc": ""
+		},
+		{
+			"label": "vek od 29 do 40",
+			"if": "p.kapitacia && p|vekMedzi(29, 40)",
+			"value": 2.03,
+			"calc": ""
+		},
+		{
+			"label": "vek od 40 do 45",
+			"if": "p.kapitacia && p|vekMedzi(40, 45)",
+			"value": 2.07,
+			"calc": ""
+		},
+		{
+			"label": "vek od 45 do 50",
+			"if": "p.kapitacia && p|vekMedzi(45, 50)",
+			"value": 2.12,
+			"calc": ""
+		},
+		{
+			"label": "vek od 50 do 55",
+			"if": "p.kapitacia && p|vekMedzi(50, 55)",
+			"value": 2.19,
+			"calc": ""
+		},
+		{
+			"label": "vek od 55 do 60",
+			"if": "p.kapitacia && p|vekMedzi(55, 60)",
+			"value": 2.3,
+			"calc": ""
+		},
+		{
+			"label": "vek od 60 do 65",
+			"if": "p.kapitacia && p|vekMedzi(60, 65)",
+			"value": 2.43,
+			"calc": ""
+		},
+		{
+			"label": "vek od 65 do 70",
+			"if": "p.kapitacia && p|vekMedzi(65, 70)",
+			"value": 2.54,
+			"calc": ""
+		},
+		{
+			"label": "vek od 70 do 75",
+			"if": "p.kapitacia && p|vekMedzi(70, 75)",
+			"value": 2.66,
+			"calc": ""
+		},
+		{
+			"label": "vek od 75 do 80",
+			"if": "p.kapitacia && p|vekMedzi(75, 80)",
+			"value": 2.77,
+			"calc": ""
+		},
+		{
+			"label": "vek od 80 do 85",
+			"if": "p.kapitacia && p|vekMedzi(80, 85)",
+			"value": 3.11,
+			"calc": ""
+		},
+		{
+			"label": "vek od 85+ ",
+			"if": "p.kapitacia && p|vekMedzi(85)",
+			"value": 3.18,
+			"calc": ""
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.006639,
+			"calc": ""
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
+			"value": 0.007303,
+			"calc": ""
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
+			"value": 0.018257,
+			"calc": ""
+		},
+		{
+			"label": "Výkon 10",
+			"if": "vv.kod in ['10']",
+			"value": 0.016597,
+			"calc": "390"
+		},
+		{
+			"label": "Vstupná prehliadka (výkon 60)",
+			"if": "vv.kod in ['60']",
+			"value": 0.016597,
+			"calc": "390"
+		},
+		{
+			"label": "Preventívne prehliadky ",
+			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
+			"value": 0.045,
+			"calc": "390"
+		},
+		{
+			"label": "Preventívne prehliadky",
+			"if": "KPS && vv.kod in ['160']",
+			"value": 0.044,
+			"calc": "390"
+		},
+		{
+			"label": "Preventívne prehliadky ",
+			"if": "EL_POBOCKA && vv.kod in ['160']",
+			"value": 0.041,
+			"calc": "390"
+		},
+		{
+			"label": "Preventívne prehliadky",
+			"if": "vv.kod in ['160']",
+			"value": 0.04,
+			"calc": "390"
+		},
+		{
+			"label": "EKG pri preventívnej prehliadke (15P)",
+			"if": "vv.kod in ['15P']",
+			"value": 0.039833,
+			"calc": ""
+		},
+		{
+			"label": "EKG pri preventívnej prehliadke",
+			"if": "vv.kod in ['5702P']",
+			"value": 0.007635,
+			"calc": "550"
+		},
+		{
+			"label": "EKG pri preventívnej prehliadke",
+			"if": "vv.kod in ['5702']",
+			"value": 0.007303,
+			"calc": "550"
+		},
+		{
+			"label": "Celodenné snímanie tlaku",
+			"if": "vv.kod in ['5715','5716']",
+			"value": 0.016597,
+			"calc": "550"
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.041,
+			"calc": "70"
+		},
+		{
+			"label": "Očkovanie proti chrípke",
+			"if": "vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s']",
+			"value": 0.041,
+			"calc": "70"
+		},
+		{
+			"label": "Návštevná služba",
+			"if": "vv.kod in ['25','26']",
+			"value": 0.016597,
+			"calc": ""
+		},
+		{
+			"label": "Akútne EKG",
+			"if": "vv.kod in ['5702c']",
+			"value": 0.007303,
+			"calc": "500"
+		},
+		{
+			"label": "TOKS pozitívny",
+			"if": "vv.kod in ['159a']",
+			"value": 12,
+			"calc": ""
+		},
+		{
+			"label": "TOKS negatívny",
+			"if": "vv.kod in ['159z']",
+			"value": 12,
+			"calc": ""
+		},
+		{
+			"label": "TOKS znehodnotený",
+			"if": "vv.kod in ['159x']",
+			"value": 3.02,
+			"calc": ""
+		},
+		{
+			"label": "Inicialne I10",
+			"if": "vv.kod in ['H0003']",
+			"value": 12,
+			"calc": ""
+		},
+		{
+			"label": "Kontrolne I10",
+			"if": "vv.kod in ['H0004']",
+			"value": 12,
+			"calc": ""
+		},
+		{
+			"label": "Akutne I10",
+			"if": "vv.kod in ['H0005']",
+			"value": 6,
+			"calc": ""
+		},
+		{
+			"label": "Stratifikacia CMP",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": ""
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 13,
+			"calc": ""
+		},
+		{
+			"label": "Kvantitatívne vyšetrenie INR POCT",
+			"if": "vv.kod in ['H0007']",
+			"value": 5.2,
+			"calc": ""
+		},
+		{
+			"label": "Stanovenie ABI oscilometricky",
+			"if": "vv.kod in ['H0008']",
+			"value": 4.5,
+			"calc": ""
+		},
+		{
+			"label": "Delegovaný odber krvi",
+			"if": "vv.kod in ['250D']",
+			"value": 1.05,
+			"calc": ""
+		}
+	],
+	"kontrola": [],
+	"liekByCode": {},
+	"liekByAtc": {}
+}
