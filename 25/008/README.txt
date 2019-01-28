@@ -69,7 +69,6 @@ Autor: curo.sk
 │ leného rozpǎtia (3-5 mesiacov)  │            │                                                      │ siacoch < 5                                          │
 │ Preventivný výkon 145a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["145a"]')            │ pacient.vekDni|vMesiacoch >= 5 || pacient.vekDni|vMe │
 │ oleného rozpǎtia (5-7 mesiacov) │            │                                                      │ siacoch < 7                                          │
-│                                 │            │                                                      │                                                      │
 │ Preventivný výkon 146 mimo dovo │     0      │ p.kapitacia && d.vv|ma('kod in ["146"]')             │ pacient.vekDni|vMesiacoch >= 7 || pacient.vekDni|vMe │
 │ leného rozpǎtia (7-9 mesiacov)  │            │                                                      │ siacoch < 9                                          │
 │ Preventivný výkon 146a mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["146a"]')            │ pacient.vekDni|vMesiacoch >= 9 || pacient.vekDni|vMe │

@@ -15,19 +15,19 @@
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 2.46,
+			"value": 2.59,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 2.91,
+			"value": 3.63,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 3.11,
+			"value": 3.98,
 			"calc": "IDK+cena"
 		}
 	],
@@ -35,7 +35,7 @@
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": 0.018,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -47,7 +47,7 @@
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": 0.018,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -76,6 +76,12 @@
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B",
+			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
+			"value": 0.0482,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie proti hepatitíde A+B",
 			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
 			"value": 0.0482,
 			"calc": "vv.bodyCelkom*cena"
@@ -201,14 +207,8 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Inicialne/Kontrolne I10",
-			"if": "vv.kod in ['Y0041']",
-			"value": 8,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Inicialne/Kontrolne E78",
-			"if": "vv.kod in ['Y0042']",
+			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
+			"if": "vv.kod in ['10']",
 			"value": 8,
 			"calc": "vv.pocet*cena"
 		}

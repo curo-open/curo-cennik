@@ -8,19 +8,19 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60",
+			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
 			"value": 8.8,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 62",
+			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
 			"value": 5.94,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 63",
+			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
 			"value": 4.62,
 			"calc": "vv.pocet*cena"
@@ -42,6 +42,24 @@
 			"if": "vv.kod in ['763p']",
 			"value": 0.045,
 			"calc": "vv.pocet*2369*cena"
+		},
+		{
+			"label": "Výkon 8586",
+			"if": "vv.kod in ['8586']",
+			"value": 254,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8586",
+			"if": "vv.kod in ['9104']",
+			"value": 347,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8586",
+			"if": "vv.kod in ['9105']",
+			"value": 297,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
