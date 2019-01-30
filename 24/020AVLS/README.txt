@@ -43,14 +43,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                 │ PPH1                      │ Pripočitateľné položky                        │ vv.kod=='PPH1'                                               │
+│                 │ PPH2                      │ Pripočitateľné položky                        │ vv.kod=='PPH2'                                               │
+│                 │ PREDOP                    │ Pripočitateľné položky                        │ vv.kod=='PREDOP'                                             │
+│                 │ 4571a                     │ Pripočitateľné položky                        │ vv.kod=='4571a'                                              │
 │            4.79 │ vv.bodyCelkom*cena        │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.bodyCelkom*cena        │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
 │        0.022973 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│             NaN │ vv.pocet*cena             │ Vykon 1                                       │ vv.kod in ['1']                                              │
+│                 │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │
 │                 │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
-│             NaN │ vv.pocet*cena             │ Vykon 8                                       │ vv.kod in ['8']                                              │
-│             NaN │ vv.pocet*cena             │ Vykon 250                                     │ vv.kod in ['250']                                            │
+│                 │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
+│                 │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
 │        0.048972 │ vv.pocet*180*cena         │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
 │        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │        0.048972 │ vv.pocet*390*cena         │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
