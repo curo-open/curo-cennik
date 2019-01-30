@@ -1,5 +1,17 @@
 {
 	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 1.17
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 1.89
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 3.19
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 2235
@@ -16,19 +28,19 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 0.026432,
+			"value": 0.0247,
 			"calc": "vv.pocet*420*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 0.025903,
+			"value": 0.0247,
 			"calc": "vv.pocet*270*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.025903,
+			"value": 0.0247,
 			"calc": "vv.pocet*210*cena"
 		},
 		{
@@ -46,13 +58,13 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.025903,
+			"value": 0.0247,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.025903,
+			"value": 0.0247,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],

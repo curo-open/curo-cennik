@@ -5,16 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬──────────────────────┐
-│ Názov a hodnota │ Popis                │
-├─────────────────┼──────────────────────┤
-│ IDK = 0         │ NASTAVENIA IDK       │
-│ ZCB = 1         │ Zvýhodnená cena bodu │
-│ PPH1 = 10       │ PPH1                 │
-│ PPH2 = 6.5      │ PPH2                 │
-│ PREDOP = 12.9   │ PREDOP               │
-│ 4571a = 4       │ 4571a                │
-└─────────────────┴──────────────────────┘
+┌─────────────────┬─────────────────────────────────┐
+│ Názov a hodnota │ Popis                           │
+├─────────────────┼─────────────────────────────────┤
+│ IDK = 0         │ NASTAVENIA IDK                  │
+│ VCB1 = 0.41     │ Vypočítaná cena bodu. výkon 1   │
+│ VCB4 = 1.54     │ Vypočítaná cena bodu. výkon 4   │
+│ VCB8 = 2.06     │ Vypočítaná cena bodu. výkon 8   │
+│ VCB250 = 0.41   │ Vypočítaná cena bodu. výkon 250 │
+│ PPH1 = 10       │ PPH1                            │
+│ PPH2 = 6.5      │ PPH2                            │
+│ PREDOP = 12.9   │ PREDOP                          │
+│ 4571a = 4       │ 4571a                           │
+└─────────────────┴─────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -43,20 +46,18 @@ Autor: curo.sk
 │            4.79 │ vv.bodyCelkom*cena        │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.bodyCelkom*cena        │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
-│            0.52 │ vv.pocet*cena             │ Vykon 1                                       │ ZCB && vv.kod in ['1']                                       │
-│            1.95 │ vv.pocet*cena             │ Vykon 4                                       │ ZCB && vv.kod in ['4']                                       │
-│             2.6 │ vv.pocet*cena             │ Vykon 8                                       │ ZCB && vv.kod in ['8']                                       │
-│            0.52 │ vv.pocet*cena             │ Vykon 250                                     │ ZCB && vv.kod in ['250']                                     │
-│            0.29 │ vv.pocet*cena             │ Vykon 1                                       │ vv.kod in ['1']                                              │
-│            1.08 │ vv.pocet*cena             │ Vykon 4                                       │ vv.kod in ['4']                                              │
-│            1.44 │ vv.pocet*cena             │ Vykon 8                                       │ vv.kod in ['8']                                              │
-│            0.29 │ vv.pocet*cena             │ Vykon 250                                     │ vv.kod in ['250']                                            │
+│        0.022973 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│             NaN │ vv.pocet*cena             │ Vykon 1                                       │ vv.kod in ['1']                                              │
+│             NaN │ vv.pocet*cena             │ Vykon 4                                       │ vv.kod in ['4']                                              │
+│             NaN │ vv.pocet*cena             │ Vykon 8                                       │ vv.kod in ['8']                                              │
+│             NaN │ vv.pocet*cena             │ Vykon 250                                     │ vv.kod in ['250']                                            │
 │        0.048972 │ vv.pocet*180*cena         │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
 │        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │        0.048972 │ vv.pocet*390*cena         │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
 │            10.5 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │               8 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
-│        0.022089 │ vv.bodyCelkom*cena        │ Návštevná služba                              │                                                              │
+│        0.022089 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
+│        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

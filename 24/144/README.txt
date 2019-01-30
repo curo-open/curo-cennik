@@ -8,6 +8,9 @@ Autor: curo.sk
 ┌─────────────────┬───────┐
 │ Názov a hodnota │ Popis │
 ├─────────────────┼───────┤
+│ IPP1 = 1.17     │ IPP1  │
+│ IPP2 = 1.89     │ IPP2  │
+│ IPP3 = 3.19     │ IPP3  │
 │ LIMIT = 2235    │ Limit │
 └─────────────────┴───────┘
 
@@ -23,13 +26,13 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0193 │ vv.pocet*50*cena          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│        0.026432 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│        0.025903 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│        0.025903 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│          0.0247 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│          0.0247 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│          0.0247 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │        0.025903 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│          0.0247 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│          0.0247 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

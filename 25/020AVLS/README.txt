@@ -41,8 +41,8 @@ Autor: curo.sk
 │        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │        0.007303 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
-│        0.020995 │ vv.pocet*180*cena         │ Výkon 10                                      │ vv.kod in ['10']                                             │
-│        0.020995 │ vv.pocet*350*cena         │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
+│            3.78 │ vv.pocet*cena             │ Výkon 10                                      │ vv.kod in ['10']                                             │
+│            7.35 │ vv.pocet*cena             │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
 │           0.046 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
 │           0.045 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
 │           0.042 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
@@ -50,7 +50,7 @@ Autor: curo.sk
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
 │        0.008105 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
 │        0.008105 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702']                                           │
-│        0.016597 │ vv.pocet*550*cena         │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
+│        0.016597 │ vv.pocet*750*cena         │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │        0.016597 │ vv.pocet*240*cena         │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
 │           0.041 │ vv.pocet*70*cena          │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │           0.041 │ vv.pocet*70*cena          │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │

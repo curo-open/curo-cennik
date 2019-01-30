@@ -4,9 +4,21 @@
 			"label": "NASTAVENIA IDK",
 			"value": 0
 		},
-		"ZCB": {
-			"label": "Zvýhodnená cena bodu",
-			"value": 1
+		"VCB1": {
+			"label": "Vypočítaná cena bodu. výkon 1",
+			"value": 0.41
+		},
+		"VCB4": {
+			"label": "Vypočítaná cena bodu. výkon 4",
+			"value": 1.54
+		},
+		"VCB8": {
+			"label": "Vypočítaná cena bodu. výkon 8",
+			"value": 2.06
+		},
+		"VCB250": {
+			"label": "Vypočítaná cena bodu. výkon 250",
+			"value": 0.41
 		},
 		"PPH1": {
 			"label": "PPH1",
@@ -119,51 +131,33 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Vykon 1",
-			"if": "ZCB && vv.kod in ['1']",
-			"value": 0.52,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Vykon 4",
-			"if": "ZCB && vv.kod in ['4']",
-			"value": 1.95,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Vykon 8",
-			"if": "ZCB && vv.kod in ['8']",
-			"value": 2.6,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Vykon 250",
-			"if": "ZCB && vv.kod in ['250']",
-			"value": 0.52,
-			"calc": "vv.pocet*cena"
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.022973,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Vykon 1",
 			"if": "vv.kod in ['1']",
-			"value": 0.29,
+			"value": null,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Vykon 4",
 			"if": "vv.kod in ['4']",
-			"value": 1.08,
+			"value": null,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Vykon 8",
 			"if": "vv.kod in ['8']",
-			"value": 1.44,
+			"value": null,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Vykon 250",
 			"if": "vv.kod in ['250']",
-			"value": 0.29,
+			"value": null,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -198,8 +192,14 @@
 		},
 		{
 			"label": "Návštevná služba",
-			"if": "",
+			"if": "vv.kod in ['25','26','29','30']",
 			"value": 0.022089,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Určenie glykémie glukometrom",
+			"if": "vv.kod in ['3671']",
+			"value": 0.020895,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],

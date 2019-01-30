@@ -115,14 +115,14 @@
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 0.020995,
-			"calc": "vv.pocet*180*cena"
+			"value": 3.78,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": 0.020995,
-			"calc": "vv.pocet*350*cena"
+			"value": 7.35,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
@@ -170,7 +170,7 @@
 			"label": "Celodenné snímanie tlaku",
 			"if": "vv.kod in ['5715']",
 			"value": 0.016597,
-			"calc": "vv.pocet*550*cena"
+			"calc": "vv.pocet*750*cena"
 		},
 		{
 			"label": "Celodenné snímanie tlaku - vyhodnotenie",
