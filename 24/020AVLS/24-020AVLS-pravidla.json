@@ -146,7 +146,7 @@
 			"label": "Vykon 4",
 			"if": "vv.kod in ['4']",
 			"value": null,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*VCB4"
 		},
 		{
 			"label": "Vykon 8",
