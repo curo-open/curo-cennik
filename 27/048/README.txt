@@ -22,19 +22,25 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│             8.8 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│            5.94 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│            4.62 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│            9.41 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│            6.05 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│             4.7 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│            9.41 │ vv.pocet*cena             │ Výkon 60r                                     │ vv.kod in ['60r']                                            │
+│            3.36 │ vv.pocet*cena             │ Výkon 65 do 5rokov                            │ vv.kod in ['65'] && p|vekMedzi(0, 5)                         │
+│          0.0224 │ vv.pocet*100*cena         │ Výkon 65                                      │ vv.kod in ['65']                                             │
 │           0.045 │ vv.pocet*1350*cena        │ Výkon 760sp;760sn;760pp;760pn                 │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │           0.045 │ vv.pocet*2369*cena        │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │           0.045 │ vv.pocet*2369*cena        │ Výkon 763p                                    │ vv.kod in ['763p']                                           │
 │             254 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['8586']                                           │
 │             347 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['9104']                                           │
 │             297 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['9105']                                           │
+│        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5331,5332                          │ vv.kod in ['5330','5331','5332']                             │
+│        0.012083 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│          0.0073 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│           0.022 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│           0.022 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│        0.007655 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│          0.0224 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│          0.0224 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 │           14.99 │ vv.pocet*cena             │ Stacionár                                     │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

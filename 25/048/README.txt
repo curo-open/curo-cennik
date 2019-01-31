@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────┐
 │ Názov a hodnota │ Popis                 │
 ├─────────────────┼───────────────────────┤
-│ IPP1 = 0.9      │ IPP1                  │
-│ IPP2 = 1.45     │ IPP2                  │
-│ IPP3 = 2.45     │ IPP3                  │
+│ IPP1 = 1.17     │ IPP1                  │
+│ IPP2 = 1.89     │ IPP2                  │
+│ IPP3 = 3.19     │ IPP3                  │
 │ LIMIT = 75900   │ Limit                 │
 │ EL_POBOCKA = 1  │ Používa el. pobočku ? │
 └─────────────────┴───────────────────────┘
@@ -29,16 +29,17 @@ Autor: curo.sk
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│          0.0238 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│          0.0238 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│          0.0238 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│          0.0238 │ vv.pocet*210*cena         │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│          0.0238 │ vv.pocet*150*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│          0.0238 │ vv.pocet*946*cena         │ Výkon 765p                                    │ vv.kod in ['765p']                                           │
+│          0.0247 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│          0.0247 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│          0.0247 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│          0.0247 │ vv.pocet*210*cena         │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│          0.0247 │ vv.pocet*150*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│          0.0247 │ vv.pocet*946*cena         │ Výkon 765p                                    │ vv.kod in ['765p']                                           │
+│          0.0247 │ vv.pocet*946*cena         │ Výkon 763P, 763M                              │ vv.kod in ['763P','763M']                                    │
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │           15.54 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│        0.007635 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│        0.008105 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

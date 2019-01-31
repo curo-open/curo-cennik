@@ -10,20 +10,38 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 8.8,
+			"value": 9.41,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 5.94,
+			"value": 6.05,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 4.62,
+			"value": 4.7,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 60r",
+			"if": "vv.kod in ['60r']",
+			"value": 9.41,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 65 do 5rokov",
+			"if": "vv.kod in ['65'] && p|vekMedzi(0, 5)",
+			"value": 3.36,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 65 ",
+			"if": "vv.kod in ['65']",
+			"value": 0.0224,
+			"calc": "vv.pocet*100*cena"
 		},
 		{
 			"label": "Výkon 760sp;760sn;760pp;760pn",
@@ -62,6 +80,24 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.006666,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5330,5331,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5793,5794,5795",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.022,
@@ -70,19 +106,19 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.0073,
+			"value": 0.007655,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.022,
+			"value": 0.0224,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.022,
+			"value": 0.0224,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

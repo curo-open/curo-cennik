@@ -2,15 +2,15 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 0.9
+			"value": 1.17
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 1.45
+			"value": 1.89
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 2.45
+			"value": 3.19
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -44,37 +44,43 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 0.0238,
+			"value": 0.0247,
 			"calc": "vv.pocet*420*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 0.0238,
+			"value": 0.0247,
 			"calc": "vv.pocet*270*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.0238,
+			"value": 0.0247,
 			"calc": "vv.pocet*210*cena"
 		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.0238,
+			"value": 0.0247,
 			"calc": "vv.pocet*210*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.0238,
+			"value": 0.0247,
 			"calc": "vv.pocet*150*cena"
 		},
 		{
 			"label": "Výkon 765p",
 			"if": "vv.kod in ['765p']",
-			"value": 0.0238,
+			"value": 0.0247,
+			"calc": "vv.pocet*946*cena"
+		},
+		{
+			"label": "Výkon 763P, 763M",
+			"if": "vv.kod in ['763P','763M']",
+			"value": 0.0247,
 			"calc": "vv.pocet*946*cena"
 		},
 		{
@@ -98,7 +104,7 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.007635,
+			"value": 0.008105,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
