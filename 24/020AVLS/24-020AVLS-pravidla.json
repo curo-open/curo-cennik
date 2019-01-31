@@ -32,7 +32,7 @@
 			"label": "PREDOP",
 			"value": 12.9
 		},
-		"4571a": {
+		"_4571a": {
 			"label": "4571a",
 			"value": 4
 		}
@@ -134,7 +134,7 @@
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='4571a'",
 			"value": null,
-			"calc": "4571a"
+			"calc": "_4571a"
 		},
 		{
 			"label": "Nekapitovaný - Vykon 4",
