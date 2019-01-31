@@ -47,8 +47,8 @@ Autor: curo.sk
 │                 │ PPH2                      │ Pripočitateľné položky                        │ vv.kod=='PPH2'                                               │
 │                 │ PREDOP                    │ Pripočitateľné položky                        │ vv.kod=='PREDOP'                                             │
 │                 │ 4571a                     │ Pripočitateľné položky                        │ vv.kod=='4571a'                                              │
-│            4.79 │ vv.bodyCelkom*cena        │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
-│            6.38 │ vv.bodyCelkom*cena        │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
+│            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
+│            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
 │        0.022973 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │                 │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │

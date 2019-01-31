@@ -140,13 +140,13 @@
 			"label": "Nekapitovaný - Vykon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": 4.79,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Nekapitovaný - Vykon 8",
 			"if": "!p.kapitacia && vv.kod in ['8']",
 			"value": 6.38,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
