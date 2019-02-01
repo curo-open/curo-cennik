@@ -5,11 +5,12 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────┐
-│ Názov a hodnota │ Popis │
-├─────────────────┼───────┤
-│ LIMIT = 2235    │ Limit │
-└─────────────────┴───────┘
+┌─────────────────┬──────────────────────┐
+│ Názov a hodnota │ Popis                │
+├─────────────────┼──────────────────────┤
+│ LIMIT = 2235    │ Limit                │
+│ VCB = 0.026392  │ Vypočitaná cena bodu │
+└─────────────────┴──────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -26,15 +27,15 @@ Autor: curo.sk
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│        0.022529 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│        0.022529 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│        0.022529 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│                 │ vv.pocet*420*VCB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│                 │ vv.pocet*270*VCB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│                 │ vv.pocet*210*VCB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │          0.0462 │ vv.bodyCelkom*cena        │ Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763 │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
 │                 │                           │ sp;763sn                                      │ 763sp','763sn']                                              │
-│        0.024504 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│                 │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.007303 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.022171 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│        0.024504 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│                 │ vv.bodyCelkom*VCB         │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

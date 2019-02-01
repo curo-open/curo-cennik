@@ -5,11 +5,12 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────┐
-│ Názov a hodnota │ Popis │
-├─────────────────┼───────┤
-│ LIMIT = 1140000 │ Limit │
-└─────────────────┴───────┘
+┌─────────────────┬──────────────────────┐
+│ Názov a hodnota │ Popis                │
+├─────────────────┼──────────────────────┤
+│ LIMIT = 1140000 │ Limit                │
+│ VCB = 0.024925  │ Vypočitaná cena bodu │
+└─────────────────┴──────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -22,14 +23,14 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.026432 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│        0.025903 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│        0.025903 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│                 │ vv.pocet*420*VCB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│                 │ vv.pocet*270*VCB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│                 │ vv.pocet*210*VCB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │              14 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│                 │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│                 │ vv.bodyCelkom*VCB         │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

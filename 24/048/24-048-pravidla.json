@@ -3,6 +3,10 @@
 		"LIMIT": {
 			"label": "Limit",
 			"value": 1140000
+		},
+		"VCB": {
+			"label": "Vypočitaná cena bodu",
+			"value": 0.024925
 		}
 	},
 	"pacient": [],
@@ -10,20 +14,20 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 0.026432,
-			"calc": "vv.pocet*420*cena"
+			"value": null,
+			"calc": "vv.pocet*420*VCB"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 0.025903,
-			"calc": "vv.pocet*270*cena"
+			"value": null,
+			"calc": "vv.pocet*270*VCB"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.025903,
-			"calc": "vv.pocet*210*cena"
+			"value": null,
+			"calc": "vv.pocet*210*VCB"
 		},
 		{
 			"label": "Výkon 8899 - Stacionár",
@@ -34,8 +38,8 @@
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*VCB"
 		},
 		{
 			"label": "SVALZ výkony",
@@ -46,14 +50,14 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*VCB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*VCB"
 		}
 	],
 	"kontrola": [],
