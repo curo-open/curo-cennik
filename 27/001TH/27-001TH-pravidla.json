@@ -88,13 +88,13 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.021,
+			"value": 0.0224,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.021,
+			"value": 0.0224,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],

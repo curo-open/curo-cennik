@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────┐
 │ Názov a hodnota │ Popis                 │
 ├─────────────────┼───────────────────────┤
-│ IPP1 = 0.9      │ IPP1                  │
-│ IPP2 = 1.16     │ IPP2                  │
-│ IPP3 = 1.96     │ IPP3                  │
+│ IPP1 = 1.17     │ IPP1                  │
+│ IPP2 = 1.89     │ IPP2                  │
+│ IPP3 = 3.19     │ IPP3                  │
 │ LIMIT = 75900   │ Limit                 │
 │ EL_POBOCKA = 1  │ Používa el. pobočku ? │
 └─────────────────┴───────────────────────┘
@@ -44,10 +44,10 @@ Autor: curo.sk
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│          0.0229 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│          0.0238 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.007303 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│           0.022 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│          0.0229 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│          0.0238 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 │          0.0238 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
 │          0.0238 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
 │          0.0238 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
