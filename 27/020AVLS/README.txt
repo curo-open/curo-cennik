@@ -16,10 +16,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 51 │          2.13 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          2.31 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │          2.73 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+      │          2.92 │ IDK+cena │ p|vekMedzi(81)     │
+│ vek od 18 do 51 │          2.26 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          2.59 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │          3.63 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 81+      │          3.98 │ IDK+cena │ p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 

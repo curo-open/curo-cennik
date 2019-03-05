@@ -246,7 +246,7 @@
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
-			"if": "vv.kod in ['60b']",
+			"if": "vv.kod in ['60b','60B']",
 			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
