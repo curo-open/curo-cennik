@@ -36,8 +36,13 @@ Autor: curo.sk
 │          0.0247 │ vv.pocet*150*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │          0.0247 │ vv.pocet*946*cena         │ Výkon 765p                                    │ vv.kod in ['765p']                                           │
 │          0.0247 │ vv.pocet*946*cena         │ Výkon 763P, 763M                              │ vv.kod in ['763P','763M']                                    │
+│          0.0247 │ vv.pocet*1500*cena        │ Výkon 760PN                                   │ vv.kod in ['760PN']                                          │
+│          0.0247 │ vv.pocet*3000*cena        │ Výkon 763SP, 763SN, 763PP, 763PN              │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │           15.54 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
+│             400 │ vv.pocet*cena             │ Výkon 9104 - JZS                              │ vv.kod in ['9104']                                           │
+│             368 │ vv.pocet*cena             │ Výkon 9105 - JZS                              │ vv.kod in ['9105']                                           │
+│             210 │ vv.pocet*cena             │ Výkon 8586 - JZS                              │ vv.kod in ['8586']                                           │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008105 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
