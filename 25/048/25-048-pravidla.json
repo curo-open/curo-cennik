@@ -84,6 +84,18 @@
 			"calc": "vv.pocet*946*cena"
 		},
 		{
+			"label": "Výkon 760PN",
+			"if": "vv.kod in ['760PN']",
+			"value": 0.0247,
+			"calc": "vv.pocet*1500*cena"
+		},
+		{
+			"label": "Výkon 763SP, 763SN, 763PP, 763PN",
+			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
+			"value": 0.0247,
+			"calc": "vv.pocet*3000*cena"
+		},
+		{
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
@@ -93,6 +105,24 @@
 			"label": "Výkon 8899 - Stacionár",
 			"if": "vv.kod in ['8899']",
 			"value": 15.54,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9104 - JZS",
+			"if": "vv.kod in ['9104']",
+			"value": 400,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9105 - JZS",
+			"if": "vv.kod in ['9105']",
+			"value": 368,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8586 - JZS",
+			"if": "vv.kod in ['8586']",
+			"value": 210,
 			"calc": "vv.pocet*cena"
 		},
 		{
