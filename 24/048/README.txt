@@ -23,13 +23,14 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                 │ vv.pocet*420*VCB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│                 │ vv.pocet*270*VCB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│                 │ vv.pocet*210*VCB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│        0.048972 │ vv.pocet*1350*cena        │ Výkon 760SP, 760SN, 760PP, 760PN              │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
-│        0.048972 │ vv.pocet*2369*cena        │ Výkon 763SP, 763SN, 763PP, 763PN              │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
-│             300 │ vv.pocet*cena             │ Výkon 9104 - JZS                              │ vv.kod in ['9104']                                           │
-│             250 │ vv.pocet*cena             │ Výkon 9105 - JZS                              │ vv.kod in ['9105']                                           │
+│                 │ vv.pocet*420*VCB          │ ŠAS                                           │ vv.kod in ['60']                                             │
+│                 │ vv.pocet*270*VCB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│                 │ vv.pocet*210*VCB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│        0.048972 │ vv.pocet*1350*cena        │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
+│        0.048972 │ vv.pocet*2369*cena        │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
+│             300 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
+│             250 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
+│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │              14 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │                 │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

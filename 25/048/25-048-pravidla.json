@@ -42,37 +42,31 @@
 			"calc": "IPP3"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": 0.0247,
 			"calc": "vv.pocet*420*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": 0.0247,
 			"calc": "vv.pocet*270*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": 0.0247,
 			"calc": "vv.pocet*210*cena"
 		},
 		{
-			"label": "Výkon 15d",
+			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": 0.0247,
 			"calc": "vv.pocet*210*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['63']",
-			"value": 0.0247,
-			"calc": "vv.pocet*150*cena"
-		},
-		{
-			"label": "Výkon 765p",
+			"label": "ŠAS",
 			"if": "vv.kod in ['765p']",
 			"value": 0.0247,
 			"calc": "vv.pocet*946*cena"
@@ -84,19 +78,19 @@
 			"calc": "vv.pocet*946*cena"
 		},
 		{
-			"label": "Výkon 760SP, 760SN, 760PP, 760PN",
+			"label": "Prev. KS",
 			"if": "vv.kod in ['760SP','760SN','760PP','760PN']",
 			"value": 0.041,
 			"calc": "vv.pocet*1500*cena"
 		},
 		{
-			"label": "Výkon 763SP, 763SN, 763PP, 763PN",
+			"label": "Prev. KS",
 			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
 			"value": 0.041,
 			"calc": "vv.pocet*3000*cena"
 		},
 		{
-			"label": "Výkon 250x",
+			"label": "ŠAS",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
 			"calc": "vv.pocet*cena"
@@ -108,25 +102,25 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 9104 - JZS",
+			"label": "JZS",
 			"if": "vv.kod in ['9104']",
 			"value": 400,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 9105 - JZS",
+			"label": "JZS",
 			"if": "vv.kod in ['9105']",
 			"value": 368,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 8586 - JZS",
+			"label": "JZS",
 			"if": "vv.kod in ['8586']",
 			"value": 210,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 5300,5301,5702",
+			"label": "SVALZ výkony",
 			"if": "vv.kod in ['5300','5301','5702']",
 			"value": 0.008473,
 			"calc": "vv.bodyCelkom*cena"
