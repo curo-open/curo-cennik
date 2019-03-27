@@ -44,15 +44,15 @@
 			"calc": "vv.pocet*100*cena"
 		},
 		{
-			"label": "Výkon 760sp;760sn;760pp;760pn",
-			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
-			"value": 0.045,
+			"label": "Výkon 760SP, 760SN, 760PP, 760PN",
+			"if": "vv.kod in ['760SP','760SN','760PP','760PN']",
+			"value": 0.0455,
 			"calc": "vv.pocet*1350*cena"
 		},
 		{
-			"label": "Výkon 763sp;763sn;763pp;763pn",
-			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
-			"value": 0.045,
+			"label": "Výkon 763SP, 763SN, 763PP, 763PN",
+			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
+			"value": 0.0455,
 			"calc": "vv.pocet*2369*cena"
 		},
 		{
@@ -62,19 +62,19 @@
 			"calc": "vv.pocet*2369*cena"
 		},
 		{
-			"label": "Výkon 8586",
+			"label": "Výkon 8586 - JZS",
 			"if": "vv.kod in ['8586']",
 			"value": 254,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 8586",
+			"label": "Výkon 9104 - JZS",
 			"if": "vv.kod in ['9104']",
 			"value": 347,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 8586",
+			"label": "Výkon 9105 - JZS",
 			"if": "vv.kod in ['9105']",
 			"value": 297,
 			"calc": "vv.pocet*cena"
@@ -98,6 +98,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 8899 - Stacionár",
+			"if": "vv.kod in ['8899']",
+			"value": 14.99,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.022,
@@ -112,20 +118,14 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.0224,
+			"value": 0.0234,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0224,
+			"value": 0.0234,
 			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Stacionár",
-			"if": "",
-			"value": 14.99,
-			"calc": "vv.pocet*cena"
 		}
 	],
 	"kontrola": [

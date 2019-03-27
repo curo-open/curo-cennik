@@ -84,15 +84,15 @@
 			"calc": "vv.pocet*946*cena"
 		},
 		{
-			"label": "Výkon 760PN",
-			"if": "vv.kod in ['760PN']",
-			"value": 0.0247,
+			"label": "Výkon 760SP, 760SN, 760PP, 760PN",
+			"if": "vv.kod in ['760SP','760SN','760PP','760PN']",
+			"value": 0.041,
 			"calc": "vv.pocet*1500*cena"
 		},
 		{
 			"label": "Výkon 763SP, 763SN, 763PP, 763PN",
 			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
-			"value": 0.0247,
+			"value": 0.041,
 			"calc": "vv.pocet*3000*cena"
 		},
 		{
@@ -124,6 +124,12 @@
 			"if": "vv.kod in ['8586']",
 			"value": 210,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 5300,5301,5702",
+			"if": "vv.kod in ['5300','5301','5702']",
+			"value": 0.008473,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
