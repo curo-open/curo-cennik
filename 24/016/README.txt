@@ -9,6 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis │
 ├─────────────────┼───────┤
 │ LIMIT = 0       │ Limit │
+│ RTGIO = 0.27    │ RTGIO │
+│ OPG = 0.5       │ OPG   │
 └─────────────────┴───────┘
 
 
@@ -22,12 +24,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│               0 │ vv.pocet*50*cena          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│               0 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│           0.088 │ vv.pocet*300*cena         │ Výkon V12                                     │ vv.kod in ['V12']                                            │
+│           0.088 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│           0.088 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 │               0 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│               0 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│               0 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│           0.088 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+
+  BODY ZA VÝKONY
+┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
+│     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+└─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
   CENY ZA AMBULANTNE PODANÉ LIEKY
