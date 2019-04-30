@@ -78,7 +78,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
+			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*VCB"
@@ -91,6 +91,7 @@
 		}
 	],
 	"kontrola": [],
+	"body": {},
 	"liekByCode": {
 		"62328": {
 			"price": 0.95

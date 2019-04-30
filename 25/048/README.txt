@@ -33,8 +33,8 @@ Autor: curo.sk
 │          0.0247 │ vv.pocet*270*cena         │ ŠAS                                           │ vv.kod in ['62']                                             │
 │          0.0247 │ vv.pocet*210*cena         │ ŠAS                                           │ vv.kod in ['63']                                             │
 │          0.0247 │ vv.pocet*210*cena         │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│          0.0247 │ vv.pocet*946*cena         │ ŠAS                                           │ vv.kod in ['765p']                                           │
-│          0.0247 │ vv.pocet*946*cena         │ Výkon 763P, 763M                              │ vv.kod in ['763P','763M']                                    │
+│          0.0247 │ vv.pocet*946*cena         │ Prev. KS                                      │ vv.kod in ['765p']                                           │
+│          0.0247 │ vv.pocet*946*cena         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
 │           0.041 │ vv.pocet*1500*cena        │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
 │           0.041 │ vv.pocet*3000*cena        │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
 │            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
@@ -45,9 +45,15 @@ Autor: curo.sk
 │        0.008473 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │          0.0247 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008105 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│          0.0247 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+
+  BODY ZA VÝKONY
+┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
+│     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+└─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
   CENY ZA AMBULANTNE PODANÉ LIEKY

@@ -66,13 +66,13 @@
 			"calc": "vv.pocet*210*cena"
 		},
 		{
-			"label": "ŠAS",
+			"label": "Prev. KS",
 			"if": "vv.kod in ['765p']",
 			"value": 0.0247,
 			"calc": "vv.pocet*946*cena"
 		},
 		{
-			"label": "Výkon 763P, 763M",
+			"label": "Prev. KS",
 			"if": "vv.kod in ['763P','763M']",
 			"value": 0.0247,
 			"calc": "vv.pocet*946*cena"
@@ -138,7 +138,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
+			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": 0.0247,
 			"calc": "vv.bodyCelkom*cena"
@@ -158,6 +158,7 @@
 			"severity": 0
 		}
 	],
+	"body": {},
 	"liekByCode": {
 		"62328": {
 			"price": 0.95

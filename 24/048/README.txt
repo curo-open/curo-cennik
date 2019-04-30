@@ -34,9 +34,15 @@ Autor: curo.sk
 │              14 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │                 │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+
+  BODY ZA VÝKONY
+┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
+│     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+└─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
   CENY ZA AMBULANTNE PODANÉ LIEKY
