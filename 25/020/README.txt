@@ -41,21 +41,21 @@ Autor: curo.sk
 │        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │        0.007303 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
-│        0.020995 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
-│        0.020995 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│           0.046 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
-│           0.045 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
-│           0.042 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
-│           0.041 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│        0.020995 │ vv.pocet*180*cena         │ Výkon 10                                      │ vv.kod in ['10']                                             │
+│        0.020995 │ vv.pocet*350*cena         │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
+│           0.046 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
+│           0.045 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
+│           0.042 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
+│           0.041 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
-│        0.008105 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
-│        0.008105 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702']                                           │
-│        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
-│        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
-│           0.041 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
-│           0.041 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
+│        0.008105 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
+│        0.008105 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702']                                           │
+│        0.016597 │ vv.pocet*550*cena         │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
+│        0.016597 │ vv.pocet*240*cena         │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
+│           0.041 │ vv.pocet*70*cena          │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│           0.041 │ vv.pocet*70*cena          │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
 │        0.020995 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
-│        0.007303 │ vv.bodyCelkom*cena        │ Akútne EKG                                    │ vv.kod in ['5702c']                                          │
+│        0.007303 │ vv.pocet*500*cena         │ Akútne EKG                                    │ vv.kod in ['5702c']                                          │
 │              12 │ vv.pocet*cena             │ TOKS pozitívny                                │ vv.kod in ['159a']                                           │
 │              12 │ vv.pocet*cena             │ TOKS negatívny                                │ vv.kod in ['159z']                                           │
 │            3.02 │ vv.pocet*cena             │ TOKS znehodnotený                             │ vv.kod in ['159x']                                           │

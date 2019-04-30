@@ -108,7 +108,7 @@
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
 			"value": 0.04851,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*180*cena"
 		},
 		{
 			"label": "Určenie glykémie glukometrom",
@@ -132,7 +132,7 @@
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
 			"value": 0.048972,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
@@ -166,38 +166,7 @@
 		}
 	],
 	"kontrola": [],
-	"body": {
-		"160": [
-			{
-				"cond": "",
-				"value": 390
-			}
-		],
-		"159a": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159b": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159x": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159z": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		]
-	},
+	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"
