@@ -12,43 +12,43 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 15d",
+			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": 0.0193,
 			"calc": "vv.pocet*50*cena"
 		},
 		{
-			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
+			"label": "ŠAS",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
 			"value": 0.011593,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 532;533a;540;541;542",
+			"label": "ŠAS",
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": 0.011593,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": null,
 			"calc": "vv.pocet*420*VCB"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": null,
 			"calc": "vv.pocet*270*VCB"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": null,
 			"calc": "vv.pocet*210*VCB"
 		},
 		{
-			"label": "Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763sp;763sn",
+			"label": "ŠAS",
 			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn','763sp','763sn']",
 			"value": 0.0462,
 			"calc": "vv.bodyCelkom*cena"
@@ -66,7 +66,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
+			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*VCB"
@@ -79,6 +79,7 @@
 		}
 	],
 	"kontrola": [],
+	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "vnútorné lekárstvo TH"
