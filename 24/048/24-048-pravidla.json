@@ -66,7 +66,7 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*VCB"

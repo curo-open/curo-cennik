@@ -120,7 +120,7 @@
 			"calc": "IPP3"
 		},
 		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.0238,
 			"calc": "vv.bodyCelkom*cena"

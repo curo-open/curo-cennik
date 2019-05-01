@@ -43,7 +43,7 @@ Autor: curo.sk
 │             368 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
 │             210 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
 │        0.008473 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│          0.0247 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │        0.008105 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0247 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │

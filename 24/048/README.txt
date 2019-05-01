@@ -32,7 +32,7 @@ Autor: curo.sk
 │             250 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │              14 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│                 │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │

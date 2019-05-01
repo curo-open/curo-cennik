@@ -44,7 +44,7 @@ Autor: curo.sk
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│          0.0238 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│          0.0238 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │        0.007303 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
