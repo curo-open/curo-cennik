@@ -4,9 +4,17 @@
 			"label": "Limit",
 			"value": 1140000
 		},
-		"VCB": {
-			"label": "Vypočitaná cena bodu",
+		"CB": {
+			"label": "Cena bodu",
 			"value": 0.024925
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.048972
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.008195
 		}
 	},
 	"pacient": [],
@@ -15,31 +23,43 @@
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": null,
-			"calc": "vv.pocet*420*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": null,
-			"calc": "vv.pocet*270*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": null,
-			"calc": "vv.pocet*210*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['760SP','760SN','760PP','760PN']",
-			"value": 0.048972,
-			"calc": "vv.pocet*1350*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP"
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
-			"value": 0.048972,
-			"calc": "vv.pocet*2369*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP"
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP"
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP"
 		},
 		{
 			"label": "JZS",
@@ -56,8 +76,8 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['5300','5301','5702']",
-			"value": 0.008195,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Výkon 8899 - Stacionár",
@@ -69,25 +89,25 @@
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.008195,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],

@@ -5,12 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬──────────────────────┐
-│ Názov a hodnota │ Popis                │
-├─────────────────┼──────────────────────┤
-│ LIMIT = 1140000 │ Limit                │
-│ VCB = 0.024925  │ Vypočitaná cena bodu │
-└─────────────────┴──────────────────────┘
+┌────────────────────┬──────────────────────────────┐
+│ Názov a hodnota    │ Popis                        │
+├────────────────────┼──────────────────────────────┤
+│ LIMIT = 1140000    │ Limit                        │
+│ CB = 0.024925      │ Cena bodu                    │
+│ CBP = 0.048972     │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.008195 │ Cena bodu SVaLZ              │
+└────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -23,19 +25,21 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                 │ vv.pocet*420*VCB          │ ŠAS                                           │ vv.kod in ['60']                                             │
-│                 │ vv.pocet*270*VCB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│                 │ vv.pocet*210*VCB          │ ŠAS                                           │ vv.kod in ['63']                                             │
-│        0.048972 │ vv.pocet*1350*cena        │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
-│        0.048972 │ vv.pocet*2369*cena        │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
+│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
+│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
+│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │             300 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
 │             250 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
-│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │              14 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
-│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
