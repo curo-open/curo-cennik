@@ -39,9 +39,10 @@
 		}
 	],
 	"kontrola": [],
+	"body": {},
 	"liekByCode": {
 		"00502": {
-			"price": 0.118
+			"price": 0.77
 		}
 	},
 	"liekByAtc": {},
