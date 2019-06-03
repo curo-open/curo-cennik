@@ -133,97 +133,97 @@
 		"760SP": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"760SN": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"760PP": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"760PN": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"763SP": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		],
 		"763SN": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		],
 		"763PP": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		],
 		"763PN": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		],
 		"760sp": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"760sn": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"760pp": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"760pn": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1500
 			}
 		],
 		"763sp": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		],
 		"763sn": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		],
 		"763pp": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		],
 		"763pn": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 2230
 			}
 		]
 	},
