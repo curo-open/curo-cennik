@@ -1,0 +1,82 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.0239
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.0455
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0073
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 9.41,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 62",
+			"if": "vv.kod in ['62']",
+			"value": 6.05,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 63",
+			"if": "vv.kod in ['63']",
+			"value": 4.7,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "USG",
+			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702','5702a','15c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "angiolog"
+}
