@@ -116,37 +116,37 @@
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
 			"value": 0.020995,
-			"calc": "vv.pocet*180*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
 			"value": 0.020995,
-			"calc": "vv.pocet*350*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
 			"value": 0.046,
-			"calc": "vv.pocet*390*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "KPS && vv.kod in ['160']",
 			"value": 0.045,
-			"calc": "vv.pocet*390*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "EL_POBOCKA && vv.kod in ['160']",
 			"value": 0.042,
-			"calc": "vv.pocet*390*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
 			"value": 0.041,
-			"calc": "vv.pocet*390*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "EKG pri preventívnej prehliadke (15P)",
@@ -158,37 +158,37 @@
 			"label": "EKG pri preventívnej prehliadke",
 			"if": "vv.kod in ['5702P']",
 			"value": 0.008105,
-			"calc": "vv.pocet*550*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "EKG pri preventívnej prehliadke",
 			"if": "vv.kod in ['5702']",
 			"value": 0.008105,
-			"calc": "vv.pocet*550*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Celodenné snímanie tlaku",
 			"if": "vv.kod in ['5715']",
 			"value": 0.016597,
-			"calc": "vv.pocet*550*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Celodenné snímanie tlaku - vyhodnotenie",
 			"if": "vv.kod in ['5716']",
 			"value": 0.016597,
-			"calc": "vv.pocet*240*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
 			"value": 0.041,
-			"calc": "vv.pocet*70*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s']",
 			"value": 0.041,
-			"calc": "vv.pocet*70*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návštevná služba",
@@ -200,7 +200,7 @@
 			"label": "Akútne EKG",
 			"if": "vv.kod in ['5702c']",
 			"value": 0.007303,
-			"calc": "vv.pocet*500*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "TOKS pozitívny",
