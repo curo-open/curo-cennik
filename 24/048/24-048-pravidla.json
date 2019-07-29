@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.024925
+			"value": 0.025658
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -22,8 +22,8 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026432,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ŠAS",

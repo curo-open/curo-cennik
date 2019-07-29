@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌────────────────────┬──────────────────────────────┐
 │ Názov a hodnota    │ Popis                        │
 ├────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.17        │ IPP1                         │
-│ IPP2 = 1.89        │ IPP2                         │
-│ IPP3 = 3.19        │ IPP3                         │
+│ IPP1 = 1.8         │ IPP1                         │
+│ IPP2 = 2.9         │ IPP2                         │
+│ IPP3 = 4.9         │ IPP3                         │
 │ LIMIT = 75900      │ Limit                        │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?        │
 │ CB = 0.0247        │ Cena bodu                    │

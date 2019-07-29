@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis                │
 ├─────────────────┼──────────────────────┤
 │ LIMIT = 2235    │ Limit                │
-│ VCB = 0.026392  │ Vypočitaná cena bodu │
+│ VCB = 0.027125  │ Vypočitaná cena bodu │
 └─────────────────┴──────────────────────┘
 
 
