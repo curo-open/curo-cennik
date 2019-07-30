@@ -26,11 +26,11 @@ Autor: curo.sk
 │ vek od 50 do 55 │          2.63 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
 │ vek od 55 do 60 │          2.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
 │ vek od 60 do 65 │          2.87 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 70 │          2.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 75 │           3.1 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ vek od 75 do 80 │          3.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 85 │          3.55 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek od 85+      │          3.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ vek od 65 do 70 │          3.08 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ vek od 70 do 75 │           3.2 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ vek od 75 do 80 │          3.31 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ vek od 80 do 85 │          3.65 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ vek od 85+      │          3.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -43,10 +43,10 @@ Autor: curo.sk
 │        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
 │        0.020995 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │        0.020995 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│           0.046 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
-│           0.045 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
-│           0.042 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
-│           0.041 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
+│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
+│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
+│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702']                                           │

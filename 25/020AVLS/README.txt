@@ -26,11 +26,11 @@ Autor: curo.sk
 │ vek od 50 do 55 │          2.63 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
 │ vek od 55 do 60 │          2.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
 │ vek od 60 do 65 │          2.87 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 70 │          2.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 75 │           3.1 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ vek od 75 do 80 │          3.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 85 │          3.55 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek od 85+      │          3.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ vek od 65 do 70 │          3.08 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ vek od 70 do 75 │           3.2 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ vek od 75 do 80 │          3.31 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ vek od 80 do 85 │          3.65 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ vek od 85+      │          3.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -41,12 +41,12 @@ Autor: curo.sk
 │        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │        0.007303 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
-│            3.78 │ vv.pocet*cena             │ Výkon 10                                      │ vv.kod in ['10']                                             │
-│            7.35 │ vv.pocet*cena             │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│           0.046 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
-│           0.045 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
-│           0.042 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
-│           0.041 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│        0.020995 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
+│        0.020995 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
+│            0.05 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
+│            0.05 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
+│            0.05 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
+│            0.05 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
 │        0.008105 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
 │        0.008105 │ vv.pocet*550*cena         │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702']                                           │

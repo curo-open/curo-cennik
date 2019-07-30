@@ -65,31 +65,31 @@
 		{
 			"label": "vek od 65 do 70",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 2.98,
+			"value": 3.08,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 70 do 75",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 3.1,
+			"value": 3.2,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 75 do 80",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 3.21,
+			"value": 3.31,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 80 do 85",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 3.55,
+			"value": 3.65,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 3.62,
+			"value": 3.72,
 			"calc": "IDK+cena"
 		}
 	],
@@ -115,37 +115,37 @@
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 3.78,
-			"calc": "vv.pocet*cena"
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": 7.35,
-			"calc": "vv.pocet*cena"
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.046,
+			"value": 0.05,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "KPS && vv.kod in ['160']",
-			"value": 0.045,
+			"value": 0.05,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.042,
+			"value": 0.05,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.041,
+			"value": 0.05,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
