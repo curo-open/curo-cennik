@@ -28,6 +28,9 @@ Autor: curo.sk
 │            9.41 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │            6.05 │ vv.pocet*cena             │ Výkon 62                                      │ vv.kod in ['62']                                             │
 │             4.7 │ vv.pocet*cena             │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│                 │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
+│                 │                           │                                               │ '5741','5742','5743']                                        │
+│                 │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

@@ -38,6 +38,18 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "USG",
+			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702','5702a','15c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.022,
