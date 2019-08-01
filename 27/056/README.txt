@@ -5,14 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬──────────────────────────────┐
-│ Názov a hodnota  │ Popis                        │
-├──────────────────┼──────────────────────────────┤
-│ CB = 0.0239      │ Cena bodu                    │
-│ CBP = 0.0455     │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.0073 │ Cena bodu SVaLZ              │
-│ LIMIT = 0        │ Limit                        │
-└──────────────────┴──────────────────────────────┘
+┌────────────────────┬──────────────────────────────┐
+│ Názov a hodnota    │ Popis                        │
+├────────────────────┼──────────────────────────────┤
+│ CB = 0.0244        │ Cena bodu                    │
+│ CBP = 0.0455       │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.007665 │ Cena bodu SVaLZ              │
+│ LIMIT = 0          │ Limit                        │
+└────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -25,9 +25,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            9.41 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│            6.05 │ vv.pocet*cena             │ Výkon 62                                      │ vv.kod in ['62']                                             │
-│             4.7 │ vv.pocet*cena             │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│            9.83 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│            6.32 │ vv.pocet*cena             │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│            4.91 │ vv.pocet*cena             │ Výkon 63                                      │ vv.kod in ['63']                                             │
 │                 │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │                 │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
