@@ -6,7 +6,7 @@
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 20.3
+			"value": 2.03
 		},
 		"IPP3": {
 			"label": "IPP3",
@@ -70,7 +70,7 @@
 	"body": {},
 	"liekByCode": {
 		"00502": {
-			"price": 0.77
+			"price": 0.121
 		}
 	},
 	"liekByAtc": {},
