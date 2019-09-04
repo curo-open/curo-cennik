@@ -65,31 +65,31 @@
 		{
 			"label": "vek od 65 do 70",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 3.08,
+			"value": 2.98,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 70 do 75",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 3.2,
+			"value": 3.1,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 75 do 80",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 3.31,
+			"value": 3.21,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 80 do 85",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 3.65,
+			"value": 3.55,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 3.72,
+			"value": 3.62,
 			"calc": "IDK+cena"
 		}
 	],
@@ -115,37 +115,37 @@
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": 3.78,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": 7.35,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.046,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "KPS && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.045,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.042,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.041,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
@@ -284,7 +284,7 @@
 		},
 		{
 			"label": "Možnosť vykázať výkon 10",
-			"if": "d.vv|ma('kod in [\"60\"]')",
+			"if": "d.vv|ma('kod in [\"60\", \"H0003\", \"H0004\"]')",
 			"check": "d.vv|ma('kod==\"10\"')",
 			"severity": 0
 		},
@@ -307,74 +307,7 @@
 			"severity": 0
 		}
 	],
-	"body": {
-		"10": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"60": [
-			{
-				"cond": "",
-				"value": 350
-			}
-		],
-		"160": [
-			{
-				"cond": "",
-				"value": 390
-			}
-		],
-		"5702": [
-			{
-				"cond": "",
-				"value": 550
-			}
-		],
-		"5715": [
-			{
-				"cond": "",
-				"value": 550
-			}
-		],
-		"5716": [
-			{
-				"cond": "",
-				"value": 240
-			}
-		],
-		"5702P": [
-			{
-				"cond": "",
-				"value": 550
-			}
-		],
-		"252b": [
-			{
-				"cond": "",
-				"value": 70
-			}
-		],
-		"252c": [
-			{
-				"cond": "",
-				"value": 70
-			}
-		],
-		"252s": [
-			{
-				"cond": "",
-				"value": 70
-			}
-		],
-		"5702c": [
-			{
-				"cond": "",
-				"value": 500
-			}
-		]
-	},
+	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

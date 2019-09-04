@@ -267,6 +267,12 @@
 			"if": "vv.kod in ['250D']",
 			"value": 1.05,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
+			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [
@@ -274,12 +280,6 @@
 			"label": "Preventivka: chýba EKG vyšetrenie",
 			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
 			"check": "d.vv|ma('kod==\"5702P\"')",
-			"severity": 0
-		},
-		{
-			"label": "Možnosť vykázať výkon 10",
-			"if": "d.vv|ma('kod in [\"60\", \"H0003\", \"H0004\"]')",
-			"check": "d.vv|ma('kod==\"10\"')",
 			"severity": 0
 		},
 		{
