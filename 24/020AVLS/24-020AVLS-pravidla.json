@@ -22,11 +22,11 @@
 		},
 		"PPH1": {
 			"label": "PPH1",
-			"value": 10
+			"value": 20
 		},
 		"PPH2": {
 			"label": "PPH2",
-			"value": 6.5
+			"value": 13
 		},
 		"PREDOP": {
 			"label": "PREDOP",

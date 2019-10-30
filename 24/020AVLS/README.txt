@@ -13,8 +13,8 @@ Autor: curo.sk
 │ VCB4 = 1.54     │ Vypočítaná cena bodu. výkon 4   │
 │ VCB8 = 2.06     │ Vypočítaná cena bodu. výkon 8   │
 │ VCB250 = 0.41   │ Vypočítaná cena bodu. výkon 250 │
-│ PPH1 = 10       │ PPH1                            │
-│ PPH2 = 6.5      │ PPH2                            │
+│ PPH1 = 20       │ PPH1                            │
+│ PPH2 = 13       │ PPH2                            │
 │ PREDOP = 12.9   │ PREDOP                          │
 │ _4571a = 4      │ 4571a                           │
 └─────────────────┴─────────────────────────────────┘
