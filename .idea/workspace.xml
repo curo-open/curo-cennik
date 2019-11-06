@@ -1,90 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24/020AVLSDP/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27/020AVLSDP/27-020AVLSDP-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27/020AVLSDP/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soc/020AVLSDP/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soc/020AVLSDP/soc-020AVLSDP-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/001/24-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/001/24-001-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/001/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/018/24-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/018/24-018-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/018/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/032/24-032-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/032/24-032-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/032/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/032/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/141/24-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/141/24-141-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/141/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/tmp2/24-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/tmp2/24-tmp2-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/tmp2/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/001/25-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/001/25-001-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/001/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/008/25-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/008/25-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/018/25-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/018/25-018-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/018/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020/25-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/25-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/032/25-032-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/032/25-032-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/032/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/032/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/141/25-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/141/25-141-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/141/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/144/25-144-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/144/25-144-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/144/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/144/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/tmp2/25-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/tmp2/25-tmp2-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/tmp2/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/001/27-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/001/27-001-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/001/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/008/27-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/008/27-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/018/27-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/018/27-018-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/018/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020/27-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/27-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/032/27-032-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/032/27-032-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/032/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/032/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/141/27-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/141/27-141-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/141/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/144/27-144-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/144/27-144-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/144/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/144/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/tmp2/27-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/tmp2/27-tmp2-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/tmp2/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/010/77-010-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/010/77-010-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/010/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/010/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/001/soc-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001/soc-001-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/001TH/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001TH/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/001TH/soc-001TH-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001TH/soc-001TH-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/008/soc-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/008/soc-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/010/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/010/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/010/soc-010-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/010/soc-010-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/016/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/016/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/016/soc-016-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/016/soc-016-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/018/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/018/soc-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/018/soc-018-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/020/soc-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020/soc-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020AVLS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/020AVLS/soc-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020AVLS/soc-020AVLS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/048/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/048/soc-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/048/soc-048-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/141/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/141/soc-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/141/soc-141-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/144/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/144/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/144/soc-144-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/144/soc-144-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/tmp2/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soc/tmp2/soc-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/tmp2/soc-tmp2-pravidla.json" afterDir="false" />
-    </list>
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upravene 008" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,14 +273,7 @@
       <workItem from="1572462735360" duration="599000" />
       <workItem from="1572681967835" duration="597000" />
       <workItem from="1572860400971" duration="597000" />
-      <workItem from="1572884778734" duration="869000" />
-    </task>
-    <task id="LOCAL-00044" summary="- added logopedia">
-      <created>1548934613418</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1548934613418</updated>
+      <workItem from="1572884778734" duration="1340000" />
     </task>
     <task id="LOCAL-00045" summary="- added _ prefix">
       <created>1548950716880</created>
@@ -701,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573031138766</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="- upravene 008">
+      <created>1573031256808</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1573031256808</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,7 +673,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravene 001" />
     <MESSAGE value="- upravene 010" />
     <MESSAGE value="- pridane soc" />
     <MESSAGE value="- upravene 25" />
@@ -781,7 +697,8 @@
     <MESSAGE value="- pridane 056" />
     <MESSAGE value="- pridane dovera nove ceny" />
     <MESSAGE value="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008" />
-    <option name="LAST_COMMIT_MESSAGE" value="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008" />
+    <MESSAGE value="- upravene 008" />
+    <option name="LAST_COMMIT_MESSAGE" value="- upravene 008" />
   </component>
   <component name="masterDetails">
     <states>
