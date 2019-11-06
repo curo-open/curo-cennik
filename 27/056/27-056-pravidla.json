@@ -1,8 +1,8 @@
 {
 	"params": {
-		"CB": {
-			"label": "Cena bodu",
-			"value": 0.0244
+		"VCB": {
+			"label": "Vypočitaná cena bodu",
+			"value": 0.0237
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007665
+			"value": 0.0082
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -20,22 +20,28 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
-			"value": 9.83,
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 4.5,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 62",
-			"if": "vv.kod in ['62']",
-			"value": 6.32,
-			"calc": "vv.pocet*cena"
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.006666,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 63",
-			"if": "vv.kod in ['63']",
-			"value": 4.91,
-			"calc": "vv.pocet*cena"
+			"label": "Výkon Ine SVALZ",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon Ine SVALZ",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "USG",
@@ -65,13 +71,13 @@
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*VCB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*VCB"
 		}
 	],
 	"kontrola": [
@@ -82,7 +88,44 @@
 			"severity": 0
 		}
 	],
-	"body": {},
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "angiolog"
