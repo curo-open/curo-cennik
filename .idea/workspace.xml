@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- pridane 056">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" afterDir="false" />
@@ -356,14 +356,7 @@
       <workItem from="1572462735360" duration="599000" />
       <workItem from="1572681967835" duration="597000" />
       <workItem from="1572860400971" duration="597000" />
-      <workItem from="1572884778734" duration="596000" />
-    </task>
-    <task id="LOCAL-00043" summary="- updated gastra and psychologia">
-      <created>1548934587583</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1548934587583</updated>
+      <workItem from="1572884778734" duration="869000" />
     </task>
     <task id="LOCAL-00044" summary="- added logopedia">
       <created>1548934613418</created>
@@ -701,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572451529969</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008">
+      <created>1573031138766</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1573031138766</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,7 +756,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravene 0001th" />
     <MESSAGE value="- upravene 001" />
     <MESSAGE value="- upravene 010" />
     <MESSAGE value="- pridane soc" />
@@ -781,7 +780,8 @@
     <MESSAGE value="- pridana kontrola vykonov" />
     <MESSAGE value="- pridane 056" />
     <MESSAGE value="- pridane dovera nove ceny" />
-    <option name="LAST_COMMIT_MESSAGE" value="- pridane dovera nove ceny" />
+    <MESSAGE value="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008" />
   </component>
   <component name="masterDetails">
     <states>
