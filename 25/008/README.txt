@@ -18,11 +18,11 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ do 1 roku                 │          6.63 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
-│ od 1 do 2 rokov vratane   │          5.85 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
-│ od 3 do 5 rokov vratane   │          5.01 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
-│ od 6 do 9 rokov vratane   │          3.37 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 10)  │
-│ od 10 do 19 rokov vratane │          2.58 │ IDK+cena │ p.kapitacia && p|vekMedzi(10, 20) │
+│ do 1 roku                 │          7.23 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
+│ od 1 do 2 rokov vratane   │          6.95 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
+│ od 3 do 5 rokov vratane   │          5.51 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
+│ od 6 do 9 rokov vratane   │          3.87 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 10)  │
+│ od 10 do 19 rokov vratane │          3.02 │ IDK+cena │ p.kapitacia && p|vekMedzi(10, 20) │
 │ od 20 do 28 rokov vratane │          2.03 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
@@ -45,6 +45,12 @@ Autor: curo.sk
 │              13 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            1.05 │ vv.pocet*cena             │ Odbery                                        │ vv.kod in ['250D']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+
+  BODY ZA VÝKONY
+┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
+│     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+└─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
   CENY ZA AMBULANTNE PODANÉ LIEKY

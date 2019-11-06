@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- pridane 056">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/020AVLSDP/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/020AVLSDP/27-020AVLSDP-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/020AVLSDP/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/020AVLSDP/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/020AVLSDP/soc-020AVLSDP-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/001/24-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/001/24-001-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/001/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/018/24-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/018/24-018-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/018/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/032/24-032-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/032/24-032-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/032/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/032/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/141/24-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/141/24-141-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/141/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/tmp2/24-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/tmp2/24-tmp2-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/tmp2/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/001/25-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/001/25-001-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/001/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/008/25-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/008/25-008-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/008/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/018/25-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/018/25-018-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/018/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020/25-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/25-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/032/25-032-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/032/25-032-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/032/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/032/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/141/25-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/141/25-141-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/141/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/144/25-144-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/144/25-144-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/144/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/144/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/tmp2/25-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/tmp2/25-tmp2-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/tmp2/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/001/27-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/001/27-001-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/001/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/008/27-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/008/27-008-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/008/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/018/27-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/018/27-018-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/018/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/27-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/27-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/032/27-032-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/032/27-032-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/032/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/032/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/141/27-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/141/27-141-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/141/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/144/27-144-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/144/27-144-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/144/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/144/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/tmp2/27-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/tmp2/27-tmp2-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/tmp2/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/77/010/77-010-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/010/77-010-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/77/010/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/010/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/001/soc-001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001/soc-001-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/001TH/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001TH/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/001TH/soc-001TH-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/001TH/soc-001TH-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/008/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/008/soc-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/008/soc-008-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/010/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/010/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/010/soc-010-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/010/soc-010-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/016/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/016/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/016/soc-016-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/016/soc-016-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/018/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/018/soc-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/018/soc-018-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/020/soc-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020/soc-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/020AVLS/soc-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/020AVLS/soc-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/048/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/048/soc-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/048/soc-048-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/141/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/141/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/141/soc-141-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/141/soc-141-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/144/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/144/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/144/soc-144-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/144/soc-144-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/tmp2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/soc/tmp2/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soc/tmp2/soc-tmp2-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/soc/tmp2/soc-tmp2-pravidla.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1Or9oeHAqfMHLqp1rC63Ji2bQRb" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="" />
+      <created>1524513907767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524513907767</updated>
+      <workItem from="1524513909247" duration="2130000" />
+      <workItem from="1524735717450" duration="1547000" />
+      <workItem from="1524815869905" duration="1851000" />
+      <workItem from="1525151288108" duration="3925000" />
+      <workItem from="1525612808279" duration="668000" />
+      <workItem from="1525696327362" duration="3705000" />
+      <workItem from="1526029644198" duration="562000" />
+      <workItem from="1526039723129" duration="1223000" />
+      <workItem from="1526931984266" duration="603000" />
+      <workItem from="1526974352844" duration="4307000" />
+      <workItem from="1527690616090" duration="1246000" />
+      <workItem from="1527828307705" duration="598000" />
+      <workItem from="1527877642504" duration="5637000" />
+      <workItem from="1528657234252" duration="1246000" />
+      <workItem from="1528869162216" duration="1208000" />
+      <workItem from="1529556933087" duration="1832000" />
+      <workItem from="1530507578422" duration="2530000" />
+      <workItem from="1531746682853" duration="599000" />
+      <workItem from="1531829408880" duration="598000" />
+      <workItem from="1532322711131" duration="598000" />
+      <workItem from="1532408736105" duration="522000" />
+      <workItem from="1532582485905" duration="585000" />
+      <workItem from="1532695550209" duration="514000" />
+      <workItem from="1532884901834" duration="186000" />
+      <workItem from="1532885161888" duration="541000" />
+      <workItem from="1532934636950" duration="596000" />
+      <workItem from="1532972314243" duration="1842000" />
+      <workItem from="1533043017651" duration="641000" />
+      <workItem from="1533112053829" duration="153000" />
+      <workItem from="1538120457683" duration="1755000" />
+      <workItem from="1538430391343" duration="1202000" />
+      <workItem from="1538540732485" duration="599000" />
+      <workItem from="1538945289426" duration="598000" />
+      <workItem from="1538977125871" duration="599000" />
+      <workItem from="1539150596044" duration="593000" />
+      <workItem from="1539239476373" duration="599000" />
+      <workItem from="1539358627672" duration="1298000" />
+      <workItem from="1539622371718" duration="2825000" />
+      <workItem from="1539785760574" duration="599000" />
+      <workItem from="1540059458386" duration="599000" />
+      <workItem from="1540064496245" duration="596000" />
+      <workItem from="1540361085454" duration="599000" />
+      <workItem from="1542810106059" duration="628000" />
+      <workItem from="1542887194839" duration="3606000" />
+      <workItem from="1542979801392" duration="1530000" />
+      <workItem from="1543260076359" duration="7639000" />
+      <workItem from="1543854161294" duration="5099000" />
+      <workItem from="1543989528074" duration="591000" />
+      <workItem from="1544003544627" duration="180000" />
+      <workItem from="1544003768555" duration="595000" />
+      <workItem from="1544188749026" duration="3602000" />
+      <workItem from="1545418625098" duration="954000" />
+      <workItem from="1545996739015" duration="586000" />
+      <workItem from="1546283462522" duration="2717000" />
+      <workItem from="1547018098547" duration="577000" />
+      <workItem from="1547019361196" duration="600000" />
+      <workItem from="1547536081106" duration="593000" />
+      <workItem from="1547755713408" duration="573000" />
+      <workItem from="1548245281162" duration="583000" />
+      <workItem from="1548334014858" duration="1199000" />
+      <workItem from="1548415338859" duration="2027000" />
+      <workItem from="1548755509537" duration="8630000" />
+      <workItem from="1549017753014" duration="225000" />
+      <workItem from="1549018015491" duration="7063000" />
+      <workItem from="1549571294678" duration="2097000" />
+      <workItem from="1550084763922" duration="578000" />
+      <workItem from="1550179711870" duration="576000" />
+      <workItem from="1550223753740" duration="595000" />
+      <workItem from="1550235317766" duration="1171000" />
+      <workItem from="1550317943056" duration="581000" />
+      <workItem from="1550474185076" duration="1145000" />
+      <workItem from="1550519191050" duration="1172000" />
+      <workItem from="1550691479036" duration="585000" />
+      <workItem from="1550776291440" duration="597000" />
+      <workItem from="1550816261650" duration="597000" />
+      <workItem from="1551077638619" duration="599000" />
+      <workItem from="1551107650426" duration="593000" />
+      <workItem from="1551295373819" duration="1250000" />
+      <workItem from="1551337065189" duration="1192000" />
+      <workItem from="1551371871291" duration="1189000" />
+      <workItem from="1551649381343" duration="562000" />
+      <workItem from="1551770765437" duration="638000" />
+      <workItem from="1551824569238" duration="807000" />
+      <workItem from="1551951385398" duration="591000" />
+      <workItem from="1552027761479" duration="1198000" />
+      <workItem from="1552898707743" duration="2614000" />
+      <workItem from="1553526898384" duration="591000" />
+      <workItem from="1553539565568" duration="4891000" />
+      <workItem from="1553767227087" duration="588000" />
+      <workItem from="1553846492882" duration="1727000" />
+      <workItem from="1554099168976" duration="2983000" />
+      <workItem from="1554702195029" duration="1857000" />
+      <workItem from="1555098201273" duration="4783000" />
+      <workItem from="1556003765151" duration="587000" />
+      <workItem from="1556186519804" duration="4227000" />
+      <workItem from="1556863526650" duration="595000" />
+      <workItem from="1557330607701" duration="185000" />
+      <workItem from="1557330859412" duration="597000" />
+      <workItem from="1557729042687" duration="1223000" />
+      <workItem from="1557995043821" duration="597000" />
+      <workItem from="1558436485157" duration="599000" />
+      <workItem from="1558472710523" duration="594000" />
+      <workItem from="1558507593254" duration="599000" />
+      <workItem from="1558566942901" duration="598000" />
+      <workItem from="1558601282428" duration="599000" />
+      <workItem from="1558718221248" duration="2542000" />
+      <workItem from="1559062564693" duration="597000" />
+      <workItem from="1559108437226" duration="595000" />
+      <workItem from="1559200914350" duration="597000" />
+      <workItem from="1559213340725" duration="615000" />
+      <workItem from="1559229303534" duration="594000" />
+      <workItem from="1559303634453" duration="2534000" />
+      <workItem from="1559714463481" duration="599000" />
+      <workItem from="1559822487850" duration="580000" />
+      <workItem from="1559845668756" duration="599000" />
+      <workItem from="1559891336891" duration="598000" />
+      <workItem from="1560251368023" duration="68000" />
+      <workItem from="1560251512559" duration="239000" />
+      <workItem from="1560251814332" duration="599000" />
+      <workItem from="1560257245438" duration="598000" />
+      <workItem from="1560415854742" duration="599000" />
+      <workItem from="1560751164145" duration="592000" />
+      <workItem from="1560753635401" duration="599000" />
+      <workItem from="1560809161714" duration="598000" />
+      <workItem from="1560918334236" duration="595000" />
+      <workItem from="1560970381010" duration="598000" />
+      <workItem from="1561357233102" duration="598000" />
+      <workItem from="1561614401827" duration="3444000" />
+      <workItem from="1562077288247" duration="3167000" />
+      <workItem from="1562650660815" duration="322000" />
+      <workItem from="1562819188542" duration="596000" />
+      <workItem from="1563128417522" duration="597000" />
+      <workItem from="1563396690007" duration="588000" />
+      <workItem from="1563430693246" duration="1197000" />
+      <workItem from="1564040856508" duration="4445000" />
+      <workItem from="1564559683376" duration="2736000" />
+      <workItem from="1564725071363" duration="295000" />
+      <workItem from="1564725478632" duration="591000" />
+      <workItem from="1564988697098" duration="599000" />
+      <workItem from="1566297978088" duration="2220000" />
+      <workItem from="1566800045644" duration="598000" />
+      <workItem from="1566834053644" duration="596000" />
+      <workItem from="1567407227870" duration="599000" />
+      <workItem from="1567466430992" duration="1634000" />
+      <workItem from="1567611504052" duration="246000" />
+      <workItem from="1567667428060" duration="3071000" />
+      <workItem from="1568043030683" duration="791000" />
+      <workItem from="1568181462553" duration="599000" />
+      <workItem from="1568262333175" duration="599000" />
+      <workItem from="1568360006202" duration="599000" />
+      <workItem from="1568482855921" duration="1199000" />
+      <workItem from="1568699870117" duration="597000" />
+      <workItem from="1568869416038" duration="246000" />
+      <workItem from="1568876296516" duration="599000" />
+      <workItem from="1569828164621" duration="596000" />
+      <workItem from="1570425949368" duration="590000" />
+      <workItem from="1570459200234" duration="597000" />
+      <workItem from="1570777026750" duration="599000" />
+      <workItem from="1570895727907" duration="599000" />
+      <workItem from="1571126179623" duration="599000" />
+      <workItem from="1571292214864" duration="623000" />
+      <workItem from="1571890921120" duration="617000" />
+      <workItem from="1571891581623" duration="1293000" />
+      <workItem from="1572462735360" duration="599000" />
+      <workItem from="1572681967835" duration="597000" />
+      <workItem from="1572860400971" duration="597000" />
+      <workItem from="1572884778734" duration="596000" />
+    </task>
+    <task id="LOCAL-00043" summary="- updated gastra and psychologia">
+      <created>1548934587583</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1548934587583</updated>
+    </task>
+    <task id="LOCAL-00044" summary="- added logopedia">
+      <created>1548934613418</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1548934613418</updated>
+    </task>
+    <task id="LOCAL-00045" summary="- added _ prefix">
+      <created>1548950716880</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1548950716880</updated>
+    </task>
+    <task id="LOCAL-00046" summary="- upravene gastro">
+      <created>1549017856090</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1549017856091</updated>
+    </task>
+    <task id="LOCAL-00047" summary="- upravene pl kvoli zvj">
+      <created>1549031698223</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1549031698223</updated>
+    </task>
+    <task id="LOCAL-00048" summary="- upravene 0001th">
+      <created>1549264192414</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1549264192414</updated>
+    </task>
+    <task id="LOCAL-00049" summary="- upravene 001">
+      <created>1549273163542</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1549273163542</updated>
+    </task>
+    <task id="LOCAL-00050" summary="- upravene 048">
+      <created>1549273304806</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1549273304807</updated>
+    </task>
+    <task id="LOCAL-00051" summary="- upravene 010">
+      <created>1549802910717</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1549802910717</updated>
+    </task>
+    <task id="LOCAL-00052" summary="- upravene 010">
+      <created>1549803053666</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1549803053666</updated>
+    </task>
+    <task id="LOCAL-00053" summary="- upravene 020">
+      <created>1551770807082</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1551770807082</updated>
+    </task>
+    <task id="LOCAL-00054" summary="- pridane soc">
+      <created>1552050287011</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1552050287012</updated>
+    </task>
+    <task id="LOCAL-00055" summary="- upravene 25">
+      <created>1553677426944</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1553677426944</updated>
+    </task>
+    <task id="LOCAL-00056" summary="- upravene 25">
+      <created>1553677445733</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1553677445733</updated>
+    </task>
+    <task id="LOCAL-00057" summary="- upravene gastro a int">
+      <created>1553697389497</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1553697389497</updated>
+    </task>
+    <task id="LOCAL-00058" summary="- upravene gastro a int">
+      <created>1553701893358</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1553701893358</updated>
+    </task>
+    <task id="LOCAL-00059" summary="- upravene gastro cena bodu">
+      <created>1553877196157</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1553877196157</updated>
+    </task>
+    <task id="LOCAL-00060" summary="- upravene 144 union">
+      <created>1554139254320</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1554139254320</updated>
+    </task>
+    <task id="LOCAL-00061" summary="- upravene 144 union">
+      <created>1554904822029</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1554904822029</updated>
+    </task>
+    <task id="LOCAL-00062" summary="- upravene 144 union">
+      <created>1555405587763</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1555405587763</updated>
+    </task>
+    <task id="LOCAL-00063" summary="- upravene 144 union">
+      <created>1555418839105</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1555418839105</updated>
+    </task>
+    <task id="LOCAL-00064" summary="- reverted 020 to not use body">
+      <created>1556609475703</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1556609475703</updated>
+    </task>
+    <task id="LOCAL-00065" summary="- upravene 048">
+      <created>1556654936498</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1556654936498</updated>
+    </task>
+    <task id="LOCAL-00066" summary="- upravene 001TH">
+      <created>1556729745676</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1556729745676</updated>
+    </task>
+    <task id="LOCAL-00067" summary="- upravene 144 union">
+      <created>1556730602391</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1556730602391</updated>
+    </task>
+    <task id="LOCAL-00068" summary="- upravene 144 union">
+      <created>1558736039062</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1558736039062</updated>
+    </task>
+    <task id="LOCAL-00069" summary="- upravene 048 union">
+      <created>1558736082136</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1558736082136</updated>
+    </task>
+    <task id="LOCAL-00070" summary="- upravene 144 union">
+      <created>1558864349586</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1558864349586</updated>
+    </task>
+    <task id="LOCAL-00071" summary="- upravene 144 union">
+      <created>1559554731797</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1559554731797</updated>
+    </task>
+    <task id="LOCAL-00072" summary="- upravene 010 cena mesocain">
+      <created>1559581358893</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1559581358893</updated>
+    </task>
+    <task id="LOCAL-00073" summary="- pridane 056">
+      <created>1561721847788</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1561721847788</updated>
+    </task>
+    <task id="LOCAL-00074" summary="- pridane 056 soc">
+      <created>1561725432395</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1561725432395</updated>
+    </task>
+    <task id="LOCAL-00075" summary="- pridane ZP 77">
+      <created>1562077354814</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1562077354815</updated>
+    </task>
+    <task id="LOCAL-00076" summary="- pridane 77 pre 020">
+      <created>1562156849131</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1562156849131</updated>
+    </task>
+    <task id="LOCAL-00077" summary="- pridane do 77">
+      <created>1562351419784</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1562351419784</updated>
+    </task>
+    <task id="LOCAL-00078" summary="- pridane 056">
+      <created>1564135092399</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1564135092399</updated>
+    </task>
+    <task id="LOCAL-00079" summary="- upravene avls">
+      <created>1564397808139</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1564397808139</updated>
+    </task>
+    <task id="LOCAL-00080" summary="- changes to 048, 001 and 010">
+      <created>1564401030699</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1564401030699</updated>
+    </task>
+    <task id="LOCAL-00081" summary="- upravene 020">
+      <created>1564483438623</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1564483438623</updated>
+    </task>
+    <task id="LOCAL-00082" summary="- pridane 056">
+      <created>1564675691713</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1564675691713</updated>
+    </task>
+    <task id="LOCAL-00083" summary="- pridane 056">
+      <created>1564675951779</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1564675951779</updated>
+    </task>
+    <task id="LOCAL-00084" summary="- pridane 056">
+      <created>1564677057564</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1564677057564</updated>
+    </task>
+    <task id="LOCAL-00085" summary="- pridane 056">
+      <created>1566565815015</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1566565815015</updated>
+    </task>
+    <task id="LOCAL-00086" summary="- pridane 011 a 027">
+      <created>1567505706606</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1567505706607</updated>
+    </task>
+    <task id="LOCAL-00087" summary="- pridane R vykony">
+      <created>1567611531043</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1567611531043</updated>
+    </task>
+    <task id="LOCAL-00088" summary="- pridana kontrola vykonov">
+      <created>1567667929613</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1567667929613</updated>
+    </task>
+    <task id="LOCAL-00089" summary="- pridane 056">
+      <created>1567672885454</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1567672885454</updated>
+    </task>
+    <task id="LOCAL-00090" summary="- pridane 056">
+      <created>1567674139202</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1567674139202</updated>
+    </task>
+    <task id="LOCAL-00091" summary="- pridane dovera nove ceny">
+      <created>1572451529969</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1572451529969</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../curo-admin/node_modules/aurelia-cli/lib/resources/tasks/clear-cache.js" />
+        <option value="$PROJECT_DIR$/../curo-admin/node_modules/aurelia-cli/lib/resources/tasks/process-json.js" />
+        <option value="$PROJECT_DIR$/../curo-ui/node_modules/fast-json-patch/index.js" />
+        <option value="$PROJECT_DIR$/../curo-ui/node_modules/fast-json-patch/index.d.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <MESSAGE value="- upravene 0001th" />
+    <MESSAGE value="- upravene 001" />
+    <MESSAGE value="- upravene 010" />
+    <MESSAGE value="- pridane soc" />
+    <MESSAGE value="- upravene 25" />
+    <MESSAGE value="- upravene gastro a int" />
+    <MESSAGE value="- upravene gastro cena bodu" />
+    <MESSAGE value="- reverted 020 to not use body" />
+    <MESSAGE value="- upravene 048" />
+    <MESSAGE value="- upravene 001TH" />
+    <MESSAGE value="- upravene 048 union" />
+    <MESSAGE value="- upravene 144 union" />
+    <MESSAGE value="- upravene 010 cena mesocain" />
+    <MESSAGE value="- pridane 056 soc" />
+    <MESSAGE value="- pridane ZP 77" />
+    <MESSAGE value="- pridane 77 pre 020" />
+    <MESSAGE value="- pridane do 77" />
+    <MESSAGE value="- upravene avls" />
+    <MESSAGE value="- changes to 048, 001 and 010" />
+    <MESSAGE value="- upravene 020" />
+    <MESSAGE value="- pridane 011 a 027" />
+    <MESSAGE value="- pridane R vykony" />
+    <MESSAGE value="- pridana kontrola vykonov" />
+    <MESSAGE value="- pridane 056" />
+    <MESSAGE value="- pridane dovera nove ceny" />
+    <option name="LAST_COMMIT_MESSAGE" value="- pridane dovera nove ceny" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>grails-2.3.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>classes</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
