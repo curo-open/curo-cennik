@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- idea workspace">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upravene angio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/056/27-056-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/056/27-056-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/056/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/056/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/056/77-056-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/056/77-056-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/056/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/056/README.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -279,14 +275,12 @@
       <workItem from="1572462735360" duration="599000" />
       <workItem from="1572681967835" duration="597000" />
       <workItem from="1572860400971" duration="597000" />
-      <workItem from="1572884778734" duration="1956000" />
-    </task>
-    <task id="LOCAL-00046" summary="- upravene gastro">
-      <created>1549017856090</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1549017856091</updated>
+      <workItem from="1572884778734" duration="3063000" />
+      <workItem from="1573217207632" duration="596000" />
+      <workItem from="1573219233859" duration="597000" />
+      <workItem from="1573412927889" duration="592000" />
+      <workItem from="1573583478366" duration="597000" />
+      <workItem from="1573808018109" duration="599000" />
     </task>
     <task id="LOCAL-00047" summary="- upravene pl kvoli zvj">
       <created>1549031698223</created>
@@ -624,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573031623588</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="- upravene angio">
+      <created>1573049420471</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1573049420471</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +680,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- pridane soc" />
     <MESSAGE value="- upravene 25" />
     <MESSAGE value="- upravene gastro a int" />
     <MESSAGE value="- upravene gastro cena bodu" />
@@ -704,7 +704,8 @@
     <MESSAGE value="- changes, pridane body&#10;- upraven 020 EU veci&#10;- upravene kapitacie pre 008" />
     <MESSAGE value="- upravene 008" />
     <MESSAGE value="- idea workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="- idea workspace" />
+    <MESSAGE value="- upravene angio" />
+    <option name="LAST_COMMIT_MESSAGE" value="- upravene angio" />
   </component>
   <component name="masterDetails">
     <states>
