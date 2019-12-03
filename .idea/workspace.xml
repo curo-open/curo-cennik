@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upravene angio">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- zruseny overide pre mesocain" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,14 +278,7 @@
       <workItem from="1573219233859" duration="597000" />
       <workItem from="1573412927889" duration="592000" />
       <workItem from="1573583478366" duration="597000" />
-      <workItem from="1573808018109" duration="599000" />
-    </task>
-    <task id="LOCAL-00047" summary="- upravene pl kvoli zvj">
-      <created>1549031698223</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1549031698223</updated>
+      <workItem from="1573808018109" duration="1233000" />
     </task>
     <task id="LOCAL-00048" summary="- upravene 0001th">
       <created>1549264192414</created>
@@ -625,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573049420471</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="- zruseny overide pre mesocain">
+      <created>1574200398217</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1574200398217</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,7 +678,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravene 25" />
     <MESSAGE value="- upravene gastro a int" />
     <MESSAGE value="- upravene gastro cena bodu" />
     <MESSAGE value="- reverted 020 to not use body" />
@@ -705,7 +702,8 @@
     <MESSAGE value="- upravene 008" />
     <MESSAGE value="- idea workspace" />
     <MESSAGE value="- upravene angio" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upravene angio" />
+    <MESSAGE value="- zruseny overide pre mesocain" />
+    <option name="LAST_COMMIT_MESSAGE" value="- zruseny overide pre mesocain" />
   </component>
   <component name="masterDetails">
     <states>

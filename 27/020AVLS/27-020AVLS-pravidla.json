@@ -9,25 +9,25 @@
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 2.26,
+			"value": 2.38,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 2.59,
+			"value": 2.73,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 3.63,
+			"value": 2.38,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 3.98,
+			"value": 4.19,
 			"calc": "IDK+cena"
 		}
 	],
@@ -53,13 +53,13 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 15.7,
+			"value": 17.7,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Preventívne zisťovanie cukru v krvi",
 			"if": "vv.kod in ['3671']",
-			"value": 0.043,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -71,49 +71,49 @@
 		{
 			"label": "Očkovanie proti hepatitíde A",
 			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A+B",
 			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
 			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti pneumokokom",
 			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti kliestovej encefalitide",
 			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti tetanu",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti osýpkam",
 			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
-			"value": 0.0266,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -131,7 +131,7 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29']",
-			"value": 0.0237,
+			"value": 0.025,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -143,13 +143,13 @@
 		{
 			"label": "TOKS pozitívny",
 			"if": "vv.kod in ['159a']",
-			"value": 6.04,
+			"value": 8,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS negatívny",
 			"if": "vv.kod in ['159z']",
-			"value": 6.04,
+			"value": 8,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -161,20 +161,26 @@
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.043,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 10,
+			"value": 10.5,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "EKG (5702Z)",
 			"if": "vv.kod in ['5702Z','5702ZV']",
-			"value": 4.18,
+			"value": 4.41,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "EKG (5702)",
+			"if": "vv.kod in ['5702']",
+			"value": 0.0082,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "INR",
@@ -191,13 +197,19 @@
 		{
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301']",
-			"value": 0.0073,
+			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ABI (H0008)",
 			"if": "vv.kod in ['H0008']",
 			"value": 4.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "H0006",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
