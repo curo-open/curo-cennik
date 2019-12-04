@@ -65,7 +65,7 @@
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.diagnoza=='Z25.1' && vv.kod in ['252b']",
-			"value": 0.0482,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

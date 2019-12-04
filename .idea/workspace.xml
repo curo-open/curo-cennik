@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- zruseny overide pre mesocain" />
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- avls updated union">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/27-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/27-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLSDP/27-020AVLSDP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLSDP/27-020AVLSDP-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLSDP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLSDP/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/77/020/77-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/020/77-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/77/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/020/README.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,13 +289,7 @@
       <workItem from="1573412927889" duration="592000" />
       <workItem from="1573583478366" duration="597000" />
       <workItem from="1573808018109" duration="1233000" />
-    </task>
-    <task id="LOCAL-00048" summary="- upravene 0001th">
-      <created>1549264192414</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1549264192414</updated>
+      <workItem from="1575367984155" duration="645000" />
     </task>
     <task id="LOCAL-00049" summary="- upravene 001">
       <created>1549273163542</created>
@@ -623,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574200398217</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="- avls updated union">
+      <created>1575368009139</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1575368009140</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +689,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravene gastro a int" />
     <MESSAGE value="- upravene gastro cena bodu" />
     <MESSAGE value="- reverted 020 to not use body" />
     <MESSAGE value="- upravene 048" />
@@ -703,7 +713,8 @@
     <MESSAGE value="- idea workspace" />
     <MESSAGE value="- upravene angio" />
     <MESSAGE value="- zruseny overide pre mesocain" />
-    <option name="LAST_COMMIT_MESSAGE" value="- zruseny overide pre mesocain" />
+    <MESSAGE value="- avls updated union" />
+    <option name="LAST_COMMIT_MESSAGE" value="- avls updated union" />
   </component>
   <component name="masterDetails">
     <states>
