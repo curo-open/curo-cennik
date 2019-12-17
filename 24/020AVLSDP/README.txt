@@ -17,6 +17,15 @@ Autor: curo.sk
 │ PPH2 = 6.5      │ PPH2                            │
 │ PREDOP = 12.9   │ PREDOP                          │
 │ _4571a = 4      │ 4571a                           │
+│ CHRSTAR = 10    │ CHRSTAR                         │
+│ TELEKON = 1.3   │ TELEKON                         │
+│ HYPVST = 8      │ HYPVST                          │
+│ HYPKON = 5      │ HYPKON                          │
+│ HYPSTA = 4      │ HYPSTA                          │
+│ SKOR01 = 1.9    │ SKOR01                          │
+│ SKOR02 = 2.1    │ SKOR02                          │
+│ SKOR03 = 2.3    │ SKOR03                          │
+│ SKOR04 = 2.5    │ SKOR04                          │
 └─────────────────┴─────────────────────────────────┘
 
 
@@ -47,6 +56,15 @@ Autor: curo.sk
 │                 │ PPH2                      │ Pripočitateľné položky                        │ vv.kod=='PPH2'                                               │
 │                 │ PREDOP                    │ Pripočitateľné položky                        │ vv.kod=='PREDOP'                                             │
 │                 │ _4571a                    │ Pripočitateľné položky                        │ vv.kod=='4571a'                                              │
+│                 │ CHRSTAR                   │ Pripočitateľné položky                        │ vv.kod=='CHRSTAR'                                            │
+│                 │ TELEKON                   │ Pripočitateľné položky                        │ vv.kod=='TELEKON'                                            │
+│                 │ HYPVST                    │ Pripočitateľné položky                        │ vv.kod=='HYPVST'                                             │
+│                 │ HYPKON                    │ Pripočitateľné položky                        │ vv.kod=='HYPKON'                                             │
+│                 │ HYPSTA                    │ Pripočitateľné položky                        │ vv.kod=='HYPSTA'                                             │
+│                 │ SKOR01                    │ Pripočitateľné položky                        │ vv.kod=='SKOR01'                                             │
+│                 │ SKOR02                    │ Pripočitateľné položky                        │ vv.kod=='SKOR02'                                             │
+│                 │ SKOR03                    │ Pripočitateľné položky                        │ vv.kod=='SKOR03'                                             │
+│                 │ SKOR04                    │ Pripočitateľné položky                        │ vv.kod=='SKOR04'                                             │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │

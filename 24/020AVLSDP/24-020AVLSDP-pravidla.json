@@ -35,6 +35,42 @@
 		"_4571a": {
 			"label": "4571a",
 			"value": 4
+		},
+		"CHRSTAR": {
+			"label": "CHRSTAR",
+			"value": 10
+		},
+		"TELEKON": {
+			"label": "TELEKON",
+			"value": 1.3
+		},
+		"HYPVST": {
+			"label": "HYPVST",
+			"value": 8
+		},
+		"HYPKON": {
+			"label": "HYPKON",
+			"value": 5
+		},
+		"HYPSTA": {
+			"label": "HYPSTA",
+			"value": 4
+		},
+		"SKOR01": {
+			"label": "SKOR01",
+			"value": 1.9
+		},
+		"SKOR02": {
+			"label": "SKOR02",
+			"value": 2.1
+		},
+		"SKOR03": {
+			"label": "SKOR03",
+			"value": 2.3
+		},
+		"SKOR04": {
+			"label": "SKOR04",
+			"value": 2.5
 		}
 	},
 	"pacient": [
@@ -135,6 +171,60 @@
 			"if": "vv.kod=='4571a'",
 			"value": null,
 			"calc": "_4571a"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='CHRSTAR'",
+			"value": null,
+			"calc": "CHRSTAR"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='TELEKON'",
+			"value": null,
+			"calc": "TELEKON"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='HYPVST'",
+			"value": null,
+			"calc": "HYPVST"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='HYPKON'",
+			"value": null,
+			"calc": "HYPKON"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='HYPSTA'",
+			"value": null,
+			"calc": "HYPSTA"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='SKOR01'",
+			"value": null,
+			"calc": "SKOR01"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='SKOR02'",
+			"value": null,
+			"calc": "SKOR02"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='SKOR03'",
+			"value": null,
+			"calc": "SKOR03"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='SKOR04'",
+			"value": null,
+			"calc": "SKOR04"
 		},
 		{
 			"label": "Nekapitovaný - Vykon 4",
