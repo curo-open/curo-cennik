@@ -1,0 +1,72 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.0247
+		},
+		"CBEU": {
+			"label": "Cena bodu EU,Cudzinci",
+			"value": 0.0247
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0082
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 63",
+			"if": "vv.kod in ['63']",
+			"value": 4.7,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		}
+	],
+	"kontrola": [
+		{
+			"label": "Výkon nie je v zozname odsúhlasených výkonov",
+			"if": "p.vek >= 0",
+			"check": "d.vv|ma('kod in [\"60\",\"62\",\"63\",\"5734\",\"5735\",\"5736\",\"5737\",\"5738\",\"5739\",\"5740\",\"5741\",\"5742\",\"5743\",\"5702\",\"5702a\",\"15c\",\"5715\",\"5716\",\"250x\"]')",
+			"severity": 0
+		}
+	],
+	"body": {
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "onkologia"
+}

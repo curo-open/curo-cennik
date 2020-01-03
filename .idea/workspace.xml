@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added ZAP pre vld">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- dovera pomaha updaravena">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLSDP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLSDP/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,14 +292,7 @@
       <workItem from="1575718963179" duration="694000" />
       <workItem from="1576064088262" duration="597000" />
       <workItem from="1576217163701" duration="717000" />
-      <workItem from="1576479903649" duration="641000" />
-    </task>
-    <task id="LOCAL-00051" summary="- upravene 010">
-      <created>1549802910717</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1549802910717</updated>
+      <workItem from="1576479903649" duration="670000" />
     </task>
     <task id="LOCAL-00052" summary="- upravene 010">
       <created>1549803053666</created>
@@ -639,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575719055182</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="- dovera pomaha updaravena">
+      <created>1576569855671</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1576569855671</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +692,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravene 048" />
     <MESSAGE value="- upravene 001TH" />
     <MESSAGE value="- upravene 048 union" />
     <MESSAGE value="- upravene 144 union" />
@@ -719,7 +716,19 @@
     <MESSAGE value="- avls updated union" />
     <MESSAGE value="- avls a zvld updated union" />
     <MESSAGE value="- added ZAP pre vld" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added ZAP pre vld" />
+    <MESSAGE value="- dovera pomaha updaravena" />
+    <option name="LAST_COMMIT_MESSAGE" value="- dovera pomaha updaravena" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="33" y="127" width="1513" height="848" key="CommitChangelistDialog2" timestamp="1578034795459">
+      <screen x="0" y="0" width="6080" height="1440" />
+    </state>
+    <state x="33" y="127" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578034795459" />
+    <state x="399" y="162" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569855557" />
+    <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2" timestamp="1576569857293">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569857293" />
   </component>
   <component name="masterDetails">
     <states>
