@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- dovera pomaha updaravena">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 019 added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -293,13 +293,7 @@
       <workItem from="1576064088262" duration="597000" />
       <workItem from="1576217163701" duration="717000" />
       <workItem from="1576479903649" duration="670000" />
-    </task>
-    <task id="LOCAL-00052" summary="- upravene 010">
-      <created>1549803053666</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1549803053666</updated>
+      <workItem from="1578034744907" duration="1134000" />
     </task>
     <task id="LOCAL-00053" summary="- upravene 020">
       <created>1551770807082</created>
@@ -637,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576569855671</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="- 019 added">
+      <created>1578034986301</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1578034986301</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +693,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravene 001TH" />
     <MESSAGE value="- upravene 048 union" />
     <MESSAGE value="- upravene 144 union" />
     <MESSAGE value="- upravene 010 cena mesocain" />
@@ -717,17 +717,23 @@
     <MESSAGE value="- avls a zvld updated union" />
     <MESSAGE value="- added ZAP pre vld" />
     <MESSAGE value="- dovera pomaha updaravena" />
-    <option name="LAST_COMMIT_MESSAGE" value="- dovera pomaha updaravena" />
+    <MESSAGE value="- 019 added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 019 added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="33" y="127" width="1513" height="848" key="CommitChangelistDialog2" timestamp="1578034795459">
+    <state x="31" y="105" width="1513" height="848" key="CommitChangelistDialog2" timestamp="1578034986199">
       <screen x="0" y="0" width="6080" height="1440" />
     </state>
-    <state x="33" y="127" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578034795459" />
+    <state x="31" y="105" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578034986198" />
     <state x="399" y="162" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569855557" />
-    <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2" timestamp="1576569857293">
-      <screen x="0" y="0" width="1600" height="1200" />
+    <state x="640" y="485" width="309" height="155" key="VCS.ChangelistChooser" timestamp="1578035026730">
+      <screen x="0" y="0" width="6080" height="1440" />
     </state>
+    <state x="640" y="485" width="309" height="155" key="VCS.ChangelistChooser/0.0.6080.1440@0.0.6080.1440" timestamp="1578035026730" />
+    <state x="413" y="123" width="879" height="702" key="Vcs.Push.Dialog.v2" timestamp="1578034994696">
+      <screen x="0" y="0" width="6080" height="1440" />
+    </state>
+    <state x="413" y="123" width="879" height="702" key="Vcs.Push.Dialog.v2/0.0.6080.1440@0.0.6080.1440" timestamp="1578034994696" />
     <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569857293" />
   </component>
   <component name="masterDetails">
