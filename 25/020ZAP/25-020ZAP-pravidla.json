@@ -161,7 +161,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "EKG pri preventívnej prehliadke",
+			"label": "EKG",
 			"if": "vv.kod in ['5702']",
 			"value": 0.008105,
 			"calc": "vv.bodyCelkom*cena"
@@ -221,13 +221,13 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Inicialne I10",
+			"label": "Inicialne I10/E78 (H0003)",
 			"if": "vv.kod in ['H0003']",
 			"value": 12,
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Kontrolne I10",
+			"label": "Kontrolne I10/E78 (H0004)",
 			"if": "vv.kod in ['H0004']",
 			"value": 12,
 			"calc": "vv.pocet*cena"

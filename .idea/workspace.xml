@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 019 added">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- soc 019">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -293,21 +293,8 @@
       <workItem from="1576064088262" duration="597000" />
       <workItem from="1576217163701" duration="717000" />
       <workItem from="1576479903649" duration="670000" />
-      <workItem from="1578034744907" duration="1134000" />
-    </task>
-    <task id="LOCAL-00053" summary="- upravene 020">
-      <created>1551770807082</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1551770807082</updated>
-    </task>
-    <task id="LOCAL-00054" summary="- pridane soc">
-      <created>1552050287011</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1552050287012</updated>
+      <workItem from="1578034744907" duration="2469000" />
+      <workItem from="1578388990347" duration="868000" />
     </task>
     <task id="LOCAL-00055" summary="- upravene 25">
       <created>1553677426944</created>
@@ -638,7 +625,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578034986301</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="- idea">
+      <created>1578037772597</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1578037772597</updated>
+    </task>
+    <task id="LOCAL-00103" summary="- soc 019">
+      <created>1578037877049</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1578037877049</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,8 +694,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravene 048 union" />
-    <MESSAGE value="- upravene 144 union" />
     <MESSAGE value="- upravene 010 cena mesocain" />
     <MESSAGE value="- pridane 056 soc" />
     <MESSAGE value="- pridane ZP 77" />
@@ -718,23 +717,33 @@
     <MESSAGE value="- added ZAP pre vld" />
     <MESSAGE value="- dovera pomaha updaravena" />
     <MESSAGE value="- 019 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 019 added" />
+    <MESSAGE value="- idea" />
+    <MESSAGE value="- soc 019" />
+    <option name="LAST_COMMIT_MESSAGE" value="- soc 019" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="29" y="83" width="1513" height="848" key="CommitChangelistDialog2" timestamp="1578037772548">
+    <state x="27" y="61" width="1513" height="848" key="CommitChangelistDialog2" timestamp="1578037876990">
       <screen x="0" y="0" width="6080" height="1440" />
     </state>
-    <state x="29" y="83" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037772548" />
+    <state x="27" y="61" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037876990" />
     <state x="399" y="162" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569855557" />
-    <state x="640" y="485" width="309" height="155" key="VCS.ChangelistChooser" timestamp="1578035026730">
+    <state x="638" y="463" width="309" height="155" key="VCS.ChangelistChooser" timestamp="1578037888168">
       <screen x="0" y="0" width="6080" height="1440" />
     </state>
-    <state x="640" y="485" width="309" height="155" key="VCS.ChangelistChooser/0.0.6080.1440@0.0.6080.1440" timestamp="1578035026730" />
-    <state x="409" y="79" width="879" height="702" key="Vcs.Push.Dialog.v2" timestamp="1578037790720">
+    <state x="638" y="463" width="309" height="155" key="VCS.ChangelistChooser/0.0.6080.1440@0.0.6080.1440" timestamp="1578037888168" />
+    <state x="407" y="57" width="879" height="702" key="Vcs.Push.Dialog.v2" timestamp="1578037879879">
       <screen x="0" y="0" width="6080" height="1440" />
     </state>
-    <state x="409" y="79" width="879" height="702" key="Vcs.Push.Dialog.v2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037790720" />
+    <state x="407" y="57" width="879" height="702" key="Vcs.Push.Dialog.v2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037879879" />
     <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569857293" />
+    <state x="454" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1578389008756">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="454" y="393" key="com.intellij.ide.util.TipDialog/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578389008756" />
+    <state x="463" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1578389244003">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="463" y="263" width="672" height="678" key="search.everywhere.popup/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578389244003" />
   </component>
   <component name="masterDetails">
     <states>
