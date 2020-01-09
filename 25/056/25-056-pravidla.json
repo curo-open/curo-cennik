@@ -102,7 +102,14 @@
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],
-	"kontrola": [],
+	"kontrola": [
+		{
+			"label": "Výkon 250a,b nie je akceptovaný vo VšZP, použite 250X",
+			"if": "p.vek >= 0",
+			"check": "d.vv|ma('kod in [\"250a\",\"250b\"]')",
+			"severity": 0
+		}
+	],
 	"body": {
 		"60": [
 			{
