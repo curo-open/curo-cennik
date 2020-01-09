@@ -722,23 +722,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="- 056 validacie" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="301" y="-69" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578569815586">
+    <state x="299" y="-91" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578570211477">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="27" y="61" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037876990" />
     <state x="399" y="162" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569855557" />
-    <state x="301" y="-69" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578569815586" />
-    <state x="166" y="364" width="309" height="149" key="VCS.ChangelistChooser" timestamp="1578565311503">
+    <state x="299" y="-91" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578570211477" />
+    <state x="164" y="342" width="309" height="149" key="VCS.ChangelistChooser" timestamp="1578570229519">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="638" y="463" width="309" height="155" key="VCS.ChangelistChooser/0.0.6080.1440@0.0.6080.1440" timestamp="1578037888168" />
-    <state x="166" y="364" width="309" height="149" key="VCS.ChangelistChooser/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578565311503" />
-    <state x="99" y="-40" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1578569816999">
+    <state x="164" y="342" width="309" height="149" key="VCS.ChangelistChooser/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578570229519" />
+    <state x="97" y="-62" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1578570213864">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="407" y="57" width="879" height="702" key="Vcs.Push.Dialog.v2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037879879" />
     <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569857293" />
-    <state x="99" y="-40" width="525" height="585" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578569816999" />
+    <state x="97" y="-62" width="525" height="585" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578570213864" />
     <state x="454" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1578389008756">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
