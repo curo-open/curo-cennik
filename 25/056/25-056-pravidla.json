@@ -106,12 +106,6 @@
 		{
 			"label": "Výkon 250a,b nie je akceptovaný vo VšZP, použite 250X",
 			"if": "p.vek >= 0",
-			"check": "d.vv|ma('kod in [\"250a\",\"250b\"]')",
-			"severity": 0
-		},
-		{
-			"label": "len Výkon 250a,b nie je akceptovaný vo VšZP, použite 250X",
-			"if": "p.vek >= 0",
 			"check": "vv.kod in [\"250a\",\"250b\"]'",
 			"severity": 0
 		}
