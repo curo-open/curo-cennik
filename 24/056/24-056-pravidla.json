@@ -72,7 +72,7 @@
 		{
 			"label": "Výkon 250X nie je akceptovaný vo Dôvere, použite 250a alebo 250b",
 			"if": "p.vek >= 0",
-			"check": "d.vv|ma('kod in [\"250X\"]')",
+			"check": "d.vv|ma('!(kod in [\"250X\"])')",
 			"severity": 0
 		}
 	],

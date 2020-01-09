@@ -294,21 +294,7 @@
       <workItem from="1576217163701" duration="717000" />
       <workItem from="1576479903649" duration="670000" />
       <workItem from="1578034744907" duration="2469000" />
-      <workItem from="1578388990347" duration="5863000" />
-    </task>
-    <task id="LOCAL-00059" summary="- upravene gastro cena bodu">
-      <created>1553877196157</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1553877196157</updated>
-    </task>
-    <task id="LOCAL-00060" summary="- upravene 144 union">
-      <created>1554139254320</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1554139254320</updated>
+      <workItem from="1578388990347" duration="6195000" />
     </task>
     <task id="LOCAL-00061" summary="- upravene 144 union">
       <created>1554904822029</created>
@@ -639,7 +625,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578569815662</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="- 056 validacie">
+      <created>1578570211589</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1578570211590</updated>
+    </task>
+    <task id="LOCAL-00109" summary="- 056 validacie">
+      <created>1578570246602</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1578570246602</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,12 +722,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="- 056 validacie" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="299" y="-91" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578570211477">
+    <state x="293" y="133" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578570367885">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="27" y="61" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037876990" />
     <state x="399" y="162" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569855557" />
-    <state x="299" y="-91" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578570211477" />
+    <state x="293" y="133" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578570367885" />
     <state x="164" y="342" width="309" height="149" key="VCS.ChangelistChooser" timestamp="1578570229519">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
