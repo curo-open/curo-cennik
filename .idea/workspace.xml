@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 056 validacie">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 020 ZAP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020ZAP/24-020ZAP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020ZAP/24-020ZAP-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020ZAP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020ZAP/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020ZAP/27-020ZAP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020ZAP/27-020ZAP-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020ZAP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020ZAP/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +294,7 @@
       <workItem from="1576217163701" duration="717000" />
       <workItem from="1576479903649" duration="670000" />
       <workItem from="1578034744907" duration="2469000" />
-      <workItem from="1578388990347" duration="10316000" />
-    </task>
-    <task id="LOCAL-00064" summary="- reverted 020 to not use body">
-      <created>1556609475703</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1556609475703</updated>
+      <workItem from="1578388990347" duration="11535000" />
     </task>
     <task id="LOCAL-00065" summary="- upravene 048">
       <created>1556654936498</created>
@@ -643,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578571474716</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="- 020 ZAP">
+      <created>1578661841865</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1578661841865</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +694,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- pridane ZP 77" />
     <MESSAGE value="- pridane 77 pre 020" />
     <MESSAGE value="- pridane do 77" />
     <MESSAGE value="- upravene avls" />
@@ -723,26 +718,27 @@
     <MESSAGE value="- soc 019" />
     <MESSAGE value="- 020 ekg a i10 upravy&#10;- 048 zmena ceny bodu vykonu" />
     <MESSAGE value="- 056 validacie" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 056 validacie" />
+    <MESSAGE value="- 020 ZAP" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 020 ZAP" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="287" y="67" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578571474620">
+    <state x="283" y="23" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578668423074">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="27" y="61" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037876990" />
     <state x="399" y="162" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569855557" />
-    <state x="287" y="67" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578571474620" />
-    <state x="164" y="342" width="309" height="149" key="VCS.ChangelistChooser" timestamp="1578570229519">
+    <state x="283" y="23" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578668423074" />
+    <state x="162" y="320" width="309" height="149" key="VCS.ChangelistChooser" timestamp="1578661852004">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="638" y="463" width="309" height="155" key="VCS.ChangelistChooser/0.0.6080.1440@0.0.6080.1440" timestamp="1578037888168" />
-    <state x="164" y="342" width="309" height="149" key="VCS.ChangelistChooser/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578570229519" />
-    <state x="91" y="-128" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1578571475968">
+    <state x="162" y="320" width="309" height="149" key="VCS.ChangelistChooser/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578661852004" />
+    <state x="89" y="-150" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1578661843182">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="407" y="57" width="879" height="702" key="Vcs.Push.Dialog.v2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037879879" />
     <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569857293" />
-    <state x="91" y="-128" width="525" height="585" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578571475968" />
+    <state x="89" y="-150" width="525" height="585" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578661843182" />
     <state x="454" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1578389008756">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>

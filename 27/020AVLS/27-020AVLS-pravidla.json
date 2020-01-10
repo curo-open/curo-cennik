@@ -21,7 +21,7 @@
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 2.38,
+			"value": 3.82,
 			"calc": "IDK+cena"
 		},
 		{
@@ -35,19 +35,19 @@
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": 0.015,
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": 0.0073,
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": 0.015,
+			"value": 0.082,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -114,12 +114,6 @@
 			"label": "Očkovanie proti osýpkam",
 			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
 			"value": 0.0485,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "EKG",
-			"if": "vv.kod in ['5702']",
-			"value": 0.0076,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

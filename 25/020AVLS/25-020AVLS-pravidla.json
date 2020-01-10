@@ -17,79 +17,79 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 3.02,
+			"value": 3.22,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 20 do 29",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": 2.47,
+			"value": 2.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 29 do 40",
 			"if": "p.kapitacia && p|vekMedzi(29, 40)",
-			"value": 2.47,
+			"value": 2.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 40 do 45",
 			"if": "p.kapitacia && p|vekMedzi(40, 45)",
-			"value": 2.51,
+			"value": 2.64,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 45 do 50",
 			"if": "p.kapitacia && p|vekMedzi(45, 50)",
-			"value": 2.56,
+			"value": 2.69,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 50 do 55",
 			"if": "p.kapitacia && p|vekMedzi(50, 55)",
-			"value": 2.63,
+			"value": 2.71,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 55 do 60",
 			"if": "p.kapitacia && p|vekMedzi(55, 60)",
-			"value": 2.74,
+			"value": 2.82,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 60 do 65",
 			"if": "p.kapitacia && p|vekMedzi(60, 65)",
-			"value": 2.87,
+			"value": 2.95,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 65 do 70",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 3.08,
+			"value": 3.16,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 70 do 75",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 3.2,
+			"value": 3.28,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 75 do 80",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 3.31,
+			"value": 3.39,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 80 do 85",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 3.65,
+			"value": 3.73,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 3.72,
+			"value": 3.8,
 			"calc": "IDK+cena"
 		}
 	],
@@ -201,6 +201,12 @@
 			"if": "vv.kod in ['5702c']",
 			"value": 0.007303,
 			"calc": "vv.pocet*500*cena"
+		},
+		{
+			"label": "Výkon 163",
+			"if": "vv.kod in ['163']",
+			"value": 6,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS pozitívny",
