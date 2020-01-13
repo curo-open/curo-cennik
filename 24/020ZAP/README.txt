@@ -16,18 +16,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 19 │          2.95 │ IDK+cena │ p|vekMedzi(18, 19) │
-│ vek od 19 do 27 │          1.95 │ IDK+cena │ p|vekMedzi(19, 27) │
-│ vek od 27 do 45 │          2.05 │ IDK+cena │ p|vekMedzi(27, 45) │
-│ vek od 45 do 51 │          2.07 │ IDK+cena │ p|vekMedzi(45, 51) │
-│ vek od 51 do 53 │          2.21 │ IDK+cena │ p|vekMedzi(51, 53) │
-│ vek od 53 do 57 │          2.38 │ IDK+cena │ p|vekMedzi(53, 57) │
-│ vek od 57 do 61 │          2.59 │ IDK+cena │ p|vekMedzi(57, 61) │
-│ vek od 61 do 64 │          2.88 │ IDK+cena │ p|vekMedzi(61, 64) │
-│ vek od 64 do 68 │          3.05 │ IDK+cena │ p|vekMedzi(64, 68) │
-│ vek od 68 do 72 │          3.29 │ IDK+cena │ p|vekMedzi(68, 72) │
-│ vek od 72 do 87 │           3.7 │ IDK+cena │ p|vekMedzi(72, 87) │
-│ vek od 87+      │          3.66 │ IDK+cena │ p|vekMedzi(87)     │
+│ vek od 18 do 19 │          3.22 │ IDK+cena │ p|vekMedzi(18, 19) │
+│ vek od 19 do 27 │          2.13 │ IDK+cena │ p|vekMedzi(19, 27) │
+│ vek od 27 do 45 │          2.24 │ IDK+cena │ p|vekMedzi(27, 45) │
+│ vek od 45 do 51 │          2.26 │ IDK+cena │ p|vekMedzi(45, 51) │
+│ vek od 51 do 53 │           2.4 │ IDK+cena │ p|vekMedzi(51, 53) │
+│ vek od 53 do 57 │           2.6 │ IDK+cena │ p|vekMedzi(53, 57) │
+│ vek od 57 do 61 │          2.84 │ IDK+cena │ p|vekMedzi(57, 61) │
+│ vek od 61 do 64 │          3.14 │ IDK+cena │ p|vekMedzi(61, 64) │
+│ vek od 64 do 68 │          3.33 │ IDK+cena │ p|vekMedzi(64, 68) │
+│ vek od 68 do 72 │          3.59 │ IDK+cena │ p|vekMedzi(68, 72) │
+│ vek od 72 do 87 │          4.03 │ IDK+cena │ p|vekMedzi(72, 87) │
+│ vek od 87+      │             4 │ IDK+cena │ p|vekMedzi(87)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
