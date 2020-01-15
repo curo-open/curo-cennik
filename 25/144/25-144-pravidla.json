@@ -12,6 +12,10 @@
 			"label": "IPP3",
 			"value": 3.43
 		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 4.9
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 75900

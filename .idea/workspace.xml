@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 020 AVLS">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 020 ZAP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020ZAP/24-020ZAP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020ZAP/24-020ZAP-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020ZAP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020ZAP/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +295,8 @@
       <workItem from="1576479903649" duration="670000" />
       <workItem from="1578034744907" duration="2469000" />
       <workItem from="1578388990347" duration="12756000" />
-      <workItem from="1578684323834" duration="598000" />
-    </task>
-    <task id="LOCAL-00066" summary="- upravene 001TH">
-      <created>1556729745676</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1556729745676</updated>
+      <workItem from="1578684323834" duration="1826000" />
+      <workItem from="1578942947352" duration="2951000" />
     </task>
     <task id="LOCAL-00067" summary="- upravene 144 union">
       <created>1556730602391</created>
@@ -642,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578668434674</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="- 020 ZAP">
+      <created>1578906181626</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1578906181626</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -720,32 +719,35 @@
     <MESSAGE value="- soc 019" />
     <MESSAGE value="- 020 ekg a i10 upravy&#10;- 048 zmena ceny bodu vykonu" />
     <MESSAGE value="- 056 validacie" />
-    <MESSAGE value="- 020 ZAP" />
     <MESSAGE value="- 020 AVLS" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 020 AVLS" />
+    <MESSAGE value="- 020 ZAP" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 020 ZAP" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="281" y="1" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578668434384">
-      <screen x="0" y="0" width="1600" height="1200" />
+    <state x="335" y="-21" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1578906181508">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="27" y="61" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037876990" />
     <state x="399" y="162" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569855557" />
     <state x="281" y="1" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578668434384" />
+    <state x="335" y="-21" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1578906181508" />
     <state x="162" y="320" width="309" height="149" key="VCS.ChangelistChooser" timestamp="1578661852004">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="638" y="463" width="309" height="155" key="VCS.ChangelistChooser/0.0.6080.1440@0.0.6080.1440" timestamp="1578037888168" />
     <state x="162" y="320" width="309" height="149" key="VCS.ChangelistChooser/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578661852004" />
-    <state x="87" y="-172" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1578668436166">
-      <screen x="0" y="0" width="1600" height="1200" />
+    <state x="102" y="-177" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1578906183081">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="407" y="57" width="879" height="702" key="Vcs.Push.Dialog.v2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037879879" />
     <state x="393" y="302" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1576569857293" />
     <state x="87" y="-172" width="525" height="585" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578668436166" />
-    <state x="454" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1578389008756">
-      <screen x="0" y="0" width="1600" height="1200" />
+    <state x="102" y="-177" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1578906183081" />
+    <state x="2463" y="332" key="com.intellij.ide.util.TipDialog" timestamp="1578942975627">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="393" key="com.intellij.ide.util.TipDialog/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578389008756" />
+    <state x="2463" y="332" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578942975627" />
     <state x="463" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1578389244003">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>

@@ -2,15 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.17
+			"value": 1.8
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 1.89
+			"value": 2.9
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 3.19
+			"value": 4.9
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 4.9
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -19,6 +23,18 @@
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
 			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.0252
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.008105
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.008473
 		}
 	},
 	"pacient": [],
@@ -26,8 +42,8 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.0202,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 250x",
@@ -62,26 +78,26 @@
 		{
 			"label": "Výkon 765p",
 			"if": "vv.kod in ['765p']",
-			"value": 0.0229,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
-			"value": 0.0229,
-			"calc": "vv.pocet*420*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
-			"value": 0.0229,
-			"calc": "vv.pocet*270*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
-			"value": 0.0229,
-			"calc": "vv.pocet*210*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Pripočitateľné položky",
@@ -104,30 +120,55 @@
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.007303,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 620
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 400
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 310
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "vnútorné lekárstvo"

@@ -11,6 +11,7 @@ Autor: curo.sk
 │ IPP1 = 1.26     │ IPP1                  │
 │ IPP2 = 2.03     │ IPP2                  │
 │ IPP3 = 3.43     │ IPP3                  │
+│ IPP4 = 4.9      │ IPP4                  │
 │ LIMIT = 75900   │ Limit                 │
 │ EL_POBOCKA = 1  │ Používa el. pobočku ? │
 └─────────────────┴───────────────────────┘
