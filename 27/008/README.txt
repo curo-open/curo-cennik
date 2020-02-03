@@ -113,7 +113,7 @@ Autor: curo.sk
 │ Preventivný výkon 149b mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["149b"]')            │ pacient.vekDni|vMesiacoch >= 169 || pacient.vekDni|v │
 │ oleného rozpǎtia (169-192 mesia │            │                                                      │ Mesiacoch < 192                                      │
 │ cov)                            │            │                                                      │                                                      │
-│ Preventivný výkon 149d mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["149d"]')            │ p.vek == 17                                          │
+│ Preventivný výkon 149d mimo dov │     0      │ p.kapitacia && d.vv|ma('kod in ["149d"]')            │ p.vek >= 16                                          │
 │ oleného rozpǎtia (iiba v 17 rok │            │                                                      │                                                      │
 │ u)                              │            │                                                      │                                                      │
 │ Preventivka: chyba vykon(950),  │     0      │ p.kapitacia && vv.kod in ['145', '145a', '146', '146 │ !(d.vv|ma('kod=="950"'))                             │

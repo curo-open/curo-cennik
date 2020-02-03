@@ -14,40 +14,10 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
-			"value": 9.41,
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 4.5,
 			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 62",
-			"if": "vv.kod in ['62']",
-			"value": 6.05,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 63",
-			"if": "vv.kod in ['63']",
-			"value": 4.7,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 60r",
-			"if": "vv.kod in ['60r']",
-			"value": 10.75,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 65 do 5r",
-			"if": "vv.kod in ['65'] && p|vekMedzi(0, 5)",
-			"value": 3.36,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 66",
-			"if": "vv.kod in ['65']",
-			"value": 0.0224,
-			"calc": "vv.pocet*100*cena"
 		},
 		{
 			"label": "Výkon 5330,5331,5332",
@@ -64,30 +34,67 @@
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.0224,
+			"value": 0.0237,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.007665,
+			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
+			"label": "Výkony ŠAS",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.0224,
+			"value": 0.0237,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony",
+			"label": "Výkony ŠAS",
 			"if": "1",
-			"value": 0.0224,
+			"value": 0.0237,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "klinicka psychologia"

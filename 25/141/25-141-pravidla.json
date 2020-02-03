@@ -82,6 +82,12 @@
 			"calc": "IPP3"
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4"
+		},
+		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "EL_POBOCKA && p.typ in ['BE','CU','EU']",
 			"value": 0.0247,

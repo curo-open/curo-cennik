@@ -259,7 +259,7 @@
 		{
 			"label": "Preventivný výkon 149d mimo dovoleného rozpǎtia (iiba v 17 roku) ",
 			"if": "p.kapitacia && d.vv|ma('kod in [\"149d\"]')",
-			"check": "p.vek == 17",
+			"check": "p.vek >= 16",
 			"severity": 0
 		},
 		{
