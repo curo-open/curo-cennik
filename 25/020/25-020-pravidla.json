@@ -203,6 +203,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 163",
+			"if": "vv.kod in ['163']",
+			"value": 6,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "TOKS pozitívny",
 			"if": "vv.kod in ['159a']",
 			"value": 12,

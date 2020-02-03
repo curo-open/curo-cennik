@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.69
+			"value": 0
 		}
 	},
 	"pacient": [
@@ -41,7 +41,7 @@
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": 0.0073,
+			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

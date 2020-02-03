@@ -2,32 +2,32 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.69
+			"value": 0
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 3.21,
+			"value": 2.4,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 3.86,
+			"value": 2.75,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 4.65,
+			"value": 3.84,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 5.02,
+			"value": 4.21,
 			"calc": "IDK+cena"
 		}
 	],
@@ -41,7 +41,7 @@
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": 0.0073,
+			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -75,7 +75,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Očkovanie proti hepatitíde B",
+			"label": "Očkovanie proti hepatitíde B/Tetanus",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
 			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
@@ -105,7 +105,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Očkovanie proti tetanu",
+			"label": "Očkovanie proti hepatitíde B/Tetanus",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
 			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"

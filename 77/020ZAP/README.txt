@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬────────────────┐
 │ Názov a hodnota │ Popis          │
 ├─────────────────┼────────────────┤
-│ IDK = 0.69      │ NASTAVENIA IDK │
+│ IDK = 0         │ NASTAVENIA IDK │
 └─────────────────┴────────────────┘
 
 
@@ -16,10 +16,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 51 │          3.21 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          3.86 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │          4.65 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+      │          5.02 │ IDK+cena │ p|vekMedzi(81)     │
+│ vek od 18 do 51 │           2.4 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          2.75 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │          3.84 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 81+      │          4.21 │ IDK+cena │ p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -28,18 +28,18 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
-│          0.0073 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
+│          0.0082 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
 │           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
 │            17.7 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │          0.0485 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
-│          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B/Tetanus          │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
-│          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B/Tetanus          │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
 │                 │                           │                                               │ vv.kod in ['252b']                                           │
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │

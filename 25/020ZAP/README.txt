@@ -18,19 +18,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 20 │          3.02 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ vek od 20 do 29 │          2.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ vek od 29 do 40 │          2.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ vek od 40 do 45 │          2.51 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ vek od 45 do 50 │          2.56 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ vek od 50 do 55 │          2.63 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ vek od 55 do 60 │          2.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ vek od 60 do 65 │          2.87 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 70 │          3.08 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 75 │           3.2 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ vek od 75 do 80 │          3.31 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 85 │          3.65 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek od 85+      │          3.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ vek od 18 do 20 │          3.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ vek od 20 do 29 │           2.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ vek od 29 do 40 │           2.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ vek od 40 do 45 │          2.64 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ vek od 45 do 50 │          2.69 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ vek od 50 do 55 │          2.71 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ vek od 55 do 60 │          2.82 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ vek od 60 do 65 │          2.95 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ vek od 65 do 70 │          3.16 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ vek od 70 do 75 │          3.28 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ vek od 75 do 80 │          3.39 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ vek od 80 do 85 │          3.73 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ vek od 85+      │           3.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -56,6 +56,7 @@ Autor: curo.sk
 │           0.041 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
 │        0.020995 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
 │        0.007303 │ vv.bodyCelkom*cena        │ Akútne EKG                                    │ vv.kod in ['5702c']                                          │
+│               6 │ vv.pocet*cena             │ Výkon 163                                     │ vv.kod in ['163']                                            │
 │              12 │ vv.pocet*cena             │ TOKS pozitívny                                │ vv.kod in ['159a']                                           │
 │              12 │ vv.pocet*cena             │ TOKS negatívny                                │ vv.kod in ['159z']                                           │
 │            3.02 │ vv.pocet*cena             │ TOKS znehodnotený                             │ vv.kod in ['159x']                                           │
@@ -80,10 +81,12 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             180 │ 10                                                                                                        │                           │
+│             285 │ 25                                                                                                        │                           │
+│             500 │ 26                                                                                                        │                           │
 │             350 │ 60                                                                                                        │                           │
 │             390 │ 160                                                                                                       │                           │
 │             550 │ 5702                                                                                                      │                           │
-│             550 │ 5715                                                                                                      │                           │
+│             750 │ 5715                                                                                                      │                           │
 │             240 │ 5716                                                                                                      │                           │
 │             550 │ 5702P                                                                                                     │                           │
 │              70 │ 252b                                                                                                      │                           │
