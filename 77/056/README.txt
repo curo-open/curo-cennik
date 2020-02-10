@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌──────────────────┬──────────────────────────────┐
 │ Názov a hodnota  │ Popis                        │
 ├──────────────────┼──────────────────────────────┤
-│ VCB = 0.0237     │ Vypočitaná cena bodu         │
+│ CB = 0.0237      │ Vypočitaná cena bodu         │
 │ CBP = 0.0455     │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ              │
 │ LIMIT = 0        │ Limit                        │
@@ -34,8 +34,8 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

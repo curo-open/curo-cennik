@@ -1,6 +1,6 @@
 {
 	"params": {
-		"VCB": {
+		"CB": {
 			"label": "Vypočitaná cena bodu",
 			"value": 0.0237
 		},
@@ -71,13 +71,13 @@
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*VCB"
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [
