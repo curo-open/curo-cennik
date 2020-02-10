@@ -30,6 +30,10 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
+			"value": 0.008105
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
 			"value": 0.008473
 		}
 	},
@@ -57,7 +61,7 @@
 			"label": "USG",
 			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZUSG"
 		},
 		{
 			"label": "EKG",

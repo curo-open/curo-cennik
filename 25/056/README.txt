@@ -5,18 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬──────────────────────────────┐
-│ Názov a hodnota    │ Popis                        │
-├────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.17        │ IPP1                         │
-│ IPP2 = 1.89        │ IPP2                         │
-│ IPP3 = 3.19        │ IPP3                         │
-│ LIMIT = 75900      │ Limit                        │
-│ EL_POBOCKA = 1     │ Používa el. pobočku ?        │
-│ CB = 0.0247        │ Cena bodu                    │
-│ CBP = 0.041        │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.008473 │ Cena bodu SVaLZ              │
-└────────────────────┴──────────────────────────────┘
+┌───────────────────────┬──────────────────────────────┐
+│ Názov a hodnota       │ Popis                        │
+├───────────────────────┼──────────────────────────────┤
+│ IPP1 = 1.17           │ IPP1                         │
+│ IPP2 = 1.89           │ IPP2                         │
+│ IPP3 = 3.19           │ IPP3                         │
+│ LIMIT = 75900         │ Limit                        │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
+│ CB = 0.0247           │ Cena bodu                    │
+│ CBP = 0.041           │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
+└───────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -32,7 +33,7 @@ Autor: curo.sk
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│                 │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
+│                 │ vv.bodyCelkom*CBSVALZUSG  │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │                 │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │                 │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
