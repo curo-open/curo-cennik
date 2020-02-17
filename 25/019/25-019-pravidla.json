@@ -87,6 +87,12 @@
 				"cond": "",
 				"value": 210
 			}
+		],
+		"205X": [
+			{
+				"cond": "",
+				"value": 0
+			}
 		]
 	},
 	"liekByCode": {},
