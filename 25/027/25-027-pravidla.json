@@ -22,15 +22,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.013166
+			"value": 0.0252
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.041
+			"value": 0.0252
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009008
+			"value": 0.00908
 		}
 	},
 	"pacient": [],
@@ -52,6 +52,12 @@
 			"if": "vv.kod=='IPP3'",
 			"value": null,
 			"calc": "IPP3"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.kod in ['509a','512','513','514a','522','530','531','532']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "ŠAS",

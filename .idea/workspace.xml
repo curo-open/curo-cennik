@@ -5,9 +5,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/24/019/24-019-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/019/24-019-pravidla.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/24/019/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/019/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/027/24-027-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/027/24-027-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/027/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/027/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/25/019/25-019-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/019/25-019-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/027/25-027-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/027/25-027-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/027/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/027/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/27/019/27-019-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/019/27-019-pravidla.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/27/019/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/019/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/27-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/27-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/027/27-027-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/027/27-027-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/027/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/027/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/056/27-056-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/056/27-056-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/056/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/056/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,14 +323,10 @@
       <workItem from="1580493412076" duration="590000" />
       <workItem from="1580641343032" duration="5859000" />
       <workItem from="1581059761718" duration="4144000" />
-      <workItem from="1581575996928" duration="1878000" />
-    </task>
-    <task id="LOCAL-00075" summary="- pridane ZP 77">
-      <created>1562077354814</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1562077354815</updated>
+      <workItem from="1581575996928" duration="3105000" />
+      <workItem from="1582796468280" duration="48000" />
+      <workItem from="1582796536137" duration="3065000" />
+      <workItem from="1583166189126" duration="2221000" />
     </task>
     <task id="LOCAL-00076" summary="- pridane 77 pre 020">
       <created>1562156849131</created>
@@ -656,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581943409488</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="- 019 -reset ceny bodov na 0">
+      <created>1582013953170</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1582013953170</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -739,31 +754,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="- 019 -reset ceny bodov na 0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="389" y="52" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1581943409429">
-      <screen x="0" y="0" width="1600" height="1200" />
+    <state x="462" y="5" width="1089" height="921" key="CommitChangelistDialog2" timestamp="1583422030669">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="462" y="5" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583422030669" />
     <state x="27" y="61" width="1513" height="848" key="CommitChangelistDialog2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037876990" />
-    <state x="389" y="52" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1581943409429" />
+    <state x="387" y="30" width="792" height="801" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1582013952956" />
     <state x="271" y="-109" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1581361295603" />
     <state x="325" y="29" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1581000027254" />
     <state x="2247" y="51" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1580759128613" />
+    <state x="0" y="0" width="1920" height="1056" key="DiffContextDialog" timestamp="1583422445406">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="1920" height="1056" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583422445406" />
     <state x="158" y="276" width="309" height="149" key="VCS.ChangelistChooser" timestamp="1581943395084">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="638" y="463" width="309" height="155" key="VCS.ChangelistChooser/0.0.6080.1440@0.0.6080.1440" timestamp="1578037888168" />
     <state x="158" y="276" key="VCS.ChangelistChooser/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1581943395084" />
     <state x="160" y="298" width="309" height="149" key="VCS.ChangelistChooser/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1581360252226" />
-    <state x="389" y="258" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1581943410657">
+    <state x="387" y="236" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1582013956493">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="407" y="57" width="879" height="702" key="Vcs.Push.Dialog.v2/0.0.6080.1440@0.0.6080.1440" timestamp="1578037879879" />
-    <state x="389" y="258" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1581943410657" />
+    <state x="387" y="236" width="804" height="522" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1582013956493" />
     <state x="83" y="-216" width="525" height="585" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1581361296883" />
     <state x="94" y="-265" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1581000029124" />
     <state x="2016" y="-243" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1580759130288" />
-    <state x="541" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1579291409067">
+    <state x="0" y="0" width="1920" height="1056" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583422191335">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="0" y="0" width="1920" height="1056" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583422191335" />
+    <state x="449" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1582796566527">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="449" y="322" key="com.intellij.ide.util.TipDialog/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1582796566527" />
     <state x="454" y="393" key="com.intellij.ide.util.TipDialog/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1578389008756" />
     <state x="541" y="310" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579291409067" />
     <state x="2463" y="332" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578942975627" />
