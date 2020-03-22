@@ -25,15 +25,17 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            6.05 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['62']                                             │
-│             4.7 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            9.83 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60']                                             │
+│            6.32 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['62']                                             │
+│            4.91 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['63']                                             │
 │            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60r']                                            │
-│            3.36 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['65'] && p|vekMedzi(0, 5)                         │
+│            4.56 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['Y0023']                                          │
 │          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│             129 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
+│                 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','522','530','531']      │
+│                 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │               0 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │

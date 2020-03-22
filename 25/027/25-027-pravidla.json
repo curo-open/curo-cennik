@@ -22,15 +22,19 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0252
+			"value": 0.0247
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0252
+			"value": 0.041
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00908
+		},
+		"CBSVALZSP": {
+			"label": "Cena bodu SVaLZ SP",
+			"value": 0.008
 		}
 	},
 	"pacient": [],
@@ -55,15 +59,27 @@
 		},
 		{
 			"label": "SVALZ výkony",
-			"if": "vv.kod in ['509a','512','513','514a','522','530','531','532']",
+			"if": "vv.kod in ['509a','512','513','514a','522','530','531']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZSP"
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
+			"label": "SVALZ výkony",
+			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CBSVALZSP"
+		},
+		{
+			"label": "SVALZ výkony (250X)",
+			"if": "vv.kod in ['250X']",
+			"value": 2.98,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0202,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ŠAS",

@@ -22,19 +22,19 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
-			"value": 9.41,
+			"value": 9.83,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
-			"value": 6.05,
+			"value": 6.32,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
-			"value": 4.7,
+			"value": 4.91,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -45,8 +45,8 @@
 		},
 		{
 			"label": "ŠAS",
-			"if": "vv.kod in ['65'] && p|vekMedzi(0, 5)",
-			"value": 3.36,
+			"if": "vv.kod in ['Y0023']",
+			"value": 4.56,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -62,16 +62,28 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Preventívne výkony",
+			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
+			"value": 129,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "SVALZ výkony",
-			"if": "vv.kod in ['5300','5301','5702']",
+			"if": "vv.kod in ['509a','512','513','514a','522','530','531']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZSP"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.kod in ['532','533a','540','541','542']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZSP"
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
