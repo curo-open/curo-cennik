@@ -111,6 +111,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 1 - COVID",
+			"if": "vv.kod in ['1']",
+			"value": 0.022089,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
 			"value": 0.04851,
@@ -179,6 +185,12 @@
 	],
 	"kontrola": [],
 	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
 		"160": [
 			{
 				"cond": "",

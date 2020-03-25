@@ -61,6 +61,12 @@
 		},
 		{
 			"label": "ŠAS",
+			"if": "vv.kod in ['5702','5715','5716']",
+			"value": 0.008195,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"

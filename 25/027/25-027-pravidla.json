@@ -22,7 +22,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0247
+			"value": 0.0252
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -68,6 +68,18 @@
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZSP"
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['503','504','505']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['5702','5715','5716']",
+			"value": 0.008473,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "SVALZ výkony (250X)",

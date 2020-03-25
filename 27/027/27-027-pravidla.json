@@ -6,7 +6,7 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0245
+			"value": 0.043
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -78,6 +78,12 @@
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZSP"
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['5702','5715','5716']",
+			"value": 0.013166,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ŠAS",

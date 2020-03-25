@@ -13,7 +13,7 @@ Autor: curo.sk
 │ IPP3 = 4.9        │ IPP3                         │
 │ LIMIT = 75900     │ Limit                        │
 │ EL_POBOCKA = 1    │ Používa el. pobočku ?        │
-│ CB = 0.0247       │ Cena bodu                    │
+│ CB = 0.0252       │ Cena bodu                    │
 │ CBP = 0.041       │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.00908 │ Cena bodu SVaLZ              │
 │ CBSVALZSP = 0.008 │ Cena bodu SVaLZ SP           │
@@ -35,6 +35,8 @@ Autor: curo.sk
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │                 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','522','530','531']      │
 │                 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
+│        0.008473 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
 │            2.98 │ vv.bodyCelkom*cena        │ SVALZ výkony (250X)                           │ vv.kod in ['250X']                                           │
 │          0.0202 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │

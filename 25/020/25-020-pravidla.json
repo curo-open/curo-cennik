@@ -119,6 +119,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 1 - COVID",
+			"if": "vv.kod in ['1']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
 			"value": 0.020995,
@@ -314,6 +320,12 @@
 		}
 	],
 	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
 		"10": [
 			{
 				"cond": "",
