@@ -1,0 +1,87 @@
+{
+	"params": {
+		"IDK": {
+			"label": "NASTAVENIA IDK",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.0166
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.043
+		},
+		"CBEU": {
+			"label": "Cena bodu EU",
+			"value": 0.0166
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0073
+		}
+	},
+	"pacient": [
+		{
+			"label": "Kapitácia",
+			"if": "p|vekMedzi(0, 130)",
+			"value": 1.4,
+			"calc": "IDK+cena"
+		}
+	],
+	"vykon": [
+		{
+			"label": "Výkon 108,118",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['108','118']",
+			"value": 0.0266,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony 5303,5305,5308 Z",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5308 Z",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5308']",
+			"value": 0.0076,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 108,118",
+			"if": "vv.kod in ['108','118']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.kod in ['5303','5305','5308']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gynekolog"
+}

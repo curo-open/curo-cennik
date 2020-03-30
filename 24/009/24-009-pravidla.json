@@ -1,0 +1,81 @@
+{
+	"params": {
+		"IDK": {
+			"label": "NASTAVENIA IDK",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.020072
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.0462
+		},
+		"CBEU": {
+			"label": "Cena bodu EU",
+			"value": 0.0193
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0078
+		}
+	},
+	"pacient": [
+		{
+			"label": "Kapitácia",
+			"if": "p|vekMedzi(0, 120)",
+			"value": 1.26,
+			"calc": "IDK+cena"
+		}
+	],
+	"vykon": [
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']",
+			"value": 0.008839,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.kod in ['5303','5305','5308']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Výkon 5304,5808",
+			"if": "vv.kod in ['5808','5304']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gynekolog"
+}

@@ -1,0 +1,107 @@
+{
+	"params": {
+		"IDK": {
+			"label": "IDK",
+			"value": 0
+		},
+		"KPS": {
+			"label": "KPS",
+			"value": 1
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.006639
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.05
+		},
+		"CBEU": {
+			"label": "Cena bodu EU",
+			"value": 0.020995
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.008105
+		}
+	},
+	"pacient": [
+		{
+			"label": "Kapitácie",
+			"if": "p.kapitacia && p|vekMedzi(0, 120)",
+			"value": 1.4,
+			"calc": "IDK+cena"
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.006639,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventívne zdravotné výkony",
+			"if": "vv.kod in ['157','102','103','105','108','1070','297']",
+			"value": 0.05,
+			"calc": "vv.bodyCelkom*CBP"
+		},
+		{
+			"label": "Výkon 118",
+			"if": "vv.kod in ['118']",
+			"value": 0.01917,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']",
+			"value": 0.00909,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.kod in ['5303','5305','5308']",
+			"value": 0.008105,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5808",
+			"if": "vv.kod in ['5808']",
+			"value": 0.0076635,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaZL",
+			"value": 0.007303,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gynekolog"
+}
