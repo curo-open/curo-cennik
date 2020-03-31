@@ -313,14 +313,7 @@
 			"severity": 0
 		}
 	],
-	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		]
-	},
+	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

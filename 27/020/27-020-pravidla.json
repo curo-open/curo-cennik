@@ -51,6 +51,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 1 - COVID",
+			"if": "vv.kod in ['1']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
 			"value": 17.7,
