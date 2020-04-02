@@ -69,7 +69,14 @@
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "dermatovenerolog"

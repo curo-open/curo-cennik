@@ -311,12 +311,6 @@
 			"if": "vv.kod in ['15P']",
 			"check": "d.vv|ma('kod in [\"5702P\"]')",
 			"severity": 0
-		},
-		{
-			"label": "Preventivka: chýba EKG(15P/5702P) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
-			"check": "d.vv|ma('kod in [\"15P\",\"5702P\"]')",
-			"severity": 0
 		}
 	],
 	"body": {

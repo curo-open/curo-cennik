@@ -3,6 +3,14 @@
 		"LIMIT": {
 			"label": "Limit",
 			"value": 2235
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.024925
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0078
 		}
 	},
 	"pacient": [],
@@ -11,35 +19,48 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.024925,
-			"calc": "vv.pocet*50*cena"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.024925,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": 0.0078,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": 0.024925,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": 0.024925,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "chirurg"

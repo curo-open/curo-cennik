@@ -5,14 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────────┬───────────┐
-│ Názov a hodnota      │ Popis     │
-├──────────────────────┼───────────┤
-│ LIMIT = 0            │ Limit     │
-│ BOD = 0.0224         │ BOD       │
-│ BOD_BONUS = 0.0015   │ BOD_BONUS │
-│ BOD_SVALZ = 0.007665 │ BOD_SVALZ │
-└──────────────────────┴───────────┘
+┌────────────────────┬─────────────────┐
+│ Názov a hodnota    │ Popis           │
+├────────────────────┼─────────────────┤
+│ LIMIT = 0          │ Limit           │
+│ CB = 0.0224        │ Cena bodu       │
+│ CBSVALZ = 0.007665 │ Cena bodu SVaLZ │
+└────────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -32,17 +31,20 @@ Autor: curo.sk
 │             4.7 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │           10.75 │ vv.pocet*cena             │ Výkon 60r                                     │ vv.kod in ['60r']                                            │
 │            3.36 │ vv.pocet*cena             │ Výkon 65                                      │ vv.kod in ['65']                                             │
-│        0.006666 │ vv.pocet*210*cena         │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│          0.0224 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│        0.007665 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0224 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│          0.0224 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│          0.0224 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│        0.007665 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│          0.0224 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│          0.0224 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             160 │ 1                                                                                                         │                           │
+│             210 │ 15d                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

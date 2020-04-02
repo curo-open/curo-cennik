@@ -111,7 +111,5 @@ Autor: curo.sk
 │ žne s 160, 15P, 15C alebo 5702P │            │                                                      │                                                      │
 │ Chyba: EKG 15P/5702P vykázane s │     0      │ vv.kod in ['15P']                                    │ d.vv|ma('kod in ["5702P"]')                          │
 │ úbežne                          │            │                                                      │                                                      │
-│ Preventivka: chýba EKG(15P/5702 │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d.vv|ma('kod in ["15P","5702P"]')                    │
-│ P) vyšetrenie, môžte to vykázať │            │ 40                                                   │                                                      │
 └─────────────────────────────────┴────────────┴──────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘
 

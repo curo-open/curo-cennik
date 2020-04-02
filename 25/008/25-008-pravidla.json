@@ -78,6 +78,12 @@
 		},
 		{
 			"label": "Preventívna prehliadka",
+			"if": "vv.kod in ['1']",
+			"value": 0.018257,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventívna prehliadka",
 			"if": "vv.kod in ['160']",
 			"value": 0.041,
 			"calc": "vv.bodyCelkom*cena"
