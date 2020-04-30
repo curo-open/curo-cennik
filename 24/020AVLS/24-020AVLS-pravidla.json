@@ -21,73 +21,73 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p|vekMedzi(18, 20)",
-			"value": 3.14,
+			"value": 3.39,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p|vekMedzi(20, 28)",
-			"value": 2.03,
+			"value": 2.19,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p|vekMedzi(28, 46)",
-			"value": 2.13,
+			"value": 2.3,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p|vekMedzi(46, 52)",
-			"value": 2.15,
+			"value": 2.32,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p|vekMedzi(52, 54)",
-			"value": 2.15,
+			"value": 2.53,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p|vekMedzi(54, 58)",
-			"value": 2.75,
+			"value": 2.97,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p|vekMedzi(58, 62)",
-			"value": 2.95,
+			"value": 3.19,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p|vekMedzi(62, 65)",
-			"value": 3.15,
+			"value": 3.4,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p|vekMedzi(65, 69)",
-			"value": 3.33,
+			"value": 3.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p|vekMedzi(69, 73)",
-			"value": 3.6,
+			"value": 3.89,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p|vekMedzi(73, 88)",
-			"value": 3.97,
+			"value": 4.29,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p|vekMedzi(88)",
-			"value": 3.92,
+			"value": 4.23,
 			"calc": "IDK+cena"
 		}
 	],
@@ -143,7 +143,7 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
-			"value": 0.048972,
+			"value": 0.05,
 			"calc": "vv.pocet*180*cena"
 		},
 		{
@@ -155,8 +155,8 @@
 		{
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.048972,
-			"calc": "vv.pocet*390*cena"
+			"value": 0.05,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
@@ -173,7 +173,7 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
-			"value": 0.022089,
+			"value": 0.025,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
