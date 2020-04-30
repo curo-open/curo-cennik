@@ -26,13 +26,13 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0193 │ vv.pocet*50*cena          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│        0.026432 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│        0.027614 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ ZCB && vv.kod in ['62']                                      │
-│        0.027614 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ ZCB && vv.kod in ['63']                                      │
-│        0.026432 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│        0.022725 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│        0.022725 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│        0.027614 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ ZCB && vv.kod in ['62']                                      │
+│        0.027614 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ ZCB && vv.kod in ['63']                                      │
+│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│        0.022725 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│        0.022725 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │        0.025903 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
@@ -46,6 +46,15 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
+│             420 │ 60                                                                                                        │                           │
+│             420 │ 60                                                                                                        │                           │
+│             270 │ 62                                                                                                        │                           │
+│             210 │ 63                                                                                                        │                           │
+│              40 │ 70                                                                                                        │                           │
+│             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
+│              50 │ 15d                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

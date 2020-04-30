@@ -25,7 +25,19 @@
 			"label": "Výkon V12",
 			"if": "vv.kod in ['V12']",
 			"value": 0.0855,
-			"calc": "vv.pocet*300*cena"
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": 4.03,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": 1.01,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
@@ -53,7 +65,38 @@
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"V12": [
+			{
+				"cond": "",
+				"value": 300
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "stomatolog"
