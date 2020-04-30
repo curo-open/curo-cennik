@@ -11,6 +11,18 @@
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
 			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.020995
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.007303
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.020995
 		}
 	},
 	"pacient": [
@@ -97,38 +109,56 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
-			"value": 0.007303,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
-			"label": "Výkon 1 - COVID",
+			"label": "Výkon 1 ",
 			"if": "vv.kod in ['1']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Preventívne prehliadky ",
@@ -200,7 +230,7 @@
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
 			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Akútne EKG",
@@ -326,6 +356,12 @@
 				"value": 350
 			}
 		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
 		"160": [
 			{
 				"cond": "",
@@ -378,6 +414,24 @@
 			{
 				"cond": "",
 				"value": 500
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
 			}
 		]
 	},

@@ -5,15 +5,15 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬──────────────────────────────┐
-│ Názov a hodnota  │ Popis                        │
-├──────────────────┼──────────────────────────────┤
-│ IDK = 0          │ NASTAVENIA IDK               │
-│ CB = 0.020072    │ Cena bodu                    │
-│ CBP = 0.0462     │ Cena bodu preventívne výkony │
-│ CBEU = 0.0193    │ Cena bodu EU                 │
-│ CBSVALZ = 0.0078 │ Cena bodu SVaLZ              │
-└──────────────────┴──────────────────────────────┘
+┌───────────────────┬──────────────────────────────┐
+│ Názov a hodnota   │ Popis                        │
+├───────────────────┼──────────────────────────────┤
+│ IDK = 0           │ NASTAVENIA IDK               │
+│ CB = 0.022089     │ Cena bodu                    │
+│ CBP = 0.05        │ Cena bodu preventívne výkony │
+│ CBEUNK = 0.022973 │ Cena bodu EU/Nekapitovaný    │
+│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ              │
+└───────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -31,7 +31,7 @@ Autor: curo.sk
 │        0.008839 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
-│                 │ vv.bodyCelkom*CB          │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
 │                 │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │

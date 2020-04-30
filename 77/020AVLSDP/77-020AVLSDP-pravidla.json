@@ -3,6 +3,18 @@
 		"IDK": {
 			"label": "NASTAVENIA IDK",
 			"value": 0.69
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.02
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0073
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.026
 		}
 	},
 	"pacient": [
@@ -49,6 +61,30 @@
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 1 ",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Preventívne prehliadky",
@@ -287,7 +323,62 @@
 			"severity": 0
 		}
 	],
-	"body": {},
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"160": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"159a": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159b": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159x": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159z": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

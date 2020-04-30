@@ -5,28 +5,31 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬─────────────────────────────────┐
-│ Názov a hodnota │ Popis                           │
-├─────────────────┼─────────────────────────────────┤
-│ IDK = 0         │ NASTAVENIA IDK                  │
-│ VCB1 = 0.41     │ Vypočítaná cena bodu. výkon 1   │
-│ VCB4 = 1.54     │ Vypočítaná cena bodu. výkon 4   │
-│ VCB8 = 2.06     │ Vypočítaná cena bodu. výkon 8   │
-│ VCB250 = 0.41   │ Vypočítaná cena bodu. výkon 250 │
-│ PPH1 = 10       │ PPH1                            │
-│ PPH2 = 6.5      │ PPH2                            │
-│ PREDOP = 12.9   │ PREDOP                          │
-│ _4571a = 4      │ 4571a                           │
-│ CHRSTAR = 10    │ CHRSTAR                         │
-│ TELEKON = 1.3   │ TELEKON                         │
-│ HYPVST = 8      │ HYPVST                          │
-│ HYPKON = 5      │ HYPKON                          │
-│ HYPSTA = 4      │ HYPSTA                          │
-│ SKOR01 = 1.9    │ SKOR01                          │
-│ SKOR02 = 2.1    │ SKOR02                          │
-│ SKOR03 = 2.3    │ SKOR03                          │
-│ SKOR04 = 2.5    │ SKOR04                          │
-└─────────────────┴─────────────────────────────────┘
+┌───────────────────┬─────────────────────────────────┐
+│ Názov a hodnota   │ Popis                           │
+├───────────────────┼─────────────────────────────────┤
+│ IDK = 0           │ NASTAVENIA IDK                  │
+│ VCB1 = 0.41       │ Vypočítaná cena bodu. výkon 1   │
+│ VCB4 = 1.54       │ Vypočítaná cena bodu. výkon 4   │
+│ VCB8 = 2.06       │ Vypočítaná cena bodu. výkon 8   │
+│ VCB250 = 0.41     │ Vypočítaná cena bodu. výkon 250 │
+│ PPH1 = 10         │ PPH1                            │
+│ PPH2 = 6.5        │ PPH2                            │
+│ PREDOP = 12.9     │ PREDOP                          │
+│ _4571a = 4        │ 4571a                           │
+│ CHRSTAR = 10      │ CHRSTAR                         │
+│ TELEKON = 1.3     │ TELEKON                         │
+│ HYPVST = 8        │ HYPVST                          │
+│ HYPKON = 5        │ HYPKON                          │
+│ HYPSTA = 4        │ HYPSTA                          │
+│ SKOR01 = 1.9      │ SKOR01                          │
+│ SKOR02 = 2.1      │ SKOR02                          │
+│ SKOR03 = 2.3      │ SKOR03                          │
+│ SKOR04 = 2.5      │ SKOR04                          │
+│ CB = 0.022089     │ Cena bodu                       │
+│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ                 │
+│ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)      │
+└───────────────────┴─────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -73,6 +76,9 @@ Autor: curo.sk
 │                 │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
 │                 │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
 │                 │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │        0.048972 │ vv.pocet*180*cena         │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
 │        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │        0.048972 │ vv.pocet*390*cena         │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
@@ -86,6 +92,16 @@ Autor: curo.sk
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│              40 │ 70                                                                                                        │                           │
+│             390 │ 160                                                                                                       │                           │
+│             180 │ 159a                                                                                                      │                           │
+│             180 │ 159b                                                                                                      │                           │
+│             180 │ 159x                                                                                                      │                           │
+│             180 │ 159z                                                                                                      │                           │
+│             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

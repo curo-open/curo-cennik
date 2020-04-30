@@ -2,7 +2,19 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.69
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.02
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0073
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.02
 		}
 	},
 	"pacient": [
@@ -48,6 +60,30 @@
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 1 ",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -219,6 +255,12 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
+			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Nekapitovaný - EU",
 			"if": "!p.kapitacia && p.typ in ['EU']",
 			"value": 0.02,
@@ -275,7 +317,62 @@
 			"severity": 0
 		}
 	],
-	"body": {},
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"160": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"159a": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159b": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159x": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159z": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

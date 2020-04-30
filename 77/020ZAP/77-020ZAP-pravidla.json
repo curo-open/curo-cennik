@@ -3,6 +3,18 @@
 		"IDK": {
 			"label": "NASTAVENIA IDK",
 			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.02
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0073
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.026
 		}
 	},
 	"pacient": [
@@ -35,8 +47,8 @@
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
@@ -47,8 +59,32 @@
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 1 ",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Preventívne prehliadky",
@@ -227,61 +263,67 @@
 		{
 			"label": "Nekapitovaný - EU",
 			"if": "!p.kapitacia && p.typ in ['EU']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		}
 	],
-	"kontrola": [
-		{
-			"label": "Preventivka: chýba vyšetrenie Glukózy(3671), môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 18 ",
-			"check": "d.vv|ma('kod==\"3671\"')",
-			"severity": 0
-		},
-		{
-			"label": "Preventivka: chýba Cholesterol(159b) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40 || p.vek == 18 ",
-			"check": "d.vv|ma('kod==\"159b\"')",
-			"severity": 0
-		},
-		{
-			"label": "Preventivka: chýba EKG(5702) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
-			"check": "d.vv|ma('kod==\"5702\"')",
-			"severity": 0
-		},
-		{
-			"label": "Preventivka(160) je vykázana pod zlou diagnózou",
-			"if": "vv.kod in ['160']",
-			"check": "vv.diagnoza in ['Z00.0','Z52.0']",
-			"severity": 0
-		},
-		{
-			"label": "Cholesterol(159b) je vykázana pod zlou diagnózou",
-			"if": "vv.kod in ['159b']",
-			"check": "vv.diagnoza in ['Z00.0','Z00.1','Z52.0']",
-			"severity": 0
-		},
-		{
-			"label": "Glokóza(3671) je vykázana pod zlou diagnózou",
-			"if": "vv.kod in ['3671']",
-			"check": "vv.diagnoza in ['Z00.0','Z00.1','Z52.0']",
-			"severity": 0
-		},
-		{
-			"label": "TOKS(159a,159z,159x) je vykázana pod zlou diagnózou",
-			"if": "vv.kod in ['159a','159z','159x']",
-			"check": "vv.diagnoza in ['Z00.0']",
-			"severity": 0
-		},
-		{
-			"label": "Predoperačné: chýba EKG(5702Z) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"60b\"]') && p.vek >= 40",
-			"check": "d.vv|ma('kod==\"5702Z\"')",
-			"severity": 0
-		}
-	],
-	"body": {},
+	"kontrola": [],
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"160": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"159a": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159b": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159x": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159z": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

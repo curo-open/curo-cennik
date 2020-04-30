@@ -11,6 +11,18 @@
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
 			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.020995
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.007303
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.020995
 		}
 	},
 	"pacient": [
@@ -97,26 +109,44 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
-			"value": 0.007303,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
-			"label": "Výkon 1 - COVID",
+			"label": "Výkon 1 ",
 			"if": "vv.kod in ['1']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Výkon 10",
@@ -281,39 +311,99 @@
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],
-	"kontrola": [
-		{
-			"label": "Preventivka: chýba EKG vyšetrenie",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
-			"check": "d.vv|ma('kod==\"5702P\"')",
-			"severity": 0
-		},
-		{
-			"label": "Možnosť vykázať výkon 10",
-			"if": "d.vv|ma('kod in [\"60\", \"H0003\", \"H0004\"]')",
-			"check": "d.vv|ma('kod==\"10\"')",
-			"severity": 0
-		},
-		{
-			"label": "Chyba: Akútne EKG vykázane súbežne s 160, 15P, 15C alebo 5702P",
-			"if": "vv.kod in ['5702c']",
-			"check": "d.vv|ma('kod in [\"160\",\"15P\",\"15C\",\"5702P\"]')",
-			"severity": 0
-		},
-		{
-			"label": "Chyba: EKG 15P/5702P vykázane súbežne",
-			"if": "vv.kod in ['15P']",
-			"check": "d.vv|ma('kod in [\"5702P\"]')",
-			"severity": 0
-		},
-		{
-			"label": "Preventivka: chýba EKG(15P/5702P) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
-			"check": "d.vv|ma('kod in [\"15P\",\"5702P\"]')",
-			"severity": 0
-		}
-	],
-	"body": {},
+	"kontrola": [],
+	"body": {
+		"10": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 350
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"160": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"5702": [
+			{
+				"cond": "",
+				"value": 550
+			}
+		],
+		"5715": [
+			{
+				"cond": "",
+				"value": 750
+			}
+		],
+		"5716": [
+			{
+				"cond": "",
+				"value": 240
+			}
+		],
+		"5702P": [
+			{
+				"cond": "",
+				"value": 550
+			}
+		],
+		"252b": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"252c": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"252s": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"5702c": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

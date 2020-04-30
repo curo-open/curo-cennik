@@ -47,7 +47,7 @@
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['157','102','103','105','108','1070','297']",
-			"value": 0.05,
+			"value": null,
 			"calc": "vv.bodyCelkom*CBP"
 		},
 		{

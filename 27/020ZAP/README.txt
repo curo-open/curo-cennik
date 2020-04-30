@@ -5,11 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬────────────────┐
-│ Názov a hodnota │ Popis          │
-├─────────────────┼────────────────┤
-│ IDK = 0         │ NASTAVENIA IDK │
-└─────────────────┴────────────────┘
+┌──────────────────┬────────────────────────────┐
+│ Názov a hodnota  │ Popis                      │
+├──────────────────┼────────────────────────────┤
+│ IDK = 0          │ NASTAVENIA IDK             │
+│ CB = 0.02        │ Cena bodu                  │
+│ CBSVALZ = 0.0073 │ Cena bodu SVaLZ            │
+│ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
+└──────────────────┴────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -27,10 +30,13 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
 │          0.0082 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
-│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
-│           0.026 │ vv.bodyCelkom*cena        │ Výkon 1 - COVID                               │ vv.kod in ['1']                                              │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1                                       │ vv.kod in ['1']                                              │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │            17.7 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │          0.0485 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
@@ -63,13 +69,23 @@ Autor: curo.sk
 │               8 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10']                                             │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
 │           0.015 │ vv.pocet*cena             │ Výkon 40                                      │ vv.kod in ['40']                                             │
-│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - EU                             │ !p.kapitacia && p.typ in ['EU']                              │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - EU                             │ !p.kapitacia && p.typ in ['EU']                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│              40 │ 70                                                                                                        │                           │
+│             390 │ 160                                                                                                       │                           │
+│             180 │ 159a                                                                                                      │                           │
+│             180 │ 159b                                                                                                      │                           │
+│             180 │ 159x                                                                                                      │                           │
+│             180 │ 159z                                                                                                      │                           │
+│             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
@@ -82,23 +98,5 @@ Autor: curo.sk
   KONTROLA DEKURZU
 ┌─────────────────────────────────┬────────────┬──────────────────────────────────────────────────────┬──────────────────────────────────────────────────────┐
 │ Popis                           │ Dôležitosť │ Ak platí ...                                         │ tak má platiť                                        │
-├─────────────────────────────────┼────────────┼──────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
-│ Preventivka: chýba vyšetrenie G │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d.vv|ma('kod=="3671"')                               │
-│ lukózy(3671), môžte to vykázať  │            │ 18                                                   │                                                      │
-│ Preventivka: chýba Cholesterol( │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d.vv|ma('kod=="159b"')                               │
-│ 159b) vyšetrenie, môžte to vyká │            │ 40 || p.vek == 18                                    │                                                      │
-│ zať                             │            │                                                      │                                                      │
-│ Preventivka: chýba EKG(5702) vy │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d.vv|ma('kod=="5702"')                               │
-│ šetrenie, môžte to vykázať      │            │ 40                                                   │                                                      │
-│ Preventivka(160) je vykázana po │     0      │ vv.kod in ['160']                                    │ vv.diagnoza in ['Z00.0','Z52.0']                     │
-│ d zlou diagnózou                │            │                                                      │                                                      │
-│ Cholesterol(159b) je vykázana p │     0      │ vv.kod in ['159b']                                   │ vv.diagnoza in ['Z00.0','Z00.1','Z52.0']             │
-│ od zlou diagnózou               │            │                                                      │                                                      │
-│ Glokóza(3671) je vykázana pod z │     0      │ vv.kod in ['3671']                                   │ vv.diagnoza in ['Z00.0','Z00.1','Z52.0']             │
-│ lou diagnózou                   │            │                                                      │                                                      │
-│ TOKS(159a,159z,159x) je vykázan │     0      │ vv.kod in ['159a','159z','159x']                     │ vv.diagnoza in ['Z00.0']                             │
-│ a pod zlou diagnózou            │            │                                                      │                                                      │
-│ Predoperačné: chýba EKG(5702Z)  │     0      │ p.kapitacia && d.vv|ma('kod in ["60b"]') && p.vek >= │ d.vv|ma('kod=="5702Z"')                              │
-│ vyšetrenie, môžte to vykázať    │            │ 40                                                   │                                                      │
 └─────────────────────────────────┴────────────┴──────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘
 

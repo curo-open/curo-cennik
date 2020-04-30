@@ -5,13 +5,16 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────────────────────┐
-│ Názov a hodnota │ Popis                 │
-├─────────────────┼───────────────────────┤
-│ IDK = 0         │ IDK                   │
-│ KPS = 1         │ KPS                   │
-│ EL_POBOCKA = 1  │ Používa el. pobočku ? │
-└─────────────────┴───────────────────────┘
+┌────────────────────┬────────────────────────────┐
+│ Názov a hodnota    │ Popis                      │
+├────────────────────┼────────────────────────────┤
+│ IDK = 0            │ IDK                        │
+│ KPS = 1            │ KPS                        │
+│ EL_POBOCKA = 1     │ Používa el. pobočku ?      │
+│ CB = 0.020995      │ Cena bodu                  │
+│ CBSVALZ = 0.007303 │ Cena bodu SVaLZ            │
+│ CBEUNK = 0.020995  │ Cena bodu Nekapitovany(EU) │
+└────────────────────┴────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -38,10 +41,13 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│        0.007303 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
-│        0.020995 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
-│        0.020995 │ vv.bodyCelkom*cena        │ Výkon 1 - COVID                               │ vv.kod in ['1']                                              │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1                                       │ vv.kod in ['1']                                              │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │            3.78 │ vv.pocet*cena             │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │            7.35 │ vv.pocet*cena             │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
 │           0.046 │ vv.pocet*390*cena         │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
@@ -78,6 +84,22 @@ Autor: curo.sk
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             180 │ 10                                                                                                        │                           │
+│             350 │ 60                                                                                                        │                           │
+│              40 │ 70                                                                                                        │                           │
+│             390 │ 160                                                                                                       │                           │
+│             550 │ 5702                                                                                                      │                           │
+│             750 │ 5715                                                                                                      │                           │
+│             240 │ 5716                                                                                                      │                           │
+│             550 │ 5702P                                                                                                     │                           │
+│              70 │ 252b                                                                                                      │                           │
+│              70 │ 252c                                                                                                      │                           │
+│              70 │ 252s                                                                                                      │                           │
+│             500 │ 5702c                                                                                                     │                           │
+│             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
@@ -90,15 +112,5 @@ Autor: curo.sk
   KONTROLA DEKURZU
 ┌─────────────────────────────────┬────────────┬──────────────────────────────────────────────────────┬──────────────────────────────────────────────────────┐
 │ Popis                           │ Dôležitosť │ Ak platí ...                                         │ tak má platiť                                        │
-├─────────────────────────────────┼────────────┼──────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
-│ Preventivka: chýba EKG vyšetren │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d.vv|ma('kod=="5702P"')                              │
-│ ie                              │            │ 40                                                   │                                                      │
-│ Možnosť vykázať výkon 10        │     0      │ d.vv|ma('kod in ["60", "H0003", "H0004"]')           │ d.vv|ma('kod=="10"')                                 │
-│ Chyba: Akútne EKG vykázane súbe │     0      │ vv.kod in ['5702c']                                  │ d.vv|ma('kod in ["160","15P","15C","5702P"]')        │
-│ žne s 160, 15P, 15C alebo 5702P │            │                                                      │                                                      │
-│ Chyba: EKG 15P/5702P vykázane s │     0      │ vv.kod in ['15P']                                    │ d.vv|ma('kod in ["5702P"]')                          │
-│ úbežne                          │            │                                                      │                                                      │
-│ Preventivka: chýba EKG(15P/5702 │     0      │ p.kapitacia && d.vv|ma('kod in ["160"]') && p.vek >= │ d.vv|ma('kod in ["15P","5702P"]')                    │
-│ P) vyšetrenie, môžte to vykázať │            │ 40                                                   │                                                      │
 └─────────────────────────────────┴────────────┴──────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘
 

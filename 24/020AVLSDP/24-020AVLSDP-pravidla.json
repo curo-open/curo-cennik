@@ -71,6 +71,18 @@
 		"SKOR04": {
 			"label": "SKOR04",
 			"value": 2.5
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.022089
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.00819
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.022973
 		}
 	},
 	"pacient": [
@@ -275,6 +287,24 @@
 			"calc": "vv.pocet*VCB250"
 		},
 		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
 			"value": 0.048972,
@@ -318,7 +348,62 @@
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"160": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"159a": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159b": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159x": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159z": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

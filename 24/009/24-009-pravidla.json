@@ -6,19 +6,19 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.020072
+			"value": 0.022089
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0462
+			"value": 0.05
 		},
-		"CBEU": {
-			"label": "Cena bodu EU",
-			"value": 0.0193
+		"CBEUNK": {
+			"label": "Cena bodu EU/Nekapitovaný",
+			"value": 0.022973
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0078
+			"value": 0.00819
 		}
 	},
 	"pacient": [
@@ -52,7 +52,7 @@
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
