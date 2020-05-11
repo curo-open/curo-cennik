@@ -21,73 +21,73 @@
 		{
 			"label": "vek od 18 do 19",
 			"if": "p|vekMedzi(18, 19)",
-			"value": 3.22,
+			"value": 3.48,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 19 do 27",
 			"if": "p|vekMedzi(19, 27)",
-			"value": 2.13,
+			"value": 2.3,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 27 do 45",
 			"if": "p|vekMedzi(27, 45)",
-			"value": 2.24,
+			"value": 2.42,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 45 do 51",
 			"if": "p|vekMedzi(45, 51)",
-			"value": 2.26,
+			"value": 2.44,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 53",
 			"if": "p|vekMedzi(51, 53)",
-			"value": 2.4,
+			"value": 2.59,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 53 do 57",
 			"if": "p|vekMedzi(53, 57)",
-			"value": 2.6,
+			"value": 2.81,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 57 do 61",
 			"if": "p|vekMedzi(57, 61)",
-			"value": 2.84,
+			"value": 3.07,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 64",
 			"if": "p|vekMedzi(61, 64)",
-			"value": 3.14,
+			"value": 3.39,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 64 do 68",
 			"if": "p|vekMedzi(64, 68)",
-			"value": 3.33,
+			"value": 3.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 68 do 72",
 			"if": "p|vekMedzi(68, 72)",
-			"value": 3.59,
+			"value": 3.88,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 72 do 87",
 			"if": "p|vekMedzi(72, 87)",
-			"value": 4.03,
+			"value": 4.35,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 87+ ",
 			"if": "p|vekMedzi(87)",
-			"value": 4,
+			"value": 4.32,
 			"calc": "IDK+cena"
 		}
 	],
@@ -167,7 +167,7 @@
 		{
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.048972,
+			"value": 0.05,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
