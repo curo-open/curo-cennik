@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CB = 0.022089     │ Cena bodu                  │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
+│ _4571a = 4.4      │ 4571a                      │
 └───────────────────┴────────────────────────────┘
 
 
@@ -38,6 +39,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                 │ _4571a                    │ Pripočitateľné položky                        │ vv.kod=='4571a'                                              │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
@@ -47,6 +49,7 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │             4.4 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A']                                          │
+│            4.41 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702Z']                                          │
 │            0.05 │ vv.pocet*180*cena         │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
 │        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │            0.05 │ vv.bodyCelkom*cena        │ Preventina prehliadka                         │ vv.kod in ['160']                                            │

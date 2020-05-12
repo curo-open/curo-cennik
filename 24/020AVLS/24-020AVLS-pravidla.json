@@ -15,6 +15,10 @@
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.022973
+		},
+		"_4571a": {
+			"label": "4571a",
+			"value": 4.4
 		}
 	},
 	"pacient": [
@@ -93,6 +97,12 @@
 	],
 	"vykon": [
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='4571a'",
+			"value": null,
+			"calc": "_4571a"
+		},
+		{
 			"label": "Nekapitovaný - Vykon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": 4.79,
@@ -144,6 +154,12 @@
 			"label": "CRP",
 			"if": "vv.kod in ['4571A']",
 			"value": 4.4,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702Z']",
+			"value": 4.41,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
