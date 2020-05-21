@@ -18,8 +18,9 @@ Autor: curo.sk
 │ PREDOP = 12.9     │ PREDOP                          │
 │ _4571a = 4        │ 4571a                           │
 │ CHRSTAR = 10      │ CHRSTAR                         │
+│ CHRST = 10        │ CHRST                           │
 │ TELEKON = 1.3     │ TELEKON                         │
-│ HYPVST = 8        │ HYPVST                          │
+│ HYPVS = 8         │ HYPVS                           │
 │ HYPKON = 5        │ HYPKON                          │
 │ HYPSTA = 4        │ HYPSTA                          │
 │ SKOR01 = 1.9      │ SKOR01                          │
@@ -59,9 +60,9 @@ Autor: curo.sk
 │                 │ PPH2                      │ Pripočitateľné položky                        │ vv.kod=='PPH2'                                               │
 │                 │ PREDOP                    │ Pripočitateľné položky                        │ vv.kod=='PREDOP'                                             │
 │                 │ _4571a                    │ Pripočitateľné položky                        │ vv.kod=='4571a'                                              │
-│                 │ CHRSTAR                   │ Pripočitateľné položky                        │ vv.kod=='CHRSTAR'                                            │
+│                 │ CHRST                     │ Pripočitateľné položky                        │ vv.kod=='CHRST'                                              │
 │                 │ TELEKON                   │ Pripočitateľné položky                        │ vv.kod=='TELEKON'                                            │
-│                 │ HYPVST                    │ Pripočitateľné položky                        │ vv.kod=='HYPVST'                                             │
+│                 │ HYPVS                     │ Pripočitateľné položky                        │ vv.kod=='HYPVS'                                              │
 │                 │ HYPKON                    │ Pripočitateľné položky                        │ vv.kod=='HYPKON'                                             │
 │                 │ HYPSTA                    │ Pripočitateľné položky                        │ vv.kod=='HYPSTA'                                             │
 │                 │ SKOR01                    │ Pripočitateľné položky                        │ vv.kod=='SKOR01'                                             │

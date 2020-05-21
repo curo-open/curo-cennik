@@ -154,13 +154,13 @@
 			"label": "CRP",
 			"if": "vv.kod in ['4571A']",
 			"value": 4.4,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702Z']",
 			"value": 4.41,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS",

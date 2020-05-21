@@ -40,12 +40,16 @@
 			"label": "CHRSTAR",
 			"value": 10
 		},
+		"CHRST": {
+			"label": "CHRST",
+			"value": 10
+		},
 		"TELEKON": {
 			"label": "TELEKON",
 			"value": 1.3
 		},
-		"HYPVST": {
-			"label": "HYPVST",
+		"HYPVS": {
+			"label": "HYPVS",
 			"value": 8
 		},
 		"HYPKON": {
@@ -186,9 +190,9 @@
 		},
 		{
 			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='CHRSTAR'",
+			"if": "vv.kod=='CHRST'",
 			"value": null,
-			"calc": "CHRSTAR"
+			"calc": "CHRST"
 		},
 		{
 			"label": "Pripočitateľné položky",
@@ -198,9 +202,9 @@
 		},
 		{
 			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='HYPVST'",
+			"if": "vv.kod=='HYPVS'",
 			"value": null,
-			"calc": "HYPVST"
+			"calc": "HYPVS"
 		},
 		{
 			"label": "Pripočitateľné položky",
