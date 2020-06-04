@@ -197,7 +197,7 @@
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.0455,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -282,12 +282,6 @@
 			}
 		],
 		"159a": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159b": [
 			{
 				"cond": "",
 				"value": 180

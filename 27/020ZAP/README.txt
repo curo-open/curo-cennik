@@ -57,7 +57,7 @@ Autor: curo.sk
 │               8 │ vv.pocet*cena             │ TOKS pozitívny                                │ vv.kod in ['159a']                                           │
 │               8 │ vv.pocet*cena             │ TOKS negatívny                                │ vv.kod in ['159z']                                           │
 │            2.01 │ vv.pocet*cena             │ TOKS znehodnotený                             │ vv.kod in ['159x']                                           │
-│          0.0455 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│          0.0485 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │            10.5 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            4.41 │ vv.pocet*cena             │ EKG (5702Z)                                   │ vv.kod in ['5702Z']                                          │
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
@@ -80,7 +80,6 @@ Autor: curo.sk
 │              40 │ 70                                                                                                        │                           │
 │             390 │ 160                                                                                                       │                           │
 │             180 │ 159a                                                                                                      │                           │
-│             180 │ 159b                                                                                                      │                           │
 │             180 │ 159x                                                                                                      │                           │
 │             180 │ 159z                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
