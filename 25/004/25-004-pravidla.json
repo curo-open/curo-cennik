@@ -22,11 +22,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0247
+			"value": 0.0252
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007635
+			"value": 0.008105
 		}
 	},
 	"pacient": [],
@@ -48,6 +48,12 @@
 			"if": "vv.kod=='IPP3'",
 			"value": null,
 			"calc": "IPP3"
+		},
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 2.98,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
@@ -82,10 +88,58 @@
 				"value": 160
 			}
 		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"802": [
+			{
+				"cond": "",
+				"value": 750
+			}
+		],
+		"803": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"804": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"813": [
+			{
+				"cond": "",
+				"value": 60
+			}
+		],
+		"819d": [
+			{
+				"cond": "",
+				"value": 600
 			}
 		],
 		"1b": [

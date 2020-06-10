@@ -5,13 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ LIMIT = 2235     │ Limit           │
-│ CB = 0.024925    │ Cena bodu       │
-│ CBSVALZ = 0.0078 │ Cena bodu SVaLZ │
-└──────────────────┴─────────────────┘
+┌─────────────────────┬─────────────────┐
+│ Názov a hodnota     │ Popis           │
+├─────────────────────┼─────────────────┤
+│ LIMIT = 2235        │ Limit           │
+│ CB = 0.024925       │ Cena bodu       │
+│ CBSVALZ = 0.0081195 │ Cena bodu SVaLZ │
+└─────────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -24,11 +24,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.024925 │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│        0.024925 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│        0.026432 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60']                                             │
+│        0.022725 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['62']                                             │
+│        0.022725 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['63']                                             │
+│        0.028719 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
+│         0.01261 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
+│        0.028719 │ vv.bodyCelkom*cena        │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
+│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │          0.0078 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.024925 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│        0.024925 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -37,8 +42,13 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             210 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0224
+			"value": 0.0237
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -15,48 +15,6 @@
 	},
 	"pacient": [],
 	"vykon": [
-		{
-			"label": "Výkon 5330,5331,5332",
-			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkon 5793,5794,5795",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['60']",
-			"value": 9.41,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['62']",
-			"value": 6.05,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['63']",
-			"value": 4.7,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 60r",
-			"if": "vv.kod in ['60r']",
-			"value": 10.75,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 65",
-			"if": "vv.kod in ['65']",
-			"value": 3.36,
-			"calc": "vv.pocet*cena"
-		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
@@ -105,7 +63,7 @@
 		"15d": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 150
 			}
 		],
 		"1b": [
