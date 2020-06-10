@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- SAS covid zmeny">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 159b vld&#10;- 250x onko">
+      <change afterPath="$PROJECT_DIR$/24/004/24-004-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/004/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/004/25-004-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/004/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/77/004/77-004-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/77/004/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/019/25-019-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/019/25-019-pravidla.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,14 +321,8 @@
       <workItem from="1589297354158" duration="3231000" />
       <workItem from="1589871588843" duration="808000" />
       <workItem from="1589954346171" duration="1315000" />
-      <workItem from="1590000442230" duration="7713000" />
-    </task>
-    <task id="LOCAL-00100" summary="- dovera pomaha updaravena">
-      <created>1576569855671</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1576569855671</updated>
+      <workItem from="1590000442230" duration="8982000" />
+      <workItem from="1591336725002" duration="1317000" />
     </task>
     <task id="LOCAL-00101" summary="- 019 added">
       <created>1578034986301</created>
@@ -661,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590652576054</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="- 159b vld&#10;- 250x onko">
+      <created>1591276135095</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1591276135095</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +713,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- 020 ZAP&#10;- 020 AVLS" />
     <MESSAGE value="- 144, 141 IPP4 &#10;- 008 vekova hranica pri kontrole" />
     <MESSAGE value="- 020 upravena kap platba pre zvld a 25" />
     <MESSAGE value="- 056 nastave CB namiesto VCB" />
@@ -732,14 +737,15 @@
     <MESSAGE value="- fix pre avls" />
     <MESSAGE value="- 019 covid" />
     <MESSAGE value="- 048 64a" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 048 64a" />
+    <MESSAGE value="- 159b vld&#10;- 250x onko" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 159b vld&#10;- 250x onko" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2046" y="-94" width="1306" height="998" key="CommitChangelistDialog2" timestamp="1590652575953">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="122" y="60" width="902" height="872" key="CommitChangelistDialog2" timestamp="1591276134954">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="132" y="-28" width="1306" height="998" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1440@0.0.1920.1080" timestamp="1589291703177" />
-    <state x="128" y="-72" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1590576406765" />
+    <state x="122" y="60" width="902" height="872" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1591276134954" />
     <state x="2046" y="-94" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590652575953" />
     <state x="460" y="-17" width="806" height="801" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583423997569" />
     <state x="484" y="67" width="1329" height="867" key="CommitChangelistDialog2/0.0.3840.1080@0.0.3840.1080" timestamp="1583671025574" />
@@ -759,11 +765,11 @@
     <state x="188" y="226" width="371" height="153" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1440@0.0.1920.1080" timestamp="1589202525582" />
     <state x="2106" y="204" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590652782746" />
     <state x="158" y="276" key="VCS.ChangelistChooser/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1440@0.0.1600.1200" timestamp="1581943395084" />
-    <state x="1990" y="-491" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1590652577721">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="68" y="-513" width="525" height="585" key="Vcs.Push.Dialog.v2" timestamp="1591276147146">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="78" y="-403" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1440@0.0.1920.1080" timestamp="1589291704760" />
-    <state x="72" y="-469" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1590576441761" />
+    <state x="68" y="-513" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1591276147146" />
     <state x="1990" y="-491" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590652577721" />
     <state x="462" y="190" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583424001306" />
     <state x="922" y="168" key="Vcs.Push.Dialog.v2/0.0.3840.1080@0.0.3840.1080" timestamp="1583671029829" />
