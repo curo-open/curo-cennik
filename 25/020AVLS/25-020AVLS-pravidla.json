@@ -125,12 +125,6 @@
 			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
-			"label": "Výkon 1 ",
-			"if": "vv.kod in ['1']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
-		},
-		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": null,
