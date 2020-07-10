@@ -5,17 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬───────────────────────┐
-│ Názov a hodnota    │ Popis                 │
-├────────────────────┼───────────────────────┤
-│ IPP1 = 1.8         │ IPP1                  │
-│ IPP2 = 2.9         │ IPP2                  │
-│ IPP3 = 4.9         │ IPP3                  │
-│ LIMIT = 75900      │ Limit                 │
-│ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.0252        │ Cena bodu             │
-│ CBSVALZ = 0.013166 │ Cena bodu SVaLZ       │
-└────────────────────┴───────────────────────┘
+┌──────────────────────┬───────────────────────┐
+│ Názov a hodnota      │ Popis                 │
+├──────────────────────┼───────────────────────┤
+│ IPP1 = 1.8           │ IPP1                  │
+│ IPP2 = 2.9           │ IPP2                  │
+│ IPP3 = 4.9           │ IPP3                  │
+│ LIMIT = 75900        │ Limit                 │
+│ EL_POBOCKA = 1       │ Používa el. pobočku ? │
+│ CB = 0.0252          │ Cena bodu             │
+│ CBSVALZ = 0.00908    │ Cena bodu SVaLZ       │
+│ CBSVALZSP = 0.013166 │ Cena bodu SVaLZ SP    │
+└──────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -32,7 +33,7 @@ Autor: curo.sk
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│                 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
 │            2.98 │ vv.bodyCelkom*cena        │ SVALZ výkony (250X)                           │ vv.kod in ['250X']                                           │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │

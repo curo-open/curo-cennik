@@ -26,6 +26,10 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
+			"value": 0.00908
+		},
+		"CBSVALZSP": {
+			"label": "Cena bodu SVaLZ SP",
 			"value": 0.013166
 		}
 	},
@@ -59,7 +63,7 @@
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZSP"
 		},
 		{
 			"label": "SVALZ výkony (250X)",
