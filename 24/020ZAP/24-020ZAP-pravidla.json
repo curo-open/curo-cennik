@@ -119,26 +119,26 @@
 		{
 			"label": "Výkon 1 ",
 			"if": "vv.kod in ['1']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "TOKS",
