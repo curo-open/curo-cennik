@@ -131,12 +131,6 @@
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkon 1 ",
-			"if": "vv.kod in ['1']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": 0.026,
