@@ -13,8 +13,9 @@ Autor: curo.sk
 │ IPP3 = 4.9          │ IPP3                                                    │
 │ LIMIT = 75900       │ Limit                                                   │
 │ EL_POBOCKA = 1      │ Používa el. pobočku ?                                   │
-│ CB = 0.0247         │ Cena bodu                                               │
+│ CB = 0.026          │ Cena bodu                                               │
 │ CBP = 0.041         │ Cena bodu preventívne výkony                            │
+│ CBE = 0.0252        │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.008105  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.008473 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 └─────────────────────┴─────────────────────────────────────────────────────────┘
@@ -33,6 +34,7 @@ Autor: curo.sk
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│                 │ vv.bodyCelkom*CBE         │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70']                                   │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
@@ -53,6 +55,9 @@ Autor: curo.sk
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │

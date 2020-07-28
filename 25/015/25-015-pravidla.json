@@ -22,11 +22,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0247
+			"value": 0.026
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
 			"value": 0.041
+		},
+		"CBE": {
+			"label": "Cena bodu el. výkony",
+			"value": 0.0252
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -56,6 +60,12 @@
 			"if": "vv.kod=='IPP3'",
 			"value": null,
 			"calc": "IPP3"
+		},
+		{
+			"label": "ŠAS el. výkony",
+			"if": "vv.kod in ['1b','1c','70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBE"
 		},
 		{
 			"label": "ŠAS",
@@ -136,6 +146,24 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [
