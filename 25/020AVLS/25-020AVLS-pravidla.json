@@ -127,20 +127,20 @@
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 10",
@@ -157,25 +157,25 @@
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "KPS && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.pocet*390*cena"
 		},
 		{
