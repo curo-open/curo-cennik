@@ -18,11 +18,11 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.05
+			"value": 0.057
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.020995
+			"value": 0.026
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -33,7 +33,7 @@
 		{
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(0, 120)",
-			"value": 1.4,
+			"value": 1.45,
 			"calc": "IDK+cena"
 		}
 	],

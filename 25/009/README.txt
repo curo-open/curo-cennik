@@ -12,8 +12,8 @@ Autor: curo.sk
 │ KPS = 1            │ KPS                          │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?        │
 │ CB = 0.006639      │ Cena bodu                    │
-│ CBP = 0.05         │ Cena bodu preventívne výkony │
-│ CBEU = 0.020995    │ Cena bodu EU                 │
+│ CBP = 0.057        │ Cena bodu preventívne výkony │
+│ CBEU = 0.026       │ Cena bodu EU                 │
 │ CBSVALZ = 0.008105 │ Cena bodu SVaLZ              │
 └────────────────────┴──────────────────────────────┘
 
@@ -22,7 +22,7 @@ Autor: curo.sk
 ┌───────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ Kapitácie │           1.4 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 120) │
+│ Kapitácie │          1.45 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 120) │
 └───────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
