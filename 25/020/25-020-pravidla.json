@@ -29,13 +29,13 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 3.22,
+			"value": 3.42,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 20 do 29",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": 2.6,
+			"value": 2.8,
 			"calc": "IDK+cena"
 		},
 		{
@@ -71,37 +71,37 @@
 		{
 			"label": "vek od 60 do 65",
 			"if": "p.kapitacia && p|vekMedzi(60, 65)",
-			"value": 2.95,
+			"value": 3.15,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 65 do 70",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 3.16,
+			"value": 3.36,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 70 do 75",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 3.28,
+			"value": 3.48,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 75 do 80",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 3.39,
+			"value": 3.59,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 80 do 85",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 3.73,
+			"value": 3.93,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 3.8,
+			"value": 4,
 			"calc": "IDK+cena"
 		}
 	],
