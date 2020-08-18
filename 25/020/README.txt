@@ -49,10 +49,10 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │                 │ vv.bodyCelkom*CB          │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
-│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
-│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
-│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│           0.057 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && EL_POBOCKA && vv.kod in ['160']                       │
+│           0.057 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ KPS && vv.kod in ['160']                                     │
+│           0.057 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ EL_POBOCKA && vv.kod in ['160']                              │
+│           0.057 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │

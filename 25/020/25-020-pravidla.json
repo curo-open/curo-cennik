@@ -157,25 +157,25 @@
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "KPS && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

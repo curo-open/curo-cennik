@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.024925
+			"value": 0.025962
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -18,7 +18,7 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.024925,
+			"value": 0.0193,
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
@@ -63,7 +63,7 @@
 		"15d": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 150
 			}
 		],
 		"1b": [
