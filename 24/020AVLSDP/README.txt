@@ -73,7 +73,6 @@ Autor: curo.sk
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
 │        0.022973 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│                 │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │
 │                 │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
 │                 │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
 │                 │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │

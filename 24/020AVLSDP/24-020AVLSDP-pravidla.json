@@ -267,12 +267,6 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Vykon 1",
-			"if": "vv.kod in ['1']",
-			"value": null,
-			"calc": "vv.pocet*VCB1"
-		},
-		{
 			"label": "Vykon 4",
 			"if": "vv.kod in ['4']",
 			"value": null,
