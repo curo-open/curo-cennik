@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.87
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -33,7 +33,7 @@
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 3.82,
+			"value": 2.38,
 			"calc": "IDK+cena"
 		},
 		{
@@ -46,21 +46,27 @@
 	"vykon": [
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"if": "!p.kapitacia && p.typ in ['BE','CU']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.0073,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": 0.082,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 1 ",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Výkon 1b",
@@ -147,6 +153,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702']",
+			"value": 0.0076,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571A']",
 			"value": 0.0116,
@@ -159,7 +171,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony počas navštevy",
+			"label": "Vykony pocas navstevy",
 			"if": "d.vv|ma('kod in [\"25\",\"26\",\"29\"]') && vv.kod in ['4','5','6','30','40','41','64']",
 			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena"
@@ -196,7 +208,7 @@
 		},
 		{
 			"label": "EKG (5702Z)",
-			"if": "vv.kod in ['5702Z','5702ZV']",
+			"if": "vv.kod in ['5702Z']",
 			"value": 4.41,
 			"calc": "vv.pocet*cena"
 		},
@@ -231,12 +243,6 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "H0006",
-			"if": "vv.kod in ['H0006']",
-			"value": 5,
-			"calc": "vv.pocet*cena"
-		},
-		{
 			"label": "Kognitívny deficit",
 			"if": "vv.kod in ['163']",
 			"value": 6,
@@ -255,15 +261,9 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkony počas navštevy",
-			"if": "d.vv|ma('kod in [\"25\",\"26\",\"29\"]') && vv.typ=='SVaLZ'",
-			"value": 0.0073,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkony počas navštevy",
-			"if": "d.vv|ma('kod in [\"25\",\"26\",\"29\"]') && vv.typ!='SVaLZ'",
-			"value": 0.015,
+			"label": "Nekapitovaný - EU",
+			"if": "!p.kapitacia && p.typ in ['EU']",
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena"
 		}
 	],
@@ -320,5 +320,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "VLD"
+	"title": "VLD Bez zdruzenia"
 }

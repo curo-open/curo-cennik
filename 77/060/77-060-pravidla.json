@@ -1,0 +1,145 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.027
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0073
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.006666,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 1a",
+			"if": "vv.kod in ['1a']",
+			"value": 0.02,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
+			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
+			"value": 0.007303,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 532;533a;540;541;542",
+			"if": "vv.kod in ['532','533a','540','541','542']",
+			"value": 0.007303,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 8.4,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 62",
+			"if": "vv.kod in ['62']",
+			"value": 5.67,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 760sp;760sn;760pp;760pn",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
+			"value": 64.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 763p",
+			"if": "vv.kod in ['763p']",
+			"value": 129,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 763sp;763sn;763pp;763pn",
+			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
+			"value": 129,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon Y0018",
+			"if": "vv.kod in ['Y0018']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon Y0023",
+			"if": "vv.kod in ['Y0023']",
+			"value": 4.56,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "geriatria"
+}
