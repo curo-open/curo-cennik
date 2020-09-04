@@ -58,8 +58,8 @@ Autor: curo.sk
 │        0.008105 │ vv.pocet*550*cena         │ EKG                                           │ vv.kod in ['5702']                                           │
 │        0.016597 │ vv.pocet*750*cena         │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │        0.016597 │ vv.pocet*240*cena         │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
-│           0.057 │ vv.pocet*cena             │ Očkovanie                                     │ vv.kod in ['252b']                                           │
-│           0.057 │ vv.pocet*cena             │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
+│           0.057 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│           0.057 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
 │           0.026 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
 │        0.007303 │ vv.pocet*500*cena         │ Akútne EKG                                    │ vv.kod in ['5702c']                                          │
 │               6 │ vv.pocet*cena             │ Výkon 163                                     │ vv.kod in ['163']                                            │

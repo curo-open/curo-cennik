@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added 068">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- vyhodeny vykon 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,21 +333,7 @@
       <workItem from="1597311702207" duration="597000" />
       <workItem from="1597667001761" duration="4881000" />
       <workItem from="1598336584097" duration="602000" />
-      <workItem from="1598525376467" duration="1249000" />
-    </task>
-    <task id="LOCAL-00119" summary="- 020 upravena kap platba pre zvld a 25">
-      <created>1581000027373</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1581000027373</updated>
-    </task>
-    <task id="LOCAL-00120" summary="- 056 nastave CB namiesto VCB">
-      <created>1581359869265</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1581359869265</updated>
+      <workItem from="1598525376467" duration="2957000" />
     </task>
     <task id="LOCAL-00121" summary="- 056 nastave sval usg">
       <created>1581361295848</created>
@@ -678,7 +664,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597740984593</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="- added 060 an 020 bez zdruzenia">
+      <created>1598865861892</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1598865861893</updated>
+    </task>
+    <task id="LOCAL-00169" summary="- vyhodeny vykon 1">
+      <created>1598866031155</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1598866031155</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,7 +724,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- SAS covid zmeny" />
     <MESSAGE value="- added 015" />
     <MESSAGE value="- zap 020 zmeny" />
     <MESSAGE value="- ZAP 020 zmeny" />
@@ -739,7 +738,6 @@
     <MESSAGE value="- updates" />
     <MESSAGE value="- uprava SVALZ" />
     <MESSAGE value="- added 020zap a 001" />
-    <MESSAGE value="- vyhodeny vykon 1" />
     <MESSAGE value="- updated 020" />
     <MESSAGE value="- update oftalmo" />
     <MESSAGE value="- upravene 020" />
@@ -749,17 +747,19 @@
     <MESSAGE value="- added 056 - 1=80" />
     <MESSAGE value="- zap vykon 1" />
     <MESSAGE value="- upravene cenniky 010, 020" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upravene cenniky 010, 020" />
+    <MESSAGE value="- added 060 an 020 bez zdruzenia" />
+    <MESSAGE value="- vyhodeny vykon 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="- vyhodeny vykon 1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="87" y="87" width="916" height="872" key="CommitChangelistDialog2" timestamp="1597740984476">
-      <screen x="0" y="0" width="1920" height="1059" />
+    <state x="157" y="124" width="1283" height="818" key="CommitChangelistDialog2" timestamp="1598866031041">
+      <screen x="0" y="0" width="6080" height="1419" />
     </state>
     <state x="87" y="87" key="CommitChangelistDialog2/0.0.1920.1059@0.0.1920.1059" timestamp="1597740984476" />
     <state x="65" y="-14" width="916" height="872" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1416@0.0.1920.1080" timestamp="1594904682665" />
-    <state x="132" y="-28" width="1306" height="998" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1440@0.0.1920.1080" timestamp="1589291703177" />
     <state x="118" y="20" width="916" height="872" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1596636343053" />
     <state x="2046" y="-94" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590652575953" />
+    <state x="157" y="124" width="1283" height="818" key="CommitChangelistDialog2/0.0.6080.1419@0.0.6080.1419" timestamp="1598866031041" />
     <state x="74" y="-26" width="916" height="969" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1596716739367" />
     <state x="251" y="-149" width="1089" height="921" key="CommitChangelistDialog2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1591793424375" />
     <state x="71" y="52" width="1313" height="980" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1593761947468" />
@@ -771,17 +771,16 @@
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="182" y="160" width="292" height="158" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1416@0.0.1920.1080" timestamp="1594904977250" />
-    <state x="188" y="226" width="371" height="153" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1440@0.0.1920.1080" timestamp="1589202525582" />
     <state x="2106" y="204" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590652782746" />
     <state x="150" y="158" width="292" height="176" key="VCS.ChangelistChooser/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1595852158775" />
-    <state x="410" y="-318" width="512" height="642" key="Vcs.Push.Dialog.v2" timestamp="1597740986342">
-      <screen x="0" y="0" width="1920" height="1059" />
+    <state x="1294" y="-466" width="524" height="642" key="Vcs.Push.Dialog.v2" timestamp="1598866038779">
+      <screen x="0" y="0" width="6080" height="1419" />
     </state>
     <state x="410" y="-318" key="Vcs.Push.Dialog.v2/0.0.1920.1059@0.0.1920.1059" timestamp="1597740986342" />
     <state x="433" y="-140" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1416@0.0.1920.1080" timestamp="1594904683922" />
-    <state x="78" y="-403" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1440@0.0.1920.1080" timestamp="1589291704760" />
     <state x="412" y="-304" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1596636328984" />
     <state x="1990" y="-491" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590652577721" />
+    <state x="1294" y="-466" width="524" height="642" key="Vcs.Push.Dialog.v2/0.0.6080.1419@0.0.6080.1419" timestamp="1598866038779" />
     <state x="345" y="-316" width="512" height="642" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1596460189575" />
     <state x="65" y="-414" width="525" height="585" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/3520.0.2560.1440/0.0.1600.1200@0.0.1600.1200" timestamp="1591793425849" />
     <state x="439" y="-74" width="525" height="585" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1593761956713" />
