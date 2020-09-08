@@ -21,7 +21,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
 │ vek od 18 do 51 │          2.38 │ IDK+cena │ p|vekMedzi(18, 51) │
 │ vek od 51 do 61 │          2.73 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │          2.38 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 61 do 81 │          3.82 │ IDK+cena │ p|vekMedzi(61, 81) │
 │ vek od 81+      │          4.19 │ IDK+cena │ p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
@@ -30,7 +30,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            0.02 │ vv.bodyCelkom*cena        │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
 │          0.0073 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1                                       │ vv.kod in ['1']                                              │
@@ -49,7 +49,7 @@ Autor: curo.sk
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
 │                 │                           │                                               │ vv.kod in ['252b']                                           │
-│          0.0076 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
+│          0.0082 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │          0.0116 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A']                                          │
 │           0.025 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
@@ -72,7 +72,7 @@ Autor: curo.sk
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
 │                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
-│            0.02 │ vv.bodyCelkom*cena        │ Nekapitovaný - EU                             │ !p.kapitacia && p.typ in ['EU']                              │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - EU                             │ !p.kapitacia && p.typ in ['EU']                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
