@@ -13,7 +13,7 @@ Autor: curo.sk
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?      │
 │ CB = 0.020995      │ Cena bodu                  │
 │ CBSVALZ = 0.007303 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.020995  │ Cena bodu Nekapitovany(EU) │
+│ CBEUNK = 0.026     │ Cena bodu Nekapitovany(EU) │
 └────────────────────┴────────────────────────────┘
 
 
@@ -58,8 +58,8 @@ Autor: curo.sk
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
-│           0.041 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
-│           0.041 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
+│           0.057 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│           0.057 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
 │                 │ vv.bodyCelkom*CB          │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Akútne EKG                                    │ vv.kod in ['5702c']                                          │
 │               6 │ vv.pocet*cena             │ Výkon 163                                     │ vv.kod in ['163']                                            │

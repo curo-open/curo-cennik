@@ -27,7 +27,7 @@
 		{
 			"label": "vek od 20 do 28",
 			"if": "p|vekMedzi(20, 28)",
-			"value": 2.48,
+			"value": 2.19,
 			"calc": "IDK+cena"
 		},
 		{
@@ -125,20 +125,20 @@
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "TOKS",
@@ -155,7 +155,7 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.04851,
+			"value": 0.048972,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -173,7 +173,7 @@
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 10.5,
+			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -191,7 +191,7 @@
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571A','4571a']",
-			"value": 4,
+			"value": 4.4,
 			"calc": "vv.pocet*cena"
 		},
 		{

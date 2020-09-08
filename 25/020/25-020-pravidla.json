@@ -22,7 +22,7 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.020995
+			"value": 0.026
 		}
 	},
 	"pacient": [
@@ -211,13 +211,13 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.041,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s']",
-			"value": 0.041,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
