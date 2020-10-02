@@ -123,6 +123,12 @@
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
+			"label": "Výkon 64",
+			"if": "vv.kod in ['64']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": 0.027,
