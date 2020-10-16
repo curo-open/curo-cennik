@@ -14,7 +14,7 @@ Autor: curo.sk
 │ IPP4 = 4.9            │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.0252           │ Cena bodu             │
+│ CB = 0.026            │ Cena bodu             │
 │ CBSVALZ = 0.008105    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG   │
 └───────────────────────┴───────────────────────┘
@@ -42,6 +42,7 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
 │                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
 │                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│                 │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5702, 5715, 5716                        │ vv.kod in ['5702','5715','5716']                             │
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -60,6 +61,8 @@ Autor: curo.sk
 │             620 │ 60                                                                                                        │                           │
 │             400 │ 62                                                                                                        │                           │
 │             310 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │

@@ -58,13 +58,13 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.007303,
+			"value": 0.008195,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.022171,
+			"value": 0.025962,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

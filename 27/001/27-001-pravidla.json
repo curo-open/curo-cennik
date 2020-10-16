@@ -6,7 +6,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0073
+			"value": 0.0082
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -114,10 +114,34 @@
 				"value": 160
 			}
 		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
 			}
 		],
 		"1b": [
