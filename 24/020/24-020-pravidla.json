@@ -185,13 +185,13 @@
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702','5702C']",
-			"value": 0.0078,
-			"calc": "vv.bodyCelkom*cena"
+			"value": 4.45,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "EKG (5702Z,5702ZV)",
 			"if": "vv.kod in ['5702ZV','5702Z']",
-			"value": 4.41,
+			"value": 4.45,
 			"calc": "vv.pocet*cena"
 		},
 		{

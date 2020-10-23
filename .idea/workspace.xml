@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upravene 001&#10;- upravene avls" />
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added 013">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -340,20 +344,7 @@
       <workItem from="1602159561402" duration="599000" />
       <workItem from="1602663730238" duration="1192000" />
       <workItem from="1602692399824" duration="2677000" />
-    </task>
-    <task id="LOCAL-00128" summary="- upravene vykazovanie pre VLD vykon 1&#10;- uppravene FBLR">
-      <created>1585122018786</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1585122018786</updated>
-    </task>
-    <task id="LOCAL-00129" summary="- 020- added upsvar">
-      <created>1585132045777</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1585132045777</updated>
+      <workItem from="1603264856359" duration="2176000" />
     </task>
     <task id="LOCAL-00130" summary="- 009 added">
       <created>1585610798685</created>
@@ -684,7 +675,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602837689192</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="- added 013">
+      <created>1603264894299</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1603264894300</updated>
+    </task>
+    <task id="LOCAL-00178" summary="- added 013">
+      <created>1603265163645</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1603265163645</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -730,7 +735,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- 048 64a" />
     <MESSAGE value="- 159b vld&#10;- 250x onko" />
     <MESSAGE value="- pridane 004" />
     <MESSAGE value="- upravene 004" />
@@ -755,10 +759,11 @@
     <MESSAGE value="- pridane 064" />
     <MESSAGE value="- pridane 64&#10;- upraven 064" />
     <MESSAGE value="- upravene 001&#10;- upravene avls" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upravene 001&#10;- upravene avls" />
+    <MESSAGE value="- added 013" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added 013" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="134" y="32" width="1283" height="818" key="CommitChangelistDialog2" timestamp="1602837688968">
+    <state x="130" y="-12" width="1283" height="818" key="CommitChangelistDialog2" timestamp="1603265163541">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="87" y="87" key="CommitChangelistDialog2/0.0.1920.1059@0.0.1920.1059" timestamp="1597740984476" />
@@ -766,7 +771,7 @@
     <state x="118" y="20" width="916" height="872" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1596636343053" />
     <state x="149" y="44" width="1283" height="818" key="CommitChangelistDialog2/0.0.6080.1419@0.0.6080.1419" timestamp="1599562529524" />
     <state x="74" y="-26" width="916" height="969" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1596716739367" />
-    <state x="134" y="32" width="1313" height="980" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1602837688968" />
+    <state x="130" y="-12" width="1313" height="980" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603265163541" />
     <state x="-2" y="-20" width="1600" height="1080" key="DiffContextDialog" timestamp="1596636238366">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -776,7 +781,7 @@
     </state>
     <state x="182" y="160" width="292" height="158" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1416@0.0.1920.1080" timestamp="1594904977250" />
     <state x="150" y="158" width="292" height="176" key="VCS.ChangelistChooser/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1595852158775" />
-    <state x="433" y="-140" width="524" height="642" key="Vcs.Push.Dialog.v2" timestamp="1602837690834">
+    <state x="429" y="-184" width="524" height="642" key="Vcs.Push.Dialog.v2" timestamp="1603265165007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="410" y="-318" key="Vcs.Push.Dialog.v2/0.0.1920.1059@0.0.1920.1059" timestamp="1597740986342" />
@@ -784,7 +789,7 @@
     <state x="412" y="-304" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1596636328984" />
     <state x="572" y="177" width="524" height="642" key="Vcs.Push.Dialog.v2/0.0.6080.1419@0.0.6080.1419" timestamp="1599562539264" />
     <state x="345" y="-316" width="512" height="642" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1596460189575" />
-    <state x="433" y="-140" width="525" height="585" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1602837690834" />
+    <state x="429" y="-184" width="525" height="585" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603265165007" />
   </component>
   <component name="masterDetails">
     <states>
