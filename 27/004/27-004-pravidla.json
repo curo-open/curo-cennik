@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0237
+			"value": 0.027
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007665
+			"value": 0.0082
 		}
 	},
 	"pacient": [],
@@ -18,7 +18,7 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.006666,
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -30,20 +30,32 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.007665,
+			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.typ!='SVaLZ'",
-			"value": 0.0224,
-			"calc": "vv.bodyCelkom*CB"
+			"if": "vv.kod in ['5330','5331,'5332'] && vv.typ!='SVaLZ'",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
+			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
-			"if": "1",
-			"value": 0.0224,
-			"calc": "vv.bodyCelkom*CB"
+			"if": "vv.kod in ['H0008']",
+			"value": null,
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],
