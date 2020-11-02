@@ -1,0 +1,67 @@
+{
+	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.0224
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.007665
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.006666,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.0224,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0.007665,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": 0.0224,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.0224,
+			"calc": "vv.bodyCelkom*CB"
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "radiologia"
+}
