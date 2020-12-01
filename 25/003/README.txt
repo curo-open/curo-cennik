@@ -1,6 +1,6 @@
-                                                                       =================
-                                                                       Cenník radiologia
-                                                                       =================
+                                                                        ================
+                                                                        Cenník pneumolog
+                                                                        ================
 
 Autor: curo.sk
 
@@ -13,7 +13,7 @@ Autor: curo.sk
 │ IPP3 = 3.43        │ IPP3                  │
 │ LIMIT = 75900      │ Limit                 │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.0252        │ Cena bodu             │
+│ CB = 0.026         │ Cena bodu             │
 │ CBSVALZ = 0.008105 │ Cena bodu SVaLZ       │
 └────────────────────┴───────────────────────┘
 
@@ -28,14 +28,15 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│             1.8 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│             2.9 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│             4.9 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│             4.9 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│          0.0252 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['1b','1c','70']                                   │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -47,11 +48,14 @@ Autor: curo.sk
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             750 │ 802                                                                                                       │                           │
 │             900 │ 803                                                                                                       │                           │
 │             900 │ 804                                                                                                       │                           │
 │              60 │ 813                                                                                                       │                           │
+│             150 │ 15d                                                                                                       │                           │
 │             600 │ 819d                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

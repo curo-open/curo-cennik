@@ -22,7 +22,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0252
+			"value": 0.026
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -34,20 +34,26 @@
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
-			"value": null,
+			"value": 1.8,
 			"calc": "IPP1"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
-			"value": null,
+			"value": 2.9,
 			"calc": "IPP2"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
-			"value": null,
+			"value": 4.9,
 			"calc": "IPP3"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": 4.9,
+			"calc": "IPP4"
 		},
 		{
 			"label": "Odber venóznej krvi",
@@ -74,10 +80,10 @@
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkony",
-			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"label": "špec. elektronické výkony",
+			"if": "vv.kod in ['1b','1c','70']",
+			"value": 0.0252,
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],
@@ -104,6 +110,18 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [
@@ -136,6 +154,12 @@
 				"value": 60
 			}
 		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
 		"819d": [
 			{
 				"cond": "",
@@ -163,5 +187,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "radiologia"
+	"title": "pneumolog"
 }

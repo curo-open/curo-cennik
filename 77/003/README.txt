@@ -1,6 +1,6 @@
-                                                                       =================
-                                                                       Cenník radiologia
-                                                                       =================
+                                                                        ================
+                                                                        Cenník pneumolog
+                                                                        ================
 
 Autor: curo.sk
 

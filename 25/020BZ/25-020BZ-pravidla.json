@@ -223,14 +223,14 @@
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s']",
-			"value": 0.041,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Akútne EKG",

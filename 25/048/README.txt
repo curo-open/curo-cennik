@@ -49,6 +49,7 @@ Autor: curo.sk
 │             368 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
 │             210 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
 │        0.008473 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']                 │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

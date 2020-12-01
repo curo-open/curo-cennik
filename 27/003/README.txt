@@ -1,6 +1,6 @@
-                                                                       =================
-                                                                       Cenník radiologia
-                                                                       =================
+                                                                        ================
+                                                                        Cenník pneumolog
+                                                                        ================
 
 Autor: curo.sk
 
@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota  │ Popis           │
 ├──────────────────┼─────────────────┤
 │ LIMIT = 0        │ Limit           │
-│ CB = 0.027       │ Cena bodu       │
+│ CB = 0.007303    │ Cena bodu       │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
 └──────────────────┴─────────────────┘
 

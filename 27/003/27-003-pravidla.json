@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.027
+			"value": 0.007303
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -99,5 +99,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "radiologia"
+	"title": "pneumolog"
 }

@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.024925
+			"value": 0.007967
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -17,26 +17,26 @@
 	"vykon": [
 		{
 			"label": "ŠAS",
-			"if": "vv.kod in ['60']",
+			"if": "vv.kod in['60']",
 			"value": 0.026432,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ŠAS",
-			"if": "vv.kod in ['62']",
+			"if": "vv.kod in ['62''63']",
 			"value": 0.022725,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ŠAS",
-			"if": "vv.kod in ['63']",
-			"value": 0.022725,
+			"if": "vv.kod in ['15D']",
+			"value": 0.0193,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['65','66','67']",
-			"value": 0.028719,
+			"label": "špec. elektronické výkony",
+			"if": "vv.kod in ['1b','11a','70']",
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -78,28 +78,22 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",
-				"value": 500
+				"value": 420
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 270
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 250
+				"value": 210
 			}
 		],
 		"65": [
@@ -126,6 +120,12 @@
 				"value": 40
 			}
 		],
+		"15D": [
+			{
+				"cond": "",
+				"value": 50
+			}
+		],
 		"1b": [
 			{
 				"cond": "",
@@ -147,5 +147,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "radiologia"
+	"title": "pneumolog"
 }

@@ -38,22 +38,28 @@
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
-			"value": 0.027614,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026432,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "Výkon 62",
 			"if": "vv.kod in ['62']",
-			"value": 0.027614,
+			"value": 0.028719,
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "Výkon 63",
 			"if": "vv.kod in ['63']",
-			"value": 0.027614,
+			"value": 0.028719,
 			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "špec. elektronické výkony",
+			"if": "vv.kod in ['11a','70','1b','1c']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",

@@ -24,7 +24,7 @@
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.0224,
+			"value": null,
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
@@ -66,6 +66,36 @@
 				"value": 160
 			}
 		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
 		"70": [
 			{
 				"cond": "",
@@ -94,6 +124,12 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
 			}
 		]
 	},
