@@ -56,6 +56,12 @@
 			"if": "vv.kod in ['H0008']",
 			"value": null,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],
