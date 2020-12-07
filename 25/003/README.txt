@@ -15,6 +15,7 @@ Autor: curo.sk
 │ EL_POBOCKA = 1     │ Používa el. pobočku ? │
 │ CB = 0.026         │ Cena bodu             │
 │ CBSVALZ = 0.008105 │ Cena bodu SVaLZ       │
+│ AGTC = 4.8         │ AGTC                  │
 └────────────────────┴───────────────────────┘
 
 
@@ -28,11 +29,14 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │             1.8 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │             2.9 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │             4.9 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │             4.9 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│              20 │ vv.pocet*cena             │ Covid 62a                                     │ vv.kod in ['62a']                                            │
+│              10 │ vv.pocet*cena             │ Covid 629b                                    │ vv.kod in ['629b']                                           │
 │                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
