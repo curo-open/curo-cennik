@@ -37,6 +37,7 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │          0.0252 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['1b','1c','70']                                   │
+│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

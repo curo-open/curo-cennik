@@ -1,17 +1,24 @@
-                                                                        ================
-                                                                        Cenník pneumolog
-                                                                        ================
+                                                                     =====================
+                                                                     Cenník detske oftalmo
+                                                                     =====================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ LIMIT = 0        │ Limit           │
-│ CB = 0.007303    │ Cena bodu       │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
-└──────────────────┴─────────────────┘
+┌─────────────────────┬─────────────────────────────────────────────────────────┐
+│ Názov a hodnota     │ Popis                                                   │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ IPP1 = 1.8          │ IPP1                                                    │
+│ IPP2 = 2.9          │ IPP2                                                    │
+│ IPP3 = 4.9          │ IPP3                                                    │
+│ LIMIT = 75900       │ Limit                                                   │
+│ EL_POBOCKA = 1      │ Používa el. pobočku ?                                   │
+│ CB = 0.026          │ Cena bodu                                               │
+│ CBP = 0.041         │ Cena bodu preventívne výkony                            │
+│ CBE = 0.0252        │ Cena bodu el. výkony                                    │
+│ CBSVALZ = 0.008105  │ Cena bodu SVaLZ                                         │
+│ CBSVALZP = 0.008473 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
+└─────────────────────┴─────────────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -24,14 +31,20 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.015 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│          0.0224 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│                 │ vv.bodyCelkom*CBE         │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70']                                   │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
+│            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
+│                 │ vv.bodyCelkom*CBSVALZP    │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331,'5332'] && vv.typ!='SVaLZ'           │
-│        0.012083 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
-│           0.026 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│             NaN │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['H0008']                                          │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -39,7 +52,12 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             160 │ 1                                                                                                         │                           │
+│             420 │ 60                                                                                                        │                           │
+│             270 │ 62                                                                                                        │                           │
+│             210 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │

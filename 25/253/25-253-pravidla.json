@@ -2,15 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.26
+			"value": 1.17
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.03
+			"value": 1.89
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 3.43
+			"value": 3.19
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 4.9
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -19,77 +23,105 @@
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
 			"value": 1
-		},
-		"CB": {
-			"label": "Cena bodu",
-			"value": 0.026
-		},
-		"CBSVALZ": {
-			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['60'] && EL_POBOCKA",
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['62'] && EL_POBOCKA",
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63'] && EL_POBOCKA",
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['60']",
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['62']",
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['63']",
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
-			"value": 1.8,
+			"value": null,
 			"calc": "IPP1"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
-			"value": 2.9,
+			"value": null,
 			"calc": "IPP2"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
-			"value": 4.9,
+			"value": null,
 			"calc": "IPP3"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP4'",
-			"value": 4.9,
+			"value": null,
 			"calc": "IPP4"
 		},
 		{
-			"label": "Odber venóznej krvi",
-			"if": "vv.kod in ['250x']",
-			"value": 2.98,
-			"calc": "vv.pocet*cena"
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "EL_POBOCKA && p.typ in ['BE','CU','EU']",
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"value": 0.008105,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "špec. elektronické výkony",
-			"if": "vv.kod in ['1b','1c','70']",
-			"value": 0.0252,
+			"label": "Výkony",
+			"if": "EL_POBOCKA",
+			"value": 0.0247,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.0247,
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],
@@ -118,58 +150,10 @@
 				"value": 210
 			}
 		],
-		"66": [
-			{
-				"cond": "",
-				"value": 320
-			}
-		],
-		"67": [
-			{
-				"cond": "",
-				"value": 200
-			}
-		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
-			}
-		],
-		"802": [
-			{
-				"cond": "",
-				"value": 750
-			}
-		],
-		"803": [
-			{
-				"cond": "",
-				"value": 900
-			}
-		],
-		"804": [
-			{
-				"cond": "",
-				"value": 900
-			}
-		],
-		"813": [
-			{
-				"cond": "",
-				"value": 60
-			}
-		],
-		"15d": [
-			{
-				"cond": "",
-				"value": 150
-			}
-		],
-		"819d": [
-			{
-				"cond": "",
-				"value": 600
 			}
 		],
 		"1b": [
@@ -193,5 +177,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "pneumolog"
+	"title": "ADOS"
 }

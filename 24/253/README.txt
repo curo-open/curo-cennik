@@ -1,17 +1,22 @@
-                                                                        ================
-                                                                        Cenník pneumolog
-                                                                        ================
+                                                                          ===========
+                                                                          Cenník ADOS
+                                                                          ===========
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ LIMIT = 0        │ Limit           │
-│ CB = 0.007303    │ Cena bodu       │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
-└──────────────────┴─────────────────┘
+┌─────────────────┬──────────────────────────────┐
+│ Názov a hodnota │ Popis                        │
+├─────────────────┼──────────────────────────────┤
+│ IPP1 = 1.17     │ IPP1                         │
+│ IPP2 = 1.89     │ IPP2                         │
+│ IPP3 = 3.19     │ IPP3                         │
+│ ZCB = 0         │ Zvýhodnená cena bodu         │
+│ LIMIT = 0       │ Limit                        │
+│ CB = 0.016598   │ Cena bodu                    │
+│ CBP = 0         │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0     │ Cena bodu SVaLZ              │
+└─────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -24,14 +29,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.015 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│          0.0224 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331,'5332'] && vv.typ!='SVaLZ'           │
-│        0.012083 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
-│           0.026 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│             NaN │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['H0008']                                          │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│        0.025903 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
+│        0.022725 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony                                        │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -40,11 +42,15 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
+│             420 │ 60                                                                                                        │                           │
+│             420 │ 60                                                                                                        │                           │
+│             270 │ 62                                                                                                        │                           │
+│             210 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
+│              50 │ 15d                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
