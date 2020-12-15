@@ -211,6 +211,12 @@
 				"cond": "",
 				"value": 210
 			}
+		],
+		"68a": [
+			{
+				"cond": "",
+				"value": 40
+			}
 		]
 	},
 	"liekByCode": {},

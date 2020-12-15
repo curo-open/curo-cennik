@@ -1,17 +1,13 @@
-                                                                        ================
-                                                                        Cenník pneumolog
-                                                                        ================
+                                                                         ==============
+                                                                         Cenník chirurg
+                                                                         ==============
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────────┬─────────────────┐
-│ Názov a hodnota     │ Popis           │
-├─────────────────────┼─────────────────┤
-│ LIMIT = 2235        │ Limit           │
-│ CB = 0.007967       │ Cena bodu       │
-│ CBSVALZ = 0.0081195 │ Cena bodu SVaLZ │
-└─────────────────────┴─────────────────┘
+┌─────────────────┬───────┐
+│ Názov a hodnota │ Popis │
+└─────────────────┴───────┘
 
 
   CENY ZA PACIENTA
@@ -24,34 +20,38 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.026432 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in['60']                                              │
-│        0.022725 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['62', '63']                                       │
-│          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15D']                                            │
-│           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['1b','11a','70']                                  │
-│         0.01261 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
-│        0.028719 │ vv.bodyCelkom*cena        │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
-│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│          0.0078 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│             NaN │ vv.pocet*cena             │ Výkon 8502                                    │ vv.kod in ['8502'] && vv.kod in ['8502']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8537                                    │ vv.kod in ['8537'] && vv.kod in ['8537']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8538                                    │ vv.kod in ['8538'] && vv.kod in ['8538']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8539                                    │ vv.kod in ['8539'] && vv.kod in ['8539']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8540                                    │ vv.kod in ['8540'] && vv.kod in ['8540']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8547                                    │ vv.kod in ['8547'] && vv.kod in ['8547']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8564                                    │ vv.kod in ['8564'] && vv.kod in ['8564']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8565                                    │ vv.kod in ['8565'] && vv.kod in ['8565']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8567                                    │ vv.kod in ['8567'] && vv.kod in ['8567']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8572                                    │ vv.kod in ['8572'] && vv.kod in ['8572']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8573                                    │ vv.kod in ['8573'] && vv.kod in ['8573']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8577                                    │ vv.kod in ['8577'] && vv.kod in ['8577']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['8586'] && vv.kod in ['8586']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8587                                    │ vv.kod in ['8587'] && vv.kod in ['8587']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8909                                    │ vv.kod in ['8909'] && vv.kod in ['8909']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8929                                    │ vv.kod in ['8929'] && vv.kod in ['8929']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 9254                                    │ vv.kod in ['9254'] && vv.kod in ['9254']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 9255                                    │ vv.kod in ['9255'] && vv.kod in ['9255']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 9300                                    │ vv.kod in ['9300'] && vv.kod in ['9300']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 9302                                    │ vv.kod in ['9302'] && vv.kod in ['9302']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 9303                                    │ vv.kod in ['9303'] && vv.kod in ['9303']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 9306                                    │ vv.kod in ['9306'] && vv.kod in ['9306']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 9310                                    │ vv.kod in ['9310'] && vv.kod in ['9310']                     │
+│             NaN │ vv.pocet*cena             │ Výkon 8501A                                   │ vv.kod in ['8501A'] && vv.kod in ['8501A']                   │
+│             NaN │ vv.pocet*cena             │ Výkon 8501B                                   │ vv.kod in ['8501B'] && vv.kod in ['8501B']                   │
+│             NaN │ vv.pocet*cena             │ Výkon 8501C                                   │ vv.kod in ['8501C'] && vv.kod in ['8501C']                   │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
-├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             420 │ 60                                                                                                        │                           │
-│             270 │ 62                                                                                                        │                           │
-│             210 │ 63                                                                                                        │                           │
-│             200 │ 65                                                                                                        │                           │
-│             320 │ 66                                                                                                        │                           │
-│             200 │ 67                                                                                                        │                           │
-│              40 │ 70                                                                                                        │                           │
-│              50 │ 15D                                                                                                       │                           │
-│             160 │ 1b                                                                                                        │                           │
-│            1000 │ 1c                                                                                                        │                           │
-│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

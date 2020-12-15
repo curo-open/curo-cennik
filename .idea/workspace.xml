@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upraven 003 covid">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- pridane 023">
+      <change afterPath="$PROJECT_DIR$/24/009JZS/24-009JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/009JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/010JZS/24-010JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/010JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/011JZS/24-011JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/011JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/013JZS/24-013JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24/013JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/009JZS/25-009JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/009JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/010JZS/25-010JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/010JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/011JZS/25-011JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/011JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/013JZS/25-013JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25/013JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/009JZS/27-009JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/009JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/010JZS/27-010JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/010JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/011JZS/27-011JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/011JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/013JZS/27-013JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27/013JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/009JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/009JZS/soc-009JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/010JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/010JZS/soc-010JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/011JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/011JZS/soc-011JZS-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/013JZS/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soc/013JZS/soc-013JZS-pravidla.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/003/24-003-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/003/24-003-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/003/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/003/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/003/25-003-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/003/25-003-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/003/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/003/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,14 +390,7 @@
       <workItem from="1606200693805" duration="598000" />
       <workItem from="1606411319774" duration="588000" />
       <workItem from="1606721071545" duration="3042000" />
-      <workItem from="1606921930434" duration="3896000" />
-    </task>
-    <task id="LOCAL-00138" summary="- SAS fblr">
-      <created>1588238556668</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1588238556668</updated>
+      <workItem from="1606921930434" duration="4885000" />
     </task>
     <task id="LOCAL-00139" summary="- zvld kapitacie">
       <created>1588242516043</created>
@@ -699,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607334518423</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="- pridane 023">
+      <created>1607338832556</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1607338832556</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -745,7 +781,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- update oftalmo" />
     <MESSAGE value="- upravene 020" />
     <MESSAGE value="- upravene 009" />
     <MESSAGE value="- added 050 - 80bodov pre 1" />
@@ -770,23 +805,24 @@
     <MESSAGE value="- changes 027" />
     <MESSAGE value="- added 253 and 336" />
     <MESSAGE value="- upraven 003 covid" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upraven 003 covid" />
+    <MESSAGE value="- pridane 023" />
+    <option name="LAST_COMMIT_MESSAGE" value="- pridane 023" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="91" y="24" width="916" height="849" key="CommitChangelistDialog2" timestamp="1607334518306">
+    <state x="89" y="2" width="916" height="849" key="CommitChangelistDialog2" timestamp="1607338832463">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="149" y="44" width="1283" height="818" key="CommitChangelistDialog2/0.0.6080.1419@0.0.6080.1419" timestamp="1599562529524" />
     <state x="97" y="90" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1606899016227" />
-    <state x="91" y="24" width="916" height="849" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200@0.0.1600.1200" timestamp="1607334518306" />
+    <state x="89" y="2" width="916" height="849" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200@0.0.1600.1200" timestamp="1607338832463" />
     <state x="124" y="-77" key="CommitChangelistDialog2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1604005777934" />
     <state x="126" y="-56" width="1313" height="980" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1604327126780" />
-    <state x="344" y="-363" width="524" height="714" key="Vcs.Push.Dialog.v2" timestamp="1607334519801">
+    <state x="342" y="-385" width="524" height="714" key="Vcs.Push.Dialog.v2" timestamp="1607338833748">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="572" y="177" width="524" height="642" key="Vcs.Push.Dialog.v2/0.0.6080.1419@0.0.6080.1419" timestamp="1599562539264" />
     <state x="350" y="-297" width="524" height="714" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1606899017547" />
-    <state x="344" y="-363" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200@0.0.1600.1200" timestamp="1607334519801" />
+    <state x="342" y="-385" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200@0.0.1600.1200" timestamp="1607338833748" />
     <state x="423" y="-246" key="Vcs.Push.Dialog.v2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1604005779563" />
     <state x="425" y="-228" width="525" height="585" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1604327128138" />
   </component>

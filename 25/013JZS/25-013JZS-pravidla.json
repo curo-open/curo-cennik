@@ -1,0 +1,197 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 8506",
+			"if": "vv.kod in ['8506']",
+			"value": 539,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8507",
+			"if": "vv.kod in ['8507']",
+			"value": 431,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8508",
+			"if": "vv.kod in ['8508']",
+			"value": 485,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8509",
+			"if": "vv.kod in ['8509']",
+			"value": 330,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8510",
+			"if": "vv.kod in ['8510']",
+			"value": 370,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8512",
+			"if": "vv.kod in ['8512']",
+			"value": 408,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8513",
+			"if": "vv.kod in ['8513']",
+			"value": 316,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8514",
+			"if": "vv.kod in ['8514']",
+			"value": 316,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8516",
+			"if": "vv.kod in ['8516']",
+			"value": 394,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8517",
+			"if": "vv.kod in ['8517']",
+			"value": 346,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8518",
+			"if": "vv.kod in ['8518']",
+			"value": 486,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8519",
+			"if": "vv.kod in ['8519']",
+			"value": 486,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8520",
+			"if": "vv.kod in ['8520']",
+			"value": 481,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8521",
+			"if": "vv.kod in ['8521']",
+			"value": 481,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8522",
+			"if": "vv.kod in ['8522']",
+			"value": 481,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8523",
+			"if": "vv.kod in ['8523']",
+			"value": 481,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8524",
+			"if": "vv.kod in ['8524']",
+			"value": 481,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8533",
+			"if": "vv.kod in ['8533']",
+			"value": 900,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8534",
+			"if": "vv.kod in ['8534']",
+			"value": 890,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8535",
+			"if": "vv.kod in ['8535']",
+			"value": 890,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8536",
+			"if": "vv.kod in ['8536']",
+			"value": 900,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8537",
+			"if": "vv.kod in ['8537']",
+			"value": 340,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8542",
+			"if": "vv.kod in ['8542']",
+			"value": 481,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8548",
+			"if": "vv.kod in ['8548']",
+			"value": 325,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8549",
+			"if": "vv.kod in ['8549']",
+			"value": 426,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8550",
+			"if": "vv.kod in ['8550']",
+			"value": 370,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8551",
+			"if": "vv.kod in ['8551']",
+			"value": 325,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8578",
+			"if": "vv.kod in ['8578']",
+			"value": 551.28,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9300",
+			"if": "vv.kod in ['9300']",
+			"value": 124,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8534A",
+			"if": "vv.kod in ['8534A']",
+			"value": 990,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8535A",
+			"if": "vv.kod in ['8535A']",
+			"value": 990,
+			"calc": "vv.pocet*cena"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "urazova chirurgia"
+}

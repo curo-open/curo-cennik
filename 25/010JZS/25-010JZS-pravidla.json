@@ -1,0 +1,167 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 8502",
+			"if": "vv.kod in ['8502'] && vv.kod in ['8502']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8537",
+			"if": "vv.kod in ['8537'] && vv.kod in ['8537']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8538",
+			"if": "vv.kod in ['8538'] && vv.kod in ['8538']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8539",
+			"if": "vv.kod in ['8539'] && vv.kod in ['8539']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8540",
+			"if": "vv.kod in ['8540'] && vv.kod in ['8540']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8547",
+			"if": "vv.kod in ['8547'] && vv.kod in ['8547']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8564",
+			"if": "vv.kod in ['8564'] && vv.kod in ['8564']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8565",
+			"if": "vv.kod in ['8565'] && vv.kod in ['8565']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8567",
+			"if": "vv.kod in ['8567'] && vv.kod in ['8567']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8572",
+			"if": "vv.kod in ['8572'] && vv.kod in ['8572']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8573",
+			"if": "vv.kod in ['8573'] && vv.kod in ['8573']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8577",
+			"if": "vv.kod in ['8577'] && vv.kod in ['8577']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8586",
+			"if": "vv.kod in ['8586'] && vv.kod in ['8586']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8587",
+			"if": "vv.kod in ['8587'] && vv.kod in ['8587']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8909",
+			"if": "vv.kod in ['8909'] && vv.kod in ['8909']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8929",
+			"if": "vv.kod in ['8929'] && vv.kod in ['8929']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9254",
+			"if": "vv.kod in ['9254'] && vv.kod in ['9254']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9255",
+			"if": "vv.kod in ['9255'] && vv.kod in ['9255']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9300",
+			"if": "vv.kod in ['9300'] && vv.kod in ['9300']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9302",
+			"if": "vv.kod in ['9302'] && vv.kod in ['9302']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9303",
+			"if": "vv.kod in ['9303'] && vv.kod in ['9303']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9306",
+			"if": "vv.kod in ['9306'] && vv.kod in ['9306']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 9310",
+			"if": "vv.kod in ['9310'] && vv.kod in ['9310']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8501A",
+			"if": "vv.kod in ['8501A'] && vv.kod in ['8501A']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8501B",
+			"if": "vv.kod in ['8501B'] && vv.kod in ['8501B']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 8501C",
+			"if": "vv.kod in ['8501C'] && vv.kod in ['8501C']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "chirurg"
+}
