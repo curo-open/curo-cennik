@@ -5,157 +5,157 @@
 		{
 			"label": "Výkon 8502",
 			"if": "vv.kod in ['8502'] && vv.kod in ['8502']",
-			"value": null,
+			"value": 454,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8537",
 			"if": "vv.kod in ['8537'] && vv.kod in ['8537']",
-			"value": null,
+			"value": 340,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8538",
 			"if": "vv.kod in ['8538'] && vv.kod in ['8538']",
-			"value": null,
+			"value": 355,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8539",
 			"if": "vv.kod in ['8539'] && vv.kod in ['8539']",
-			"value": null,
+			"value": 380,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8540",
 			"if": "vv.kod in ['8540'] && vv.kod in ['8540']",
-			"value": null,
+			"value": 364,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8547",
 			"if": "vv.kod in ['8547'] && vv.kod in ['8547']",
-			"value": null,
+			"value": 95,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8564",
 			"if": "vv.kod in ['8564'] && vv.kod in ['8564']",
-			"value": null,
+			"value": 584,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8565",
 			"if": "vv.kod in ['8565'] && vv.kod in ['8565']",
-			"value": null,
+			"value": 456,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8567",
 			"if": "vv.kod in ['8567'] && vv.kod in ['8567']",
-			"value": null,
+			"value": 471,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8572",
 			"if": "vv.kod in ['8572'] && vv.kod in ['8572']",
-			"value": null,
+			"value": 324,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8573",
 			"if": "vv.kod in ['8573'] && vv.kod in ['8573']",
-			"value": null,
+			"value": 75,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8577",
 			"if": "vv.kod in ['8577'] && vv.kod in ['8577']",
-			"value": null,
+			"value": 564,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8586",
 			"if": "vv.kod in ['8586'] && vv.kod in ['8586']",
-			"value": null,
+			"value": 210,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8587",
 			"if": "vv.kod in ['8587'] && vv.kod in ['8587']",
-			"value": null,
+			"value": 212,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8909",
 			"if": "vv.kod in ['8909'] && vv.kod in ['8909']",
-			"value": null,
+			"value": 297,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8929",
 			"if": "vv.kod in ['8929'] && vv.kod in ['8929']",
-			"value": null,
+			"value": 214,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 9254",
 			"if": "vv.kod in ['9254'] && vv.kod in ['9254']",
-			"value": null,
+			"value": 224,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 9255",
 			"if": "vv.kod in ['9255'] && vv.kod in ['9255']",
-			"value": null,
+			"value": 321,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 9300",
 			"if": "vv.kod in ['9300'] && vv.kod in ['9300']",
-			"value": null,
+			"value": 124,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 9302",
 			"if": "vv.kod in ['9302'] && vv.kod in ['9302']",
-			"value": null,
+			"value": 252,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 9303",
 			"if": "vv.kod in ['9303'] && vv.kod in ['9303']",
-			"value": null,
+			"value": 251,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 9306",
 			"if": "vv.kod in ['9306'] && vv.kod in ['9306']",
-			"value": null,
+			"value": 256,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 9310",
 			"if": "vv.kod in ['9310'] && vv.kod in ['9310']",
-			"value": null,
+			"value": 299,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8501A",
 			"if": "vv.kod in ['8501A'] && vv.kod in ['8501A']",
-			"value": null,
+			"value": 375,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8501B",
 			"if": "vv.kod in ['8501B'] && vv.kod in ['8501B']",
-			"value": null,
+			"value": 630,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 8501C",
 			"if": "vv.kod in ['8501C'] && vv.kod in ['8501C']",
-			"value": null,
+			"value": 564,
 			"calc": "vv.pocet*cena"
 		}
 	],
