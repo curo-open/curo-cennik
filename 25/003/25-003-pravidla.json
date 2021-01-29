@@ -2,15 +2,23 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.26
+			"value": 1.8
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.03
+			"value": 2.9
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 3.43
+			"value": 4.9
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 4.9
+		},
+		"IPPD": {
+			"label": "IPPD",
+			"value": 5
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -22,11 +30,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026
+			"value": 0.0268
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.008105
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.008473
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -36,6 +48,24 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 2.98,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "špec. elektronické výkony",
+			"if": "vv.kod in ['11a','1b','1c','70']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
@@ -44,50 +74,32 @@
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
-			"value": 1.8,
+			"value": null,
 			"calc": "IPP1"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
-			"value": 2.9,
+			"value": null,
 			"calc": "IPP2"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
-			"value": 4.9,
+			"value": null,
 			"calc": "IPP3"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP4'",
-			"value": 4.9,
+			"value": null,
 			"calc": "IPP4"
 		},
 		{
-			"label": "Odber venóznej krvi",
-			"if": "vv.kod in ['250x']",
-			"value": 2.98,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Covid 62a",
-			"if": "vv.kod in ['62a']",
-			"value": 20,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Covid 629b",
-			"if": "vv.kod in ['629b']",
-			"value": 10,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "p.typ in ['BE','CU','EU']",
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPPD'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "IPPD"
 		},
 		{
 			"label": "SVALZ výkony",
@@ -100,12 +112,6 @@
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
-		},
-		{
-			"label": "špec. elektronické výkony",
-			"if": "vv.kod in ['1b','1c','70']",
-			"value": 0.0252,
-			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
@@ -140,6 +146,12 @@
 				"value": 210
 			}
 		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"66": [
 			{
 				"cond": "",
@@ -164,34 +176,10 @@
 				"value": 750
 			}
 		],
-		"803": [
-			{
-				"cond": "",
-				"value": 900
-			}
-		],
-		"804": [
-			{
-				"cond": "",
-				"value": 900
-			}
-		],
-		"813": [
-			{
-				"cond": "",
-				"value": 60
-			}
-		],
 		"15d": [
 			{
 				"cond": "",
 				"value": 150
-			}
-		],
-		"819d": [
-			{
-				"cond": "",
-				"value": 600
 			}
 		],
 		"1b": [

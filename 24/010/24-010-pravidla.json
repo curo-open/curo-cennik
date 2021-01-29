@@ -2,19 +2,31 @@
 	"params": {
 		"LIMIT": {
 			"label": "Limit",
-			"value": 2235
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.025962
+			"value": 0.027614
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0078
+			"value": 0.008195
 		}
 	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 0.026432,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 62",
+			"if": "vv.kod in ['62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
@@ -54,6 +66,24 @@
 				"value": 160
 			}
 		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
 		"70": [
 			{
 				"cond": "",
@@ -63,7 +93,7 @@
 		"15d": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 50
 			}
 		],
 		"1b": [

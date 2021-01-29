@@ -60,7 +60,7 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.0078,
+			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{

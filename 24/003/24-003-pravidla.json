@@ -6,15 +6,21 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.007967
+			"value": 0.028719
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0081195
+			"value": 0.008195
 		}
 	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in['60']",
@@ -24,8 +30,8 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62', '63']",
-			"value": 0.022725,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
@@ -60,7 +66,7 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.0078,
+			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{

@@ -167,8 +167,8 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.025,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventina prehliadka",
@@ -195,15 +195,15 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "CRP",
-			"if": "vv.kod in ['4571A','4571a']",
-			"value": 4.4,
-			"calc": "vv.pocet*cena"
-		},
-		{
 			"label": "Vykon 10",
 			"if": "vv.kod in ['10']",
 			"value": 16,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571A','4571a']",
+			"value": 4.4,
 			"calc": "vv.pocet*cena"
 		},
 		{

@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02
+			"value": 0.026
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0073
+			"value": 0.0082
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
@@ -21,25 +21,25 @@
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 2.38,
+			"value": 2.54,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 2.73,
+			"value": 2.92,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 3.82,
+			"value": 4.07,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 4.19,
+			"value": 4.46,
 			"calc": "IDK+cena"
 		}
 	],
@@ -53,13 +53,13 @@
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": 0.0073,
+			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": null,
+			"value": 0.26,
 			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
@@ -95,7 +95,7 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 17.7,
+			"value": 19.35,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -185,19 +185,19 @@
 		{
 			"label": "TOKS pozitívny",
 			"if": "vv.kod in ['159a']",
-			"value": 8,
+			"value": 8.8,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS negatívny",
 			"if": "vv.kod in ['159z']",
-			"value": 8,
+			"value": 8.8,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS znehodnotený",
 			"if": "vv.kod in ['159x']",
-			"value": 2.01,
+			"value": 8.8,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -209,7 +209,7 @@
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 10.5,
+			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -233,7 +233,7 @@
 		{
 			"label": "24h meranie tlaku",
 			"if": "vv.kod in ['5715']",
-			"value": 9,
+			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -245,7 +245,7 @@
 		{
 			"label": "ABI (H0008)",
 			"if": "vv.kod in ['H0008']",
-			"value": 4.5,
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -257,7 +257,31 @@
 		{
 			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
 			"if": "vv.kod in ['10']",
-			"value": 8,
+			"value": 8.8,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výplach zvukovodu (jedno ucho)",
+			"if": "vv.kod in ['1540']",
+			"value": 1,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Stratifikácia kardiovaskulárneho rizika",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Komplexné vyšetrenie poistenca pri prevzatí dospelej osoby do zdravotnej starostlivosti",
+			"if": "vv.kod in ['60']",
+			"value": null,
 			"calc": "vv.pocet*cena"
 		},
 		{

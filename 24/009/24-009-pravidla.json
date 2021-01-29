@@ -10,7 +10,7 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.05
+			"value": 0.054
 		},
 		"CBEUNK": {
 			"label": "Cena bodu EU/Nekapitovaný",
@@ -25,7 +25,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 1.26,
+			"value": 1.44,
 			"calc": "IDK+cena"
 		}
 	],
@@ -47,6 +47,12 @@
 			"if": "vv.kod in ['5808','5304']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Výkon 1b, 11a, 70",
+			"if": "vv.kod in ['1b','11a','70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
@@ -74,7 +80,26 @@
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "gynekolog"

@@ -26,7 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026
+			"value": 0.0268
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -42,14 +42,20 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 1b, 70",
+			"if": "vv.kod in ['1b','70']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",

@@ -10,7 +10,7 @@ Autor: curo.sk
 ├───────────────────┼──────────────────────────────┤
 │ IDK = 0           │ NASTAVENIA IDK               │
 │ CB = 0.022089     │ Cena bodu                    │
-│ CBP = 0.05        │ Cena bodu preventívne výkony │
+│ CBP = 0.054       │ Cena bodu preventívne výkony │
 │ CBEUNK = 0.022973 │ Cena bodu EU/Nekapitovaný    │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ              │
 └───────────────────┴──────────────────────────────┘
@@ -20,7 +20,7 @@ Autor: curo.sk
 ┌───────────┬───────────────┬──────────┬────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec   │ Podmienka          │
 ├───────────┼───────────────┼──────────┼────────────────────┤
-│ Kapitácia │          1.26 │ IDK+cena │ p|vekMedzi(0, 120) │
+│ Kapitácia │          1.44 │ IDK+cena │ p|vekMedzi(0, 120) │
 └───────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -31,6 +31,7 @@ Autor: curo.sk
 │        0.008839 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b, 11a, 70                             │ vv.kod in ['1b','11a','70']                                  │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
 │                 │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
@@ -41,6 +42,10 @@ Autor: curo.sk
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│              40 │ 70                                                                                                        │                           │
+│             160 │ 1b                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

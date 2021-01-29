@@ -2,11 +2,23 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.027
+			"value": 0.0275
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0073
+			"value": 0.0082
+		},
+		"IPP1": {
+			"label": "IPP1",
+			"value": 0.57
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 0.36
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 0.28
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -18,14 +30,14 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.006666,
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 1a",
 			"if": "vv.kod in ['1a']",
 			"value": 0.02,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
@@ -82,6 +94,36 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Výkon 5793;5794;5795",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 4.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3"
+		},
+		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
@@ -104,6 +146,42 @@
 			"if": "1",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": null,
+			"if": "",
+			"value": 5.6,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": null,
+			"if": "",
+			"value": 0.007303,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": null,
+			"if": "",
+			"value": 1.5,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": null,
+			"if": "",
+			"value": 8.4,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": null,
+			"if": "",
+			"value": 0.02,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": null,
+			"if": "",
+			"value": null,
+			"calc": "vv.pocet*cena"
 		}
 	],
 	"kontrola": [],
@@ -114,10 +192,56 @@
 				"value": 160
 			}
 		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			},
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"741": [
+			{
+				"cond": "",
+				"value": 3292
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
 			}
 		],
 		"1b": [

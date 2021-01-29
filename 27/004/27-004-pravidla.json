@@ -6,11 +6,23 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.027
+			"value": 0.0285
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.0082
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 2.49
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 0.73
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 0.57
 		}
 	},
 	"pacient": [],
@@ -20,6 +32,36 @@
 			"if": "vv.kod in ['15d']",
 			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0008']",
+			"value": null,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP5'",
+			"value": null,
+			"calc": "IPP5"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP6'",
+			"value": null,
+			"calc": "IPP6"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
@@ -42,19 +84,7 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.012083,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkony",
-			"if": "vv.kod in ['H0008']",
-			"value": null,
+			"value": 0.012075,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -93,13 +123,19 @@
 		"65": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
 			}
 		],
 		"70": [

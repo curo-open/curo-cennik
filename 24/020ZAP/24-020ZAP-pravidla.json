@@ -21,31 +21,31 @@
 		{
 			"label": "vek od 18 do 19",
 			"if": "p|vekMedzi(18, 19)",
-			"value": 3.48,
+			"value": 3.62,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 19 do 27",
 			"if": "p|vekMedzi(19, 27)",
-			"value": 2.3,
+			"value": 2.44,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 27 do 45",
 			"if": "p|vekMedzi(27, 45)",
-			"value": 2.42,
+			"value": 2.57,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 45 do 51",
 			"if": "p|vekMedzi(45, 51)",
-			"value": 2.44,
+			"value": 2.59,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 53",
 			"if": "p|vekMedzi(51, 53)",
-			"value": 2.59,
+			"value": 2.75,
 			"calc": "IDK+cena"
 		},
 		{
@@ -143,7 +143,7 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
-			"value": 0.04851,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -155,19 +155,19 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.04851,
+			"value": 0.048972,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.025,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -185,7 +185,7 @@
 		{
 			"label": "EKG (5702Z,5702ZV)",
 			"if": "vv.kod in ['5702ZV','5702Z']",
-			"value": 4.41,
+			"value": 4.45,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -243,12 +243,6 @@
 			{
 				"cond": "",
 				"value": 180
-			}
-		],
-		"1b": [
-			{
-				"cond": "",
-				"value": 160
 			}
 		],
 		"1c": [

@@ -5,13 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────────┬─────────────────┐
-│ Názov a hodnota     │ Popis           │
-├─────────────────────┼─────────────────┤
-│ LIMIT = 2235        │ Limit           │
-│ CB = 0.007967       │ Cena bodu       │
-│ CBSVALZ = 0.0081195 │ Cena bodu SVaLZ │
-└─────────────────────┴─────────────────┘
+┌────────────────────┬─────────────────┐
+│ Názov a hodnota    │ Popis           │
+├────────────────────┼─────────────────┤
+│ LIMIT = 2235       │ Limit           │
+│ CB = 0.028719      │ Cena bodu       │
+│ CBSVALZ = 0.008195 │ Cena bodu SVaLZ │
+└────────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -24,14 +24,15 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.026432 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in['60']                                              │
-│        0.022725 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['62', '63']                                       │
+│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62', '63']                                       │
 │          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15D']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['1b','11a','70']                                  │
 │         0.01261 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
 │        0.028719 │ vv.bodyCelkom*cena        │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
 │                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│          0.0078 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

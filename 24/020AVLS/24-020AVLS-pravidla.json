@@ -166,7 +166,7 @@
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
 			"value": 0.05,
-			"calc": "vv.pocet*180*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie",

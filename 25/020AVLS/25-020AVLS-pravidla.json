@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0
+			"value": 1.2
 		},
 		"KPS": {
 			"label": "KPS",
@@ -14,7 +14,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.020995
+			"value": 0
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -22,14 +22,18 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.020995
+			"value": 0.026
+		},
+		"FOB": {
+			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
+			"value": 2
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 20",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 3.42,
+			"value": 3.52,
 			"calc": "IDK+cena"
 		},
 		{
@@ -77,31 +81,31 @@
 		{
 			"label": "vek od 65 do 70",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 3.36,
+			"value": 3.53,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 70 do 75",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 3.48,
+			"value": 3.65,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 75 do 80",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 3.59,
+			"value": 3.77,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 80 do 85",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 3.93,
+			"value": 4.13,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 4,
+			"value": 4.2,
 			"calc": "IDK+cena"
 		}
 	],
@@ -140,7 +144,7 @@
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 70",
@@ -151,37 +155,19 @@
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.021995,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
-		},
-		{
-			"label": "Preventívne prehliadky ",
-			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.057,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Preventívne prehliadky",
-			"if": "KPS && vv.kod in ['160']",
-			"value": 0.057,
+			"value": 0.021995,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
-			"if": "EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.057,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.057,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -194,30 +180,30 @@
 			"label": "EKG pri preventívnej prehliadke",
 			"if": "vv.kod in ['5702P']",
 			"value": 0.008105,
-			"calc": "vv.pocet*550*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "EKG ",
 			"if": "vv.kod in ['5702']",
 			"value": 0.008105,
-			"calc": "vv.pocet*550*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Celodenné snímanie tlaku",
 			"if": "vv.kod in ['5715']",
 			"value": 0.016597,
-			"calc": "vv.pocet*750*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Celodenné snímanie tlaku - vyhodnotenie",
 			"if": "vv.kod in ['5716']",
 			"value": 0.016597,
-			"calc": "vv.pocet*240*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.057,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -229,14 +215,14 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Akútne EKG",
 			"if": "vv.kod in ['5702c']",
 			"value": 0.007303,
-			"calc": "vv.pocet*500*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 163",
@@ -311,10 +297,28 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "C-reaktívny proteín",
+			"if": "vv.kod in ['4571a']",
+			"value": 4.4,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
+			"if": "vv.kod in ['62a']",
+			"value": 20,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
 			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
 			"value": 0.020995,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='FOB'",
+			"value": null,
+			"calc": "FOB"
 		}
 	],
 	"kontrola": [

@@ -15,7 +15,7 @@
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": 0.0193,
-			"calc": "vv.pocet*50*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ŠAS",
@@ -54,7 +54,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "ŠAS",
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*VCB"
@@ -66,7 +66,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "ŠAS",
+			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*VCB"

@@ -12,6 +12,10 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.0073
 		},
+		"CBSVALZSP": {
+			"label": "Cena bodu SVaLZ SP",
+			"value": 0.008
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0

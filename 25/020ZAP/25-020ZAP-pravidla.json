@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0
+			"value": 1.2
 		},
 		"KPS": {
 			"label": "KPS",
@@ -14,7 +14,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.020995
+			"value": 0.026
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -29,7 +29,7 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 3.42,
+			"value": 3.52,
 			"calc": "IDK+cena"
 		},
 		{
@@ -77,31 +77,31 @@
 		{
 			"label": "vek od 65 do 70",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 3.36,
+			"value": 3.53,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 70 do 75",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 3.48,
+			"value": 3.65,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 75 do 80",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 3.59,
+			"value": 3.77,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 80 do 85",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 3.93,
+			"value": 4.13,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 4,
+			"value": 4.2,
 			"calc": "IDK+cena"
 		}
 	],
@@ -109,13 +109,13 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*CB"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
-			"value": 0.007303,
+			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
@@ -127,20 +127,20 @@
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.021995,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 64",
@@ -151,37 +151,19 @@
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*CB"
-		},
-		{
-			"label": "Preventívne prehliadky ",
-			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.057,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Preventívne prehliadky",
-			"if": "KPS && vv.kod in ['160']",
-			"value": 0.057,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Preventívne prehliadky ",
-			"if": "EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.057,
+			"value": 0.021995,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.057,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -217,7 +199,7 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.057,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -229,8 +211,14 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Vyšetrenie C – reaktívneho proteínu",
+			"if": "vv.kod in ['4571a']",
+			"value": 4.4,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Akútne EKG",
@@ -293,6 +281,12 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
+			"if": "vv.kod in ['62a']",
+			"value": 20,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Kvantitatívne vyšetrenie INR POCT",
 			"if": "vv.kod in ['H0007']",
 			"value": 5.2,
@@ -319,7 +313,7 @@
 		{
 			"label": "Nekapitovaný EU - iné ako SVALZ",
 			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
-			"value": 0.020995,
+			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK"
 		}
 	],

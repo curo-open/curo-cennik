@@ -23,7 +23,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0193 │ vv.pocet*50*cena          │ ŠAS                                           │ vv.kod in ['15d']                                            │
+│          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │        0.011593 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531']                                               │
 │        0.011593 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['532','533a','540','541','542']                   │
@@ -32,9 +32,9 @@ Autor: curo.sk
 │                 │ vv.pocet*210*VCB          │ ŠAS                                           │ vv.kod in ['63']                                             │
 │          0.0462 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
 │                 │                           │                                               │ 763sp','763sn']                                              │
-│                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│                 │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*VCB         │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

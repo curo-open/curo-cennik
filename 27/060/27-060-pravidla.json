@@ -8,6 +8,18 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.0073
 		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 2.49
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 0.73
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 0.57
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
@@ -80,6 +92,24 @@
 			"if": "vv.kod in ['Y0023']",
 			"value": 4.56,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP5'",
+			"value": null,
+			"calc": "IPP5"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP6'",
+			"value": null,
+			"calc": "IPP6"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",

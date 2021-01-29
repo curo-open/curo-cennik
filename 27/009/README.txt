@@ -9,32 +9,40 @@ Autor: curo.sk
 │ Názov a hodnota  │ Popis                        │
 ├──────────────────┼──────────────────────────────┤
 │ IDK = 0          │ NASTAVENIA IDK               │
-│ CB = 0.0166      │ Cena bodu                    │
+│ CB = 0.025       │ Cena bodu                    │
 │ CBP = 0.043      │ Cena bodu preventívne výkony │
 │ CBEU = 0.0166    │ Cena bodu EU                 │
-│ CBSVALZ = 0.0073 │ Cena bodu SVaLZ              │
+│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ              │
 └──────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
-┌───────────┬───────────────┬──────────┬────────────────────┐
-│ Popis     │ Premenná cena │ Vzorec   │ Podmienka          │
-├───────────┼───────────────┼──────────┼────────────────────┤
-│ Kapitácia │           1.4 │ IDK+cena │ p|vekMedzi(0, 130) │
-└───────────┴───────────────┴──────────┴────────────────────┘
+┌───────────┬───────────────┬──────────┬─────────────────────┐
+│ Popis     │ Premenná cena │ Vzorec   │ Podmienka           │
+├───────────┼───────────────┼──────────┼─────────────────────┤
+│ Kapitácia │           NaN │ IDK+cena │ p|vekMedzi(15, 130) │
+└───────────┴───────────────┴──────────┴─────────────────────┘
 
 
   CENY ZA VÝKONY
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0266 │ vv.bodyCelkom*cena        │ Výkon 108,118                                 │ vv.diagnoza in ['Z'] && vv.kod in ['108','118']              │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308 Z                       │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']            │
-│          0.0076 │ vv.bodyCelkom*cena        │ Výkon 5308 Z                                  │ vv.diagnoza in ['Z'] && vv.kod in ['5308']                   │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Výkon 108,118                                 │ vv.kod in ['108','118']                                      │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.jeSVaZL        │
-│                 │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !vv.jeSVaZL       │
+│           0.053 │ vv.bodyCelkom*cena        │ Výkon 100,102,103,105,157,108                 │ vv.diagnoza in ['Z'] && vv.kod in ['100','102','103','105',' │
+│                 │                           │                                               │ 157','108']                                                  │
+│          0.0266 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.diagnoza in ['Z'] && vv.kod in ['118']                    │
+│           0.032 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ vv.diagnoza in ['Z'] && vv.kod in ['297']                    │
+│           0.053 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.diagnoza in ['Z'] && vv.kod in ['252b']                   │
+│           0.053 │ vv.bodyCelkom*cena        │ Výkon 1070                                    │ vv.diagnoza in ['Z'] && vv.kod in ['1070']                   │
+│          0.0266 │ vv.bodyCelkom*cena        │ Výkony 5303,5305                              │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']            │
+│        0.008535 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.diagnoza in ['Z'] && vv.kod in ['5308']                   │
+│          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
+│                 │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305                              │ vv.kod in ['5303','5305']                                    │
+│           0.026 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
+│                 │                           │                                               │ & vv.jeSVaZL                                                 │
+│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
+│                 │                           │                                               │ & !vv.jeSVaZL                                                │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
