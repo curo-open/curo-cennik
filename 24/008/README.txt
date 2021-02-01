@@ -5,23 +5,27 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬────────────────┐
-│ Názov a hodnota │ Popis          │
-├─────────────────┼────────────────┤
-│ IDK = 0.01      │ NASTAVENIA IDK │
-└─────────────────┴────────────────┘
+┌─────────────────┬───────────────────┐
+│ Názov a hodnota │ Popis             │
+├─────────────────┼───────────────────┤
+│ IDK = 0.01      │ NASTAVENIA IDK    │
+│ VCB8 = 4.08     │ VCB pre výkon 8   │
+│ VCB4 = 2.88     │ VCB pre výkon 4   │
+│ VCB1 = 0.77     │ VCB pre výkon 1   │
+│ VCB250 = 0.77   │ VCB pre výkon 250 │
+└─────────────────┴───────────────────┘
 
 
   CENY ZA PACIENTA
 ┌─────────────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                       │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────────────────┼───────────────┼──────────┼────────────────────┤
-│ do 1 roku                   │             6 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ od 1 do dovršenia 2 rokov   │           6.4 │ IDK+cena │ p|vekMedzi(1, 2)   │
-│ od 2 do dovršenia 7 rokov   │          4.25 │ IDK+cena │ p|vekMedzi(2, 7)   │
-│ od 7 do dovršenia 19 rokov  │          2.87 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ od 19 do dovršenia 27 rokov │          1.86 │ IDK+cena │ p|vekMedzi(19, 27) │
-│ od 27 do dovršenia 28 rokov │          1.95 │ IDK+cena │ p|vekMedzi(27, 28) │
+│ do 1 roku                   │          7.69 │ IDK+cena │ p|vekMedzi(0, 1)   │
+│ od 1 do dovršenia 2 rokov   │          8.19 │ IDK+cena │ p|vekMedzi(1, 2)   │
+│ od 2 do dovršenia 7 rokov   │          5.45 │ IDK+cena │ p|vekMedzi(2, 7)   │
+│ od 7 do dovršenia 19 rokov  │           3.6 │ IDK+cena │ p|vekMedzi(7, 19)  │
+│ od 19 do dovršenia 27 rokov │          2.34 │ IDK+cena │ p|vekMedzi(19, 27) │
+│ od 27 do dovršenia 28 rokov │          2.44 │ IDK+cena │ p|vekMedzi(27, 28) │
 └─────────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -32,19 +36,27 @@ Autor: curo.sk
 │        0.020072 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │          0.0078 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
 │          0.0193 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
-│        0.048972 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
+│           0.057 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
 │                 │                           │                                               │ ', '146b', '146c', '148', '148a', '148b', '148c', '149', '14 │
 │                 │                           │                                               │ 9a', '149b', '149c', '149d', '149f', '159b', '950', '953', ' │
-│                 │                           │                                               │ 159a', '159x', '159z']                                       │
-│        0.048972 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
-│           0.041 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
-│           0.044 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│                 │                           │                                               │ 159a', '159x', '159z','160']                                 │
+│           0.092 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│            0.05 │ vv.bodyCelkom*cena        │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
+│                 │                           │ nie do 5 roku života                          │                                                              │
+│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a''70']                                   │
 │           0.044 │ vv.bodyCelkom*cena        │ Glykemia                                      │ vv.kod in ['3671']                                           │
 │          0.0193 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25', '26', '29', '30']                           │
 │               4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a']                                          │
 │              10 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │             4.2 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702ZV']                                         │
-│               6 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
+│               6 │ vv.pocet*cena             │ Vykon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
+│            9.29 │ vv.pocet*cena             │ Vykon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
+│            6.54 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
+│                 │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
+│                 │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
+│                 │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │
+│                 │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -53,6 +65,7 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │              40 │ 70                                                                                                        │                           │
+│             390 │ 160                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

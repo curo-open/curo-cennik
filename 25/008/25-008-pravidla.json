@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0.01
+			"value": 1.2
 		},
 		"KPS": {
 			"label": "KPS",
@@ -17,37 +17,37 @@
 		{
 			"label": "do 1 roku",
 			"if": "p.kapitacia && p|vekMedzi(0, 1)",
-			"value": 7.23,
+			"value": 7.86,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "od 1 do 2 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(1, 3)",
-			"value": 6.95,
+			"value": 7.57,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "od 3 do 5 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(3, 6)",
-			"value": 5.51,
+			"value": 6.09,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "od 6 do 9 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(6, 10)",
-			"value": 3.87,
+			"value": 4.4,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "od 10 do 19 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(10, 20)",
-			"value": 3.02,
+			"value": 3.52,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "od 20 do 28 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": 2.03,
+			"value": 2.8,
 			"calc": "IDK+cena"
 		}
 	],
@@ -55,7 +55,7 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.006639,
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -67,13 +67,13 @@
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && !vv.jeSVaZL",
-			"value": 0.018257,
+			"value": 0.26,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne zdravotné výkony",
-			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '953']",
-			"value": 0.05,
+			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '951','952','953']",
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -85,25 +85,49 @@
 		{
 			"label": "Preventívna prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.041,
+			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventivne zdravotne vykony (142)",
 			"if": "vv.kod in ['142']",
-			"value": 0.041,
+			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
+			"value": 0.057,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Rozbor a plánovanie cielených terapeutických postupov v na ovplyvnenie\nchronických ochorení",
+			"if": "vv.kod in ['10']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Telekomunikácia",
+			"if": "vv.kod in ['1b','70']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Komplexné vyšetrenie pri prevzatí do starostlivosti",
+			"if": "vv.kod in ['60']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Príplatok pri sťaženom výkone - odber, očkovanie do 5 roku života",
+			"if": "vv.kod in ['67']",
 			"value": 0.041,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návšteva služba",
-			"if": "vv.kod in ['25', '26']",
-			"value": 0.016597,
+			"if": "vv.kod in ['25','26']",
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -119,19 +143,25 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
+			"if": "vv.kod in ['62b']",
+			"value": 20,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Odbery ",
 			"if": "vv.kod in ['250D']",
 			"value": 1.05,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Intenzifikovaná zdravotná starostlivosť pre rizikových poistencov s obezitou",
+			"if": "vv.kod in ['H0002']",
+			"value": 4.5,
+			"calc": "vv.pocet*cena"
 		}
 	],
 	"kontrola": [
-		{
-			"label": "Preventivný výkon 142 mimo dovoleného rozpǎtia (1-4 tyždne) ",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"142\"]')",
-			"check": "pacient.vekDni|vTyzdnoch >= 0 || pacient.vekDni|vTyzdnoch < 4",
-			"severity": 0
-		},
 		{
 			"label": "Preventivný výkon 143 mimo dovoleného rozpǎtia (2-5 tyždne) ",
 			"if": "p.kapitacia && d.vv|ma('kod in [\"143\"]')",
@@ -234,12 +264,6 @@
 			{
 				"cond": "",
 				"value": 40
-			}
-		],
-		"1b": [
-			{
-				"cond": "",
-				"value": 160
 			}
 		],
 		"1c": [
