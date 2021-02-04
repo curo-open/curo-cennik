@@ -1,18 +1,24 @@
-                                                                         ==============
-                                                                         Cenník ortoped
-                                                                         ==============
+                                                                   =========================
+                                                                   Cenník detska psychiatria
+                                                                   =========================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬──────────────────────────────┐
-│ Názov a hodnota    │ Popis                        │
-├────────────────────┼──────────────────────────────┤
-│ CB = 0.0234        │ Cena bodu                    │
-│ CBP = 0.0455       │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.007655 │ Cena bodu SVaLZ              │
-│ LIMIT = 0          │ Limit                        │
-└────────────────────┴──────────────────────────────┘
+┌────────────────────┬───────────────────────┐
+│ Názov a hodnota    │ Popis                 │
+├────────────────────┼───────────────────────┤
+│ IPP1 = 1.8         │ IPP1                  │
+│ IPP2 = 2.9         │ IPP2                  │
+│ IPP3 = 4.9         │ IPP3                  │
+│ IPP4 = 4.9         │ IPP4                  │
+│ IPPD = 5           │ IPPD                  │
+│ LIMIT = 0          │ Limit                 │
+│ EL_POBOCKA = 1     │ Používa el. pobočku ? │
+│ CB = 0.0268        │ Cena bodu             │
+│ CBSVALZ = 0.008105 │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
+└────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -25,17 +31,17 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            6.05 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['62']                                             │
-│             4.7 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['63']                                             │
-│            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60r']                                            │
-│            3.36 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['65'] && p|vekMedzi(0, 5)                         │
-│          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
-│        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│                 │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
+│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│                 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│                 │ IPPD                      │ Pripočitateľné položky                        │ vv.kod=='IPPD'                                               │
+│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -44,7 +50,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             100 │ 65                                                                                                        │                           │
+│             160 │ 1                                                                                                         │                           │
+│             420 │ 60                                                                                                        │                           │
+│             270 │ 62                                                                                                        │                           │
+│             210 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
+│              40 │ 70                                                                                                        │                           │
+│             150 │ 15d                                                                                                       │                           │
+│             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

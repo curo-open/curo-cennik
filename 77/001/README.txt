@@ -48,12 +48,6 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
-│             5.6 │ vv.bodyCelkom*cena        │                                               │                                                              │
-│        0.007303 │ vv.bodyCelkom*CB          │                                               │                                                              │
-│             1.5 │ vv.bodyCelkom*cena        │                                               │                                                              │
-│             8.4 │ vv.pocet*cena             │                                               │                                                              │
-│            0.02 │ vv.pocet*cena             │                                               │                                                              │
-│                 │ vv.pocet*cena             │                                               │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

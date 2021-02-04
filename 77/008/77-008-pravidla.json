@@ -102,7 +102,7 @@
 			"label": "Očkovanie proti hepatitíde A",
 			"if": "vv.diagnoza in ['Z20.5','Z24.6',] && vv.kod in ['252b']",
 			"value": 0.06,
-			"calc": ""
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B",

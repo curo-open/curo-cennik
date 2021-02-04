@@ -45,7 +45,7 @@ Autor: curo.sk
 │           19.35 │ vv.pocet*cena             │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti rotavirusom                   │ vv.diagnoza in ['Z25.8','Z26.8',] && vv.kod in ['252a']      │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
-│            0.06 │                           │ Očkovanie proti hepatitíde A                  │ vv.diagnoza in ['Z20.5','Z24.6',] && vv.kod in ['252b']      │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza in ['Z20.5','Z24.6',] && vv.kod in ['252b']      │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza in ['Z20.8','Z23.8',] && vv.kod in ['252b']      │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti varicelle                     │ vv.diagnoza=='Z26.8' && vv.kod in ['252b']                   │

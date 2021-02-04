@@ -10,7 +10,7 @@ Autor: curo.sk
 ├──────────────────┼────────────────────────────┤
 │ IDK = 0.87       │ NASTAVENIA IDK             │
 │ CB = 0.026       │ Cena bodu                  │
-│ CBSVALZ = 0.0073 │ Cena bodu SVaLZ            │
+│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
 └──────────────────┴────────────────────────────┘
 
@@ -30,9 +30,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0082 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
+│                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
 │                 │                           │                                               │ ) && vv.typ=='SVaLZ'                                         │
-│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
 │                 │                           │                                               │ ) && vv.typ!='SVaLZ'                                         │
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
@@ -78,9 +78,9 @@ Autor: curo.sk
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test                   │ vv.kod in ['629b']                                           │
 │               1 │ vv.pocet*cena             │ Výplach zvukovodu                             │ vv.kod in ['1540']                                           │
 │             4.5 │ vv.pocet*cena             │ Komplexné vyšetrenie pacienta                 │ vv.kod in ['60']                                             │
-│          0.0082 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'         │
-│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'         │
-│           0.026 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU','EU']                    │
+│                 │ vv.bodyCelkom*SVALZ       │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'         │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'         │
+│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU','EU']                    │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
