@@ -11,6 +11,7 @@ Autor: curo.sk
 │ IDK = 1.2       │ IDK                   │
 │ KPS = 1         │ KPS                   │
 │ EL_POBOCKA = 1  │ Používa el. pobočku ? │
+│ AGTC = 4.8      │ AGTC                  │
 └─────────────────┴───────────────────────┘
 
 
@@ -58,6 +59,10 @@ Autor: curo.sk
 │            1.05 │ vv.pocet*cena             │ Odbery                                        │ vv.kod in ['250D']                                           │
 │             4.5 │ vv.pocet*cena             │ Intenzifikovaná zdravotná starostlivosť pre r │ vv.kod in ['H0002']                                          │
 │                 │                           │ izikových poistencov s obezitou               │                                                              │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

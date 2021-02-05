@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CB = 0.026       │ Cena bodu                  │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8       │ AGTC                       │
 └──────────────────┴────────────────────────────┘
 
 
@@ -63,7 +64,10 @@ Autor: curo.sk
 │              13 │ vv.pocet*cena             │ 24h meranie tlaku                             │ vv.kod in ['5715']                                           │
 │          0.0082 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
 │               5 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
-│            10.2 │ vv.pocet*cena             │ Skríningový test Covid 19                     │ vv.kod in ['629b']                                           │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │               6 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │
 │               1 │ vv.pocet*cena             │ Odstránenie ušného mazu                       │ vv.kod in ['1540']                                           │
 │             8.8 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10']                                             │

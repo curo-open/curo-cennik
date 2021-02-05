@@ -205,7 +205,7 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Skríningový antigénový test SARS-CoV-2",
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
 			"calc": "vv.pocet*cena"

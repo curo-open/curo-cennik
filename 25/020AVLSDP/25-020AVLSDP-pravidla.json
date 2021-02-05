@@ -23,6 +23,10 @@
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.020995
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
 		}
 	},
 	"pacient": [
@@ -309,6 +313,24 @@
 			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
 			"value": 0.020995,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
 		}
 	],
 	"kontrola": [],

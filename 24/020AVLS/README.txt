@@ -13,6 +13,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
 │ _4571a = 4.4      │ 4571a                      │
+│ AGTC = 4.8        │ AGTC                       │
 └───────────────────┴────────────────────────────┘
 
 
@@ -64,6 +65,10 @@ Autor: curo.sk
 │               5 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
 │             4.5 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
 │               9 │ vv.pocet*cena             │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

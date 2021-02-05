@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CB = 0.022089     │ Cena bodu                  │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8        │ AGTC                       │
 └───────────────────┴────────────────────────────┘
 
 
@@ -56,6 +57,10 @@ Autor: curo.sk
 │            4.45 │ vv.pocet*cena             │ EKG (5702Z,5702ZV)                            │ vv.kod in ['5702ZV','5702Z']                                 │
 │             4.4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['EU']                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

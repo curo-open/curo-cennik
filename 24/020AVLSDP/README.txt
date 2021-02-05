@@ -30,6 +30,7 @@ Autor: curo.sk
 │ CB = 0.022089     │ Cena bodu                       │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ                 │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)      │
+│ AGTC = 4.8        │ AGTC                            │
 └───────────────────┴─────────────────────────────────┘
 
 
@@ -87,6 +88,10 @@ Autor: curo.sk
 │               8 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
 │        0.022089 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
 │        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

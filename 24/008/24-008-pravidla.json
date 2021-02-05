@@ -19,6 +19,10 @@
 		"VCB250": {
 			"label": "VCB pre výkon 250",
 			"value": 0.77
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
 		}
 	},
 	"pacient": [
@@ -179,6 +183,24 @@
 			"if": "vv.kod in ['250']",
 			"value": null,
 			"calc": "vv.pocet*VCB250"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
 		}
 	],
 	"kontrola": [

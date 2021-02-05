@@ -23,6 +23,10 @@
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.026
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
 		}
 	},
 	"pacient": [
@@ -297,6 +301,24 @@
 			"if": "vv.kod in ['250D']",
 			"value": 1.05,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
 		},
 		{
 			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",

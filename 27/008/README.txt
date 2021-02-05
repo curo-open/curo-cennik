@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CB = 0.02        │ Cena bodu                  │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8       │ AGTC                       │
 └──────────────────┴────────────────────────────┘
 
 
@@ -66,7 +67,10 @@ Autor: curo.sk
 │            1.05 │ vv.pocet*cena             │ Odbery                                        │ vv.kod in ['250D']                                           │
 │            4.41 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702Z']                                          │
 │             4.4 │ vv.pocet*cena             │ Otoskopické vyšetrenie jednostranne           │ vv.kod in ['1544a']                                          │
-│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV          │ vv.kod in ['629b']                                           │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │             8.8 │ vv.pocet*cena             │ Starostlivosť o poistenca s obezitou, artério │ vv.kod in ['10']                                             │
 │                 │                           │ vou hypertenziou a/alebo dyslipidémiou        │                                                              │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'         │

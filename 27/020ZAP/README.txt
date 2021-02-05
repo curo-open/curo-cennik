@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CB = 0.026       │ Cena bodu                  │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8       │ AGTC                       │
 └──────────────────┴────────────────────────────┘
 
 
@@ -62,9 +63,11 @@ Autor: curo.sk
 │              13 │ vv.pocet*cena             │ 24h meranie tlaku                             │ vv.kod in ['5715']                                           │
 │          0.0082 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
 │               5 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│               1 │ vv.pocet*cena             │ 0 Výplach zvukovodu (jedno ucho)              │ vv.kod in ['1540']                                           │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│               1 │ vv.pocet*cena             │ Výplach zvukovodu (jedno ucho)                │ vv.kod in ['1540']                                           │
 │               6 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │
 │             8.8 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10']                                             │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │

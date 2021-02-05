@@ -13,6 +13,7 @@ Autor: curo.sk
 │ VCB4 = 2.88     │ VCB pre výkon 4   │
 │ VCB1 = 0.77     │ VCB pre výkon 1   │
 │ VCB250 = 0.77   │ VCB pre výkon 250 │
+│ AGTC = 4.8      │ AGTC              │
 └─────────────────┴───────────────────┘
 
 
@@ -57,6 +58,10 @@ Autor: curo.sk
 │                 │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
 │                 │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │
 │                 │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CB = 0.02        │ Cena bodu                  │
 │ CBSVALZ = 0.0073 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8       │ AGTC                       │
 └──────────────────┴────────────────────────────┘
 
 
@@ -71,6 +72,10 @@ Autor: curo.sk
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
 │          0.0073 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.typ=='SVaLZ'        │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.typ!='SVaLZ'        │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

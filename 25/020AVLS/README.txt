@@ -15,6 +15,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.007303 │ Cena bodu SVaLZ                                   │
 │ CBEUNK = 0.026     │ Cena bodu Nekapitovany(EU)                        │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
+│ AGTC = 4.8         │ AGTC                                              │
 └────────────────────┴───────────────────────────────────────────────────┘
 
 
@@ -81,6 +82,10 @@ Autor: curo.sk
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
 │                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
 │                 │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
