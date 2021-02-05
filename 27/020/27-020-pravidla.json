@@ -15,6 +15,10 @@
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.026
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
 		}
 	},
 	"pacient": [
@@ -106,7 +110,7 @@
 		},
 		{
 			"label": "Očkovanie proti chrípke",
-			"if": "vv.diagnoza=='Z25.1' && vv.kod in ['252b']",
+			"if": "vv.kod in ['252b']",
 			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -261,10 +265,22 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
 		},
 		{
 			"label": "Výplach zvukovodu (jedno ucho)",

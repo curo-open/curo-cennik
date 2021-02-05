@@ -8,10 +8,11 @@ Autor: curo.sk
 ┌───────────────────┬────────────────────────────┐
 │ Názov a hodnota   │ Popis                      │
 ├───────────────────┼────────────────────────────┤
-│ IDK = 0           │ NASTAVENIA IDK             │
+│ IDK = 1232901     │ NASTAVENIA IDK             │
 │ CB = 0.022089     │ Cena bodu                  │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8        │ AGTC                       │
 └───────────────────┴────────────────────────────┘
 
 
@@ -19,11 +20,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 20 │          3.39 │ IDK+cena │ p|vekMedzi(18, 20) │
-│ vek od 20 do 28 │          2.19 │ IDK+cena │ p|vekMedzi(20, 28) │
-│ vek od 28 do 46 │           2.3 │ IDK+cena │ p|vekMedzi(28, 46) │
-│ vek od 46 do 52 │          2.32 │ IDK+cena │ p|vekMedzi(46, 52) │
-│ vek od 52 do 54 │          2.53 │ IDK+cena │ p|vekMedzi(52, 54) │
+│ vek od 18 do 20 │           3.6 │ IDK+cena │ p|vekMedzi(18, 20) │
+│ vek od 20 do 28 │          2.34 │ IDK+cena │ p|vekMedzi(20, 28) │
+│ vek od 28 do 46 │          2.44 │ IDK+cena │ p|vekMedzi(28, 46) │
+│ vek od 46 do 52 │          2.46 │ IDK+cena │ p|vekMedzi(46, 52) │
+│ vek od 52 do 54 │          2.68 │ IDK+cena │ p|vekMedzi(52, 54) │
 │ vek od 54 do 58 │          2.97 │ IDK+cena │ p|vekMedzi(54, 58) │
 │ vek od 58 do 62 │          3.19 │ IDK+cena │ p|vekMedzi(58, 62) │
 │ vek od 62 do 65 │           3.4 │ IDK+cena │ p|vekMedzi(62, 65) │
@@ -42,10 +43,8 @@ Autor: curo.sk
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
 │                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
-│                 │ vv.bodyCelkom*CB          │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
-│                 │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && vv.typ!='SVaLZ'                              │
+│           0.057 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z','160']                │
 │                 │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
@@ -57,9 +56,12 @@ Autor: curo.sk
 │            0.05 │ vv.bodyCelkom*cena        │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
 │              13 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            4.45 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
-│            4.45 │ vv.pocet*cena             │ EKG (5702Z,5702ZV)                            │ vv.kod in ['5702ZV','5702Z']                                 │
+│            4.45 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
-│             4.4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
+│             4.4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a']                                          │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629b']                                           │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │                 │ vv.bodyCelkom*CB          │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['EU']                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

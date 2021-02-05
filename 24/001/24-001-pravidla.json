@@ -12,6 +12,10 @@
 			"label": "Cena bodu SVaLZ USG",
 			"value": 0
 		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 2235
@@ -60,6 +64,24 @@
 			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn','763sp','763sn']",
 			"value": 0.0462,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",

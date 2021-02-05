@@ -17,6 +17,7 @@ Autor: curo.sk
 │ CB = 0.0268           │ Cena bodu             │
 │ CBSVALZ = 0.008105    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG   │
+│ AGTC = 4.8            │ AGTC                  │
 └───────────────────────┴───────────────────────┘
 
 
@@ -44,6 +45,10 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
 │                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │                 │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5702, 5715, 5716                        │ vv.kod in ['5702','5715','5716']                             │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

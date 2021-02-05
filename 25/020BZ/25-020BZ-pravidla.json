@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0
+			"value": 1.2
 		},
 		"KPS": {
 			"label": "KPS",
@@ -14,7 +14,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.020995
+			"value": 0.026
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -22,7 +22,7 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.020995
+			"value": 0.026
 		}
 	},
 	"pacient": [
@@ -107,10 +107,10 @@
 	],
 	"vykon": [
 		{
-			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
@@ -119,16 +119,16 @@
 			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.021995,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 1b",
@@ -157,31 +157,13 @@
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
-		},
-		{
-			"label": "Preventívne prehliadky ",
-			"if": "KPS && EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Preventívne prehliadky",
-			"if": "KPS && vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.021995,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky ",
-			"if": "EL_POBOCKA && vv.kod in ['160']",
-			"value": 0.05,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -217,19 +199,13 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.041,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Očkovanie proti chrípke",
-			"if": "vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s']",
-			"value": 0.057,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -237,6 +213,12 @@
 			"if": "vv.kod in ['5702c']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571a']",
+			"value": 4.4,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 163",
@@ -288,8 +270,14 @@
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
-			"if": "vv.kod in ['60b','60B']",
+			"if": "vv.kod in ['60b']",
 			"value": 13,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Vyšetrenie pacienta s COVID 19",
+			"if": "vv.kod in ['62a']",
+			"value": 20,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -315,28 +303,10 @@
 			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
-		},
-		{
-			"label": "Nekapitovaný EU - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
 		}
 	],
 	"kontrola": [],
 	"body": {
-		"10": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"60": [
-			{
-				"cond": "",
-				"value": 350
-			}
-		],
 		"70": [
 			{
 				"cond": "",
@@ -347,60 +317,6 @@
 			{
 				"cond": "",
 				"value": 390
-			}
-		],
-		"5702": [
-			{
-				"cond": "",
-				"value": 550
-			}
-		],
-		"5715": [
-			{
-				"cond": "",
-				"value": 750
-			}
-		],
-		"5716": [
-			{
-				"cond": "",
-				"value": 240
-			}
-		],
-		"5702P": [
-			{
-				"cond": "",
-				"value": 550
-			}
-		],
-		"252b": [
-			{
-				"cond": "",
-				"value": 70
-			}
-		],
-		"252c": [
-			{
-				"cond": "",
-				"value": 70
-			}
-		],
-		"252s": [
-			{
-				"cond": "",
-				"value": 70
-			}
-		],
-		"5702c": [
-			{
-				"cond": "",
-				"value": 500
-			}
-		],
-		"1b": [
-			{
-				"cond": "",
-				"value": 160
 			}
 		],
 		"1c": [

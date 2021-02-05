@@ -6,40 +6,44 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02
+			"value": 0.026
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0073
+			"value": 0.0082
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.02
+			"value": 0.026
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 2.38,
+			"value": 2.54,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 2.73,
+			"value": 2.92,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 2.38,
+			"value": 4.07,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 4.19,
+			"value": 4.46,
 			"calc": "IDK+cena"
 		}
 	],
@@ -47,32 +51,38 @@
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU']",
-			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": 0.0073,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVLAZ"
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Výkon 1 ",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Výkon 64",
@@ -83,13 +93,13 @@
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 17.7,
+			"value": 19.35,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -100,7 +110,7 @@
 		},
 		{
 			"label": "Očkovanie proti chrípke",
-			"if": "vv.diagnoza=='Z25.1' && vv.kod in ['252b']",
+			"if": "vv.kod in ['252b']",
 			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -155,7 +165,7 @@
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
-			"value": 0.0076,
+			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -179,31 +189,31 @@
 		{
 			"label": "TOKS pozitívny",
 			"if": "vv.kod in ['159a']",
-			"value": 8,
+			"value": 8.8,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS negatívny",
 			"if": "vv.kod in ['159z']",
-			"value": 8,
+			"value": 8.8,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS znehodnotený",
 			"if": "vv.kod in ['159x']",
-			"value": 2.01,
+			"value": 8.8,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.0455,
+			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 10.5,
+			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -227,7 +237,7 @@
 		{
 			"label": "24h meranie tlaku",
 			"if": "vv.kod in ['5715']",
-			"value": 9,
+			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -239,7 +249,7 @@
 		{
 			"label": "ABI (H0008)",
 			"if": "vv.kod in ['H0008']",
-			"value": 4.5,
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -251,7 +261,43 @@
 		{
 			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
 			"if": "vv.kod in ['10']",
-			"value": 8,
+			"value": 8.8,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
+		},
+		{
+			"label": "Výplach zvukovodu (jedno ucho)",
+			"if": "vv.kod in ['1540']",
+			"value": 1,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Stratifikácia kardiovaskulárneho rizika",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Komplexné vyšetrenie poistenca pri prevzatí dospelej osoby do zdravotnej starostlivosti",
+			"if": "vv.kod in ['60']",
+			"value": null,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -263,29 +309,11 @@
 		{
 			"label": "Nekapitovaný - EU",
 			"if": "!p.kapitacia && p.typ in ['EU']",
-			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		}
 	],
 	"kontrola": [
-		{
-			"label": "Preventivka: chýba vyšetrenie Glukózy(3671), môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 18 ",
-			"check": "d.vv|ma('kod==\"3671\"')",
-			"severity": 0
-		},
-		{
-			"label": "Preventivka: chýba Cholesterol(159b) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40 || p.vek == 18 ",
-			"check": "d.vv|ma('kod==\"159b\"')",
-			"severity": 0
-		},
-		{
-			"label": "Preventivka: chýba EKG(5702) vyšetrenie, môžte to vykázať",
-			"if": "p.kapitacia && d.vv|ma('kod in [\"160\"]') && p.vek >= 40",
-			"check": "d.vv|ma('kod==\"5702\"')",
-			"severity": 0
-		},
 		{
 			"label": "Preventivka(160) je vykázana pod zlou diagnózou",
 			"if": "vv.kod in ['160']",
@@ -331,12 +359,6 @@
 			}
 		],
 		"159a": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159b": [
 			{
 				"cond": "",
 				"value": 180

@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0
+			"value": 1232901
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -15,37 +15,41 @@
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.022973
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 20",
 			"if": "p|vekMedzi(18, 20)",
-			"value": 3.39,
+			"value": 3.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p|vekMedzi(20, 28)",
-			"value": 2.19,
+			"value": 2.34,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p|vekMedzi(28, 46)",
-			"value": 2.3,
+			"value": 2.44,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p|vekMedzi(46, 52)",
-			"value": 2.32,
+			"value": 2.46,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p|vekMedzi(52, 54)",
-			"value": 2.53,
+			"value": 2.68,
 			"calc": "IDK+cena"
 		},
 		{
@@ -99,28 +103,16 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['BE','CU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
-		},
-		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"label": "TOKS",
+			"if": "vv.kod in ['159a','159b','159x','159z','160']",
+			"value": 0.057,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 64",
@@ -189,8 +181,8 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "EKG (5702Z,5702ZV)",
-			"if": "vv.kod in ['5702ZV','5702Z']",
+			"label": "EKG (5702,5702ZV)",
+			"if": "vv.kod in ['5702ZV','5702']",
 			"value": 4.45,
 			"calc": "vv.pocet*cena"
 		},
@@ -202,9 +194,27 @@
 		},
 		{
 			"label": "CRP",
-			"if": "vv.kod in ['4571A','4571a']",
+			"if": "vv.kod in ['4571a']",
 			"value": 4.4,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
 		},
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",

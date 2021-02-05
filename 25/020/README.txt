@@ -8,13 +8,14 @@ Autor: curo.sk
 ┌────────────────────┬───────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                             │
 ├────────────────────┼───────────────────────────────────────────────────┤
-│ IDK = 0            │ IDK                                               │
+│ IDK = 1.2          │ IDK                                               │
 │ KPS = 1            │ KPS                                               │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?                             │
 │ CB = 0.026         │ Cena bodu                                         │
 │ CBSVALZ = 0.007303 │ Cena bodu SVaLZ                                   │
 │ CBEUNK = 0.026     │ Cena bodu Nekapitovany(EU)                        │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
+│ AGTC = 4.8         │ AGTC                                              │
 └────────────────────┴───────────────────────────────────────────────────┘
 
 
@@ -58,7 +59,6 @@ Autor: curo.sk
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
-│           0.057 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
 │           0.027 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
 │             4.4 │ vv.pocet*cena             │ Vyšetrenie C – reaktívneho proteínu           │ vv.kod in ['4571a']                                          │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
@@ -76,6 +76,9 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
 │             4.5 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
 │            1.05 │ vv.pocet*cena             │ Delegovaný odber krvi                         │ vv.kod in ['250D']                                           │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629b']                                           │
+│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │                 │ vv.bodyCelkom*CB          │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
