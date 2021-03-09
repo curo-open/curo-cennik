@@ -8,36 +8,42 @@ Autor: curo.sk
 ┌────────────────────┬──────────────────────────────┐
 │ Názov a hodnota    │ Popis                        │
 ├────────────────────┼──────────────────────────────┤
-│ IDK = 0            │ IDK                          │
+│ IDK = 0.55         │ IDK                          │
 │ KPS = 1            │ KPS                          │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?        │
 │ CB = 0.006639      │ Cena bodu                    │
 │ CBP = 0.057        │ Cena bodu preventívne výkony │
 │ CBEU = 0.026       │ Cena bodu EU                 │
-│ CBSVALZ = 0.008105 │ Cena bodu SVaLZ              │
+│ CBSVALZ = 0.007303 │ Cena bodu SVaLZ              │
 └────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
-┌───────────┬───────────────┬──────────┬───────────────────────────────────┐
-│ Popis     │ Premenná cena │ Vzorec   │ Podmienka                         │
-├───────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ Kapitácie │          1.45 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 120) │
-└───────────┴───────────────┴──────────┴───────────────────────────────────┘
+┌───────────┬───────────────┬──────────┬────────────────────────────────────┐
+│ Popis     │ Premenná cena │ Vzorec   │ Podmienka                          │
+├───────────┼───────────────┼──────────┼────────────────────────────────────┤
+│ Kapitácie │          1.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 120) │
+└───────────┴───────────────┴──────────┴────────────────────────────────────┘
 
 
   CENY ZA VÝKONY
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.006639 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│                 │ vv.bodyCelkom*CBP         │ Preventívne zdravotné výkony                  │ vv.kod in ['157','102','103','105','108','1070','297']       │
+│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│                 │ vv.bodyCelkom*CBP         │ Preventívne zdravotné výkony                  │ vv.kod in ['157','102','103','105','108','1070','252b','297' │
+│                 │                           │                                               │ ]                                                            │
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │         0.00909 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
 │        0.008105 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
-│       0.0076635 │ vv.bodyCelkom*cena        │ Výkon 5808                                    │ vv.kod in ['5808']                                           │
+│        0.008105 │ vv.bodyCelkom*cena        │ Výkon 5808                                    │ vv.kod in ['5808']                                           │
 │        0.020995 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│        0.007303 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
+│                 │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │
+│                 │ vv.bodyCelkom*CBEU        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
+│             5.2 │ vv.pocet*cena             │ Skriningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skriningový poistencov. antigénový test SARS- │ vv.kod in ['629b']                                           │
+│                 │                           │ CoV-2 imun. metód.                            │                                                              │
+│           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
 │                 │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
@@ -47,6 +53,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

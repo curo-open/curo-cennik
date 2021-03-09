@@ -57,7 +57,7 @@
 		},
 		{
 			"label": "Odber venóznej krvi",
-			"if": "vv.kod in ['250x']",
+			"if": "vv.kod in ['250X']",
 			"value": 2.98,
 			"calc": "vv.pocet*cena"
 		},

@@ -14,7 +14,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008617
+			"value": 0.015143
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
@@ -119,25 +119,25 @@
 		"70": [
 			{
 				"cond": "",
-				"value": 40
+				"value": 50
 			}
 		],
 		"1b": [
 			{
 				"cond": "",
-				"value": 160
+				"value": 190
 			}
 		],
 		"1c": [
 			{
 				"cond": "",
-				"value": 1000
+				"value": 1200
 			}
 		],
 		"11a": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		]
 	},

@@ -9,9 +9,9 @@ Autor: curo.sk
 │ Názov a hodnota  │ Popis                      │
 ├──────────────────┼────────────────────────────┤
 │ IDK = 0.87       │ NASTAVENIA IDK             │
-│ CB = 0.026       │ Cena bodu                  │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
+│ CB = 0.03        │ Cena bodu                  │
+│ CBSVALZ = 0.0085 │ Cena bodu SVaLZ            │
+│ CBEUNK = 0       │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8       │ AGTC                       │
 └──────────────────┴────────────────────────────┘
 
@@ -20,10 +20,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 51 │          2.54 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          2.92 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │          4.07 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+      │          4.46 │ IDK+cena │ p|vekMedzi(81)     │
+│ vek od 18 do 51 │          2.83 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          3.03 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │          4.02 │ IDK+cena │ p|vekMedzi(61)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -39,18 +38,9 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │                 │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│           19.35 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │           0.053 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
-│                 │                           │                                               │ vv.kod in ['252b']                                           │
+│            0.05 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ . && vv.kod in ['252b']                                      │
 │           0.012 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A']                                          │
 │           0.025 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
