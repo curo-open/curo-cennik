@@ -1,0 +1,22 @@
+{
+	"params": {
+		"ZA_BOD": {
+			"label": "Cena posudkového lekára za bod",
+			"value": 0.023236
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon pre UPSVAR",
+			"if": "vv.typ=='upsvar'",
+			"value": null,
+			"calc": "vv.bodyCelkom*ZA_BOD"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gynekolog"
+}
