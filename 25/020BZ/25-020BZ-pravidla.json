@@ -138,7 +138,7 @@
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 11a",
@@ -156,7 +156,7 @@
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
