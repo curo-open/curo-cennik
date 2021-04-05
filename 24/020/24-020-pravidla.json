@@ -211,6 +211,12 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Očkovanie Covid",
+			"if": "vv.kod in ['252L']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
