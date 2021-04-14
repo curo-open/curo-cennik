@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- pridane JZS">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/005/24-005-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/005/24-005-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/005/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/005/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/105/24-105-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/105/24-105-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/105/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/105/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/27-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/27-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,41 +378,19 @@
       <workItem from="1612475996715" duration="3356000" />
       <workItem from="1613539124180" duration="599000" />
       <workItem from="1613799819303" duration="18000" />
-    </task>
-    <task id="LOCAL-00148" summary="- 048 64a">
-      <created>1590652576054</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1590652576054</updated>
-    </task>
-    <task id="LOCAL-00149" summary="- 159b vld&#10;- 250x onko">
-      <created>1591276135095</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1591276135095</updated>
-    </task>
-    <task id="LOCAL-00150" summary="- pridane 004">
-      <created>1591791196094</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1591791196094</updated>
-    </task>
-    <task id="LOCAL-00151" summary="- pridane 004">
-      <created>1591791212688</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1591791212688</updated>
-    </task>
-    <task id="LOCAL-00152" summary="- upravene 004">
-      <created>1591793297762</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1591793297762</updated>
+      <workItem from="1615277203518" duration="24000" />
+      <workItem from="1615326379462" duration="6708000" />
+      <workItem from="1615837250297" duration="1800000" />
+      <workItem from="1615962587235" duration="598000" />
+      <workItem from="1616171174879" duration="599000" />
+      <workItem from="1616432153318" duration="595000" />
+      <workItem from="1616482227384" duration="599000" />
+      <workItem from="1616586133254" duration="594000" />
+      <workItem from="1616931121926" duration="598000" />
+      <workItem from="1617646435566" duration="646000" />
+      <workItem from="1617686563288" duration="1800000" />
+      <workItem from="1618351366687" duration="597000" />
+      <workItem from="1618379590229" duration="749000" />
     </task>
     <task id="LOCAL-00153" summary="- upravene 004">
       <created>1591793424429</created>
@@ -712,7 +700,42 @@
       <option name="project" value="LOCAL" />
       <updated>1612543032422</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="- updates">
+      <created>1615277217553</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1615277217553</updated>
+    </task>
+    <task id="LOCAL-00198" summary="- 009 upsvar">
+      <created>1615788127967</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1615788127968</updated>
+    </task>
+    <task id="LOCAL-00199" summary="- updates">
+      <created>1615788146182</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1615788146182</updated>
+    </task>
+    <task id="LOCAL-00200" summary="- pridane 77">
+      <created>1615804197220</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1615804197220</updated>
+    </task>
+    <task id="LOCAL-00201" summary="- added ockovanie covid">
+      <created>1617646452361</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1617646452362</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,9 +781,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upraveny vypocet ockovania" />
-    <MESSAGE value="- upraveny pocet 1 pre 27" />
-    <MESSAGE value="- upravene zvld" />
     <MESSAGE value="- pridane 064" />
     <MESSAGE value="- pridane 64&#10;- upraven 064" />
     <MESSAGE value="- upravene 001&#10;- upravene avls" />
@@ -778,39 +798,40 @@
     <MESSAGE value="- update 010 JZS" />
     <MESSAGE value="- pridane 050" />
     <MESSAGE value="- upraven cenniky&#10;- pridane 005" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- pridane 105" />
     <MESSAGE value="- pridane 629a" />
     <MESSAGE value="- pridane 020" />
     <MESSAGE value="- fixed IDK" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixed IDK" />
+    <MESSAGE value="- 009 upsvar" />
+    <MESSAGE value="- updates" />
+    <MESSAGE value="- pridane 77" />
+    <MESSAGE value="- added ockovanie covid" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added ockovanie covid" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="64" width="1420" height="900" key="CommitChangelistDialog2" timestamp="1612543032272">
-      <screen x="0" y="0" width="6080" height="1419" />
+    <state x="21" y="-31" width="916" height="843" key="CommitChangelistDialog2" timestamp="1617646452123">
+      <screen x="0" y="0" width="1920" height="1059" />
     </state>
+    <state x="21" y="-31" key="CommitChangelistDialog2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646452123" />
     <state x="104" y="-49" width="916" height="849" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1419@0.0.1920.1080" timestamp="1612433731205" />
     <state x="93" y="64" width="1420" height="900" key="CommitChangelistDialog2/0.0.6080.1419@0.0.6080.1419" timestamp="1612543032272" />
     <state x="95" y="68" width="916" height="849" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1609229818969" />
-    <state x="87" y="-20" width="916" height="849" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200@0.0.1600.1200" timestamp="1608128278905" />
-    <state x="1703" y="-42" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200@1600.0.1920.1080" timestamp="1608064216677" />
-    <state x="124" y="-77" key="CommitChangelistDialog2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1604005777934" />
-    <state x="126" y="-56" width="1313" height="980" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1604327126780" />
+    <state x="21" y="-32" width="916" height="843" key="CommitChangelistDialog2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788146094" />
+    <state x="23" y="-11" width="916" height="685" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615810357174" />
     <state x="777" y="415" width="351" height="152" key="VCS.ChangelistChooser" timestamp="1611914529011">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="777" y="415" width="351" height="152" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1419@0.0.1920.1080" timestamp="1611914529011" />
     <state x="649" y="485" width="292" height="158" key="VCS.ChangelistChooser/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1609229828154" />
-    <state x="1299" y="-530" width="524" height="794" key="Vcs.Push.Dialog.v2" timestamp="1612543034508">
-      <screen x="0" y="0" width="6080" height="1419" />
+    <state x="404" y="-454" width="524" height="605" key="Vcs.Push.Dialog.v2" timestamp="1617646476075">
+      <screen x="0" y="0" width="1920" height="1059" />
     </state>
+    <state x="404" y="-454" key="Vcs.Push.Dialog.v2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646476075" />
     <state x="412" y="-353" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1419@0.0.1920.1080" timestamp="1612433733033" />
     <state x="1299" y="-530" key="Vcs.Push.Dialog.v2/0.0.6080.1419@0.0.6080.1419" timestamp="1612543034508" />
     <state x="348" y="-319" width="524" height="714" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1609229820614" />
-    <state x="338" y="-431" width="524" height="794" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200@0.0.1600.1200" timestamp="1608128280210" />
-    <state x="2008" y="-368" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200@1600.0.1920.1080" timestamp="1608062899640" />
-    <state x="423" y="-246" key="Vcs.Push.Dialog.v2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1604005779563" />
-    <state x="425" y="-228" width="525" height="585" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1604327128138" />
+    <state x="406" y="-435" key="Vcs.Push.Dialog.v2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788147528" />
+    <state x="406" y="-443" width="524" height="605" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615804198798" />
   </component>
   <component name="masterDetails">
     <states>

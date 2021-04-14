@@ -163,7 +163,7 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Preventina prehliadka",
+			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
 			"value": 0.05,
 			"calc": "vv.bodyCelkom*cena"

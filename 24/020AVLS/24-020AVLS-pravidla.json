@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0
+			"value": 1.17
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -29,73 +29,73 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p|vekMedzi(18, 20)",
-			"value": 3.39,
+			"value": 3.66,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p|vekMedzi(20, 28)",
-			"value": 2.19,
+			"value": 2.37,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p|vekMedzi(28, 46)",
-			"value": 2.3,
+			"value": 2.48,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p|vekMedzi(46, 52)",
-			"value": 2.32,
+			"value": 2.51,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p|vekMedzi(52, 54)",
-			"value": 2.53,
+			"value": 2.73,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p|vekMedzi(54, 58)",
-			"value": 2.97,
+			"value": 3.21,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p|vekMedzi(58, 62)",
-			"value": 3.19,
+			"value": 3.45,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p|vekMedzi(62, 65)",
-			"value": 3.4,
+			"value": 3.67,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p|vekMedzi(65, 69)",
-			"value": 3.6,
+			"value": 3.89,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p|vekMedzi(69, 73)",
-			"value": 3.89,
+			"value": 4.2,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p|vekMedzi(73, 88)",
-			"value": 4.29,
+			"value": 4.63,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p|vekMedzi(88)",
-			"value": 4.23,
+			"value": 4.57,
 			"calc": "IDK+cena"
 		}
 	],
@@ -127,7 +127,7 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.022973,
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -175,13 +175,13 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.048972,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Preventina prehliadka",
+			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -199,7 +199,7 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
-			"value": 0.025,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -221,15 +221,21 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Kvantitatívne vyšetrenie INR POCT",
+			"if": "vv.kod in ['H0007']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Stanovenie ABI oscilometricky",
 			"if": "vv.kod in ['H0008']",
-			"value": 4.5,
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Celodenné snímanie tlaku",
 			"if": "vv.kod in ['5715']",
-			"value": 9,
+			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
 		{
