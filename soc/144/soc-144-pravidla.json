@@ -15,7 +15,7 @@
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
-			"if": "vv.typ=='soc' && vv.mod in ['VIZI']",
+			"if": "vv.typ=='soc' && vv.mode in ['soc/vizi']",
 			"value": 0.028547,
 			"calc": "vv.bodyCelkom*cena"
 		},
