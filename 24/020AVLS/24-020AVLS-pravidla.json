@@ -168,8 +168,14 @@
 		},
 		{
 			"label": "TOKS",
-			"if": "vv.kod in ['159a','159b','159x','159z']",
-			"value": 0.05,
+			"if": "vv.kod in ['159a','159x','159z']",
+			"value": 0.06,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Cholesterol ako cast PP",
+			"if": "vv.kod in ['159b']",
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

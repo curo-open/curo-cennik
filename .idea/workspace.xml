@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/005/24-005-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/005/24-005-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/005/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/005/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/105/24-105-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/105/24-105-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/105/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/105/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020/27-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/27-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -390,14 +380,13 @@
       <workItem from="1617646435566" duration="646000" />
       <workItem from="1617686563288" duration="1800000" />
       <workItem from="1618351366687" duration="597000" />
-      <workItem from="1618379590229" duration="749000" />
-    </task>
-    <task id="LOCAL-00153" summary="- upravene 004">
-      <created>1591793424429</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1591793424429</updated>
+      <workItem from="1618379590229" duration="3283000" />
+      <workItem from="1618905339182" duration="981000" />
+      <workItem from="1619070619681" duration="600000" />
+      <workItem from="1619165675021" duration="623000" />
+      <workItem from="1619416272278" duration="591000" />
+      <workItem from="1619764871024" duration="1241000" />
+      <workItem from="1619774777138" duration="589000" />
     </task>
     <task id="LOCAL-00154" summary="- added 068">
       <created>1593761542544</created>
@@ -735,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617646452362</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="- updates">
+      <created>1618391763378</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1618391763378</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -803,35 +799,38 @@
     <MESSAGE value="- pridane 020" />
     <MESSAGE value="- fixed IDK" />
     <MESSAGE value="- 009 upsvar" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- pridane 77" />
     <MESSAGE value="- added ockovanie covid" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added ockovanie covid" />
+    <MESSAGE value="- updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="21" y="-31" width="916" height="843" key="CommitChangelistDialog2" timestamp="1617646452123">
-      <screen x="0" y="0" width="1920" height="1059" />
+    <state x="16" y="-55" width="916" height="956" key="CommitChangelistDialog2" timestamp="1618391763243">
+      <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="21" y="-31" key="CommitChangelistDialog2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646452123" />
     <state x="104" y="-49" width="916" height="849" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1419@0.0.1920.1080" timestamp="1612433731205" />
     <state x="93" y="64" width="1420" height="900" key="CommitChangelistDialog2/0.0.6080.1419@0.0.6080.1419" timestamp="1612543032272" />
-    <state x="95" y="68" width="916" height="849" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1609229818969" />
+    <state x="16" y="-55" width="916" height="956" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1618391763243" />
     <state x="21" y="-32" width="916" height="843" key="CommitChangelistDialog2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788146094" />
     <state x="23" y="-11" width="916" height="685" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615810357174" />
     <state x="777" y="415" width="351" height="152" key="VCS.ChangelistChooser" timestamp="1611914529011">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="777" y="415" width="351" height="152" key="VCS.ChangelistChooser/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1419@0.0.1920.1080" timestamp="1611914529011" />
-    <state x="649" y="485" width="292" height="158" key="VCS.ChangelistChooser/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1609229828154" />
-    <state x="404" y="-454" width="524" height="605" key="Vcs.Push.Dialog.v2" timestamp="1617646476075">
-      <screen x="0" y="0" width="1920" height="1059" />
+    <state x="335" y="-534" width="524" height="686" key="Vcs.Push.Dialog.v2" timestamp="1618391764855">
+      <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="404" y="-454" key="Vcs.Push.Dialog.v2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646476075" />
     <state x="412" y="-353" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1419@0.0.1920.1080" timestamp="1612433733033" />
     <state x="1299" y="-530" key="Vcs.Push.Dialog.v2/0.0.6080.1419@0.0.6080.1419" timestamp="1612543034508" />
-    <state x="348" y="-319" width="524" height="714" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1609229820614" />
+    <state x="335" y="-534" width="524" height="686" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1618391764855" />
     <state x="406" y="-435" key="Vcs.Push.Dialog.v2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788147528" />
     <state x="406" y="-443" width="524" height="605" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615804198798" />
+    <state x="0" y="0" width="1600" height="1179" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619765781234">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="1600" height="1179" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080/1920.0.1600.1200/3520.0.2560.1419@0.0.1920.1080" timestamp="1619765781234" />
   </component>
   <component name="masterDetails">
     <states>

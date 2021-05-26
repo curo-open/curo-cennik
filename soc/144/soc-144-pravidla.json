@@ -15,6 +15,12 @@
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
+			"if": "vv.typ=='soc' && vv.mod in ['VIZI']",
+			"value": 0.028547,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc'",
 			"value": null,
 			"calc": "vv.bodyCelkom*ZA_BOD"

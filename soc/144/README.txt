@@ -23,6 +23,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.mod in ['VIZI']                          │
 │                 │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
