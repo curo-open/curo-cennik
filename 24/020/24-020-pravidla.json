@@ -109,12 +109,6 @@
 			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
-			"label": "TOKS",
-			"if": "vv.kod in ['159a','159b','159x','159z','160']",
-			"value": 0.057,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
 			"value": null,

@@ -15,7 +15,7 @@
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
-			"if": "vv.mode in ['soc/vyzi']",
+			"if": "vv.mode in ['soc/VYZI']",
 			"value": 0.028547,
 			"calc": "vv.bodyCelkom*cena"
 		},
