@@ -227,6 +227,12 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Stratifikacia CMP",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Kvantitatívne vyšetrenie INR POCT",
 			"if": "vv.kod in ['H0007']",
 			"value": 5,
