@@ -1,6 +1,6 @@
-                                                                           ==========
-                                                                           Cenník VLD
-                                                                           ==========
+                                                                          ===========
+                                                                          Cenník ZVLD
+                                                                          ===========
 
 Autor: curo.sk
 

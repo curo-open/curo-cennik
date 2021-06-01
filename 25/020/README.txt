@@ -1,6 +1,6 @@
-                                                                           ==========
-                                                                           Cenník VLD
-                                                                           ==========
+                                                                          ===========
+                                                                          Cenník ZVLD
+                                                                          ===========
 
 Autor: curo.sk
 
@@ -34,7 +34,7 @@ Autor: curo.sk
 │ vek od 65 do 70 │          3.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
 │ vek od 70 do 75 │          3.65 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
 │ vek od 75 do 80 │          3.77 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 85 │          3.13 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ vek od 80 do 85 │          4.13 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
 │ vek od 85+      │           4.2 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 

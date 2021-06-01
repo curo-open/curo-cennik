@@ -103,7 +103,7 @@
 		{
 			"label": "vek od 80 do 85",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 3.13,
+			"value": 4.13,
 			"calc": "IDK+cena"
 		},
 		{
@@ -456,5 +456,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "VLD"
+	"title": "ZVLD"
 }

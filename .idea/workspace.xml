@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -389,14 +388,7 @@
       <workItem from="1619764871024" duration="1241000" />
       <workItem from="1619774777138" duration="589000" />
       <workItem from="1622014488846" duration="1558000" />
-      <workItem from="1622276262319" duration="4203000" />
-    </task>
-    <task id="LOCAL-00158" summary="- vyhodeny vykon 1">
-      <created>1595589981034</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1595589981034</updated>
+      <workItem from="1622276262319" duration="4880000" />
     </task>
     <task id="LOCAL-00159" summary="- updated 020">
       <created>1595852147381</created>
@@ -734,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622467504545</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="- updates">
+      <created>1622527772486</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1622527772486</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,20 +807,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="19" y="-51" width="916" height="956" key="CommitChangelistDialog2" timestamp="1622467504387">
+    <state x="15" y="-91" width="916" height="956" key="CommitChangelistDialog2" timestamp="1622527772341">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="21" y="-31" key="CommitChangelistDialog2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646452123" />
     <state x="12" y="-95" width="916" height="956" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1622014840168" />
     <state x="21" y="-32" width="916" height="843" key="CommitChangelistDialog2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788146094" />
-    <state x="19" y="-51" width="916" height="685" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1622467504387" />
-    <state x="402" y="-483" width="524" height="686" key="Vcs.Push.Dialog.v2" timestamp="1622467506037">
+    <state x="15" y="-91" width="916" height="685" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1622527772341" />
+    <state x="400" y="-503" width="524" height="686" key="Vcs.Push.Dialog.v2" timestamp="1622527774061">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="404" y="-454" key="Vcs.Push.Dialog.v2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646476075" />
     <state x="331" y="-574" width="524" height="686" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1622014841869" />
     <state x="406" y="-435" key="Vcs.Push.Dialog.v2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788147528" />
-    <state x="402" y="-483" width="524" height="605" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1622467506037" />
+    <state x="400" y="-503" width="524" height="605" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1622527774061" />
     <state x="0" y="0" width="1600" height="1179" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619765781234">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
