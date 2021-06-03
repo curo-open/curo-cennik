@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0247
+			"value": 0.0268
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -39,6 +39,10 @@
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.008105
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.008473
 		}
 	},
 	"pacient": [],
@@ -62,6 +66,12 @@
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": null,
@@ -70,14 +80,14 @@
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['765p']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['763P','763M']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CBP"
 		},
 		{
 			"label": "Prev. KS",
@@ -95,7 +105,7 @@
 			"label": "Prev. KS",
 			"if": "vv.kod in ['763p','763m']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CBP"
 		},
 		{
 			"label": "Prev. KS",
@@ -237,6 +247,24 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [

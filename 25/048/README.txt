@@ -5,20 +5,21 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬──────────────────────────────┐
-│ Názov a hodnota    │ Popis                        │
-├────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.8         │ IPP1                         │
-│ IPP2 = 2.9         │ IPP2                         │
-│ IPP3 = 4.9         │ IPP3                         │
-│ IPP4 = 4.9         │ IPP4                         │
-│ IPPD = 5           │ IPPD                         │
-│ LIMIT = 75900      │ Limit                        │
-│ EL_POBOCKA = 1     │ Používa el. pobočku ?        │
-│ CB = 0.0247        │ Cena bodu                    │
-│ CBP = 0.041        │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.008105 │ Cena bodu SVaLZ              │
-└────────────────────┴──────────────────────────────┘
+┌───────────────────────┬──────────────────────────────┐
+│ Názov a hodnota       │ Popis                        │
+├───────────────────────┼──────────────────────────────┤
+│ IPP1 = 1.8            │ IPP1                         │
+│ IPP2 = 2.9            │ IPP2                         │
+│ IPP3 = 4.9            │ IPP3                         │
+│ IPP4 = 4.9            │ IPP4                         │
+│ IPPD = 5              │ IPPD                         │
+│ LIMIT = 75900         │ Limit                        │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
+│ CB = 0.0268           │ Cena bodu                    │
+│ CBP = 0.041           │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
+└───────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -34,12 +35,13 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│                 │ vv.bodyCelkom*CB          │ Prev. KS                                      │ vv.kod in ['765p']                                           │
-│                 │ vv.bodyCelkom*CB          │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
+│           0.026 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['765p']                                           │
+│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
 │                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
 │                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
-│                 │ vv.bodyCelkom*CB          │ Prev. KS                                      │ vv.kod in ['763p','763m']                                    │
+│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p','763m']                                    │
 │                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
@@ -69,6 +71,9 @@ Autor: curo.sk
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             210 │ 15d                                                                                                       │                           │
 │             946 │ 765p                                                                                                      │                           │
