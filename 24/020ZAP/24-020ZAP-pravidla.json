@@ -163,6 +163,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 7.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
 			"value": 0.025,

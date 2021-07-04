@@ -139,6 +139,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 7.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
 			"value": 0.0082,
@@ -146,7 +152,7 @@
 		},
 		{
 			"label": "CRP",
-			"if": "vv.kod in ['4571A']",
+			"if": "vv.kod in ['4571a','4571A']",
 			"value": 0.012,
 			"calc": "vv.bodyCelkom*cena"
 		},

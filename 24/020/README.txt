@@ -58,11 +58,12 @@ Autor: curo.sk
 │            4.45 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            4.45 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
-│             4.4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a']                                          │
+│             4.4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │               5 │ vv.pocet*cena             │ Očkovanie Covid                               │ vv.kod in ['252L']                                           │
+│             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │                 │ vv.bodyCelkom*CB          │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['EU']                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

@@ -218,7 +218,7 @@
 		},
 		{
 			"label": "Vyšetrenie C – reaktívneho proteínu",
-			"if": "vv.kod in ['4571a']",
+			"if": "vv.kod in ['4571a','4571A']",
 			"value": 4.4,
 			"calc": "vv.pocet*cena"
 		},
@@ -322,6 +322,12 @@
 			"label": "Očkovanie Covid",
 			"if": "vv.kod in ['252L']",
 			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 7.5,
 			"calc": "vv.pocet*cena"
 		},
 		{

@@ -52,7 +52,7 @@ Autor: curo.sk
 │          0.0485 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
 │                 │                           │                                               │ vv.kod in ['252b']                                           │
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
-│          0.0116 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A']                                          │
+│          0.0116 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
 │           0.025 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
 │                 │                           │                                               │ ,'30','40','41','64']                                        │

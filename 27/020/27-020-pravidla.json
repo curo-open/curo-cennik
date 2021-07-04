@@ -170,7 +170,7 @@
 		},
 		{
 			"label": "CRP",
-			"if": "vv.kod in ['4571A']",
+			"if": "vv.kod in ['4571A','4571a']",
 			"value": 0.0116,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -304,6 +304,12 @@
 			"label": "Očkovanie Covid",
 			"if": "vv.kod in ['252L']",
 			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 7.5,
 			"calc": "vv.pocet*cena"
 		},
 		{

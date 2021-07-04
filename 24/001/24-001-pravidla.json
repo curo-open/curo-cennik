@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.022529
+			"value": 0.029293
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0
+			"value": 0.008195
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
@@ -42,27 +42,33 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026432,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "Výkon 62",
 			"if": "vv.kod in ['62']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkon 60;62;63",
+			"label": "Výkon 63",
 			"if": "vv.kod in ['63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkon 65;66",
+			"if": "vv.kod in ['65','66']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763sp;763sn",
 			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn','763sp','763sn']",
-			"value": 0.0462,
+			"value": 0.048972,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

@@ -60,6 +60,7 @@ Autor: curo.sk
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │           0.057 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
+│             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 │           0.027 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
 │        0.007303 │ vv.bodyCelkom*cena        │ Akútne EKG                                    │ vv.kod in ['5702c']                                          │
 │               6 │ vv.pocet*cena             │ Výkon 163                                     │ vv.kod in ['163']                                            │
@@ -74,7 +75,7 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
 │             4.5 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
 │            1.05 │ vv.pocet*cena             │ Delegovaný odber krvi                         │ vv.kod in ['250D']                                           │
-│             4.4 │ vv.pocet*cena             │ C-reaktívny proteín                           │ vv.kod in ['4571a']                                          │
+│             4.4 │ vv.pocet*cena             │ C-reaktívny proteín                           │ vv.kod in ['4571a','4571A']                                  │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
 │        0.020995 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │

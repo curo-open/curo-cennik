@@ -5,15 +5,15 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬─────────────────────┐
-│ Názov a hodnota │ Popis               │
-├─────────────────┼─────────────────────┤
-│ CB = 0.022529   │ Cena bodu           │
-│ CBSVALZ = 0     │ Cena bodu SVaLZ     │
-│ CBSVALZUSG = 0  │ Cena bodu SVaLZ USG │
-│ AGTC = 4.8      │ AGTC                │
-│ LIMIT = 2235    │ Limit               │
-└─────────────────┴─────────────────────┘
+┌────────────────────┬─────────────────────┐
+│ Názov a hodnota    │ Popis               │
+├────────────────────┼─────────────────────┤
+│ CB = 0.029293      │ Cena bodu           │
+│ CBSVALZ = 0.008195 │ Cena bodu SVaLZ     │
+│ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG │
+│ AGTC = 4.8         │ AGTC                │
+│ LIMIT = 2235       │ Limit               │
+└────────────────────┴─────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -30,10 +30,11 @@ Autor: curo.sk
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│          0.0462 │ vv.bodyCelkom*cena        │ Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763 │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
+│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│                 │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│                 │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│                 │ vv.bodyCelkom*CB          │ Výkon 65;66                                   │ vv.kod in ['65','66']                                        │
+│        0.048972 │ vv.bodyCelkom*cena        │ Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763 │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
 │                 │                           │ sp;763sn                                      │ 763sp','763sn']                                              │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │

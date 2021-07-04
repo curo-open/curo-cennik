@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0234
+			"value": 0.0285
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007655
+			"value": 0.0082
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -128,6 +128,12 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['5300','5301','5702']",
 			"value": null,
@@ -167,10 +173,40 @@
 		}
 	],
 	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
 		"65": [
 			{
 				"cond": "",
-				"value": 100
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [
@@ -230,7 +266,7 @@
 		"763p": [
 			{
 				"cond": "",
-				"value": 2369
+				"value": 3000
 			}
 		],
 		"1b": [

@@ -41,7 +41,7 @@ Autor: curo.sk
 │            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │           0.053 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
 │            0.05 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ . && vv.kod in ['252b']                                      │
-│           0.012 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A']                                          │
+│           0.012 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │           0.025 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
 │                 │                           │                                               │ ,'30','40','41','64']                                        │

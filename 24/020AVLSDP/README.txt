@@ -60,7 +60,7 @@ Autor: curo.sk
 │                 │ PPH1                      │ Pripočitateľné položky                        │ vv.kod=='PPH1'                                               │
 │                 │ PPH2                      │ Pripočitateľné položky                        │ vv.kod=='PPH2'                                               │
 │                 │ PREDOP                    │ Pripočitateľné položky                        │ vv.kod=='PREDOP'                                             │
-│                 │ _4571a                    │ Pripočitateľné položky                        │ vv.kod=='4571a'                                              │
+│                 │ _4571a                    │ Pripočitateľné položky                        │ vv.kod in ['4571a','4571A']                                  │
 │                 │ CHRST                     │ Pripočitateľné položky                        │ vv.kod=='CHRST'                                              │
 │                 │ TELEKON                   │ Pripočitateľné položky                        │ vv.kod=='TELEKON'                                            │
 │                 │ HYPVS                     │ Pripočitateľné položky                        │ vv.kod=='HYPVS'                                              │

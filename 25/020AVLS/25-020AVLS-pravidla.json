@@ -217,6 +217,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 7.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
 			"value": 0.027,
@@ -302,7 +308,7 @@
 		},
 		{
 			"label": "C-reaktívny proteín",
-			"if": "vv.kod in ['4571a']",
+			"if": "vv.kod in ['4571a','4571A']",
 			"value": 4.4,
 			"calc": "vv.pocet*cena"
 		},
