@@ -64,13 +64,13 @@
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 64",
@@ -82,7 +82,7 @@
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Preventívne prehliadky",
@@ -99,55 +99,55 @@
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.diagnoza=='Z25.1' && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A",
 			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A+B",
 			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
 			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti pneumokokom",
 			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti kliestovej encefalitide",
 			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti tetanu",
-			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.053,
+			"if": "vv.diagnoza in ['Z00.0','Z23.5'] && vv.kod in ['252b']",
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti osýpkam",
 			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -231,7 +231,7 @@
 		{
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301']",
-			"value": 0.0082,
+			"value": 0.0088,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -255,7 +255,7 @@
 		{
 			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
 			"if": "vv.kod in ['10']",
-			"value": 8.8,
+			"value": 10,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -304,6 +304,12 @@
 			"label": "Komplexné vyšetrenie pacienta",
 			"if": "vv.kod in ['60']",
 			"value": 4.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Delegovaný odber",
+			"if": "vv.kod in ['250d']",
+			"value": 1.05,
 			"calc": "vv.pocet*cena"
 		},
 		{
