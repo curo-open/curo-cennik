@@ -6,15 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03
+			"value": 0.026
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0085
+			"value": 0.0082
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0
+			"value": 0.026
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -25,19 +25,25 @@
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 2.83,
+			"value": 2.54,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 3.03,
+			"value": 2.92,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
-			"if": "p|vekMedzi(61)",
-			"value": 4.02,
+			"if": "p|vekMedzi(61, 81)",
+			"value": 4.07,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "vek od 81+",
+			"if": "p|vekMedzi(81)",
+			"value": 4.46,
 			"calc": "IDK+cena"
 		}
 	],
@@ -58,13 +64,13 @@
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 64",
@@ -76,7 +82,7 @@
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Preventívne prehliadky",
@@ -225,7 +231,7 @@
 		{
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301']",
-			"value": 0.0082,
+			"value": 0.0088,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

@@ -9,9 +9,9 @@ Autor: curo.sk
 │ Názov a hodnota  │ Popis                      │
 ├──────────────────┼────────────────────────────┤
 │ IDK = 0.87       │ NASTAVENIA IDK             │
-│ CB = 0.03        │ Cena bodu                  │
-│ CBSVALZ = 0.0085 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0       │ Cena bodu Nekapitovany(EU) │
+│ CB = 0.026       │ Cena bodu                  │
+│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
+│ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8       │ AGTC                       │
 └──────────────────┴────────────────────────────┘
 
@@ -20,9 +20,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 51 │          2.83 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          3.03 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │          4.02 │ IDK+cena │ p|vekMedzi(61)     │
+│ vek od 18 do 51 │          2.54 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          2.92 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │          4.07 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 81+      │          4.46 │ IDK+cena │ p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -34,10 +35,10 @@ Autor: curo.sk
 │                 │                           │                                               │ ) && vv.typ=='SVaLZ'                                         │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
 │                 │                           │                                               │ ) && vv.typ!='SVaLZ'                                         │
-│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
-│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│                 │ vv.bodyCelkom*CB          │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
+│                 │ vv.bodyCelkom*CB          │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │                 │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
-│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│                 │ vv.bodyCelkom*CB          │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │           19.35 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │           0.053 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
@@ -64,7 +65,7 @@ Autor: curo.sk
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
 │               5 │ vv.pocet*cena             │ INR                                           │ vv.kod in ['3842a']                                          │
 │              13 │ vv.pocet*cena             │ 24h meranie tlaku                             │ vv.kod in ['5715']                                           │
-│          0.0082 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
+│          0.0088 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
 │               5 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
 │               5 │ vv.pocet*cena             │ H0006                                         │ vv.kod in ['H0006']                                          │
 │               6 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │

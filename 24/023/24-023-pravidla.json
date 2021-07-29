@@ -1,9 +1,5 @@
 {
 	"params": {
-		"120801": {
-			"label": 120801,
-			"value": 32
-		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
@@ -19,6 +15,10 @@
 		"CBEU": {
 			"label": "Cena bodu EU",
 			"value": 0.007303
+		},
+		"_120801": {
+			"label": 120801,
+			"value": 32
 		}
 	},
 	"pacient": [],
@@ -33,7 +33,7 @@
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='120801'",
 			"value": null,
-			"calc": "120801"
+			"calc": "_120801"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",

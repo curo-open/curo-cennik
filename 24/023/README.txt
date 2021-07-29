@@ -8,11 +8,11 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────┐
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
-│ 120801 = 32        │ 120801          │
 │ LIMIT = 0          │ Limit           │
 │ CB = 0.007303      │ Cena bodu       │
 │ CBSVALZ = 0.007303 │ Cena bodu SVALZ │
 │ CBEU = 0.007303    │ Cena bodu EU    │
+│ _120801 = 32       │ 120801          │
 └────────────────────┴─────────────────┘
 
 
@@ -27,7 +27,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5331                                    │ vv.kod in ['5331']                                           │
-│                 │ 120801                    │ Pripočitateľné položky                        │ vv.kod=='120801'                                             │
+│                 │ _120801                   │ Pripočitateľné položky                        │ vv.kod=='120801'                                             │
 │                 │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.typ!='SVaLZ'                                              │

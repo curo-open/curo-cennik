@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/008/25-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/008/25-008-pravidla.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -389,34 +390,26 @@
       <workItem from="1619774777138" duration="589000" />
       <workItem from="1622014488846" duration="1558000" />
       <workItem from="1622276262319" duration="4880000" />
-    </task>
-    <task id="LOCAL-00159" summary="- updated 020">
-      <created>1595852147381</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1595852147381</updated>
-    </task>
-    <task id="LOCAL-00160" summary="- update oftalmo">
-      <created>1595919031133</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1595919031133</updated>
-    </task>
-    <task id="LOCAL-00161" summary="- upravene 020">
-      <created>1596110037174</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1596110037175</updated>
-    </task>
-    <task id="LOCAL-00162" summary="- upravene 009">
-      <created>1596178622283</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1596178622283</updated>
+      <workItem from="1622538573610" duration="17000" />
+      <workItem from="1622720406840" duration="1269000" />
+      <workItem from="1623045126375" duration="599000" />
+      <workItem from="1623398766547" duration="596000" />
+      <workItem from="1623405817883" duration="599000" />
+      <workItem from="1623412473217" duration="599000" />
+      <workItem from="1624221885208" duration="598000" />
+      <workItem from="1624315535059" duration="599000" />
+      <workItem from="1624340995017" duration="609000" />
+      <workItem from="1624427926334" duration="588000" />
+      <workItem from="1624471354342" duration="592000" />
+      <workItem from="1624513466781" duration="596000" />
+      <workItem from="1624631729740" duration="596000" />
+      <workItem from="1624736681810" duration="593000" />
+      <workItem from="1624859809896" duration="2734000" />
+      <workItem from="1626176283032" duration="596000" />
+      <workItem from="1626385452885" duration="589000" />
+      <workItem from="1627366946015" duration="1664000" />
+      <workItem from="1627451117073" duration="1199000" />
+      <workItem from="1627497806250" duration="3022000" />
     </task>
     <task id="LOCAL-00163" summary="- added 050 - 80bodov pre 1">
       <created>1596455383911</created>
@@ -733,7 +726,35 @@
       <option name="project" value="LOCAL" />
       <updated>1622527772486</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="- updates">
+      <created>1622538582643</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1622538582643</updated>
+    </task>
+    <task id="LOCAL-00209" summary="- updates">
+      <created>1622720420940</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1622720420940</updated>
+    </task>
+    <task id="LOCAL-00210" summary="- updates">
+      <created>1625418999269</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1625418999269</updated>
+    </task>
+    <task id="LOCAL-00211" summary="- updates&#10;- added radiologia">
+      <created>1627367781614</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1627367781614</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,7 +800,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- pridane 064" />
     <MESSAGE value="- pridane 64&#10;- upraven 064" />
     <MESSAGE value="- upravene 001&#10;- upravene avls" />
     <MESSAGE value="- added 013" />
@@ -804,23 +824,27 @@
     <MESSAGE value="- pridane 77" />
     <MESSAGE value="- added ockovanie covid" />
     <MESSAGE value="- updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
+    <MESSAGE value="- updates&#10;- added radiologia" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates&#10;- added radiologia" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="15" y="-91" width="916" height="956" key="CommitChangelistDialog2" timestamp="1622527772341">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1987" y="89" width="916" height="956" key="CommitChangelistDialog2" timestamp="1627541618577">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="21" y="-31" key="CommitChangelistDialog2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646452123" />
+    <state x="2571" y="79" key="CommitChangelistDialog2/1600.0.1920.1059/0.0.1600.1059/3520.0.320.1059@1600.0.1920.1059" timestamp="1625418999009" />
     <state x="12" y="-95" width="916" height="956" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1622014840168" />
-    <state x="21" y="-32" width="916" height="843" key="CommitChangelistDialog2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788146094" />
-    <state x="15" y="-91" width="916" height="685" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1622527772341" />
-    <state x="400" y="-503" width="524" height="686" key="Vcs.Push.Dialog.v2" timestamp="1622527774061">
+    <state x="69" y="109" width="916" height="685" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1627367781373" />
+    <state x="1987" y="89" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1627541618577" />
+    <state x="649" y="487" width="292" height="156" key="VCS.ChangelistChooser" timestamp="1627367977366">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="404" y="-454" key="Vcs.Push.Dialog.v2/0.0.1920.1059/1920.0.1920.1059@0.0.1920.1059" timestamp="1617646476075" />
+    <state x="649" y="487" width="292" height="156" key="VCS.ChangelistChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1627367977366" />
+    <state x="394" y="-563" width="524" height="686" key="Vcs.Push.Dialog.v2" timestamp="1627367968296">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="74" y="-552" key="Vcs.Push.Dialog.v2/1600.0.1920.1059/0.0.1600.1059/3520.0.320.1059@0.0.1600.1059" timestamp="1625493600715" />
     <state x="331" y="-574" width="524" height="686" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1622014841869" />
-    <state x="406" y="-435" key="Vcs.Push.Dialog.v2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1615788147528" />
-    <state x="400" y="-503" width="524" height="605" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1622527774061" />
+    <state x="394" y="-563" width="524" height="605" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1627367968296" />
     <state x="0" y="0" width="1600" height="1179" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619765781234">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
