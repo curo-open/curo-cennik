@@ -1,0 +1,316 @@
+{
+	"params": {
+		"IDK": {
+			"label": "NASTAVENIA IDK",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0082
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.026
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
+		}
+	},
+	"pacient": [
+		{
+			"label": "vek od 18 do 50",
+			"if": "p|vekMedzi(18, 50)",
+			"value": 2.54,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "vek od 51 do 60",
+			"if": "p|vekMedzi(51, 60)",
+			"value": 2.92,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "vek od 61 do 80",
+			"if": "p|vekMedzi(61, 80)",
+			"value": 4.07,
+			"calc": "IDK+cena"
+		},
+		{
+			"label": "vek od 81+",
+			"if": "p|vekMedzi(81)",
+			"value": 4.46,
+			"calc": "IDK+cena"
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - Neodkladna statostlivost",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Nekapitovaný - Neodkladna statostlivost",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 159b",
+			"if": "vv.kod in ['159b']",
+			"value": 0.053,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Určenie glykémie glukometrom",
+			"if": "vv.kod in ['3671']",
+			"value": 0.053,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.06,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 7.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Návštevná služba - výkony 25,26,29",
+			"if": "vv.kod in ['25','26','29']",
+			"value": 0.025,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Návštevná služba - výkony 4,5,6,30",
+			"if": "vv.kod in ['4','5','6','30']",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Návštevná služba - výkony 40,41",
+			"if": "vv.kod in ['40','41']",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Preventina prehliadka",
+			"if": "vv.kod in ['160']",
+			"value": 19.35,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "TOKS pozitívny",
+			"if": "vv.kod in ['159a']",
+			"value": 8.8,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "TOKS negatívny",
+			"if": "vv.kod in ['159z']",
+			"value": 8.8,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "TOKS znehodnotený",
+			"if": "vv.kod in ['159x']",
+			"value": 8.8,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 13,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702']",
+			"value": 0.0082,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "USG vyšetrenie",
+			"if": "vv.kod in ['5300','5301']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "EKG (5702Z)",
+			"if": "vv.kod in ['5702Z']",
+			"value": 4.41,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Meranie INR",
+			"if": "vv.kod in ['3842a']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Celodenné snímanie tlaku",
+			"if": "vv.kod in ['5715']",
+			"value": 13,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571A','4571a']",
+			"value": 0.012,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Vykon 10",
+			"if": "vv.kod in ['10']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Stratifikacia CMP",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Stanovenie ABI oscilometricky",
+			"if": "vv.kod in ['H0008']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Kognitívny deficit",
+			"if": "vv.kod in ['163']",
+			"value": 6,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 4.5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Delegovaný odber krvi",
+			"if": "vv.kod in ['250D']",
+			"value": 1.05,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC"
+		},
+		{
+			"label": "Nekapitovaný EU - SVALZ výkon",
+			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "Nekapitovaný EU - iné ako SVALZ",
+			"if": "p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"160": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"159a": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159b": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159x": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"159z": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "VLD"
+}
