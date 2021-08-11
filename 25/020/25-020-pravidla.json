@@ -321,13 +321,13 @@
 		{
 			"label": "Očkovanie Covid",
 			"if": "vv.kod in ['252L']",
-			"value": 5,
+			"value": 10,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Očkovanie Covid 252K",
 			"if": "vv.kod in ['252K']",
-			"value": 7.5,
+			"value": 10,
 			"calc": "vv.pocet*cena"
 		},
 		{

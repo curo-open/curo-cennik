@@ -20,10 +20,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 51 │           2.4 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          2.75 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │          3.84 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+      │          4.21 │ IDK+cena │ p|vekMedzi(81)     │
+│ vek od 18 do 51 │          2.54 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          2.92 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │          4.07 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 81+      │          4.46 │ IDK+cena │ p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -47,6 +47,7 @@ Autor: curo.sk
 │           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B/Tetanus          │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
 │           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
 │                 │                           │                                               │ vv.kod in ['252b']                                           │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │           0.012 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │           0.025 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
@@ -61,6 +62,7 @@ Autor: curo.sk
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
 │               5 │ vv.pocet*cena             │ INR                                           │ vv.kod in ['3842a']                                          │
 │              13 │ vv.pocet*cena             │ 24h meranie tlaku                             │ vv.kod in ['5715']                                           │
+│          0.0082 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
 │               5 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
@@ -86,7 +88,6 @@ Autor: curo.sk
 │              40 │ 70                                                                                                        │                           │
 │             390 │ 160                                                                                                       │                           │
 │             180 │ 159a                                                                                                      │                           │
-│             180 │ 159b                                                                                                      │                           │
 │             180 │ 159x                                                                                                      │                           │
 │             180 │ 159z                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │

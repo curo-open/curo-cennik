@@ -331,6 +331,12 @@
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC"
+		},
+		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
 		}
 	],
 	"kontrola": [],

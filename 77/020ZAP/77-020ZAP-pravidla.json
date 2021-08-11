@@ -25,25 +25,25 @@
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 2.4,
+			"value": 2.54,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 2.75,
+			"value": 2.92,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 3.84,
+			"value": 4.07,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 4.21,
+			"value": 4.46,
 			"calc": "IDK+cena"
 		}
 	],
@@ -139,6 +139,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
 			"value": 0.0082,
@@ -215,6 +221,12 @@
 			"if": "vv.kod in ['5715']",
 			"value": 13,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "USG",
+			"if": "vv.kod in ['5300','5301']",
+			"value": 0.0082,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ABI (H0008)",
@@ -310,12 +322,6 @@
 			}
 		],
 		"159a": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159b": [
 			{
 				"cond": "",
 				"value": 180
