@@ -5,19 +5,20 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬───────────────────────┐
-│ Názov a hodnota    │ Popis                 │
-├────────────────────┼───────────────────────┤
-│ IPP1 = 1.8         │ IPP1                  │
-│ IPP2 = 2.9         │ IPP2                  │
-│ IPP3 = 4.9         │ IPP3                  │
-│ IPP4 = 4.9         │ IPP4                  │
-│ IPPD = 5           │ IPPD                  │
-│ LIMIT = 75900      │ Limit                 │
-│ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.0252        │ Cena bodu             │
-│ CBSVALZ = 0.008105 │ Cena bodu SVaLZ       │
-└────────────────────┴───────────────────────┘
+┌───────────────────────┬───────────────────────┐
+│ Názov a hodnota       │ Popis                 │
+├───────────────────────┼───────────────────────┤
+│ IPP1 = 1.8            │ IPP1                  │
+│ IPP2 = 2.9            │ IPP2                  │
+│ IPP3 = 4.9            │ IPP3                  │
+│ IPP4 = 7.9            │ IPP4                  │
+│ IPPD = 0              │ IPPD                  │
+│ LIMIT = 75900         │ Limit                 │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ? │
+│ CB = 0.0268           │ Cena bodu             │
+│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG   │
+└───────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -31,6 +32,8 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkon 802, 813, 819d, 803, 804                │ vv.kod in ['802','813','819d','803','804']                   │
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -48,9 +51,9 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
-│             420 │ 60                                                                                                        │                           │
-│             270 │ 62                                                                                                        │                           │
-│             210 │ 63                                                                                                        │                           │
+│             620 │ 60                                                                                                        │                           │
+│             400 │ 62                                                                                                        │                           │
+│             310 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             750 │ 802                                                                                                       │                           │
 │             900 │ 803                                                                                                       │                           │

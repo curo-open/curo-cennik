@@ -14,11 +14,11 @@
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 4.9
+			"value": 7.9
 		},
 		"IPPD": {
 			"label": "IPPD",
-			"value": 5
+			"value": 0
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -30,11 +30,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0252
+			"value": 0.0268
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.008105
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.008473
 		}
 	},
 	"pacient": [],
@@ -44,6 +48,18 @@
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 802, 813, 819d, 803, 804",
+			"if": "vv.kod in ['802','813','819d','803','804']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Pripočitateľné položky",
@@ -111,19 +127,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 620
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 400
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 310
 			}
 		],
 		"70": [
