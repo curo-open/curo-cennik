@@ -8,12 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.17           │ IPP1                         │
-│ IPP2 = 1.89           │ IPP2                         │
-│ IPP3 = 3.19           │ IPP3                         │
+│ IPP1 = 1.8            │ IPP1                         │
+│ IPP2 = 2.9            │ IPP2                         │
+│ IPP3 = 4.9            │ IPP3                         │
+│ IPP4 = 7.9            │ IPP4                         │
 │ LIMIT = 75900         │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0247           │ Cena bodu                    │
+│ CB = 0.0268           │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
@@ -33,11 +34,16 @@ Autor: curo.sk
 │                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│                 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │                 │ vv.bodyCelkom*CBSVALZUSG  │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │                 │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │                 │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test t SARS-cov-2      │ vv.kod in ['629a']                                           │
+│              10 │ vv.pocet*cena             │ Skríningový antigénový test t SARS-cov-2 imun │ vv.kod in ['629b']                                           │
+│                 │                           │ ofluorescenčnou metódou                       │                                                              │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
@@ -53,8 +59,11 @@ Autor: curo.sk
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             210 │ 15d                                                                                                       │                           │
+│             150 │ 15d                                                                                                       │                           │
 │             946 │ 765p                                                                                                      │                           │
 │             946 │ 763P                                                                                                      │                           │
 │             946 │ 763M                                                                                                      │                           │

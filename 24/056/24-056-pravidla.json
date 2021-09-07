@@ -6,11 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.025903
-		},
-		"CBV": {
-			"label": "Cena bodu vv=60",
-			"value": 0.026432
+			"value": 0.030465
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -22,8 +18,8 @@
 		{
 			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBV"
+			"value": 0.026432,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "USG",
@@ -86,19 +82,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 450
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 290
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 230
 			}
 		],
 		"70": [

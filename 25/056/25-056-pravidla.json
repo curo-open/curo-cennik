@@ -2,15 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.17
+			"value": 1.8
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 1.89
+			"value": 2.9
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 3.19
+			"value": 4.9
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 7.9
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -22,7 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0247
+			"value": 0.0268
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -58,6 +62,18 @@
 			"calc": "IPP3"
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4"
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "USG",
 			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
 			"value": null,
@@ -79,6 +95,18 @@
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test t SARS-cov-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Skríningový antigénový test t SARS-cov-2 imunofluorescenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -139,6 +167,24 @@
 				"value": 210
 			}
 		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"70": [
 			{
 				"cond": "",
@@ -148,7 +194,7 @@
 		"15d": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 150
 			}
 		],
 		"765p": [

@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Vypočitaná cena bodu",
-			"value": 0.0237
+			"value": 0.0275
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -12,6 +12,18 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.0082
 		},
+		"IPP1": {
+			"label": "IPP1",
+			"value": 0.57
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 0.36
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 0.28
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
@@ -20,9 +32,33 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkon `60,`62,`63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0305,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon `60r",
+			"if": "vv.kod in ['60r']",
+			"value": 0.0275,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon `65,`66,`67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": 0.0275,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.0305,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 4.5,
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -41,6 +77,18 @@
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5793','5794','5795']",
 			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5153a;5153b;5333",
+			"if": "vv.kod in ['5153a','5153b','5333']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony 5766, 5769, 5770,5771, 5772, 5793, 5794, 5795",
+			"if": "vv.kod in ['5766','5769','5770','5771','5772','5793','5794','5795']",
+			"value": 0.01275,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
