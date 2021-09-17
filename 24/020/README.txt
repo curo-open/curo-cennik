@@ -25,13 +25,13 @@ Autor: curo.sk
 │ vek od 28 do 46 │          2.44 │ IDK+cena │ p|vekMedzi(28, 46) │
 │ vek od 46 do 52 │          2.46 │ IDK+cena │ p|vekMedzi(46, 52) │
 │ vek od 52 do 54 │          2.68 │ IDK+cena │ p|vekMedzi(52, 54) │
-│ vek od 54 do 58 │          2.97 │ IDK+cena │ p|vekMedzi(54, 58) │
-│ vek od 58 do 62 │          3.19 │ IDK+cena │ p|vekMedzi(58, 62) │
-│ vek od 62 do 65 │           3.4 │ IDK+cena │ p|vekMedzi(62, 65) │
-│ vek od 65 do 69 │           3.6 │ IDK+cena │ p|vekMedzi(65, 69) │
-│ vek od 69 do 73 │          3.89 │ IDK+cena │ p|vekMedzi(69, 73) │
-│ vek od 73 do 88 │          4.29 │ IDK+cena │ p|vekMedzi(73, 88) │
-│ vek od 88+      │          4.23 │ IDK+cena │ p|vekMedzi(88)     │
+│ vek od 54 do 58 │          3.21 │ IDK+cena │ p|vekMedzi(54, 58) │
+│ vek od 58 do 62 │          3.45 │ IDK+cena │ p|vekMedzi(58, 62) │
+│ vek od 62 do 65 │          3.67 │ IDK+cena │ p|vekMedzi(62, 65) │
+│ vek od 65 do 69 │          4.03 │ IDK+cena │ p|vekMedzi(65, 69) │
+│ vek od 69 do 73 │          4.36 │ IDK+cena │ p|vekMedzi(69, 73) │
+│ vek od 73 do 88 │           4.8 │ IDK+cena │ p|vekMedzi(73, 88) │
+│ vek od 88+      │          4.74 │ IDK+cena │ p|vekMedzi(88)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -48,12 +48,12 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│           0.057 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
-│           0.057 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│            0.06 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
+│            0.06 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
-│        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│            0.07 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │           0.025 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
-│            0.05 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│            0.06 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │              13 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            4.45 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            4.45 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │

@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026481
+			"value": 0.030465
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -64,20 +64,20 @@
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.024504,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.008195,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.025962,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
@@ -91,19 +91,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 450
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 290
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 230
 			}
 		],
 		"70": [

@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis                │
 ├────────────────────┼──────────────────────┤
 │ LIMIT = 2235       │ Limit                │
-│ CB = 0.026481      │ Cena bodu            │
+│ CB = 0.030465      │ Cena bodu            │
 │ CBSVALZ = 0.008195 │ Cena bodu SVaLZ      │
 │ CBE = 0.027        │ Cena bodu el. výkony │
 └────────────────────┴──────────────────────┘
@@ -34,9 +34,9 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │          0.0462 │ vv.bodyCelkom*cena        │ Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763 │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
 │                 │                           │ sp;763sn                                      │ 763sp','763sn']                                              │
-│        0.024504 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.025962 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │        0.024504 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -45,9 +45,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             420 │ 60                                                                                                        │                           │
-│             270 │ 62                                                                                                        │                           │
-│             210 │ 63                                                                                                        │                           │
+│             450 │ 60                                                                                                        │                           │
+│             290 │ 62                                                                                                        │                           │
+│             230 │ 63                                                                                                        │                           │
 │              50 │ 70                                                                                                        │                           │
 │             190 │ 1b                                                                                                        │                           │
 │            1200 │ 1c                                                                                                        │                           │
