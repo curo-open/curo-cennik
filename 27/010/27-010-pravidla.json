@@ -32,21 +32,15 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['60']",
-			"value": 9.41,
-			"calc": "vv.pocet*cena"
+			"label": "Výkon 60;62;63;820;822;825;841",
+			"if": "vv.kod in ['60','62','63','820','822','825','841',]",
+			"value": 0.0315,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['62']",
-			"value": 6.05,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['63']",
-			"value": 4.7,
+			"label": "Výkony",
+			"if": "vv.kod in ['H0008']",
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -92,6 +86,24 @@
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.kod in ['5153a','5153b','5333'] && vv.typ!='SVaLZ'",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.kod in ['5766','5769','5770','5771','5772','5793','5794','5795'] && vv.typ!='SVaLZ'",
+			"value": 0.01275,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
@@ -104,6 +116,42 @@
 			{
 				"cond": "",
 				"value": 160
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [

@@ -11,9 +11,9 @@ Autor: curo.sk
 │ LIMIT = 0        │ Limit           │
 │ CB = 0.0285      │ Cena bodu       │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
-│ IPP1 = 0.57      │ IPP1            │
-│ IPP2 = 0.36      │ IPP2            │
-│ IPP3 = 0.28      │ IPP3            │
+│ IPP4 = 3.5       │ IPP4            │
+│ IPP5 = 2.5       │ IPP5            │
+│ IPP6 = 1.8       │ IPP6            │
 └──────────────────┴─────────────────┘
 
 
@@ -27,6 +27,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│          0.0315 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
@@ -35,8 +36,10 @@ Autor: curo.sk
 │                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│          0.0088 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5153a','5153b','5333'] && vv.typ!='SVaLZ'        │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
+│         0.01275 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5766','5769','5770','5771','5772','5793','5794', │
+│                 │                           │                                               │ '5795'] && vv.typ!='SVaLZ'                                   │
 │                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

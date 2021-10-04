@@ -55,43 +55,43 @@
 		{
 			"label": "vek od 54 do 58",
 			"if": "p|vekMedzi(54, 58)",
-			"value": 2.97,
+			"value": 3.21,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p|vekMedzi(58, 62)",
-			"value": 3.19,
+			"value": 3.45,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p|vekMedzi(62, 65)",
-			"value": 3.4,
+			"value": 3.67,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p|vekMedzi(65, 69)",
-			"value": 3.6,
+			"value": 4.03,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p|vekMedzi(69, 73)",
-			"value": 3.89,
+			"value": 4.36,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p|vekMedzi(73, 88)",
-			"value": 4.29,
+			"value": 4.8,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p|vekMedzi(88)",
-			"value": 4.23,
+			"value": 4.74,
 			"calc": "IDK+cena"
 		}
 	],
@@ -147,13 +147,13 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159x','159z']",
-			"value": 0.057,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.057,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -165,7 +165,7 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.048972,
+			"value": 0.07,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -177,7 +177,7 @@
 		{
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.05,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -232,6 +232,12 @@
 			"label": "Očkovanie Covid 252K",
 			"if": "vv.kod in ['252K']",
 			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Stratifikacia CMP",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		}
 	],

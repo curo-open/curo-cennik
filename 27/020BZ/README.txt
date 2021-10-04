@@ -37,15 +37,15 @@ Autor: curo.sk
 │                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │           19.35 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │          0.0485 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti diftérii a tetanu             │ vv.diagnoza in ['Z00.','Z23.5'] && vv.kod in ['252b']        │
-│           0.053 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti diftérii a tetanu             │ vv.diagnoza in ['Z00.','Z23.5'] && vv.kod in ['252b']        │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
 │                 │                           │                                               │ vv.kod in ['252b']                                           │
 │          0.0076 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │           0.012 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
@@ -62,7 +62,7 @@ Autor: curo.sk
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
 │               5 │ vv.pocet*cena             │ INR                                           │ vv.kod in ['3842a']                                          │
 │              13 │ vv.pocet*cena             │ 24h meranie tlaku                             │ vv.kod in ['5715']                                           │
-│          0.0082 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
+│          0.0088 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
 │               5 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
@@ -70,11 +70,12 @@ Autor: curo.sk
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │               6 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │
 │               1 │ vv.pocet*cena             │ Odstránenie ušného mazu                       │ vv.kod in ['1540']                                           │
-│             8.8 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10']                                             │
+│              10 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10']                                             │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
 │               5 │ vv.pocet*cena             │ Kardio riziko                                 │ vv.kod in ['H0006']                                          │
 │             4.5 │ vv.pocet*cena             │ Komplexné vyšetrenie pri prevzatí pacienta do │ vv.kod in ['60']                                             │
 │                 │                           │ starostlivosti                                │                                                              │
+│            1.05 │ vv.pocet*cena             │ Delegovaný odber                              │ vv.kod in ['250D']                                           │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 │        0.020995 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │

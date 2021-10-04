@@ -128,7 +128,7 @@
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK"
 		},
@@ -353,6 +353,12 @@
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC"
+		},
+		{
+			"label": "Nekapitovaný EU - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
 		}
 	],
 	"kontrola": [
