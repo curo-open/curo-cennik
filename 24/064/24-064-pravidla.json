@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.030465
+			"value": 0.028303
 		},
 		"CBV": {
 			"label": "Cena bodu vv=60",
@@ -26,6 +26,12 @@
 			"calc": "vv.bodyCelkom*CBV"
 		},
 		{
+			"label": "Výkon 62,63",
+			"if": "vv.kod in ['62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
 			"label": "USG",
 			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
 			"value": null,
@@ -39,7 +45,7 @@
 		},
 		{
 			"label": "špec. elektronické výkony",
-			"if": "vv.kod in ['70','1b','1c']",
+			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena"
 		},

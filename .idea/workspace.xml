@@ -19,8 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates&#10;- added 001 ZDR">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 252L pre EU">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020BZ/24-020BZ-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020BZ/24-020BZ-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020BZ/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020BZ/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/064/24-064-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/064/24-064-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/064/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/064/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/005/27-005-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/27-005-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/005/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/010/27-010-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/010/27-010-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/010/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/010/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020BZ/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/105/27-105-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/105/27-105-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/105/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/105/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -452,20 +465,10 @@
       <workItem from="1632375427788" duration="842000" />
       <workItem from="1632601745363" duration="289000" />
       <workItem from="1632602132608" duration="597000" />
-    </task>
-    <task id="LOCAL-00174" summary="- pridane 064">
-      <created>1601540137084</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1601540137085</updated>
-    </task>
-    <task id="LOCAL-00175" summary="- pridane 64&#10;- upraven 064">
-      <created>1601641246925</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1601641246925</updated>
+      <workItem from="1633345973993" duration="766000" />
+      <workItem from="1633412637728" duration="252000" />
+      <workItem from="1633694376009" duration="2129000" />
+      <workItem from="1635229754186" duration="330000" />
     </task>
     <task id="LOCAL-00176" summary="- upravene 001&#10;- upravene avls">
       <created>1602837689192</created>
@@ -796,7 +799,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631881359798</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="- 252L pre EU">
+      <created>1633345992340</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1633345992341</updated>
+    </task>
+    <task id="LOCAL-00224" summary="- added 044">
+      <created>1633700961803</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1633700961803</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -842,8 +859,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- added 68a=1000b" />
-    <MESSAGE value="- removed 68a" />
     <MESSAGE value="- added 003" />
     <MESSAGE value="- changes" />
     <MESSAGE value="- changes 027" />
@@ -867,32 +882,9 @@
     <MESSAGE value="- updates&#10;- adde 014" />
     <MESSAGE value="- updates&#10;- added 001 ZDR" />
     <MESSAGE value="- updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="264" y="29" width="916" height="847" key="CommitChangelistDialog2" timestamp="1631881359476">
-      <screen x="0" y="0" width="1600" height="1200" />
-    </state>
-    <state x="2571" y="79" key="CommitChangelistDialog2/1600.0.1920.1059/0.0.1600.1059/3520.0.320.1059@1600.0.1920.1059" timestamp="1625418999009" />
-    <state x="264" y="29" width="916" height="956" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1631881359476" />
-    <state x="3597" y="-9" key="CommitChangelistDialog2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@3520.0.2560.1419" timestamp="1630997188666" />
-    <state x="59" y="8" width="916" height="847" key="CommitChangelistDialog2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1629792307421" />
-    <state x="65" y="69" width="1230" height="994" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1629711339240" />
-    <state x="1983" y="49" width="916" height="847" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1627552501711" />
-    <state x="539" y="521" width="292" height="174" key="VCS.ChangelistChooser" timestamp="1628072059986">
-      <screen x="0" y="0" width="1600" height="1200" />
-    </state>
-    <state x="539" y="521" width="292" height="174" key="VCS.ChangelistChooser/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1628072059986" />
-    <state x="649" y="487" width="292" height="156" key="VCS.ChangelistChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1627367977366" />
-    <state x="391" y="295" width="804" height="520" key="Vcs.Push.Dialog.v2" timestamp="1631881361586">
-      <screen x="0" y="0" width="1600" height="1200" />
-    </state>
-    <state x="74" y="-552" key="Vcs.Push.Dialog.v2/1600.0.1920.1059/0.0.1600.1059/3520.0.320.1059@0.0.1600.1059" timestamp="1625493600715" />
-    <state x="391" y="295" width="804" height="520" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@0.0.1600.1200" timestamp="1631881361586" />
-    <state x="4137" y="247" key="Vcs.Push.Dialog.v2/1600.0.1920.1080/0.0.1600.1200/3520.0.2560.1419@3520.0.2560.1419" timestamp="1630997190464" />
-    <state x="464" y="199" width="804" height="520" key="Vcs.Push.Dialog.v2/1920.0.1920.1059/0.0.1920.1059@0.0.1920.1059" timestamp="1629792308895" />
-    <state x="468" y="244" width="524" height="605" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1629711340462" />
-    <state x="2312" y="-583" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1627552504699" />
+    <MESSAGE value="- 252L pre EU" />
+    <MESSAGE value="- added 044" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added 044" />
   </component>
   <component name="masterDetails">
     <states>

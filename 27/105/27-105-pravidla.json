@@ -2,11 +2,15 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.027
+			"value": 0.0285
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.0082
+		},
+		"CBE": {
+			"label": "Cena bodu el. výkony",
+			"value": 0.035
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -18,7 +22,7 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.006666,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -26,6 +30,12 @@
 			"if": "vv.kod in ['1a']",
 			"value": 0.02,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 60;62;63;820;822;825;841",
+			"if": "vv.kod in ['60','62','63','820','822','825','841',]",
+			"value": 0.0315,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
@@ -38,18 +48,6 @@
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": 0.007303,
 			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
-			"value": 8.4,
-			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Výkon 62",
-			"if": "vv.kod in ['62']",
-			"value": 5.67,
-			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 760sp;760sn;760pp;760pn",
@@ -130,6 +128,24 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [
