@@ -34,6 +34,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0305,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,

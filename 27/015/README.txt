@@ -27,7 +27,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│          0.0055 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│        0.012083 │ vv.bodyCelkom*cena        │ Vykony 60,62,63                               │ vv.kod in ['5793','5794','5795']                             │
 │        0.012083 │ vv.bodyCelkom*cena        │ Vykony 5793,5794,5795                         │ vv.kod in ['5793','5794','5795']                             │
 │           0.022 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
