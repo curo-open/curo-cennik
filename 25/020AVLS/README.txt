@@ -16,6 +16,7 @@ Autor: curo.sk
 │ CBEUNK = 0.026     │ Cena bodu Nekapitovany(EU)                        │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
 │ AGTC = 4.8         │ AGTC                                              │
+│ PP50 = 10          │ PP50                                              │
 └────────────────────┴───────────────────────────────────────────────────┘
 
 
@@ -88,6 +89,7 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

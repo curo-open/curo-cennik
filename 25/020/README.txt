@@ -16,6 +16,7 @@ Autor: curo.sk
 │ CBEUNK = 0.026     │ Cena bodu Nekapitovany(EU)                        │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
 │ AGTC = 4.8         │ AGTC                                              │
+│ PP50 = 10          │ PP50                                              │
 └────────────────────┴───────────────────────────────────────────────────┘
 
 
@@ -82,6 +83,7 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │                 │ vv.bodyCelkom*CB          │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │

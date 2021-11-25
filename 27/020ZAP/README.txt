@@ -13,6 +13,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8       │ AGTC                       │
+│ PP50 = 10        │ PP50                       │
 └──────────────────┴────────────────────────────┘
 
 

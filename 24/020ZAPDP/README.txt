@@ -13,6 +13,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8       │ AGTC                       │
+│ PP50 = 10        │ PP50                       │
 └──────────────────┴────────────────────────────┘
 
 
@@ -65,6 +66,7 @@ Autor: curo.sk
 │             4.5 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │            1.05 │ vv.pocet*cena             │ Delegovaný odber krvi                         │ vv.kod in ['250D']                                           │
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný EU - iné ako SVALZ               │ p.typ in ['EU'] && vv.typ!='SVaLZ'                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

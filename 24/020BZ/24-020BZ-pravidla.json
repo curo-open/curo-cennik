@@ -19,6 +19,10 @@
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
+		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
 		}
 	},
 	"pacient": [
@@ -221,6 +225,12 @@
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
 		},
 		{
 			"label": "Očkovanie Covid 252K",

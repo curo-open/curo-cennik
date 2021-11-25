@@ -13,6 +13,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.026   │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8       │ AGTC                       │
+│ PP50 = 10        │ PP50                       │
 └──────────────────┴────────────────────────────┘
 
 
@@ -82,6 +83,7 @@ Autor: curo.sk
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │               1 │ vv.pocet*cena             │ Výplach zvukovodu                             │ vv.kod in ['1540']                                           │
 │             4.5 │ vv.pocet*cena             │ Komplexné vyšetrenie pacienta                 │ vv.kod in ['60']                                             │
 │            1.05 │ vv.pocet*cena             │ Delegovaný odber                              │ vv.kod in ['250d']                                           │

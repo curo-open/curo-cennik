@@ -14,6 +14,7 @@ Autor: curo.sk
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
 │ _4571a = 4.4      │ 4571a                      │
 │ AGTC = 4.8        │ AGTC                       │
+│ PP50 = 10         │ PP50                       │
 └───────────────────┴────────────────────────────┘
 
 
@@ -74,6 +75,7 @@ Autor: curo.sk
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

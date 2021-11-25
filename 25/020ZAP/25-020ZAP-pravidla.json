@@ -27,6 +27,10 @@
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
+		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
 		}
 	},
 	"pacient": [
@@ -345,10 +349,22 @@
 			"calc": "AGTC"
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
+		},
+		{
 			"label": "Nekapitovaný EU - iné ako SVALZ",
 			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
 		}
 	],
 	"kontrola": [],

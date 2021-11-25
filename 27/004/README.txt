@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota  │ Popis           │
 ├──────────────────┼─────────────────┤
 │ LIMIT = 0        │ Limit           │
-│ CB = 0.0285      │ Cena bodu       │
+│ CB = 0.0275      │ Cena bodu       │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
 │ IPP4 = 2.49      │ IPP4            │
 │ IPP5 = 0.73      │ IPP5            │
@@ -27,6 +27,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│          0.0305 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │             NaN │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
