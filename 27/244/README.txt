@@ -1,20 +1,18 @@
-                                                                        ================
-                                                                        Cenník foniatria
-                                                                        ================
+                                                                      ====================
+                                                                      Cenník psychoterapia
+                                                                      ====================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────────┐
-│ Názov a hodnota │ Popis     │
-├─────────────────┼───────────┤
-│  = 0            │ parameter │
-│ 0.0285 = 0      │ parameter │
-│ 0.0082 = 0      │ parameter │
-│ 0.57 = 0        │ parameter │
-│ 0.36 = 0        │ parameter │
-│ 0.28 = 0        │ parameter │
-└─────────────────┴───────────┘
+┌──────────────────┬──────────────────────────────┐
+│ Názov a hodnota  │ Popis                        │
+├──────────────────┼──────────────────────────────┤
+│ LIMIT = 0        │ Limit                        │
+│ CB = 0.0285      │ Cena bodu                    │
+│ CBP = 0.041      │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ              │
+└──────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -27,23 +25,33 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│          0.0315 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,820,822,825,841                │ vv.kod in ['60','62','63','820','822','825','841']           │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│               5 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5331,5332                          │ vv.kod in ['5330','5331','5332']                             │
+│         0.01275 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│          0.0082 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ vv.typ!='SVaLZ'                                              │
+│                 │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             420 │ 60                                                                                                        │                           │
+│             270 │ 62                                                                                                        │                           │
+│             210 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
+│              40 │ 70                                                                                                        │                           │
+│             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

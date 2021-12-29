@@ -4,10 +4,6 @@
 			"label": "Vypočitaná cena bodu",
 			"value": 0.0285
 		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.0455
-		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.0082
@@ -49,21 +45,9 @@
 		},
 		{
 			"label": "Výkon Ine SVALZ",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
+			"if": "vv.kod in ['5766','5769','5770','5771']",
+			"value": 0.01275,
 			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "USG",
-			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
-		},
-		{
-			"label": "EKG",
-			"if": "vv.kod in ['5702','5702a','15c']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Telemedicína",
@@ -146,12 +130,6 @@
 				"value": 40
 			}
 		],
-		"60r": [
-			{
-				"cond": "",
-				"value": 480
-			}
-		],
 		"1b": [
 			{
 				"cond": "",
@@ -173,5 +151,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "endokrinologia"
+	"title": "imunologia"
 }

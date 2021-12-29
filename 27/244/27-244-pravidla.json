@@ -1,32 +1,34 @@
 {
 	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
 		"CB": {
-			"label": "Vypočitaná cena bodu",
+			"label": "Cena bodu ",
 			"value": 0.0285
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0455
+			"value": 0.041
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.0082
-		},
-		"CBSVALZUSG": {
-			"label": "Cena bodu SVaLZ USG",
-			"value": 0.0088
-		},
-		"LIMIT": {
-			"label": "Limit",
-			"value": 0
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0305,
+			"label": "Výkon 60,62,63,820,822,825,841",
+			"if": "vv.kod in ['60','62','63','820','822','825','841']",
+			"value": 0.0315,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -36,34 +38,16 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkon Ine SVALZ",
+			"label": "Výkon 5330,5331,5332",
 			"if": "vv.kod in ['5330','5331','5332']",
 			"value": 0.0055,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "Výkon Ine SVALZ",
+			"label": "Výkon 5793,5794,5795",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
+			"value": 0.01275,
 			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "USG",
-			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
-		},
-		{
-			"label": "EKG",
-			"if": "vv.kod in ['5702','5702a','15c']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Telemedicína",
@@ -72,25 +56,25 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "ŠAS",
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"value": 0.0082,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
-			"label": "ŠAS",
+			"label": "Výkony ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkony",
+			"label": "Výkony ŠAS",
 			"if": "1",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
@@ -98,12 +82,6 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",
@@ -146,12 +124,6 @@
 				"value": 40
 			}
 		],
-		"60r": [
-			{
-				"cond": "",
-				"value": 480
-			}
-		],
 		"1b": [
 			{
 				"cond": "",
@@ -173,5 +145,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "endokrinologia"
+	"title": "psychoterapia"
 }

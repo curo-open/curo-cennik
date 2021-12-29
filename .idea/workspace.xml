@@ -19,20 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 252L pre EU">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020BZ/24-020BZ-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020BZ/24-020BZ-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020BZ/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020BZ/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/064/24-064-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/064/24-064-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/064/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/064/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/005/27-005-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/27-005-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/005/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/010/27-010-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/010/27-010-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/010/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/010/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020BZ/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/105/27-105-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/105/27-105-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/105/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/105/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -468,35 +456,21 @@
       <workItem from="1633345973993" duration="766000" />
       <workItem from="1633412637728" duration="252000" />
       <workItem from="1633694376009" duration="2129000" />
-      <workItem from="1635229754186" duration="330000" />
-    </task>
-    <task id="LOCAL-00176" summary="- upravene 001&#10;- upravene avls">
-      <created>1602837689192</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1602837689192</updated>
-    </task>
-    <task id="LOCAL-00177" summary="- added 013">
-      <created>1603264894299</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1603264894300</updated>
-    </task>
-    <task id="LOCAL-00178" summary="- added 013">
-      <created>1603265163645</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1603265163645</updated>
-    </task>
-    <task id="LOCAL-00179" summary="- added 020">
-      <created>1603464484714</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1603464484714</updated>
+      <workItem from="1635229754186" duration="1487000" />
+      <workItem from="1635249570918" duration="599000" />
+      <workItem from="1635322321200" duration="1197000" />
+      <workItem from="1635401549724" duration="11000" />
+      <workItem from="1636025379752" duration="34000" />
+      <workItem from="1637837090000" duration="1238000" />
+      <workItem from="1638010924311" duration="599000" />
+      <workItem from="1638266242004" duration="606000" />
+      <workItem from="1638456481046" duration="599000" />
+      <workItem from="1638773171136" duration="599000" />
+      <workItem from="1638859902658" duration="599000" />
+      <workItem from="1638946118155" duration="598000" />
+      <workItem from="1639643560752" duration="90000" />
+      <workItem from="1639646037740" duration="653000" />
+      <workItem from="1640248122856" duration="599000" />
     </task>
     <task id="LOCAL-00180" summary="- added 68a=1000b">
       <created>1604005687714</created>
@@ -813,7 +787,35 @@
       <option name="project" value="LOCAL" />
       <updated>1633700961803</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="- updates">
+      <created>1635230130479</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1635230130479</updated>
+    </task>
+    <task id="LOCAL-00226" summary="- updates">
+      <created>1636025399747</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1636025399747</updated>
+    </task>
+    <task id="LOCAL-00227" summary="- updates, pridane PP50">
+      <created>1637837112916</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1637837112916</updated>
+    </task>
+    <task id="LOCAL-00228" summary="- updates&#10;- added 804">
+      <created>1639643665222</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1639643665230</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -859,8 +861,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- added 003" />
-    <MESSAGE value="- changes" />
     <MESSAGE value="- changes 027" />
     <MESSAGE value="- added 253 and 336" />
     <MESSAGE value="- upraven 003 covid" />
@@ -881,10 +881,12 @@
     <MESSAGE value="- updates to ocko vykony" />
     <MESSAGE value="- updates&#10;- adde 014" />
     <MESSAGE value="- updates&#10;- added 001 ZDR" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- 252L pre EU" />
     <MESSAGE value="- added 044" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added 044" />
+    <MESSAGE value="- updates" />
+    <MESSAGE value="- updates, pridane PP50" />
+    <MESSAGE value="- updates&#10;- added 804" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates&#10;- added 804" />
   </component>
   <component name="masterDetails">
     <states>

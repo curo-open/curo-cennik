@@ -8,14 +8,8 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon pre soc. poisťovňu",
-			"if": "vv.typ=='soc' && vv.kod in ['71.OCR']",
-			"value": 0.028547,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkon pre soc. poisťovňu",
-			"if": "vv.typ=='soc'",
+			"label": "Výkon pre UPSVAR",
+			"if": "vv.typ=='upsvar'",
 			"value": null,
 			"calc": "vv.bodyCelkom*ZA_BOD"
 		}
@@ -24,5 +18,5 @@
 	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "foniatria"
+	"title": "VLD"
 }

@@ -14,7 +14,7 @@
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 4.9
+			"value": 7.9
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -22,14 +22,10 @@
 		},
 		"LIMIT": {
 			"label": "Limit",
-			"value": 75900
-		},
-		"EL_POBOCKA": {
-			"label": "Používa el. pobočku ?",
-			"value": 1
+			"value": 0
 		},
 		"CB": {
-			"label": "Cena bodu",
+			"label": "Cena bodu ",
 			"value": 0.0268
 		},
 		"CBSVALZ": {
@@ -39,14 +35,16 @@
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
 			"value": 0.008473
-		},
-		"AGTC": {
-			"label": "AGTC",
-			"value": 4.8
 		}
 	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
+		},
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
@@ -54,22 +52,22 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"label": "Cielené vyšetrenie pacienta pri pandémii COVID-19",
+			"if": "vv.kod in ['62a','62b']",
+			"value": 20,
+			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "špec. elektronické výkony",
-			"if": "vv.kod in ['11a','1b','1c','70']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='AGTC'",
-			"value": null,
-			"calc": "AGTC"
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorescenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Pripočitateľné položky",
@@ -102,13 +100,19 @@
 			"calc": "IPPD"
 		},
 		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
+			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
@@ -116,11 +120,18 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.0238,
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
-	"kontrola": [],
+	"kontrola": [
+		{
+			"label": "Výkon 250a,b nie je akceptovaný vo VšZP, použite 250X",
+			"if": "p.vek >= 0",
+			"check": "!d.vv|ma('kod in [\"250a\",\"250b\"]')",
+			"severity": 0
+		}
+	],
 	"body": {
 		"1": [
 			{
@@ -170,16 +181,10 @@
 				"value": 40
 			}
 		],
-		"802": [
-			{
-				"cond": "",
-				"value": 750
-			}
-		],
 		"15d": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 210
 			}
 		],
 		"1b": [
@@ -199,15 +204,9 @@
 				"cond": "",
 				"value": 210
 			}
-		],
-		"68a": [
-			{
-				"cond": "",
-				"value": 40
-			}
 		]
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "foniatria"
+	"title": "imunologia"
 }

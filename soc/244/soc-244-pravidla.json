@@ -2,7 +2,7 @@
 	"params": {
 		"ZA_BOD": {
 			"label": "Cena posudkového lekára za bod",
-			"value": 0.023236
+			"value": 0
 		}
 	},
 	"pacient": [],
@@ -10,7 +10,13 @@
 		{
 			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc' && vv.kod in ['71.OCR']",
-			"value": 0.028547,
+			"value": null,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon pre soc. poisťovňu",
+			"if": "vv.mode in ['soc/VYZI']",
+			"value": null,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -24,5 +30,5 @@
 	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "foniatria"
+	"title": "psychoterapia"
 }

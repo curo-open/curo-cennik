@@ -1,5 +1,5 @@
                                                                         ================
-                                                                        Cenník Foniatria
+                                                                        Cenník foniatria
                                                                         ================
 
 Autor: curo.sk
