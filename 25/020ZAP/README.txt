@@ -5,18 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬────────────────────────────┐
-│ Názov a hodnota    │ Popis                      │
-├────────────────────┼────────────────────────────┤
-│ IDK = 1.2          │ IDK                        │
-│ KPS = 1            │ KPS                        │
-│ EL_POBOCKA = 1     │ Používa el. pobočku ?      │
-│ CB = 0.026         │ Cena bodu                  │
-│ CBSVALZ = 0.007303 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.026     │ Cena bodu Nekapitovany(EU) │
-│ AGTC = 4.8         │ AGTC                       │
-│ PP50 = 10          │ PP50                       │
-└────────────────────┴────────────────────────────┘
+┌────────────────────┬───────────────────────────────────────────────────┐
+│ Názov a hodnota    │ Popis                                             │
+├────────────────────┼───────────────────────────────────────────────────┤
+│ IDK = 1.2          │ IDK                                               │
+│ KPS = 1            │ KPS                                               │
+│ EL_POBOCKA = 1     │ Používa el. pobočku ?                             │
+│ CB = 0.026         │ Cena bodu                                         │
+│ CBSVALZ = 0.007303 │ Cena bodu SVaLZ                                   │
+│ CBEUNK = 0.026     │ Cena bodu Nekapitovany(EU)                        │
+│ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
+│ AGTC = 4.8         │ AGTC                                              │
+│ PP50 = 10          │ PP50                                              │
+└────────────────────┴───────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -88,6 +89,7 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│                 │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 │                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
 │                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

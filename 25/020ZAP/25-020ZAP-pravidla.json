@@ -24,6 +24,10 @@
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.026
 		},
+		"FOB": {
+			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
+			"value": 2
+		},
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
@@ -353,6 +357,12 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='FOB'",
+			"value": null,
+			"calc": "FOB"
 		},
 		{
 			"label": "Nekapitovaný EU - iné ako SVALZ",
