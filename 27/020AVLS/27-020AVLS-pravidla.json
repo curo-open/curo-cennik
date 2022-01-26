@@ -10,11 +10,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00861
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.026
+			"value": 0.03
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -23,31 +23,39 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"FOB": {
+			"label": "FOB",
+			"value": 2
+		},
+		"EDU": {
+			"label": "EDU",
+			"value": 2
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 2.54,
+			"value": 2.72,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 2.92,
+			"value": 3.12,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 4.07,
+			"value": 4.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 4.46,
+			"value": 5.04,
 			"calc": "IDK+cena"
 		}
 	],
@@ -91,7 +99,7 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 19.35,
+			"value": 23.73,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -151,7 +159,7 @@
 		{
 			"label": "Očkovanie proti osýpkam",
 			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -169,13 +177,13 @@
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571a','4571A']",
-			"value": 0.012,
+			"value": 0.0132,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29']",
-			"value": 0.025,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -187,67 +195,73 @@
 		{
 			"label": "TOKS negatívny",
 			"if": "vv.kod in ['159z']",
-			"value": 8.8,
+			"value": 9.68,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS znehodnotený",
 			"if": "vv.kod in ['159x']",
-			"value": 8.8,
+			"value": 9.68,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "TOKS pozitívny",
 			"if": "vv.kod in ['159a']",
-			"value": 8.8,
+			"value": 9.68,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.053,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 13,
+			"value": 16,
 			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Glukóza",
+			"if": "vv.kod in ['3671']",
+			"value": 0.065,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "EKG (5702Z)",
 			"if": "vv.kod in ['5702Z','5702ZV']",
-			"value": 4.41,
+			"value": 4.74,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "EKG (5702)",
 			"if": "vv.kod in ['5702']",
-			"value": 0.0082,
+			"value": 0.00861,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "INR",
-			"if": "vv.kod in ['3842a']",
-			"value": 5,
+			"if": "vv.kod in ['3842a','H0007']",
+			"value": 5.2,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "24h meranie tlaku",
 			"if": "vv.kod in ['5715']",
-			"value": 13,
+			"value": 16.5,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301']",
-			"value": 0.0088,
+			"value": 0.00924,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "ABI (H0008)",
 			"if": "vv.kod in ['H0008']",
-			"value": 5,
+			"value": 6,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -264,8 +278,8 @@
 		},
 		{
 			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
-			"if": "vv.kod in ['10']",
-			"value": 10,
+			"if": "vv.kod in ['10','H0003','H0004']",
+			"value": 12,
 			"calc": "vv.pocet*cena"
 		},
 		{
@@ -309,6 +323,18 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='FOB'",
+			"value": null,
+			"calc": "FOB"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='EDU'",
+			"value": null,
+			"calc": "EDU"
 		},
 		{
 			"label": "Výplach zvukovodu",
