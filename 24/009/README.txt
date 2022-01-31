@@ -29,13 +29,13 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │        0.008839 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b, 11a, 70                             │ vv.kod in ['1b','11a','70']                                  │
-│                 │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
-│                 │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
+│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

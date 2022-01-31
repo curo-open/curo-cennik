@@ -31,15 +31,15 @@ Autor: curo.sk
 │                 │                           │ 531                                           │ ','530','531']                                               │
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
 │        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│                 │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
-│                 │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
-│                 │ vv.bodyCelkom*CB          │ Výkon 65;66                                   │ vv.kod in ['65','66','67']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65;66                                   │ vv.kod in ['65','66','67']                                   │
 │        0.048972 │ vv.bodyCelkom*cena        │ Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763 │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
 │                 │                           │ sp;763sn                                      │ 763sp','763sn']                                              │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │        0.024504 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │        0.025962 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

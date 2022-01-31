@@ -30,19 +30,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│                 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531']                                               │
-│                 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
+│            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
 │        0.008473 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
 │            2.98 │ vv.bodyCelkom*cena        │ SVALZ výkony (250X)                           │ vv.kod in ['250X']                                           │
 │          0.0202 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

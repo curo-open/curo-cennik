@@ -26,20 +26,20 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │        0.026432 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60']                                             │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │             300 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
 │             250 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │              14 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

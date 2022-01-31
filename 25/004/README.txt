@@ -34,15 +34,15 @@ Autor: curo.sk
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 802, 813, 819d, 803, 804                │ vv.kod in ['802','813','819d','803','804']                   │
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│                 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│                 │ IPPD                      │ Pripočitateľné položky                        │ vv.kod=='IPPD'                                               │
-│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ IPPD                      │ Pripočitateľné položky                        │ vv.kod=='IPPD'                                               │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

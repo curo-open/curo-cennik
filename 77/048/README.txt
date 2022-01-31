@@ -31,10 +31,10 @@ Autor: curo.sk
 │            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60r']                                            │
 │            3.36 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['65'] && p|vekMedzi(0, 5)                         │
 │          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
-│                 │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │           0.045 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['763p']                                           │
 │             254 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
 │          378.23 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
@@ -44,10 +44,10 @@ Autor: curo.sk
 │        0.012083 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
 │           14.99 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │               0 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

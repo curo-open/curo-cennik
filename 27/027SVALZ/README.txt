@@ -32,11 +32,11 @@ Autor: curo.sk
 │            3.36 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['65'] && p|vekMedzi(0, 5)                         │
 │          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │               0 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

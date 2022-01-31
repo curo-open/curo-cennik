@@ -33,13 +33,13 @@ Autor: curo.sk
 │                 │                           │                                               │ 5','5050','5051','5052','5053','5056','5060','5061','5062',' │
 │                 │                           │                                               │ 5065','5070','5071','5072','5075','5076','5077','5080','5081 │
 │                 │                           │                                               │ ','5082','5083','5090','5095','5051R']                       │
-│                 │ vv.bodyCelkom*CB          │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
+│            null │ vv.bodyCelkom*CB          │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
 │                 │                           │                                               │ '5309','5310','5312','5315','5316','5742','5743','5739','573 │
 │                 │                           │                                               │ 8','5153a']                                                  │
-│                 │ X03501                    │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='X03501'                                             │
-│                 │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.typ!='SVaLZ'                                              │
+│            null │ X03501                    │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='X03501'                                             │
+│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.typ!='SVaLZ'                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

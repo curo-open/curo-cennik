@@ -37,13 +37,13 @@ Autor: curo.sk
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkony 5303,5305                              │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']            │
 │        0.008535 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.diagnoza in ['Z'] && vv.kod in ['5308']                   │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305                              │ vv.kod in ['5303','5305']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305                              │ vv.kod in ['5303','5305']                                    │
 │           0.026 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│                 │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & vv.jeSVaZL                                                 │
 │           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & !vv.jeSVaZL                                                │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

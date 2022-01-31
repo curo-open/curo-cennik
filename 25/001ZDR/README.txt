@@ -39,21 +39,21 @@ Autor: curo.sk
 │        0.007635 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │        0.011618 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 765p                                    │ vv.kod in ['765p']                                           │
-│                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│                 │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│                 │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5702, 5715, 5716                        │ vv.kod in ['5702','5715','5716']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5702, 5715, 5716                        │ vv.kod in ['5702','5715','5716']                             │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

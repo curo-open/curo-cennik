@@ -31,21 +31,21 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│                 │ vv.bodyCelkom*CBP         │ Preventívne zdravotné výkony                  │ vv.kod in ['157','102','103','105','108','1070','252b','297' │
+│            null │ vv.bodyCelkom*CBP         │ Preventívne zdravotné výkony                  │ vv.kod in ['157','102','103','105','108','1070','252b','297' │
 │                 │                           │                                               │ ]                                                            │
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │         0.00909 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
 │        0.008105 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
 │        0.008105 │ vv.bodyCelkom*cena        │ Výkon 5808                                    │ vv.kod in ['5808']                                           │
 │        0.020995 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│                 │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │
-│                 │ vv.bodyCelkom*CBEU        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
+│            null │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │
+│            null │ vv.bodyCelkom*CBEU        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
 │             5.2 │ vv.pocet*cena             │ Skriningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skriningový poistencov. antigénový test SARS- │ vv.kod in ['629b']                                           │
 │                 │                           │ CoV-2 imun. metód.                            │                                                              │
 │           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
-│                 │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

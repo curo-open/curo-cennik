@@ -33,21 +33,21 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                 │ vv.bodyCelkom*CBE         │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70']                                   │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*CBE         │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70']                                   │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
-│                 │ vv.bodyCelkom*CBSVALZP    │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│                 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│                 │ IPPD                      │ Pripočitateľné položky                        │ vv.kod=='IPPD'                                               │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBSVALZP    │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ IPPD                      │ Pripočitateľné položky                        │ vv.kod=='IPPD'                                               │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

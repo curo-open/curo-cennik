@@ -31,14 +31,14 @@ Autor: curo.sk
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │             NaN │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│                 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│                 │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
-│                 │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
-│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│                 │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
+│            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331,'5332'] && vv.typ!='SVaLZ'           │
 │        0.012075 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

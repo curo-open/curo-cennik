@@ -27,15 +27,15 @@ Autor: curo.sk
 │        0.011593 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531']                                               │
 │        0.011593 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['532','533a','540','541','542']                   │
-│                 │ vv.pocet*420*VCB          │ ŠAS                                           │ vv.kod in ['60']                                             │
-│                 │ vv.pocet*270*VCB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│                 │ vv.pocet*210*VCB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.pocet*420*VCB          │ ŠAS                                           │ vv.kod in ['60']                                             │
+│            null │ vv.pocet*270*VCB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│            null │ vv.pocet*210*VCB          │ ŠAS                                           │ vv.kod in ['63']                                             │
 │          0.0462 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
 │                 │                           │                                               │ 763sp','763sn']                                              │
-│                 │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*VCB         │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*VCB         │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*VCB         │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

@@ -33,10 +33,10 @@ Autor: curo.sk
 │          0.0252 │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
 │          0.0252 │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
 │          0.0252 │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│                 │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│                 │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│                 │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│                 │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │          0.0252 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ EL_POBOCKA && p.typ in ['BE','CU','EU']                      │
 │          0.0252 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │          0.0252 │ vv.bodyCelkom*cena        │ Výkony                                        │ EL_POBOCKA                                                   │

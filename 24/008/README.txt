@@ -54,14 +54,14 @@ Autor: curo.sk
 │               6 │ vv.pocet*cena             │ Vykon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
 │            9.29 │ vv.pocet*cena             │ Vykon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.54 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
-│                 │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
-│                 │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
-│                 │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │
-│                 │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
+│            null │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
+│            null │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
+│            null │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │
+│            null │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

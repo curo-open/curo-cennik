@@ -22,9 +22,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
-│                 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.mode in ['soc/VYZI']                                      │
-│                 │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
+│            null │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
+│            null │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.mode in ['soc/VYZI']                                      │
+│            null │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

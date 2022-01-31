@@ -33,7 +33,7 @@ Autor: curo.sk
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
 │        0.022725 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony                                        │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

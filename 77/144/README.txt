@@ -29,10 +29,10 @@ Autor: curo.sk
 │             4.5 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5331,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │        0.012083 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
-│                 │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │          0.0082 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ vv.typ!='SVaLZ'                                              │
-│                 │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

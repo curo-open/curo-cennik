@@ -58,30 +58,30 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                 │ PPH1                      │ Pripočitateľné položky                        │ vv.kod=='PPH1'                                               │
-│                 │ PPH2                      │ Pripočitateľné položky                        │ vv.kod=='PPH2'                                               │
-│                 │ PREDOP                    │ Pripočitateľné položky                        │ vv.kod=='PREDOP'                                             │
-│                 │ _4571a                    │ Pripočitateľné položky                        │ vv.kod in ['4571a','4571A']                                  │
-│                 │ CHRST                     │ Pripočitateľné položky                        │ vv.kod=='CHRST'                                              │
-│                 │ TELEKON                   │ Pripočitateľné položky                        │ vv.kod=='TELEKON'                                            │
-│                 │ HYPVS                     │ Pripočitateľné položky                        │ vv.kod=='HYPVS'                                              │
-│                 │ HYPKON                    │ Pripočitateľné položky                        │ vv.kod=='HYPKON'                                             │
-│                 │ HYPSTA                    │ Pripočitateľné položky                        │ vv.kod=='HYPSTA'                                             │
-│                 │ SKOR01                    │ Pripočitateľné položky                        │ vv.kod=='SKOR01'                                             │
-│                 │ SKOR02                    │ Pripočitateľné položky                        │ vv.kod=='SKOR02'                                             │
-│                 │ SKOR03                    │ Pripočitateľné položky                        │ vv.kod=='SKOR03'                                             │
-│                 │ SKOR04                    │ Pripočitateľné položky                        │ vv.kod=='SKOR04'                                             │
+│            null │ PPH1                      │ Pripočitateľné položky                        │ vv.kod=='PPH1'                                               │
+│            null │ PPH2                      │ Pripočitateľné položky                        │ vv.kod=='PPH2'                                               │
+│            null │ PREDOP                    │ Pripočitateľné položky                        │ vv.kod=='PREDOP'                                             │
+│            null │ _4571a                    │ Pripočitateľné položky                        │ vv.kod in ['4571a','4571A']                                  │
+│            null │ CHRST                     │ Pripočitateľné položky                        │ vv.kod=='CHRST'                                              │
+│            null │ TELEKON                   │ Pripočitateľné položky                        │ vv.kod=='TELEKON'                                            │
+│            null │ HYPVS                     │ Pripočitateľné položky                        │ vv.kod=='HYPVS'                                              │
+│            null │ HYPKON                    │ Pripočitateľné položky                        │ vv.kod=='HYPKON'                                             │
+│            null │ HYPSTA                    │ Pripočitateľné položky                        │ vv.kod=='HYPSTA'                                             │
+│            null │ SKOR01                    │ Pripočitateľné položky                        │ vv.kod=='SKOR01'                                             │
+│            null │ SKOR02                    │ Pripočitateľné položky                        │ vv.kod=='SKOR02'                                             │
+│            null │ SKOR03                    │ Pripočitateľné položky                        │ vv.kod=='SKOR03'                                             │
+│            null │ SKOR04                    │ Pripočitateľné položky                        │ vv.kod=='SKOR04'                                             │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
 │        0.022973 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│                 │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
-│                 │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
-│                 │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
-│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
-│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│                 │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
-│                 │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│            null │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
+│            null │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
+│            null │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
+│            null │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
+│            null │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
+│            null │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │        0.048972 │ vv.pocet*180*cena         │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
 │        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │        0.048972 │ vv.pocet*390*cena         │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
@@ -92,8 +92,8 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│                 │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
-│                 │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

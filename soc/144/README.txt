@@ -24,7 +24,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
 │        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.mode in ['soc/VYZI']                                      │
-│                 │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
+│            null │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
