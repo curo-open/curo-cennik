@@ -1,71 +1,59 @@
 {
 	"params": {
-		"IDK": {
-			"label": "NASTAVENIA IDK",
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.030465
+		},
+		"CBE": {
+			"label": "Cena bodu el. výkony",
+			"value": 0.27
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.008195
+		},
+		"CBSVALZP": {
+			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
 			"value": 0
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.0193,
-			"calc": "vv.bodyCelkom*cena"
+			"label": "Výkon 250x",
+			"if": "vv.kod in ['250x']",
+			"value": 2.98,
+			"calc": "vv.pocet*cena"
 		},
 		{
-			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
-			"value": 0.011593,
-			"calc": "vv.bodyCelkom*cena"
+			"label": "Výkon 60,62,63,65",
+			"if": "vv.kod in ['60','62','63','65']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkon 532;533a;540;541;542",
-			"if": "vv.kod in ['532','533a','540','541','542']",
-			"value": 0.011593,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkon 60",
-			"if": "",
-			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkony 62,63",
-			"if": "vv.kod in ['62','63']",
-			"value": 0.024504,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763sp;763sn",
-			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn','763sp','763sn']",
-			"value": 0.0462,
-			"calc": "vv.bodyCelkom*cena"
+			"label": "Výkon 1b,11a,70",
+			"if": "vv.kod in ['1b','11a','70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBE"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022171,
-			"calc": "vv.bodyCelkom*cena"
-		},
-		{
-			"label": "Preventívne vykony",
-			"if": "1",
-			"value": 0.0462,
+			"value": null,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.0078,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.022171,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],

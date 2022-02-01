@@ -5,11 +5,15 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬────────────────┐
-│ Názov a hodnota │ Popis          │
-├─────────────────┼────────────────┤
-│ IDK = 0         │ NASTAVENIA IDK │
-└─────────────────┴────────────────┘
+┌──────────────────┬─────────────────────────────────────────────────────────┐
+│ Názov a hodnota  │ Popis                                                   │
+├──────────────────┼─────────────────────────────────────────────────────────┤
+│ IPP4 = 4.9       │ IPP4                                                    │
+│ CB = 0.0275      │ Cena bodu                                               │
+│ CBE = 0.035      │ Cena bodu el. výkony                                    │
+│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ                                         │
+│ CBSVALZP = 0     │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
+└──────────────────┴─────────────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -22,22 +26,12 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            0.02 │ vv.pocet*cena             │ Výkon 1a                                      │ vv.kod in ['1a']                                             │
-│        0.007303 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
-│                 │                           │ 531                                           │ ','530','531']                                               │
-│        0.007303 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│             8.4 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│            5.67 │ vv.pocet*cena             │ Výkon 62                                      │ vv.kod in ['62']                                             │
-│            64.5 │ vv.pocet*cena             │ Výkon 760sp;760sn;760pp;760pn                 │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
-│             129 │ vv.pocet*cena             │ Výkon 763p                                    │ vv.kod in ['763p']                                           │
-│             129 │ vv.pocet*cena             │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
-│               5 │ vv.pocet*cena             │ Výkon Y0018                                   │ vv.kod in ['Y0018']                                          │
-│            4.56 │ vv.pocet*cena             │ Výkon Y0023                                   │ vv.kod in ['Y0023']                                          │
-│           0.021 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│           0.043 │ vv.bodyCelkom*cena        │ Preventívne vykony                            │ 1                                                            │
-│          0.0073 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│           0.021 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│           0.031 │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65']                              │
+│            null │ vv.bodyCelkom*CBE         │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Preventívne vykony                            │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
