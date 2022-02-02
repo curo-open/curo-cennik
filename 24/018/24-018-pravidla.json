@@ -41,7 +41,7 @@
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",

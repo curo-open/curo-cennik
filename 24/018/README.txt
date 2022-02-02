@@ -28,7 +28,7 @@ Autor: curo.sk
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65']                              │
 │            null │ vv.bodyCelkom*CBE         │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
-│            null │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
