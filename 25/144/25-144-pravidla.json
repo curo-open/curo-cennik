@@ -84,6 +84,12 @@
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB"
+		},
+		{
+			"label": "Výkony ŠAS",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],
