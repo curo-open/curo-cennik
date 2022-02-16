@@ -14,6 +14,7 @@ Autor: curo.sk
 │ VCB1 = 0.77     │ VCB pre výkon 1   │
 │ VCB250 = 0.77   │ VCB pre výkon 250 │
 │ AGTC = 4.8      │ AGTC              │
+│ PP50 = 10       │ PP50              │
 └─────────────────┴───────────────────┘
 
 
@@ -61,6 +62,8 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

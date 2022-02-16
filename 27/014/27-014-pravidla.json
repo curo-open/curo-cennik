@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0285
+			"value": 0.03
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00861
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -36,13 +36,37 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0305,
+			"value": 0.033,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 200,2100,2101,2106",
+			"if": "vv.kod in ['200','2100','2101','2106']",
+			"value": 0.033,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5153a, 5153b,5333",
+			"if": "vv.kod in ['5153a','5153b','5333']",
+			"value": 0.00924,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5330, 5331,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 4571a",
+			"if": "vv.kod in ['4571a','4571A']",
+			"value": 0.0132,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

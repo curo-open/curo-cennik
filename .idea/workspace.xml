@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates&#10;- adde 040">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -471,55 +471,10 @@
       <workItem from="1639643560752" duration="90000" />
       <workItem from="1639646037740" duration="653000" />
       <workItem from="1640248122856" duration="599000" />
-    </task>
-    <task id="LOCAL-00180" summary="- added 68a=1000b">
-      <created>1604005687714</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1604005687714</updated>
-    </task>
-    <task id="LOCAL-00181" summary="- removed 68a">
-      <created>1604005778054</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1604005778054</updated>
-    </task>
-    <task id="LOCAL-00182" summary="- added 003">
-      <created>1604327126849</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1604327126849</updated>
-    </task>
-    <task id="LOCAL-00183" summary="- changes">
-      <created>1606830573730</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1606830573730</updated>
-    </task>
-    <task id="LOCAL-00184" summary="- changes 027">
-      <created>1606899016347</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1606899016347</updated>
-    </task>
-    <task id="LOCAL-00185" summary="- added 253 and 336">
-      <created>1607325844521</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1607325844522</updated>
-    </task>
-    <task id="LOCAL-00186" summary="- upraven 003 covid">
-      <created>1607334518423</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1607334518423</updated>
+      <workItem from="1640785129238" duration="524000" />
+      <workItem from="1641209247342" duration="621000" />
+      <workItem from="1643233912031" duration="7623000" />
+      <workItem from="1644958441634" duration="599000" />
     </task>
     <task id="LOCAL-00187" summary="- pridane 023">
       <created>1607338832556</created>
@@ -815,19 +770,68 @@
       <option name="project" value="LOCAL" />
       <updated>1639643665230</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="- updates&#10;- adde 040">
+      <created>1640785160094</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1640785160095</updated>
+    </task>
+    <task id="LOCAL-00230" summary="- updates">
+      <created>1641209259153</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1641209259154</updated>
+    </task>
+    <task id="LOCAL-00231" summary="- updates 27 avls">
+      <created>1643233975549</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1643233975549</updated>
+    </task>
+    <task id="LOCAL-00232" summary="- updated Readme">
+      <created>1643619825879</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1643619825879</updated>
+    </task>
+    <task id="LOCAL-00233" summary="- updated deram">
+      <created>1643722468214</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1643722468214</updated>
+    </task>
+    <task id="LOCAL-00234" summary="- updates&#10;- adde 144">
+      <created>1643794185109</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1643794185109</updated>
+    </task>
+    <task id="LOCAL-00235" summary="- updates">
+      <created>1643879563745</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1643879563745</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -861,11 +865,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- changes 027" />
-    <MESSAGE value="- added 253 and 336" />
-    <MESSAGE value="- upraven 003 covid" />
-    <MESSAGE value="- pridane 023" />
-    <MESSAGE value="- pridane JZS" />
     <MESSAGE value="- update 010 JZS" />
     <MESSAGE value="- pridane 050" />
     <MESSAGE value="- upraven cenniky&#10;- pridane 005" />
@@ -883,10 +882,15 @@
     <MESSAGE value="- updates&#10;- added 001 ZDR" />
     <MESSAGE value="- 252L pre EU" />
     <MESSAGE value="- added 044" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- updates, pridane PP50" />
     <MESSAGE value="- updates&#10;- added 804" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates&#10;- added 804" />
+    <MESSAGE value="- updates&#10;- adde 040" />
+    <MESSAGE value="- updates 27 avls" />
+    <MESSAGE value="- updated Readme" />
+    <MESSAGE value="- updated deram" />
+    <MESSAGE value="- updates&#10;- adde 144" />
+    <MESSAGE value="- updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="masterDetails">
     <states>

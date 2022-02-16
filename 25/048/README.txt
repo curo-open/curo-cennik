@@ -46,9 +46,9 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
 │           15.54 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│             400 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
+│             418 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
 │             368 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
-│             210 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
+│          219.45 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
 │        0.008473 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │

@@ -5,16 +5,16 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ LIMIT = 0        │ Limit           │
-│ CB = 0.0285      │ Cena bodu       │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
-│ IPP1 = 0.57      │ IPP1            │
-│ IPP2 = 0.36      │ IPP2            │
-│ IPP3 = 0.28      │ IPP3            │
-└──────────────────┴─────────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ LIMIT = 0         │ Limit           │
+│ CB = 0.03         │ Cena bodu       │
+│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
+│ IPP1 = 0.57       │ IPP1            │
+│ IPP2 = 0.36       │ IPP2            │
+│ IPP3 = 0.28       │ IPP3            │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,8 +28,12 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│          0.0305 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.033 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.033 │ vv.bodyCelkom*cena        │ Výkon 200,2100,2101,2106                      │ vv.kod in ['200','2100','2101','2106']                       │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│         0.00924 │ vv.bodyCelkom*cena        │ Výkon 5153a, 5153b,5333                       │ vv.kod in ['5153a','5153b','5333']                           │
+│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330, 5331,5332                         │ vv.kod in ['5330','5331','5332']                             │
+│          0.0132 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a','4571A']                                  │
 │               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
