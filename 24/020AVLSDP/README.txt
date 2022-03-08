@@ -8,6 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬─────────────────────────────────┐
 │ Názov a hodnota   │ Popis                           │
 ├───────────────────┼─────────────────────────────────┤
+│ 5702 = 4.5        │ 5702                            │
 │ IDK = 0           │ NASTAVENIA IDK                  │
 │ VCB1 = 0.41       │ Vypočítaná cena bodu. výkon 1   │
 │ VCB4 = 1.54       │ Vypočítaná cena bodu. výkon 4   │
@@ -16,22 +17,23 @@ Autor: curo.sk
 │ PPH1 = 10         │ PPH1                            │
 │ PPH2 = 6.5        │ PPH2                            │
 │ PREDOP = 12.9     │ PREDOP                          │
-│ _4571a = 4        │ 4571a                           │
+│ _4571a = 4.4      │ 4571a                           │
 │ CHRSTAR = 10      │ CHRSTAR                         │
 │ CHRST = 10        │ CHRST                           │
 │ TELEKON = 1.3     │ TELEKON                         │
 │ HYPVS = 8         │ HYPVS                           │
 │ HYPKON = 5        │ HYPKON                          │
 │ HYPSTA = 4        │ HYPSTA                          │
-│ SKOR01 = 1.9      │ SKOR01                          │
-│ SKOR02 = 2.1      │ SKOR02                          │
-│ SKOR03 = 2.3      │ SKOR03                          │
-│ SKOR04 = 2.5      │ SKOR04                          │
+│ SKOR01 = 5        │ SKOR01                          │
+│ SKOR02 = 5        │ SKOR02                          │
+│ SKOR03 = 5        │ SKOR03                          │
+│ SKOR04 = 5        │ SKOR04                          │
 │ CB = 0.022089     │ Cena bodu                       │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ                 │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)      │
 │ AGTC = 4.8        │ AGTC                            │
 │ PP50 = 10         │ PP50                            │
+│ 5702D = 10        │ 5702D                           │
 └───────────────────┴─────────────────────────────────┘
 
 
@@ -71,6 +73,8 @@ Autor: curo.sk
 │            null │ SKOR02                    │ Pripočitateľné položky                        │ vv.kod=='SKOR02'                                             │
 │            null │ SKOR03                    │ Pripočitateľné položky                        │ vv.kod=='SKOR03'                                             │
 │            null │ SKOR04                    │ Pripočitateľné položky                        │ vv.kod=='SKOR04'                                             │
+│            null │ 5702                      │ Pripočitateľné položky                        │ vv.kod=='5702'                                               │
+│            null │ 5702D                     │ Pripočitateľné položky                        │ vv.kod=='5702D'                                              │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
@@ -85,8 +89,15 @@ Autor: curo.sk
 │        0.048972 │ vv.pocet*180*cena         │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
 │        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │        0.048972 │ vv.pocet*390*cena         │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
-│            10.5 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
-│               8 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
+│              13 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│            4.45 │ vv.pocet*cena             │ EKG (5702ZV)                                  │ vv.kod in ['5702ZV']                                         │
+│            4.45 │ vv.pocet*cena             │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
+│              10 │ vv.pocet*cena             │ EKG (5702D)                                   │ vv.kod in ['5702D']                                          │
+│               5 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
+│               5 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
+│               5 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
+│              13 │ vv.pocet*cena             │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
+│              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
 │        0.022089 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
 │        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │

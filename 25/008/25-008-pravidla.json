@@ -19,6 +19,10 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"PP05": {
+			"label": "PP05",
+			"value": 10
 		}
 	},
 	"pacient": [
@@ -197,6 +201,12 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP05'",
+			"value": null,
+			"calc": "PP05"
 		},
 		{
 			"label": "Pripočitateľné položky",

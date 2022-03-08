@@ -1,5 +1,9 @@
 {
 	"params": {
+		"5702": {
+			"label": 5702,
+			"value": 4.5
+		},
 		"IDK": {
 			"label": "NASTAVENIA IDK",
 			"value": 0
@@ -34,7 +38,7 @@
 		},
 		"_4571a": {
 			"label": "4571a",
-			"value": 4
+			"value": 4.4
 		},
 		"CHRSTAR": {
 			"label": "CHRSTAR",
@@ -62,19 +66,19 @@
 		},
 		"SKOR01": {
 			"label": "SKOR01",
-			"value": 1.9
+			"value": 5
 		},
 		"SKOR02": {
 			"label": "SKOR02",
-			"value": 2.1
+			"value": 5
 		},
 		"SKOR03": {
 			"label": "SKOR03",
-			"value": 2.3
+			"value": 5
 		},
 		"SKOR04": {
 			"label": "SKOR04",
-			"value": 2.5
+			"value": 5
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -94,6 +98,10 @@
 		},
 		"PP50": {
 			"label": "PP50",
+			"value": 10
+		},
+		"5702D": {
+			"label": "5702D",
 			"value": 10
 		}
 	},
@@ -251,6 +259,18 @@
 			"calc": "SKOR04"
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='5702'",
+			"value": null,
+			"calc": "5702"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='5702D'",
+			"value": null,
+			"calc": "5702D"
+		},
+		{
 			"label": "Nekapitovaný - Vykon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": 4.79,
@@ -337,13 +357,55 @@
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 10.5,
+			"value": 13,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "EKG (5702ZV)",
+			"if": "vv.kod in ['5702ZV']",
+			"value": 4.45,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "EKG (5702)",
+			"if": "vv.kod in ['5702']",
+			"value": 4.45,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "EKG (5702D)",
+			"if": "vv.kod in ['5702D']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Kvantitatívne vyšetrenie INR POCT",
+			"if": "vv.kod in ['H0007']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Stratifikacia CMP",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Stanovenie ABI oscilometricky",
+			"if": "vv.kod in ['H0008']",
+			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Celodenné snímanie tlaku",
+			"if": "vv.kod in ['5715']",
+			"value": 13,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Vykon 10",
 			"if": "vv.kod in ['10']",
-			"value": 8,
+			"value": 16,
 			"calc": "vv.pocet*cena"
 		},
 		{
