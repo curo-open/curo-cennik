@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates&#10;- adde 040">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +63,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
@@ -474,21 +478,14 @@
       <workItem from="1640785129238" duration="524000" />
       <workItem from="1641209247342" duration="621000" />
       <workItem from="1643233912031" duration="7623000" />
-      <workItem from="1644958441634" duration="599000" />
-    </task>
-    <task id="LOCAL-00187" summary="- pridane 023">
-      <created>1607338832556</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1607338832556</updated>
-    </task>
-    <task id="LOCAL-00188" summary="- pridane JZS">
-      <created>1608062897359</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1608062897359</updated>
+      <workItem from="1644958441634" duration="1251000" />
+      <workItem from="1645083412894" duration="598000" />
+      <workItem from="1645425969064" duration="599000" />
+      <workItem from="1646025028762" duration="598000" />
+      <workItem from="1646203380222" duration="599000" />
+      <workItem from="1646334805779" duration="592000" />
+      <workItem from="1646375313707" duration="599000" />
+      <workItem from="1646635042771" duration="643000" />
     </task>
     <task id="LOCAL-00189" summary="- update 010 JZS">
       <created>1608128279037</created>
@@ -819,7 +816,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643879563745</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="- updates">
+      <created>1644995717366</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1644995717366</updated>
+    </task>
+    <task id="LOCAL-00237" summary="- updates">
+      <created>1646742897764</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1646742897764</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
