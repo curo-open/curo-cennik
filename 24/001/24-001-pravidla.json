@@ -16,6 +16,10 @@
 			"label": "AGTC",
 			"value": 4.8
 		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 2235
@@ -84,10 +88,22 @@
 			"calc": "vv.pocet*cena"
 		},
 		{
+			"label": "Očkovanie Covid 252L",
+			"if": "vv.kod in ['252L']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",

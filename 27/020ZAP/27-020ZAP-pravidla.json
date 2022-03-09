@@ -284,6 +284,12 @@
 		},
 		{
 			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
+		},
+		{
+			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='FOB'",
 			"value": null,
 			"calc": "FOB"

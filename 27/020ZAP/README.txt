@@ -74,6 +74,7 @@ Autor: curo.sk
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 │            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 │               1 │ vv.pocet*cena             │ Výplach zvukovodu (jedno ucho)                │ vv.kod in ['1540']                                           │

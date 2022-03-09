@@ -18,6 +18,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.008195    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
+│ PP50 = 10             │ PP50                  │
 └───────────────────────┴───────────────────────┘
 
 
@@ -43,6 +44,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5702, 5715, 5716                        │ vv.kod in ['5702','5715','5716']                             │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
@@ -50,6 +52,7 @@ Autor: curo.sk
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

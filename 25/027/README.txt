@@ -11,6 +11,7 @@ Autor: curo.sk
 │ IPP1 = 1.8           │ IPP1                         │
 │ IPP2 = 2.9           │ IPP2                         │
 │ IPP3 = 4.9           │ IPP3                         │
+│ PP50 = 10            │ PP50                         │
 │ LIMIT = 75900        │ Limit                        │
 │ EL_POBOCKA = 1       │ Používa el. pobočku ?        │
 │ CB = 0.0252          │ Cena bodu                    │
@@ -33,6 +34,7 @@ Autor: curo.sk
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531']                                               │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
@@ -40,6 +42,7 @@ Autor: curo.sk
 │        0.008473 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
 │            2.98 │ vv.bodyCelkom*cena        │ SVALZ výkony (250X)                           │ vv.kod in ['250X']                                           │
 │          0.0202 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

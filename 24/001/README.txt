@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.008195 │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG │
 │ AGTC = 4.8         │ AGTC                │
+│ PP50 = 10          │ PP50                │
 │ LIMIT = 2235       │ Limit               │
 └────────────────────┴─────────────────────┘
 
@@ -39,7 +40,9 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │        0.024504 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │        0.025962 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

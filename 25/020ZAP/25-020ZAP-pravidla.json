@@ -369,12 +369,6 @@
 			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK"
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='PP50'",
-			"value": null,
-			"calc": "PP50"
 		}
 	],
 	"kontrola": [],

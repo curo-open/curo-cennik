@@ -13,6 +13,7 @@ Autor: curo.sk
 │ CBP = 0.0462         │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.015143   │ Cena bodu SVaLZ              │
 │ CBSVALZSP = 0.013766 │ Cena bodu SVaLZ SP           │
+│ PP50 = 10            │ PP50                         │
 └──────────────────────┴──────────────────────────────┘
 
 
@@ -33,6 +34,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','522','530','531']      │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
 │        0.008195 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

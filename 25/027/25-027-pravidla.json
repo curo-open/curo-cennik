@@ -12,6 +12,10 @@
 			"label": "IPP3",
 			"value": 4.9
 		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 75900
@@ -58,6 +62,12 @@
 			"calc": "IPP3"
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
+		},
+		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
 			"value": null,
@@ -92,6 +102,12 @@
 			"if": "vv.kod in ['15d']",
 			"value": 0.0202,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie Covid 252L",
+			"if": "vv.kod in ['252L']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "ŠAS",

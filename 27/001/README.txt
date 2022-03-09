@@ -14,6 +14,7 @@ Autor: curo.sk
 │ IPP2 = 0.36      │ IPP2            │
 │ IPP3 = 0.28      │ IPP3            │
 │ AGTC = 4.8       │ AGTC            │
+│ PP50 = 10        │ PP50            │
 │ LIMIT = 0        │ Limit           │
 └──────────────────┴─────────────────┘
 
@@ -44,6 +45,7 @@ Autor: curo.sk
 │         0.01275 │ vv.bodyCelkom*cena        │ Výkon 5793;5794;5795                          │ vv.kod in ['5793','5794','5795']                             │
 │               5 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -51,6 +53,7 @@ Autor: curo.sk
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

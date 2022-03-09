@@ -6,7 +6,7 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0245
+			"value": 0.043
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -15,6 +15,10 @@
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
 			"value": 0.008
+		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -82,6 +86,24 @@
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZSP"
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['5702','5715','5716']",
+			"value": 0.013166,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie Covid 252L",
+			"if": "vv.kod in ['252L']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
 		},
 		{
 			"label": "ŠAS",

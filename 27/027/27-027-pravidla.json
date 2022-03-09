@@ -16,6 +16,10 @@
 			"label": "Cena bodu SVaLZ SP",
 			"value": 0.008
 		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
@@ -88,6 +92,18 @@
 			"if": "vv.kod in ['5702','5715','5716']",
 			"value": 0.013166,
 			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Očkovanie Covid 252L",
+			"if": "vv.kod in ['252L']",
+			"value": 10,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
 		},
 		{
 			"label": "ŠAS",

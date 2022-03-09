@@ -91,7 +91,6 @@ Autor: curo.sk
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
-│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

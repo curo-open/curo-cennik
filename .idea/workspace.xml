@@ -486,20 +486,7 @@
       <workItem from="1646334805779" duration="592000" />
       <workItem from="1646375313707" duration="599000" />
       <workItem from="1646635042771" duration="643000" />
-    </task>
-    <task id="LOCAL-00189" summary="- update 010 JZS">
-      <created>1608128279037</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1608128279037</updated>
-    </task>
-    <task id="LOCAL-00190" summary="- pridane 050">
-      <created>1609229819081</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1609229819081</updated>
+      <workItem from="1646743654393" duration="1566000" />
     </task>
     <task id="LOCAL-00191" summary="- upraven cenniky&#10;- pridane 005">
       <created>1611914513722</created>
@@ -830,7 +817,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646742897764</updated>
     </task>
-    <option name="localTasksCounter" value="238" />
+    <task id="LOCAL-00238" summary="- updates">
+      <created>1646743789391</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1646743789391</updated>
+    </task>
+    <task id="LOCAL-00239" summary="- updates ZAP">
+      <created>1646814757235</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1646814757235</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -876,7 +877,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- update 010 JZS" />
     <MESSAGE value="- pridane 050" />
     <MESSAGE value="- upraven cenniky&#10;- pridane 005" />
     <MESSAGE value="- pridane 105" />
@@ -901,7 +901,8 @@
     <MESSAGE value="- updated deram" />
     <MESSAGE value="- updates&#10;- adde 144" />
     <MESSAGE value="- updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
+    <MESSAGE value="- updates ZAP" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates ZAP" />
   </component>
   <component name="masterDetails">
     <states>
