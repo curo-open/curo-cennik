@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬───────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                             │
 ├────────────────────┼───────────────────────────────────────────────────┤
-│ IDK = 1.2          │ IDK                                               │
+│ IDK = 0            │ IDK                                               │
 │ KPS = 1            │ KPS                                               │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?                             │
 │ CB = 0.026         │ Cena bodu                                         │
@@ -85,7 +85,7 @@ Autor: curo.sk
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
 │                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
-│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
