@@ -266,9 +266,15 @@
 		},
 		{
 			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='5702D'",
+			"if": "vv.kod=='AGTC'",
 			"value": null,
-			"calc": "5702D"
+			"calc": "AGTC"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50"
 		},
 		{
 			"label": "Nekapitovaný - Vykon 4",
@@ -431,18 +437,6 @@
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
 			"calc": "vv.pocet*cena"
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='AGTC'",
-			"value": null,
-			"calc": "AGTC"
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='PP50'",
-			"value": null,
-			"calc": "PP50"
 		},
 		{
 			"label": "Očkovanie Covid 252L",

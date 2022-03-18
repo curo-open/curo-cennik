@@ -50,7 +50,7 @@ Autor: curo.sk
 │                 │                           │ postupov v na ovplyvnenie                     │                                                              │
 │                 │                           │ chronických ochorení                          │                                                              │
 │           0.026 │ vv.bodyCelkom*cena        │ Telekomunikácia                               │ vv.kod in ['1b','70','11a']                                  │
-│        0.020995 │ vv.bodyCelkom*cena        │ Komplexné vyšetrenie pri prevzatí do starostl │ vv.kod in ['60']                                             │
+│        0.020995 │ vv.bodyCelkom*cena        │ Komplexné vyšetrenie pri prevzatí do starostl │ vv.kod in ['60','60u']                                       │
 │                 │                           │ ivosti                                        │                                                              │
 │           0.041 │ vv.bodyCelkom*cena        │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
 │                 │                           │ nie do 5 roku života                          │                                                              │

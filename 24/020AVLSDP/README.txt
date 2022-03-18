@@ -74,7 +74,8 @@ Autor: curo.sk
 │            null │ SKOR03                    │ Pripočitateľné položky                        │ vv.kod=='SKOR03'                                             │
 │            null │ SKOR04                    │ Pripočitateľné položky                        │ vv.kod=='SKOR04'                                             │
 │            null │ 5702                      │ Pripočitateľné položky                        │ vv.kod=='5702'                                               │
-│            null │ 5702D                     │ Pripočitateľné položky                        │ vv.kod=='5702D'                                              │
+│            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
@@ -103,8 +104,6 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
-│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

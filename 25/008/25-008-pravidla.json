@@ -132,7 +132,7 @@
 		},
 		{
 			"label": "Komplexné vyšetrenie pri prevzatí do starostlivosti",
-			"if": "vv.kod in ['60']",
+			"if": "vv.kod in ['60','60u']",
 			"value": 0.020995,
 			"calc": "vv.bodyCelkom*cena"
 		},
