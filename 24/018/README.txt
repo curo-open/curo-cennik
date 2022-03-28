@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                                   │
 ├────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.030465      │ Cena bodu                                               │
+│ CB = 0.026921      │ Cena bodu                                               │
 │ CBE = 0.027        │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.008195 │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0       │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │

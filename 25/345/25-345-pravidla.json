@@ -1,0 +1,103 @@
+{
+	"params": {
+		"RTGIO": {
+			"label": "RTGIO",
+			"value": 0.27
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='RTGIO'",
+			"value": null,
+			"calc": "RTGIO"
+		},
+		{
+			"label": "Výkon V12",
+			"if": "vv.kod in ['V12']",
+			"value": 0.0855,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": 4.03,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": 1.01,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.0855,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.0855,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0.0855,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": 0.0855,
+			"calc": "vv.bodyCelkom*cena"
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"V12": [
+			{
+				"cond": "",
+				"value": 300
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "stomatolog chir."
+}

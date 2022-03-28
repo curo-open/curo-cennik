@@ -1,5 +1,5 @@
                                                                      ======================
-                                                                     Cenník Osetrovatelstvo
+                                                                     Cenník osetrovatelstvo
                                                                      ======================
 
 Autor: curo.sk

@@ -34,6 +34,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.015,
@@ -49,6 +55,24 @@
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5302",
+			"if": "vv.kod in ['5302']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 5330,5531,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"value": 0.0088,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -142,6 +166,18 @@
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"761": [
+			{
+				"cond": "",
+				"value": 2426
+			}
+		],
+		"763": [
+			{
+				"cond": "",
+				"value": 3000
 			}
 		],
 		"15d": [

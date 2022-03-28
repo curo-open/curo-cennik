@@ -1,3 +1,7 @@
+                                                                    ========================
+                                                                    Cenník urazova chirurgia
+                                                                    ========================
+
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE

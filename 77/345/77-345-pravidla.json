@@ -1,0 +1,54 @@
+{
+	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"RTGIO": {
+			"label": "RTGIO",
+			"value": 0.27
+		},
+		"OPG": {
+			"label": "OPG",
+			"value": 0.5
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon V12",
+			"if": "vv.kod in ['V12']",
+			"value": 0.0905,
+			"calc": "vv.pocet*300*cena"
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.0905,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.0905,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": 0.0905,
+			"calc": "vv.bodyCelkom*cena"
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "stomatolog chir."
+}

@@ -5,18 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ CB = 0.0285      │ Cena bodu       │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
-│ IPP1 = 0.57      │ IPP1            │
-│ IPP2 = 0.36      │ IPP2            │
-│ IPP3 = 0.28      │ IPP3            │
-│ AGTC = 4.8       │ AGTC            │
-│ PP50 = 10        │ PP50            │
-│ LIMIT = 0        │ Limit           │
-└──────────────────┴─────────────────┘
+┌─────────────────────┬─────────────────────┐
+│ Názov a hodnota     │ Popis               │
+├─────────────────────┼─────────────────────┤
+│ CB = 0.0275         │ Cena bodu           │
+│ CBSVALZ = 0.0082    │ Cena bodu SVaLZ     │
+│ CBSVALZUSG = 0.0088 │ Cena bodu SVaLZ USG │
+│ IPP1 = 0.57         │ IPP1                │
+│ IPP2 = 0.36         │ IPP2                │
+│ IPP3 = 0.28         │ IPP3                │
+│ AGTC = 4.8          │ AGTC                │
+│ PP50 = 10           │ PP50                │
+│ LIMIT = 0           │ Limit               │
+└─────────────────────┴─────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -34,8 +35,13 @@ Autor: curo.sk
 │        0.007303 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
 │        0.007303 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│             8.4 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│            5.67 │ vv.pocet*cena             │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│          0.0305 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
+│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
+│          0.0088 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
+│                 │                           │                                               │ ,'5315','5316','5799']                                       │
+│            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
 │            64.5 │ vv.pocet*cena             │ Výkon 760sp;760sn;760pp;760pn                 │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │             129 │ vv.pocet*cena             │ Výkon 763p                                    │ vv.kod in ['763p']                                           │
 │             129 │ vv.pocet*cena             │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │

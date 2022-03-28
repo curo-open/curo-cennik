@@ -13,7 +13,7 @@ Autor: curo.sk
 │ IPP3 = 4.9            │ IPP3                         │
 │ IPP4 = 4.9            │ IPP4                         │
 │ IPPD = 5              │ IPPD                         │
-│ LIMIT = 75900         │ Limit                        │
+│ LIMIT = 0             │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
 │ CB = 0.0268           │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
@@ -32,12 +32,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │           0.026 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['765p']                                           │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a''765']  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
@@ -45,11 +44,14 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5330','5331','5332','5300','5301','5303','5304', │
+│                 │                           │                                               │ '5307','5307a','5312','5315','5316']                         │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           15.54 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │             418 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
-│             368 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
+│          384.56 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
 │          219.45 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
-│        0.008473 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -75,10 +77,8 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             210 │ 15d                                                                                                       │                           │
-│             946 │ 765p                                                                                                      │                           │
-│             946 │ 763P                                                                                                      │                           │
-│             946 │ 763M                                                                                                      │                           │
+│            3000 │ 763P                                                                                                      │                           │
+│            3000 │ 763M                                                                                                      │                           │
 │            1500 │ 760SP                                                                                                     │                           │
 │            1500 │ 760SN                                                                                                     │                           │
 │            1500 │ 760PP                                                                                                     │                           │
@@ -87,8 +87,8 @@ Autor: curo.sk
 │            3000 │ 763SN                                                                                                     │                           │
 │            3000 │ 763PP                                                                                                     │                           │
 │            3000 │ 763PN                                                                                                     │                           │
-│            2360 │ 763m                                                                                                      │                           │
-│             946 │ 763p                                                                                                      │                           │
+│            3000 │ 763m                                                                                                      │                           │
+│            3000 │ 763p                                                                                                      │                           │
 │            1500 │ 760sp                                                                                                     │                           │
 │            1500 │ 760sn                                                                                                     │                           │
 │            1500 │ 760pp                                                                                                     │                           │
@@ -100,7 +100,6 @@ Autor: curo.sk
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
-│            1000 │ 68a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
