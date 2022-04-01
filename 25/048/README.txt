@@ -36,7 +36,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │           0.026 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['765p']                                           │
-│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a''765']  │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │

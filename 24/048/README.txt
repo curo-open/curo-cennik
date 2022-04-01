@@ -29,7 +29,7 @@ Autor: curo.sk
 │        0.028558 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['62','63']                                        │
 │        0.028558 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a''765']  │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
 │            null │ vv.bodyCelkom*CB          │ Prev. KS                                      │ vv.kod in ['765p']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
@@ -50,7 +50,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
-│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a''765']  │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a'',765'] │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
