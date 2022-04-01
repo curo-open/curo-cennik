@@ -8,7 +8,6 @@ Autor: curo.sk
 ┌───────────────────┬─────────────────────────────────┐
 │ Názov a hodnota   │ Popis                           │
 ├───────────────────┼─────────────────────────────────┤
-│ 5702 = 4.5        │ 5702                            │
 │ IDK = 0           │ NASTAVENIA IDK                  │
 │ VCB1 = 0.41       │ Vypočítaná cena bodu. výkon 1   │
 │ VCB4 = 1.54       │ Vypočítaná cena bodu. výkon 4   │
@@ -33,6 +32,7 @@ Autor: curo.sk
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)      │
 │ AGTC = 4.8        │ AGTC                            │
 │ PP50 = 10         │ PP50                            │
+│ _5702 = 4.5       │ 5702                            │
 │ 5702D = 10        │ 5702D                           │
 └───────────────────┴─────────────────────────────────┘
 
@@ -73,7 +73,7 @@ Autor: curo.sk
 │            null │ SKOR02                    │ Pripočitateľné položky                        │ vv.kod=='SKOR02'                                             │
 │            null │ SKOR03                    │ Pripočitateľné položky                        │ vv.kod=='SKOR03'                                             │
 │            null │ SKOR04                    │ Pripočitateľné položky                        │ vv.kod=='SKOR04'                                             │
-│            null │ 5702                      │ Pripočitateľné položky                        │ vv.kod=='5702'                                               │
+│            null │ _5702                     │ Pripočitateľné položky                        │ vv.kod=='5702'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │

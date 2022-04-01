@@ -1,9 +1,5 @@
 {
 	"params": {
-		"5702": {
-			"label": 5702,
-			"value": 4.5
-		},
 		"IDK": {
 			"label": "NASTAVENIA IDK",
 			"value": 0
@@ -99,6 +95,10 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"_5702": {
+			"label": 5702,
+			"value": 4.5
 		},
 		"5702D": {
 			"label": "5702D",
@@ -262,7 +262,7 @@
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='5702'",
 			"value": null,
-			"calc": "5702"
+			"calc": "_5702"
 		},
 		{
 			"label": "Pripočitateľné položky",
