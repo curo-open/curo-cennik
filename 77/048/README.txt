@@ -27,7 +27,7 @@ Autor: curo.sk
 │          0.0305 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a''765']  │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
 │          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │          0.0088 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
