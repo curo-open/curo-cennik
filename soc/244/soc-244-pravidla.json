@@ -2,7 +2,7 @@
 	"params": {
 		"ZA_BOD": {
 			"label": "Cena posudkového lekára za bod",
-			"value": 0
+			"value": 0.023236
 		}
 	},
 	"pacient": [],
@@ -10,13 +10,25 @@
 		{
 			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc' && vv.kod in ['71.OCR']",
-			"value": null,
+			"value": 0.028547,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
-			"if": "vv.mode in ['soc/VYZI']",
-			"value": null,
+			"if": "vv.typ=='soc' && vv.kod in ['71.DPN']",
+			"value": 0.028547,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon pre soc. poisťovňu",
+			"if": "vv.typ=='soc' && vv.kod in ['71.TDOS']",
+			"value": 0.028547,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon pre soc. poisťovňu",
+			"if": "vv.typ=='soc' && vv.kod in ['71.UDOS']",
+			"value": 0.028547,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

@@ -70,6 +70,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "ŠAS - EMG",
+			"if": "vv.kod in ['810','809','811','812','819']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
+		},
+		{
 			"label": "ŠAS - 800",
 			"if": "vv.kod in ['800']",
 			"value": 0.026921,

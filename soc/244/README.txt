@@ -5,11 +5,11 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬────────────────────────────────┐
-│ Názov a hodnota │ Popis                          │
-├─────────────────┼────────────────────────────────┤
-│ ZA_BOD = 0      │ Cena posudkového lekára za bod │
-└─────────────────┴────────────────────────────────┘
+┌───────────────────┬────────────────────────────────┐
+│ Názov a hodnota   │ Popis                          │
+├───────────────────┼────────────────────────────────┤
+│ ZA_BOD = 0.023236 │ Cena posudkového lekára za bod │
+└───────────────────┴────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -22,8 +22,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
-│            null │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.mode in ['soc/VYZI']                                      │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.DPN']                        │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.TDOS']                       │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.UDOS']                       │
 │            null │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

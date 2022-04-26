@@ -2,11 +2,11 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.87
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.026
+			"value": 0
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -35,20 +35,20 @@
 	},
 	"pacient": [
 		{
-			"label": "vek od 18 do 51",
-			"if": "p|vekMedzi(18, 51)",
+			"label": "vek od 18 do 50",
+			"if": "p|vekMedzi(18, 50)",
 			"value": 2.72,
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek od 51 do 61",
-			"if": "p|vekMedzi(51, 61)",
+			"label": "vek od 51 do 60",
+			"if": "p|vekMedzi(51, 60)",
 			"value": 3.12,
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek od 61 do 81",
-			"if": "p|vekMedzi(61, 81)",
+			"label": "vek od 61 do 80",
+			"if": "p|vekMedzi(61, 80)",
 			"value": 4.6,
 			"calc": "IDK+cena"
 		},
@@ -73,16 +73,28 @@
 			"calc": "vv.bodyCelkom*CBEUNK"
 		},
 		{
+			"label": "EU - SVALZ výkon",
+			"if": "(p.typ in ['EU']) && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ"
+		},
+		{
+			"label": "EU - iné ako SVALZ",
+			"if": "(p.typ in ['EU']) && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK"
+		},
+		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 64",
@@ -93,8 +105,8 @@
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventívne prehliadky",
@@ -111,49 +123,49 @@
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.diagnoza=='Z25.1' && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A",
 			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A+B",
 			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
 			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti pneumokokom",
 			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti kliestovej encefalitide",
 			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie proti tetanu",
 			"if": "vv.diagnoza in ['Z00.0','Z23.5'] && vv.kod in ['252b']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -268,6 +280,12 @@
 			"label": "H0006",
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Kvantitatívne vyšetrenie INR POCT",
+			"if": "vv.kod in ['H0007']",
+			"value": 5.2,
 			"calc": "vv.pocet*cena"
 		},
 		{

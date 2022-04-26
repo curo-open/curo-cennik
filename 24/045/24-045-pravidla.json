@@ -30,7 +30,7 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.024107,
+			"value": 0.028303,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -105,7 +105,7 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 620
+				"value": 450
 			}
 		],
 		"62": [

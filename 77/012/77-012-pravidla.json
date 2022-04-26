@@ -30,14 +30,14 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0305,
+			"value": 0.032,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"value": 0.029,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 15d",
@@ -72,13 +72,19 @@
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.0088,
+			"value": 0.00924,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['158']",
-			"value": 0.053,
+			"value": 0.0583,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 4L03003, 4L03004 ",
+			"if": "vv.kod in ['4L03003','4L03004']",
+			"value": 0.029,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -174,6 +180,18 @@
 				"value": 40
 			}
 		],
+		"761": [
+			{
+				"cond": "",
+				"value": 2426
+			}
+		],
+		"763": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
 		"15d": [
 			{
 				"cond": "",
@@ -202,6 +220,18 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"4L03003": [
+			{
+				"cond": "",
+				"value": 1600
+			}
+		],
+		"4L03004": [
+			{
+				"cond": "",
+				"value": 1600
 			}
 		]
 	},

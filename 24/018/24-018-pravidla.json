@@ -27,9 +27,9 @@
 		},
 		{
 			"label": "Výkon 60,62,63,65",
-			"if": "vv.kod in ['60','62','63','65']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"if": "vv.kod in ['60','62','63','65','66','67']",
+			"value": 0.028303,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 1b,11a,70",
@@ -64,16 +64,34 @@
 				"value": 160
 			}
 		],
+		"60": [
+			{
+				"cond": "",
+				"value": 450
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 290
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 230
+			}
+		],
 		"70": [
 			{
 				"cond": "",
-				"value": 40
+				"value": 50
 			}
 		],
 		"1b": [
 			{
 				"cond": "",
-				"value": 160
+				"value": 190
 			}
 		],
 		"1c": [
@@ -85,7 +103,7 @@
 		"11a": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		]
 	},

@@ -15,6 +15,7 @@ Autor: curo.sk
 │ IPP1 = 1.8          │ IPP1                                                    │
 │ IPP2 = 2.9          │ IPP2                                                    │
 │ IPP3 = 4.9          │ IPP3                                                    │
+│ IPP4 = 4.9          │ IPP4                                                    │
 └─────────────────────┴─────────────────────────────────────────────────────────┘
 
 
@@ -29,8 +30,9 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
-│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65']                              │
-│            null │ vv.bodyCelkom*CBE         │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
+│          0.0268 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkon 1b,1c,11a,70                            │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
