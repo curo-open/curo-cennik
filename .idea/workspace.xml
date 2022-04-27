@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates" />
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/048/25-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/048/25-048-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/048/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/048/27-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/048/27-048-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/048/README.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -488,21 +494,9 @@
       <workItem from="1646981090058" duration="1810000" />
       <workItem from="1647550638834" duration="588000" />
       <workItem from="1647597581540" duration="5302000" />
-      <workItem from="1648791105848" duration="2916000" />
-    </task>
-    <task id="LOCAL-00198" summary="- 009 upsvar">
-      <created>1615788127967</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1615788127968</updated>
-    </task>
-    <task id="LOCAL-00199" summary="- updates">
-      <created>1615788146182</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1615788146182</updated>
+      <workItem from="1648791105848" duration="3725000" />
+      <workItem from="1649144297700" duration="591000" />
+      <workItem from="1650976977183" duration="639000" />
     </task>
     <task id="LOCAL-00200" summary="- pridane 77">
       <created>1615804197220</created>
@@ -833,7 +827,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648834999323</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="- updates">
+      <created>1648840598809</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1648840598809</updated>
+    </task>
+    <task id="LOCAL-00248" summary="- updates">
+      <created>1650977009297</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1650977009297</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
