@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- vraten nastapat 68a = 1000b">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/048/25-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/048/25-048-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/048/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/048/27-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/048/27-048-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/048/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020/25-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/25-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020ZAP/25-020ZAP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020ZAP/25-020ZAP-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020ZAP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020ZAP/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020BZ/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -496,14 +498,7 @@
       <workItem from="1647597581540" duration="5302000" />
       <workItem from="1648791105848" duration="3725000" />
       <workItem from="1649144297700" duration="591000" />
-      <workItem from="1650976977183" duration="639000" />
-    </task>
-    <task id="LOCAL-00200" summary="- pridane 77">
-      <created>1615804197220</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1615804197220</updated>
+      <workItem from="1650976977183" duration="1989000" />
     </task>
     <task id="LOCAL-00201" summary="- added ockovanie covid">
       <created>1617646452361</created>
@@ -841,7 +836,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650977009297</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="- vraten nastapat 68a = 1000b">
+      <created>1651038940312</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1651038940312</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -887,7 +889,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- pridane 105" />
     <MESSAGE value="- pridane 629a" />
     <MESSAGE value="- pridane 020" />
     <MESSAGE value="- fixed IDK" />
@@ -912,7 +913,8 @@
     <MESSAGE value="- added 232" />
     <MESSAGE value="- updates&#10;- new specilization" />
     <MESSAGE value="- updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
+    <MESSAGE value="- vraten nastapat 68a = 1000b" />
+    <option name="LAST_COMMIT_MESSAGE" value="- vraten nastapat 68a = 1000b" />
   </component>
   <component name="masterDetails">
     <states>

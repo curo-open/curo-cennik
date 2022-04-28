@@ -35,6 +35,10 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"EDU": {
+			"label": "EDU",
+			"value": 2
 		}
 	},
 	"pacient": [
@@ -345,6 +349,12 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='EDU'",
+			"value": null,
+			"calc": "EDU"
 		},
 		{
 			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
