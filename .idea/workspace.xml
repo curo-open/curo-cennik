@@ -19,14 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- vraten nastapat 68a = 1000b">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- pridane EDU pre vszp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020/25-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/25-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/014/25-014-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/014/25-014-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/014/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/014/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020AVLSDP/25-020AVLSDP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLSDP/25-020AVLSDP-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020AVLSDP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLSDP/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/25/020ZAP/25-020ZAP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020ZAP/25-020ZAP-pravidla.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/25/020ZAP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020ZAP/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/27-020BZ-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/020BZ/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020BZ/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLSDP/27-020AVLSDP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLSDP/27-020AVLSDP-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLSDP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLSDP/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/77/020AVLSDP/77-020AVLSDP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/020AVLSDP/77-020AVLSDP-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/77/020AVLSDP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/020AVLSDP/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upsvar/020AVLSDP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/upsvar/020AVLSDP/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upsvar/020AVLSDP/upsvar-020AVLSDP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/upsvar/020AVLSDP/upsvar-020AVLSDP-pravidla.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -498,14 +504,7 @@
       <workItem from="1647597581540" duration="5302000" />
       <workItem from="1648791105848" duration="3725000" />
       <workItem from="1649144297700" duration="591000" />
-      <workItem from="1650976977183" duration="1989000" />
-    </task>
-    <task id="LOCAL-00201" summary="- added ockovanie covid">
-      <created>1617646452361</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1617646452362</updated>
+      <workItem from="1650976977183" duration="3402000" />
     </task>
     <task id="LOCAL-00202" summary="- updates">
       <created>1618391763378</created>
@@ -843,7 +842,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651038940312</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="- pridane EDU pre vszp">
+      <created>1651131745825</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1651131745825</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -889,7 +895,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- pridane 629a" />
     <MESSAGE value="- pridane 020" />
     <MESSAGE value="- fixed IDK" />
     <MESSAGE value="- 009 upsvar" />
@@ -914,7 +919,8 @@
     <MESSAGE value="- updates&#10;- new specilization" />
     <MESSAGE value="- updates" />
     <MESSAGE value="- vraten nastapat 68a = 1000b" />
-    <option name="LAST_COMMIT_MESSAGE" value="- vraten nastapat 68a = 1000b" />
+    <MESSAGE value="- pridane EDU pre vszp" />
+    <option name="LAST_COMMIT_MESSAGE" value="- pridane EDU pre vszp" />
   </component>
   <component name="masterDetails">
     <states>

@@ -9,6 +9,12 @@
 	"vykon": [
 		{
 			"label": "Výkon pre UPSVAR",
+			"if": "vv.typ=='upsvar' && vv.kod in ['74']",
+			"value": 6.97,
+			"calc": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon pre UPSVAR",
 			"if": "vv.typ=='upsvar'",
 			"value": null,
 			"calc": "vv.bodyCelkom*ZA_BOD"

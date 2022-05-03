@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0268
+			"value": 0.02814
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -62,7 +62,7 @@
 		{
 			"label": "špec. elektronické výkony",
 			"if": "vv.kod in ['11a','1b','1c','70']",
-			"value": 0.026,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

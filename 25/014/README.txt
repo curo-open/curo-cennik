@@ -15,7 +15,7 @@ Autor: curo.sk
 │ IPPD = 5              │ IPPD                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.0268           │ Cena bodu             │
+│ CB = 0.02814          │ Cena bodu             │
 │ CBSVALZ = 0.008105    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
@@ -34,7 +34,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│           0.026 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['11a','1b','1c','70']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['11a','1b','1c','70']                             │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
