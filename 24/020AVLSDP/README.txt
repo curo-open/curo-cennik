@@ -76,17 +76,19 @@ Autor: curo.sk
 │            null │ _5702                     │ Pripočitateľné položky                        │ vv.kod=='5702'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
-│            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
-│            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
+│            6.95 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
+│            5.21 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
+│            1.39 │ vv.pocet*cena             │ Nekapitovaný - Vykon 1                        │ !p.kapitacia && vv.kod in ['1']                              │
+│            1.39 │ vv.pocet*cena             │ Nekapitovaný - Vykon 250                      │ !p.kapitacia && vv.kod in ['250']                            │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
 │        0.022973 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │            null │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
 │            null │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
 │            null │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
 │            null │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
-│            null │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
-│            null │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │        0.048972 │ vv.pocet*180*cena         │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
 │        0.048972 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │        0.048972 │ vv.pocet*390*cena         │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
@@ -94,10 +96,10 @@ Autor: curo.sk
 │            4.45 │ vv.pocet*cena             │ EKG (5702ZV)                                  │ vv.kod in ['5702ZV']                                         │
 │            4.45 │ vv.pocet*cena             │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
 │              10 │ vv.pocet*cena             │ EKG (5702D)                                   │ vv.kod in ['5702D']                                          │
-│               5 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
+│             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
 │               5 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
-│               5 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
-│              13 │ vv.pocet*cena             │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
+│               6 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
+│            16.5 │ vv.pocet*cena             │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
 │        0.022089 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
 │        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │

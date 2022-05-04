@@ -25,7 +25,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek do 19       │          3.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(19)     │
+│ vek do 19       │          3.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 20) │
 │ vek od 20 do 28 │           2.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 28) │
 │ vek od 29 do 39 │           2.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 39) │
 │ vek od 40 do 44 │          2.64 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 44) │

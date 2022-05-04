@@ -44,7 +44,7 @@
 	"pacient": [
 		{
 			"label": "vek do 19",
-			"if": "p.kapitacia && p|vekMedzi(19)",
+			"if": "p.kapitacia && p|vekMedzi(19, 20)",
 			"value": 3.52,
 			"calc": "IDK+cena"
 		},
