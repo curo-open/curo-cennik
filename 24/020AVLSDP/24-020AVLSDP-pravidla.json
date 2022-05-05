@@ -6,19 +6,23 @@
 		},
 		"VCB1": {
 			"label": "Vypočítaná cena bodu. výkon 1",
-			"value": 0.41
+			"value": 0
 		},
 		"VCB4": {
 			"label": "Vypočítaná cena bodu. výkon 4",
-			"value": 1.54
+			"value": 0
 		},
 		"VCB8": {
 			"label": "Vypočítaná cena bodu. výkon 8",
-			"value": 2.06
+			"value": 0
 		},
 		"VCB250": {
 			"label": "Vypočítaná cena bodu. výkon 250",
-			"value": 0.41
+			"value": 0
+		},
+		"VCB10": {
+			"label": "Vypočítaná cena bodu. výkon 10",
+			"value": 0
 		},
 		"PPH1": {
 			"label": "PPH1",
@@ -30,11 +34,11 @@
 		},
 		"PREDOP": {
 			"label": "PREDOP",
-			"value": 12.9
+			"value": 18.4
 		},
 		"_4571a": {
 			"label": "4571a",
-			"value": 4.4
+			"value": 5
 		},
 		"CHRSTAR": {
 			"label": "CHRSTAR",
@@ -98,11 +102,19 @@
 		},
 		"_5702": {
 			"label": 5702,
-			"value": 4.5
+			"value": 4.78
 		},
 		"5702D": {
 			"label": "5702D",
 			"value": 10
+		},
+		"_3635A": {
+			"label": "3635A",
+			"value": 2
+		},
+		"_3634": {
+			"label": 3634,
+			"value": 4
 		}
 	},
 	"pacient": [
@@ -277,6 +289,18 @@
 			"calc": "PP50"
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='3635A'",
+			"value": null,
+			"calc": "_3635A"
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='3634'",
+			"value": null,
+			"calc": "_3634"
+		},
+		{
 			"label": "Nekapitovaný - Vykon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": 6.95,
@@ -329,6 +353,12 @@
 			"if": "vv.kod in ['250']",
 			"value": null,
 			"calc": "vv.pocet*VCB250"
+		},
+		{
+			"label": "Vykon 10",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.pocet*10"
 		},
 		{
 			"label": "Výkon 1b",

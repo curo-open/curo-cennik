@@ -28,6 +28,24 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Ultrazvukové vyšetrenie obidvoch prsníkov, axíl a regionálnych lymfatických uzlín.",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5308']",
+			"value": 0.007969,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Mamografia bilaterálna",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092']",
+			"value": 0.007969,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Mamografia unilaterálna ",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a']",
+			"value": 0.007969,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Denzitometria ",
 			"if": "vv.kod in ['5331']",
 			"value": 0.0055,

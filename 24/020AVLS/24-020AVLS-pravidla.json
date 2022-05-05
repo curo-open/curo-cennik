@@ -138,13 +138,13 @@
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": 0.027,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
 			"value": 0.027,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 64",
@@ -156,7 +156,7 @@
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": 0.027,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "CRP",

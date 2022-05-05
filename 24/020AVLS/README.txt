@@ -46,10 +46,10 @@ Autor: curo.sk
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
 │            0.03 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│           0.027 │ vv.pocet*cena             │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
-│           0.027 │ vv.pocet*cena             │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
-│           0.027 │ vv.pocet*cena             │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │               5 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │            4.78 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702Z']                                   │
 │           0.065 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │

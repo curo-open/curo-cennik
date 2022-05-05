@@ -27,6 +27,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│        0.007969 │ vv.bodyCelkom*cena        │ Ultrazvukové vyšetrenie obidvoch prsníkov, ax │ vv.diagnoza=='Z01.4' && vv.kod in ['5308']                   │
+│                 │                           │ íl a regionálnych lymfatických uzlín.         │                                                              │
+│        0.007969 │ vv.bodyCelkom*cena        │ Mamografia bilaterálna                        │ vv.diagnoza=='Z01.4' && vv.kod in ['5092']                   │
+│        0.007969 │ vv.bodyCelkom*cena        │ Mamografia unilaterálna                       │ vv.diagnoza=='Z01.4' && vv.kod in ['5092a']                  │
 │          0.0055 │ vv.bodyCelkom*cena        │ Denzitometria                                 │ vv.kod in ['5331']                                           │
 │            null │ vv.bodyCelkom*CB          │ Mamografia                                    │ vv.kod in ['5092','5092a']                                   │
 │            null │ vv.bodyCelkom*CB50XX      │ RTG                                           │ vv.kod in ['5010','5011','5012','5015','5016','5020','5021', │

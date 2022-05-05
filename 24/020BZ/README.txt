@@ -5,16 +5,17 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────┐
-│ Názov a hodnota   │ Popis                      │
-├───────────────────┼────────────────────────────┤
-│ IDK = 1.232901    │ NASTAVENIA IDK             │
-│ CB = 0.022089     │ Cena bodu                  │
-│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
-│ AGTC = 4.8        │ AGTC                       │
-│ PP50 = 10         │ PP50                       │
-└───────────────────┴────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────────┐
+│ Názov a hodnota   │ Popis                                             │
+├───────────────────┼───────────────────────────────────────────────────┤
+│ IDK = 1.232901    │ NASTAVENIA IDK                                    │
+│ CB = 0.022089     │ Cena bodu                                         │
+│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ                                   │
+│ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)                        │
+│ AGTC = 4.8        │ AGTC                                              │
+│ PP50 = 10         │ PP50                                              │
+│ FOB = 2           │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
+└───────────────────┴───────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA

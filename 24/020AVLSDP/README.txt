@@ -9,14 +9,15 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                           │
 ├───────────────────┼─────────────────────────────────┤
 │ IDK = 0           │ NASTAVENIA IDK                  │
-│ VCB1 = 0.41       │ Vypočítaná cena bodu. výkon 1   │
-│ VCB4 = 1.54       │ Vypočítaná cena bodu. výkon 4   │
-│ VCB8 = 2.06       │ Vypočítaná cena bodu. výkon 8   │
-│ VCB250 = 0.41     │ Vypočítaná cena bodu. výkon 250 │
+│ VCB1 = 0          │ Vypočítaná cena bodu. výkon 1   │
+│ VCB4 = 0          │ Vypočítaná cena bodu. výkon 4   │
+│ VCB8 = 0          │ Vypočítaná cena bodu. výkon 8   │
+│ VCB250 = 0        │ Vypočítaná cena bodu. výkon 250 │
+│ VCB10 = 0         │ Vypočítaná cena bodu. výkon 10  │
 │ PPH1 = 10         │ PPH1                            │
 │ PPH2 = 6.5        │ PPH2                            │
-│ PREDOP = 12.9     │ PREDOP                          │
-│ _4571a = 4.4      │ 4571a                           │
+│ PREDOP = 18.4     │ PREDOP                          │
+│ _4571a = 5        │ 4571a                           │
 │ CHRSTAR = 10      │ CHRSTAR                         │
 │ CHRST = 10        │ CHRST                           │
 │ TELEKON = 1.3     │ TELEKON                         │
@@ -32,8 +33,10 @@ Autor: curo.sk
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)      │
 │ AGTC = 4.8        │ AGTC                            │
 │ PP50 = 10         │ PP50                            │
-│ _5702 = 4.5       │ 5702                            │
+│ _5702 = 4.78      │ 5702                            │
 │ 5702D = 10        │ 5702D                           │
+│ _3635A = 2        │ 3635A                           │
+│ _3634 = 4         │ 3634                            │
 └───────────────────┴─────────────────────────────────┘
 
 
@@ -76,6 +79,8 @@ Autor: curo.sk
 │            null │ _5702                     │ Pripočitateľné položky                        │ vv.kod=='5702'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ _3635A                    │ Pripočitateľné položky                        │ vv.kod=='3635A'                                              │
+│            null │ _3634                     │ Pripočitateľné položky                        │ vv.kod=='3634'                                               │
 │            6.95 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            5.21 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │            1.39 │ vv.pocet*cena             │ Nekapitovaný - Vykon 1                        │ !p.kapitacia && vv.kod in ['1']                              │
@@ -85,6 +90,7 @@ Autor: curo.sk
 │            null │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
 │            null │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
 │            null │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
+│            null │ vv.pocet*10               │ Vykon 10                                      │ vv.kod in ['10']                                             │
 │            null │ vv.bodyCelkom*CBEUNK      │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
