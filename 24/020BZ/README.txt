@@ -43,7 +43,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │            null │ vv.bodyCelkom*CBEUNK      │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│        0.008195 │ vv.bodyCelkom*SVALZ       │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │

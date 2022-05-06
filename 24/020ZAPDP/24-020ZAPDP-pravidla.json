@@ -33,20 +33,20 @@
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek od 51 do 60",
-			"if": "p|vekMedzi(51, 60)",
+			"label": "vek od 50 do 60",
+			"if": "p|vekMedzi(50, 60)",
 			"value": 2.92,
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek od 61 do 80",
-			"if": "p|vekMedzi(61, 80)",
+			"label": "vek od 60 do 80",
+			"if": "p|vekMedzi(60, 80)",
 			"value": 4.07,
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek od 81+",
-			"if": "p|vekMedzi(81)",
+			"label": "vek od 80+",
+			"if": "p|vekMedzi(80)",
 			"value": 4.46,
 			"calc": "IDK+cena"
 		}

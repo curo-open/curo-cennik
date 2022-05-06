@@ -44,73 +44,73 @@
 	"pacient": [
 		{
 			"label": "vek do 19",
-			"if": "p.kapitacia && p|vekMedzi(19, 20)",
+			"if": "p.kapitacia && p|vekMedzi(18, 20)",
 			"value": 3.52,
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek od 20 do 28",
-			"if": "p.kapitacia && p|vekMedzi(20, 28)",
+			"label": "vek od 20 do 29",
+			"if": "p.kapitacia && p|vekMedzi(20, 29)",
 			"value": 2.8,
 			"calc": "IDK+cena"
 		},
 		{
-			"label": "vek od 29 do 39",
-			"if": "p.kapitacia && p|vekMedzi(29, 39)",
+			"label": "vek od 29 do 40",
+			"if": "p.kapitacia && p|vekMedzi(29, 40)",
 			"value": 2.6,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 40 do 44",
-			"if": "p.kapitacia && p|vekMedzi(40, 44)",
+			"if": "p.kapitacia && p|vekMedzi(40, 45)",
 			"value": 2.64,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 45 do 49",
-			"if": "p.kapitacia && p|vekMedzi(45, 49)",
+			"if": "p.kapitacia && p|vekMedzi(45, 50)",
 			"value": 2.69,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 50 do 54",
-			"if": "p.kapitacia && p|vekMedzi(50, 54)",
+			"if": "p.kapitacia && p|vekMedzi(50, 55)",
 			"value": 3.12,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 55 do 59",
-			"if": "p.kapitacia && p|vekMedzi(55, 59)",
+			"if": "p.kapitacia && p|vekMedzi(55, 60)",
 			"value": 3.24,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 60 do 64",
-			"if": "p.kapitacia && p|vekMedzi(60, 64)",
+			"if": "p.kapitacia && p|vekMedzi(60, 65)",
 			"value": 3.62,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 65 do 69",
-			"if": "p.kapitacia && p|vekMedzi(65, 69)",
+			"if": "p.kapitacia && p|vekMedzi(65, 70)",
 			"value": 4.32,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 70 do 74",
-			"if": "p.kapitacia && p|vekMedzi(70, 74)",
+			"if": "p.kapitacia && p|vekMedzi(70, 75)",
 			"value": 4.47,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 75 do 79",
-			"if": "p.kapitacia && p|vekMedzi(75, 79)",
+			"if": "p.kapitacia && p|vekMedzi(75, 80)",
 			"value": 4.62,
 			"calc": "IDK+cena"
 		},
 		{
 			"label": "vek od 80 do 84",
-			"if": "p.kapitacia && p|vekMedzi(80, 84)",
+			"if": "p.kapitacia && p|vekMedzi(80, 85)",
 			"value": 5.06,
 			"calc": "IDK+cena"
 		},
@@ -162,7 +162,7 @@
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
 			"value": null,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 70",

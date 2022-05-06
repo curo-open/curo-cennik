@@ -388,7 +388,7 @@
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
 			"value": 0.048972,
-			"calc": "vv.pocet*180*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie",
@@ -400,7 +400,7 @@
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
 			"value": 0.048972,
-			"calc": "vv.pocet*390*cena"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
