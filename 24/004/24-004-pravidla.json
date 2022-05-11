@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026921
+			"value": 0.030465
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -24,20 +24,20 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
-			"value": 0.028303,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
-			"value": 0.028303,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.028303,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Elektronická komunikácia",
@@ -84,8 +84,8 @@
 		{
 			"label": "ŠAS - 819d",
 			"if": "vv.kod in ['819d']",
-			"value": 0.028303,
-			"calc": "vv.bodyCelkom*cena"
+			"value": null,
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
