@@ -118,19 +118,19 @@
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9104']",
-			"value": 345,
+			"value": 365,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9105']",
-			"value": 302,
+			"value": 320,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['8586']",
-			"value": 226,
+			"value": 255,
 			"calc": "vv.pocet*cena"
 		},
 		{

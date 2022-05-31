@@ -5,14 +5,15 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬──────────────────────┐
-│ Názov a hodnota  │ Popis                │
-├──────────────────┼──────────────────────┤
-│ CB = 0.0285      │ Cena bodu            │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ      │
-│ CBE = 0.035      │ Cena bodu el. výkony │
-│ LIMIT = 0        │ Limit                │
-└──────────────────┴──────────────────────┘
+┌───────────────────┬────────────────────────────────────────────────┐
+│ Názov a hodnota   │ Popis                                          │
+├───────────────────┼────────────────────────────────────────────────┤
+│ CB = 0.0265       │ Cena bodu                                      │
+│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ                                │
+│ CBE = 0.035       │ Cena bodu el. výkony                           │
+│ PV = 0.0295       │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │
+│ LIMIT = 0         │ Limit                                          │
+└───────────────────┴────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -27,7 +28,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            0.02 │ vv.pocet*cena             │ Výkon 1a                                      │ vv.kod in ['1a']                                             │
-│          0.0315 │ vv.bodyCelkom*cena        │ Výkon 60;62;63;820;822;825;841                │ vv.kod in ['60','62','63','820','822','825','841',]          │
+│           0.033 │ vv.bodyCelkom*cena        │ Výkon 60;62;63;820;822;825;841                │ vv.kod in ['60','62','63','820','822','825','841',]          │
 │        0.007303 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
 │        0.007303 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
@@ -36,6 +37,9 @@ Autor: curo.sk
 │             129 │ vv.pocet*cena             │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │               5 │ vv.pocet*cena             │ Výkon Y0018                                   │ vv.kod in ['Y0018']                                          │
 │            4.56 │ vv.pocet*cena             │ Výkon Y0023                                   │ vv.kod in ['Y0023']                                          │
+│            null │ vv.bodyCelkom*CBE         │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
+│            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
+│            null │ vv.bodyCelkom*PV          │ Psych výkony                                  │ vv.kod==['820','821','822','825','841','847','867']          │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

@@ -76,6 +76,12 @@
 			"calc": "vv.bodyCelkom*CBSVALZUSG"
 		},
 		{
+			"label": "Osteodenzitometria",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.005311,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,

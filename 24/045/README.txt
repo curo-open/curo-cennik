@@ -28,6 +28,7 @@ Autor: curo.sk
 │        0.028303 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['62','63']                                        │
 │        0.028303 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
+│        0.028303 │ vv.bodyCelkom*cena        │ Kapilaroskopia za končatinu                   │ vv.kod in ['654']                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │

@@ -42,14 +42,14 @@ Autor: curo.sk
 │                 │                           │                                               │ ] && vv.kod in ['143','143a','144','145','145a','146','146a' │
 │                 │                           │                                               │ ,'146b','146c','148']                                        │
 │           0.053 │ vv.bodyCelkom*cena        │ Výkon 159b                                    │ vv.diagnoza=='Z00.1' && vv.kod in ['159b']                   │
-│           0.053 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.10] && vv.kod in ['3671 │
-│                 │                           │                                               │ ']                                                           │
+│           0.053 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['367 │
+│                 │                           │                                               │ 1']                                                          │
 │           19.35 │ vv.pocet*cena             │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
-│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti rotavirusom                   │ vv.diagnoza in ['Z25.8','Z26.8',] && vv.kod in ['252a']      │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti rotavirusom                   │ vv.diagnoza in ['Z25.8','Z26.8'] && vv.kod in ['252a']       │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
-│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza in ['Z20.5','Z24.6',] && vv.kod in ['252b']      │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza in ['Z20.5','Z24.6'] && vv.kod in ['252b']       │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
-│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza in ['Z20.8','Z23.8',] && vv.kod in ['252b']      │
+│            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza in ['Z20.8','Z23.8'] && vv.kod in ['252b']       │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti varicelle                     │ vv.diagnoza=='Z26.8' && vv.kod in ['252b']                   │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
 │            0.06 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
