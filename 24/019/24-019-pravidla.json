@@ -19,25 +19,29 @@
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

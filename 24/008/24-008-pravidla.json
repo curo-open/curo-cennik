@@ -38,37 +38,43 @@
 			"label": "do 1 roku",
 			"if": "p|vekMedzi(0, 1)",
 			"value": 7.69,
-			"calc": "IDK+cena"
+			"calc": "IDK+cena",
+			"instruction": null
 		},
 		{
 			"label": "od 1 do dovršenia 2 rokov",
 			"if": "p|vekMedzi(1, 2)",
 			"value": 8.19,
-			"calc": "IDK+cena"
+			"calc": "IDK+cena",
+			"instruction": null
 		},
 		{
 			"label": "od 2 do dovršenia 7 rokov",
 			"if": "p|vekMedzi(2, 7)",
 			"value": 5.45,
-			"calc": "IDK+cena"
+			"calc": "IDK+cena",
+			"instruction": null
 		},
 		{
 			"label": "od 7 do dovršenia 19 rokov",
 			"if": "p|vekMedzi(7, 19)",
 			"value": 3.6,
-			"calc": "IDK+cena"
+			"calc": "IDK+cena",
+			"instruction": null
 		},
 		{
 			"label": "od 19 do dovršenia 27 rokov",
 			"if": "p|vekMedzi(19, 27)",
 			"value": 2.34,
-			"calc": "IDK+cena"
+			"calc": "IDK+cena",
+			"instruction": null
 		},
 		{
 			"label": "od 27 do dovršenia 28 rokov",
 			"if": "p|vekMedzi(27, 28)",
 			"value": 2.44,
-			"calc": "IDK+cena"
+			"calc": "IDK+cena",
+			"instruction": null
 		}
 	],
 	"vykon": [
@@ -76,157 +82,183 @@
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": 0.020072,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && vv.jeSVaZL",
 			"value": 0.0078,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && !vv.jeSVaZL",
 			"value": 0.0193,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '149f', '159b', '950', '953', '159a', '159x', '159z','160']",
 			"value": 0.057,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Preventivne zdravotne vykony (142)",
 			"if": "vv.kod in ['142']",
 			"value": 0.092,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
 			"value": 0.06,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Príplatok pri sťaženom výkone - odber, očkovanie do 5 roku života",
 			"if": "vv.kod in ['67']",
 			"value": 0.05,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','11a''70']",
 			"value": 0.027,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Glykemia",
 			"if": "vv.kod in ['3671']",
 			"value": 0.044,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Návšteva služba",
 			"if": "vv.kod in ['25', '26', '29', '30']",
 			"value": 0.0193,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571a']",
 			"value": 4,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
 			"value": 10,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702ZV']",
 			"value": 4.2,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Vykon 8",
 			"if": "!p.kapitacia && vv.kod in ['8']",
 			"value": 6,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Vykon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": 9.29,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Vykon 10",
 			"if": "vv.kod in ['10']",
 			"value": 6.54,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Vykon 8",
 			"if": "vv.kod in ['8']",
 			"value": null,
-			"calc": "vv.pocet*VCB8"
+			"calc": "vv.pocet*VCB8",
+			"instruction": null
 		},
 		{
 			"label": "Vykon 4",
 			"if": "vv.kod in ['4']",
 			"value": null,
-			"calc": "vv.pocet*VCB4"
+			"calc": "vv.pocet*VCB4",
+			"instruction": null
 		},
 		{
 			"label": "Vykon 1",
 			"if": "vv.kod in ['1']",
 			"value": null,
-			"calc": "vv.pocet*VCB1"
+			"calc": "vv.pocet*VCB1",
+			"instruction": null
 		},
 		{
 			"label": "Vykon 250",
 			"if": "vv.kod in ['250']",
 			"value": null,
-			"calc": "vv.pocet*VCB250"
+			"calc": "vv.pocet*VCB250",
+			"instruction": null
 		},
 		{
 			"label": "Skríningový antigénový test SARS-CoV-2",
 			"if": "vv.kod in ['629a']",
 			"value": 5.2,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
 			"if": "vv.kod in ['629b']",
 			"value": 10,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie Covid 252L",
 			"if": "vv.kod in ['252L']",
 			"value": 10,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='PP50'",
 			"value": null,
-			"calc": "PP50"
+			"calc": "PP50",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='PP05'",
 			"value": null,
-			"calc": "PP05"
+			"calc": "PP05",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
-			"calc": "AGTC"
+			"calc": "AGTC",
+			"instruction": null
 		}
 	],
 	"kontrola": [

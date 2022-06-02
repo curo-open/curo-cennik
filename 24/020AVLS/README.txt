@@ -12,7 +12,7 @@ Autor: curo.sk
 │ CB = 0.022089     │ Cena bodu                  │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
-│ _4571a = 4.4      │ 4571a                      │
+│ _4571a = 5        │ 4571a                      │
 │ AGTC = 4.8        │ AGTC                       │
 │ PP50 = 10         │ PP50                       │
 └───────────────────┴────────────────────────────┘

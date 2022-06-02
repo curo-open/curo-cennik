@@ -23,73 +23,85 @@
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": 9.41,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": 6.32,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": 4.91,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60r']",
 			"value": 9.41,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['65'] && p|vekMedzi(0, 5)",
 			"value": 3.36,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['65']",
 			"value": 0.0224,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": 0.006666,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.022,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": 0,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

@@ -19,49 +19,57 @@
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='RTGIO'",
 			"value": null,
-			"calc": "RTGIO"
+			"calc": "RTGIO",
+			"instruction": null
 		},
 		{
 			"label": "Výkon V12",
 			"if": "vv.kod in ['V12']",
 			"value": 0.0855,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": 4.03,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": 1.01,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.0855,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": 0.0855,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": 0.0855,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": 0.0855,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

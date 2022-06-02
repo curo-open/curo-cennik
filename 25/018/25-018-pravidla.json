@@ -39,67 +39,78 @@
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63,65",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": 0.0268,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 1b,1c,11a,70",
 			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBE"
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*CBE",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
-			"calc": "IPP1"
+			"calc": "IPP1",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
 			"value": null,
-			"calc": "IPP2"
+			"calc": "IPP2",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
 			"value": null,
-			"calc": "IPP3"
+			"calc": "IPP3",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP4'",
 			"value": null,
-			"calc": "IPP4"
+			"calc": "IPP4",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Preventívne vykony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

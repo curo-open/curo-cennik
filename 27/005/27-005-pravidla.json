@@ -27,103 +27,120 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 1a",
 			"if": "vv.kod in ['1a']",
 			"value": 0.02,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 60;62;63;820;822;825;841",
 			"if": "vv.kod in ['60','62','63','820','822','825','841',]",
 			"value": 0.033,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
 			"value": 0.007303,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 532;533a;540;541;542",
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": 0.007303,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 760sp;760sn;760pp;760pn",
 			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
 			"value": 64.5,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 763p",
 			"if": "vv.kod in ['763p']",
 			"value": 129,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 763sp;763sn;763pp;763pn",
 			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
 			"value": 129,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon Y0018",
 			"if": "vv.kod in ['Y0018']",
 			"value": 5,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon Y0023",
 			"if": "vv.kod in ['Y0023']",
 			"value": 4.56,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 11a,1b,7,1c",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBE"
+			"calc": "vv.bodyCelkom*CBE",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 629b",
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Psych výkony",
 			"if": "vv.kod==['820','821','822','825','841','847','867']",
 			"value": null,
-			"calc": "vv.bodyCelkom*PV"
+			"calc": "vv.bodyCelkom*PV",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

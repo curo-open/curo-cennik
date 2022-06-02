@@ -38,7 +38,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5330','5331','5332','5300','5301','5303','5304', │
 │                 │                           │                                               │ '5307','5307a','5312','5315','5316','5796','5799']           │
-│         0.02814 │ vv.bodyCelkom*cena        │ Výkon 802, 813, 819d, 803, 804                │ vv.kod in ['802','813','819d','803','804']                   │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkon 802, 813, 819d, 803, 804                │ vv.kod in ['802','813','819d','803','804']                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony EMG                                    │ vv.kod in ['810','809','811','812','819']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │

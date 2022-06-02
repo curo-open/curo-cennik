@@ -34,7 +34,8 @@
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
 			"value": 1.52,
-			"calc": "IDK+cena"
+			"calc": "IDK+cena",
+			"instruction": null
 		}
 	],
 	"vykon": [
@@ -42,85 +43,99 @@
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['157','102','103','105','108','1070','252b','297']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP"
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 118",
 			"if": "vv.kod in ['118']",
 			"value": 0.01917,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony 5303,5305,5308",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']",
 			"value": 0.00909,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony 5303,5305,5308",
 			"if": "vv.kod in ['5303','5305','5308']",
 			"value": 0.008105,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 5808",
 			"if": "vv.kod in ['5808']",
 			"value": 0.008105,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
 			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 67",
 			"if": "vv.kod in ['67']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEU"
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEU"
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
 		},
 		{
 			"label": "Skriningový antigénový test SARS-CoV-2",
 			"if": "vv.kod in ['629a']",
 			"value": 5.2,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Skriningový poistencov. antigénový test SARS-CoV-2 imun. metód.",
 			"if": "vv.kod in ['629b']",
 			"value": 10,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && vv.jeSVaZL",
 			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && !vv.jeSVaZL",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
