@@ -51,175 +51,204 @@
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['765p']",
 			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['740','741','746','756','761','763','763a','765']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['763P','763M']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP"
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['760SP','760SN','760PP','760PN']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP"
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP"
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['763p','763m']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP"
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP"
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
 			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP"
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 5302",
 			"if": "vv.kod in ['5302']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG"
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
 		},
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG"
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 8899 - Stacionár",
 			"if": "vv.kod in ['8899']",
 			"value": 15.54,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9104']",
 			"value": 418,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9105']",
 			"value": 384.56,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['8586']",
 			"value": 219.45,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
-			"calc": "IPP1"
+			"calc": "IPP1",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
 			"value": null,
-			"calc": "IPP2"
+			"calc": "IPP2",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
 			"value": null,
-			"calc": "IPP3"
+			"calc": "IPP3",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP4'",
 			"value": null,
-			"calc": "IPP4"
+			"calc": "IPP4",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPPD'",
 			"value": null,
-			"calc": "IPPD"
+			"calc": "IPPD",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [

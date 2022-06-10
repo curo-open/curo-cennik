@@ -11,7 +11,8 @@
 			"label": "Výkon pre UPSVAR",
 			"if": "vv.typ=='upsvar'",
 			"value": null,
-			"calc": "vv.bodyCelkom*ZA_BOD"
+			"calc": "vv.bodyCelkom*ZA_BOD",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

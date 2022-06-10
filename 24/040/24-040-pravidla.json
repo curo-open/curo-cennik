@@ -23,43 +23,50 @@
 			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBV"
+			"calc": "vv.bodyCelkom*CBV",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 62,63",
 			"if": "vv.kod in ['62','63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.027,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [

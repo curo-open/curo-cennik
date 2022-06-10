@@ -6,7 +6,8 @@
 			"label": "Výkon 99999",
 			"if": "vv.kod in ['99999']",
 			"value": 1,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
