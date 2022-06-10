@@ -8,11 +8,11 @@ Autor: curo.sk
 ┌─────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota     │ Popis                                                   │
 ├─────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.0268         │ Cena bodu                                               │
-│ CBE = 0.026         │ Cena bodu el. výkony                                    │
+│ CB = 0.02814        │ Cena bodu                                               │
+│ CBE = 0.035         │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.008105  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.008473 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
-│ IPP1 = 1.8          │ IPP1                                                    │
+│ IPP1 = 1.98         │ IPP1                                                    │
 │ IPP2 = 2.9          │ IPP2                                                    │
 │ IPP3 = 4.9          │ IPP3                                                    │
 │ IPP4 = 4.9          │ IPP4                                                    │
@@ -32,7 +32,7 @@ Autor: curo.sk
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
 │          0.0268 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│           0.026 │ vv.bodyCelkom*cena        │ Výkon 1b,1c,11a,70                            │ vv.kod in ['1b','1c','11a','70']                             │
+│           0.035 │ vv.bodyCelkom*CBE         │ Výkon 1b,1c,11a,70                            │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -53,6 +53,14 @@ Autor: curo.sk
 │             210 │ 63                                                                                                        │                           │
 │             200 │ 65                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
+│              90 │ 904                                                                                                       │                           │
+│             220 │ 916                                                                                                       │                           │
+│             220 │ 917                                                                                                       │                           │
+│             220 │ 918                                                                                                       │                           │
+│             250 │ 919                                                                                                       │                           │
+│             130 │ 941                                                                                                       │                           │
+│             165 │ 944                                                                                                       │                           │
+│              55 │ 945                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

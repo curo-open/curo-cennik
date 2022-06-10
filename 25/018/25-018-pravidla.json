@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0268
+			"value": 0.02814
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
-			"value": 0.026
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -18,7 +18,7 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.8
+			"value": 1.98
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -56,8 +56,8 @@
 		{
 			"label": "Výkon 1b,1c,11a,70",
 			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena"
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*CBE"
 		},
 		{
 			"label": "Pripočitateľné položky",
@@ -138,6 +138,54 @@
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"904": [
+			{
+				"cond": "",
+				"value": 90
+			}
+		],
+		"916": [
+			{
+				"cond": "",
+				"value": 220
+			}
+		],
+		"917": [
+			{
+				"cond": "",
+				"value": 220
+			}
+		],
+		"918": [
+			{
+				"cond": "",
+				"value": 220
+			}
+		],
+		"919": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"941": [
+			{
+				"cond": "",
+				"value": 130
+			}
+		],
+		"944": [
+			{
+				"cond": "",
+				"value": 165
+			}
+		],
+		"945": [
+			{
+				"cond": "",
+				"value": 55
 			}
 		],
 		"1b": [

@@ -88,7 +88,7 @@
 		},
 		{
 			"label": "Výkon 3671",
-			"if": "vv.diagnoza in ['Z00.1','Z00.0','Z52.10] && vv.kod in ['3671']",
+			"if": "vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['3671']",
 			"value": 0.053,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -100,7 +100,7 @@
 		},
 		{
 			"label": "Očkovanie proti rotavirusom",
-			"if": "vv.diagnoza in ['Z25.8','Z26.8',] && vv.kod in ['252a']",
+			"if": "vv.diagnoza in ['Z25.8','Z26.8'] && vv.kod in ['252a']",
 			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -112,7 +112,7 @@
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A",
-			"if": "vv.diagnoza in ['Z20.5','Z24.6',] && vv.kod in ['252b']",
+			"if": "vv.diagnoza in ['Z20.5','Z24.6'] && vv.kod in ['252b']",
 			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -124,7 +124,7 @@
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
-			"if": "vv.diagnoza in ['Z20.8','Z23.8',] && vv.kod in ['252b']",
+			"if": "vv.diagnoza in ['Z20.8','Z23.8'] && vv.kod in ['252b']",
 			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -184,7 +184,7 @@
 		},
 		{
 			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','11a''70']",
+			"if": "vv.kod in ['1b','11a', '70']",
 			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},

@@ -40,6 +40,12 @@
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
+			"label": "Kapilaroskopia za končatinu",
+			"if": "vv.kod in ['654']",
+			"value": 0.028303,
+			"calc": "vv.bodyCelkom*cena"
+		},
+		{
 			"label": "Výkon 5302",
 			"if": "vv.kod in ['5302']",
 			"value": null,

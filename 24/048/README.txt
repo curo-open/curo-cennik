@@ -42,9 +42,9 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p','763m']                                    │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
-│             345 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
-│             302 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
-│             226 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
+│             365 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
+│             320 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
+│             255 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
 │              14 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

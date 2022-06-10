@@ -32,7 +32,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
-│                 │                           │                                               │ ,'5315','5316','5799']                                       │
+│                 │                           │                                               │ ,'5315','5316','5796','5799']                                │
 │         0.01892 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS - EMG                                     │ vv.kod in ['810','809','811','812','819']                    │
 │        0.026921 │ vv.bodyCelkom*cena        │ ŠAS - 800                                     │ vv.kod in ['800']                                            │

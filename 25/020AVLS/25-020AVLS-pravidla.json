@@ -22,7 +22,7 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.022089
+			"value": 0.03
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -220,7 +220,7 @@
 		},
 		{
 			"label": "Očkovanie",
-			"if": "vv.kod in ['252b']",
+			"if": "vv.kod in ['252b','252c']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
@@ -245,7 +245,7 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.027,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -347,7 +347,7 @@
 		{
 			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
 			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
-			"value": 0.020995,
+			"value": 0.65,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
