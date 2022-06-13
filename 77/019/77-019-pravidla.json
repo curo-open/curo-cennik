@@ -23,36 +23,31 @@
 			"label": "Výkon 63",
 			"if": "vv.kod in ['63']",
 			"value": 4.7,
-			"calc": "vv.pocet*cena",
-			"instruction": null
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBEU"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],

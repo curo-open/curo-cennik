@@ -27,85 +27,73 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.0193,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
 			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "ZCB && vv.kod in ['62']",
 			"value": 0.027614,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "ZCB && vv.kod in ['63']",
 			"value": 0.027614,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['60']",
 			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['62']",
 			"value": 0.022725,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
 			"value": 0.022725,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.025903,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": 0.008195,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "ZCB && vv.typ!='SVaLZ'",
 			"value": 0.027614,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": 0.022725,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": 0.022725,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],

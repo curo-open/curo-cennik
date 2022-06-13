@@ -43,92 +43,79 @@
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
-			"calc": "IPP1",
-			"instruction": null
+			"calc": "IPP1"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
 			"value": null,
-			"calc": "IPP2",
-			"instruction": null
+			"calc": "IPP2"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
 			"value": null,
-			"calc": "IPP3",
-			"instruction": null
+			"calc": "IPP3"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
-			"calc": "vv.pocet*cena",
-			"instruction": null
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['5300','5301','5702']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZP",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBSVALZP"
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],

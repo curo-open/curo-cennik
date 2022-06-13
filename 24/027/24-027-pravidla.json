@@ -31,92 +31,79 @@
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.0193,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['509a','512','513','514a','522','530','531']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZSP",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBSVALZSP"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZSP",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBSVALZSP"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['5702','5715','5716']",
 			"value": 0.008195,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie Covid 252L",
 			"if": "vv.kod in ['252L']",
 			"value": 10,
-			"calc": "vv.pocet*cena",
-			"instruction": null
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='PP50'",
 			"value": null,
-			"calc": "PP50",
-			"instruction": null
+			"calc": "PP50"
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],

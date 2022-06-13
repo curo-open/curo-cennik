@@ -11,36 +11,31 @@
 			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc' && vv.kod in ['71.OCR']",
 			"value": 0.028547,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc' && vv.kod in ['71.DPN']",
 			"value": 0.028547,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc' && vv.kod in ['71.TDOS']",
 			"value": 0.028547,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc' && vv.kod in ['71.UDOS']",
 			"value": 0.028547,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon pre soc. poisťovňu",
 			"if": "vv.typ=='soc'",
 			"value": null,
-			"calc": "vv.bodyCelkom*ZA_BOD",
-			"instruction": null
+			"calc": "vv.bodyCelkom*ZA_BOD"
 		}
 	],
 	"kontrola": [],

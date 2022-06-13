@@ -51,85 +51,73 @@
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
-			"calc": "vv.pocet*cena",
-			"instruction": null
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "špec. elektronické výkony",
 			"if": "vv.kod in ['11a','1b','1c','70']",
 			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
-			"calc": "AGTC",
-			"instruction": null
+			"calc": "AGTC"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
-			"calc": "IPP1",
-			"instruction": null
+			"calc": "IPP1"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
 			"value": null,
-			"calc": "IPP2",
-			"instruction": null
+			"calc": "IPP2"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
 			"value": null,
-			"calc": "IPP3",
-			"instruction": null
+			"calc": "IPP3"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP4'",
 			"value": null,
-			"calc": "IPP4",
-			"instruction": null
+			"calc": "IPP4"
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPPD'",
 			"value": null,
-			"calc": "IPPD",
-			"instruction": null
+			"calc": "IPPD"
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CBSVALZ"
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
+			"calc": "vv.bodyCelkom*CB"
 		}
 	],
 	"kontrola": [],

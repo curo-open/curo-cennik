@@ -10,8 +10,7 @@
 			"label": "Paušálna úhrada za poistencov v spádovej oblasti",
 			"if": "p.zaSpad",
 			"value": 0.039434,
-			"calc": "PPSO*cena",
-			"instruction": null
+			"calc": "PPSO*cena"
 		}
 	],
 	"vykon": [
@@ -19,8 +18,7 @@
 			"label": "Výkony",
 			"if": "1",
 			"value": 0.0251,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"calc": "vv.bodyCelkom*cena"
 		}
 	],
 	"kontrola": [],

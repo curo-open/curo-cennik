@@ -21,13 +21,14 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ do 1 roku                 │          7.86 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
-│ od 1 do 2 rokov vratane   │          7.57 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
-│ od 3 do 5 rokov vratane   │          6.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
-│ od 6 do 9 rokov vratane   │           4.4 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 10)  │
-│ od 10 do 19 rokov vratane │          3.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(10, 20) │
-│ od 15 do 19 rokov vratane │          3.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 20) │
-│ od 20 do 28 rokov vratane │           2.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ do 1 roku                 │          9.14 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
+│ od 1 do 2 rokov vratane   │          9.06 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
+│ od 3 do 5 rokov vratane   │          6.27 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
+│ od 6 do 9 rokov vratane   │          4.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 9)   │
+│ od 10 do 14 rokov vratane │          4.15 │ IDK+cena │ p.kapitacia && p|vekMedzi(9, 14)  │
+│ od 15 do 17 rokov vratane │          3.91 │ IDK+cena │ p.kapitacia && p|vekMedzi(14, 17) │
+│ od 18 do 19 rokov vratane │          3.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(17, 19) │
+│ od 20 do 28 rokov vratane │           2.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 28) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -38,7 +39,7 @@ Autor: curo.sk
 │           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │        0.007303 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
 │           0.026 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
-│           0.057 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
+│           0.065 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
 │                 │                           │                                               │ ', '146b', '146c', '148', '148a', '148b', '148c', '149', '14 │
 │                 │                           │                                               │ 9a', '149b', '149c', '149d', '159b', '950', '951','952','953 │
 │                 │                           │                                               │ ']                                                           │
