@@ -23,30 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- pridane EDU pre vszp">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/004/24-004-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/004/24-004-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/004/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/004/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/045/24-045-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/045/24-045-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/045/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/045/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/048/24-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/048/24-048-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/048/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/003/25-003-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/003/25-003-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/003/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/003/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/018/25-018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/018/25-018-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/018/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020BZ/25-020BZ-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020BZ/25-020BZ-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020BZ/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020BZ/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/045/25-045-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/045/25-045-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/045/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/045/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/005/27-005-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/27-005-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/005/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/008/27-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/008/27-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/008/77-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/008/77-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/008/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +35,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/24/804/README.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/060/24-060-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/802/24-802-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/804/24-804-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/020/24-020-pravidla.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -78,15 +64,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -505,13 +490,8 @@
       <workItem from="1653645407291" duration="599000" />
       <workItem from="1653672550714" duration="599000" />
       <workItem from="1653895343092" duration="898000" />
-    </task>
-    <task id="LOCAL-00202" summary="- updates">
-      <created>1618391763378</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1618391763378</updated>
+      <workItem from="1655047432559" duration="1892000" />
+      <workItem from="1655096479949" duration="1229000" />
     </task>
     <task id="LOCAL-00203" summary="- updates">
       <created>1622014505641</created>
@@ -849,7 +829,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651131745825</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="- pridane EDU pre vszp">
+      <created>1655118642459</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1655118642459</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -889,6 +876,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />

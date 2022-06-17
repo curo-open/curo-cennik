@@ -79,7 +79,7 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.026,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -109,19 +109,19 @@
 		{
 			"label": "Preventívna prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.057,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Preventivne zdravotne vykony (142)",
 			"if": "vv.kod in ['142']",
-			"value": 0.09,
+			"value": 0.099,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie",
-			"if": "vv.kod in ['252b']",
-			"value": 0.057,
+			"if": "vv.kod in ['252b','252c']",
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
@@ -145,25 +145,25 @@
 		{
 			"label": "Príplatok pri sťaženom výkone - odber, očkovanie do 5 roku života",
 			"if": "vv.kod in ['67']",
-			"value": 0.041,
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Návšteva služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.026,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571a']",
-			"value": 4.4,
+			"value": 5,
 			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 13,
+			"value": 16,
 			"calc": "vv.pocet*cena"
 		},
 		{

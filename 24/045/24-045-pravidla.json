@@ -1,5 +1,9 @@
 {
 	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 1.08
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 2235
@@ -148,6 +152,12 @@
 			{
 				"cond": "",
 				"value": 50
+			}
+		],
+		"60R": [
+			{
+				"cond": "",
+				"value": 480
 			}
 		],
 		"1b": [

@@ -23,6 +23,10 @@
 		"IPP6": {
 			"label": "IPP6",
 			"value": 0.57
+		},
+		"IPP7": {
+			"label": "IPP7",
+			"value": 0.35
 		}
 	},
 	"pacient": [],
@@ -30,7 +34,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.032,
+			"value": 0.0345,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{

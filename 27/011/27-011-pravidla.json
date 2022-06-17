@@ -88,7 +88,7 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0,
+			"value": null,
 			"calc": "vv.bodyCelkom*CB"
 		}
 	],

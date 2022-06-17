@@ -95,7 +95,7 @@
 			"label": "SVALZ výkony (250X)",
 			"if": "vv.kod in ['250X']",
 			"value": 2.98,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon 15d",

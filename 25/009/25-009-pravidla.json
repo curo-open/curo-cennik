@@ -89,8 +89,8 @@
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEU"
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Skriningový antigénový test SARS-CoV-2",

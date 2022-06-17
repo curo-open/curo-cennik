@@ -23,7 +23,7 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": null,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*CB"
 		},
 		{
 			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",

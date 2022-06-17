@@ -47,7 +47,7 @@
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": 0.022,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "SVALZ výkony",
@@ -64,7 +64,7 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0,
+			"value": null,
 			"calc": "vv.bodyCelkom*CB"
 		}
 	],

@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0
+			"value": 0.558355
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -10,7 +10,7 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.054
+			"value": 0.057
 		},
 		"CBEUNK": {
 			"label": "Cena bodu EU/Nekapitovaný",
@@ -19,28 +19,38 @@
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00819
+		},
+		"CBUSG": {
+			"label": "Cena bodu USG",
+			"value": 0.008839
 		}
 	},
 	"pacient": [
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 1.44,
+			"value": 1.48,
 			"calc": "IDK+cena"
 		}
 	],
 	"vykon": [
 		{
-			"label": "Výkony 5303,5305,5308",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']",
-			"value": 0.008839,
-			"calc": "vv.bodyCelkom*cena"
+			"label": "Výkony 102,103,105,108,297",
+			"if": "vv.kod in ['102','103','105','108','297']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP"
 		},
 		{
-			"label": "Výkony 5303,5305,5308",
-			"if": "vv.kod in ['5303','5305','5308']",
+			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBUSG"
+		},
+		{
+			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
+			"if": "vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG"
 		},
 		{
 			"label": "Výkon 5304,5808",

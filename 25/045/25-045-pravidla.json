@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.8
+			"value": 1.19
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -60,7 +60,7 @@
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.026,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena"
 		},
 		{
