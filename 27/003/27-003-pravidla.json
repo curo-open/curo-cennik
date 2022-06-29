@@ -31,79 +31,92 @@
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": 0.0315,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "vv.kod in ['H0008']",
 			"value": 5,
-			"calc": "vv.pocet*cena"
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
-			"calc": "IPP1"
+			"calc": "IPP1",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP2'",
 			"value": null,
-			"calc": "IPP2"
+			"calc": "IPP2",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP3'",
 			"value": null,
-			"calc": "IPP3"
+			"calc": "IPP3",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5153a','5153b','5333'] && vv.typ!='SVaLZ'",
 			"value": 0.0088,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
 			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5766','5769','5770','5771','5772','5793','5794','5795'] && vv.typ!='SVaLZ'",
 			"value": 0.01275,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

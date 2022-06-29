@@ -31,67 +31,78 @@
 			"label": "Ultrazvukové vyšetrenie obidvoch prsníkov, axíl a regionálnych lymfatických uzlín.",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5308']",
 			"value": 0.007969,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "#mamo"
 		},
 		{
 			"label": "Mamografia bilaterálna",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092']",
 			"value": 0.007969,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "#mamo"
 		},
 		{
 			"label": "Mamografia unilaterálna ",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a']",
 			"value": 0.007969,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "#mamo"
 		},
 		{
 			"label": "Denzitometria ",
 			"if": "vv.kod in ['5331']",
 			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena"
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
 		},
 		{
 			"label": "Mamografia",
 			"if": "vv.kod in ['5092','5092a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "RTG",
 			"if": "vv.kod in ['5010','5011','5012','5015','5016','5020','5021','5022','5023','5024','5025','5030','5031','5032','5033','5035','5050','5051','5052','5053','5056','5060','5061','5062','5065','5070','5071','5072','5075','5076','5077','5080','5081','5082','5083','5090','5095','5051R']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB50XX"
+			"calc": "vv.bodyCelkom*CB50XX",
+			"instruction": null
 		},
 		{
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301','5302','5303','5306','5307','5308','5309','5310','5312','5315','5316','5742','5743','5739','5738','5153a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky  - Bioptická ihla",
 			"if": "vv.kod=='120801'",
 			"value": null,
-			"calc": "_120801"
+			"calc": "_120801",
+			"instruction": null
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEU"
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ"
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB"
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
