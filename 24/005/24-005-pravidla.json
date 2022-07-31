@@ -6,15 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.030465
+			"value": 0.031988
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.00865
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
-			"value": 0.027
+			"value": 0.27
 		}
 	},
 	"pacient": [],
@@ -121,6 +121,42 @@
 			{
 				"cond": "",
 				"value": 50
+			}
+		],
+		"820": [
+			{
+				"cond": "",
+				"value": 950
+			}
+		],
+		"821": [
+			{
+				"cond": "",
+				"value": 890
+			}
+		],
+		"822": [
+			{
+				"cond": "",
+				"value": 360
+			}
+		],
+		"825": [
+			{
+				"cond": "",
+				"value": 470
+			}
+		],
+		"841": [
+			{
+				"cond": "",
+				"value": 2130
+			}
+		],
+		"847": [
+			{
+				"cond": "",
+				"value": 610
 			}
 		],
 		"1b": [

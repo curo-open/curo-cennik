@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- pridane EDU pre vszp">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +37,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/804/README.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/24/060/24-060-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/804/24-804-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/802/24-802-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/24/804/24-804-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/020/24-020-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/060/24-060-pravidla.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -85,6 +85,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -492,20 +503,16 @@
       <workItem from="1653895343092" duration="898000" />
       <workItem from="1655047432559" duration="1892000" />
       <workItem from="1655096479949" duration="1229000" />
-    </task>
-    <task id="LOCAL-00203" summary="- updates">
-      <created>1622014505641</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
-      <option name="project" value="LOCAL" />
-      <updated>1622014505642</updated>
-    </task>
-    <task id="LOCAL-00204" summary="- updates">
-      <created>1622014840347</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1622014840347</updated>
+      <workItem from="1655455208264" duration="1537000" />
+      <workItem from="1655716672108" duration="1197000" />
+      <workItem from="1655789166860" duration="598000" />
+      <workItem from="1655808276382" duration="1198000" />
+      <workItem from="1656393431648" duration="599000" />
+      <workItem from="1656506632608" duration="914000" />
+      <workItem from="1656599944311" duration="1229000" />
+      <workItem from="1657084173058" duration="599000" />
+      <workItem from="1657193449000" duration="476000" />
+      <workItem from="1657194915308" duration="598000" />
     </task>
     <task id="LOCAL-00205" summary="- updates">
       <created>1622466159745</created>
@@ -836,7 +843,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655118642459</updated>
     </task>
-    <option name="localTasksCounter" value="252" />
+    <task id="LOCAL-00252" summary="- updates">
+      <created>1655455333807</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1655455333807</updated>
+    </task>
+    <task id="LOCAL-00253" summary="- updates">
+      <created>1656506676813</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1656506676813</updated>
+    </task>
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -904,10 +925,10 @@
     <MESSAGE value="- updates ZAP" />
     <MESSAGE value="- added 232" />
     <MESSAGE value="- updates&#10;- new specilization" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- vraten nastapat 68a = 1000b" />
     <MESSAGE value="- pridane EDU pre vszp" />
-    <option name="LAST_COMMIT_MESSAGE" value="- pridane EDU pre vszp" />
+    <MESSAGE value="- updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="masterDetails">
     <states>

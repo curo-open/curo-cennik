@@ -10,7 +10,7 @@
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.0088
+			"value": 0.00924
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -77,8 +77,8 @@
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.029,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -98,7 +98,7 @@
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.0088,
+			"value": 0.00924,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -340,5 +340,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "vnútorné lekárstvo"
+	"title": "kardiologia"
 }

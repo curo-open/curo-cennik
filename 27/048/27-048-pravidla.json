@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0275
+			"value": 0.0315
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",

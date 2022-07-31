@@ -49,9 +49,9 @@ Autor: curo.sk
 │                 │                           │                                               │ '5307','5307a','5312','5315','5316']                         │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           15.54 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│             418 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
-│          384.56 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
-│          219.45 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
+│           427.6 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
+│          393.39 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
+│          224.49 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
