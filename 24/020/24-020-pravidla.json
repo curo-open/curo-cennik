@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.022089
+			"value": 0.025402
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00819
+			"value": 0.0086
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
@@ -29,84 +29,84 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p|vekMedzi(18, 20)",
-			"value": 3.6,
+			"value": 3.89,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p|vekMedzi(20, 28)",
-			"value": 2.34,
+			"value": 2.5,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p|vekMedzi(28, 46)",
-			"value": 2.44,
+			"value": 2.61,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p|vekMedzi(46, 52)",
-			"value": 2.46,
+			"value": 2.71,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p|vekMedzi(52, 54)",
-			"value": 2.68,
+			"value": 2.95,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p|vekMedzi(54, 58)",
-			"value": 3.21,
+			"value": 3.53,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p|vekMedzi(58, 62)",
-			"value": 3.45,
+			"value": 3.8,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p|vekMedzi(62, 65)",
-			"value": 3.67,
+			"value": 4.04,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p|vekMedzi(65, 69)",
-			"value": 4.03,
+			"value": 4.43,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p|vekMedzi(69, 73)",
-			"value": 4.36,
+			"value": 4.8,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p|vekMedzi(73, 88)",
-			"value": 4.8,
+			"value": 5.28,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p|vekMedzi(88)",
-			"value": 4.74,
+			"value": 5.21,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -157,66 +157,63 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159x','159z']",
-			"value": 0.06,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.06,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "180*G147",
-				"result": 10.8
-			}
+			"instruction": null
 		},
 		{
 			"label": "Určenie glykémie glukometrom",
 			"if": "vv.kod in ['3671']",
-			"value": 0.020895,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.07,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
-			"value": 0.025,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.06,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 13,
+			"value": 16,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702','5702C']",
-			"value": 4.45,
+			"value": 4.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG (5702,5702ZV)",
 			"if": "vv.kod in ['5702ZV','5702']",
-			"value": 4.45,
+			"value": 4.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -230,7 +227,7 @@
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571a','4571A']",
-			"value": 4.4,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -259,6 +256,20 @@
 			"label": "Očkovanie Covid 252K",
 			"if": "vv.kod in ['252K']",
 			"value": 7.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Inicialne I10/E78 (H0003)",
+			"if": "vv.kod in ['H0003']",
+			"value": 12,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Kontrolne I10/E78 (H0004)",
+			"if": "vv.kod in ['H0004']",
+			"value": 12,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

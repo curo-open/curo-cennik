@@ -269,7 +269,7 @@
 		{
 			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
 			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
-			"value": 0.020995,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

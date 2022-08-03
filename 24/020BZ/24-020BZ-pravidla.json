@@ -23,10 +23,6 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
-		},
-		"FOB": {
-			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
-			"value": 2
 		}
 	},
 	"pacient": [

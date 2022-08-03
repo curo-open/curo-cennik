@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                                   │
 ├────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.0275        │ Cena bodu                                               │
+│ CB = 0.03          │ Cena bodu                                               │
 │ CBE = 0.035        │ Cena bodu el. výkony                                    │
-│ CBSVALZ = 0.0082   │ Cena bodu SVaLZ                                         │
+│ CBSVALZ = 0.0085   │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.00924 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 │ IPP1 = 1.8         │ IPP1                                                    │
 │ IPP2 = 2.9         │ IPP5                                                    │
@@ -37,7 +37,7 @@ Autor: curo.sk
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
 │            null │ IPP7                      │ Pripočitateľné položky                        │ vv.kod=='IPP7'                                               │
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
-│           0.032 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
+│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
 │           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.8
+			"value": 1.19
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -95,8 +95,8 @@
 		{
 			"label": "Výkony EMG",
 			"if": "vv.kod in ['810','809','811','812','819']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.02814,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

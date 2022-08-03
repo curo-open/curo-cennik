@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026921
+			"value": 0.031988
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.008605
 		}
 	},
 	"pacient": [],
@@ -66,7 +66,7 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5799']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
@@ -74,7 +74,7 @@
 		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['159c']",
-			"value": 0.0048972,
+			"value": 0.048972,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

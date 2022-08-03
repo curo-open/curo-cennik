@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026921
+			"value": 0.029841
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -14,7 +14,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.008605
 		}
 	},
 	"pacient": [],

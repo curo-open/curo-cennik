@@ -2,19 +2,19 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0
+			"value": 0.02
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.025
+			"value": 0.0265
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.043
+			"value": 0.0583
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.0166
+			"value": 0.03
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -25,7 +25,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(15, 130)",
-			"value": null,
+			"value": 1.63,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -34,7 +34,7 @@
 		{
 			"label": "Výkon 100,102,103,105,157,108",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['100','102','103','105','157','108']",
-			"value": 0.053,
+			"value": 0.0583,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -48,28 +48,28 @@
 		{
 			"label": "Výkon 297",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['297']",
-			"value": 0.032,
+			"value": 0.0352,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['252b']",
-			"value": 0.053,
+			"value": 0.0583,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1070",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['1070']",
-			"value": 0.053,
+			"value": 0.0583,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 5303,5305",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']",
-			"value": 0.0266,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -104,14 +104,14 @@
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] && vv.jeSVaZL",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 0.00861,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] && !vv.jeSVaZL",
-			"value": 0.026,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -120,6 +120,13 @@
 			"if": "1",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5301, 5304,5316,5807,5808,5809",
+			"if": "vv.kod in ['5301','5304','5316','5807','5808','5809']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
 	],

@@ -35,9 +35,16 @@
 			"instruction": null
 		},
 		{
+			"label": "629B",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 5,
+			"value": 6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -202,6 +209,30 @@
 			{
 				"cond": "",
 				"value": 1200
+			}
+		],
+		"1B05011": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"1B05012": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"1B05013": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"1B05014": [
+			{
+				"cond": "",
+				"value": 270
 			}
 		]
 	},

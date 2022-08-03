@@ -1,20 +1,31 @@
 {
 	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 1.08
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 2235
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026921
+			"value": 0.030556
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.008605
 		}
 	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
@@ -164,6 +175,12 @@
 				"value": 50
 			}
 		],
+		"60R": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		],
 		"1b": [
 			{
 				"cond": "",
@@ -186,12 +203,6 @@
 			{
 				"cond": "",
 				"value": 1300
-			}
-		],
-		"15d": [
-			{
-				"cond": "",
-				"value": 50
 			}
 		]
 	},

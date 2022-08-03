@@ -2,11 +2,11 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0.55
+			"value": 0.28
 		},
 		"KPS": {
 			"label": "KPS",
-			"value": 1
+			"value": 1.58
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -14,15 +14,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.006639
+			"value": 0.020995
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.057
+			"value": 0.065
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.026
+			"value": 0.03
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -33,7 +33,7 @@
 		{
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
-			"value": 1.52,
+			"value": 1.58,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -42,15 +42,22 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.026,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony",
-			"if": "vv.kod in ['157','102','103','105','108','1070','252b','297']",
+			"if": "vv.kod in ['157','102','103','105','108','1070','297']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252b, 252c",
+			"if": "vv.kod in ['252b','252C']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -98,8 +105,8 @@
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

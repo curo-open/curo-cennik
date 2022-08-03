@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0275
+			"value": 0.034
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00861
 		}
 	},
 	"pacient": [],
@@ -18,7 +18,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.032,
+			"value": 0.0345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -172,7 +172,7 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0,
+			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}

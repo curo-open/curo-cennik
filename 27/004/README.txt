@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis           │
 ├───────────────────┼─────────────────┤
 │ LIMIT = 0         │ Limit           │
-│ CB = 0.03         │ Cena bodu       │
+│ CB = 0.034        │ Cena bodu       │
 │ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
 │ IPP4 = 2.49       │ IPP4            │
 │ IPP5 = 0.73       │ IPP5            │
@@ -27,8 +27,8 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.033 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
-│           0.029 │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
 │               6 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │

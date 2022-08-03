@@ -6,15 +6,22 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.030465
+			"value": 0.030556
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.008605
 		}
 	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
@@ -74,7 +81,7 @@
 		{
 			"label": "ŠAS - EEG",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.01892,
+			"value": 0.019866,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -194,6 +201,12 @@
 			{
 				"cond": "",
 				"value": 250
+			}
+		],
+		"819d": [
+			{
+				"cond": "",
+				"value": 800
 			}
 		]
 	},
