@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ IDK = 0.558355    │ NASTAVENIA IDK               │
+│ IDK = 0.396432    │ NASTAVENIA IDK               │
 │ CB = 0.022089     │ Cena bodu                    │
-│ CBP = 0.057       │ Cena bodu preventívne výkony │
+│ CBP = 0.062       │ Cena bodu preventívne výkony │
 │ CBEUNK = 0.022973 │ Cena bodu EU/Nekapitovaný    │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ              │
 │ CBUSG = 0.008839  │ Cena bodu USG                │
@@ -21,7 +21,7 @@ Autor: curo.sk
 ┌───────────┬───────────────┬──────────┬────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec   │ Podmienka          │
 ├───────────┼───────────────┼──────────┼────────────────────┤
-│ Kapitácia │          1.48 │ IDK+cena │ p|vekMedzi(0, 120) │
+│ Kapitácia │          1.54 │ IDK+cena │ p|vekMedzi(0, 120) │
 └───────────┴───────────────┴──────────┴────────────────────┘
 
 

@@ -24,15 +24,15 @@ Autor: curo.sk
 │ vek od 18 do 20 │          3.89 │ IDK+cena │ p|vekMedzi(18, 20) │
 │ vek od 20 do 28 │           2.5 │ IDK+cena │ p|vekMedzi(20, 28) │
 │ vek od 28 do 46 │          2.61 │ IDK+cena │ p|vekMedzi(28, 46) │
-│ vek od 46 do 52 │          2.63 │ IDK+cena │ p|vekMedzi(46, 52) │
-│ vek od 52 do 54 │          2.87 │ IDK+cena │ p|vekMedzi(52, 54) │
-│ vek od 54 do 58 │          3.43 │ IDK+cena │ p|vekMedzi(54, 58) │
-│ vek od 58 do 62 │          3.69 │ IDK+cena │ p|vekMedzi(58, 62) │
-│ vek od 62 do 65 │          4.15 │ IDK+cena │ p|vekMedzi(62, 65) │
-│ vek od 65 do 69 │          4.55 │ IDK+cena │ p|vekMedzi(65, 69) │
-│ vek od 69 do 73 │          4.93 │ IDK+cena │ p|vekMedzi(69, 73) │
-│ vek od 73 do 88 │          5.42 │ IDK+cena │ p|vekMedzi(73, 88) │
-│ vek od 88+      │          5.36 │ IDK+cena │ p|vekMedzi(88)     │
+│ vek od 46 do 52 │          2.71 │ IDK+cena │ p|vekMedzi(46, 52) │
+│ vek od 52 do 54 │          2.95 │ IDK+cena │ p|vekMedzi(52, 54) │
+│ vek od 54 do 58 │          3.53 │ IDK+cena │ p|vekMedzi(54, 58) │
+│ vek od 58 do 62 │           3.8 │ IDK+cena │ p|vekMedzi(58, 62) │
+│ vek od 62 do 65 │          4.04 │ IDK+cena │ p|vekMedzi(62, 65) │
+│ vek od 65 do 69 │          4.43 │ IDK+cena │ p|vekMedzi(65, 69) │
+│ vek od 69 do 73 │           4.8 │ IDK+cena │ p|vekMedzi(69, 73) │
+│ vek od 73 do 88 │          5.28 │ IDK+cena │ p|vekMedzi(73, 88) │
+│ vek od 88+      │          5.21 │ IDK+cena │ p|vekMedzi(88)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -49,13 +49,13 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│            0.06 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
-│            0.06 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│           0.065 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
+│           0.065 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │           0.065 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │            0.03 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
 │           0.065 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
-│            14.3 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            4.78 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            4.78 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
