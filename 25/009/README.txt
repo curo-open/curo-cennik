@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬──────────────────────────────┐
 │ Názov a hodnota    │ Popis                        │
 ├────────────────────┼──────────────────────────────┤
-│ IDK = 0.28         │ IDK                          │
+│ IDK = 0.19         │ IDK                          │
 │ KPS = 1.58         │ KPS                          │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?        │
 │ CB = 0.020995      │ Cena bodu                    │

@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +35,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/804/README.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/804/24-804-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/802/24-802-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/020/24-020-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/060/24-060-pravidla.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -55,15 +64,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -77,6 +85,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -481,8 +500,19 @@
       <workItem from="1650976977183" duration="3402000" />
       <workItem from="1653645407291" duration="599000" />
       <workItem from="1653672550714" duration="599000" />
-      <workItem from="1653895343092" duration="2343000" />
-      <workItem from="1654175115413" duration="892000" />
+      <workItem from="1653895343092" duration="898000" />
+      <workItem from="1655047432559" duration="1892000" />
+      <workItem from="1655096479949" duration="1229000" />
+      <workItem from="1655455208264" duration="1537000" />
+      <workItem from="1655716672108" duration="1197000" />
+      <workItem from="1655789166860" duration="598000" />
+      <workItem from="1655808276382" duration="1198000" />
+      <workItem from="1656393431648" duration="599000" />
+      <workItem from="1656506632608" duration="914000" />
+      <workItem from="1656599944311" duration="1229000" />
+      <workItem from="1657084173058" duration="599000" />
+      <workItem from="1657193449000" duration="476000" />
+      <workItem from="1657194915308" duration="598000" />
     </task>
     <task id="LOCAL-00205" summary="- updates">
       <created>1622466159745</created>
@@ -806,26 +836,26 @@
       <option name="project" value="LOCAL" />
       <updated>1651131745825</updated>
     </task>
-    <task id="LOCAL-00251" summary="- upravy">
-      <created>1653991548203</created>
+    <task id="LOCAL-00251" summary="- pridane EDU pre vszp">
+      <created>1655118642459</created>
       <option name="number" value="00251" />
       <option name="presentableId" value="LOCAL-00251" />
       <option name="project" value="LOCAL" />
-      <updated>1653991548203</updated>
+      <updated>1655118642459</updated>
     </task>
-    <task id="LOCAL-00252" summary="- upravy">
-      <created>1653992432225</created>
+    <task id="LOCAL-00252" summary="- updates">
+      <created>1655455333807</created>
       <option name="number" value="00252" />
       <option name="presentableId" value="LOCAL-00252" />
       <option name="project" value="LOCAL" />
-      <updated>1653992432225</updated>
+      <updated>1655455333807</updated>
     </task>
-    <task id="LOCAL-00253" summary="- upravy">
-      <created>1654175276867</created>
+    <task id="LOCAL-00253" summary="- updates">
+      <created>1656506676813</created>
       <option name="number" value="00253" />
       <option name="presentableId" value="LOCAL-00253" />
       <option name="project" value="LOCAL" />
-      <updated>1654175276867</updated>
+      <updated>1656506676813</updated>
     </task>
     <option name="localTasksCounter" value="254" />
     <servers />
@@ -867,11 +897,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <MESSAGE value="- pridane 020" />
     <MESSAGE value="- fixed IDK" />
     <MESSAGE value="- 009 upsvar" />
     <MESSAGE value="- pridane 77" />
@@ -893,11 +925,10 @@
     <MESSAGE value="- updates ZAP" />
     <MESSAGE value="- added 232" />
     <MESSAGE value="- updates&#10;- new specilization" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- vraten nastapat 68a = 1000b" />
     <MESSAGE value="- pridane EDU pre vszp" />
-    <MESSAGE value="- upravy" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upravy" />
+    <MESSAGE value="- updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="masterDetails">
     <states>

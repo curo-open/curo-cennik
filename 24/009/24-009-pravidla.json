@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.396432
+			"value": 0.558355
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -10,7 +10,7 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.062
+			"value": 0.057
 		},
 		"CBEUNK": {
 			"label": "Cena bodu EU/Nekapitovaný",
@@ -29,7 +29,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 1.54,
+			"value": 1.48,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
