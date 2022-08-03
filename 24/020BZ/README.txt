@@ -9,8 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                      │
 ├───────────────────┼────────────────────────────┤
 │ IDK = 1.232901    │ NASTAVENIA IDK             │
-│ CB = 0.022089     │ Cena bodu                  │
-│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
+│ CB = 0.025402     │ Cena bodu                  │
+│ CBSVALZ = 0.0086  │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8        │ AGTC                       │
 │ PP50 = 10         │ PP50                       │
@@ -21,18 +21,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 20 │           3.6 │ IDK+cena │ p|vekMedzi(18, 20) │
-│ vek od 20 do 28 │          2.34 │ IDK+cena │ p|vekMedzi(20, 28) │
-│ vek od 28 do 46 │          2.44 │ IDK+cena │ p|vekMedzi(28, 46) │
-│ vek od 46 do 52 │          2.46 │ IDK+cena │ p|vekMedzi(46, 52) │
-│ vek od 52 do 54 │          2.68 │ IDK+cena │ p|vekMedzi(52, 54) │
-│ vek od 54 do 58 │          3.21 │ IDK+cena │ p|vekMedzi(54, 58) │
-│ vek od 58 do 62 │          3.45 │ IDK+cena │ p|vekMedzi(58, 62) │
-│ vek od 62 do 65 │          3.67 │ IDK+cena │ p|vekMedzi(62, 65) │
-│ vek od 65 do 69 │          4.03 │ IDK+cena │ p|vekMedzi(65, 69) │
-│ vek od 69 do 73 │          4.36 │ IDK+cena │ p|vekMedzi(69, 73) │
-│ vek od 73 do 88 │           4.8 │ IDK+cena │ p|vekMedzi(73, 88) │
-│ vek od 88+      │          4.74 │ IDK+cena │ p|vekMedzi(88)     │
+│ vek od 18 do 20 │          3.89 │ IDK+cena │ p|vekMedzi(18, 20) │
+│ vek od 20 do 28 │           2.5 │ IDK+cena │ p|vekMedzi(20, 28) │
+│ vek od 28 do 46 │          2.61 │ IDK+cena │ p|vekMedzi(28, 46) │
+│ vek od 46 do 52 │          2.71 │ IDK+cena │ p|vekMedzi(46, 52) │
+│ vek od 52 do 54 │          2.95 │ IDK+cena │ p|vekMedzi(52, 54) │
+│ vek od 54 do 58 │          3.53 │ IDK+cena │ p|vekMedzi(54, 58) │
+│ vek od 58 do 62 │           3.8 │ IDK+cena │ p|vekMedzi(58, 62) │
+│ vek od 62 do 65 │          4.04 │ IDK+cena │ p|vekMedzi(62, 65) │
+│ vek od 65 do 69 │          4.43 │ IDK+cena │ p|vekMedzi(65, 69) │
+│ vek od 69 do 73 │           4.8 │ IDK+cena │ p|vekMedzi(69, 73) │
+│ vek od 73 do 88 │          5.28 │ IDK+cena │ p|vekMedzi(73, 88) │
+│ vek od 88+      │          5.21 │ IDK+cena │ p|vekMedzi(88)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -47,16 +47,16 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│            0.06 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
-│            0.06 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
-│        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
-│            0.07 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
-│           0.025 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
-│            0.06 │ vv.bodyCelkom*cena        │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
-│              13 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
-│          0.0078 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
-│            4.45 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
-│             4.4 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
+│           0.065 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
+│           0.065 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│           0.065 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
+│            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│            0.03 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
+│           0.065 │ vv.bodyCelkom*cena        │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
+│              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│          0.0078 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702C']                                          │
+│            4.78 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
+│               5 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
