@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVALZ",
-			"value": 0.007838
+			"value": 0.0073
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
@@ -33,22 +33,22 @@
 		{
 			"label": "Mamografia",
 			"if": "vv.kod in ['5092','5092a']",
-			"value": 0.0092,
+			"value": 0.0096,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "RTG",
 			"if": "vv.kod in ['5010','5011','5012','5015','5016','5020','5021','5022','5023','5024','5025','5030','5031','5032','5033','5035','5050','5051','5052','5053','5056','5060','5061','5062','5065','5070','5071','5072','5075','5076','5077','5080','5081','5082','5083','5090','5095','5051R']",
-			"value": 0.0111,
+			"value": 0.0117,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301','5302','5303','5306','5307','5308','5309','5310','5312','5315','5316','5742','5743','5739','5738','5153a']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.0081,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

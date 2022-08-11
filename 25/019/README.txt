@@ -2,7 +2,7 @@
                                                                         Cenník onkologia
                                                                         ================
 
-Autor:  curo.sk
+Autor: curo.sk
 
   PREMENNÉ PARAMETRE
 ┌────────────────────┬───────────────────────┐
