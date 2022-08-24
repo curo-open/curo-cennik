@@ -47,7 +47,7 @@ Autor: curo.sk
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │            0.05 │ vv.bodyCelkom*cena        │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
 │                 │                           │ nie do 5 roku života                          │                                                              │
-│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a''70']                                   │
+│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │           0.044 │ vv.bodyCelkom*cena        │ Glykemia                                      │ vv.kod in ['3671']                                           │
 │          0.0193 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25', '26', '29', '30']                           │
 │               5 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a']                                          │

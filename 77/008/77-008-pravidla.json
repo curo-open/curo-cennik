@@ -205,7 +205,7 @@
 		},
 		{
 			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','11a''70']",
+			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

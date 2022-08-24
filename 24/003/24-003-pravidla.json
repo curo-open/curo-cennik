@@ -16,13 +16,6 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
 			"label": "ŠAS",
 			"if": "vv.kod in['60']",
 			"value": 0.026432,

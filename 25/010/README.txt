@@ -8,14 +8,14 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.8            │ IPP1                         │
-│ IPP2 = 2.9            │ IPP2                         │
-│ IPP3 = 4.9            │ IPP3                         │
-│ IPP4 = 4.9            │ IPP4                         │
+│ IPP1 = 1.98           │ IPP1                         │
+│ IPP2 = 3.19           │ IPP2                         │
+│ IPP3 = 5.39           │ IPP3                         │
+│ IPP4 = 5.39           │ IPP4                         │
 │ IPPD = 5              │ IPPD                         │
 │ LIMIT = 75900         │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0268           │ Cena bodu                    │
+│ CB = 0.0278           │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
 │ CBE = 0.026           │ Cena bodu el. výkony         │
 │ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
@@ -34,7 +34,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
-│            null │ vv.bodyCelkom*CBE         │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70','11a']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70','11a']                             │
 │            null │ vv.bodyCelkom*CBE         │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │

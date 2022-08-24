@@ -32,6 +32,10 @@
 			"label": "PP50",
 			"value": 10
 		},
+		"OPT": {
+			"label": "Optimus",
+			"value": 10
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
@@ -70,7 +74,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.037,
+			"value": null,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -161,7 +165,14 @@
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 5,
+			"value": 6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0007",
+			"if": "vv.kod in ['H0007']",
+			"value": 5.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
