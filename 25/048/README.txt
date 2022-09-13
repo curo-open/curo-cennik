@@ -15,7 +15,7 @@ Autor: curo.sk
 │ IPPD = 5              │ IPPD                         │
 │ LIMIT = 0             │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0268           │ Cena bodu                    │
+│ CB = 0.02814          │ Cena bodu                    │
 │ CBP = 0.049           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
@@ -49,9 +49,9 @@ Autor: curo.sk
 │                 │                           │                                               │ '5307','5307a','5312','5315','5316']                         │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           15.54 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│           427.6 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
-│          393.39 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
-│          224.49 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
+│             428 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
+│             393 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
+│             224 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

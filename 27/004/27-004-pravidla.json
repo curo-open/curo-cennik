@@ -14,15 +14,15 @@
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 2.49
+			"value": 3.68
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 0.73
+			"value": 2.63
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 0.57
+			"value": 1.89
 		}
 	},
 	"pacient": [],

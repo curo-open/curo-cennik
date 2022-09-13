@@ -44,6 +44,55 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkon 250a, 250b - odbery",
+			"if": "vv.kod in ['250a','250b']",
+			"value": 0.029,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15b - zhodnotenie odberov",
+			"if": "vv.kod in ['15b']",
+			"value": 0.029,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.032,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Echokardiografia",
+			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
+			"value": 0.00924,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ergometria",
+			"if": "vv.kod in ['5708']",
+			"value": 0.00861,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['603a','15c']",
+			"value": 0.029,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ekg holter",
+			"if": "vv.kod in ['5712','5713','5714']",
+			"value": 0.00861,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.02,
@@ -68,13 +117,6 @@
 			"label": "Výkon 532;533a;540;541;542",
 			"if": "vv.kod in ['532','533a','540','541','542']",
 			"value": 0.007303,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
-			"value": null,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

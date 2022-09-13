@@ -14,6 +14,9 @@ Autor: curo.sk
 │ IPP1 = 0.57          │ IPP1                │
 │ IPP2 = 0.36          │ IPP2                │
 │ IPP3 = 0.28          │ IPP3                │
+│ IPP4 = 3.68          │ IPP4                │
+│ IPP5 = 2.63          │ IPP5                │
+│ IPP6 = 1.89          │ IPP6                │
 │ AGTC = 4.8           │ AGTC                │
 │ PP50 = 10            │ PP50                │
 │ LIMIT = 0            │ Limit               │
@@ -55,6 +58,9 @@ Autor: curo.sk
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
+│            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │

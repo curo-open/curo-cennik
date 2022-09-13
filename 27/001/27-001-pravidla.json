@@ -24,6 +24,18 @@
 			"label": "IPP3",
 			"value": 0.28
 		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 3.68
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 2.63
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 1.89
+		},
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
@@ -198,6 +210,27 @@
 			"if": "vv.kod=='IPP3'",
 			"value": null,
 			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP5'",
+			"value": null,
+			"calc": "IPP5",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP6'",
+			"value": null,
+			"calc": "IPP6",
 			"instruction": null
 		},
 		{

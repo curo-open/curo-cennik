@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0268
+			"value": 0.02814
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -162,21 +162,21 @@
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9104']",
-			"value": 427.6,
+			"value": 428,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9105']",
-			"value": 393.39,
+			"value": 393,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['8586']",
-			"value": 224.49,
+			"value": 224,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

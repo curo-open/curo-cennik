@@ -26,7 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0268
+			"value": 0.02814
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -241,19 +241,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 620
+				"value": 420
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 400
+				"value": 270
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 210
 			}
 		],
 		"65": [
