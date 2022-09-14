@@ -1,0 +1,18 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "pediater"
+}

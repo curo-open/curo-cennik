@@ -22,22 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upravy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/003/24-003-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/003/24-003-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/003/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/003/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/003/25-003-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/003/25-003-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/003/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/003/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/010/25-010-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/010/25-010-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/010/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/010/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/012/25-012-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/012/25-012-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/012/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/012/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/049/27-049-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/049/27-049-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/049/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/049/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/008/77-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/008/77-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/008/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,14 +64,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/daniel/Dev/curo/curo-cennik",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -527,20 +515,9 @@
       <workItem from="1657084173058" duration="599000" />
       <workItem from="1657193449000" duration="476000" />
       <workItem from="1657194915308" duration="598000" />
-    </task>
-    <task id="LOCAL-00206" summary="- updates">
-      <created>1622467504545</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1622467504545</updated>
-    </task>
-    <task id="LOCAL-00207" summary="- updates">
-      <created>1622527772486</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1622527772486</updated>
+      <workItem from="1661838988040" duration="599000" />
+      <workItem from="1661938652628" duration="5000" />
+      <workItem from="1663059766539" duration="1004000" />
     </task>
     <task id="LOCAL-00208" summary="- updates">
       <created>1622538582643</created>
@@ -871,7 +848,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659510135988</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary="- upravy">
+      <created>1661349148129</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1661349148130</updated>
+    </task>
+    <task id="LOCAL-00256" summary="- upravy">
+      <created>1663059814961</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1663059814961</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -940,7 +931,8 @@
     <MESSAGE value="- vraten nastapat 68a = 1000b" />
     <MESSAGE value="- pridane EDU pre vszp" />
     <MESSAGE value="- updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
+    <MESSAGE value="- upravy" />
+    <option name="LAST_COMMIT_MESSAGE" value="- upravy" />
   </component>
   <component name="masterDetails">
     <states>

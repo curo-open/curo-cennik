@@ -1,0 +1,60 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 62U",
+			"if": "vv.kod in ['62U','62u']",
+			"value": 7.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 63U",
+			"if": "vv.kod in ['63U','63u']",
+			"value": 5.91,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie COVID19",
+			"if": "vv.kod in ['252L']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vyhodnotenie lab vysledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG 5301,5303,5305,5308",
+			"if": "vv.kod in ['5301','5303','5305','5308']",
+			"value": null,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "specialista"
+}

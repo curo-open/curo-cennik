@@ -1,0 +1,25 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.021995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie COVID19",
+			"if": "vv.kod in ['252L']",
+			"value": 0.021995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "VLD"
+}
