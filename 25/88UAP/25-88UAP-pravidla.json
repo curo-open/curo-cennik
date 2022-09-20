@@ -3,6 +3,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Komplexné vyšetrenie ",
+			"if": "vv.kod in ['60U','60u']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
 			"value": 0.08,
