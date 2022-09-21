@@ -1,0 +1,32 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Komplexné vyšetrenie ",
+			"if": "vv.kod in ['60U','60u']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vyhodnotenie lab vysledkov",
+			"if": "vv.kod in ['15b']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG 5301,5303,5305,5308",
+			"if": "vv.kod in ['5301','5303','5305','5308']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gynekolog"
+}
