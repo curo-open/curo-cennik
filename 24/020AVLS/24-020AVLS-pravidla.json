@@ -206,7 +206,7 @@
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": {
-				"formula": "100*G157",
+				"formula": "100*G160",
 				"result": 6.5
 			}
 		},
@@ -391,6 +391,12 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"160R": [
+			{
+				"cond": "",
+				"value": 390
 			}
 		]
 	},

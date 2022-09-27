@@ -119,7 +119,7 @@
 			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": {
-				"formula": "40*G291",
+				"formula": "40*G294",
 				"result": 1.04
 			}
 		},
@@ -248,7 +248,7 @@
 			"value": 9.68,
 			"calc": "vv.pocet*cena",
 			"instruction": {
-				"formula": "100*G309",
+				"formula": "100*G312",
 				"result": 968
 			}
 		},

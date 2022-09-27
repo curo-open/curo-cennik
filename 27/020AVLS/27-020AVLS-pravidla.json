@@ -133,7 +133,7 @@
 			"value": 0.053,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": {
-				"formula": "40*G211",
+				"formula": "40*G214",
 				"result": 2.12
 			}
 		},
@@ -262,7 +262,7 @@
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": {
-				"formula": "100*G229",
+				"formula": "100*G232",
 				"result": 6.5
 			}
 		},
