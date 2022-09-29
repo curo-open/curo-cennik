@@ -28,7 +28,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│           0.032 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.032 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65']                              │
 │           0.033 │ vv.bodyCelkom*cena        │ Výkon 200,2100,2101,2106                      │ vv.kod in ['200','2100','2101','2106']                       │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon 5153a, 5153b,5333                       │ vv.kod in ['5153a','5153b','5333']                           │
