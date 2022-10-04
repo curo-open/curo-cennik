@@ -8,8 +8,8 @@ Autor: curo.sk
 ┌─────────────────────┬─────────────────────┐
 │ Názov a hodnota     │ Popis               │
 ├─────────────────────┼─────────────────────┤
-│ CB = 0.03           │ Cena bodu           │
-│ CBSVALZ = 0.0085    │ Cena bodu SVaLZ     │
+│ CB = 0.04           │ Cena bodu           │
+│ CBSVALZ = 0.015     │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.0088 │ Cena bodu SVaLZ USG │
 │ IPP1 = 0.57         │ IPP1                │
 │ IPP2 = 0.36         │ IPP2                │

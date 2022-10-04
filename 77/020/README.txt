@@ -5,28 +5,28 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────┐
-│ Názov a hodnota   │ Popis                      │
-├───────────────────┼────────────────────────────┤
-│ IDK = 0           │ NASTAVENIA IDK             │
-│ CB = 0.026        │ Cena bodu                  │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.03     │ Cena bodu Nekapitovany(EU) │
-│ AGTC = 4.8        │ AGTC                       │
-│ PP50 = 10         │ PP50                       │
-│ FOB = 2           │ FOB                        │
-│ EDU = 2           │ EDU                        │
-└───────────────────┴────────────────────────────┘
+┌─────────────────┬────────────────────────────┐
+│ Názov a hodnota │ Popis                      │
+├─────────────────┼────────────────────────────┤
+│ IDK = 0         │ NASTAVENIA IDK             │
+│ CB = 0.035      │ Cena bodu                  │
+│ CBSVALZ = 0.015 │ Cena bodu SVaLZ            │
+│ CBEUNK = 0.03   │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8      │ AGTC                       │
+│ PP50 = 10       │ PP50                       │
+│ FOB = 2         │ FOB                        │
+│ EDU = 2         │ EDU                        │
+└─────────────────┴────────────────────────────┘
 
 
   CENY ZA PACIENTA
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 51 │          2.72 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          3.12 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │           4.6 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+      │          5.04 │ IDK+cena │ p|vekMedzi(81)     │
+│ vek od 18 do 51 │          2.83 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          3.03 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │          4.15 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 81+      │           4.7 │ IDK+cena │ p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -41,7 +41,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEUNK      │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │            null │ vv.bodyCelkom*CBEUNK      │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│           23.73 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│            0.06 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │           0.065 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.kod in ['252b']                                           │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
@@ -54,7 +54,7 @@ Autor: curo.sk
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
 │                 │                           │                                               │ vv.kod in ['252b']                                           │
 │          0.0082 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
-│          0.0132 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
+│             4.5 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │
 │            0.03 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
 │                 │                           │                                               │ ,'30','40','41','64']                                        │

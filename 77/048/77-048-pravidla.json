@@ -2,15 +2,15 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03
+			"value": 0.04
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.053
+			"value": 0.06
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0085
+			"value": 0.015
 		}
 	},
 	"pacient": [],

@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0265
+			"value": 0.04
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0583
+			"value": 0.06
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
@@ -18,7 +18,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.015
 		}
 	},
 	"pacient": [

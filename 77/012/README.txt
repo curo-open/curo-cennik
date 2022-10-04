@@ -5,16 +5,16 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ LIMIT = 0        │ Limit           │
-│ CB = 0.03        │ Cena bodu       │
-│ CBSVALZ = 0.0085 │ Cena bodu SVaLZ │
-│ IPP4 = 2.49      │ IPP4            │
-│ IPP5 = 0.73      │ IPP5            │
-│ IPP6 = 0.57      │ IPP6            │
-└──────────────────┴─────────────────┘
+┌─────────────────┬─────────────────┐
+│ Názov a hodnota │ Popis           │
+├─────────────────┼─────────────────┤
+│ LIMIT = 0       │ Limit           │
+│ CB = 0.04       │ Cena bodu       │
+│ CBSVALZ = 0.015 │ Cena bodu SVaLZ │
+│ IPP4 = 2.49     │ IPP4            │
+│ IPP5 = 0.73     │ IPP5            │
+│ IPP6 = 0.57     │ IPP6            │
+└─────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -36,7 +36,7 @@ Autor: curo.sk
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316','5799']                                       │
-│          0.0583 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['158']                                            │
+│            0.06 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['158']                                            │
 │                 │                           │ renia na rakovinu                             │                                                              │
 │           0.029 │ vv.bodyCelkom*cena        │ Výkon 4L03003, 4L03004                        │ vv.kod in ['4L03003','4L03004']                              │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │

@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03
+			"value": 0.04
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0085
+			"value": 0.015
 		},
 		"IPP4": {
 			"label": "IPP4",
@@ -86,7 +86,7 @@
 		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['158']",
-			"value": 0.0583,
+			"value": 0.06,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

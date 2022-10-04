@@ -29,24 +29,45 @@
 	"vykon": [
 		{
 			"label": "Ultrazvukové vyšetrenie obidvoch prsníkov, axíl a regionálnych lymfatických uzlín.",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5308.DO10']",
+			"value": 0.007969,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa:osobitna;fa_suffix:do10dni;odstran_vv_suffix:ano"
+		},
+		{
+			"label": "Mamografia bilaterálna",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092.DO10']",
+			"value": 0.007969,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa:osobitna;fa_suffix:do10dni;odstran_vv_suffix:ano"
+		},
+		{
+			"label": "Mamografia unilaterálna ",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a.DO10']",
+			"value": 0.007969,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa:osobitna;fa_suffix:do10dni;odstran_vv_suffix:ano"
+		},
+		{
+			"label": "Ultrazvukové vyšetrenie obidvoch prsníkov, axíl a regionálnych lymfatických uzlín.",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5308']",
 			"value": 0.007969,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "#mamo"
+			"instruction": null
 		},
 		{
 			"label": "Mamografia bilaterálna",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092']",
 			"value": 0.007969,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "#mamo"
+			"instruction": null
 		},
 		{
 			"label": "Mamografia unilaterálna ",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a']",
 			"value": 0.007969,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "#mamo"
+			"instruction": null
 		},
 		{
 			"label": "Denzitometria ",
