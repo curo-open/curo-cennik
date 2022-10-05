@@ -132,10 +132,7 @@
 			"if": "vv.kod in ['3671']",
 			"value": 0.053,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "40*G214",
-				"result": 2.12
-			}
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti chrípke",
@@ -261,10 +258,7 @@
 			"if": "vv.kod in ['159b']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "100*G232",
-				"result": 6.5
-			}
+			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",

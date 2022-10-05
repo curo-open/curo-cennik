@@ -118,10 +118,7 @@
 			"if": "vv.kod in ['70']",
 			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "40*G333",
-				"result": 1.04
-			}
+			"instruction": null
 		},
 		{
 			"label": "Preventívne prehliadky",
@@ -247,10 +244,7 @@
 			"if": "vv.kod in ['159x']",
 			"value": 9.68,
 			"calc": "vv.pocet*cena",
-			"instruction": {
-				"formula": "100*G351",
-				"result": 968
-			}
+			"instruction": null
 		},
 		{
 			"label": "TOKS pozitívny",

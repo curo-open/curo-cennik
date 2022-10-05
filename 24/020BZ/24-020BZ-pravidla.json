@@ -166,22 +166,14 @@
 			"if": "vv.kod in ['159a','159x','159z']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "180*G135",
-				"result": 11.7,
-				"ref": "I135:I136",
-				"shareType": "shared"
-			}
+			"instruction": null
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"result": 11.7,
-				"sharedFormula": "I135"
-			}
+			"instruction": null
 		},
 		{
 			"label": "Určenie glykémie glukometrom",
@@ -209,10 +201,7 @@
 			"if": "vv.kod in ['160']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "390*G140",
-				"result": 25.35
-			}
+			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
@@ -226,10 +215,7 @@
 			"if": "vv.kod in ['5702C']",
 			"value": 0.0078,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "550*G142",
-				"result": 4.29
-			}
+			"instruction": null
 		},
 		{
 			"label": "EKG (5702,5702ZV)",

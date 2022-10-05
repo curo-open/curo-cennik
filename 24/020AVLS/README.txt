@@ -5,17 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────┐
-│ Názov a hodnota   │ Popis                      │
-├───────────────────┼────────────────────────────┤
-│ IDK = 0           │ NASTAVENIA IDK             │
-│ CB = 0.022089     │ Cena bodu                  │
-│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU) │
-│ _4571a = 5        │ 4571a                      │
-│ AGTC = 4.8        │ AGTC                       │
-│ PP50 = 10         │ PP50                       │
-└───────────────────┴────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────────┐
+│ Názov a hodnota   │ Popis                                             │
+├───────────────────┼───────────────────────────────────────────────────┤
+│ IDK = 0           │ NASTAVENIA IDK                                    │
+│ CB = 0.022089     │ Cena bodu                                         │
+│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ                                   │
+│ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)                        │
+│ _4571a = 5        │ 4571a                                             │
+│ AGTC = 4.8        │ AGTC                                              │
+│ PP50 = 10         │ PP50                                              │
+│ FOB = 2           │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
+│ EDU = 2           │ EDU k výkonom  H0004                              │
+└───────────────────┴───────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -77,6 +79,8 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
+│            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

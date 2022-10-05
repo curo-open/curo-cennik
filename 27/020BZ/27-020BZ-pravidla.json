@@ -104,10 +104,7 @@
 			"if": "vv.kod in ['3671']",
 			"value": 0.0485,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "40*G184",
-				"result": 1.94
-			}
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti chrípke",
@@ -177,10 +174,7 @@
 			"if": "vv.kod in ['5702']",
 			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "550*G194",
-				"result": 4.51
-			}
+			"instruction": null
 		},
 		{
 			"label": "CRP",
@@ -229,22 +223,14 @@
 			"if": "vv.kod in ['159b']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "180*G201",
-				"result": 11.7,
-				"ref": "I201:I202",
-				"shareType": "shared"
-			}
+			"instruction": null
 		},
 		{
 			"label": "Glukóza",
 			"if": "vv.kod in ['3671']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"result": 11.7,
-				"sharedFormula": "I201"
-			}
+			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",

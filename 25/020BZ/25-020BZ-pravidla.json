@@ -161,7 +161,7 @@
 			"if": "vv.kod in ['10']",
 			"value": 0.021995,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "revert ak sa vyhodia body"
+			"instruction": null
 		},
 		{
 			"label": "Výkon 1b",
@@ -203,10 +203,7 @@
 			"if": "vv.kod in ['160']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "390*0.05",
-				"result": 19.5
-			}
+			"instruction": null
 		},
 		{
 			"label": "EKG pri preventívnej prehliadke (15P)",
@@ -220,42 +217,28 @@
 			"if": "vv.kod in ['5702P']",
 			"value": 0.008105,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "550*G57",
-				"result": 4.45775,
-				"ref": "I57:I59",
-				"shareType": "shared"
-			}
+			"instruction": null
 		},
 		{
 			"label": "EKG ",
 			"if": "vv.kod in ['5702']",
 			"value": 0.00861,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"result": 4.7355,
-				"sharedFormula": "I57"
-			}
+			"instruction": null
 		},
 		{
 			"label": "Celodenné snímanie tlaku",
 			"if": "vv.kod in ['5715']",
 			"value": 0.021999,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"result": 12.09945,
-				"sharedFormula": "I57"
-			}
+			"instruction": null
 		},
 		{
 			"label": "Celodenné snímanie tlaku - vyhodnotenie",
 			"if": "vv.kod in ['5716']",
 			"value": 0.016597,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "240*G60",
-				"result": 3.98328
-			}
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
@@ -269,10 +252,7 @@
 			"if": "vv.kod in ['25','26']",
 			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "500*G62",
-				"result": 15
-			}
+			"instruction": null
 		},
 		{
 			"label": "Akútne EKG",

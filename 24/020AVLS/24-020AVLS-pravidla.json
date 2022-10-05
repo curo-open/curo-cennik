@@ -27,6 +27,14 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"FOB": {
+			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
+			"value": 2
+		},
+		"EDU": {
+			"label": "EDU k výkonom  H0004",
+			"value": 2
 		}
 	},
 	"pacient": [
@@ -205,10 +213,7 @@
 			"if": "vv.kod in ['159b']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "100*G160",
-				"result": 6.5
-			}
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
@@ -334,6 +339,20 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='FOB'",
+			"value": null,
+			"calc": "FOB",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='EDU'",
+			"value": null,
+			"calc": "EDU",
 			"instruction": null
 		}
 	],

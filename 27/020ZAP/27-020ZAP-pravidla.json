@@ -60,7 +60,7 @@
 			"if": "p|vekMedzi(81)",
 			"value": 5.04,
 			"calc": "IDK+cena",
-			"instruction": 5.02
+			"instruction": null
 		}
 	],
 	"vykon": [

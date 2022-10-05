@@ -113,10 +113,7 @@
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
 			"value": 0.053,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "100*G270",
-				"result": 5.3
-			}
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A+B",

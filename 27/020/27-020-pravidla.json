@@ -125,10 +125,7 @@
 			"if": "vv.kod in ['3671']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "40*G206",
-				"result": 2.6
-			}
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti chrípke",
@@ -198,10 +195,7 @@
 			"if": "vv.kod in ['5702']",
 			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "550*G216",
-				"result": 4.51
-			}
+			"instruction": null
 		},
 		{
 			"label": "CRP",
@@ -250,10 +244,7 @@
 			"if": "vv.kod in ['159b']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": {
-				"formula": "180*G223",
-				"result": 11.7
-			}
+			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
