@@ -40,9 +40,8 @@ Autor: curo.sk
 │            2.98 │ vv.pocet*(cena+NCB)       │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │          0.0345 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
 │           0.029 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│           0.035 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
-│            null │ vv.bodyCelkom*(CBSVALZ+NC │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│                 │ B)                        │                                               │                                                              │
+│           0.035 │ vv.bodyCelkom*cena        │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Vykony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
