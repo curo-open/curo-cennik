@@ -31,6 +31,10 @@
 		"IPP4": {
 			"label": "IPP7",
 			"value": 4.9
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		}
 	},
 	"pacient": [],
@@ -88,49 +92,49 @@
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
-			"calc": "vv.pocet*cena",
+			"calc": "vv.pocet*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63,65",
 			"if": "vv.kod in ['60','62','63']",
 			"value": 0.0345,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1b,11a,70",
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"calc": "vv.bodyCelkom*(CBSVALZ+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "Preventívne vykony",
+			"label": "Vykony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		}
 	],
