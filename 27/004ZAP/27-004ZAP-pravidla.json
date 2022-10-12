@@ -23,6 +23,10 @@
 		"IPP6": {
 			"label": "IPP6",
 			"value": 0.57
+		},
+		"NCB": {
+			"label": "Navýšená cena bodu",
+			"value": 0.0025
 		}
 	},
 	"pacient": [],
@@ -45,14 +49,14 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1A02072",
 			"if": "vv.kod in ['1A02072']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -66,7 +70,7 @@
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
@@ -115,7 +119,7 @@
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -143,7 +147,7 @@
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		}
 	],

@@ -5,16 +5,17 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬─────────────────┐
-│ Názov a hodnota   │ Popis           │
-├───────────────────┼─────────────────┤
-│ LIMIT = 0         │ Limit           │
-│ CB = 0.034        │ Cena bodu       │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
-│ IPP4 = 2.49       │ IPP4            │
-│ IPP5 = 0.73       │ IPP5            │
-│ IPP6 = 0.57       │ IPP6            │
-└───────────────────┴─────────────────┘
+┌───────────────────┬────────────────────┐
+│ Názov a hodnota   │ Popis              │
+├───────────────────┼────────────────────┤
+│ LIMIT = 0         │ Limit              │
+│ CB = 0.034        │ Cena bodu          │
+│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ    │
+│ IPP4 = 2.49       │ IPP4               │
+│ IPP5 = 0.73       │ IPP5               │
+│ IPP6 = 0.57       │ IPP6               │
+│ NCB = 0.0025      │ Navýšená cena bodu │
+└───────────────────┴────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -29,10 +30,10 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.032 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            null │ vv.bodyCelkom*CB          │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
+│            0.02 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
 │               6 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
-│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│           0.035 │ vv.bodyCelkom*(cena+NCB)  │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
@@ -40,11 +41,11 @@ Autor: curo.sk
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
-│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
 │         0.01892 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
