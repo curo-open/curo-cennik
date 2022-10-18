@@ -19,6 +19,10 @@ Autor: curo.sk
 │ CBP = 0.049           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
+│ CBEU = 0.007303       │ Cena bodu EU                 │
+│ CB50XX = 0.015336     │ Cena bodu 50XX               │
+│ PACS = 0.93           │ PACS                         │
+│ X03501 = 32           │ X03501                       │
 └───────────────────────┴──────────────────────────────┘
 
 
@@ -35,6 +39,18 @@ Autor: curo.sk
 │           11.82 │ vv.pocet*cena             │ Výkon 60U                                     │ vv.kod in ['60U','60u']                                      │
 │             7.6 │ vv.pocet*cena             │ Výkon 62U                                     │ vv.kod in ['62U','62u']                                      │
 │            5.91 │ vv.pocet*cena             │ Výkon 63U                                     │ vv.kod in ['63U','63u']                                      │
+│        0.005311 │ vv.bodyCelkom*cena        │ Denzitometria                                 │ vv.kod in ['5331']                                           │
+│            null │ vv.bodyCelkom*CB          │ Mamografia                                    │ vv.kod in ['5092','5092a']                                   │
+│            null │ vv.bodyCelkom*CB50XX      │ RTG                                           │ vv.kod in ['5010','5011','5012','5015','5016','5020','5021', │
+│                 │                           │                                               │ '5022','5023','5024','5025','5030','5031','5032','5033','503 │
+│                 │                           │                                               │ 5','5050','5051','5052','5053','5056','5060','5061','5062',' │
+│                 │                           │                                               │ 5065','5070','5071','5072','5075','5076','5077','5080','5081 │
+│                 │                           │                                               │ ','5082','5083','5090','5095','5051R']                       │
+│            null │ vv.bodyCelkom*CB          │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
+│                 │                           │                                               │ '5309','5310','5312','5315','5316','5742','5743','5739','573 │
+│                 │                           │                                               │ 8','5153a']                                                  │
+│            null │ PACS                      │ Pripočitateľné položky  - PACS                │ vv.kod=='PACS'                                               │
+│            null │ X03501                    │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='X03501'                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │

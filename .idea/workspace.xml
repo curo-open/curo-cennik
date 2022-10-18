@@ -22,12 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upravy">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- opravene 89">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/049/25-049-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/049/25-049-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/049/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/049/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/049/27-049-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/049/27-049-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/049/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/049/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,16 +64,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/daniel/Dev/curo/curo-cennik",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/daniel/Dev/curo/curo-cennik&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -521,84 +517,15 @@
       <workItem from="1657194915308" duration="598000" />
       <workItem from="1661838988040" duration="599000" />
       <workItem from="1661938652628" duration="5000" />
-      <workItem from="1663059766539" duration="1626000" />
-    </task>
-    <task id="LOCAL-00209" summary="- updates">
-      <created>1622720420940</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1622720420940</updated>
-    </task>
-    <task id="LOCAL-00210" summary="- updates">
-      <created>1625418999269</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1625418999269</updated>
-    </task>
-    <task id="LOCAL-00211" summary="- updates&#10;- added radiologia">
-      <created>1627367781614</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1627367781614</updated>
-    </task>
-    <task id="LOCAL-00212" summary="- updates">
-      <created>1627552501892</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1627552501892</updated>
-    </task>
-    <task id="LOCAL-00213" summary="- updates">
-      <created>1628072051723</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
-      <option name="project" value="LOCAL" />
-      <updated>1628072051723</updated>
-    </task>
-    <task id="LOCAL-00214" summary="- added ZAP DP">
-      <created>1628072243200</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1628072243200</updated>
-    </task>
-    <task id="LOCAL-00215" summary="- updates">
-      <created>1628239893594</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1628239893595</updated>
-    </task>
-    <task id="LOCAL-00216" summary="- updates">
-      <created>1628508099832</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1628508099833</updated>
-    </task>
-    <task id="LOCAL-00217" summary="- updates">
-      <created>1628677621944</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1628677621944</updated>
-    </task>
-    <task id="LOCAL-00218" summary="- updates">
-      <created>1629711339382</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1629711339382</updated>
-    </task>
-    <task id="LOCAL-00219" summary="- updates to ocko vykony">
-      <created>1629733864638</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1629733864639</updated>
+      <workItem from="1663059766539" duration="3335000" />
+      <workItem from="1663767144171" duration="1856000" />
+      <workItem from="1664231392134" duration="2564000" />
+      <workItem from="1664438328010" duration="650000" />
+      <workItem from="1664471503708" duration="598000" />
+      <workItem from="1664655482137" duration="1802000" />
+      <workItem from="1665133008058" duration="1295000" />
+      <workItem from="1665534578060" duration="599000" />
+      <workItem from="1665597525267" duration="634000" />
     </task>
     <task id="LOCAL-00220" summary="- updates&#10;- adde 014">
       <created>1629792307555</created>
@@ -866,7 +793,84 @@
       <option name="project" value="LOCAL" />
       <updated>1663161277266</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="- upravy">
+      <created>1663657408824</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1663657408824</updated>
+    </task>
+    <task id="LOCAL-00259" summary="- pridane 88 a 89">
+      <created>1663768048014</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1663768048014</updated>
+    </task>
+    <task id="LOCAL-00260" summary="- opravene 89">
+      <created>1663772885415</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1663772885415</updated>
+    </task>
+    <task id="LOCAL-00261" summary="- opravene 89">
+      <created>1664281874573</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1664281874574</updated>
+    </task>
+    <task id="LOCAL-00262" summary="- opravene 89">
+      <created>1664282193504</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1664282193504</updated>
+    </task>
+    <task id="LOCAL-00263" summary="- opravene 89">
+      <created>1664438346219</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1664438346219</updated>
+    </task>
+    <task id="LOCAL-00264" summary="- opravene 89">
+      <created>1664879271133</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1664879271133</updated>
+    </task>
+    <task id="LOCAL-00265" summary="- opravene 89">
+      <created>1664967912930</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1664967912930</updated>
+    </task>
+    <task id="LOCAL-00266" summary="- pridane NCB pre Union">
+      <created>1665133039088</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1665133039088</updated>
+    </task>
+    <task id="LOCAL-00267" summary="- pridane NCB pre Union">
+      <created>1665141247885</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1665141247886</updated>
+    </task>
+    <task id="LOCAL-00268" summary="- pridane NCB pre 27 v 004ZAP">
+      <created>1665597557083</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1665597557083</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -908,13 +912,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- fixed IDK" />
-    <MESSAGE value="- 009 upsvar" />
-    <MESSAGE value="- pridane 77" />
-    <MESSAGE value="- added ockovanie covid" />
     <MESSAGE value="- updates&#10;- added radiologia" />
     <MESSAGE value="- added ZAP DP" />
     <MESSAGE value="- updates to ocko vykony" />
@@ -936,7 +935,11 @@
     <MESSAGE value="- pridane EDU pre vszp" />
     <MESSAGE value="- updates" />
     <MESSAGE value="- upravy" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upravy" />
+    <MESSAGE value="- pridane 88 a 89" />
+    <MESSAGE value="- opravene 89" />
+    <MESSAGE value="- pridane NCB pre Union" />
+    <MESSAGE value="- pridane NCB pre 27 v 004ZAP" />
+    <option name="LAST_COMMIT_MESSAGE" value="- pridane NCB pre 27 v 004ZAP" />
   </component>
   <component name="masterDetails">
     <states>
