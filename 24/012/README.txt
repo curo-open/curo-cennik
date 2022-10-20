@@ -33,7 +33,10 @@ Autor: curo.sk
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5302','5303','5304','5307','5307a' │
 │                 │                           │                                               │ ,'5312','5315','5316','5799']                                │
-│        0.048972 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['159c']                                           │
+│             150 │ vv.pocet*cena             │ Výkon 5153C                                   │ vv.kod in ['5153C']                                          │
+│              94 │ vv.pocet*cena             │ Výkon 4L03003                                 │ vv.kod in ['4L03003']                                        │
+│              94 │ vv.pocet*cena             │ Výkon 4L03004                                 │ vv.kod in ['4L03004']                                        │
+│           0.055 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['159c']                                           │
 │                 │                           │ renia na rakovinu                             │                                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

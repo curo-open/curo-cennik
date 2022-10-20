@@ -75,6 +75,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkony",
+			"if": "vv.kod in ['1a02060',' 1A02060','1A02077','1A03044']",
+			"value": 0.0268,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['4H00001','4H00004','4H00005']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
@@ -217,6 +231,18 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"4H00001": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"4H00004": [
+			{
+				"cond": "",
+				"value": 2400
 			}
 		]
 	},

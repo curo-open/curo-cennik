@@ -72,9 +72,30 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 5153C",
+			"if": "vv.kod in ['5153C']",
+			"value": 150,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4L03003",
+			"if": "vv.kod in ['4L03003']",
+			"value": 94,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4L03004",
+			"if": "vv.kod in ['4L03004']",
+			"value": 94,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['159c']",
-			"value": 0.048972,
+			"value": 0.055,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

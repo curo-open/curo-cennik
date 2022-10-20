@@ -38,6 +38,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │          0.0252 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1B05011','1B05012']                              │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['1A02009','1A03007']                              │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -84,6 +86,10 @@ Autor: curo.sk
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
+│             420 │ 1B05011                                                                                                   │                           │
+│             420 │ 1B05012                                                                                                   │                           │
+│            1000 │ 1A02009                                                                                                   │                           │
+│            1200 │ 1A03007                                                                                                   │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

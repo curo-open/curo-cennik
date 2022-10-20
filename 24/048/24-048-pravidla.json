@@ -10,7 +10,7 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.048972
+			"value": 0.055
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -272,25 +272,25 @@
 		"763SP": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"763SN": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"763PP": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"763PN": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"760sp": [
