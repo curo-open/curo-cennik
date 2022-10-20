@@ -454,7 +454,7 @@
 		},
 		{
 			"label": "EKG (5702)+65",
-			"if": "p.vek > 65 && vv.kod in ['5702']",
+			"if": "p|vekMedzi(65) && vv.kod in ['5702']",
 			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null

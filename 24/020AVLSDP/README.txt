@@ -98,7 +98,7 @@ Autor: curo.sk
 │           0.065 │ vv.bodyCelkom*cena        │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
 │              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            4.78 │ vv.pocet*cena             │ EKG (5702Z)                                   │ vv.kod in ['5702Z']                                          │
-│            6.78 │ vv.pocet*cena             │ EKG (5702)+65                                 │ p.vek > 65 && vv.kod in ['5702']                             │
+│            6.78 │ vv.pocet*cena             │ EKG (5702)+65                                 │ p|vekMedzi(65) && vv.kod in ['5702']                         │
 │            7.28 │ vv.pocet*cena             │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
 │              10 │ vv.pocet*cena             │ EKG (5702D)                                   │ vv.kod in ['5702D']                                          │
 │             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
