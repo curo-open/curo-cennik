@@ -82,11 +82,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.022089
+			"value": 0.025402
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00819
+			"value": 0.0086
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
@@ -121,84 +121,84 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p|vekMedzi(18, 20)",
-			"value": 3.22,
+			"value": 3.91,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p|vekMedzi(20, 28)",
-			"value": 2.13,
+			"value": 2.61,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p|vekMedzi(28, 46)",
-			"value": 2.24,
+			"value": 2.75,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p|vekMedzi(46, 52)",
-			"value": 2.26,
+			"value": 2.77,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p|vekMedzi(52, 54)",
-			"value": 2.4,
+			"value": 2.95,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p|vekMedzi(54, 58)",
-			"value": 2.6,
+			"value": 3.53,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p|vekMedzi(58, 62)",
-			"value": 2.84,
+			"value": 3.8,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p|vekMedzi(62, 65)",
-			"value": 3.14,
+			"value": 4.15,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p|vekMedzi(65, 69)",
-			"value": 3.33,
+			"value": 4.55,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p|vekMedzi(69, 73)",
-			"value": 3.59,
+			"value": 4.93,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p|vekMedzi(73, 88)",
-			"value": 4.03,
+			"value": 5.5,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p|vekMedzi(88)",
-			"value": 4,
+			"value": 5.47,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -403,8 +403,8 @@
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -431,42 +431,49 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
-			"value": 0.048972,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.048972,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.048972,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 13,
+			"value": 16,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "EKG (5702ZV)",
-			"if": "vv.kod in ['5702ZV']",
-			"value": 4.45,
+			"label": "EKG (5702Z)",
+			"if": "vv.kod in ['5702Z']",
+			"value": 4.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "EKG (5702)",
+			"if": "p.vek > 65 && vv.kod in ['5702']",
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG (5702)",
 			"if": "vv.kod in ['5702']",
-			"value": 4.45,
+			"value": 7.28,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
