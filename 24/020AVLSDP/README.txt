@@ -33,7 +33,6 @@ Autor: curo.sk
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)      │
 │ AGTC = 4.8        │ AGTC                            │
 │ PP50 = 10         │ PP50                            │
-│ _5702 = 4.78      │ 5702                            │
 │ 5702D = 10        │ 5702D                           │
 │ _3635A = 2        │ 3635A                           │
 │ _3634 = 4         │ 3634                            │
@@ -76,7 +75,6 @@ Autor: curo.sk
 │            null │ SKOR02                    │ Pripočitateľné položky                        │ vv.kod=='SKOR02'                                             │
 │            null │ SKOR03                    │ Pripočitateľné položky                        │ vv.kod=='SKOR03'                                             │
 │            null │ SKOR04                    │ Pripočitateľné položky                        │ vv.kod=='SKOR04'                                             │
-│            null │ _5702                     │ Pripočitateľné položky                        │ vv.kod=='5702'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ _3635A                    │ Pripočitateľné položky                        │ vv.kod=='3635A'                                              │

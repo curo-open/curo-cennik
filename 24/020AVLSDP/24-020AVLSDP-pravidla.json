@@ -100,10 +100,6 @@
 			"label": "PP50",
 			"value": 10
 		},
-		"_5702": {
-			"label": 5702,
-			"value": 4.78
-		},
 		"5702D": {
 			"label": "5702D",
 			"value": 10
@@ -293,13 +289,6 @@
 			"if": "vv.kod=='SKOR04'",
 			"value": null,
 			"calc": "SKOR04",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='5702'",
-			"value": null,
-			"calc": "_5702",
 			"instruction": null
 		},
 		{
