@@ -76,7 +76,7 @@
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in ['1a02060',' 1A02060','1A02077','1A03044']",
+			"if": "vv.kod in [' 1A02060','1A02077','1A03044']",
 			"value": 0.0268,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

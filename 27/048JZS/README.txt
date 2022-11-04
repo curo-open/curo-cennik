@@ -1,13 +1,24 @@
                                                                     ========================
-                                                                    Cenník urazova chirurgia
+                                                                    Cenník gastroenterologia
                                                                     ========================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────┐
-│ Názov a hodnota │ Popis │
-└─────────────────┴───────┘
+┌─────────────────┬────────────┐
+│ Názov a hodnota │ Popis      │
+├─────────────────┼────────────┤
+│ _8547 = 103     │ Výkon 8547 │
+│ _8586 = 267     │ Výkon 8586 │
+│ _9101 = 343     │ Výkon 9101 │
+│ _9103 = 330     │ Výkon 9103 │
+│ _9104 = 397     │ Výkon 9104 │
+│ _9105 = 327     │ Výkon 9105 │
+│ _9106 = 354     │ Výkon 9106 │
+│ _9107 = 346     │ Výkon 9107 │
+│ _9108 = 330     │ Výkon 9108 │
+│ _9109 = 346     │ Výkon 9109 │
+└─────────────────┴────────────┘
 
 
   CENY ZA PACIENTA
@@ -20,37 +31,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│             539 │ vv.pocet*cena             │ Výkon 8506                                    │ vv.kod in ['8506']                                           │
-│             431 │ vv.pocet*cena             │ Výkon 8507                                    │ vv.kod in ['8507']                                           │
-│             485 │ vv.pocet*cena             │ Výkon 8508                                    │ vv.kod in ['8508']                                           │
-│             330 │ vv.pocet*cena             │ Výkon 8509                                    │ vv.kod in ['8509']                                           │
-│             370 │ vv.pocet*cena             │ Výkon 8510                                    │ vv.kod in ['8510']                                           │
-│             408 │ vv.pocet*cena             │ Výkon 8512                                    │ vv.kod in ['8512']                                           │
-│             316 │ vv.pocet*cena             │ Výkon 8513                                    │ vv.kod in ['8513']                                           │
-│             316 │ vv.pocet*cena             │ Výkon 8514                                    │ vv.kod in ['8514']                                           │
-│             394 │ vv.pocet*cena             │ Výkon 8516                                    │ vv.kod in ['8516']                                           │
-│             346 │ vv.pocet*cena             │ Výkon 8517                                    │ vv.kod in ['8517']                                           │
-│             486 │ vv.pocet*cena             │ Výkon 8518                                    │ vv.kod in ['8518']                                           │
-│             486 │ vv.pocet*cena             │ Výkon 8519                                    │ vv.kod in ['8519']                                           │
-│             481 │ vv.pocet*cena             │ Výkon 8520                                    │ vv.kod in ['8520']                                           │
-│             481 │ vv.pocet*cena             │ Výkon 8521                                    │ vv.kod in ['8521']                                           │
-│             481 │ vv.pocet*cena             │ Výkon 8522                                    │ vv.kod in ['8522']                                           │
-│             481 │ vv.pocet*cena             │ Výkon 8523                                    │ vv.kod in ['8523']                                           │
-│             481 │ vv.pocet*cena             │ Výkon 8524                                    │ vv.kod in ['8524']                                           │
-│             900 │ vv.pocet*cena             │ Výkon 8533                                    │ vv.kod in ['8533']                                           │
-│             890 │ vv.pocet*cena             │ Výkon 8534                                    │ vv.kod in ['8534']                                           │
-│             890 │ vv.pocet*cena             │ Výkon 8535                                    │ vv.kod in ['8535']                                           │
-│             900 │ vv.pocet*cena             │ Výkon 8536                                    │ vv.kod in ['8536']                                           │
-│             340 │ vv.pocet*cena             │ Výkon 8537                                    │ vv.kod in ['8537']                                           │
-│             481 │ vv.pocet*cena             │ Výkon 8542                                    │ vv.kod in ['8542']                                           │
-│             325 │ vv.pocet*cena             │ Výkon 8548                                    │ vv.kod in ['8548']                                           │
-│             426 │ vv.pocet*cena             │ Výkon 8549                                    │ vv.kod in ['8549']                                           │
-│             370 │ vv.pocet*cena             │ Výkon 8550                                    │ vv.kod in ['8550'] && l                                      │
-│             325 │ vv.pocet*cena             │ Výkon 8551                                    │ vv.kod in ['8551']                                           │
-│          551.28 │ vv.pocet*cena             │ Výkon 8578                                    │ vv.kod in ['8578']                                           │
-│             124 │ vv.pocet*cena             │ Výkon 9300                                    │ vv.kod in ['9300']                                           │
-│             990 │ vv.pocet*cena             │ Výkon 8534A                                   │ vv.kod in ['8534A']                                          │
-│             990 │ vv.pocet*cena             │ Výkon 8535A                                   │ vv.kod in ['8535A']                                          │
+│            null │ vv.pocet*_8547            │ Výkon 8547                                    │ vv.kod in ['8547']                                           │
+│            null │ vv.pocet*_8586            │ Výkon 8586                                    │ vv.kod in ['8586']                                           │
+│            null │ vv.pocet*_9101            │ Výkon 9101                                    │ vv.kod in ['9101']                                           │
+│            null │ vv.pocet*_9103            │ Výkon 9103                                    │ vv.kod in ['9103']                                           │
+│            null │ vv.pocet*_9104            │ Výkon 9104                                    │ vv.kod in ['9104']                                           │
+│            null │ vv.pocet*_9105            │ Výkon 9105                                    │ vv.kod in ['9105']                                           │
+│            null │ vv.pocet*_9106            │ Výkon 9106                                    │ vv.kod in ['9106']                                           │
+│            null │ vv.pocet*_9107            │ Výkon 9107                                    │ vv.kod in ['9107']                                           │
+│            null │ vv.pocet*_9108            │ Výkon 9108                                    │ vv.kod in ['9108']                                           │
+│            null │ vv.pocet*_9109            │ Výkon 9109                                    │ vv.kod in ['9109']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

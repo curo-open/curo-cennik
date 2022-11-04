@@ -1,0 +1,122 @@
+{
+	"params": {
+		"_8547": {
+			"label": "Výkon 8547",
+			"value": 103
+		},
+		"_8586": {
+			"label": "Výkon 8586",
+			"value": 267
+		},
+		"_9101": {
+			"label": "Výkon 9101",
+			"value": 343
+		},
+		"_9103": {
+			"label": "Výkon 9103",
+			"value": 330
+		},
+		"_9104": {
+			"label": "Výkon 9104",
+			"value": 397
+		},
+		"_9105": {
+			"label": "Výkon 9105",
+			"value": 327
+		},
+		"_9106": {
+			"label": "Výkon 9106",
+			"value": 354
+		},
+		"_9107": {
+			"label": "Výkon 9107",
+			"value": 346
+		},
+		"_9108": {
+			"label": "Výkon 9108",
+			"value": 330
+		},
+		"_9109": {
+			"label": "Výkon 9109",
+			"value": 346
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 8547",
+			"if": "vv.kod in ['8547']",
+			"value": null,
+			"calc": "vv.pocet*_8547",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8586",
+			"if": "vv.kod in ['8586']",
+			"value": null,
+			"calc": "vv.pocet*_8586",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9101",
+			"if": "vv.kod in ['9101']",
+			"value": null,
+			"calc": "vv.pocet*_9101",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9103",
+			"if": "vv.kod in ['9103']",
+			"value": null,
+			"calc": "vv.pocet*_9103",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9104",
+			"if": "vv.kod in ['9104']",
+			"value": null,
+			"calc": "vv.pocet*_9104",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9105",
+			"if": "vv.kod in ['9105']",
+			"value": null,
+			"calc": "vv.pocet*_9105",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9106",
+			"if": "vv.kod in ['9106']",
+			"value": null,
+			"calc": "vv.pocet*_9106",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9107",
+			"if": "vv.kod in ['9107']",
+			"value": null,
+			"calc": "vv.pocet*_9107",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9108",
+			"if": "vv.kod in ['9108']",
+			"value": null,
+			"calc": "vv.pocet*_9108",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9109",
+			"if": "vv.kod in ['9109']",
+			"value": null,
+			"calc": "vv.pocet*_9109",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gastroenterologia"
+}

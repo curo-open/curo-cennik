@@ -37,7 +37,7 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorescenčnou metódou                         │                                                              │
-│          0.0268 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['1a02060',' 1A02060','1A02077','1A03044']         │
+│          0.0268 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in [' 1A02060','1A02077','1A03044']                   │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony                                        │ vv.kod in ['4H00001','4H00004','4H00005']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │

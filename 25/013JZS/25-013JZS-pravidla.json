@@ -179,7 +179,7 @@
 		},
 		{
 			"label": "Výkon 8550",
-			"if": "vv.kod in ['8550']",
+			"if": "vv.kod in ['8550'] && l",
 			"value": 370,
 			"calc": "vv.pocet*cena",
 			"instruction": null
