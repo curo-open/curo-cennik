@@ -20,8 +20,8 @@
 			"label": "Cena bodu 50XX",
 			"value": 0.010955
 		},
-		"DO10D": {
-			"label": "Text pre fakturu Z014 do 10dni",
+		"DO10DNI": {
+			"label": "Text pre fakturu Z014 do 10dni za mesiac ${mesiac}",
 			"value": 0
 		},
 		"_120801": {

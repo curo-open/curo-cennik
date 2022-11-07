@@ -5,17 +5,17 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬────────────────────────────────┐
-│ Názov a hodnota    │ Popis                          │
-├────────────────────┼────────────────────────────────┤
-│ LIMIT = 0          │ Limit                          │
-│ CB = 0.007303      │ Cena bodu                      │
-│ CBSVALZ = 0.007303 │ Cena bodu SVALZ                │
-│ CBEU = 0.007303    │ Cena bodu EU                   │
-│ CB50XX = 0.010955  │ Cena bodu 50XX                 │
-│ DO10D = 0          │ Text pre fakturu Z014 do 10dni │
-│ _120801 = 32       │ 120801                         │
-└────────────────────┴────────────────────────────────┘
+┌────────────────────┬────────────────────────────────────────────────────┐
+│ Názov a hodnota    │ Popis                                              │
+├────────────────────┼────────────────────────────────────────────────────┤
+│ LIMIT = 0          │ Limit                                              │
+│ CB = 0.007303      │ Cena bodu                                          │
+│ CBSVALZ = 0.007303 │ Cena bodu SVALZ                                    │
+│ CBEU = 0.007303    │ Cena bodu EU                                       │
+│ CB50XX = 0.010955  │ Cena bodu 50XX                                     │
+│ DO10DNI = 0        │ Text pre fakturu Z014 do 10dni za mesiac ${mesiac} │
+│ _120801 = 32       │ 120801                                             │
+└────────────────────┴────────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA
