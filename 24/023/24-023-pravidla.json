@@ -20,6 +20,10 @@
 			"label": "Cena bodu 50XX",
 			"value": 0.010955
 		},
+		"DO10D": {
+			"label": "Text pre fakturu Z014 do 10dni",
+			"value": 0
+		},
 		"_120801": {
 			"label": 120801,
 			"value": 32
@@ -32,21 +36,21 @@
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5308.DO10']",
 			"value": 0.007969,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa:osobitna;fa_suffix:do10dni;odstran_vv_suffix:ano"
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano;fa_text:DO10D"
 		},
 		{
 			"label": "Mamografia bilaterálna",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092.DO10']",
 			"value": 0.007969,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa:osobitna;fa_suffix:do10dni;odstran_vv_suffix:ano"
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano;fa_text:DO10D"
 		},
 		{
 			"label": "Mamografia unilaterálna ",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a.DO10']",
 			"value": 0.007969,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa:osobitna;fa_suffix:do10dni;odstran_vv_suffix:ano"
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano;fa_text:DO10D"
 		},
 		{
 			"label": "Ultrazvukové vyšetrenie obidvoch prsníkov, axíl a regionálnych lymfatických uzlín.",
