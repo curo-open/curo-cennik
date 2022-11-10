@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upraven cena pre 023 pre test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/24/023/24-023-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/023/24-023-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/023/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/023/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -531,28 +530,7 @@
       <workItem from="1666096315221" duration="3800000" />
       <workItem from="1666256785700" duration="1989000" />
       <workItem from="1667538031344" duration="643000" />
-      <workItem from="1667603347130" duration="599000" />
-    </task>
-    <task id="LOCAL-00228" summary="- updates&#10;- added 804">
-      <created>1639643665222</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1639643665230</updated>
-    </task>
-    <task id="LOCAL-00229" summary="- updates&#10;- adde 040">
-      <created>1640785160094</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1640785160095</updated>
-    </task>
-    <task id="LOCAL-00230" summary="- updates">
-      <created>1641209259153</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1641209259154</updated>
+      <workItem from="1667603347130" duration="3080000" />
     </task>
     <task id="LOCAL-00231" summary="- updates 27 avls">
       <created>1643233975549</created>
@@ -876,7 +854,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667538073234</updated>
     </task>
-    <option name="localTasksCounter" value="277" />
+    <task id="LOCAL-00277" summary="- upraven spec vykazovanie">
+      <created>1667812473612</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1667812473612</updated>
+    </task>
+    <task id="LOCAL-00278" summary="- upraven spec vykazovanie">
+      <created>1667814995001</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1667814995002</updated>
+    </task>
+    <task id="LOCAL-00279" summary="- upraven cena pre 023 pre test">
+      <created>1668082941038</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1668082941038</updated>
+    </task>
+    <option name="localTasksCounter" value="280" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -920,8 +919,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- updates&#10;- adde 014" />
-    <MESSAGE value="- updates&#10;- added 001 ZDR" />
     <MESSAGE value="- 252L pre EU" />
     <MESSAGE value="- added 044" />
     <MESSAGE value="- updates, pridane PP50" />
@@ -945,7 +942,9 @@
     <MESSAGE value="- opravene 89 added under 023" />
     <MESSAGE value="- dovera pomaha" />
     <MESSAGE value="- pridane jzs" />
-    <option name="LAST_COMMIT_MESSAGE" value="- pridane jzs" />
+    <MESSAGE value="- upraven spec vykazovanie" />
+    <MESSAGE value="- upraven cena pre 023 pre test" />
+    <option name="LAST_COMMIT_MESSAGE" value="- upraven cena pre 023 pre test" />
   </component>
   <component name="masterDetails">
     <states>
