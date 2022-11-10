@@ -48,7 +48,7 @@
 		{
 			"label": "Mamografia unilaterálna ",
 			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a.DO10']",
-			"value": 0.007969,
+			"value": 1.007969,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano;fa_text:DO10D"
 		},
