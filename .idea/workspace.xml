@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upraven cena pre 023 pre test">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/023/24-023-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/023/24-023-pravidla.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,16 +64,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/daniel/Dev/obgyn.sk&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/daniel/Dev/curo/curo-parsers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -530,14 +529,7 @@
       <workItem from="1666096315221" duration="3800000" />
       <workItem from="1666256785700" duration="1989000" />
       <workItem from="1667538031344" duration="643000" />
-      <workItem from="1667603347130" duration="3080000" />
-    </task>
-    <task id="LOCAL-00231" summary="- updates 27 avls">
-      <created>1643233975549</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1643233975549</updated>
+      <workItem from="1667603347130" duration="4413000" />
     </task>
     <task id="LOCAL-00232" summary="- updated Readme">
       <created>1643619825879</created>
@@ -875,7 +867,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668082941038</updated>
     </task>
-    <option name="localTasksCounter" value="280" />
+    <task id="LOCAL-00280" summary="- reverting cena pre 023 pre test">
+      <created>1668083299756</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1668083299756</updated>
+    </task>
+    <option name="localTasksCounter" value="281" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -919,7 +918,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- 252L pre EU" />
     <MESSAGE value="- added 044" />
     <MESSAGE value="- updates, pridane PP50" />
     <MESSAGE value="- updates&#10;- added 804" />
@@ -944,7 +942,8 @@
     <MESSAGE value="- pridane jzs" />
     <MESSAGE value="- upraven spec vykazovanie" />
     <MESSAGE value="- upraven cena pre 023 pre test" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upraven cena pre 023 pre test" />
+    <MESSAGE value="- reverting cena pre 023 pre test" />
+    <option name="LAST_COMMIT_MESSAGE" value="- reverting cena pre 023 pre test" />
   </component>
   <component name="masterDetails">
     <states>
