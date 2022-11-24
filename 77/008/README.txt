@@ -21,9 +21,9 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka          │
 ├───────────────────────────┼───────────────┼──────────┼────────────────────┤
-│ do 1 roku                 │          7.49 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ od 1 do 5 rokov vratane   │          5.89 │ IDK+cena │ p|vekMedzi(1, 6)   │
-│ od 6 do 14 rokov vratane  │          4.07 │ IDK+cena │ p|vekMedzi(6, 15)  │
+│ do  1 roku                │          7.49 │ IDK+cena │ p|vekMedzi(0, 1)   │
+│ od  1 do 5 rokov vratane  │          5.89 │ IDK+cena │ p|vekMedzi(1, 6)   │
+│ od  6 do 14 rokov vratane │          4.07 │ IDK+cena │ p|vekMedzi(6, 15)  │
 │ od 15 do 18 rokov vratane │          2.57 │ IDK+cena │ p|vekMedzi(15, 19) │
 │ od 19 do 29 rokov vratane │          2.54 │ IDK+cena │ p|vekMedzi(19, 30) │
 └───────────────────────────┴───────────────┴──────────┴────────────────────┘

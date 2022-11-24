@@ -24,10 +24,10 @@ Autor: curo.sk
 │ HYPVS = 8         │ HYPVS                           │
 │ HYPKON = 5        │ HYPKON                          │
 │ HYPSTA = 4        │ HYPSTA                          │
-│ SKOR01 = 5        │ SKOR01                          │
-│ SKOR02 = 5        │ SKOR02                          │
-│ SKOR03 = 5        │ SKOR03                          │
-│ SKOR04 = 5        │ SKOR04                          │
+│ SKOR01 = 0        │ SKOR01                          │
+│ SKOR02 = 0        │ SKOR02                          │
+│ SKOR03 = 0        │ SKOR03                          │
+│ SKOR04 = 0        │ SKOR04                          │
 │ CB = 0.025402     │ Cena bodu                       │
 │ CBSVALZ = 0.0086  │ Cena bodu SVaLZ                 │
 │ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)      │

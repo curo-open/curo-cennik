@@ -53,14 +53,14 @@
 		{
 			"label": "Výkon 15b - zhodnotenie odberov",
 			"if": "vv.kod in ['15b']",
-			"value": 0.029,
+			"value": 0.0315,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.032,
+			"value": 0.0345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -81,7 +81,7 @@
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['603a','15c']",
-			"value": 0.029,
+			"value": 0.0315,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

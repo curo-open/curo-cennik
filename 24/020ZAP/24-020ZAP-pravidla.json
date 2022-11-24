@@ -120,6 +120,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
+			"if": "!p.kapitacia && p.typ in ['EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": null,
@@ -285,13 +292,6 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		}
 	],

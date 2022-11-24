@@ -65,6 +65,34 @@
 	],
 	"vykon": [
 		{
+			"label": "Nekapitovaný EU - SVALZ výkon",
+			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný EU - iné ako SVALZ",
+			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - Neodkladna statostlivost",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - Neodkladna statostlivost",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": null,
@@ -384,34 +412,6 @@
 			"if": "vv.kod in ['60']",
 			"value": 4.5,
 			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný EU - SVALZ výkon",
-			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný EU - iné ako SVALZ",
-			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - Neodkladna statostlivost",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - Neodkladna statostlivost",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		}
 	],

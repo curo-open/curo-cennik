@@ -31,21 +31,21 @@
 	},
 	"pacient": [
 		{
-			"label": "do 1 roku",
+			"label": "do  1 roku",
 			"if": "p|vekMedzi(0, 1)",
 			"value": 7.49,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "od 1 do 5 rokov vratane",
+			"label": "od  1 do 5 rokov vratane",
 			"if": "p|vekMedzi(1, 6)",
 			"value": 5.89,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "od 6 do 14 rokov vratane",
+			"label": "od  6 do 14 rokov vratane",
 			"if": "p|vekMedzi(6, 15)",
 			"value": 4.07,
 			"calc": "IDK+cena",

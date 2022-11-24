@@ -121,7 +121,7 @@
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "p.typ in ['BE','CU','EU']",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null

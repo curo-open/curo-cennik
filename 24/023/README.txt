@@ -31,7 +31,7 @@ Autor: curo.sk
 │        0.007969 │ vv.bodyCelkom*cena        │ Ultrazvukové vyšetrenie obidvoch prsníkov, ax │ vv.diagnoza=='Z01.4' && vv.kod in ['5308.DO10']              │
 │                 │                           │ íl a regionálnych lymfatických uzlín.         │                                                              │
 │        0.007969 │ vv.bodyCelkom*cena        │ Mamografia bilaterálna                        │ vv.diagnoza=='Z01.4' && vv.kod in ['5092.DO10']              │
-│        0.007969 │ vv.bodyCelkom*cena        │ Mamografia unilaterálna                       │ vv.diagnoza=='Z01.4' && vv.kod in ['5092a.DO10']             │
+│        1.007969 │ vv.bodyCelkom*cena        │ Mamografia unilaterálna                       │ vv.diagnoza=='Z01.4' && vv.kod in ['5092a.DO10']             │
 │        0.007969 │ vv.bodyCelkom*cena        │ Ultrazvukové vyšetrenie obidvoch prsníkov, ax │ vv.diagnoza=='Z01.4' && vv.kod in ['5308']                   │
 │                 │                           │ íl a regionálnych lymfatických uzlín.         │                                                              │
 │        0.007969 │ vv.bodyCelkom*cena        │ Mamografia bilaterálna                        │ vv.diagnoza=='Z01.4' && vv.kod in ['5092']                   │

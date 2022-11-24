@@ -151,7 +151,7 @@
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
@@ -441,13 +441,6 @@
 			"if": "vv.kod=='EDU'",
 			"value": null,
 			"calc": "EDU",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný EU - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		}
 	],

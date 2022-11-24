@@ -127,6 +127,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
+			"if": "!p.kapitacia && p.typ in ['EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
 			"value": null,
@@ -285,13 +292,6 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
 	],

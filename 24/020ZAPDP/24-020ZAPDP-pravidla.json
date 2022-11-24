@@ -71,6 +71,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Nekapitovaný EU - SVALZ výkon",
+			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný EU - iné ako SVALZ",
+			"if": "p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a']",
 			"value": 0.026,
@@ -292,20 +306,6 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný EU - SVALZ výkon",
-			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný EU - iné ako SVALZ",
-			"if": "p.typ in ['EU'] && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		}
 	],
