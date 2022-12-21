@@ -1,0 +1,345 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.034
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.0583
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.00861
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0345,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": 0.029,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5302",
+			"if": "vv.kod in ['5302']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5330,5531,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
+			"value": 0.00924,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['760SP','760SN','760PP','760PN']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763p','763m']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763P','763M']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "JZS",
+			"if": "vv.kod in ['8586']",
+			"value": 267,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS",
+			"if": "vv.kod in ['9104']",
+			"value": 397,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS",
+			"if": "vv.kod in ['9105']",
+			"value": 327,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['15d']",
+			"value": 0.006666,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5793,5794,5795",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8899 - Stacionár",
+			"if": "vv.kod in ['8899']",
+			"value": 14.99,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.kod in ['5300','5301','5702']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [
+		{
+			"label": "Výkony 760*, 763* sú vykázané pod zlou diagnózou",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p']",
+			"check": "vv.diagnoza in ['Z12.1']",
+			"severity": 0
+		}
+	],
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"761": [
+			{
+				"cond": "",
+				"value": 2426
+			}
+		],
+		"763": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"760sp": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760sn": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760pp": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760pn": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"763sp": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763sn": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763pp": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763pn": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763p": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"68a": [
+			{
+				"cond": "",
+				"value": 1000
+			},
+			{
+				"cond": "",
+				"value": 1000
+			}
+		]
+	},
+	"liekByCode": {
+		"62328": {
+			"price": 0.95
+		},
+		"62329": {
+			"price": 1.15
+		},
+		"7044a": {
+			"price": 133.1
+		},
+		"02578": {
+			"price": 133.1
+		},
+		"0358b": {
+			"price": 2012.24
+		}
+	},
+	"liekByAtc": {},
+	"title": "gastroenterolog"
+}

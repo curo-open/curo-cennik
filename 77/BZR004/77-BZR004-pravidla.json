@@ -1,0 +1,221 @@
+{
+	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.04
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.015
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 2.49
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 0.73
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 0.57
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0345,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0008']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5302",
+			"if": "vv.kod in ['5302']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5330,5531,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP5'",
+			"value": null,
+			"calc": "IPP5",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP6'",
+			"value": null,
+			"calc": "IPP6",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
+			"value": 0.012075,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "neurolog"
+}

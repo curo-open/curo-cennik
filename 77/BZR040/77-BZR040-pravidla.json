@@ -1,0 +1,165 @@
+{
+	"params": {
+		"CB": {
+			"label": "Vypočitaná cena bodu",
+			"value": 0.04
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.015
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.0088
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0305,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon Ine SVALZ",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon Ine SVALZ",
+			"if": "vv.kod in ['5766','5769','5770','5771']",
+			"value": 0.01275,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 80
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "imunologia"
+}

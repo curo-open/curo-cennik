@@ -1,0 +1,247 @@
+{
+	"params": {
+		"": {
+			"label": "Výkon 7006",
+			"value": null
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 8547",
+			"if": "vv.kod in ['8547']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8631",
+			"if": "vv.kod in ['8631']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8900",
+			"if": "vv.kod in ['8900']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8901",
+			"if": "vv.kod in ['8901']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8902",
+			"if": "vv.kod in ['8902']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8903",
+			"if": "vv.kod in ['8903']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8904",
+			"if": "vv.kod in ['8904']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8905",
+			"if": "vv.kod in ['8905']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8905k",
+			"if": "vv.kod in ['8905k']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8906",
+			"if": "vv.kod in ['8906']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8909",
+			"if": "vv.kod in ['8909']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8910",
+			"if": "vv.kod in ['8910']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8911",
+			"if": "vv.kod in ['8911']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8911k",
+			"if": "vv.kod in ['8911k']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8914",
+			"if": "vv.kod in ['8914']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8914k",
+			"if": "vv.kod in ['8914k']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8915",
+			"if": "vv.kod in ['8915']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8916",
+			"if": "vv.kod in ['8916']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8917",
+			"if": "vv.kod in ['8917']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8918",
+			"if": "vv.kod in ['8918']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8919",
+			"if": "vv.kod in ['8919']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8920",
+			"if": "vv.kod in ['8920']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8921",
+			"if": "vv.kod in ['8921']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8922",
+			"if": "vv.kod in ['8922']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8924",
+			"if": "vv.kod in ['8924']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8926",
+			"if": "vv.kod in ['8926']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8927",
+			"if": "vv.kod in ['8927']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8928",
+			"if": "vv.kod in ['8928']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8929",
+			"if": "vv.kod in ['8929']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8930",
+			"if": "vv.kod in ['8930']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9315",
+			"if": "vv.kod in ['9315']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9804",
+			"if": "vv.kod in ['9804']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 7006",
+			"if": "vv.kod in ['7006']",
+			"value": null,
+			"calc": "",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "urologia"
+}

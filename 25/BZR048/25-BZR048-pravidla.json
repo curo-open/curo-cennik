@@ -1,0 +1,475 @@
+{
+	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 1.19
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 2.9
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 4.9
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 4.9
+		},
+		"IPPD": {
+			"label": "IPPD",
+			"value": 5
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.02814
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.049
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.008105
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.008473
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['765p']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon ŠAS",
+			"if": "vv.kod in ['740','741','746','756','761','763','763a','765']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763P','763M']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['760SP','760SN','760PP','760PN']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763SP','763SN','763PP','763PN']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763p','763m']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['250x']",
+			"value": 2.98,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5302",
+			"if": "vv.kod in ['5302']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8899 - Stacionár",
+			"if": "vv.kod in ['8899']",
+			"value": 15.54,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS",
+			"if": "vv.kod in ['9104']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS",
+			"if": "vv.kod in ['9105']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS",
+			"if": "vv.kod in ['8586']",
+			"value": 228,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPPD'",
+			"value": null,
+			"calc": "IPPD",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": 0.0238,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [
+		{
+			"label": "Výkony 760*, 763* sú vykázané pod zlou diagnózou",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p','765p']",
+			"check": "vv.diagnoza in ['Z12.1']",
+			"severity": 0
+		}
+	],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"763P": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763M": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"760SP": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760SN": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760PP": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760PN": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"763SP": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763SN": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763PP": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763PN": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763m": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763p": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"760sp": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760sn": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760pp": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760pn": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"763sp": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763sn": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763pp": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763pn": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"68a": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		]
+	},
+	"liekByCode": {
+		"62328": {
+			"price": 0.95
+		},
+		"62329": {
+			"price": 1.15
+		},
+		"7044a": {
+			"price": 133.1
+		},
+		"02578": {
+			"price": 133.1
+		},
+		"0358b": {
+			"price": 2012.24
+		}
+	},
+	"liekByAtc": {},
+	"title": "gastroenterolog"
+}

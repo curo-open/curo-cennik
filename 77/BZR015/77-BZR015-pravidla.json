@@ -1,0 +1,145 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.04
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.0455
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.015
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['65']",
+			"value": 0.0224,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['15d']",
+			"value": 0.006666,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.kod in ['5300','5301','5702']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vykony 5793,5794,5795",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"741": [
+			{
+				"cond": "",
+				"value": 3292
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "oftalmo"
+}
