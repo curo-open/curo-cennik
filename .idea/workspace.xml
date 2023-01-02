@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added soc for jzs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/24/804/24-804-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/804/README.txt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/89/89UAS/README.txt" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -64,16 +65,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/daniel/Dev/curo/curo-parsers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/daniel/Dev/curo/curo-parsers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -529,35 +530,11 @@
       <workItem from="1666096315221" duration="3800000" />
       <workItem from="1666256785700" duration="1989000" />
       <workItem from="1667538031344" duration="643000" />
-      <workItem from="1667603347130" duration="4413000" />
-    </task>
-    <task id="LOCAL-00232" summary="- updated Readme">
-      <created>1643619825879</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1643619825879</updated>
-    </task>
-    <task id="LOCAL-00233" summary="- updated deram">
-      <created>1643722468214</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1643722468214</updated>
-    </task>
-    <task id="LOCAL-00234" summary="- updates&#10;- adde 144">
-      <created>1643794185109</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1643794185109</updated>
-    </task>
-    <task id="LOCAL-00235" summary="- updates">
-      <created>1643879563745</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1643879563745</updated>
+      <workItem from="1667603347130" duration="6130000" />
+      <workItem from="1669291235927" duration="1281000" />
+      <workItem from="1671536423868" duration="2862000" />
+      <workItem from="1672153019111" duration="2992000" />
+      <workItem from="1672413909688" duration="3029000" />
     </task>
     <task id="LOCAL-00236" summary="- updates">
       <created>1644995717366</created>
@@ -874,7 +851,35 @@
       <option name="project" value="LOCAL" />
       <updated>1668083299756</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="- added soc for jzs">
+      <created>1668166127465</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1668166127465</updated>
+    </task>
+    <task id="LOCAL-00282" summary="- update">
+      <created>1669291943927</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1669291943927</updated>
+    </task>
+    <task id="LOCAL-00283" summary="- added bzr">
+      <created>1671653818506</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1671653818506</updated>
+    </task>
+    <task id="LOCAL-00284" summary="- added bzr">
+      <created>1671656682776</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1671656682776</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -918,9 +923,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- added 044" />
-    <MESSAGE value="- updates, pridane PP50" />
-    <MESSAGE value="- updates&#10;- added 804" />
     <MESSAGE value="- updates&#10;- adde 040" />
     <MESSAGE value="- updates 27 avls" />
     <MESSAGE value="- updated Readme" />
@@ -943,7 +945,10 @@
     <MESSAGE value="- upraven spec vykazovanie" />
     <MESSAGE value="- upraven cena pre 023 pre test" />
     <MESSAGE value="- reverting cena pre 023 pre test" />
-    <option name="LAST_COMMIT_MESSAGE" value="- reverting cena pre 023 pre test" />
+    <MESSAGE value="- added soc for jzs" />
+    <MESSAGE value="- update" />
+    <MESSAGE value="- added bzr" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added bzr" />
   </component>
   <component name="masterDetails">
     <states>

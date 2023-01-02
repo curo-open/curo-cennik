@@ -36,6 +36,7 @@ Autor: curo.sk
 │          0.0081 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
 │                 │                           │                                               │ '5309','5310','5312','5315','5316','5742','5743','5739','573 │
 │                 │                           │                                               │ 8','5153a']                                                  │
+│              30 │ vv.pocet*cena             │ Skríningová mamografia                        │ vv.kod in ['1301','1301a','1301b','1301c','1301d','1301e']   │
 │            null │ X03501                    │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='X03501'                                             │
 │            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

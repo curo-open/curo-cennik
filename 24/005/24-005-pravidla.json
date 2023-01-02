@@ -2,11 +2,11 @@
 	"params": {
 		"LIMIT": {
 			"label": "Limit",
-			"value": 2235
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.031988
+			"value": 0.029769
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -20,52 +20,24 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
-			"value": 0.011593,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 532;533a;540;541;542",
-			"if": "vv.kod in ['532','533a','540','541','542']",
-			"value": 0.011593,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['60']",
-			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['62']",
+			"label": "Výkon 820;821;822;825;841",
+			"if": "vv.kod in ['820','821','822','825','841','847']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['63']",
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763sp;763sn",
-			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn','763sp','763sn']",
-			"value": 0.0462,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*CBE",
 			"instruction": null
 		},
 		{

@@ -102,6 +102,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Skríningová mamografia",
+			"if": "vv.kod in ['1301','1301a','1301b','1301c','1301d','1301e']",
+			"value": 30,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky  - Bioptická ihla",
 			"if": "vv.kod=='120801'",
 			"value": null,

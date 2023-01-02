@@ -16,6 +16,10 @@
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.03
 		},
+		"CBEK": {
+			"label": "Cena bodu el. výkony",
+			"value": 0.03
+		},
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
@@ -82,21 +86,21 @@
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEK",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEK",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEK",
 			"instruction": null
 		},
 		{
@@ -110,7 +114,7 @@
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEK",
 			"instruction": null
 		},
 		{
