@@ -11,7 +11,7 @@ Autor: curo.sk
 │ LIMIT = 0         │ Limit                │
 │ CB = 0.029769     │ Cena bodu            │
 │ CBSVALZ = 0.00865 │ Cena bodu SVaLZ      │
-│ CBE = 0.27        │ Cena bodu el. výkony │
+│ CBE = 0.027       │ Cena bodu el. výkony │
 └───────────────────┴──────────────────────┘
 
 
