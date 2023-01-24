@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added soc for jzs">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates 005">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +67,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/daniel/Dev/curo/curo-parsers&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -534,21 +536,11 @@
       <workItem from="1669291235927" duration="1281000" />
       <workItem from="1671536423868" duration="2862000" />
       <workItem from="1672153019111" duration="2992000" />
-      <workItem from="1672413909688" duration="3029000" />
-    </task>
-    <task id="LOCAL-00236" summary="- updates">
-      <created>1644995717366</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1644995717366</updated>
-    </task>
-    <task id="LOCAL-00237" summary="- updates">
-      <created>1646742897764</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
-      <option name="project" value="LOCAL" />
-      <updated>1646742897764</updated>
+      <workItem from="1672413909688" duration="4268000" />
+      <workItem from="1672943322031" duration="696000" />
+      <workItem from="1673043079299" duration="2462000" />
+      <workItem from="1673382747682" duration="594000" />
+      <workItem from="1673435530136" duration="2776000" />
     </task>
     <task id="LOCAL-00238" summary="- updates">
       <created>1646743789391</created>
@@ -879,7 +871,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671656682776</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="- updates&#10;- added 271">
+      <created>1672700426928</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1672700426928</updated>
+    </task>
+    <task id="LOCAL-00286" summary="- updates 005">
+      <created>1673258350372</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1673258350372</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -923,8 +929,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- updates&#10;- adde 040" />
-    <MESSAGE value="- updates 27 avls" />
     <MESSAGE value="- updated Readme" />
     <MESSAGE value="- updated deram" />
     <MESSAGE value="- updates&#10;- adde 144" />
@@ -948,7 +952,9 @@
     <MESSAGE value="- added soc for jzs" />
     <MESSAGE value="- update" />
     <MESSAGE value="- added bzr" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added bzr" />
+    <MESSAGE value="- updates&#10;- added 271" />
+    <MESSAGE value="- updates 005" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates 005" />
   </component>
   <component name="masterDetails">
     <states>

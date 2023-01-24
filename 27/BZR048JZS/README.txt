@@ -5,20 +5,9 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬────────────┐
-│ Názov a hodnota │ Popis      │
-├─────────────────┼────────────┤
-│ _8547 = 103     │ Výkon 8547 │
-│ _8586 = 267     │ Výkon 8586 │
-│ _9101 = 343     │ Výkon 9101 │
-│ _9103 = 330     │ Výkon 9103 │
-│ _9104 = 397     │ Výkon 9104 │
-│ _9105 = 327     │ Výkon 9105 │
-│ _9106 = 354     │ Výkon 9106 │
-│ _9107 = 346     │ Výkon 9107 │
-│ _9108 = 330     │ Výkon 9108 │
-│ _9109 = 346     │ Výkon 9109 │
-└─────────────────┴────────────┘
+┌─────────────────┬───────┐
+│ Názov a hodnota │ Popis │
+└─────────────────┴───────┘
 
 
   CENY ZA PACIENTA
@@ -31,16 +20,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.pocet*_8547            │ Výkon 8547                                    │ vv.kod in ['8547']                                           │
-│            null │ vv.pocet*_8586            │ Výkon 8586                                    │ vv.kod in ['8586']                                           │
-│            null │ vv.pocet*_9101            │ Výkon 9101                                    │ vv.kod in ['9101']                                           │
-│            null │ vv.pocet*_9103            │ Výkon 9103                                    │ vv.kod in ['9103']                                           │
-│            null │ vv.pocet*_9104            │ Výkon 9104                                    │ vv.kod in ['9104']                                           │
-│            null │ vv.pocet*_9105            │ Výkon 9105                                    │ vv.kod in ['9105']                                           │
-│            null │ vv.pocet*_9106            │ Výkon 9106                                    │ vv.kod in ['9106']                                           │
-│            null │ vv.pocet*_9107            │ Výkon 9107                                    │ vv.kod in ['9107']                                           │
-│            null │ vv.pocet*_9108            │ Výkon 9108                                    │ vv.kod in ['9108']                                           │
-│            null │ vv.pocet*_9109            │ Výkon 9109                                    │ vv.kod in ['9109']                                           │
+│             340 │ vv.pocet*cena             │ Výkon 9109                                    │ vv.kod in ['9109']                                           │
+│             267 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['8586']                                           │
+│             386 │ vv.pocet*cena             │ Výkon 9104                                    │ vv.kod in ['9104']                                           │
+│             340 │ vv.pocet*cena             │ Výkon 9107                                    │ vv.kod in ['9107']                                           │
+│             321 │ vv.pocet*cena             │ Výkon 9105                                    │ vv.kod in ['9105']                                           │
+│             330 │ vv.pocet*cena             │ Výkon 9108                                    │ vv.kod in ['9108']                                           │
+│             354 │ vv.pocet*cena             │ Výkon 9106                                    │ vv.kod in ['9106']                                           │
+│             343 │ vv.pocet*cena             │ Výkon 9101                                    │ vv.kod in ['9101']                                           │
+│             330 │ vv.pocet*cena             │ Výkon 9103                                    │ vv.kod in ['9103']                                           │
+│             100 │ vv.pocet*cena             │ Výkon 8547                                    │ vv.kod in ['8547']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
