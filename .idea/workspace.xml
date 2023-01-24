@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates 005">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -541,13 +539,7 @@
       <workItem from="1673043079299" duration="2462000" />
       <workItem from="1673382747682" duration="594000" />
       <workItem from="1673435530136" duration="2776000" />
-    </task>
-    <task id="LOCAL-00238" summary="- updates">
-      <created>1646743789391</created>
-      <option name="number" value="00238" />
-      <option name="presentableId" value="LOCAL-00238" />
-      <option name="project" value="LOCAL" />
-      <updated>1646743789391</updated>
+      <workItem from="1674602008928" duration="660000" />
     </task>
     <task id="LOCAL-00239" summary="- updates ZAP">
       <created>1646814757235</created>
@@ -885,7 +877,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673258350372</updated>
     </task>
-    <option name="localTasksCounter" value="287" />
+    <task id="LOCAL-00287" summary="- updates for bzr">
+      <created>1674602057637</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1674602057637</updated>
+    </task>
+    <option name="localTasksCounter" value="288" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -929,7 +928,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- updated Readme" />
     <MESSAGE value="- updated deram" />
     <MESSAGE value="- updates&#10;- adde 144" />
     <MESSAGE value="- updates ZAP" />
@@ -954,7 +952,8 @@
     <MESSAGE value="- added bzr" />
     <MESSAGE value="- updates&#10;- added 271" />
     <MESSAGE value="- updates 005" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates 005" />
+    <MESSAGE value="- updates for bzr" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates for bzr" />
   </component>
   <component name="masterDetails">
     <states>
