@@ -32,11 +32,11 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0295 │ vv.bodyCelkom*cena        │ Výkon 250a, 250b - odbery                     │ vv.kod in ['250a','250b']                                    │
-│          0.0315 │ vv.bodyCelkom*cena        │ Výkon 15b - zhodnotenie odberov               │ vv.kod in ['15b']                                            │
-│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.034 │ vv.bodyCelkom*cena        │ Výkon 15b - zhodnotenie odberov               │ vv.kod in ['15b']                                            │
+│           0.037 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │         0.00924 │ vv.bodyCelkom*cena        │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │         0.00861 │ vv.bodyCelkom*cena        │ Ergometria                                    │ vv.kod in ['5708']                                           │
-│          0.0315 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['603a','15c']                                     │
+│           0.034 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['603a','15c']                                     │
 │         0.00861 │ vv.bodyCelkom*cena        │ Ekg holter                                    │ vv.kod in ['5712','5713','5714']                             │
 │           0.032 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │

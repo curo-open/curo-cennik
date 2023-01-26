@@ -34,6 +34,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           0.035 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CB          │ Výkon 820;821;822;825;841                     │ vv.kod in ['820','821','822','825','841','847']              │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

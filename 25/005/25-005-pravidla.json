@@ -65,6 +65,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 820;821;822;825;841",
+			"if": "vv.kod in ['820','821','822','825','841','847']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
