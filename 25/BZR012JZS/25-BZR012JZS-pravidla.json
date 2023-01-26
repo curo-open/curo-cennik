@@ -4,8 +4,190 @@
 	"vykon": [
 		{
 			"label": "Výkon 99999",
-			"if": "vv.kod in ['99999'] && vv.kod in ['99999']",
+			"if": "vv.kod in ['99999'] || vv.kod in ['99999']",
 			"value": 1,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8631",
+			"if": "vv.kod in ['8631'] || vv.k in ['8361'] || vv.k25in ['8631']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8631A",
+			"if": "vv.kod in ['8631A'] || vv.k in ['8361A'] || vv.k25in ['8631A']",
+			"value": 900,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8900",
+			"if": "vv.kod in ['8900'] || vv.k in ['8900'] || vv.k25in ['8900']",
+			"value": 355,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8901",
+			"if": "vv.kod in ['8901'] || vv.k in ['8901'] || vv.k25in ['8901']",
+			"value": 355,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8902",
+			"if": "vv.kod in ['8902'] || vv.k in ['8902'] || vv.k25in ['8902']",
+			"value": 241,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8903",
+			"if": "vv.kod in ['8903'] || vv.k in ['8903'] || vv.k25in ['8903']",
+			"value": 373,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8905",
+			"if": "vv.kod in ['8905'] || vv.k in ['8905'] || vv.k25in ['8905']",
+			"value": 315,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8909",
+			"if": "vv.kod in ['8909'] || vv.k in ['8909'] || vv.k25in ['8909']",
+			"value": 297,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8910",
+			"if": "vv.kod in ['8910'] || vv.k in ['8910'] || vv.k25in ['8910']",
+			"value": 209,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8911",
+			"if": "vv.kod in ['8911'] || vv.k in ['8911'] || vv.k25in ['8911']",
+			"value": 355,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8912",
+			"if": "vv.kod in ['8912'] || vv.k in ['8912'] || vv.k25in ['8912']",
+			"value": 355,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8914",
+			"if": "vv.kod in ['8914'] || vv.k in ['8914'] || vv.k25in ['8914']",
+			"value": 345,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8915",
+			"if": "vv.kod in ['8915'] || vv.k in ['8915'] || vv.k25in ['8915']",
+			"value": 242,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9315",
+			"if": "vv.kod in ['9315'] || vv.k in ['9315'] || vv.k25in ['9315']",
+			"value": 345,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8916",
+			"if": "vv.kod in ['8916'] || vv.k in ['8916'] || vv.k25in ['8916']",
+			"value": 289,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8917",
+			"if": "vv.kod in ['8917'] || vv.k in ['8917'] || vv.k25in ['8917']",
+			"value": 201,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8918",
+			"if": "vv.kod in ['8918'] || vv.k in ['8918'] || vv.k25in ['8918']",
+			"value": 144,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8919",
+			"if": "vv.kod in ['8919'] || vv.k in ['8919'] || vv.k25in ['8919']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8920",
+			"if": "vv.kod in ['8920'] || vv.k in ['8920'] || vv.k25in ['8920']",
+			"value": 249,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8921",
+			"if": "vv.kod in ['8921'] || vv.k in ['8921'] || vv.k25in ['8921']",
+			"value": 204,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8922",
+			"if": "vv.kod in ['8922'] || vv.k in ['8922'] || vv.k25in ['8922']",
+			"value": 105,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8924",
+			"if": "vv.kod in ['8924'] || vv.k in ['8924'] || vv.k25in ['8924']",
+			"value": 134,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8926",
+			"if": "vv.kod in ['8926'] || vv.k in ['8926'] || vv.k25in ['8926']",
+			"value": 280,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8927",
+			"if": "vv.kod in ['8927'] || vv.k in ['8927'] || vv.k25in ['8927']",
+			"value": 345,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8928",
+			"if": "vv.kod in ['8928'] || vv.k in ['8928'] || vv.k25in ['8928']",
+			"value": 124,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8929",
+			"if": "vv.kod in ['8929'] || vv.k in ['8929'] || vv.k25in ['8929']",
+			"value": 214,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

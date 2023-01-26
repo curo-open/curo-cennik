@@ -4,70 +4,70 @@
 	"vykon": [
 		{
 			"label": "Výkon 9109",
-			"if": "vv.k in ['9109'] || vv.k27 in ['9109']",
+			"if": "vv.kod in ['9109'] || vv.k in ['9109'] || vv.k27 in ['9109']",
 			"value": 346,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8586",
-			"if": "vv.k in ['8586'] || vv.k27 in ['8586']",
+			"if": "vv.kod in ['8586'] || vv.k in ['8586'] || vv.k27 in ['8586']",
 			"value": 267,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9104",
-			"if": "vv.k in ['9104'] || vv.k27 in ['9104']",
+			"if": "vv.kod in ['9104'] || vv.k in ['9104'] || vv.k27 in ['9104']",
 			"value": 397,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9107",
-			"if": "vv.k in ['9107'] || vv.k27 in ['9107']",
+			"if": "vv.kod in ['9107'] || vv.k in ['9107'] || vv.k27 in ['9107']",
 			"value": 346,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9105",
-			"if": "vv.k in ['9105'] || vv.k27 in ['9105']",
+			"if": "vv.kod in ['9105'] || vv.k in ['9105'] || vv.k27 in ['9105']",
 			"value": 327,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9108",
-			"if": "vv.k in ['9108'] || vv.k27 in ['9108']",
+			"if": "vv.kod in ['9108'] || vv.k in ['9108'] || vv.k27 in ['9108']",
 			"value": 330,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9106",
-			"if": "vv.k in ['9106'] || vv.k27 in ['9106']",
+			"if": "vv.kod in ['9106'] || vv.k in ['9106'] || vv.k27 in ['9106']",
 			"value": 354,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9101",
-			"if": "vv.k in ['9101'] || vv.k27 in ['9101']",
+			"if": "vv.kod in ['9101'] || vv.k in ['9101'] || vv.k27 in ['9101']",
 			"value": 343,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9103",
-			"if": "vv.k in ['9103'] || vv.k27 in ['9103']",
+			"if": "vv.kod in ['9103'] || vv.k in ['9103'] || vv.k27 in ['9103']",
 			"value": 330,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8547",
-			"if": "vv.k in ['8547'] || vv.k27 in ['8547']",
+			"if": "vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547']",
 			"value": 103,
 			"calc": "vv.pocet*cena",
 			"instruction": null
