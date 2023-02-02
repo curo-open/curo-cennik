@@ -133,21 +133,21 @@
 		},
 		{
 			"label": "JZS",
-			"if": "vv.kod in ['9104']",
+			"if": "vv.kod in ['9104'] || vv.k in ['9104'] || vv.k24 in ['9104']",
 			"value": 365,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
-			"if": "vv.kod in ['9105']",
+			"if": "vv.kod in ['9105'] || vv.k in ['9105'] || vv.k24 in ['9105']",
 			"value": 320,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
-			"if": "vv.kod in ['8586']",
+			"if": "vv.kod in ['8586'] || vv.k in ['8586'] || vv.k24 in ['8586']",
 			"value": 255,
 			"calc": "vv.pocet*cena",
 			"instruction": null

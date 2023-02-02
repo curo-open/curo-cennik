@@ -37,9 +37,9 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p','763m']                                    │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
-│             267 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
-│             397 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
-│             327 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
+│             267 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k27 in ['8586'] │
+│             397 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104'] || vv.k in ['9104'] || vv.k27 in ['9104'] │
+│             327 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105'] || vv.k in ['9105'] || vv.k27 in ['9105'] │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │        0.012083 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
 │           14.99 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
