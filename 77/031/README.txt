@@ -1,24 +1,19 @@
-                                                                    ========================
-                                                                    Cenník gastroenterologia
-                                                                    ========================
+                                                                       ==================
+                                                                       Cenník hematologia
+                                                                       ==================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬────────────┐
-│ Názov a hodnota │ Popis      │
-├─────────────────┼────────────┤
-│ _8547 = 103     │ Výkon 8547 │
-│ _8586 = 267     │ Výkon 8586 │
-│ _9101 = 343     │ Výkon 9101 │
-│ _9103 = 330     │ Výkon 9103 │
-│ _9104 = 397     │ Výkon 9104 │
-│ _9105 = 327     │ Výkon 9105 │
-│ _9106 = 354     │ Výkon 9106 │
-│ _9107 = 346     │ Výkon 9107 │
-│ _9108 = 330     │ Výkon 9108 │
-│ _9109 = 346     │ Výkon 9109 │
-└─────────────────┴────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ CB = 0.014938     │ Cena bodu       │
+│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
+│ IPP1 = 0          │ IPP1            │
+│ IPP2 = 0          │ IPP2            │
+│ IPP3 = 0          │ IPP3            │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -31,22 +26,28 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.pocet*_8547            │ Výkon 8547                                    │ vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547'] │
-│            null │ vv.pocet*_8586            │ Výkon 8586                                    │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k27 in ['8586'] │
-│            null │ vv.pocet*_9101            │ Výkon 9101                                    │ vv.kod in ['9101'] || vv.k in ['9101'] || vv.k27 in ['9101'] │
-│            null │ vv.pocet*_9103            │ Výkon 9103                                    │ vv.kod in ['9103'] || vv.k in ['9103'] || vv.k27 in ['9103'] │
-│            null │ vv.pocet*_9104            │ Výkon 9104                                    │ vv.kod in ['9104'] || vv.k in ['9104'] || vv.k27 in ['9104'] │
-│            null │ vv.pocet*_9105            │ Výkon 9105                                    │ vv.kod in ['9105'] || vv.k in ['9105'] || vv.k27 in ['9105'] │
-│            null │ vv.pocet*_9106            │ Výkon 9106                                    │ vv.kod in ['9106'] || vv.k in ['9106'] || vv.k27 in ['9106'] │
-│            null │ vv.pocet*_9107            │ Výkon 9107                                    │ vv.kod in ['9107'] || vv.k in ['9107'] || vv.k27 in ['9107'] │
-│            null │ vv.pocet*_9108            │ Výkon 9108                                    │ vv.kod in ['9108'] || vv.k in ['9108'] || vv.k27 in ['9108'] │
-│            null │ vv.pocet*_9109            │ Výkon 9109                                    │ vv.kod in ['9109'] || vv.k in ['9109'] || vv.k27 in ['9109'] │
+│           0.029 │ vv.bodyCelkom*cena        │ Výkon  250b,252 - odbery                      │ vv.kod in ['250b','252']                                     │
+│           0.029 │ vv.bodyCelkom*cena        │ Výkon 15b - zhodnotenie odberov               │ vv.kod in ['15b']                                            │
+│           0.032 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','70']                                        │
+│           0.029 │ vv.bodyCelkom*cena        │ Lekárska správa                               │ vv.kod in ['78b']                                            │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             420 │ 60                                                                                                        │                           │
+│             270 │ 62                                                                                                        │                           │
+│             210 │ 63                                                                                                        │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
