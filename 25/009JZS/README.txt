@@ -47,57 +47,57 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.pocet*_ 8572           │ Výkon 8572                                    │ vv.kod in [' 8572'] || vv.k in ['8572'] || vv.k25 in ['8572' │
+│            null │ vv.pocet*_8572            │ Výkon 8572                                    │ vv.kod in [' 8572'] || vv.k in ['8572'] || vv.k25 in ['8572' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8576           │ Výkon 8576                                    │ vv.kod in [' 8576'] || vv.k in ['8576'] || vv.k25 in ['8576' │
+│            null │ vv.pocet*_8576            │ Výkon 8576                                    │ vv.kod in [' 8576'] || vv.k in ['8576'] || vv.k25 in ['8576' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8611           │ Výkon 8611                                    │ vv.kod in [' 8611'] || vv.k in ['8611'] || vv.k25 in ['8611' │
+│            null │ vv.pocet*_8611            │ Výkon 8611                                    │ vv.kod in [' 8611'] || vv.k in ['8611'] || vv.k25 in ['8611' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8612           │ Výkon 8612                                    │ vv.kod in [' 8612'] || vv.k in ['8612'] || vv.k25 in ['8612' │
+│            null │ vv.pocet*_8612            │ Výkon 8612                                    │ vv.kod in [' 8612'] || vv.k in ['8612'] || vv.k25 in ['8612' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8613           │ Výkon 8613                                    │ vv.kod in [' 8613'] || vv.k in ['8613'] || vv.k25 in ['8613' │
+│            null │ vv.pocet*_8613            │ Výkon 8613                                    │ vv.kod in [' 8613'] || vv.k in ['8613'] || vv.k25 in ['8613' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8619           │ Výkon 8619                                    │ vv.kod in [' 8619'] || vv.k in ['8619'] || vv.k25 in ['8619' │
+│            null │ vv.pocet*_8619            │ Výkon 8619                                    │ vv.kod in [' 8619'] || vv.k in ['8619'] || vv.k25 in ['8619' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8620           │ Výkon 8620                                    │ vv.kod in [' 8620'] || vv.k in ['8620'] || vv.k25 in ['8620' │
+│            null │ vv.pocet*_8620            │ Výkon 8620                                    │ vv.kod in [' 8620'] || vv.k in ['8620'] || vv.k25 in ['8620' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8623           │ Výkon 8623                                    │ vv.kod in [' 8623'] || vv.k in ['8623'] || vv.k25 in ['8623' │
+│            null │ vv.pocet*_8623            │ Výkon 8623                                    │ vv.kod in [' 8623'] || vv.k in ['8623'] || vv.k25 in ['8623' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8624           │ Výkon 8624                                    │ vv.kod in [' 8624'] || vv.k in ['8624'] || vv.k25 in ['8624' │
+│            null │ vv.pocet*_8624            │ Výkon 8624                                    │ vv.kod in [' 8624'] || vv.k in ['8624'] || vv.k25 in ['8624' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8625           │ Výkon 8625                                    │ vv.kod in [' 8625'] || vv.k in ['8625'] || vv.k25 in ['8625' │
+│            null │ vv.pocet*_8625            │ Výkon 8625                                    │ vv.kod in [' 8625'] || vv.k in ['8625'] || vv.k25 in ['8625' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8626           │ Výkon 8626                                    │ vv.kod in [' 8626'] || vv.k in ['8626'] || vv.k25 in ['8626' │
+│            null │ vv.pocet*_8626            │ Výkon 8626                                    │ vv.kod in [' 8626'] || vv.k in ['8626'] || vv.k25 in ['8626' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8627           │ Výkon 8627                                    │ vv.kod in [' 8627'] || vv.k in ['8627'] || vv.k25 in ['8627' │
+│            null │ vv.pocet*_8627            │ Výkon 8627                                    │ vv.kod in [' 8627'] || vv.k in ['8627'] || vv.k25 in ['8627' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8628           │ Výkon 8628                                    │ vv.kod in [' 8628'] || vv.k in ['8628'] || vv.k25 in ['8628' │
+│            null │ vv.pocet*_8628            │ Výkon 8628                                    │ vv.kod in [' 8628'] || vv.k in ['8628'] || vv.k25 in ['8628' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8629           │ Výkon 8629                                    │ vv.kod in [' 8629'] || vv.k in ['8629'] || vv.k25 in ['8629' │
+│            null │ vv.pocet*_8629            │ Výkon 8629                                    │ vv.kod in [' 8629'] || vv.k in ['8629'] || vv.k25 in ['8629' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8630           │ Výkon 8630                                    │ vv.kod in [' 8630'] || vv.k in ['8630'] || vv.k25 in ['8630' │
+│            null │ vv.pocet*_8630            │ Výkon 8630                                    │ vv.kod in [' 8630'] || vv.k in ['8630'] || vv.k25 in ['8630' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8631           │ Výkon 8631                                    │ vv.kod in [' 8631'] || vv.k in ['8631'] || vv.k25 in ['8631' │
+│            null │ vv.pocet*_8631            │ Výkon 8631                                    │ vv.kod in [' 8631'] || vv.k in ['8631'] || vv.k25 in ['8631' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8634           │ Výkon 8634                                    │ vv.kod in [' 8634'] || vv.k in ['8634'] || vv.k25 in ['8634' │
+│            null │ vv.pocet*_8634            │ Výkon 8634                                    │ vv.kod in [' 8634'] || vv.k in ['8634'] || vv.k25 in ['8634' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8635           │ Výkon 8635                                    │ vv.kod in [' 8635'] || vv.k in ['8635'] || vv.k25 in ['8635' │
+│            null │ vv.pocet*_8635            │ Výkon 8635                                    │ vv.kod in [' 8635'] || vv.k in ['8635'] || vv.k25 in ['8635' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8640           │ Výkon 8640                                    │ vv.kod in [' 8640'] || vv.k in ['8640'] || vv.k25 in ['8640' │
+│            null │ vv.pocet*_8640            │ Výkon 8640                                    │ vv.kod in [' 8640'] || vv.k in ['8640'] || vv.k25 in ['8640' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8641           │ Výkon 8641                                    │ vv.kod in [' 8641'] || vv.k in ['8641'] || vv.k25 in ['8641' │
+│            null │ vv.pocet*_8641            │ Výkon 8641                                    │ vv.kod in [' 8641'] || vv.k in ['8641'] || vv.k25 in ['8641' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8642           │ Výkon 8642                                    │ vv.kod in [' 8642'] || vv.k in ['8642'] || vv.k25 in ['8642' │
+│            null │ vv.pocet*_8642            │ Výkon 8642                                    │ vv.kod in [' 8642'] || vv.k in ['8642'] || vv.k25 in ['8642' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8643           │ Výkon 8643                                    │ vv.kod in [' 8643'] || vv.k in ['8643'] || vv.k25 in ['8643' │
+│            null │ vv.pocet*_8643            │ Výkon 8643                                    │ vv.kod in [' 8643'] || vv.k in ['8643'] || vv.k25 in ['8643' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8660A          │ Výkon 8660A                                   │ vv.kod in [' 8660A'] || vv.k in ['8660A'] || vv.k25 in ['866 │
+│            null │ vv.pocet*_8660A           │ Výkon 8660A                                   │ vv.kod in [' 8660A'] || vv.k in ['8660A'] || vv.k25 in ['866 │
 │                 │                           │                                               │ 0']                                                          │
-│            null │ vv.pocet*_ 8662A          │ Výkon 8662A                                   │ vv.kod in [' 8662A'] || vv.k in ['8662A'] || vv.k25 in ['866 │
+│            null │ vv.pocet*_8662A           │ Výkon 8662A                                   │ vv.kod in [' 8662A'] || vv.k in ['8662A'] || vv.k25 in ['866 │
 │                 │                           │                                               │ 2A']                                                         │
-│            null │ vv.pocet*_ 8664           │ Výkon 8664                                    │ vv.kod in [' 8664'] || vv.k in ['8664'] || vv.k25 in ['8664' │
+│            null │ vv.pocet*_8664            │ Výkon 8664                                    │ vv.kod in [' 8664'] || vv.k in ['8664'] || vv.k25 in ['8664' │
 │                 │                           │                                               │ ]                                                            │
-│            null │ vv.pocet*_ 8643A          │ Výkon 8643A                                   │ vv.kod in [' 8643A'] || vv.k in ['8643A'] || vv.k25 in ['864 │
+│            null │ vv.pocet*_8643A           │ Výkon 8643A                                   │ vv.kod in [' 8643A'] || vv.k in ['8643A'] || vv.k25 in ['864 │
 │                 │                           │                                               │ 3A']                                                         │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
