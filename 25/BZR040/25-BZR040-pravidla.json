@@ -26,15 +26,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02814
+			"value": 0.0318
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		}
 	},
 	"pacient": [],
@@ -76,8 +76,8 @@
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in [' 1A02060','1A02077','1A03044']",
-			"value": 0.0268,
+			"if": "vv.kod in [' 1A02060','1A02077','1A03044','1A01033']",
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -243,6 +243,30 @@
 			{
 				"cond": "",
 				"value": 2400
+			}
+		],
+		"1A01033": [
+			{
+				"cond": "",
+				"value": 525
+			}
+		],
+		"1A02060": [
+			{
+				"cond": "",
+				"value": 340
+			}
+		],
+		"1A02077": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"1A03044": [
+			{
+				"cond": "",
+				"value": 260
 			}
 		]
 	},

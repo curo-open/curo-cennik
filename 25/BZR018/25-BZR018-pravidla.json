@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02814
+			"value": 0.0318
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -10,11 +10,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZP": {
 			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
-			"value": 0.008473
+			"value": 0.009574
 		},
 		"IPP1": {
 			"label": "IPP1",

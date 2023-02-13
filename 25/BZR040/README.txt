@@ -14,9 +14,9 @@ Autor: curo.sk
 │ IPP4 = 7.9            │ IPP4                │
 │ IPPD = 5              │ IPPD                │
 │ LIMIT = 0             │ Limit               │
-│ CB = 0.02814          │ Cena bodu           │
-│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ     │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG │
+│ CB = 0.0318           │ Cena bodu           │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ     │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
 └───────────────────────┴─────────────────────┘
 
 
@@ -37,7 +37,7 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorescenčnou metódou                         │                                                              │
-│          0.0268 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in [' 1A02060','1A02077','1A03044']                   │
+│          0.0318 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in [' 1A02060','1A02077','1A03044','1A01033']         │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony                                        │ vv.kod in ['4H00001','4H00004','4H00005']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
@@ -69,6 +69,10 @@ Autor: curo.sk
 │             210 │ 11a                                                                                                       │                           │
 │            1200 │ 4H00001                                                                                                   │                           │
 │            2400 │ 4H00004                                                                                                   │                           │
+│             525 │ 1A01033                                                                                                   │                           │
+│             340 │ 1A02060                                                                                                   │                           │
+│             900 │ 1A02077                                                                                                   │                           │
+│             260 │ 1A03044                                                                                                   │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

@@ -278,7 +278,7 @@
 		{
 			"label": "Výkon 8501B",
 			"if": "vv.kod in ['8501B'] || vv.k in ['8501'] || vv.k25 in ['8501']",
-			"value": null,
+			"value": null,W
 			"calc": "vv.pocet*_8501B",
 			"instruction": null
 		},

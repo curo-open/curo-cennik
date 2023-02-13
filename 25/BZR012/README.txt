@@ -14,9 +14,9 @@ Autor: curo.sk
 │ IPP4 = 7.9            │ IPP4                │
 │ IPPD = 0              │ IPPD                │
 │ LIMIT = 0             │ Limit               │
-│ CB = 0.02814          │ Cena bodu           │
-│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ     │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG │
+│ CB = 0.0318           │ Cena bodu           │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ     │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
 └───────────────────────┴─────────────────────┘
 
 
