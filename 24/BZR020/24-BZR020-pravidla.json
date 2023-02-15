@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0
+			"value": null
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -27,86 +27,86 @@
 	},
 	"pacient": [
 		{
-			"label": "vek od 18 do 20",
-			"if": "p|vekMedzi(18, 20)",
-			"value": 3.89,
+			"label": "vek do 19",
+			"if": "p|vekMedzi(19)",
+			"value": 4.4,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 20 do 28",
-			"if": "p|vekMedzi(20, 28)",
-			"value": 2.5,
+			"label": "vek od 19 do 27",
+			"if": "p|vekMedzi(19, 27)",
+			"value": 2.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 28 do 46",
-			"if": "p|vekMedzi(28, 46)",
-			"value": 2.61,
-			"calc": "IDK+cena",
-			"instruction": null
-		},
-		{
-			"label": "vek od 46 do 52",
-			"if": "p|vekMedzi(46, 52)",
-			"value": 2.71,
-			"calc": "IDK+cena",
-			"instruction": null
-		},
-		{
-			"label": "vek od 52 do 54",
-			"if": "p|vekMedzi(52, 54)",
+			"label": "vek od 27 do 45",
+			"if": "p|vekMedzi(27, 45)",
 			"value": 2.95,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 54 do 58",
-			"if": "p|vekMedzi(54, 58)",
-			"value": 3.53,
+			"label": "vek od 45 do 51",
+			"if": "p|vekMedzi(45, 51)",
+			"value": 3.06,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 58 do 62",
-			"if": "p|vekMedzi(58, 62)",
-			"value": 3.8,
+			"label": "vek od 51 do 53",
+			"if": "p|vekMedzi(51, 53)",
+			"value": 3.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 62 do 65",
-			"if": "p|vekMedzi(62, 65)",
-			"value": 4.04,
+			"label": "vek od 53 do 57",
+			"if": "p|vekMedzi(53, 57)",
+			"value": 3.99,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 65 do 69",
-			"if": "p|vekMedzi(65, 69)",
-			"value": 4.43,
+			"label": "vek od 57 do 61",
+			"if": "p|vekMedzi(57, 61)",
+			"value": 4.29,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 69 do 73",
-			"if": "p|vekMedzi(69, 73)",
-			"value": 4.8,
+			"label": "vek od 61 do 64",
+			"if": "p|vekMedzi(61, 64)",
+			"value": 4.57,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 73 do 88",
-			"if": "p|vekMedzi(73, 88)",
-			"value": 5.28,
+			"label": "vek od 64 do 68",
+			"if": "p|vekMedzi(64, 68)",
+			"value": 5.01,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 88+ ",
-			"if": "p|vekMedzi(88)",
-			"value": 5.21,
+			"label": "vek od 68 do 72",
+			"if": "p|vekMedzi(68, 72)",
+			"value": 5.42,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "vek od 72 do 87",
+			"if": "p|vekMedzi(72, 87)",
+			"value": 5.97,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "vek od 87+ ",
+			"if": "p|vekMedzi(87)",
+			"value": 5.89,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -164,14 +164,14 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159x','159z']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -199,7 +199,7 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -292,6 +292,13 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "Stratifikacia CMP (H0006)",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		}
 	],
