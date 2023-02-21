@@ -8,10 +8,10 @@ Autor: curo.sk
 ┌─────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota     │ Popis                                                   │
 ├─────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.02814        │ Cena bodu                                               │
+│ CB = 0.0318         │ Cena bodu                                               │
 │ CBE = 0.035         │ Cena bodu el. výkony                                    │
-│ CBSVALZ = 0.008105  │ Cena bodu SVaLZ                                         │
-│ CBSVALZP = 0.008473 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
+│ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
+│ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 │ IPP1 = 1.19         │ IPP1                                                    │
 │ IPP2 = 2.9          │ IPP2                                                    │
 │ IPP3 = 4.9          │ IPP3                                                    │

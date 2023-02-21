@@ -29,9 +29,9 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│        0.028719 │ vv.bodyCelkom*cena        │ Výkon 62                                      │ vv.kod in ['62']                                             │
-│        0.028719 │ vv.bodyCelkom*cena        │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['11a','70','1b','1c']                             │
 │        0.025903 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
