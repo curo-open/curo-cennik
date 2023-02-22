@@ -4,6 +4,10 @@
 			"label": "Cena bodu ",
 			"value": 0.0268
 		},
+		"CBEU": {
+			"label": "Cena bodu ",
+			"value": 0.0268
+		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.008105
@@ -91,7 +95,7 @@
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{

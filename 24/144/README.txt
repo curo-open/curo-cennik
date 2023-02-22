@@ -15,6 +15,7 @@ Autor: curo.sk
 │ CB = 0.028719      │ Cena bodu                    │
 │ CBP = 0.041        │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.008195 │ Cena bodu SVaLZ              │
+│ CBEU = 0.025903    │ Cena bodu EU                 │
 └────────────────────┴──────────────────────────────┘
 
 
@@ -33,9 +34,9 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['11a','70','1b','1c']                             │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

@@ -10,6 +10,7 @@ Autor: curo.sk
 ├──────────────────┼──────────────────────────────┤
 │ LIMIT = 0        │ Limit                        │
 │ CB = 0.0285      │ Cena bodu                    │
+│ CBEU = 0.0285    │ Cena bodu                    │
 │ CBP = 0.041      │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.0082 │ Cena bodu SVaLZ              │
 └──────────────────┴──────────────────────────────┘
@@ -31,8 +32,8 @@ Autor: curo.sk
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5331,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │         0.01275 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│          0.0082 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

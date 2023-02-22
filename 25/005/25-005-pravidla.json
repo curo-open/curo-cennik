@@ -30,11 +30,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.02814
+			"value": 0.0318
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009574
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
