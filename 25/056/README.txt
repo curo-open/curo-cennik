@@ -14,10 +14,10 @@ Autor: curo.sk
 │ IPP4 = 7.9            │ IPP4                         │
 │ LIMIT = 75900         │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0268           │ Cena bodu                    │
+│ CB = 0.0318           │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
 └───────────────────────┴──────────────────────────────┘
 
 
