@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0265
+			"value": 0.034
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"CBEK": {
 			"label": "Cena bodu el. výkony",
@@ -14,7 +14,7 @@
 		},
 		"PV": {
 			"label": "Psych výkony 820, 821, 822, 825, 841, 847, 867",
-			"value": 0.0295
+			"value": 0.037
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
@@ -140,6 +140,12 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		],
 		"1b": [

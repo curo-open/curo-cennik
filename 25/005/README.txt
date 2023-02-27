@@ -16,7 +16,7 @@ Autor: curo.sk
 │ LIMIT = 0          │ Limit                 │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ? │
 │ CB = 0.0318        │ Cena bodu             │
-│ CBSVALZ = 0.009574 │ Cena bodu SVaLZ       │
+│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
 └────────────────────┴───────────────────────┘
 
