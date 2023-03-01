@@ -37,7 +37,10 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │        0.020072 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│            7.16 │ vv.pocet*cena             │ Vykon 8                                       │ !p.kapitacia && d.zl                                         │
+│            null │ vv.pocet*VCB8             │ Vykon 8                                       │ !p.kapitacia && d.zl && vv.kod in ['8']                      │
+│            null │ vv.pocet*VCB4             │ Vykon 4                                       │ !p.kapitacia && d.zl && vv.kod in ['4']                      │
+│            null │ vv.pocet*VCB1             │ Vykon 1                                       │ !p.kapitacia && d.zl && vv.kod in ['1']                      │
+│            null │ vv.pocet*VCB250           │ Vykon 250                                     │ !p.kapitacia && d.zl && vv.kod in ['250']                    │
 │           10.22 │ vv.pocet*cena             │ Vykon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
 │            7.19 │ vv.pocet*cena             │ Vykon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
 │          0.0078 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
@@ -57,10 +60,6 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │             4.2 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702ZV']                                         │
 │            6.54 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
-│            null │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
-│            null │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
-│            null │ vv.pocet*VCB1             │ Vykon 1                                       │ vv.kod in ['1']                                              │
-│            null │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
