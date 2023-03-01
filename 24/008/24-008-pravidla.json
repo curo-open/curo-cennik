@@ -37,42 +37,42 @@
 		{
 			"label": "do  1 roku",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 9.14,
+			"value": 10.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  1 do dovršenia 2 rokov",
 			"if": "p|vekMedzi(1, 2)",
-			"value": 9.55,
+			"value": 10.79,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  2 do dovršenia 7 rokov",
 			"if": "p|vekMedzi(2, 7)",
-			"value": 6.3,
+			"value": 7.12,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  7 do dovršenia 19 rokov",
 			"if": "p|vekMedzi(7, 19)",
-			"value": 3.89,
+			"value": 4.4,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 19 do dovršenia 27 rokov",
 			"if": "p|vekMedzi(19, 27)",
-			"value": 2.5,
+			"value": 2.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 27 do dovršenia 28 rokov",
 			"if": "p|vekMedzi(27, 28)",
-			"value": 2.61,
+			"value": 2.95,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -83,6 +83,27 @@
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": 0.020072,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vykon 8",
+			"if": "!p.kapitacia && d.zl",
+			"value": 7.16,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vykon 8",
+			"if": "!p.kapitacia && vv.kod in ['8']",
+			"value": 10.22,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vykon 4",
+			"if": "!p.kapitacia && vv.kod in ['4']",
+			"value": 7.19,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -102,14 +123,14 @@
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '149f', '159b', '950', '953', '159a', '159x', '159z','160']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventivne zdravotne vykony (142)",
 			"if": "vv.kod in ['142']",
-			"value": 0.092,
+			"value": 0.10396,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -166,20 +187,6 @@
 			"label": "EKG",
 			"if": "vv.kod in ['5702ZV']",
 			"value": 4.2,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Vykon 8",
-			"if": "!p.kapitacia && vv.kod in ['8']",
-			"value": 10.22,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Vykon 4",
-			"if": "!p.kapitacia && vv.kod in ['4']",
-			"value": 7.19,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
