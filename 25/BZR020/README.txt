@@ -22,23 +22,23 @@ Autor: curo.sk
 
 
   CENY ZA PACIENTA
-┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
-│ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
-├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 20 │          3.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ vek od 20 do 29 │           2.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ vek od 29 do 40 │           2.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ vek od 40 do 45 │          2.64 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ vek od 45 do 50 │          2.69 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ vek od 50 do 55 │          3.12 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ vek od 55 do 60 │          3.24 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ vek od 60 do 65 │          3.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 70 │          4.32 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 75 │          4.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ vek od 75 do 80 │          4.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 85 │          5.06 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek od 85+      │          5.15 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
-└─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
+┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
+│ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
+├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
+│ do 19 rokov vrátane       │          3.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ od 20 do 28 rokov vrátane │          3.16 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ od 29 do 39 rokov vrátane │          2.94 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ od 40 do 44 rokov vrátane │          2.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ od 45 do 49 rokov vrátane │          3.04 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ od 50 do 54 rokov vrátane │          3.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ od 55 do 59 rokov vrátane │          3.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ od 60 do 64 rokov vrátane │          4.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ od 65 do 69 rokov vrátane │          4.88 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ od 70 do 74 rokov vrátane │          5.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ od 75 do 79 rokov vrátane │          5.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ od 80 do 84 rokov vrátane │          5.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ od 85 rokov a viac        │          5.82 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+└───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
   CENY ZA VÝKONY
@@ -54,7 +54,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │        0.021995 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│           0.065 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│         0.07345 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
 │         0.00861 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │

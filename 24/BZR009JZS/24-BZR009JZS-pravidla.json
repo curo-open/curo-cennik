@@ -7,7 +7,7 @@
 			"if": "vv.kod in ['99999'] || vv.kod in ['99999']",
 			"value": 1,
 			"calc": "vv.pocet*cena",
-			"instruction": null
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano"
 		}
 	],
 	"kontrola": [],

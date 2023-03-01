@@ -43,93 +43,93 @@
 	},
 	"pacient": [
 		{
-			"label": "vek od 18 do 20",
+			"label": "do 19 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 3.52,
+			"value": 3.98,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 20 do 29",
+			"label": "od 20 do 28 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": 2.8,
+			"value": 3.16,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 29 do 40",
+			"label": "od 29 do 39 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(29, 40)",
-			"value": 2.6,
+			"value": 2.94,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 40 do 45",
+			"label": "od 40 do 44 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(40, 45)",
-			"value": 2.64,
+			"value": 2.98,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 45 do 50",
+			"label": "od 45 do 49 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(45, 50)",
-			"value": 2.69,
+			"value": 3.04,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 50 do 55",
+			"label": "od 50 do 54 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(50, 55)",
-			"value": 3.12,
+			"value": 3.53,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 55 do 60",
+			"label": "od 55 do 59 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(55, 60)",
-			"value": 3.24,
+			"value": 3.66,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 60 do 65",
+			"label": "od 60 do 64 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(60, 65)",
-			"value": 3.62,
+			"value": 4.09,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 65 do 70",
+			"label": "od 65 do 69 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 4.32,
+			"value": 4.88,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 70 do 75",
+			"label": "od 70 do 74 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 4.47,
+			"value": 5.05,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 75 do 80",
+			"label": "od 75 do 79 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 4.62,
+			"value": 5.22,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 80 do 85",
+			"label": "od 80 do 84 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 5.06,
+			"value": 5.72,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 85+ ",
+			"label": "od 85 rokov a viac ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 5.15,
+			"value": 5.82,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -201,7 +201,7 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

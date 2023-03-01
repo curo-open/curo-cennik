@@ -31,6 +31,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
+│           0.027 │ vv.bodyCelkom*cena        │ DIA výkony                                    │ vv.kod in ['1B05011','1B05012','1B06025','1A02009','1A02012' │
+│                 │                           │                                               │ ,'1A03007']                                                  │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
@@ -50,12 +52,6 @@ Autor: curo.sk
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
-│             420 │ 1B05011                                                                                                   │                           │
-│             420 │ 1B05012                                                                                                   │                           │
-│            1200 │ 1B06025                                                                                                   │                           │
-│            1000 │ 1A02009                                                                                                   │                           │
-│           12000 │ 1A02012                                                                                                   │                           │
-│            1200 │ 1A03007                                                                                                   │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

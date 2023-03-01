@@ -20,6 +20,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkon SPIRO",
+			"if": "vv.kod in ['5766','5769','5770','5771','5772']",
+			"value": 0.01892,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
 			"value": null,
