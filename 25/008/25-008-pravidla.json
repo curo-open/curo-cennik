@@ -78,7 +78,7 @@
 		{
 			"label": "od 20 do 28 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(19, 28)",
-			"value": null,
+			"value": 2.8,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

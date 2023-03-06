@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates for bzr">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -552,62 +552,12 @@
       <workItem from="1676465372136" duration="594000" />
       <workItem from="1676475851377" duration="1196000" />
       <workItem from="1676627555659" duration="597000" />
-    </task>
-    <task id="LOCAL-00251" summary="- pridane EDU pre vszp">
-      <created>1655118642459</created>
-      <option name="number" value="00251" />
-      <option name="presentableId" value="LOCAL-00251" />
-      <option name="project" value="LOCAL" />
-      <updated>1655118642459</updated>
-    </task>
-    <task id="LOCAL-00252" summary="- updates">
-      <created>1655455333807</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1655455333807</updated>
-    </task>
-    <task id="LOCAL-00253" summary="- updates">
-      <created>1656506676813</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
-      <option name="project" value="LOCAL" />
-      <updated>1656506676813</updated>
-    </task>
-    <task id="LOCAL-00254" summary="- updates">
-      <created>1659510135987</created>
-      <option name="number" value="00254" />
-      <option name="presentableId" value="LOCAL-00254" />
-      <option name="project" value="LOCAL" />
-      <updated>1659510135988</updated>
-    </task>
-    <task id="LOCAL-00255" summary="- upravy">
-      <created>1661349148129</created>
-      <option name="number" value="00255" />
-      <option name="presentableId" value="LOCAL-00255" />
-      <option name="project" value="LOCAL" />
-      <updated>1661349148130</updated>
-    </task>
-    <task id="LOCAL-00256" summary="- upravy">
-      <created>1663059814961</created>
-      <option name="number" value="00256" />
-      <option name="presentableId" value="LOCAL-00256" />
-      <option name="project" value="LOCAL" />
-      <updated>1663059814961</updated>
-    </task>
-    <task id="LOCAL-00257" summary="- upravy">
-      <created>1663161277266</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1663161277266</updated>
-    </task>
-    <task id="LOCAL-00258" summary="- upravy">
-      <created>1663657408824</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1663657408824</updated>
+      <workItem from="1676969421729" duration="717000" />
+      <workItem from="1676978926768" duration="1807000" />
+      <workItem from="1677235121163" duration="3207000" />
+      <workItem from="1677644753914" duration="3146000" />
+      <workItem from="1677749846203" duration="1199000" />
+      <workItem from="1677927761452" duration="592000" />
     </task>
     <task id="LOCAL-00259" summary="- pridane 88 a 89">
       <created>1663768048014</created>
@@ -896,7 +846,63 @@
       <option name="project" value="LOCAL" />
       <updated>1676421260438</updated>
     </task>
-    <option name="localTasksCounter" value="300" />
+    <task id="LOCAL-00300" summary="- updates">
+      <created>1676969518388</created>
+      <option name="number" value="00300" />
+      <option name="presentableId" value="LOCAL-00300" />
+      <option name="project" value="LOCAL" />
+      <updated>1676969518388</updated>
+    </task>
+    <task id="LOCAL-00301" summary="- updates">
+      <created>1677064909831</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1677064909832</updated>
+    </task>
+    <task id="LOCAL-00302" summary="- updates">
+      <created>1677147060707</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1677147060708</updated>
+    </task>
+    <task id="LOCAL-00303" summary="- updates">
+      <created>1677531915873</created>
+      <option name="number" value="00303" />
+      <option name="presentableId" value="LOCAL-00303" />
+      <option name="project" value="LOCAL" />
+      <updated>1677531915873</updated>
+    </task>
+    <task id="LOCAL-00304" summary="- updates">
+      <created>1677585356322</created>
+      <option name="number" value="00304" />
+      <option name="presentableId" value="LOCAL-00304" />
+      <option name="project" value="LOCAL" />
+      <updated>1677585356323</updated>
+    </task>
+    <task id="LOCAL-00305" summary="- updates">
+      <created>1677644775013</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
+      <option name="project" value="LOCAL" />
+      <updated>1677644775014</updated>
+    </task>
+    <task id="LOCAL-00306" summary="- updates">
+      <created>1677666786012</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1677666786012</updated>
+    </task>
+    <task id="LOCAL-00307" summary="- updates">
+      <created>1677667556315</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1677667556315</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -963,9 +969,9 @@
     <MESSAGE value="- updates 005" />
     <MESSAGE value="- updates &#10;- adde 031" />
     <MESSAGE value="- updates for wrong vykon premenna" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- updates for bzr" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates for bzr" />
+    <MESSAGE value="- updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="masterDetails">
     <states>

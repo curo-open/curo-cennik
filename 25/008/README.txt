@@ -28,7 +28,7 @@ Autor: curo.sk
 │ od 10 do 14 rokov vratane │          4.69 │ IDK+cena │ p.kapitacia && p|vekMedzi(9, 14)  │
 │ od 15 do 17 rokov vratane │          4.42 │ IDK+cena │ p.kapitacia && p|vekMedzi(14, 17) │
 │ od 18 do 19 rokov vratane │          3.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(17, 19) │
-│ od 20 do 28 rokov vratane │          null │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 28) │
+│ od 20 do 28 rokov vratane │           2.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 28) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
