@@ -34,11 +34,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -47,6 +47,13 @@
 	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "Pneumofizeologické vyšetrenie",
+			"if": "vv.kod in ['1A01033','1A02060','1A02077','1A03044']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",

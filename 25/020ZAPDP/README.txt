@@ -23,19 +23,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 20 │          3.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ vek od 20 do 29 │           2.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ vek od 29 do 40 │           2.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ vek od 40 do 45 │          2.64 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ vek od 45 do 50 │          2.69 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ vek od 50 do 55 │          2.71 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ vek od 55 do 60 │          2.82 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ vek od 60 do 65 │          3.15 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 70 │          3.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 75 │          3.65 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ vek od 75 do 80 │          3.77 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 85 │          4.13 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek od 85+      │           4.2 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ vek od 18 do 20 │          3.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ vek od 20 do 29 │          3.16 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ vek od 29 do 40 │          2.94 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ vek od 40 do 45 │          2.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ vek od 45 do 50 │          3.04 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ vek od 50 do 55 │          3.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ vek od 55 do 60 │          3.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ vek od 60 do 65 │          4.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ vek od 65 do 70 │          4.88 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ vek od 70 do 75 │          5.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ vek od 75 do 80 │          5.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ vek od 80 do 85 │          5.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ vek od 85+      │          5.82 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -52,7 +52,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │        0.021995 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│            0.06 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│         0.07345 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
 │        0.008105 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │

@@ -36,10 +36,10 @@
 	],
 	"vykon": [
 		{
-			"label": "Výkony 102,103,105,108,297",
-			"if": "vv.kod in ['102','103','105','108','297']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBP",
+			"label": "Výkony 102,103,105,108,157,297,1070",
+			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
+			"value": 0.062,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
