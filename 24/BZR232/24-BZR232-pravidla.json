@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.026921
+			"value": 0.034528
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.009724
 		}
 	},
 	"pacient": [],
@@ -18,22 +18,22 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
-			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62','63']",
-			"value": 0.024107,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.024107,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -118,19 +118,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 620
+				"value": 450
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 400
+				"value": 290
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 230
 			}
 		],
 		"65": [

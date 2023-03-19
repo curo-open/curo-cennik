@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.029626
+			"value": 0.033477
 		},
 		"CBV": {
 			"label": "Cena bodu vv=60",
@@ -14,28 +14,28 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008605
+			"value": 0.009724
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon SPIRO",
-			"if": "vv.kod in ['5766','5769','5770','5771','5772']",
-			"value": 0.01892,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBV",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 62,63",
 			"if": "vv.kod in ['62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -107,6 +107,24 @@
 			{
 				"cond": "",
 				"value": 230
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [

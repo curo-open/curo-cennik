@@ -8,8 +8,8 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────┐
 │ Názov a hodnota    │ Popis               │
 ├────────────────────┼─────────────────────┤
-│ CB = 0.030556      │ Cena bodu           │
-│ CBSVALZ = 0.008605 │ Cena bodu SVaLZ     │
+│ CB = 0.03372       │ Cena bodu           │
+│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG │
 │ AGTC = 4.8         │ AGTC                │
 │ PP50 = 10          │ PP50                │
@@ -32,10 +32,10 @@ Autor: curo.sk
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│        0.029193 │ vv.bodyCelkom*cena        │ Výkon 62                                      │ vv.kod in ['62']                                             │
-│        0.029193 │ vv.bodyCelkom*cena        │ Výkon 63                                      │ vv.kod in ['63']                                             │
-│        0.029193 │ vv.bodyCelkom*cena        │ Výkon 65;66                                   │ vv.kod in ['65','66','67']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65;66                                   │ vv.kod in ['65','66','67']                                   │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │

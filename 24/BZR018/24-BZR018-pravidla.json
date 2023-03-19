@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.029626
+			"value": 0.03372
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008605
+			"value": 0.009724
 		},
 		"CBSVALZP": {
 			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
@@ -29,8 +29,8 @@
 		{
 			"label": "Výkon 60,62,63,65",
 			"if": "vv.kod in ['60','62','63','65','66','67']",
-			"value": 0.028303,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

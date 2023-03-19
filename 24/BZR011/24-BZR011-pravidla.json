@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.029626
+			"value": 0.033477
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -14,7 +14,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008605
+			"value": 0.009724
 		}
 	},
 	"pacient": [],
@@ -29,8 +29,8 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
-			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

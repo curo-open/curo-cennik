@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                                   │
 ├────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.029626      │ Cena bodu                                               │
+│ CB = 0.03372       │ Cena bodu                                               │
 │ CBE = 0.027        │ Cena bodu el. výkony                                    │
-│ CBSVALZ = 0.008605 │ Cena bodu SVaLZ                                         │
+│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0       │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 └────────────────────┴─────────────────────────────────────────────────────────┘
 
@@ -26,7 +26,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
-│        0.028303 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65','66','67']                    │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65','66','67']                    │
 │            null │ vv.bodyCelkom*CBE         │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
