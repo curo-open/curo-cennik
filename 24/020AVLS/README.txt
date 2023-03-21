@@ -11,7 +11,7 @@ Autor: curo.sk
 │ IDK = 0           │ NASTAVENIA IDK                                    │
 │ CB = 0.022089     │ Cena bodu                                         │
 │ CBSVALZ = 0.00819 │ Cena bodu SVaLZ                                   │
-│ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)                        │
+│ CBEUNK = 0.03     │ Cena bodu Nekapitovany(EU)                        │
 │ _4571a = 5        │ 4571a                                             │
 │ AGTC = 4.8        │ AGTC                                              │
 │ PP50 = 10         │ PP50                                              │
@@ -46,8 +46,8 @@ Autor: curo.sk
 │            null │ _4571a                    │ Pripočitateľné položky                        │ vv.kod in ['4571a','4571A']                                  │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
-│         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
-│            0.03 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
+│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │

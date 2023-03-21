@@ -31,10 +31,17 @@
 			"instruction": null
 		},
 		{
-			"label": "Vykon 60,62,63,65,67,163",
-			"if": "vv.kod in ['60','62','63','65','163']",
+			"label": "Vykon 60,62,63,163",
+			"if": "vv.kod in ['60','62','63','163']",
 			"value": null,
 			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,67",
+			"if": "vv.kod in ['65','67']",
+			"value": 0.033,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
