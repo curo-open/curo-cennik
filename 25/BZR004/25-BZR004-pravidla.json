@@ -136,7 +136,21 @@
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "p.typ in ['BE','CU','EU']",
+			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5796','5799'] && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "vv.typ!='SVaLZ' && p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
