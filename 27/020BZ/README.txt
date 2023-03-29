@@ -20,14 +20,14 @@ Autor: curo.sk
 
 
   CENY ZA PACIENTA
-┌─────────────────┬───────────────┬──────────┬────────────────────┐
-│ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
-├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 51 │          2.72 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          3.12 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │           4.6 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+      │          5.04 │ IDK+cena │ p|vekMedzi(81)     │
-└─────────────────┴───────────────┴──────────┴────────────────────┘
+┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
+│ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
+├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
+│ vek od 18 do 51 │          2.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          3.12 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │           4.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 81) │
+│ vek od 81+      │          5.04 │ IDK+cena │ p.kapitacia && p|vekMedzi(81)     │
+└─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
   CENY ZA VÝKONY

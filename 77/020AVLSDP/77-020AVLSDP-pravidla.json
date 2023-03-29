@@ -36,28 +36,28 @@
 	"pacient": [
 		{
 			"label": "vek od 18 do 50",
-			"if": "p|vekMedzi(18, 50)",
+			"if": "p.kapitacia && p|vekMedzi(18, 50)",
 			"value": 2.72,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 51 do 60",
-			"if": "p|vekMedzi(51, 60)",
+			"if": "p.kapitacia && p|vekMedzi(51, 60)",
 			"value": 3.12,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 61 do 80",
-			"if": "p|vekMedzi(61, 80)",
+			"if": "p.kapitacia && p|vekMedzi(61, 80)",
 			"value": 4.6,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 81+",
-			"if": "p|vekMedzi(81)",
+			"if": "p.kapitacia && p|vekMedzi(81)",
 			"value": 5.04,
 			"calc": "IDK+cena",
 			"instruction": null

@@ -6,15 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.022089
+			"value": 0.025402
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00819
+			"value": 0.0086
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.03
+			"value": 0.022973
 		},
 		"_4571a": {
 			"label": "4571a",
@@ -196,7 +196,7 @@
 		},
 		{
 			"label": "EKG",
-			"if": "vv.kod in ['5702','5702Z']",
+			"if": "vv.kod in ['5702','5702ZV']",
 			"value": 4.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
@@ -204,14 +204,14 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159x','159z']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -239,7 +239,7 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.065,
+			"value": 0.07345,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -267,7 +267,7 @@
 		{
 			"label": "Určenie glykémie glukometrom",
 			"if": "vv.kod in ['3671']",
-			"value": 0.020895,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

@@ -9,9 +9,9 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                                             │
 ├───────────────────┼───────────────────────────────────────────────────┤
 │ IDK = 0           │ NASTAVENIA IDK                                    │
-│ CB = 0.022089     │ Cena bodu                                         │
-│ CBSVALZ = 0.00819 │ Cena bodu SVaLZ                                   │
-│ CBEUNK = 0.03     │ Cena bodu Nekapitovany(EU)                        │
+│ CB = 0.025402     │ Cena bodu                                         │
+│ CBSVALZ = 0.0086  │ Cena bodu SVaLZ                                   │
+│ CBEUNK = 0.022973 │ Cena bodu Nekapitovany(EU)                        │
 │ _4571a = 5        │ 4571a                                             │
 │ AGTC = 4.8        │ AGTC                                              │
 │ PP50 = 10         │ PP50                                              │
@@ -53,17 +53,17 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │               5 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
-│            4.78 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702Z']                                   │
-│           0.065 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
-│           0.065 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│            4.78 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702ZV']                                  │
+│         0.07345 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
+│         0.07345 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
-│           0.065 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│         0.07345 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
 │            0.03 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
-│        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
+│           0.065 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │           0.065 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │

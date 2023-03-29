@@ -40,22 +40,22 @@ Autor: curo.sk
 
 
   CENY ZA PACIENTA
-┌─────────────────┬───────────────┬──────────┬────────────────────┐
-│ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
-├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 20 │          4.42 │ IDK+cena │ p|vekMedzi(18, 20) │
-│ vek od 20 do 28 │          2.95 │ IDK+cena │ p|vekMedzi(20, 28) │
-│ vek od 28 do 46 │          3.11 │ IDK+cena │ p|vekMedzi(28, 46) │
-│ vek od 46 do 52 │          3.13 │ IDK+cena │ p|vekMedzi(46, 52) │
-│ vek od 52 do 54 │          3.33 │ IDK+cena │ p|vekMedzi(52, 54) │
-│ vek od 54 do 58 │          3.99 │ IDK+cena │ p|vekMedzi(54, 58) │
-│ vek od 58 do 62 │          4.29 │ IDK+cena │ p|vekMedzi(58, 62) │
-│ vek od 62 do 65 │          4.68 │ IDK+cena │ p|vekMedzi(62, 65) │
-│ vek od 65 do 69 │          5.14 │ IDK+cena │ p|vekMedzi(65, 69) │
-│ vek od 69 do 73 │          5.56 │ IDK+cena │ p|vekMedzi(69, 73) │
-│ vek od 73 do 88 │          6.22 │ IDK+cena │ p|vekMedzi(73, 88) │
-│ vek od 88+      │          6.18 │ IDK+cena │ p|vekMedzi(88)     │
-└─────────────────┴───────────────┴──────────┴────────────────────┘
+┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
+│ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
+├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
+│ vek od 18 do 20 │          4.42 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ vek od 20 do 28 │          2.95 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 28) │
+│ vek od 28 do 46 │          3.11 │ IDK+cena │ p.kapitacia && p|vekMedzi(28, 46) │
+│ vek od 46 do 52 │          3.13 │ IDK+cena │ p.kapitacia && p|vekMedzi(46, 52) │
+│ vek od 52 do 54 │          3.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(52, 54) │
+│ vek od 54 do 58 │          3.99 │ IDK+cena │ p.kapitacia && p|vekMedzi(54, 58) │
+│ vek od 58 do 62 │          4.29 │ IDK+cena │ p.kapitacia && p|vekMedzi(58, 62) │
+│ vek od 62 do 65 │          4.68 │ IDK+cena │ p.kapitacia && p|vekMedzi(62, 65) │
+│ vek od 65 do 69 │          5.14 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 69) │
+│ vek od 69 do 73 │          5.56 │ IDK+cena │ p.kapitacia && p|vekMedzi(69, 73) │
+│ vek od 73 do 88 │          6.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(73, 88) │
+│ vek od 88+      │          6.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(88)     │
+└─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
   CENY ZA VÝKONY

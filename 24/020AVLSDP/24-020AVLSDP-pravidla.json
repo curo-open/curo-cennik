@@ -116,84 +116,84 @@
 	"pacient": [
 		{
 			"label": "vek od 18 do 20",
-			"if": "p|vekMedzi(18, 20)",
+			"if": "p.kapitacia && p|vekMedzi(18, 20)",
 			"value": 4.42,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 20 do 28",
-			"if": "p|vekMedzi(20, 28)",
+			"if": "p.kapitacia && p|vekMedzi(20, 28)",
 			"value": 2.95,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 28 do 46",
-			"if": "p|vekMedzi(28, 46)",
+			"if": "p.kapitacia && p|vekMedzi(28, 46)",
 			"value": 3.11,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 46 do 52",
-			"if": "p|vekMedzi(46, 52)",
+			"if": "p.kapitacia && p|vekMedzi(46, 52)",
 			"value": 3.13,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 52 do 54",
-			"if": "p|vekMedzi(52, 54)",
+			"if": "p.kapitacia && p|vekMedzi(52, 54)",
 			"value": 3.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 54 do 58",
-			"if": "p|vekMedzi(54, 58)",
+			"if": "p.kapitacia && p|vekMedzi(54, 58)",
 			"value": 3.99,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 58 do 62",
-			"if": "p|vekMedzi(58, 62)",
+			"if": "p.kapitacia && p|vekMedzi(58, 62)",
 			"value": 4.29,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 62 do 65",
-			"if": "p|vekMedzi(62, 65)",
+			"if": "p.kapitacia && p|vekMedzi(62, 65)",
 			"value": 4.68,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 65 do 69",
-			"if": "p|vekMedzi(65, 69)",
+			"if": "p.kapitacia && p|vekMedzi(65, 69)",
 			"value": 5.14,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 69 do 73",
-			"if": "p|vekMedzi(69, 73)",
+			"if": "p.kapitacia && p|vekMedzi(69, 73)",
 			"value": 5.56,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 73 do 88",
-			"if": "p|vekMedzi(73, 88)",
+			"if": "p.kapitacia && p|vekMedzi(73, 88)",
 			"value": 6.22,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 88+ ",
-			"if": "p|vekMedzi(88)",
+			"if": "p.kapitacia && p|vekMedzi(88)",
 			"value": 6.18,
 			"calc": "IDK+cena",
 			"instruction": null

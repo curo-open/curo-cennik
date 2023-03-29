@@ -27,8 +27,8 @@
 	},
 	"pacient": [
 		{
-			"label": "vek do 19",
-			"if": "p|vekMedzi(19)",
+			"label": "vek do 18 do 19",
+			"if": "p|vekMedzi(18, 19)",
 			"value": 4.4,
 			"calc": "IDK+cena",
 			"instruction": null
