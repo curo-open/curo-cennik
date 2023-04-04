@@ -121,6 +121,34 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 6.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.95,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0007",
+			"if": "vv.kod in ['H0007']",
+			"value": 5.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prístrojový antigénový test",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
