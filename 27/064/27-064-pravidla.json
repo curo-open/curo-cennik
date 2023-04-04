@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Vypočitaná cena bodu",
-			"value": 0.0285
+			"value": 0.0305
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -10,11 +10,23 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00973
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.0088
+			"value": 0.01044
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 5.5
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 4
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 3
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -54,7 +66,7 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -77,6 +89,27 @@
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP5",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP6'",
+			"value": null,
+			"calc": "IPP6",
 			"instruction": null
 		},
 		{

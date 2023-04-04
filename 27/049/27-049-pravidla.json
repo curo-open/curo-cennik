@@ -6,7 +6,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
@@ -90,6 +90,20 @@
 			"if": "vv.kod in ['5712','5713','5714']",
 			"value": 0.00861,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4F00010",
+			"if": "vv.kod in ['4F00010']",
+			"value": 50,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 607A",
+			"if": "vv.kod in ['607A']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

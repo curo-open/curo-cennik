@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota      │ Popis               │
 ├──────────────────────┼─────────────────────┤
 │ CB = 0.034           │ Cena bodu           │
-│ CBSVALZ = 0.00861    │ Cena bodu SVaLZ     │
+│ CBSVALZ = 0.00973    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.00924 │ Cena bodu SVaLZ USG │
 │ IPP1 = 1.98          │ IPP1                │
 │ IPP2 = 0.36          │ IPP2                │
@@ -38,6 +38,8 @@ Autor: curo.sk
 │         0.00861 │ vv.bodyCelkom*cena        │ Ergometria                                    │ vv.kod in ['5708']                                           │
 │           0.034 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['603a','15c']                                     │
 │         0.00861 │ vv.bodyCelkom*cena        │ Ekg holter                                    │ vv.kod in ['5712','5713','5714']                             │
+│              50 │ vv.pocet*cena             │ Výkon 4F00010                                 │ vv.kod in ['4F00010']                                        │
+│              70 │ vv.pocet*cena             │ Výkon 607A                                    │ vv.kod in ['607A']                                           │
 │           0.032 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │

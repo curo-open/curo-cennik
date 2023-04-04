@@ -8,8 +8,8 @@ Autor: curo.sk
 ┌───────────────────┬─────────────────┐
 │ Názov a hodnota   │ Popis           │
 ├───────────────────┼─────────────────┤
-│ CB = 0.0275       │ Cena bodu       │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
+│ CB = 0.0305       │ Cena bodu       │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ │
 │ IPP1 = 0          │ IPP1            │
 │ IPP2 = 0          │ IPP2            │
 │ IPP3 = 0          │ IPP3            │

@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.027
+			"value": 0.0305
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007665
+			"value": 0.00973
 		}
 	},
 	"pacient": [],
@@ -25,7 +25,7 @@
 		{
 			"label": "Výkon 5793,5794,5795",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

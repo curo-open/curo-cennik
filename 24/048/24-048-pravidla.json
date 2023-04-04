@@ -189,9 +189,16 @@
 		},
 		{
 			"label": "Výkon ŠAS",
-			"if": "vv.kod in ['740','741','746','756','761','763','763a','765']",
+			"if": "vv.kod in ['740','741','746','765']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon ",
+			"if": "vv.kod in ['755','756','760','761','762','763','763a']",
+			"value": 0.0335,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
 	],

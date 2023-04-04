@@ -9,8 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis           │
 ├───────────────────┼─────────────────┤
 │ LIMIT = 0         │ Limit           │
-│ CB = 0.03         │ Cena bodu       │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
+│ CB = 0.0305       │ Cena bodu       │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ │
 │ IPP1 = 0.57       │ IPP1            │
 │ IPP2 = 0.36       │ IPP2            │
 │ IPP3 = 0.28       │ IPP3            │
@@ -41,7 +41,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
+│          0.0226 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

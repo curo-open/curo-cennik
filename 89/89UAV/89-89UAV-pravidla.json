@@ -65,27 +65,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
 			"value": 0.021995,

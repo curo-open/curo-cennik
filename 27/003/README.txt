@@ -5,16 +5,16 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ LIMIT = 0        │ Limit           │
-│ CB = 0.0285      │ Cena bodu       │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
-│ IPP4 = 3.5       │ IPP4            │
-│ IPP5 = 2.5       │ IPP5            │
-│ IPP6 = 1.8       │ IPP6            │
-└──────────────────┴─────────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ LIMIT = 0         │ Limit           │
+│ CB = 0.0305       │ Cena bodu       │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ │
+│ IPP4 = 5.5        │ IPP4            │
+│ IPP5 = 4          │ IPP5            │
+│ IPP6 = 3          │ IPP6            │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -38,7 +38,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0088 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5153a','5153b','5333'] && vv.typ!='SVaLZ'        │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5766','5769','5770','5771','5772','5793','5794', │
+│          0.0226 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5766','5769','5770','5771','5772','5793','5794', │
 │                 │                           │                                               │ '5795'] && vv.typ!='SVaLZ'                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

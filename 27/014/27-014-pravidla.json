@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03
+			"value": 0.0305
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -128,7 +128,7 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.01275,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

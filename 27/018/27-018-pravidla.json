@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"CBSVALZP": {
 			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
@@ -18,7 +18,7 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1
+			"value": 3.5
 		},
 		"IPP2": {
 			"label": "IPP5",

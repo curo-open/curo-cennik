@@ -5,17 +5,17 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬──────────────────────────────┐
-│ Názov a hodnota  │ Popis                        │
-├──────────────────┼──────────────────────────────┤
-│ CB = 0.0275      │ Vypočitaná cena bodu         │
-│ CBP = 0.0455     │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ              │
-│ IPP1 = 0.57      │ IPP1                         │
-│ IPP2 = 0.36      │ IPP2                         │
-│ IPP3 = 0.28      │ IPP3                         │
-│ LIMIT = 0        │ Limit                        │
-└──────────────────┴──────────────────────────────┘
+┌───────────────────┬──────────────────────────────┐
+│ Názov a hodnota   │ Popis                        │
+├───────────────────┼──────────────────────────────┤
+│ CB = 0.0305       │ Vypočitaná cena bodu         │
+│ CBP = 0.0455      │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
+│ IPP1 = 0.57       │ IPP1                         │
+│ IPP2 = 0.36       │ IPP2                         │
+│ IPP3 = 0.28       │ IPP3                         │
+│ LIMIT = 0         │ Limit                        │
+└───────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,17 +28,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0305 │ vv.bodyCelkom*cena        │ Výkon `60,`62,`63                             │ vv.kod in ['60','62','63']                                   │
-│          0.0275 │ vv.bodyCelkom*cena        │ Výkon `60r                                    │ vv.kod in ['60r']                                            │
+│          0.0335 │ vv.bodyCelkom*cena        │ Výkon `60,`62,`63                             │ vv.kod in ['60','62','63']                                   │
+│          0.0335 │ vv.bodyCelkom*cena        │ Výkon `60r                                    │ vv.kod in ['60r']                                            │
 │          0.0275 │ vv.bodyCelkom*cena        │ Výkon `65,`66,`67                             │ vv.kod in ['65','66','67']                                   │
 │          0.0305 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│               5 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│            8.95 │ vv.pocet*cena             │ Výkon 3860                                    │ vv.kod in ['3860']                                           │
+│            5.88 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
+│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
-│        0.012083 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5153a;5153b;5333                        │ vv.kod in ['5153a','5153b','5333']                           │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkony 5766, 5769, 5770,5771, 5772, 5793, 579 │ vv.kod in ['5766','5769','5770','5771','5772','5793','5794', │
+│          0.0226 │ vv.bodyCelkom*cena        │ Výkony 5766, 5769, 5770,5771, 5772, 5793, 579 │ vv.kod in ['5766','5769','5770','5771','5772','5793','5794', │
 │                 │                           │ 4, 5795                                       │ '5795']                                                      │
+│            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │

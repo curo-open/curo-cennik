@@ -10,10 +10,10 @@ Autor: curo.sk
 ├───────────────────┼─────────────────┤
 │ LIMIT = 0         │ Limit           │
 │ CB = 0.034        │ Cena bodu       │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
-│ IPP4 = 3.68       │ IPP4            │
-│ IPP5 = 2.63       │ IPP5            │
-│ IPP6 = 1.89       │ IPP6            │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ │
+│ IPP4 = 5.5        │ IPP4            │
+│ IPP5 = 4          │ IPP5            │
+│ IPP6 = 3          │ IPP6            │
 └───────────────────┴─────────────────┘
 
 

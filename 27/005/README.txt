@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬────────────────────────────────────────────────┐
 │ Názov a hodnota   │ Popis                                          │
 ├───────────────────┼────────────────────────────────────────────────┤
-│ CB = 0.034        │ Cena bodu                                      │
+│ CB = 0.0305       │ Cena bodu                                      │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ                                │
 │ CBEK = 0.035      │ Cena bodu el. výkony                           │
 │ PV = 0.037        │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │
@@ -28,7 +28,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*(PV+NCB)    │ Výkon 820;822;825;841                         │ vv.kod in ['820','821','822','825','841','847','867']        │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Vykon 60,62,63,163                            │ vv.kod in ['60','62','63','163']                             │
-│           0.033 │ vv.bodyCelkom*cena        │ Výkon 65,67                                   │ vv.kod in ['65','67']                                        │
+│           0.034 │ vv.bodyCelkom*cena        │ Výkon 65,67                                   │ vv.kod in ['65','67']                                        │
 │            null │ vv.bodyCelkom*CBEK        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
 │            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │

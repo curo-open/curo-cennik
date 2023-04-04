@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Vypočitaná cena bodu",
-			"value": 0.0237
+			"value": 0.0305
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00973
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -43,7 +43,7 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

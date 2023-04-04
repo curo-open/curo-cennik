@@ -10,7 +10,7 @@ Autor: curo.sk
 ├───────────────────┼──────────────────────────────┤
 │ CB = 0.034        │ Cena bodu                    │
 │ CBP = 0.0455      │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ              │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
 │ LIMIT = 0         │ Limit                        │
 └───────────────────┴──────────────────────────────┘
 
@@ -28,7 +28,7 @@ Autor: curo.sk
 │          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │        0.012083 │ vv.bodyCelkom*cena        │ Vykony 60,62,63                               │ vv.kod in ['5793','5794','5795']                             │
-│        0.012083 │ vv.bodyCelkom*cena        │ Vykony 5793,5794,5795                         │ vv.kod in ['5793','5794','5795']                             │
+│          0.0026 │ vv.bodyCelkom*cena        │ Vykony 5793,5794,5795                         │ vv.kod in ['5793','5794','5795']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

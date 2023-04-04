@@ -5,14 +5,17 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────────┬──────────────────────┐
-│ Názov a hodnota     │ Popis                │
-├─────────────────────┼──────────────────────┤
-│ CB = 0.034          │ Vypočitaná cena bodu │
-│ CBSVALZ = 0.00861   │ Cena bodu SVaLZ      │
-│ CBSVALZUSG = 0.0088 │ Cena bodu SVaLZ USG  │
-│ LIMIT = 0           │ Limit                │
-└─────────────────────┴──────────────────────┘
+┌──────────────────────┬──────────────────────┐
+│ Názov a hodnota      │ Popis                │
+├──────────────────────┼──────────────────────┤
+│ CB = 0.034           │ Vypočitaná cena bodu │
+│ CBSVALZ = 0.00973    │ Cena bodu SVaLZ      │
+│ CBSVALZUSG = 0.01044 │ Cena bodu SVaLZ USG  │
+│ IPP1 = 3.5           │ IPP1                 │
+│ IPP2 = 3             │ IPP2                 │
+│ IPP3 = 2             │ IPP3                 │
+│ LIMIT = 0            │ Limit                │
+└──────────────────────┴──────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -29,7 +32,10 @@ Autor: curo.sk
 │               5 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5766','5769','5770','5771']                      │
+│          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5766','5769','5770','5771']                      │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

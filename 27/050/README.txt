@@ -8,10 +8,13 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.034        │ Cena bodu                    │
+│ CB = 0.0305       │ Cena bodu                    │
 │ CBP = 0.0455      │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ              │
-│ CBUSG = 0.0088    │ Cena bodu USG                │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
+│ CBUSG = 0.01044   │ Cena bodu USG                │
+│ IPP1 = 3.5        │ IPP1                         │
+│ IPP2 = 3          │ IPP2                         │
+│ IPP3 = 2          │ IPP3                         │
 │ CV = 0            │ Výkony 60,62,63              │
 │ LIMIT = 0         │ Limit                        │
 └───────────────────┴──────────────────────────────┘
@@ -29,14 +32,19 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
 │            10.2 │ vv.pocet*cena             │ 629B                                          │ vv.kod in ['629b']                                           │
+│            5.65 │ vv.pocet*cena             │ Výkon H0006                                   │ vv.kod in ['H0006']                                          │
 │               6 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│         0.00973 │ vv.bodyCelkom*CBSVALZ     │ Výkon 4587a                                   │ vv.kod in ['4587a']                                          │
 │        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
-│        0.012083 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
+│          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CV          │ Výkony 60,62,63                               │ vv.kod==['60','62','63']                                     │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

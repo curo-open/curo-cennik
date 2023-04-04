@@ -21,9 +21,9 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │             518 │ vv.pocet*cena             │ Výkon 8506                                    │ vv.kod in ['8506'] || vv.k in ['8506'] || vv.k25 in ['8506'] │
-│             431 │ vv.pocet*cena             │ Výkon 8507                                    │ vv.kod in ['8507'] || vv.k in ['8507'] || vv.k25 in ['8507'] │
-│             485 │ vv.pocet*cena             │ Výkon 8508                                    │ vv.kod in ['8508'] || vv.k in ['8508'] || vv.k25 in ['8508'] │
-│             330 │ vv.pocet*cena             │ Výkon 8509                                    │ vv.kod in ['8509'] || vv.k in ['8509'] || vv.k25 in ['8509'] │
+│             460 │ vv.pocet*cena             │ Výkon 8507                                    │ vv.kod in ['8507'] || vv.k in ['8507'] || vv.k25 in ['8507'] │
+│             517 │ vv.pocet*cena             │ Výkon 8508                                    │ vv.kod in ['8508'] || vv.k in ['8508'] || vv.k25 in ['8508'] │
+│             352 │ vv.pocet*cena             │ Výkon 8509                                    │ vv.kod in ['8509'] || vv.k in ['8509'] || vv.k25 in ['8509'] │
 │             370 │ vv.pocet*cena             │ Výkon 8510                                    │ vv.kod in ['8510'] || vv.k in ['8510'] || vv.k25 in ['8510'] │
 │             348 │ vv.pocet*cena             │ Výkon 8511                                    │ vv.kod in ['8511'] || vv.k in ['8511'] || vv.k25 in ['8511'] │
 │             408 │ vv.pocet*cena             │ Výkon 8512                                    │ vv.kod in ['8512'] || vv.k in ['8512'] || vv.k25 in ['8512'] │

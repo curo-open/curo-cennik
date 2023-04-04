@@ -6,11 +6,23 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.0088
+			"value": 0.01044
+		},
+		"IPP1": {
+			"label": "IPP1",
+			"value": 3.5
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 3
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 2
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -50,8 +62,29 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5766','5769','5770','5771']",
-			"value": 0.01275,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
 			"instruction": null
 		},
 		{

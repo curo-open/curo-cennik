@@ -5,13 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬─────────────────┐
-│ Názov a hodnota    │ Popis           │
-├────────────────────┼─────────────────┤
-│ LIMIT = 0          │ Limit           │
-│ CB = 0.027         │ Cena bodu       │
-│ CBSVALZ = 0.007665 │ Cena bodu SVaLZ │
-└────────────────────┴─────────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ LIMIT = 0         │ Limit           │
+│ CB = 0.0305       │ Cena bodu       │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -25,7 +25,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5331,5332                          │ vv.kod in ['5330','5331','5332']                             │
-│        0.012083 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
+│          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
 │            9.41 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
 │            6.05 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
 │             4.7 │ vv.pocet*cena             │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │

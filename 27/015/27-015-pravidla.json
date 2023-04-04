@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -43,7 +43,7 @@
 		{
 			"label": "Vykony 5793,5794,5795",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
+			"value": 0.0026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

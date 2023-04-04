@@ -6,23 +6,23 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0285
+			"value": 0.0305
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00973
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 3.5
+			"value": 5.5
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 2.5
+			"value": 4
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 1.8
+			"value": 3
 		}
 	},
 	"pacient": [],
@@ -107,7 +107,7 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5766','5769','5770','5771','5772','5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.01275,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0285
+			"value": 0.0305
 		},
 		"CBEU": {
 			"label": "Cena bodu ",
@@ -18,7 +18,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00973
 		}
 	},
 	"pacient": [],
@@ -26,7 +26,7 @@
 		{
 			"label": "Výkon 60,62,63,820,822,825,841",
 			"if": "vv.kod in ['60','62','63','820','822','825','841']",
-			"value": 0.0315,
+			"value": 0.0335,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -54,7 +54,7 @@
 		{
 			"label": "Výkon 5793,5794,5795",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.01275,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

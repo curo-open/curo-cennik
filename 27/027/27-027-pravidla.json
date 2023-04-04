@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0245
+			"value": 0.0305
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0073
+			"value": 0.00973
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
@@ -19,6 +19,18 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"IPP1": {
+			"label": "IPP1",
+			"value": 3.5
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 3
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 2
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -109,6 +121,27 @@
 			"if": "vv.kod in ['252L']",
 			"value": 10,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
 			"instruction": null
 		},
 		{

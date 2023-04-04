@@ -2,23 +2,23 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.027
+			"value": 0.0305
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0073
+			"value": 0.00973
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 2.49
+			"value": 5.5
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 0.73
+			"value": 4
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 0.57
+			"value": 3
 		},
 		"LIMIT": {
 			"label": "Limit",

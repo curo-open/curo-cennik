@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"IPP4": {
 			"label": "IPP4",
@@ -26,7 +26,7 @@
 		},
 		"IPP7": {
 			"label": "IPP7",
-			"value": 0.65
+			"value": 1
 		}
 	},
 	"pacient": [],

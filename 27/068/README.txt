@@ -5,14 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬──────────────────────────────┐
-│ Názov a hodnota  │ Popis                        │
-├──────────────────┼──────────────────────────────┤
-│ CB = 0.0237      │ Vypočitaná cena bodu         │
-│ CBP = 0.0455     │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ              │
-│ LIMIT = 0        │ Limit                        │
-└──────────────────┴──────────────────────────────┘
+┌───────────────────┬──────────────────────────────┐
+│ Názov a hodnota   │ Popis                        │
+├───────────────────┼──────────────────────────────┤
+│ CB = 0.0305       │ Vypočitaná cena bodu         │
+│ CBP = 0.0455      │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
+│ LIMIT = 0         │ Limit                        │
+└───────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,7 +28,7 @@ Autor: curo.sk
 │             4.5 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
-│        0.012083 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
+│          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │

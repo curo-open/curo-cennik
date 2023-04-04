@@ -10,7 +10,7 @@ Autor: curo.sk
 ├───────────────────┼─────────────────┤
 │ LIMIT = 0         │ Limit           │
 │ CB = 0.034        │ Cena bodu       │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ │
 │ IPP4 = 2.49       │ IPP4            │
 │ IPP5 = 0.73       │ IPP5            │
 │ IPP6 = 0.57       │ IPP6            │
@@ -36,9 +36,9 @@ Autor: curo.sk
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316','5799']                                       │
-│          0.0583 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['158']                                            │
+│           0.079 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['158']                                            │
 │                 │                           │ renia na rakovinu                             │                                                              │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 4L03003, 4L03004                        │ vv.kod in ['4L03003','4L03004']                              │
+│            42.4 │ vv.pocet*cena             │ Výkon 4L03003, 4L03004                        │ vv.kod in ['4L03003','4L03004']                              │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │

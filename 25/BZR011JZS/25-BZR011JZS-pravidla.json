@@ -12,21 +12,21 @@
 		{
 			"label": "Výkon 8507",
 			"if": "vv.kod in ['8507'] || vv.k in ['8507'] || vv.k25 in ['8507']",
-			"value": 431,
+			"value": 460,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8508",
 			"if": "vv.kod in ['8508'] || vv.k in ['8508'] || vv.k25 in ['8508']",
-			"value": 485,
+			"value": 517,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8509",
 			"if": "vv.kod in ['8509'] || vv.k in ['8509'] || vv.k25 in ['8509']",
-			"value": 330,
+			"value": 352,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
