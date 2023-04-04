@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌──────────────────┬──────────────────────────────┐
 │ Názov a hodnota  │ Popis                        │
 ├──────────────────┼──────────────────────────────┤
-│ IDK = 0.02       │ NASTAVENIA IDK               │
+│ IDK = 0.1        │ NASTAVENIA IDK               │
 │ CB = 0.0265      │ Cena bodu                    │
 │ CBP = 0.0583     │ Cena bodu preventívne výkony │
 │ CBEU = 0.03      │ Cena bodu EU                 │

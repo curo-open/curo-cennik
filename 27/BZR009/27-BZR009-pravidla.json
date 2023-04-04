@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.02
+			"value": 0.1
 		},
 		"CB": {
 			"label": "Cena bodu ",
