@@ -50,6 +50,13 @@
 		},
 		{
 			"label": "Výkony",
+			"if": "vv.kod in ['5727','5775','5778']",
+			"value": 0.0226,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "H0008",
 			"if": "vv.kod in ['H0008']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
