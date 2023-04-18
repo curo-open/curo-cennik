@@ -4,7 +4,7 @@
 	"vykon": [
 		{
 			"label": "Výkon 820;822;825;841",
-			"if": "vv.kod in ['820','821','822','825','841','847','867']",
+			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
 			"value": null,
 			"calc": "vv.bodyCelkom*(PV+NCB)",
 			"instruction": null
