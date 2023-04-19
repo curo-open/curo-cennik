@@ -40,21 +40,21 @@
 	"pacient": [
 		{
 			"label": "vek od 18 do 50",
-			"if": "p|vekMedzi(18, 50)",
+			"if": "p|vekMedzi(18, 51)",
 			"value": 3.07,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 51 do 60",
-			"if": "p|vekMedzi(51, 60)",
+			"if": "p|vekMedzi(51, 61)",
 			"value": 3.53,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 61 do 80",
-			"if": "p|vekMedzi(61, 80)",
+			"if": "p|vekMedzi(61, 81)",
 			"value": 5.52,
 			"calc": "IDK+cena",
 			"instruction": null
