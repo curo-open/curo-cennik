@@ -5,70 +5,70 @@
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9109'] || vv.k in ['9109'] || vv.k27 in ['9109']",
-			"value": 346,
+			"value": 391,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['8586'] || vv.k in ['8586'] || vv.k27 in ['8586']",
-			"value": 267,
+			"value": 302,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9104'] || vv.k in ['9104'] || vv.k27 in ['9104']",
-			"value": 397,
+			"value": 449,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9107'] || vv.k in ['9107'] || vv.k27 in ['9107']",
-			"value": 346,
+			"value": 391,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9105'] || vv.k in ['9105'] || vv.k27 in ['9105']",
-			"value": 327,
+			"value": 370,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9108'] || vv.k in ['9108'] || vv.k27 in ['9108']",
-			"value": 330,
+			"value": 373,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9106'] || vv.k in ['9106'] || vv.k27 in ['9106']",
-			"value": 354,
+			"value": 400,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9101'] || vv.k in ['9101'] || vv.k27 in ['9101']",
-			"value": 343,
+			"value": 388,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9103'] || vv.k in ['9103'] || vv.k27 in ['9103']",
-			"value": 330,
+			"value": 373,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547']",
-			"value": 103,
+			"value": 116,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

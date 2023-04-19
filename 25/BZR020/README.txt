@@ -35,7 +35,7 @@ Autor: curo.sk
 │ od 60 do 64 rokov vrátane │          4.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
 │ od 65 do 69 rokov vrátane │          4.88 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
 │ od 70 do 74 rokov vrátane │          5.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ od 75 do 79 rokov vrátane │          5.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 50) │
+│ od 75 do 79 rokov vrátane │          5.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
 │ od 80 do 84 rokov vrátane │          5.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
 │ od 85+                    │          5.82 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘

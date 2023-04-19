@@ -23,10 +23,10 @@ Autor: curo.sk
 │             398 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104'] || vv.k in ['9104'] || vv.k24 in ['9104'] │
 │             349 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105'] || vv.k in ['9105'] || vv.k24 in ['9105'] │
 │             278 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k24 in ['8586'] │
-│            null │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9100'] || vv.k in ['9100'] || vv.k24 in ['9100'] │
-│            null │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8502'] || vv.k in ['8502'] || vv.k24 in ['8502'] │
-│            null │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9101'] || vv.k in ['9101'] || vv.k24 in ['9101'] │
-│            null │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9103'] || vv.k in ['9103'] || vv.k24 in ['9103'] │
+│             278 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9100'] || vv.k in ['9100'] || vv.k24 in ['9100'] │
+│             224 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8502'] || vv.k in ['8502'] || vv.k24 in ['8502'] │
+│             423 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9101'] || vv.k in ['9101'] || vv.k24 in ['9101'] │
+│             373 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9103'] || vv.k in ['9103'] || vv.k24 in ['9103'] │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

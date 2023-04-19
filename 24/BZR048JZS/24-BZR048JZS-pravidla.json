@@ -26,28 +26,28 @@
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9100'] || vv.k in ['9100'] || vv.k24 in ['9100'] ",
-			"value": null,
+			"value": 278,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['8502'] || vv.k in ['8502'] || vv.k24 in ['8502'] ",
-			"value": null,
+			"value": 224,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9101'] || vv.k in ['9101'] || vv.k24 in ['9101'] ",
-			"value": null,
+			"value": 423,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS",
 			"if": "vv.kod in ['9103'] || vv.k in ['9103'] || vv.k24 in ['9103'] ",
-			"value": null,
+			"value": 373,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

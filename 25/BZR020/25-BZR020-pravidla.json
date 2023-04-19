@@ -114,7 +114,7 @@
 		},
 		{
 			"label": "od 75 do 79 rokov vrátane",
-			"if": "p.kapitacia && p|vekMedzi(75, 50)",
+			"if": "p.kapitacia && p|vekMedzi(75, 80)",
 			"value": 5.22,
 			"calc": "IDK+cena",
 			"instruction": null
