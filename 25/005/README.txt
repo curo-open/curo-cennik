@@ -5,20 +5,20 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬───────────────────────┐
-│ Názov a hodnota    │ Popis                 │
-├────────────────────┼───────────────────────┤
-│ IPP1 = 1.98        │ IPP1                  │
-│ IPP2 = 3.19        │ IPP2                  │
-│ IPP3 = 5.39        │ IPP3                  │
-│ IPP4 = 5.39        │ IPP4                  │
-│ IPPD = 5           │ IPPD                  │
-│ LIMIT = 0          │ Limit                 │
-│ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.0318        │ Cena bodu             │
-│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
-│ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
-└────────────────────┴───────────────────────┘
+┌───────────────────────┬───────────────────────┐
+│ Názov a hodnota       │ Popis                 │
+├───────────────────────┼───────────────────────┤
+│ IPP1 = 1.98           │ IPP1                  │
+│ IPP2 = 3.19           │ IPP2                  │
+│ IPP3 = 5.39           │ IPP3                  │
+│ IPP4 = 5.39           │ IPP4                  │
+│ IPPD = 5              │ IPPD                  │
+│ LIMIT = 0             │ Limit                 │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ? │
+│ CB = 0.0318           │ Cena bodu             │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
+└───────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -33,8 +33,8 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           0.035 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
-│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
-│            null │ vv.bodyCelkom*CB          │ Výkon 820;821;822;825;841                     │ vv.kod in ['820','821','822','825','841','847']              │
+│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CB          │ Výkon 820;821;822;825;826;841                 │ vv.kod in ['820','821','822','825','826','841','847']        │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -59,12 +59,13 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             900 │ 820                                                                                                       │                           │
-│             850 │ 821                                                                                                       │                           │
-│             340 │ 822                                                                                                       │                           │
-│             450 │ 825                                                                                                       │                           │
-│            2030 │ 841                                                                                                       │                           │
-│             580 │ 847                                                                                                       │                           │
+│             950 │ 820                                                                                                       │                           │
+│             890 │ 821                                                                                                       │                           │
+│             360 │ 822                                                                                                       │                           │
+│             470 │ 825                                                                                                       │                           │
+│             750 │ 826                                                                                                       │                           │
+│            2130 │ 841                                                                                                       │                           │
+│             610 │ 847                                                                                                       │                           │
 │             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

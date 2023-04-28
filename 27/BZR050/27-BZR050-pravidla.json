@@ -2,23 +2,31 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.0335
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.00973
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu USG",
+			"value": 0.01044
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
 			"value": 0.0455
 		},
-		"CBSVALZ": {
-			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+		"IPP1": {
+			"label": "IPP1",
+			"value": 3.5
 		},
-		"CBUSG": {
-			"label": "Cena bodu USG",
-			"value": 0.0088
+		"IPP2": {
+			"label": "IPP2",
+			"value": 3
 		},
-		"CV": {
-			"label": "Výkony 60,62,63",
-			"value": 0
+		"IPP3": {
+			"label": "IPP3",
+			"value": 2
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -28,23 +36,30 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "špec. elektronické výkony",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "629B",
-			"if": "vv.kod in ['629b']",
-			"value": 10.2,
+			"label": "Výkon H0006",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.65,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6,
+			"value": 6.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 629b",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -79,8 +94,29 @@
 		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod==['60','62','63']",
+			"value": 0.0385,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 65,66,67",
+			"if": "vv.kod==['65','66','67']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CV",
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4571a",
+			"if": "vv.kod==['4571a']",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4587a",
+			"if": "vv.kod==['4587a']",
+			"value": 0.00973,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -172,7 +208,7 @@
 		"1b": [
 			{
 				"cond": "",
-				"value": 80
+				"value": 160
 			}
 		],
 		"1c": [
@@ -239,6 +275,24 @@
 			{
 				"cond": "",
 				"value": 180
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"4571a": [
+			{
+				"cond": "",
+				"value": 380
+			}
+		],
+		"4587a": [
+			{
+				"cond": "",
+				"value": 500
 			}
 		]
 	},

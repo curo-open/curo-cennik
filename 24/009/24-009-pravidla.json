@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.396432
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu",
@@ -18,7 +18,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00819
+			"value": 0.0086
 		},
 		"CBUSG": {
 			"label": "Cena bodu USG",
@@ -29,7 +29,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 1.79,
+			"value": 1.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -38,7 +38,7 @@
 		{
 			"label": "Výkony 102,103,105,108,157,297,1070",
 			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
-			"value": 0.062,
+			"value": 0.079,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -51,9 +51,16 @@
 		},
 		{
 			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
-			"if": "vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
+			"if": "vv.kod in ['5301','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.kod in ['5303','5305','5308']",
+			"value": 0.009281,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -68,13 +75,6 @@
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		},
 		{

@@ -20,17 +20,9 @@
 			"label": "IPPD",
 			"value": 5
 		},
-		"LIMIT": {
-			"label": "Limit",
-			"value": 75900
-		},
-		"EL_POBOCKA": {
-			"label": "Používa el. pobočku ?",
-			"value": 1
-		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0268
+			"value": 0.0318
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -38,11 +30,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		}
 	},
 	"pacient": [],

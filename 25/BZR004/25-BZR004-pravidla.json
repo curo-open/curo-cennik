@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -60,8 +60,15 @@
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -88,8 +95,15 @@
 		{
 			"label": "Výkon 802, 813, 819d, 803, 804",
 			"if": "vv.kod in ['802','813','819d','803','804']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 260a",
+			"if": "vv.kod in ['260a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -273,6 +287,18 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"260a": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 150
 			}
 		]
 	},

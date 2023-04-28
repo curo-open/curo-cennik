@@ -9,7 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
 │ IDK = 0.21        │ NASTAVENIA IDK               │
-│ CB = 0.0305       │ Cena bodu                    │
+│ CB = 0.0335       │ Cena bodu                    │
+│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
 │ CBP = 0.0583      │ Cena bodu preventívne výkony │
 │ CBEU = 0.03       │ Cena bodu EU                 │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
@@ -28,6 +29,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
+│                 │                           │                                               │ ) && vv.typ=='SVaLZ'                                         │
+│            null │ vv.bodyCelkom*CBSEUNK     │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
+│                 │                           │                                               │ ) && vv.typ!='SVaLZ'                                         │
 │          0.0583 │ vv.bodyCelkom*cena        │ Výkon 100,102,103,105,157                     │ vv.diagnoza in ['Z'] && vv.kod in ['100','102','103','105',' │
 │                 │                           │                                               │ 157']                                                        │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.diagnoza in ['Z'] && vv.kod in ['118']                    │

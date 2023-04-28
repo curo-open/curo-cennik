@@ -5,14 +5,15 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────┐
-│ Názov a hodnota   │ Popis                │
-├───────────────────┼──────────────────────┤
-│ LIMIT = 0         │ Limit                │
-│ CB = 0.0305       │ Cena bodu            │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ      │
-│ CBE = 0.035       │ Cena bodu el. výkony │
-└───────────────────┴──────────────────────┘
+┌──────────────────────┬──────────────────────────────┐
+│ Názov a hodnota      │ Popis                        │
+├──────────────────────┼──────────────────────────────┤
+│ CB = 0.0335          │ Cena bodu                    │
+│ CBO = 0.0305         │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.00973    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.01044 │ Cena bodu USG                │
+│ CBE = 0.035          │ Cena bodu el. výkony         │
+└──────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -25,11 +26,13 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│          0.0335 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60','62','63']                                   │
+│          0.0335 │ vv.bodyCelkom*cena        │ Výkon 60r                                     │ vv.kod in ['60r']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5331,5332                          │ vv.kod in ['5330','5331','5332']                             │
-│          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
-│          0.0316 │ vv.bodyCelkom*cena        │ Výkon 60;62;63;820;822;825;841                │ vv.kod in ['60','62','63','820','822','825','841',]          │
-│               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
-│           10.75 │ vv.pocet*cena             │ Výkon 60r                                     │ vv.kod in ['60r']                                            │
+│          0.0335 │ vv.bodyCelkom*cena        │ Výkon 200, 2100, 2101, 2106                   │ vv.kod in ['200','2100','2101','2106']                       │
+│          0.0335 │ vv.bodyCelkom*cena        │ Výkon 201, 204, 2018, 2018a                   │ vv.kod in ['201','204','2018','2018a']                       │
+│            6.78 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
+│            10.2 │ vv.pocet*cena             │ Prístrojový antigen test                      │ vv.kod in ['629b']                                           │
 │            3.36 │ vv.pocet*cena             │ Výkon 65                                      │ vv.kod in ['65']                                             │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CBE         │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70','11a']                             │

@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.98
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -50,7 +50,7 @@
 		{
 			"label": "Výkon 250x - odbery",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -71,8 +71,8 @@
 		{
 			"label": "Echokardiografia",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
-			"value": 0.008473,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
@@ -100,6 +100,13 @@
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": 0.02814,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -192,6 +199,60 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"5744": [
+			{
+				"cond": "",
+				"value": 2000
+			}
+		],
+		"5745": [
+			{
+				"cond": "",
+				"value": 1800
+			}
+		],
+		"5746": [
+			{
+				"cond": "",
+				"value": 2100
+			}
+		],
+		"5754": [
+			{
+				"cond": "",
+				"value": 750
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 150
 			}
 		]
 	},

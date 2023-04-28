@@ -5,17 +5,17 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────┐
-│ Názov a hodnota   │ Popis              │
-├───────────────────┼────────────────────┤
-│ LIMIT = 0         │ Limit              │
-│ CB = 0.0265       │ Cena bodu          │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ    │
-│ IPP4 = 3.68       │ IPP4               │
-│ IPP5 = 0.73       │ IPP5               │
-│ IPP6 = 1.89       │ IPP6               │
-│ NCB = 0.0025      │ Navýšená cena bodu │
-└───────────────────┴────────────────────┘
+┌───────────────────┬──────────────────────────────┐
+│ Názov a hodnota   │ Popis                        │
+├───────────────────┼──────────────────────────────┤
+│ CB = 0.0335       │ Cena bodu                    │
+│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ              │
+│ IPP4 = 3.68       │ IPP4                         │
+│ IPP5 = 0.73       │ IPP5                         │
+│ IPP6 = 1.89       │ IPP6                         │
+│ NCB = 0.0025      │ Navýšená cena bodu           │
+└───────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA

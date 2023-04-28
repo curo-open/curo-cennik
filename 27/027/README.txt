@@ -8,7 +8,8 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.0305       │ Cena bodu                    │
+│ CB = 0.0335       │ Cena bodu                    │
+│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
 │ CBP = 0.043       │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
 │ CBSVALZSP = 0.008 │ Cena bodu SVaLZ SP           │

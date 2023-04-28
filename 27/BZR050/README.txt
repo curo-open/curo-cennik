@@ -5,16 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────────────┐
-│ Názov a hodnota   │ Popis                        │
-├───────────────────┼──────────────────────────────┤
-│ CB = 0.0365       │ Cena bodu                    │
-│ CBP = 0.0455      │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.00861 │ Cena bodu SVaLZ              │
-│ CBUSG = 0.0088    │ Cena bodu USG                │
-│ CV = 0            │ Výkony 60,62,63              │
-│ LIMIT = 0         │ Limit                        │
-└───────────────────┴──────────────────────────────┘
+┌──────────────────────┬──────────────────────────────┐
+│ Názov a hodnota      │ Popis                        │
+├──────────────────────┼──────────────────────────────┤
+│ CB = 0.0335          │ Cena bodu                    │
+│ CBSVALZ = 0.00973    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.01044 │ Cena bodu USG                │
+│ CBP = 0.0455         │ Cena bodu preventívne výkony │
+│ IPP1 = 3.5           │ IPP1                         │
+│ IPP2 = 3             │ IPP2                         │
+│ IPP3 = 2             │ IPP3                         │
+│ LIMIT = 0            │ Limit                        │
+└──────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -27,15 +29,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
-│            10.2 │ vv.pocet*cena             │ 629B                                          │ vv.kod in ['629b']                                           │
-│               6 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['70','1b','1c','11a']                             │
+│            5.65 │ vv.pocet*cena             │ Výkon H0006                                   │ vv.kod in ['H0006']                                          │
+│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
 │        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
 │        0.012083 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
-│            null │ vv.bodyCelkom*CV          │ Výkony 60,62,63                               │ vv.kod==['60','62','63']                                     │
+│          0.0385 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod==['60','62','63']                                     │
+│            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod==['65','66','67']                                     │
+│           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod==['4571a']                                            │
+│         0.00973 │ vv.bodyCelkom*cena        │ Výkon 4587a                                   │ vv.kod==['4587a']                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
@@ -56,7 +62,7 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│              80 │ 1b                                                                                                        │                           │
+│             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
 │            1200 │ 1B06025                                                                                                   │                           │
@@ -68,6 +74,9 @@ Autor: curo.sk
 │             270 │ 1B05013                                                                                                   │                           │
 │             270 │ 1B05014                                                                                                   │                           │
 │             180 │ 10c                                                                                                       │                           │
+│             900 │ 62b                                                                                                       │                           │
+│             380 │ 4571a                                                                                                     │                           │
+│             500 │ 4587a                                                                                                     │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

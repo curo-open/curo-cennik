@@ -1,7 +1,11 @@
 {
 	"params": {
 		"CB": {
-			"label": "Vypočitaná cena bodu",
+			"label": "Cena bodu ",
+			"value": 0.0335
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
 			"value": 0.0305
 		},
 		"CBP": {

@@ -5,18 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ CB = 0.0275      │ Cena bodu       │
-│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ │
-│ CBUSG = 0.0088   │ Cena bodu USG   │
-│ IPP1 = 0.57      │ IPP1            │
-│ IPP2 = 0.36      │ IPP2            │
-│ IPP3 = 0.28      │ IPP3            │
-│ AGTC = 4.8       │ AGTC            │
-│ LIMIT = 0        │ Limit           │
-└──────────────────┴─────────────────┘
+┌──────────────────┬──────────────────────────────┐
+│ Názov a hodnota  │ Popis                        │
+├──────────────────┼──────────────────────────────┤
+│ CB = 0.0335      │ Cena bodu                    │
+│ CBO = 0.0305     │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.0082 │ Cena bodu SVaLZ              │
+│ CBUSG = 0.0088   │ Cena bodu USG                │
+│ IPP1 = 0.57      │ IPP1                         │
+│ IPP2 = 0.36      │ IPP2                         │
+│ IPP3 = 0.28      │ IPP3                         │
+│ AGTC = 4.8       │ AGTC                         │
+│ LIMIT = 0        │ Limit                        │
+└──────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA

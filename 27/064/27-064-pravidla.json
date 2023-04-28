@@ -1,7 +1,11 @@
 {
 	"params": {
 		"CB": {
-			"label": "Vypočitaná cena bodu",
+			"label": "Cena bodu ",
+			"value": 0.0335
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
 			"value": 0.0305
 		},
 		"CBP": {
@@ -38,7 +42,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
+			"value": 0.0335,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -64,31 +68,17 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon Ine SVALZ",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.0226,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "USG",
-			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "EKG",
-			"if": "vv.kod in ['5702','5702a','15c']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vyšetrenie pacienta s Covidom",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

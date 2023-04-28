@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────────┬─────────────────────┐
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
-│ IPP1 = 1.19           │ IPP1                │
+│ IPP1 = 2.24           │ IPP1                │
 │ IPP2 = 2.9            │ IPP2                │
 │ IPP3 = 4.9            │ IPP3                │
 │ IPP4 = 7.9            │ IPP4                │
@@ -32,14 +32,14 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5330','5331','5332','5300','5301','5303','5304', │
 │                 │                           │                                               │ '5307','5307a','5312','5315','5316','5796','5799']           │
 │           0.049 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['158','158A','158B','158C','158D','159c']         │
 │                 │                           │ renia na rakovinu                             │                                                              │
-│              94 │ vv.pocet*cena             │ Výkon 4L033003, 4L033004                      │ vv.kod in ['4L033003','4L033004']                            │
+│              94 │ vv.pocet*cena             │ Výkon 4L03003, 4L03004                        │ vv.kod in ['4L03003','4L03004']                              │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -60,9 +60,9 @@ Autor: curo.sk
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
-│             200 │ 65                                                                                                        │                           │
-│             320 │ 66                                                                                                        │                           │
-│             200 │ 67                                                                                                        │                           │
+│               0 │ 65                                                                                                        │                           │
+│               0 │ 66                                                                                                        │                           │
+│               0 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

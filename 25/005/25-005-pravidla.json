@@ -38,7 +38,7 @@
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0
+			"value": 0.009574
 		}
 	},
 	"pacient": [],
@@ -60,13 +60,13 @@
 		{
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 820;821;822;825;841",
-			"if": "vv.kod in ['820','821','822','825','841','847']",
+			"label": "Výkon 820;821;822;825;826;841",
+			"if": "vv.kod in ['820','821','822','825','826','841','847']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -188,37 +188,43 @@
 		"820": [
 			{
 				"cond": "",
-				"value": 900
+				"value": 950
 			}
 		],
 		"821": [
 			{
 				"cond": "",
-				"value": 850
+				"value": 890
 			}
 		],
 		"822": [
 			{
 				"cond": "",
-				"value": 340
+				"value": 360
 			}
 		],
 		"825": [
 			{
 				"cond": "",
-				"value": 450
+				"value": 470
+			}
+		],
+		"826": [
+			{
+				"cond": "",
+				"value": 750
 			}
 		],
 		"841": [
 			{
 				"cond": "",
-				"value": 2030
+				"value": 2130
 			}
 		],
 		"847": [
 			{
 				"cond": "",
-				"value": 580
+				"value": 610
 			}
 		],
 		"15d": [

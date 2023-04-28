@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -57,7 +57,7 @@
 		{
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -278,6 +278,18 @@
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"5715": [
+			{
+				"cond": "",
+				"value": 1700
+			}
+		],
+		"5716": [
+			{
+				"cond": "",
+				"value": 400
 			}
 		],
 		"15d": [

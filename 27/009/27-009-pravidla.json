@@ -5,7 +5,11 @@
 			"value": 0.21
 		},
 		"CB": {
-			"label": "Cena bodu",
+			"label": "Cena bodu ",
+			"value": 0.0335
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
 			"value": 0.0305
 		},
 		"CBP": {
@@ -31,6 +35,20 @@
 		}
 	],
 	"vykon": [
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU']) && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU']) && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSEUNK",
+			"instruction": null
+		},
 		{
 			"label": "Výkon 100,102,103,105,157",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['100','102','103','105','157']",

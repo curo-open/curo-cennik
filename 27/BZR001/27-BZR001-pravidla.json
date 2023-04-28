@@ -2,15 +2,15 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0365
+			"value": 0.0335
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.00924
+			"value": 0.01044
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -26,15 +26,15 @@
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 3.68
+			"value": 5.5
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 2.63
+			"value": 4
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 1.89
+			"value": 3
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -53,10 +53,10 @@
 	"vykon": [
 		{
 			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
+			"if": "vv.kod in ['15d'] && vv.kod in ['15d']",
 			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"instruction": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 1a",
@@ -81,38 +81,38 @@
 		},
 		{
 			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
-			"value": 0.037,
+			"if": "vv.kod in ['60','62','63'] && vv.kod in ['60','62','63']",
+			"value": 0.0385,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"instruction": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 65,66,67",
-			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"if": "vv.kod in ['65','66','67'] && vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": "vv.bodyCelkom*CB"
 		},
 		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
-			"value": 0.0088,
+			"label": "Výkon 5702",
+			"if": "vv.kod in ['5702']",
+			"value": 0.00973,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5330,5531,5332",
-			"if": "vv.kod in ['5330','5331','5332']",
+			"if": "vv.kod in ['5330','5331','5332'] && vv.kod in ['5330','5331','5332']",
 			"value": 0.0055,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"instruction": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.00924,
+			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5799'] && vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"value": 0.01044,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"instruction": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Výkon 654",
@@ -164,25 +164,46 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5793;5794;5795",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.01275,
+			"label": "Výkon 5793;5794;5795;5727",
+			"if": "vv.kod in ['5793','5794','5795','5727']",
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkon H0007",
+			"if": "vv.kod in ['H0007'] && vv.kod in ['H0007']",
+			"value": 5.88,
+			"calc": "vv.pocet*cena",
+			"instruction": "vv.pocet*cena"
 		},
 		{
 			"label": "Výkon H0008",
-			"if": "vv.kod in ['H0008']",
-			"value": 5,
+			"if": "vv.kod in ['H0008'] && vv.kod in ['H0008']",
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
-			"instruction": null
+			"instruction": "vv.pocet*cena"
+		},
+		{
+			"label": "Výkon 3860",
+			"if": "vv.kod in ['3860'] && vv.kod in ['3860']",
+			"value": 8.95,
+			"calc": "vv.pocet*cena",
+			"instruction": "vv.pocet*cena"
 		},
 		{
 			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
+			"if": "vv.kod in ['1b','1c','11a','70'] && vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
+			"instruction": "vv.bodyCelkom*cena"
+		},
+		{
+			"label": "Výkon 4571a",
+			"if": "vv.kod in ['4571a'] && vv.kod in ['4571a']",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "vv.bodyCelkom*cena"
 		},
 		{
 			"label": "Očkovanie Covid 252L",
@@ -242,10 +263,10 @@
 		},
 		{
 			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
-			"if": "vv.kod in ['629b']",
+			"if": "vv.kod in ['629b'] && vv.kod in ['629b']",
 			"value": 10.2,
 			"calc": "vv.pocet*cena",
-			"instruction": null
+			"instruction": "vv.pocet*cena"
 		},
 		{
 			"label": "Pripočitateľné položky",
@@ -368,6 +389,24 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"4571a": [
+			{
+				"cond": "",
+				"value": 380
 			}
 		]
 	},

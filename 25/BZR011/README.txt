@@ -5,19 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────────┬─────────────────────────────────────────────────────────┐
-│ Názov a hodnota     │ Popis                                                   │
-├─────────────────────┼─────────────────────────────────────────────────────────┤
-│ IPP1 = 1.19         │ IPP1                                                    │
-│ IPP2 = 2.9          │ IPP2                                                    │
-│ IPP3 = 4.9          │ IPP3                                                    │
-│ LIMIT = 75900       │ Limit                                                   │
-│ EL_POBOCKA = 1      │ Používa el. pobočku ?                                   │
-│ CB = 0.0318         │ Cena bodu                                               │
-│ CBP = 0.041         │ Cena bodu preventívne výkony                            │
-│ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
-│ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
-└─────────────────────┴─────────────────────────────────────────────────────────┘
+┌───────────────────────┬─────────────────────────────────────────────────────────┐
+│ Názov a hodnota       │ Popis                                                   │
+├───────────────────────┼─────────────────────────────────────────────────────────┤
+│ IPP1 = 2.24           │ IPP1                                                    │
+│ IPP2 = 2.9            │ IPP2                                                    │
+│ IPP3 = 4.9            │ IPP3                                                    │
+│ LIMIT = 75900         │ Limit                                                   │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ?                                   │
+│ CB = 0.0318           │ Cena bodu                                               │
+│ CBP = 0.041           │ Cena bodu preventívne výkony                            │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ                                         │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
+└───────────────────────┴─────────────────────────────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -36,13 +36,14 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
-│            null │ vv.bodyCelkom*CBSVALZP    │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│           0.026 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
+│               5 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

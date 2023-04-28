@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -42,14 +42,14 @@
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.026,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -76,9 +76,9 @@
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in [' 1A02060','1A02077','1A03044','1A01033']",
-			"value": 0.0318,
-			"calc": "vv.bodyCelkom*cena",
+			"if": "vv.kod in ['1A02060','1A02077','1A03044','1A01033','40']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -167,6 +167,12 @@
 				"value": 80
 			}
 		],
+		"40": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"60": [
 			{
 				"cond": "",
@@ -236,13 +242,19 @@
 		"4H00001": [
 			{
 				"cond": "",
-				"value": 1200
+				"value": 1640
 			}
 		],
 		"4H00004": [
 			{
 				"cond": "",
 				"value": 2400
+			}
+		],
+		"4H00005": [
+			{
+				"cond": "",
+				"value": 1750
 			}
 		],
 		"1A01033": [

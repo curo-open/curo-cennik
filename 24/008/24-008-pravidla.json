@@ -2,23 +2,23 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.01
+			"value": 0
 		},
 		"VCB8": {
 			"label": "VCB pre výkon 8",
-			"value": 2.98
+			"value": 3.21
 		},
 		"VCB4": {
 			"label": "VCB pre výkon 4",
-			"value": 2.23
+			"value": 2.4
 		},
 		"VCB1": {
 			"label": "VCB pre výkon 1",
-			"value": 0.59
+			"value": 0.65
 		},
 		"VCB250": {
 			"label": "VCB pre výkon 250",
-			"value": 0.88
+			"value": 0.96
 		},
 		"AGTC": {
 			"label": "AGTC",

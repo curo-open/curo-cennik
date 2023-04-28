@@ -18,13 +18,6 @@
 		},
 		{
 			"label": "JZS",
-			"if": "vv.kod in ['8586'] || vv.k in ['8586'] || vv.k24 in ['8586'] ",
-			"value": 278,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "JZS",
 			"if": "vv.kod in ['9100'] || vv.k in ['9100'] || vv.k24 in ['9100'] ",
 			"value": 278,
 			"calc": "vv.pocet*cena",

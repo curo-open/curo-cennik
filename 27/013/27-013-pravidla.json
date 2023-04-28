@@ -1,11 +1,11 @@
 {
 	"params": {
-		"LIMIT": {
-			"label": "Limit",
-			"value": 0
-		},
 		"CB": {
-			"label": "Cena bodu",
+			"label": "Cena bodu ",
+			"value": 0.0335
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
 			"value": 0.0305
 		},
 		"CBSVALZ": {

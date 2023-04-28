@@ -1,16 +1,20 @@
 {
 	"params": {
-		"LIMIT": {
-			"label": "Limit",
-			"value": 0
-		},
 		"CB": {
-			"label": "Cena bodu",
+			"label": "Cena bodu ",
+			"value": 0.0335
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
 			"value": 0.0305
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00973
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu USG",
+			"value": 0.01044
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -20,6 +24,20 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkon 60;62;63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0335,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60r",
+			"if": "vv.kod in ['60r']",
+			"value": 0.0335,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 5330,5331,5332",
 			"if": "vv.kod in ['5330','5331','5332']",
 			"value": 0.0055,
@@ -27,30 +45,30 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5793,5794,5795",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.0226,
+			"label": "Výkon 200, 2100, 2101, 2106",
+			"if": "vv.kod in ['200','2100','2101','2106']",
+			"value": 0.0335,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60;62;63;820;822;825;841",
-			"if": "vv.kod in ['60','62','63','820','822','825','841',]",
-			"value": 0.0316,
+			"label": "Výkon 201, 204, 2018, 2018a",
+			"if": "vv.kod in ['201','204','2018','2018a']",
+			"value": 0.0335,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "vv.kod in ['H0008']",
-			"value": 5,
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60r",
-			"if": "vv.kod in ['60r']",
-			"value": 10.75,
+			"label": "Prístrojový antigen test",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

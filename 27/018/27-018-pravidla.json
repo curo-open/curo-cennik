@@ -4,6 +4,10 @@
 			"label": "Cena bodu ",
 			"value": 0.034
 		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
+			"value": 0.0305
+		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
 			"value": 0.035

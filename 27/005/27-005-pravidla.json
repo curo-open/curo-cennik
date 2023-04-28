@@ -1,7 +1,11 @@
 {
 	"params": {
 		"CB": {
-			"label": "Cena bodu",
+			"label": "Cena bodu ",
+			"value": 0.0335
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
 			"value": 0.0305
 		},
 		"CBSVALZ": {
@@ -14,7 +18,11 @@
 		},
 		"PV": {
 			"label": "Psych výkony 820, 821, 822, 825, 841, 847, 867",
-			"value": 0.037
+			"value": 0.0335
+		},
+		"PVD": {
+			"label": "Psych výkony deti 826,842,845",
+			"value": 0.0335
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
@@ -24,6 +32,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Vykon 60,62,63,163",
+			"if": "vv.kod in ['60','62','63','163']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 820;822;825;841",
 			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
 			"value": null,
@@ -31,8 +46,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Vykon 60,62,63,163",
-			"if": "vv.kod in ['60','62','63','163']",
+			"label": "Vykon 826,842,845",
+			"if": "vv.kod in ['826','842','845']",
 			"value": null,
 			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null

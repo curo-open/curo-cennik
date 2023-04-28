@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.0335
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -10,27 +10,23 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
-		"CBSVALZP": {
+		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
-			"value": 0.00924
+			"value": 0.01044
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1
+			"value": 3.5
 		},
 		"IPP2": {
-			"label": "IPP5",
-			"value": 2.9
+			"label": "IPP2",
+			"value": 3
 		},
 		"IPP3": {
-			"label": "IPP6",
-			"value": 4.9
-		},
-		"IPP4": {
-			"label": "IPP7",
-			"value": 4.9
+			"label": "IPP3",
+			"value": 2
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
@@ -96,23 +92,30 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60,62,63,65",
+			"label": "Výkon 60,62,63,",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"value": 0.0385,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1b,11a,70",
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4571a",
+			"if": "vv.kod in ['4571a']",
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -164,6 +167,24 @@
 				"value": 210
 			}
 		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"70": [
 			{
 				"cond": "",
@@ -186,6 +207,24 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"4571a": [
+			{
+				"cond": "",
+				"value": 380
 			}
 		]
 	},

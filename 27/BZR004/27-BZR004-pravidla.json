@@ -6,23 +6,27 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0365
+			"value": 0.0335
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.01044
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 3.68
+			"value": 5.5
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 2.63
+			"value": 4
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 1.89
+			"value": 3
 		}
 	},
 	"pacient": [],
@@ -30,15 +34,15 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
+			"value": 0.0385,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -56,9 +60,16 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony",
+			"label": "Výkony H0007",
+			"if": "vv.kod in ['H0007']",
+			"value": 5.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6,
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -70,9 +81,9 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
-			"value": 0.00924,
+			"label": "Výkon 4571a",
+			"if": "vv.kod in ['4571a']",
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -85,8 +96,29 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.00924,
+			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"value": 0.01044,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 629b",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 3860",
+			"if": "vv.kod in ['3860']",
+			"value": 8.95,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5793;5794;5795",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -255,6 +287,18 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"4571a": [
+			{
+				"cond": "",
+				"value": 380
 			}
 		]
 	},

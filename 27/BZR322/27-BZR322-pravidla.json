@@ -6,11 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0365
+			"value": 0.0335
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.01044
 		},
 		"IPP4": {
 			"label": "IPP4",
@@ -30,15 +34,15 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
+			"value": 0.0385,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -53,6 +57,13 @@
 			"if": "vv.kod in ['H0008']",
 			"value": null,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4571a",
+			"if": "vv.kod in ['4571a']",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -77,24 +88,38 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 5153C",
+			"if": "vv.kod in ['5153C']",
+			"value": 150,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.00924,
+			"value": 0.01044,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['158']",
-			"value": 0.0583,
+			"value": 0.079,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4L03003, 4L03004 ",
 			"if": "vv.kod in ['4L03003','4L03004']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": 94,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 629b",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -240,16 +265,16 @@
 				"value": 480
 			}
 		],
-		"4L03003": [
+		"4571a": [
 			{
 				"cond": "",
-				"value": 1600
+				"value": 380
 			}
 		],
-		"4L03004": [
+		"62b": [
 			{
 				"cond": "",
-				"value": 1600
+				"value": 900
 			}
 		]
 	},

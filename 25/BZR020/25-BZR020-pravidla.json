@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0.96
+			"value": 1.3
 		},
 		"KPS": {
 			"label": "KPS",
@@ -14,15 +14,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03
+			"value": 0.0318
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007303
+			"value": 0.009574
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.03
+			"value": 0.0339
 		},
 		"FOB": {
 			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
@@ -37,7 +37,7 @@
 			"value": 10
 		},
 		"EDU": {
-			"label": "EDU",
+			"label": "EDU k výkonom H0003, H0004",
 			"value": 2
 		}
 	},
@@ -45,35 +45,35 @@
 		{
 			"label": "od 18 do 19 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 3.98,
+			"value": 4.05,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 20 do 28 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": 3.16,
+			"value": 3.22,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 29 do 39 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(29, 40)",
-			"value": 2.94,
+			"value": 3.02,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 40 do 44 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(40, 45)",
-			"value": 2.98,
+			"value": 3.04,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 45 do 49 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(45, 50)",
-			"value": 3.04,
+			"value": 3.07,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
@@ -87,14 +87,14 @@
 		{
 			"label": "od 55 do 59 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(55, 60)",
-			"value": 3.66,
+			"value": 4.05,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 60 do 64 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(60, 65)",
-			"value": 4.09,
+			"value": 4.51,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
@@ -108,28 +108,28 @@
 		{
 			"label": "od 70 do 74 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 5.05,
+			"value": 5.55,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 75 do 79 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 5.22,
+			"value": 6.22,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 80 do 84 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 5.72,
+			"value": 6.99,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 5.82,
+			"value": 7.3,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -159,21 +159,21 @@
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 0.021995,
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -187,21 +187,21 @@
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": 0.021995,
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.07345,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -215,14 +215,14 @@
 		{
 			"label": "EKG pri preventívnej prehliadke",
 			"if": "vv.kod in ['5702P']",
-			"value": 0.008105,
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG ",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00861,
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -241,8 +241,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie",
-			"if": "vv.kod in ['252b','252c']",
+			"label": "Očkovanie - 252a,252b,252c",
+			"if": "vv.kod in ['252a','252b','252c']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -250,14 +250,14 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.03,
+			"value": 0.0339,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Vyšetrenie C – reaktívneho proteínu",
 			"if": "vv.kod in ['4571a','4571A']",
-			"value": 5,
+			"value": 5.75,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -278,7 +278,7 @@
 		{
 			"label": "Výkon 163",
 			"if": "vv.kod in ['163']",
-			"value": 6,
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -306,14 +306,14 @@
 		{
 			"label": "Inicialne I10/E78 (H0003)",
 			"if": "vv.kod in ['H0003']",
-			"value": 12,
+			"value": 15,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Kontrolne I10/E78 (H0004)",
 			"if": "vv.kod in ['H0004']",
-			"value": 12,
+			"value": 15,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -327,7 +327,7 @@
 		{
 			"label": "Stratifikacia CMP",
 			"if": "vv.kod in ['H0006']",
-			"value": 5,
+			"value": 5.65,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -348,14 +348,14 @@
 		{
 			"label": "Stanovenie ABI oscilometricky",
 			"if": "vv.kod in ['H0008']",
-			"value": 6,
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Delegovaný odber krvi",
 			"if": "vv.kod in ['250D']",
-			"value": 1.05,
+			"value": 2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -446,7 +446,7 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 350
+				"value": 620
 			}
 		],
 		"70": [
@@ -483,6 +483,12 @@
 			{
 				"cond": "",
 				"value": 550
+			}
+		],
+		"252a": [
+			{
+				"cond": "",
+				"value": 70
 			}
 		],
 		"252b": [

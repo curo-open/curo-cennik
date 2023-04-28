@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────────┬─────────────────────┐
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
-│ IPP1 = 1.19           │ IPP1                │
+│ IPP1 = 2.24           │ IPP1                │
 │ IPP2 = 2.9            │ IPP2                │
 │ IPP3 = 4.9            │ IPP3                │
 │ IPP4 = 7.9            │ IPP4                │
@@ -30,14 +30,14 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta pri pandémii COVI │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ D-19                                          │                                                              │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorescenčnou metódou                         │                                                              │
-│          0.0318 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in [' 1A02060','1A02077','1A03044','1A01033']         │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1A02060','1A02077','1A03044','1A01033','40']     │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony                                        │ vv.kod in ['4H00001','4H00004','4H00005']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
@@ -56,6 +56,7 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │              80 │ 1                                                                                                         │                           │
+│             200 │ 40                                                                                                        │                           │
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
@@ -67,8 +68,9 @@ Autor: curo.sk
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
-│            1200 │ 4H00001                                                                                                   │                           │
+│            1640 │ 4H00001                                                                                                   │                           │
 │            2400 │ 4H00004                                                                                                   │                           │
+│            1750 │ 4H00005                                                                                                   │                           │
 │             525 │ 1A01033                                                                                                   │                           │
 │             340 │ 1A02060                                                                                                   │                           │
 │             900 │ 1A02077                                                                                                   │                           │

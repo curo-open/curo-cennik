@@ -371,7 +371,7 @@
 		},
 		{
 			"label": "Delegovaný odber krvi",
-			"if": "vv.kod in ['250d']",
+			"if": "vv.kod in ['250d','250D']",
 			"value": 1.19,
 			"calc": "vv.pocet*cena",
 			"instruction": null

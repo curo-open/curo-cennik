@@ -6,11 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0365
+			"value": 0.0335
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.01044
 		},
 		"IPP4": {
 			"label": "IPP4",
@@ -22,7 +26,11 @@
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 0.65
+			"value": 0.57
+		},
+		"IPP7": {
+			"label": "IPP7",
+			"value": 1
 		}
 	},
 	"pacient": [],
@@ -30,7 +38,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
+			"value": 0.0385,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -49,10 +57,17 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1A02072",
-			"if": "vv.kod in ['1A02072']",
+			"label": "Výkon 654",
+			"if": "vv.kod in ['654']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1A02072",
+			"if": "vv.kod in ['1A02072']",
+			"value": 0.0335,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -63,9 +78,9 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
-			"value": 0.0088,
+			"label": "Výkon 4571a",
+			"if": "vv.kod in ['4571a']",
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -78,8 +93,8 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
-			"value": 0.0088,
+			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316']",
+			"value": 0.01044,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -184,6 +199,12 @@
 				"value": 40
 			}
 		],
+		"654": [
+			{
+				"cond": "",
+				"value": 135
+			}
+		],
 		"15d": [
 			{
 				"cond": "",
@@ -214,10 +235,22 @@
 				"value": 480
 			}
 		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
 		"1A02072": [
 			{
 				"cond": "",
 				"value": 1300
+			}
+		],
+		"4571a": [
+			{
+				"cond": "",
+				"value": 380
 			}
 		]
 	},

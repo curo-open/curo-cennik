@@ -22,7 +22,6 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │             398 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104'] || vv.k in ['9104'] || vv.k24 in ['9104'] │
 │             349 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105'] || vv.k in ['9105'] || vv.k24 in ['9105'] │
-│             278 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k24 in ['8586'] │
 │             278 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9100'] || vv.k in ['9100'] || vv.k24 in ['9100'] │
 │             224 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8502'] || vv.k in ['8502'] || vv.k24 in ['8502'] │
 │             423 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9101'] || vv.k in ['9101'] || vv.k24 in ['9101'] │

@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -57,8 +57,8 @@
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702','5702a','15c']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -71,29 +71,57 @@
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "špec. elektronické výkony",
 			"if": "vv.kod in ['70','1b','1c','11a']",
-			"value": 0.0252,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in ['1B05011','1B05012']",
+			"if": "vv.kod in ['1B05011','1B05012','1B05014','4a']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in ['1A02009','1A03007']",
-			"value": 0.026,
+			"if": "vv.kod in ['1A02009','1A02012','1B06025','1A03007']",
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1A02013",
+			"if": "vv.kod in ['1A02013']",
+			"value": 6.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0003",
+			"if": "vv.kod in ['H0003']",
+			"value": 27,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0006",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.65,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 6.78,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -178,19 +206,25 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"66": [
@@ -367,16 +401,40 @@
 				"value": 1000
 			}
 		],
+		"1A02012": [
+			{
+				"cond": "",
+				"value": 12000
+			}
+		],
 		"1A03007": [
 			{
 				"cond": "",
 				"value": 1200
 			}
 		],
+		"1B06025": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"1B05014": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
 		"10c": [
 			{
 				"cond": "",
 				"value": 180
+			}
+		],
+		"4a": [
+			{
+				"cond": "",
+				"value": 80
 			}
 		]
 	},

@@ -2,39 +2,31 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.98
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.19
+			"value": 3.6
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 5.39
+			"value": 6.09
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 5.39
+			"value": 9.09
 		},
 		"IPPD": {
 			"label": "IPPD",
 			"value": 5
 		},
-		"LIMIT": {
-			"label": "Limit",
-			"value": 75900
-		},
-		"EL_POBOCKA": {
-			"label": "Používa el. pobočku ?",
-			"value": 1
-		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0278
+			"value": 0.0318
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.041
+			"value": 0.049
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -42,11 +34,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		}
 	},
 	"pacient": [],
@@ -54,7 +46,7 @@
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -62,6 +54,13 @@
 			"label": "ŠAS el. výkony",
 			"if": "vv.kod in ['1b','1c','70','11a']",
 			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Chirurgické výkony",
+			"if": "vv.kod in ['200','2100','2101','2106']",
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -174,6 +173,24 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [

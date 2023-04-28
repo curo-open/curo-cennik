@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -56,7 +56,7 @@
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -75,6 +75,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 5153C",
+			"if": "vv.kod in ['5153C']",
+			"value": 150,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5796','5799']",
 			"value": null,
@@ -84,13 +91,13 @@
 		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['158','158A','158B','158C','158D','159c']",
-			"value": 0.049,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 4L033003, 4L033004",
-			"if": "vv.kod in ['4L033003','4L033004']",
+			"label": "Výkon 4L03003, 4L03004",
+			"if": "vv.kod in ['4L03003','4L03004']",
 			"value": 94,
 			"calc": "vv.pocet*cena",
 			"instruction": null
@@ -188,25 +195,37 @@
 		"65": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 0
 			}
 		],
 		"66": [
 			{
 				"cond": "",
-				"value": 320
+				"value": 0
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 0
 			}
 		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"158": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"5302": [
+			{
+				"cond": "",
+				"value": 1000
 			}
 		],
 		"1b": [

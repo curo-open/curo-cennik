@@ -2,15 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0365
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.0455
+			"value": 0.0335
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00861
+			"value": 0.00973
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -20,9 +16,30 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['65']",
-			"value": 0.0224,
+			"label": "Výkon 60,62,63,",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0385,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1b,11a,70",
+			"if": "vv.kod in ['1b','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4571a",
+			"if": "vv.kod in ['4571a']",
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -30,13 +47,6 @@
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": 0.006666,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Vykony 60,62,63",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -87,19 +97,31 @@
 		"62": [
 			{
 				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
 				"value": 210
 			}
 		],
 		"65": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
 			}
 		],
 		"70": [
@@ -136,6 +158,18 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"4571a": [
+			{
+				"cond": "",
+				"value": 380
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		]
 	},
