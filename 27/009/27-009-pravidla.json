@@ -51,49 +51,49 @@
 		},
 		{
 			"label": "Výkon 100,102,103,105,157",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['100','102','103','105','157']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['100','102','103','105','157']",
 			"value": 0.0583,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 118",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['118']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['118']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 297",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['297']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['297']",
 			"value": 0.0352,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['252b']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['252b']",
 			"value": 0.0583,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1070",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['1070']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['1070']",
 			"value": 0.0735,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 5303,5305",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305']",
 			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5308",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5308']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5308']",
 			"value": 0.01044,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

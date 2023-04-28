@@ -11,7 +11,7 @@ Autor: curo.sk
 │ CB = 0.0335          │ Cena bodu                    │
 │ CBO = 0.0305         │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.00973    │ Cena bodu SVaLZ              │
-│ CBSVALZUSG = 0.00924 │ Cena bodu SVaLZ USG          │
+│ CBSVALZUSG = 0.01044 │ Cena bodu SVaLZ USG          │
 │ NCB = 0.005          │ Navysena cena bodu           │
 │ IPP1 = 0             │ IPP1                         │
 │ IPP2 = 0             │ IPP2                         │

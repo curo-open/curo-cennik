@@ -44,7 +44,7 @@
 		},
 		{
 			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null

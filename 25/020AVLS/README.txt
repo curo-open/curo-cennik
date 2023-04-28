@@ -83,10 +83,14 @@ Autor: curo.sk
 │            5.75 │ vv.pocet*cena             │ C-reaktívny proteín                           │ vv.kod in ['4571a','4571A']                                  │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
+│            0.08 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['160R']                                           │
+│                 │                           │ jicajtov, hasičov a záchranárov - PP          │                                                              │
+│        0.009574 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5702R']                                          │
+│                 │                           │ jicajtov, hasičov a záchranárov - EKG         │                                                              │
 │           0.065 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
-│                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
-│                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
-│                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
+│                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','250bR','3525R','3592R','252bR','3784 │
+│                 │                           │                                               │ R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R' │
+│                 │                           │                                               │ ,'FotoR','PACSR']                                            │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
@@ -109,6 +113,7 @@ Autor: curo.sk
 │             750 │ 5715                                                                                                      │                           │
 │             240 │ 5716                                                                                                      │                           │
 │             180 │ 159b                                                                                                      │                           │
+│             390 │ 160R                                                                                                      │                           │
 │             550 │ 5702P                                                                                                     │                           │
 │              70 │ 252b                                                                                                      │                           │
 │              70 │ 252c                                                                                                      │                           │

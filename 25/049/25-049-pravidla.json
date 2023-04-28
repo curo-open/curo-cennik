@@ -26,7 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.02814
+			"value": 0.0318
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -34,7 +34,7 @@
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -207,6 +207,12 @@
 			}
 		],
 		"5746": [
+			{
+				"cond": "",
+				"value": 2100
+			}
+		],
+		"5754": [
 			{
 				"cond": "",
 				"value": 750

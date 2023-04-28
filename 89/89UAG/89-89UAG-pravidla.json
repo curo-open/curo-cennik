@@ -82,7 +82,7 @@
 		},
 		{
 			"label": "Výkony 5303,5305,5308",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305','5308']",
 			"value": 0.00909,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

@@ -14,7 +14,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.020995
+			"value": 0.08
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -22,11 +22,15 @@
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.03
+			"value": 0.0339
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007303
+			"value": 0.009574
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.009574
 		}
 	},
 	"pacient": [
@@ -69,29 +73,29 @@
 		},
 		{
 			"label": "Výkony 5303,5305,5308",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']",
-			"value": 0.00909,
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305','5308']",
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 5303,5305,5308",
 			"if": "vv.kod in ['5303','5305','5308']",
-			"value": 0.008105,
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5808",
 			"if": "vv.kod in ['5808']",
-			"value": 0.008105,
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
-			"value": 0.020995,
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -105,7 +109,7 @@
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -125,28 +129,41 @@
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.jeSVaZL",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		}
 	],
 	"kontrola": [],
 	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
 		"67": [
 			{
 				"cond": "",
