@@ -38,7 +38,7 @@
 		},
 		"_4571a": {
 			"label": "4571a",
-			"value": 5
+			"value": 5.65
 		},
 		"CHRSTAR": {
 			"label": "CHRSTAR",
@@ -106,95 +106,99 @@
 		},
 		"_3635A": {
 			"label": "3635A",
-			"value": 2
+			"value": 2.26
 		},
 		"_3634": {
 			"label": 3634,
-			"value": 4
+			"value": 4.5
+		},
+		"EDU": {
+			"label": "EDU k výkonu 10",
+			"value": 2
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 20",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 4.42,
+			"value": 4.51,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p.kapitacia && p|vekMedzi(20, 28)",
-			"value": 2.95,
+			"value": 3.01,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p.kapitacia && p|vekMedzi(28, 46)",
-			"value": 3.11,
+			"value": 3.17,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p.kapitacia && p|vekMedzi(46, 52)",
-			"value": 3.13,
+			"value": 3.19,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p.kapitacia && p|vekMedzi(52, 54)",
-			"value": 3.33,
+			"value": 3.46,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p.kapitacia && p|vekMedzi(54, 58)",
-			"value": 3.99,
+			"value": 4.15,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p.kapitacia && p|vekMedzi(58, 62)",
-			"value": 4.29,
+			"value": 4.46,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p.kapitacia && p|vekMedzi(62, 65)",
-			"value": 4.68,
+			"value": 5.08,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p.kapitacia && p|vekMedzi(65, 69)",
-			"value": 5.14,
+			"value": 5.35,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p.kapitacia && p|vekMedzi(69, 73)",
-			"value": 5.56,
+			"value": 5.79,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p.kapitacia && p|vekMedzi(73, 88)",
-			"value": 6.22,
+			"value": 6.47,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p.kapitacia && p|vekMedzi(88)",
-			"value": 6.18,
+			"value": 6.89,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -293,6 +297,13 @@
 		},
 		{
 			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='SKOR05'",
+			"value": null,
+			"calc": "SKOR05",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC",
@@ -385,7 +396,7 @@
 		{
 			"label": "Vykon 10",
 			"if": "vv.kod in ['10']",
-			"value": 14,
+			"value": 17.5,
 			"calc": "vv.pocet*10",
 			"instruction": null
 		},
@@ -420,42 +431,42 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159b','159x','159z']",
-			"value": 0.07345,
+			"value": 0.079,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.08,
+			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.07345,
+			"value": 0.079,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 16,
+			"value": 18.08,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG (5702Z)",
 			"if": "vv.kod in ['5702Z']",
-			"value": 4.78,
+			"value": 5.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG (5702)+65",
 			"if": "p|vekMedzi(65) && vv.kod in ['5702']",
-			"value": 6.78,
+			"value": 5.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -476,7 +487,7 @@
 		{
 			"label": "Kvantitatívne vyšetrenie INR POCT",
 			"if": "vv.kod in ['H0007']",
-			"value": 5.2,
+			"value": 6.24,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -490,14 +501,14 @@
 		{
 			"label": "Stanovenie ABI oscilometricky",
 			"if": "vv.kod in ['H0008']",
-			"value": 6,
+			"value": 7.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Celodenné snímanie tlaku",
 			"if": "vv.kod in ['5715']",
-			"value": 16.5,
+			"value": 19.8,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

@@ -1,10 +1,5 @@
 {
-	"params": {
-		"ZA_BOD": {
-			"label": "Cena posudkového lekára za bod",
-			"value": 0.023236
-		}
-	},
+	"params": {},
 	"pacient": [],
 	"vykon": [
 		{

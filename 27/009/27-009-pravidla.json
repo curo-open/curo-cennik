@@ -36,20 +36,6 @@
 	],
 	"vykon": [
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU']) && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU']) && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSEUNK",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 100,102,103,105,157",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['100','102','103','105','157']",
 			"value": 0.0735,

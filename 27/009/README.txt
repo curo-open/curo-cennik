@@ -29,10 +29,6 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
-│                 │                           │                                               │ ) && vv.typ=='SVaLZ'                                         │
-│            null │ vv.bodyCelkom*CBSEUNK     │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
-│                 │                           │                                               │ ) && vv.typ!='SVaLZ'                                         │
 │          0.0735 │ vv.bodyCelkom*cena        │ Výkon 100,102,103,105,157                     │ "Z" in vv.diagnoza && vv.kod in ['100','102','103','105','15 │
 │                 │                           │                                               │ 7']                                                          │
 │          0.0735 │ vv.bodyCelkom*cena        │ Výkon 108                                     │ "Z" in vv.diagnoza && vv.kod in ['108']                      │

@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬────────────────────────────┐
 │ Názov a hodnota   │ Popis                      │
 ├───────────────────┼────────────────────────────┤
-│ IDK = 1.53        │ NASTAVENIA IDK             │
+│ IDK = 0           │ NASTAVENIA IDK             │
 │ CB = 0            │ Cena bodu                  │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.0339   │ Cena bodu Nekapitovany(EU) │
@@ -82,12 +82,14 @@ Autor: curo.sk
 │            6.78 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │
 │           13.56 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10','H0003','H0004']                             │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
+│           28.83 │ vv.pocet*cena             │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['160R']                                           │
+│                 │                           │ jicajtov, hasičov a záchranárov - PP          │                                                              │
+│         0.00973 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5702R']                                          │
+│                 │                           │ jicajtov, hasičov a záchranárov - EKG         │                                                              │
 │        0.020995 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
-│                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
-│                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
-│                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
-│          0.0073 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.typ=='SVaLZ'        │
-│           0.015 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.typ!='SVaLZ'        │
+│                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','250bR','3525R','3592R','252bR','3784 │
+│                 │                           │                                               │ R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R' │
+│                 │                           │                                               │ ,'FotoR','PACSR']                                            │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
