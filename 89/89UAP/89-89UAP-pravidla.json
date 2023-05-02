@@ -42,27 +42,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.03,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.jeSVaZL",
-			"value": 0.007303,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !vv.jeSVaZL",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '951','952','953']",
 			"value": 0.065,
@@ -207,6 +186,27 @@
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.03,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaZL",
+			"value": 0.007303,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
 	],
