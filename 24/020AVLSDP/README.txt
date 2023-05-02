@@ -9,10 +9,10 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                           │
 ├───────────────────┼─────────────────────────────────┤
 │ IDK = 0           │ NASTAVENIA IDK                  │
-│ VCB1 = 0          │ Vypočítaná cena bodu. výkon 1   │
-│ VCB4 = 0          │ Vypočítaná cena bodu. výkon 4   │
-│ VCB8 = 0          │ Vypočítaná cena bodu. výkon 8   │
-│ VCB250 = 0        │ Vypočítaná cena bodu. výkon 250 │
+│ VCB1 = 0.55       │ Vypočítaná cena bodu. výkon 1   │
+│ VCB4 = 1.42       │ Vypočítaná cena bodu. výkon 4   │
+│ VCB8 = 2.8        │ Vypočítaná cena bodu. výkon 8   │
+│ VCB250 = 0.55     │ Vypočítaná cena bodu. výkon 250 │
 │ VCB10 = 0         │ Vypočítaná cena bodu. výkon 10  │
 │ PPH1 = 10         │ PPH1                            │
 │ PPH2 = 6.5        │ PPH2                            │
@@ -87,7 +87,7 @@ Autor: curo.sk
 │            1.39 │ vv.pocet*cena             │ Nekapitovaný - Vykon 250                      │ !p.kapitacia && vv.kod in ['250']                            │
 │         0.00819 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
 │        0.022973 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│             NaN │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
+│            null │ vv.pocet*VCB4             │ Vykon 4                                       │ vv.kod in ['4']                                              │
 │            null │ vv.pocet*VCB8             │ Vykon 8                                       │ vv.kod in ['8']                                              │
 │            null │ vv.pocet*VCB250           │ Vykon 250                                     │ vv.kod in ['250']                                            │
 │            17.5 │ vv.pocet*10               │ Vykon 10                                      │ vv.kod in ['10']                                             │

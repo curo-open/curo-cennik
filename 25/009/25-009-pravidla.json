@@ -54,14 +54,14 @@
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['157','102','103','105','108','1070','297']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b, 252c",
 			"if": "vv.kod in ['252b','252C']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

@@ -6,19 +6,19 @@
 		},
 		"VCB1": {
 			"label": "Vypočítaná cena bodu. výkon 1",
-			"value": 0
+			"value": 0.55
 		},
 		"VCB4": {
 			"label": "Vypočítaná cena bodu. výkon 4",
-			"value": 0
+			"value": 1.42
 		},
 		"VCB8": {
 			"label": "Vypočítaná cena bodu. výkon 8",
-			"value": 0
+			"value": 2.8
 		},
 		"VCB250": {
 			"label": "Vypočítaná cena bodu. výkon 250",
-			"value": 0
+			"value": 0.55
 		},
 		"VCB10": {
 			"label": "Vypočítaná cena bodu. výkon 10",
