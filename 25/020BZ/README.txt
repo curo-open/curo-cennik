@@ -11,9 +11,9 @@ Autor: curo.sk
 │ IDK = 0            │ IDK                                               │
 │ KPS = 1            │ KPS                                               │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?                             │
-│ CB = 0.03          │ Cena bodu                                         │
-│ CBSVALZ = 0.007303 │ Cena bodu SVaLZ                                   │
-│ CBEUNK = 0.03      │ Cena bodu Nekapitovany(EU)                        │
+│ CB = 0.0339        │ Cena bodu                                         │
+│ CBSVALZ = 0.009574 │ Cena bodu SVaLZ                                   │
+│ CBEUNK = 0.0339    │ Cena bodu Nekapitovany(EU)                        │
 │ AGTC = 4.8         │ AGTC                                              │
 │ PP50 = 10          │ PP50                                              │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │

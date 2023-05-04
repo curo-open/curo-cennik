@@ -14,15 +14,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03
+			"value": 0.0339
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007303
+			"value": 0.009574
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.03
+			"value": 0.0339
 		},
 		"AGTC": {
 			"label": "AGTC",
