@@ -93,20 +93,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*SVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
 			"value": null,
@@ -454,6 +440,20 @@
 			"if": "vv.kod=='EDU'",
 			"value": null,
 			"calc": "EDU",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*SVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		}
 	],

@@ -18,19 +18,19 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 1.68
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 2.7
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 4.57
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 4.9
+			"value": 7.57
 		}
 	},
 	"pacient": [],
@@ -38,7 +38,7 @@
 		{
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -124,19 +124,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		],
 		"65": [
