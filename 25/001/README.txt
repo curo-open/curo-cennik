@@ -8,15 +8,15 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 1.19           │ IPP1                  │
-│ IPP2 = 2.9            │ IPP2                  │
-│ IPP3 = 4.9            │ IPP3                  │
-│ IPP4 = 4.9            │ IPP4                  │
+│ IPP1 = 2.24           │ IPP1                  │
+│ IPP2 = 3.6            │ IPP2                  │
+│ IPP3 = 6.09           │ IPP3                  │
+│ IPP4 = 9.09           │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.02814          │ Cena bodu             │
-│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ       │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG   │
+│ CB = 0.0318           │ Cena bodu             │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
 │ PP50 = 10             │ PP50                  │
 └───────────────────────┴───────────────────────┘
@@ -33,7 +33,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │        0.011618 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │

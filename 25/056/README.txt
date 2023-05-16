@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.8            │ IPP1                         │
-│ IPP2 = 2.9            │ IPP2                         │
-│ IPP3 = 4.9            │ IPP3                         │
-│ IPP4 = 7.9            │ IPP4                         │
+│ IPP1 = 2.24           │ IPP1                         │
+│ IPP2 = 3.6            │ IPP2                         │
+│ IPP3 = 6.09           │ IPP3                         │
+│ IPP4 = 6.09           │ IPP4                         │
 │ LIMIT = 75900         │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0318           │ Cena bodu                    │
+│ CB = 0.035337         │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
@@ -40,7 +40,7 @@ Autor: curo.sk
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test t SARS-cov-2      │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test t SARS-cov-2 imun │ vv.kod in ['629b']                                           │
 │                 │                           │ ofluorescenčnou metódou                       │                                                              │

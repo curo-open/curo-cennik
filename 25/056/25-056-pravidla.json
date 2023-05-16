@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.8
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 3.6
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 6.09
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 7.9
+			"value": 6.09
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -26,7 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0318
+			"value": 0.035337
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -102,7 +102,7 @@
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
