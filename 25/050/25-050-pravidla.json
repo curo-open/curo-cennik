@@ -97,6 +97,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0006']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,

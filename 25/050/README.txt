@@ -40,6 +40,7 @@ Autor: curo.sk
 │          0.0252 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1B05011','1B05012']                              │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['1A02009','1A03007']                              │
+│            null │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0006']                                          │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

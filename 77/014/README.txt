@@ -9,8 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis     │
 ├─────────────────┼───────────┤
 │  = 0            │ parameter │
-│ 0.0285 = 0      │ parameter │
-│ 0.0082 = 0      │ parameter │
+│ 0.03 = 0        │ parameter │
+│ 0.0085 = 0      │ parameter │
 │ 0.57 = 0        │ parameter │
 │ 0.36 = 0        │ parameter │
 │ 0.28 = 0        │ parameter │
@@ -28,7 +28,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│           0.026 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │

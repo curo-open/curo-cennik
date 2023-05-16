@@ -4,11 +4,11 @@
 			"label": "parameter",
 			"value": 0
 		},
-		"0.0285": {
+		"0.03": {
 			"label": "parameter",
 			"value": 0
 		},
-		"0.0082": {
+		"0.0085": {
 			"label": "parameter",
 			"value": 0
 		},
@@ -37,7 +37,7 @@
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.035,
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

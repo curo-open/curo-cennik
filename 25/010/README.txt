@@ -8,10 +8,10 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 2.24           │ IPP1                         │
-│ IPP2 = 3.6            │ IPP2                         │
-│ IPP3 = 6.09           │ IPP3                         │
-│ IPP4 = 9.09           │ IPP4                         │
+│ IPP1 = 1.68           │ IPP1                         │
+│ IPP2 = 2.7            │ IPP2                         │
+│ IPP3 = 4.57           │ IPP3                         │
+│ IPP4 = 7.57           │ IPP4                         │
 │ IPPD = 5              │ IPPD                         │
 │ CB = 0.0318           │ Cena bodu                    │
 │ CBP = 0.049           │ Cena bodu preventívne výkony │

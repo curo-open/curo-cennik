@@ -154,7 +154,7 @@
 		},
 		{
 			"label": "Nekapitovaný EU - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!=='SVaLZ'",
+			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
