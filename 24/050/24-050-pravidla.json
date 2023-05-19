@@ -2,7 +2,7 @@
 	"params": {
 		"LIMIT": {
 			"label": "Limit",
-			"value": 1140000
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu",
@@ -24,6 +24,20 @@
 			"if": "vv.kod in ['60']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBV",
+			"instruction": null
+		},
+		{
+			"label": "Edukácia pri diabete",
+			"if": "vv.kod in ['1B05013','1B05014']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cielené vyšetrenie nôh",
+			"if": "vv.kod in ['1A02007']",
+			"value": 0.028058,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -101,19 +115,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 450
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 290
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 230
+				"value": 250
 			}
 		],
 		"70": [
@@ -138,6 +152,12 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"1A02007": [
+			{
+				"cond": "",
+				"value": 180
 			}
 		]
 	},

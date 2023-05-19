@@ -4,7 +4,7 @@
 
 Autor: curo.sk
 
-  PREMENNÉ  PARAMETRE
+  PREMENNÉ PARAMETRE
 ┌───────────────────┬────────────────────────────────┐
 │ Názov a hodnota   │ Popis                          │
 ├───────────────────┼────────────────────────────────┤

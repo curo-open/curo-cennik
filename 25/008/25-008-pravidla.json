@@ -93,14 +93,14 @@
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.jeSVaZL",
+			"if": "!p.kapitacia && vv.jeSVaLZ",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"if": "!p.kapitacia && !vv.jeSVaLZ",
 			"value": 0.0339,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
