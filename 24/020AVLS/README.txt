@@ -16,7 +16,7 @@ Autor: curo.sk
 │ AGTC = 4.8         │ AGTC                                              │
 │ PP50 = 10          │ PP50                                              │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
-│ EDU = 2            │ EDU k výkonom  H0004                              │
+│ EDU = 2            │ EDU k výkonom H0003, H0004                        │
 └────────────────────┴───────────────────────────────────────────────────┘
 
 
@@ -54,7 +54,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │            5.65 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
-│            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702ZV']                                  │
+│            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702Z']                                   │
 │           0.079 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
 │           0.079 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │

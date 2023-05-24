@@ -11,8 +11,8 @@ Autor: curo.sk
 │ LIMIT = 1140000      │ Limit                        │
 │ CB = 0.026621        │ Cena bodu                    │
 │ CBP = 0.0462         │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.015143   │ Cena bodu SVaLZ              │
-│ CBSVALZSP = 0.013766 │ Cena bodu SVaLZ SP           │
+│ CBSVALZ = 0.009737   │ Cena bodu SVaLZ              │
+│ CBSVALZSP = 0.017175 │ Cena bodu SVaLZ SP           │
 │ PP50 = 10            │ PP50                         │
 └──────────────────────┴──────────────────────────────┘
 
@@ -31,8 +31,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
 │          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','522','530','531']      │
-│            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
+│            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
 │        0.008195 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │

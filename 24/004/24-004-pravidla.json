@@ -81,7 +81,7 @@
 		{
 			"label": "ŠAS - EEG",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.019866,
+			"value": 0.022449,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -164,19 +164,19 @@
 		"65": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 220
 			}
 		],
 		"66": [
 			{
 				"cond": "",
-				"value": 320
+				"value": 350
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 220
 			}
 		],
 		"70": [

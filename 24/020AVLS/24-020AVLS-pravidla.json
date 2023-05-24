@@ -33,7 +33,7 @@
 			"value": 2
 		},
 		"EDU": {
-			"label": "EDU k výkonom  H0004",
+			"label": "EDU k výkonom H0003, H0004",
 			"value": 2
 		}
 	},
@@ -203,7 +203,7 @@
 		},
 		{
 			"label": "EKG",
-			"if": "vv.kod in ['5702','5702ZV']",
+			"if": "vv.kod in ['5702','5702Z']",
 			"value": 5.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null

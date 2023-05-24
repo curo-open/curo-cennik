@@ -34,7 +34,7 @@ Autor: curo.sk
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316','5796','5799']                                │
-│        0.019866 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
+│        0.022449 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS - EMG                                     │ vv.kod in ['810','809','811','812','819']                    │
 │        0.026921 │ vv.bodyCelkom*cena        │ ŠAS - 800                                     │ vv.kod in ['800']                                            │
 │            null │ vv.bodyCelkom*CB          │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
@@ -53,9 +53,9 @@ Autor: curo.sk
 │             670 │ 60                                                                                                        │                           │
 │             440 │ 62                                                                                                        │                           │
 │             340 │ 63                                                                                                        │                           │
-│             200 │ 65                                                                                                        │                           │
-│             320 │ 66                                                                                                        │                           │
-│             200 │ 67                                                                                                        │                           │
+│             220 │ 65                                                                                                        │                           │
+│             350 │ 66                                                                                                        │                           │
+│             220 │ 67                                                                                                        │                           │
 │              50 │ 70                                                                                                        │                           │
 │             190 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

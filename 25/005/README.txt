@@ -8,10 +8,10 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 1.98           │ IPP1                  │
-│ IPP2 = 3.19           │ IPP2                  │
-│ IPP3 = 5.39           │ IPP3                  │
-│ IPP4 = 5.39           │ IPP4                  │
+│ IPP1 = 2.24           │ IPP1                  │
+│ IPP2 = 3.6            │ IPP2                  │
+│ IPP3 = 6.09           │ IPP3                  │
+│ IPP4 = 9.09           │ IPP4                  │
 │ IPPD = 5              │ IPPD                  │
 │ LIMIT = 0             │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │

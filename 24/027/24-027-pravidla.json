@@ -14,11 +14,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.015143
+			"value": 0.009737
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
-			"value": 0.013766
+			"value": 0.017175
 		},
 		"PP50": {
 			"label": "PP50",
@@ -57,14 +57,7 @@
 		},
 		{
 			"label": "SVALZ výkony",
-			"if": "vv.kod in ['509a','512','513','514a','522','530','531']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZSP",
-			"instruction": null
-		},
-		{
-			"label": "SVALZ výkony",
-			"if": "vv.kod in ['532','533a','540','541','542']",
+			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZSP",
 			"instruction": null
