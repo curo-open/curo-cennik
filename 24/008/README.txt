@@ -9,10 +9,10 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis             │
 ├─────────────────┼───────────────────┤
 │ IDK = 0         │ NASTAVENIA IDK    │
-│ VCB8 = 3.58     │ VCB pre výkon 8   │
-│ VCB4 = 2.68     │ VCB pre výkon 4   │
-│ VCB1 = 0.71     │ VCB pre výkon 1   │
-│ VCB250 = 1.06   │ VCB pre výkon 250 │
+│ VCB8 = 8.59     │ VCB pre výkon 8   │
+│ VCB4 = 6.06     │ VCB pre výkon 4   │
+│ VCB1 = 1.62     │ VCB pre výkon 1   │
+│ VCB250 = 2.4    │ VCB pre výkon 250 │
 │ AGTC = 4.8      │ AGTC              │
 │ PP50 = 10       │ PP50              │
 │ PP05 = 10       │ PP05              │

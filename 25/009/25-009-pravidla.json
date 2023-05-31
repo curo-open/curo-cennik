@@ -14,7 +14,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.08
+			"value": 0.0339
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -53,15 +53,15 @@
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['157','102','103','105','108','1070','297']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b, 252c",
 			"if": "vv.kod in ['252b','252C']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -72,7 +72,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5303,5305,5308",
+			"label": "Preventivné výkony 5303,5305,5308",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305','5308']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
@@ -128,14 +128,14 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
+			"label": "Nekapitovaný EU - SVALZ výkon",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - iné ako SVALZ",
+			"label": "Nekapitovaný EU - iné ako SVALZ",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEU",
