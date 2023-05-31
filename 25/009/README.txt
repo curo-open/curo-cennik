@@ -47,8 +47,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
 │          0.0318 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ vv.jeSVaLZ                                                   │
-│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !vv.jeSVaLZ                                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Kapitovaný - SVALZ výkon                      │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Kapitovaný - iné ako SVALZ                    │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CBEU        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

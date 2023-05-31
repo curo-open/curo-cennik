@@ -43,10 +43,10 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │              20 │ vv.pocet*cena             │ Covid 62a                                     │ vv.kod in ['62a']                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
-│                 │                           │                                               │ & vv.jeSVaLZ                                                 │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nepreventivný - SVALZ výkon                   │ vv.jeSVaLZ                                                   │
+│                 │                           │                                               │ & vv.typ=='SVaLZ'                                            │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nepreventivný - SVALZ výkon                   │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
-│                 │                           │                                               │ & !vv.jeSVaLZ                                                │
+│                 │                           │                                               │ & vv.typ!='SVaLZ'                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

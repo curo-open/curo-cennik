@@ -149,15 +149,15 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "vv.jeSVaLZ",
+			"label": "Kapitovaný - SVALZ výkon",
+			"if": "vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!vv.jeSVaLZ",
+			"label": "Kapitovaný - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
