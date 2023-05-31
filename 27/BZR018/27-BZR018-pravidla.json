@@ -85,7 +85,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 250x",
+			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
 			"calc": "vv.pocet*(cena+NCB)",
@@ -106,7 +106,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1b,11a,70",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",

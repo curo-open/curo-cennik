@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────────┬─────────────────────┐
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
-│ IPP1 = 2.24           │ IPP1                │
+│ IPP1 = 1.34           │ IPP1                │
 │ IPP2 = 2.9            │ IPP2                │
 │ IPP3 = 4.9            │ IPP3                │
 │ IPP4 = 7.9            │ IPP4                │
@@ -30,7 +30,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta pri pandémii COVI │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ D-19                                          │                                                              │

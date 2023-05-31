@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 1.34
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -76,7 +76,7 @@
 			"instruction": null
 		},
 		{
-			"label": "špec. elektronické výkony",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
@@ -243,126 +243,6 @@
 			{
 				"cond": "",
 				"value": 40
-			}
-		],
-		"763P": [
-			{
-				"cond": "",
-				"value": 946
-			}
-		],
-		"763M": [
-			{
-				"cond": "",
-				"value": 946
-			}
-		],
-		"760SP": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"760SN": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"760PP": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"760PN": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"763SP": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
-		"763SN": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
-		"763PP": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
-		"763PN": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
-		"763p": [
-			{
-				"cond": "",
-				"value": 946
-			}
-		],
-		"763m": [
-			{
-				"cond": "",
-				"value": 946
-			}
-		],
-		"760sp": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"760sn": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"760pp": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"760pn": [
-			{
-				"cond": "",
-				"value": 1500
-			}
-		],
-		"763sp": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
-		"763sn": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
-		"763pp": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
-		"763pn": [
-			{
-				"cond": "",
-				"value": 3000
 			}
 		],
 		"1b": [

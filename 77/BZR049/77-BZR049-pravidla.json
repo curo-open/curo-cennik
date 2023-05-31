@@ -110,27 +110,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 760sp;760sn;760pp;760pn",
-			"if": "vv.kod in ['760sp','760sn','760pp','760pn']",
-			"value": 64.5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 763p",
-			"if": "vv.kod in ['763p']",
-			"value": 129,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 763sp;763sn;763pp;763pn",
-			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
-			"value": 129,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
 			"label": "Výkon Y0018",
 			"if": "vv.kod in ['Y0018']",
 			"value": 5,

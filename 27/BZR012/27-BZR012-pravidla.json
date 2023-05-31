@@ -53,7 +53,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony",
+			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
 			"value": null,
 			"calc": "vv.pocet*cena",

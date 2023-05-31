@@ -56,7 +56,7 @@
 			"if": "vv.kod in ['15d'] && vv.kod in ['15d']",
 			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "vv.bodyCelkom*cena"
+			"instruction": null
 		},
 		{
 			"label": "Výkon 1a",
@@ -84,14 +84,14 @@
 			"if": "vv.kod in ['60','62','63'] && vv.kod in ['60','62','63']",
 			"value": 0.0385,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "vv.bodyCelkom*cena"
+			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67'] && vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
-			"instruction": "vv.bodyCelkom*CB"
+			"instruction": null
 		},
 		{
 			"label": "Výkon 5702",
@@ -105,14 +105,14 @@
 			"if": "vv.kod in ['5330','5331','5332'] && vv.kod in ['5330','5331','5332']",
 			"value": 0.0055,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "vv.bodyCelkom*cena"
+			"instruction": null
 		},
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5799'] && vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5799']",
 			"value": 0.01044,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "vv.bodyCelkom*cena"
+			"instruction": null
 		},
 		{
 			"label": "Výkon 654",
@@ -175,35 +175,35 @@
 			"if": "vv.kod in ['H0007'] && vv.kod in ['H0007']",
 			"value": 5.88,
 			"calc": "vv.pocet*cena",
-			"instruction": "vv.pocet*cena"
+			"instruction": null
 		},
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008'] && vv.kod in ['H0008']",
 			"value": 6.78,
 			"calc": "vv.pocet*cena",
-			"instruction": "vv.pocet*cena"
+			"instruction": null
 		},
 		{
 			"label": "Výkon 3860",
 			"if": "vv.kod in ['3860'] && vv.kod in ['3860']",
 			"value": 8.95,
 			"calc": "vv.pocet*cena",
-			"instruction": "vv.pocet*cena"
+			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70'] && vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "vv.bodyCelkom*cena"
+			"instruction": null
 		},
 		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a'] && vv.kod in ['4571a']",
 			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "vv.bodyCelkom*cena"
+			"instruction": null
 		},
 		{
 			"label": "Očkovanie Covid 252L",
@@ -266,7 +266,7 @@
 			"if": "vv.kod in ['629b'] && vv.kod in ['629b']",
 			"value": 10.2,
 			"calc": "vv.pocet*cena",
-			"instruction": "vv.pocet*cena"
+			"instruction": null
 		},
 		{
 			"label": "Pripočitateľné položky",

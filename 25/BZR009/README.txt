@@ -35,7 +35,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Preventívne zdravotné výkony                  │ vv.kod in ['157','102','103','105','108','1070','297']       │
 │            0.08 │ vv.bodyCelkom*cena        │ Výkon 252b, 252c                              │ vv.kod in ['252b','252C']                                    │
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
-│        0.009574 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
+│        0.009574 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
 │        0.009574 │ vv.bodyCelkom*cena        │ Výkon 5808                                    │ vv.kod in ['5808']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │            null │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │

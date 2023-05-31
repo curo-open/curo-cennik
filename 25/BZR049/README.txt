@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 2.24           │ IPP1                  │
+│ IPP1 = 1.34           │ IPP1                  │
 │ IPP2 = 2.9            │ IPP2                  │
 │ IPP3 = 4.9            │ IPP3                  │
 │ IPP4 = 4.9            │ IPP4                  │
@@ -32,9 +32,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│               5 │ vv.pocet*cena             │ Výkon 250x - odbery                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │         0.02814 │ vv.bodyCelkom*cena        │ Výkon 15b - zhodnotenie odberov               │ vv.kod in ['15b']                                            │
-│         0.02814 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│         0.02814 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │        0.008473 │ vv.bodyCelkom*cena        │ Ergometria                                    │ vv.kod in ['5708']                                           │
 │         0.02814 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['603a','15c']                                     │

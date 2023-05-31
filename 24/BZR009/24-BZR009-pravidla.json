@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.558355
+			"value": 0.630941
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -10,7 +10,7 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.057
+			"value": 0.079
 		},
 		"CBEUNK": {
 			"label": "Cena bodu EU/Nekapitovaný",
@@ -18,18 +18,18 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00819
+			"value": 0.0086
 		},
 		"CBUSG": {
 			"label": "Cena bodu USG",
-			"value": 0.008839
+			"value": 0.009281
 		}
 	},
 	"pacient": [
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 1.74,
+			"value": 1.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -43,14 +43,14 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
+			"label": "Výkon SVALZ USG",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
+			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
@@ -64,7 +64,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1b, 11a, 70",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",

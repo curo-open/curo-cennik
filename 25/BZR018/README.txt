@@ -12,7 +12,7 @@ Autor: curo.sk
 │ CBE = 0.035         │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
-│ IPP1 = 2.24         │ IPP1                                                    │
+│ IPP1 = 1.34         │ IPP1                                                    │
 │ IPP2 = 2.9          │ IPP2                                                    │
 │ IPP3 = 4.9          │ IPP3                                                    │
 │ IPP4 = 4.9          │ IPP4                                                    │
@@ -29,10 +29,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
 │          0.0268 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│           0.035 │ vv.bodyCelkom*cena        │ Výkon 1b,1c,11a,70                            │ vv.kod in ['1b','1c','11a','70']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 904,941,944,945,916,917,918,919         │ vv.kod in ['904','941','944','945','916','917','918','919']  │
 │              27 │ vv.pocet*cena             │ Výkon H0003                                   │ vv.kod in ['H0003']                                          │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │

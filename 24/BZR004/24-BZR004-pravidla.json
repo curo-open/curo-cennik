@@ -51,7 +51,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Elektronická komunikácia",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
@@ -81,7 +81,7 @@
 		{
 			"label": "ŠAS - EEG",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.019866,
+			"value": 0.022449,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -146,37 +146,37 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 620
+				"value": 670
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 400
+				"value": 440
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 340
 			}
 		],
 		"65": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 220
 			}
 		],
 		"66": [
 			{
 				"cond": "",
-				"value": 320
+				"value": 350
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 220
 			}
 		],
 		"70": [
@@ -194,7 +194,7 @@
 		"1c": [
 			{
 				"cond": "",
-				"value": 1000
+				"value": 1200
 			}
 		],
 		"11a": [

@@ -97,13 +97,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
@@ -123,6 +116,13 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU'] ",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
@@ -136,19 +136,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 450
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 290
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 230
+				"value": 250
 			}
 		],
 		"65": [
@@ -190,7 +190,7 @@
 		"1c": [
 			{
 				"cond": "",
-				"value": 1000
+				"value": 1200
 			}
 		],
 		"11a": [

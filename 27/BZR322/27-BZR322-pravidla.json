@@ -32,14 +32,14 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60,62,63",
+			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": 0.0385,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 65,66,67",
+			"label": "Výkony 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
@@ -53,7 +53,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony",
+			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
 			"value": null,
 			"calc": "vv.pocet*cena",

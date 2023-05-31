@@ -39,7 +39,7 @@ Autor: curo.sk
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony 5303,5305                              │ vv.kod in ['5303','5305']                                    │
 │           0.026 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkony 5301, 5304,5316,5807,5808,5809         │ vv.kod in ['5301','5304','5316','5807','5808','5809']        │
+│            0.02 │ vv.bodyCelkom*cena        │ Výkony 5301,5304,5316,5807,5808,5809          │ vv.kod in ['5301','5304','5316','5807','5808','5809']        │
 │         0.00861 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & vv.jeSVaZL                                                 │
 │            0.03 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │

@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 1.34
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -62,7 +62,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Elektronická komunikácia",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
@@ -125,7 +125,7 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
+			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 5,
 			"calc": "vv.pocet*cena",

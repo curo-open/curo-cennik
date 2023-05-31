@@ -20,31 +20,31 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 62,63",
-			"if": "vv.kod in ['62','63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
+			"label": "Výkony 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Elektronická komunikácia",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5766 ",
+			"if": "vv.kod in ['5766']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
@@ -94,43 +94,49 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 450
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 290
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 230
+				"value": 250
 			}
 		],
 		"65": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 220
 			}
 		],
 		"66": [
 			{
 				"cond": "",
-				"value": 320
+				"value": 350
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 220
 			}
 		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"5766": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		],
 		"1b": [
@@ -142,7 +148,7 @@
 		"1c": [
 			{
 				"cond": "",
-				"value": 1000
+				"value": 1200
 			}
 		],
 		"11a": [

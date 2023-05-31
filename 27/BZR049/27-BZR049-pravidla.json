@@ -44,7 +44,7 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 250a, 250b - odbery",
+			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250a','250b']",
 			"value": 0.0295,
 			"calc": "vv.bodyCelkom*cena",

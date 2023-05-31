@@ -20,6 +20,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.0193,
@@ -27,22 +34,8 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['62']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['63']",
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -88,19 +81,43 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 450
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 290
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 230
+				"value": 250
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 50
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 190
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 250
 			}
 		]
 	},

@@ -44,7 +44,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Elektronická komunikácia",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
@@ -139,19 +139,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 450
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 290
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 230
+				"value": 250
 			}
 		],
 		"65": [
@@ -187,7 +187,7 @@
 		"1c": [
 			{
 				"cond": "",
-				"value": 1000
+				"value": 1200
 			}
 		],
 		"11a": [

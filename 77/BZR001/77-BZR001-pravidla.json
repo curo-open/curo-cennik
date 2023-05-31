@@ -145,7 +145,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5330;5331;5332",
+			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5330','5331','5332']",
 			"value": 0.0055,
 			"calc": "vv.bodyCelkom*cena",

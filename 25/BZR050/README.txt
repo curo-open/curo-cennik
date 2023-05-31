@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 2.24           │ IPP1                         │
+│ IPP1 = 1.34           │ IPP1                         │
 │ IPP2 = 2.9            │ IPP2                         │
 │ IPP3 = 4.9            │ IPP3                         │
 │ IPP4 = 4.9            │ IPP4                         │
@@ -37,7 +37,7 @@ Autor: curo.sk
 │        0.009574 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
-│           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['70','1b','1c','11a']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1B05011','1B05012','1B05014','4a']               │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['1A02009','1A02012','1B06025','1A03007']          │
 │             6.2 │ vv.pocet*cena             │ Výkon 1A02013                                 │ vv.kod in ['1A02013']                                        │
@@ -68,26 +68,6 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             946 │ 763P                                                                                                      │                           │
-│             946 │ 763M                                                                                                      │                           │
-│            1500 │ 760SP                                                                                                     │                           │
-│            1500 │ 760SN                                                                                                     │                           │
-│            1500 │ 760PP                                                                                                     │                           │
-│            1500 │ 760PN                                                                                                     │                           │
-│            3000 │ 763SP                                                                                                     │                           │
-│            3000 │ 763SN                                                                                                     │                           │
-│            3000 │ 763PP                                                                                                     │                           │
-│            3000 │ 763PN                                                                                                     │                           │
-│             946 │ 763p                                                                                                      │                           │
-│             946 │ 763m                                                                                                      │                           │
-│            1500 │ 760sp                                                                                                     │                           │
-│            1500 │ 760sn                                                                                                     │                           │
-│            1500 │ 760pp                                                                                                     │                           │
-│            1500 │ 760pn                                                                                                     │                           │
-│            3000 │ 763sp                                                                                                     │                           │
-│            3000 │ 763sn                                                                                                     │                           │
-│            3000 │ 763pp                                                                                                     │                           │
-│            3000 │ 763pn                                                                                                     │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

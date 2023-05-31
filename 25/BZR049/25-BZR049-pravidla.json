@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 1.34
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -48,7 +48,7 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 250x - odbery",
+			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
@@ -62,7 +62,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60,62,63",
+			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": 0.02814,
 			"calc": "vv.bodyCelkom*cena",

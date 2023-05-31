@@ -32,7 +32,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
 │           0.027 │ vv.bodyCelkom*cena        │ DIA výkony                                    │ vv.kod in ['1B05011','1B05012','1B06025','1A02009','1A02012' │
-│                 │                           │                                               │ ,'1A03007']                                                  │
+│                 │                           │                                               │ ,'1A03007','1B05014','1B05013']                              │
+│            null │ vv.bodyCelkom*CB          │ DIA výkony                                    │ vv.kod in ['1A02007']                                        │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
@@ -45,13 +46,14 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │              80 │ 1                                                                                                         │                           │
-│             450 │ 60                                                                                                        │                           │
-│             290 │ 62                                                                                                        │                           │
-│             230 │ 63                                                                                                        │                           │
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             160 │ 1b                                                                                                        │                           │
-│            1000 │ 1c                                                                                                        │                           │
+│            1200 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
+│             180 │ 1A02007                                                                                                   │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

@@ -6,7 +6,7 @@
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.6
+			"value": 2.16
 		},
 		"IPP3": {
 			"label": "IPP3",
@@ -52,59 +52,31 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "El. výkony",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','11a','1c','70']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBE",
 			"instruction": null
 		},
 		{
-			"label": "Výkony",
+			"label": "Výkony 1240,1246,1251,1266",
 			"if": "vv.kod in ['1240','1246','1251','1266']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['60']",
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['62']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
+			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['250x']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "SVALZ výkony",
-			"if": "vv.kod in ['5300','5301','5702']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZP",
 			"instruction": null
 		},
 		{

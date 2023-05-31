@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 1.34
 		},
 		"IPP2": {
 			"label": "IPP2",
@@ -61,42 +61,28 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['60']",
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['62']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
+			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
+			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "SVALZ výkony",
+			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5702']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
@@ -131,7 +117,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Elektronická komunikácia",
+			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",

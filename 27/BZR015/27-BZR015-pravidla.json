@@ -30,8 +30,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1b,11a,70",
-			"if": "vv.kod in ['1b','11a','70']",
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -44,16 +44,9 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
+			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.006666,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Vykony 5793,5794,5795",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

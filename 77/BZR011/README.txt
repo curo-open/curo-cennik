@@ -25,14 +25,14 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            6.05 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['62']                                             │
-│             4.7 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['63']                                             │
-│            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60r']                                            │
-│            3.36 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['65'] && p|vekMedzi(0, 5)                         │
-│          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
-│        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│            9.41 │ vv.pocet*cena             │ Výkony 60                                     │ vv.kod in ['60']                                             │
+│            6.05 │ vv.pocet*cena             │ Výkony 62                                     │ vv.kod in ['62']                                             │
+│             4.7 │ vv.pocet*cena             │ Výkony 63                                     │ vv.kod in ['63']                                             │
+│            9.41 │ vv.pocet*cena             │ Výkony 60r                                    │ vv.kod in ['60r']                                            │
+│            3.36 │ vv.pocet*cena             │ Výkon 65                                      │ vv.kod in ['65'] && p|vekMedzi(0, 5)                         │
+│          0.0224 │ vv.bodyCelkom*cena        │ Výkon 65                                      │ vv.kod in ['65']                                             │
+│        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5300, 5301, 5702                        │ vv.kod in ['5300','5301','5702']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

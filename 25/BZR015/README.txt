@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota     │ Popis                                                   │
 ├─────────────────────┼─────────────────────────────────────────────────────────┤
 │ IPP1 = 1.19         │ IPP1                                                    │
-│ IPP2 = 3.6          │ IPP2                                                    │
+│ IPP2 = 2.16         │ IPP2                                                    │
 │ IPP3 = 4.9          │ IPP3                                                    │
 │ IPP4 = 4.9          │ IPP4                                                    │
 │ IPPD = 5            │ IPPD                                                    │
@@ -33,14 +33,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CBE         │ El. výkony                                    │ vv.kod in ['1b','11a','1c','70']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1240','1246','1251','1266']                      │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│               5 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
-│            null │ vv.bodyCelkom*CBSVALZP    │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│            null │ vv.bodyCelkom*CBE         │ Telemedicína                                  │ vv.kod in ['1b','11a','1c','70']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkony 1240,1246,1251,1266                    │ vv.kod in ['1240','1246','1251','1266']                      │
+│            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
