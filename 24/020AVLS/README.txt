@@ -12,7 +12,7 @@ Autor: curo.sk
 │ CB = 0.025402      │ Cena bodu                                         │
 │ CBSVALZ = 0.009255 │ Cena bodu SVaLZ                                   │
 │ CBEUNK = 0.025402  │ Cena bodu Nekapitovany(EU)                        │
-│ _4571a = 5         │ 4571a                                             │
+│ _4571a = 5.65      │ 4571a                                             │
 │ AGTC = 4.8         │ AGTC                                              │
 │ PP50 = 10          │ PP50                                              │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │

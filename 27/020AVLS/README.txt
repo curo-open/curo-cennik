@@ -38,8 +38,6 @@ Autor: curo.sk
 │                 │                           │                                               │ ) && vv.typ=='SVaLZ'                                         │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
 │                 │                           │                                               │ ) && vv.typ!='SVaLZ'                                         │
-│            null │ vv.bodyCelkom*CBSVALZ     │ EU - SVALZ výkon                              │ (p.typ in ['EU']) && vv.typ=='SVaLZ'                         │
-│            null │ vv.bodyCelkom*CBEUNK      │ EU - iné ako SVALZ                            │ (p.typ in ['EU']) && vv.typ!='SVaLZ'                         │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU','EU']                    │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
@@ -49,7 +47,7 @@ Autor: curo.sk
 │           0.053 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
 │          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
 │          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B / tetanu         │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
 │          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
 │          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
 │          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
