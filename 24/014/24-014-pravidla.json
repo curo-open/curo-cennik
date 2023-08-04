@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.028719
+			"value": 0.03372
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -133,7 +133,7 @@
 		"15D": [
 			{
 				"cond": "",
-				"value": 50
+				"value": 150
 			}
 		],
 		"1b": [

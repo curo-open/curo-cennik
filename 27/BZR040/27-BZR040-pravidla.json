@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Vypočitaná cena bodu",
-			"value": 0.0335
+			"value": 0.0355
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",

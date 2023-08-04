@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌──────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota      │ Popis                                                   │
 ├──────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.0335          │ Cena bodu                                               │
+│ CB = 0.0355          │ Cena bodu                                               │
 │ CBE = 0.035          │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.00973    │ Cena bodu SVaLZ                                         │
 │ CBSVALZUSG = 0.01044 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
@@ -39,6 +39,7 @@ Autor: curo.sk
 │            2.98 │ vv.pocet*(cena+NCB)       │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │          0.0385 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│          0.0385 │ vv.bodyCelkom*cena        │ Výkon 2018,2018a,2100                         │ vv.kod in ['2018','2018a','2100']                            │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

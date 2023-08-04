@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0355
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -103,6 +103,13 @@
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 2018,2018a,2100",
+			"if": "vv.kod in ['2018','2018a','2100']",
+			"value": 0.0385,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

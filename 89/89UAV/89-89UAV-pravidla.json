@@ -14,15 +14,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03
+			"value": 0.0339
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.007303
+			"value": 0.009574
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.03
+			"value": 0.0339
 		},
 		"FOB": {
 			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
@@ -46,42 +46,42 @@
 		{
 			"label": "Komplexné vyšetrenie ",
 			"if": "vv.kod in ['60U','60u']",
-			"value": 0.021995,
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.021995,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie COVID19",
 			"if": "vv.kod in ['252L']",
-			"value": 0.021995,
-			"calc": "vv.bodyCelkom*cena",
+			"value": 10,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 0.021995,
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -95,21 +95,21 @@
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": 0.026,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
-			"value": 0.021995,
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.065,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -123,14 +123,14 @@
 		{
 			"label": "EKG pri preventívnej prehliadke",
 			"if": "vv.kod in ['5702P']",
-			"value": 0.008105,
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG ",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00861,
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -158,14 +158,14 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.03,
+			"value": 0.0339,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Vyšetrenie C – reaktívneho proteínu",
 			"if": "vv.kod in ['4571a','4571A']",
-			"value": 5,
+			"value": 5.75,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -179,14 +179,14 @@
 		{
 			"label": "Akútne EKG",
 			"if": "vv.kod in ['5702c']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 4.78,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 163",
 			"if": "vv.kod in ['163']",
-			"value": 6,
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -214,14 +214,14 @@
 		{
 			"label": "Inicialne I10/E78 (H0003)",
 			"if": "vv.kod in ['H0003']",
-			"value": 12,
+			"value": 15,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Kontrolne I10/E78 (H0004)",
 			"if": "vv.kod in ['H0004']",
-			"value": 12,
+			"value": 15,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -235,7 +235,7 @@
 		{
 			"label": "Stratifikacia CMP",
 			"if": "vv.kod in ['H0006']",
-			"value": 5,
+			"value": 5.65,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -256,14 +256,14 @@
 		{
 			"label": "Stanovenie ABI oscilometricky",
 			"if": "vv.kod in ['H0008']",
-			"value": 6,
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Delegovaný odber krvi",
 			"if": "vv.kod in ['250D']",
-			"value": 1.05,
+			"value": 2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -333,7 +333,7 @@
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && vv.jeSVaLZ",
-			"value": 0.026,
+			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
