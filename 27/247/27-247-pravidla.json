@@ -1,0 +1,82 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.0305
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.00973
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon  108",
+			"if": "vv.kod in ['108']",
+			"value": 0.0735,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon  118",
+			"if": "vv.kod in ['118']",
+			"value": 0.0266,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1070",
+			"if": "vv.kod in ['1070']",
+			"value": 0.0735,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5303,5305",
+			"if": "vv.kod in ['5303','5305']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5308",
+			"if": "vv.kod in ['5308']",
+			"value": 0.01044,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5809",
+			"if": "vv.kod in ['5809']",
+			"value": 0.0266,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gyn ultrazvuk"
+}

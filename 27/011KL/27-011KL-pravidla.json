@@ -1,0 +1,210 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.033
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
+			"value": 0.0305
+		},
+		"CBSVALZP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.00973
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.010444
+		},
+		"IPP1": {
+			"label": "IPP1",
+			"value": 0.57
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 0.36
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 0.28
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 2.49
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 0.73
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 0.57
+		},
+		"IPP7": {
+			"label": "IPP7",
+			"value": 0.65
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Preventívne USG výkony",
+			"if": "vv.kod in ['5303','5305','5708']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBPSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne USG výkony",
+			"if": "vv.kod in ['5303','5305','5708']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZP",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60']",
+			"value": 15.12,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['62']",
+			"value": 9.72,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['63']",
+			"value": 7.56,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60r']",
+			"value": 9.41,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['65'] && p|vekMedzi(0, 5)",
+			"value": 3.36,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['65']",
+			"value": 6.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['15d']",
+			"value": 0.002,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS el. výkony",
+			"if": "vv.kod in ['1b','1c','70','11a']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "DEXA",
+			"if": "vv.kod in ['5331']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.kod in ['5300','5301','5702']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne USG výkony",
+			"if": "vv.kod in ['5303','5305','5708']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZP",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.022,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"65": [
+			{
+				"cond": "",
+				"value": 100
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "ortoped"
+}
