@@ -66,6 +66,55 @@
 			"instruction": null
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP5'",
+			"value": null,
+			"calc": "IPP5",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP6'",
+			"value": null,
+			"calc": "IPP6",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP7'",
+			"value": null,
+			"calc": "IPP7",
+			"instruction": null
+		},
+		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": 15.12,

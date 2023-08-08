@@ -35,6 +35,13 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBPSVALZ    │ Preventívne USG výkony                        │ vv.kod in ['5303','5305','5708']                             │
 │            null │ vv.bodyCelkom*CBSVALZP    │ Preventívne USG výkony                        │ vv.kod in ['5303','5305','5708']                             │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
+│            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
+│            null │ IPP7                      │ Pripočitateľné položky                        │ vv.kod=='IPP7'                                               │
 │           15.12 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60']                                             │
 │            9.72 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['62']                                             │
 │            7.56 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['63']                                             │
