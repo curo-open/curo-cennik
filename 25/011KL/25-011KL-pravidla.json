@@ -164,7 +164,7 @@
 			"if": "vv.kod in ['5331']",
 			"value": 0.005311,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": "davka_suffix:v5331;zachovaj_v_hlavnej_davke:nie;fa_suffix:v5331;odstran_vv_suffix:ano"
+			"instruction": null
 		},
 		{
 			"label": "ŠAS",
