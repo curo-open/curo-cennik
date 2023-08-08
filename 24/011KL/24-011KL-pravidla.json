@@ -24,27 +24,6 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "ŠAS el. výkony",
-			"if": "vv.kod in ['1b','1c','70','11a']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "SVALZ výkony",
-			"if": "vv.kod in ['5300','5301','5702']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "DEXA",
-			"if": "vv.kod in ['5331']",
-			"value": 0.005311,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": "davka_suffix:5331;zachovaj_v_hlavnej_davke:nie;fa_suffix:5331;odstran_vv_suffix:ano"
-		},
-		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": 14.9917,
@@ -91,6 +70,13 @@
 			"if": "vv.kod in ['5300','5301','5702']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne USG výkony",
+			"if": "vv.kod in ['5303','5305','5708']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZP",
 			"instruction": null
 		},
 		{

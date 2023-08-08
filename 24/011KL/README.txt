@@ -26,9 +26,6 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.035 │ vv.bodyCelkom*cena        │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70','11a']                             │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│        0.005311 │ vv.bodyCelkom*cena        │ DEXA                                          │ vv.kod in ['5331']                                           │
 │         14.9917 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60']                                             │
 │         10.3276 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['62']                                             │
 │          8.3287 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['63']                                             │
@@ -36,6 +33,7 @@ Autor: curo.sk
 │        0.033315 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15D']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70','11a']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│            null │ vv.bodyCelkom*CBSVALZP    │ Preventívne USG výkony                        │ vv.kod in ['5303','5305','5708']                             │
 │          0.0055 │ vv.bodyCelkom*cena        │ DEXA                                          │ vv.kod in ['5331']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
