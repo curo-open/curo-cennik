@@ -8,6 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────┐
 │ Názov a hodnota │ Popis                 │
 ├─────────────────┼───────────────────────┤
+│ CB = 0.0318     │ Cena bodu             │
 │ IPP1 = 1.17     │ IPP1                  │
 │ IPP2 = 1.89     │ IPP2                  │
 │ IPP3 = 3.19     │ IPP3                  │
@@ -27,22 +28,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60'] && EL_POBOCKA                               │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['62'] && EL_POBOCKA                               │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['63'] && EL_POBOCKA                               │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ EL_POBOCKA && p.typ in ['BE','CU','EU']                      │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ EL_POBOCKA && p.typ in ['BE','CU','EU']                      │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008105 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkony                                        │ EL_POBOCKA                                                   │
-│          0.0247 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ EL_POBOCKA                                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

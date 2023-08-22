@@ -33,7 +33,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │               5 │ vv.pocet*cena             │ Výkon 250x - odbery                           │ vv.kod in ['250x']                                           │
-│          0.0318 │ vv.bodyCelkom*cena        │ Výkon 15b - zhodnotenie odberov               │ vv.kod in ['15b']                                            │
+│          0.0318 │ vv.bodyCelkom*cena        │ Výkon 15b - vyodnotenie odberov               │ vv.kod in ['15b']                                            │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │        0.009574 │ vv.bodyCelkom*cena        │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │        0.009574 │ vv.bodyCelkom*cena        │ Ergometria                                    │ vv.kod in ['5708']                                           │

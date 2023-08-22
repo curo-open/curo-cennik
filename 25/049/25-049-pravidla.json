@@ -55,7 +55,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 15b - zhodnotenie odberov",
+			"label": "Výkon 15b - vyodnotenie odberov",
 			"if": "vv.kod in ['15b']",
 			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",

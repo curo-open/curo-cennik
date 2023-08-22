@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008605
+			"value": 0.01021
 		}
 	},
 	"pacient": [],
@@ -25,7 +25,7 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
-			"value": 0.026413,
+			"value": 0.032579,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -39,14 +39,14 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
-			"value": 0.026413,
+			"value": 0.032579,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['65','66','67']",
-			"value": null,
+			"value": 0.032579,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},

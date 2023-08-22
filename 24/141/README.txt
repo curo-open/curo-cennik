@@ -8,6 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬──────────────────────┐
 │ Názov a hodnota │ Popis                │
 ├─────────────────┼──────────────────────┤
+│ CB = 0.034      │ Cena bodu            │
 │ IPP1 = 1.17     │ IPP1                 │
 │ IPP2 = 1.89     │ IPP2                 │
 │ IPP3 = 3.19     │ IPP3                 │
@@ -26,18 +27,12 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│        0.027614 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ ZCB && vv.kod in ['62']                                      │
-│        0.027614 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ ZCB && vv.kod in ['63']                                      │
-│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│        0.022725 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│        0.022725 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│        0.025903 │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│        0.036146 │ vv.bodyCelkom*cena        │ Výkon                                         │ vv.kod in ['3335','3337','3322','3323']                      │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
-│        0.022725 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│        0.022725 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -51,6 +46,10 @@ Autor: curo.sk
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
+│             130 │ 3322                                                                                                      │                           │
+│             900 │ 3323                                                                                                      │                           │
+│              90 │ 3335                                                                                                      │                           │
+│             450 │ 3337                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

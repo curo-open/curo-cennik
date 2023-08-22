@@ -417,6 +417,20 @@
 			"value": null,
 			"calc": "FOB",
 			"instruction": null
+		},
+		{
+			"label": "EÚ - SVALZ výkon",
+			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "EÚ - iné ako SVALZ",
+			"if": "p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
