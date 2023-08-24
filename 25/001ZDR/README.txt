@@ -8,15 +8,15 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 1.8            │ IPP1                  │
-│ IPP2 = 2.9            │ IPP2                  │
-│ IPP3 = 4.9            │ IPP3                  │
-│ IPP4 = 4.9            │ IPP4                  │
-│ LIMIT = 75900         │ Limit                 │
+│ IPP1 = 2.24           │ IPP1                  │
+│ IPP2 = 3.6            │ IPP2                  │
+│ IPP3 = 6.09           │ IPP3                  │
+│ IPP4 = 9.09           │ IPP4                  │
+│ LIMIT = 0             │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.0268           │ Cena bodu             │
-│ CBSVALZ = 0.008195    │ Cena bodu SVaLZ       │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG   │
+│ CB = 0.0318           │ Cena bodu             │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
 └───────────────────────┴───────────────────────┘
 
@@ -32,8 +32,8 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
-│           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
+│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │        0.011618 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
 │        0.007635 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
@@ -42,6 +42,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5702, 5715, 5716                        │ vv.kod in ['5702','5715','5716']                             │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
@@ -69,6 +70,8 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
+│            1700 │ 5715                                                                                                      │                           │
+│             400 │ 5716                                                                                                      │                           │
 │             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

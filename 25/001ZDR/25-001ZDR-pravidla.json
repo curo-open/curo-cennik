@@ -2,23 +2,23 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.8
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 3.6
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 6.09
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 4.9
+			"value": 9.09
 		},
 		"LIMIT": {
 			"label": "Limit",
-			"value": 75900
+			"value": 0
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -26,15 +26,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0268
+			"value": 0.0318
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -53,14 +53,14 @@
 		{
 			"label": "Výkon 250x",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.026,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -109,6 +109,13 @@
 		{
 			"label": "Výkon 60;62;63",
 			"if": "vv.kod in ['63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -239,6 +246,18 @@
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"5715": [
+			{
+				"cond": "",
+				"value": 1700
+			}
+		],
+		"5716": [
+			{
+				"cond": "",
+				"value": 400
 			}
 		],
 		"15d": [
