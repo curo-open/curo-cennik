@@ -1,5 +1,10 @@
 {
-	"params": {},
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.034
+		}
+	},
 	"pacient": [],
 	"vykon": [
 		{

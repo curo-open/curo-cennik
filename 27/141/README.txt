@@ -5,9 +5,11 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────┐
-│ Názov a hodnota │ Popis │
-└─────────────────┴───────┘
+┌─────────────────┬───────────┐
+│ Názov a hodnota │ Popis     │
+├─────────────────┼───────────┤
+│ CB = 0.034      │ Cena bodu │
+└─────────────────┴───────────┘
 
 
   CENY ZA PACIENTA
