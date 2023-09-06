@@ -1,0 +1,237 @@
+{
+	"params": {
+		"IDK": {
+			"label": "IDK",
+			"value": 1.2
+		},
+		"KPS": {
+			"label": "KPS",
+			"value": 1
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
+		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
+		},
+		"PP05": {
+			"label": "PP05",
+			"value": 10
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Komplexné vyšetrenie ",
+			"if": "vv.kod in ['60U','60u']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony",
+			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '951','952','953']",
+			"value": 0.065,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívna prehliadka",
+			"if": "vv.kod in ['1']",
+			"value": 0.018257,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívna prehliadka",
+			"if": "vv.kod in ['160']",
+			"value": 0.065,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivne zdravotne vykony (142)",
+			"if": "vv.kod in ['142']",
+			"value": 0.099,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b','252c']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Rozbor a plánovanie cielených terapeutických postupov v na ovplyvnenie\nchronických ochorení",
+			"if": "vv.kod in ['10']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telekomunikácia",
+			"if": "vv.kod in ['1b','70','11a']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Komplexné vyšetrenie pri prevzatí do starostlivosti",
+			"if": "vv.kod in ['60','60u']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Príplatok pri sťaženom výkone - odber, očkovanie do 5 roku života",
+			"if": "vv.kod in ['67']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva služba",
+			"if": "vv.kod in ['25','26']",
+			"value": 0.03,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571a']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 16,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
+			"if": "vv.kod in ['62a','62b']",
+			"value": 20,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odbery ",
+			"if": "vv.kod in ['250D']",
+			"value": 1.05,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intenzifikovaná zdravotná starostlivosť pre rizikových poistencov s obezitou",
+			"if": "vv.kod in ['H0002']",
+			"value": 4.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie Covid 252L",
+			"if": "vv.kod in ['252L']",
+			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP05'",
+			"value": null,
+			"calc": "PP05",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.03,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaLZ",
+			"value": 0.007303,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaLZ",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "pediater 1"
+}

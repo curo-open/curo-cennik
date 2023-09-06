@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates&#10;- added 011KL - klimek special">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added 86 a 87">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/011KL/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/011KL/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -659,21 +658,8 @@
       <workItem from="1693476708519" duration="599000" />
       <workItem from="1693487839513" duration="599000" />
       <workItem from="1693492001443" duration="599000" />
-      <workItem from="1693731427120" duration="599000" />
-    </task>
-    <task id="LOCAL-00310" summary="- updates">
-      <created>1679250712197</created>
-      <option name="number" value="00310" />
-      <option name="presentableId" value="LOCAL-00310" />
-      <option name="project" value="LOCAL" />
-      <updated>1679250712197</updated>
-    </task>
-    <task id="LOCAL-00311" summary="- updates">
-      <created>1679397073276</created>
-      <option name="number" value="00311" />
-      <option name="presentableId" value="LOCAL-00311" />
-      <option name="project" value="LOCAL" />
-      <updated>1679397073276</updated>
+      <workItem from="1693731427120" duration="1218000" />
+      <workItem from="1693924318076" duration="1485000" />
     </task>
     <task id="LOCAL-00312" summary="- updates">
       <created>1679652081703</created>
@@ -1004,7 +990,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692867425005</updated>
     </task>
-    <option name="localTasksCounter" value="359" />
+    <task id="LOCAL-00359" summary="- updates">
+      <created>1693815488552</created>
+      <option name="number" value="00359" />
+      <option name="presentableId" value="LOCAL-00359" />
+      <option name="project" value="LOCAL" />
+      <updated>1693815488553</updated>
+    </task>
+    <task id="LOCAL-00360" summary="- added 86 and 87">
+      <created>1693988315827</created>
+      <option name="number" value="00360" />
+      <option name="presentableId" value="LOCAL-00360" />
+      <option name="project" value="LOCAL" />
+      <updated>1693988315828</updated>
+    </task>
+    <option name="localTasksCounter" value="361" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1048,7 +1048,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upravy" />
     <MESSAGE value="- pridane 88 a 89" />
     <MESSAGE value="- pridane NCB pre Union" />
     <MESSAGE value="- pridane NCB pre 27 v 004ZAP" />
@@ -1073,7 +1072,8 @@
     <MESSAGE value="- test removed speacil fa for 5331" />
     <MESSAGE value="- klimek fix" />
     <MESSAGE value="- updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
+    <MESSAGE value="- added 86 and 87" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added 86 and 87" />
   </component>
   <component name="masterDetails">
     <states>
