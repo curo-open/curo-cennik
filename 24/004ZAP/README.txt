@@ -28,7 +28,7 @@ Autor: curo.sk
 │        0.032579 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │        0.032579 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['63']                                             │
-│        0.032579 │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
+│        0.032579 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │

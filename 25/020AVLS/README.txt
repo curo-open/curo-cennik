@@ -50,50 +50,55 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'      │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│          0.0339 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
+│          0.0339 │ vv.bodyCelkom*cena        │ Návštevná služba (vv. 25,26,29,30)            │ vv.kod in ['25','26','29','30']                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
-│          0.0318 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│            0.08 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
-│        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
-│        0.009574 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
-│        0.009574 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
-│        0.021999 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
-│        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
-│            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b','252c']                                    │
-│           0.057 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
-│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
-│             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
-│          0.0339 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
-│            4.78 │ vv.pocet*cena             │ Akútne EKG                                    │ vv.kod in ['5702c']                                          │
+│          0.0318 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (vv. 60)                   │ vv.kod in ['60']                                             │
+│            0.08 │ vv.bodyCelkom*cena        │ Preventívne prehliadky (vv. 160)              │ vv.kod in ['160']                                            │
+│        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (vv. 15P)     │ vv.kod in ['15P']                                            │
+│        0.009574 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (vv. 5702P)   │ vv.kod in ['5702P']                                          │
+│        0.009574 │ vv.bodyCelkom*cena        │ EKG (vv. 5702)                                │ vv.kod in ['5702']                                           │
+│        0.021999 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku  (vv. 5715)          │ vv.kod in ['5715']                                           │
+│        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie  (vv. │ vv.kod in ['5716']                                           │
+│                 │                           │ 5716)                                         │                                                              │
+│            0.08 │ vv.bodyCelkom*cena        │ Očkovanie  (vv. 252b, 252c)                   │ vv.kod in ['252b','252c']                                    │
+│           0.057 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke  (vv. 252b, 252c, 252 │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
+│                 │                           │ s)                                            │                                                              │
+│              10 │ vv.pocet*cena             │ Očkovanie Covid (vv. 252L)                    │ vv.kod in ['252L']                                           │
+│             7.5 │ vv.pocet*cena             │ Očkovanie Covid (vv. 252K)                    │ vv.kod in ['252K']                                           │
+│            4.78 │ vv.pocet*cena             │ Akútne EKG  (vv. 5702c)                       │ vv.kod in ['5702c']                                          │
 │            6.78 │ vv.pocet*cena             │ Výkon 163                                     │ vv.kod in ['163']                                            │
-│              12 │ vv.pocet*cena             │ TOKS pozitívny                                │ vv.kod in ['159a']                                           │
-│              12 │ vv.pocet*cena             │ TOKS negatívny                                │ vv.kod in ['159z']                                           │
-│            3.02 │ vv.pocet*cena             │ TOKS znehodnotený                             │ vv.kod in ['159x']                                           │
-│              15 │ vv.pocet*cena             │ Inicialne I10/E78 (H0003)                     │ vv.kod in ['H0003']                                          │
-│              15 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
-│               6 │ vv.pocet*cena             │ Akutne I10                                    │ vv.kod in ['H0005']                                          │
-│            5.65 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
-│              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
-│             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
-│            6.78 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
-│               2 │ vv.pocet*cena             │ Delegovaný odber krvi                         │ vv.kod in ['250D','250d']                                    │
-│        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
-│            5.75 │ vv.pocet*cena             │ C-reaktívny proteín                           │ vv.kod in ['4571a','4571A']                                  │
+│              12 │ vv.pocet*cena             │ TOKS pozitívny (vv. 159a)                     │ vv.kod in ['159a']                                           │
+│              12 │ vv.pocet*cena             │ TOKS negatívny  (vv. 159z)                    │ vv.kod in ['159z']                                           │
+│            3.02 │ vv.pocet*cena             │ TOKS znehodnotený  (vv. 159x)                 │ vv.kod in ['159x']                                           │
+│              15 │ vv.pocet*cena             │ Inicialne I10/E78 (vv. H0003)                 │ vv.kod in ['H0003']                                          │
+│              15 │ vv.pocet*cena             │ Kontrolne I10/E78 (vv .H0004)                 │ vv.kod in ['H0004']                                          │
+│               6 │ vv.pocet*cena             │ Akutne I10  (vv. H0005)                       │ vv.kod in ['H0005']                                          │
+│            5.65 │ vv.pocet*cena             │ Stratifikacia CMP  (vv. H0006)                │ vv.kod in ['H0006']                                          │
+│              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie  (vv. 60b)            │ vv.kod in ['60b']                                            │
+│             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT  (vv. H0007 │ vv.kod in ['H0007']                                          │
+│                 │                           │ )                                             │                                                              │
+│            6.78 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky  (vv. H0008)    │ vv.kod in ['H0008']                                          │
+│               2 │ vv.pocet*cena             │ Delegovaný odber krvi  (vv. 250D)             │ vv.kod in ['250D','250d']                                    │
+│        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom (vv. 3671)       │ vv.kod in ['3671']                                           │
+│            5.75 │ vv.pocet*cena             │ C-reaktívny proteín  (vv. 4571A, 4571a)       │ vv.kod in ['4571a','4571A']                                  │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
-│                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
+│                 │                           │ drómom pri pandémii COVID-19  (vv. 62a)       │                                                              │
 │            0.08 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['160R']                                           │
-│                 │                           │ jicajtov, hasičov a záchranárov - PP          │                                                              │
+│                 │                           │ jicajtov, hasičov a záchranárov - PP  (vv. 16 │                                                              │
+│                 │                           │ 0R)                                           │                                                              │
 │        0.009574 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5702R']                                          │
-│                 │                           │ jicajtov, hasičov a záchranárov - EKG         │                                                              │
+│                 │                           │ jicajtov, hasičov a záchranárov - EKG  (vv. 5 │                                                              │
+│                 │                           │ 702R)                                         │                                                              │
 │           0.065 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','250bR','3525R','3592R','252bR','3784 │
 │                 │                           │                                               │ R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R' │
 │                 │                           │                                               │ ,'FotoR','PACSR']                                            │
-│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
+│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2  (vv.  │ vv.kod in ['629a']                                           │
+│                 │                           │ 629a)                                         │                                                              │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
-│                 │                           │ luorerscenčnou metódou                        │                                                              │
+│                 │                           │ luorerscenčnou metódou  (vv. 629b)            │                                                              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │

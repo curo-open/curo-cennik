@@ -171,7 +171,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Návštevná služba",
+			"label": "Návštevná služba (vv. 25,26,29,30)",
 			"if": "vv.kod in ['25','26','29','30']",
 			"value": 0.0339,
 			"calc": "vv.bodyCelkom*cena",
@@ -199,91 +199,84 @@
 			"instruction": null
 		},
 		{
-			"label": "Vstupná prehliadka (výkon 60)",
+			"label": "Vstupná prehliadka (vv. 60)",
 			"if": "vv.kod in ['60']",
 			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Preventívne prehliadky ",
+			"label": "Preventívne prehliadky (vv. 160)",
 			"if": "vv.kod in ['160']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "EKG pri preventívnej prehliadke (15P)",
+			"label": "EKG pri preventívnej prehliadke (vv. 15P)",
 			"if": "vv.kod in ['15P']",
 			"value": 0.039833,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "EKG pri preventívnej prehliadke",
+			"label": "EKG pri preventívnej prehliadke (vv. 5702P)",
 			"if": "vv.kod in ['5702P']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "EKG ",
+			"label": "EKG (vv. 5702)",
 			"if": "vv.kod in ['5702']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Celodenné snímanie tlaku",
+			"label": "Celodenné snímanie tlaku  (vv. 5715)",
 			"if": "vv.kod in ['5715']",
 			"value": 0.021999,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Celodenné snímanie tlaku - vyhodnotenie",
+			"label": "Celodenné snímanie tlaku - vyhodnotenie  (vv. 5716)",
 			"if": "vv.kod in ['5716']",
 			"value": 0.016597,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie",
+			"label": "Očkovanie  (vv. 252b, 252c)",
 			"if": "vv.kod in ['252b','252c']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie proti chrípke",
+			"label": "Očkovanie proti chrípke  (vv. 252b, 252c, 252s)",
 			"if": "vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s']",
 			"value": 0.057,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie Covid 252L",
+			"label": "Očkovanie Covid (vv. 252L)",
 			"if": "vv.kod in ['252L']",
 			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie Covid 252K",
+			"label": "Očkovanie Covid (vv. 252K)",
 			"if": "vv.kod in ['252K']",
 			"value": 7.5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Návštevná služba",
-			"if": "vv.kod in ['25','26']",
-			"value": 0.0339,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Akútne EKG",
+			"label": "Akútne EKG  (vv. 5702c)",
 			"if": "vv.kod in ['5702c']",
 			"value": 4.78,
 			"calc": "vv.pocet*cena",
@@ -297,133 +290,133 @@
 			"instruction": null
 		},
 		{
-			"label": "TOKS pozitívny",
+			"label": "TOKS pozitívny (vv. 159a)",
 			"if": "vv.kod in ['159a']",
 			"value": 12,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "TOKS negatívny",
+			"label": "TOKS negatívny  (vv. 159z)",
 			"if": "vv.kod in ['159z']",
 			"value": 12,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "TOKS znehodnotený",
+			"label": "TOKS znehodnotený  (vv. 159x)",
 			"if": "vv.kod in ['159x']",
 			"value": 3.02,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Inicialne I10/E78 (H0003)",
+			"label": "Inicialne I10/E78 (vv. H0003)",
 			"if": "vv.kod in ['H0003']",
 			"value": 15,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Kontrolne I10/E78 (H0004)",
+			"label": "Kontrolne I10/E78 (vv .H0004)",
 			"if": "vv.kod in ['H0004']",
 			"value": 15,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Akutne I10",
+			"label": "Akutne I10  (vv. H0005)",
 			"if": "vv.kod in ['H0005']",
 			"value": 6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Stratifikacia CMP",
+			"label": "Stratifikacia CMP  (vv. H0006)",
 			"if": "vv.kod in ['H0006']",
 			"value": 5.65,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Predoperačné vyšetrenie",
+			"label": "Predoperačné vyšetrenie  (vv. 60b)",
 			"if": "vv.kod in ['60b']",
 			"value": 16,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Kvantitatívne vyšetrenie INR POCT",
+			"label": "Kvantitatívne vyšetrenie INR POCT  (vv. H0007)",
 			"if": "vv.kod in ['H0007']",
 			"value": 5.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Stanovenie ABI oscilometricky",
+			"label": "Stanovenie ABI oscilometricky  (vv. H0008)",
 			"if": "vv.kod in ['H0008']",
 			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Delegovaný odber krvi",
+			"label": "Delegovaný odber krvi  (vv. 250D)",
 			"if": "vv.kod in ['250D','250d']",
 			"value": 2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Určenie glykémie glukometrom",
+			"label": "Určenie glykémie glukometrom (vv. 3671)",
 			"if": "vv.kod in ['3671']",
 			"value": 0.020895,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "C-reaktívny proteín",
+			"label": "C-reaktívny proteín  (vv. 4571A, 4571a)",
 			"if": "vv.kod in ['4571a','4571A']",
 			"value": 5.75,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
+			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19  (vv. 62a)",
 			"if": "vv.kod in ['62a']",
 			"value": 20,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov - PP",
+			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov - PP  (vv. 160R)",
 			"if": "vv.kod in ['160R']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov - EKG",
+			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov - EKG  (vv. 5702R)",
 			"if": "vv.kod in ['5702R']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
+			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov ",
 			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR']",
 			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Skríningový antigénový test SARS-CoV-2",
+			"label": "Skríningový antigénový test SARS-CoV-2  (vv. 629a)",
 			"if": "vv.kod in ['629a']",
 			"value": 5.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou  (vv. 629b)",
 			"if": "vv.kod in ['629b']",
 			"value": 10,
 			"calc": "vv.pocet*cena",

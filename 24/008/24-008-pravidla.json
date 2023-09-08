@@ -44,35 +44,35 @@
 		{
 			"label": "od  1 do dovršenia 2 rokov",
 			"if": "p|vekMedzi(1, 2)",
-			"value": 10.65,
+			"value": 11.22,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  2 do dovršenia 7 rokov",
 			"if": "p|vekMedzi(2, 7)",
-			"value": 7.34,
+			"value": 7.4,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  7 do dovršenia 19 rokov",
 			"if": "p|vekMedzi(7, 19)",
-			"value": 4.51,
+			"value": 4.49,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 19 do dovršenia 27 rokov",
 			"if": "p|vekMedzi(19, 27)",
-			"value": 3.01,
+			"value": 2.89,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 27 do dovršenia 28 rokov",
 			"if": "p|vekMedzi(27, 28)",
-			"value": 3.17,
+			"value": 3.01,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
