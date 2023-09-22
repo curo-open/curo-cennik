@@ -55,49 +55,56 @@
 			"label": "Výkon 250a, 250b - odbery",
 			"if": "vv.kod in ['250a','250b']",
 			"value": 0.0305,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 15b - zhodnotenie odberov",
 			"if": "vv.kod in ['15b']",
 			"value": 0.0305,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"value": 0.0335,
+			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Izometrický zátažový tes",
+			"if": "vv.kod in ['5727']",
+			"value": 0.0226,
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Echokardiografia",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": 0.01044,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Ergometria",
 			"if": "vv.kod in ['5708']",
 			"value": 0.00973,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['603a','15c']",
 			"value": 0.0305,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Ekg holter",
 			"if": "vv.kod in ['5712','5713','5714']",
 			"value": 0.00973,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
@@ -118,21 +125,14 @@
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": 0.0305,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon H0008",
-			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
-			"calc": "vv.pocet*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
@@ -146,6 +146,13 @@
 			"label": "Výkon H0007",
 			"if": "vv.kod in ['H0007']",
 			"value": 5.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

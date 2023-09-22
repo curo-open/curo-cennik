@@ -12,6 +12,10 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00973
 		},
+		"CBV": {
+			"label": "Vyšetrenie 60,62,63,,60r",
+			"value": 0.0335
+		},
 		"IPP4": {
 			"label": "IPP4",
 			"value": 5.5
@@ -29,16 +33,16 @@
 	"vykon": [
 		{
 			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
-			"calc": "vv.bodyCelkom*cena",
+			"if": "vv.kod in ['60','62','63','60r']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBV",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -49,10 +53,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1A02072",
-			"if": "vv.kod in ['1A02072']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"label": "Elektroencefalografické vyšetrenie",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.0226,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -81,6 +85,13 @@
 			"if": "vv.kod in ['5330','5331','5332']",
 			"value": 0.0055,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -231,6 +242,12 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		]
 	},

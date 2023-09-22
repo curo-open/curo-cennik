@@ -5,21 +5,21 @@
 		{
 			"label": "Komplexné vyšetrenie ",
 			"if": "vv.kod in ['60U','60u']",
-			"value": 0.021995,
+			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.021995,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie COVID19",
+			"label": "Očkovanie COVID 19",
 			"if": "vv.kod in ['252L']",
-			"value": 0.021995,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}

@@ -11,7 +11,7 @@ Autor: curo.sk
 │ IPP1 = 2.24           │ IPP1                  │
 │ IPP2 = 3.6            │ IPP2                  │
 │ IPP3 = 6.09           │ IPP3                  │
-│ IPP4 = 6.09           │ IPP4                  │
+│ IPP4 = 9.09           │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
 │ CB = 0.0318           │ Cena bodu             │
@@ -41,6 +41,7 @@ Autor: curo.sk
 │        0.009574 │ vv.bodyCelkom*cena        │ Ekg holter                                    │ vv.kod in ['5712','5713','5714']                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│           0.026 │ vv.bodyCelkom*cena        │ Zhodnotenie rtg. dokumentácie                 │ vv.kod in ['15d']                                            │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │

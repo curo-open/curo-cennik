@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.24
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 3.6
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 6.09
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 7.9
+			"value": 9.09
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.02814
+			"value": 0.0318
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -60,7 +60,7 @@
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -87,15 +87,22 @@
 		},
 		{
 			"label": "Výkon 802, 813, 819d, 803, 804",
-			"if": "vv.kod in ['802','813','819d','803','804']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
+			"if": "vv.kod in ['802','813','819d','803','804','260a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony EMG",
 			"if": "vv.kod in ['810','809','811','812','819']",
 			"value": 0.02814,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie rtg. dokumentácie",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

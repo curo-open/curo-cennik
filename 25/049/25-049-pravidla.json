@@ -14,7 +14,7 @@
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 6.09
+			"value": 9.09
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -107,6 +107,13 @@
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie rtg. dokumentácie",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
