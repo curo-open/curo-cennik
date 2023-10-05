@@ -1,0 +1,143 @@
+{
+	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 1.17
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 1.89
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 3.19
+		},
+		"ZCB": {
+			"label": "Zvýhodnená cena bodu",
+			"value": 0
+		},
+		"CBD": {
+			"label": "Cena bodu doprava",
+			"value": 0.5
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.016598
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Doprava",
+			"if": "vv.kod in ['doprava']",
+			"value": null,
+			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - imobilný",
+			"if": "vv.kod in ['IMB']",
+			"value": 0.025903,
+			"calc": "vv.bodyCelkom*1.75*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - obmedzemá hybnosť",
+			"if": "vv.kod in ['OBMH']",
+			"value": 0.025903,
+			"calc": "vv.bodyCelkom*1.5*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - psychiatrická diagnóza, kompenzovaný",
+			"if": "vv.kod in ['PSYK']",
+			"value": 0.025903,
+			"calc": "vv.bodyCelkom*1.5*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - psychiatrická diagnóza, dekompenzovaný",
+			"if": "vv.kod in ['PSYDK']",
+			"value": 0.025903,
+			"calc": "vv.bodyCelkom*1.75*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - mentálná retardácia",
+			"if": "vv.kod in ['RET']",
+			"value": 0.025903,
+			"calc": "vv.bodyCelkom*1.75*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0.008195,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "ZCB && vv.typ!='SVaLZ'",
+			"value": 0.027614,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": 0.022725,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "hospic"
+}

@@ -22,14 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added 84 a 85">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/004ZAP/24-004ZAP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/004ZAP/24-004ZAP-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/004ZAP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/004ZAP/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -668,28 +662,20 @@
       <workItem from="1693924318076" duration="2174000" />
       <workItem from="1694072292539" duration="167000" />
       <workItem from="1694072946848" duration="599000" />
-      <workItem from="1694074947575" duration="573000" />
-    </task>
-    <task id="LOCAL-00313" summary="- updates">
-      <created>1680120533952</created>
-      <option name="number" value="00313" />
-      <option name="presentableId" value="LOCAL-00313" />
-      <option name="project" value="LOCAL" />
-      <updated>1680120533952</updated>
-    </task>
-    <task id="LOCAL-00314" summary="- updates">
-      <created>1680602340761</created>
-      <option name="number" value="00314" />
-      <option name="presentableId" value="LOCAL-00314" />
-      <option name="project" value="LOCAL" />
-      <updated>1680602340761</updated>
-    </task>
-    <task id="LOCAL-00315" summary="- updates">
-      <created>1680603503003</created>
-      <option name="number" value="00315" />
-      <option name="presentableId" value="LOCAL-00315" />
-      <option name="project" value="LOCAL" />
-      <updated>1680603503003</updated>
+      <workItem from="1694074947575" duration="1477000" />
+      <workItem from="1694413492103" duration="598000" />
+      <workItem from="1694551387335" duration="598000" />
+      <workItem from="1694671245850" duration="110000" />
+      <workItem from="1694671593179" duration="596000" />
+      <workItem from="1694886317704" duration="599000" />
+      <workItem from="1694941603223" duration="1204000" />
+      <workItem from="1695107901114" duration="599000" />
+      <workItem from="1695281302955" duration="1219000" />
+      <workItem from="1695630508892" duration="598000" />
+      <workItem from="1695881847638" duration="2086000" />
+      <workItem from="1696230208046" duration="599000" />
+      <workItem from="1696399517905" duration="599000" />
+      <workItem from="1696519350407" duration="598000" />
     </task>
     <task id="LOCAL-00316" summary="- updates">
       <created>1680603619592</created>
@@ -1013,7 +999,28 @@
       <option name="project" value="LOCAL" />
       <updated>1693989740203</updated>
     </task>
-    <option name="localTasksCounter" value="362" />
+    <task id="LOCAL-00362" summary="- added 84 a 85">
+      <created>1694155627239</created>
+      <option name="number" value="00362" />
+      <option name="presentableId" value="LOCAL-00362" />
+      <option name="project" value="LOCAL" />
+      <updated>1694155627239</updated>
+    </task>
+    <task id="LOCAL-00363" summary="- added 84 a 85">
+      <created>1695372967178</created>
+      <option name="number" value="00363" />
+      <option name="presentableId" value="LOCAL-00363" />
+      <option name="project" value="LOCAL" />
+      <updated>1695372967179</updated>
+    </task>
+    <task id="LOCAL-00364" summary="- added 84">
+      <created>1695886641134</created>
+      <option name="number" value="00364" />
+      <option name="presentableId" value="LOCAL-00364" />
+      <option name="project" value="LOCAL" />
+      <updated>1695886641134</updated>
+    </task>
+    <option name="localTasksCounter" value="365" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1057,8 +1064,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- pridane NCB pre Union" />
-    <MESSAGE value="- pridane NCB pre 27 v 004ZAP" />
     <MESSAGE value="- opravene 89" />
     <MESSAGE value="- opravene 89 added under 023" />
     <MESSAGE value="- dovera pomaha" />
@@ -1082,7 +1087,9 @@
     <MESSAGE value="- updates" />
     <MESSAGE value="- added 86 and 87" />
     <MESSAGE value="- added 86 a 87" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added 86 a 87" />
+    <MESSAGE value="- added 84 a 85" />
+    <MESSAGE value="- added 84" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added 84" />
   </component>
   <component name="masterDetails">
     <states>
