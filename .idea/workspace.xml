@@ -675,14 +675,8 @@
       <workItem from="1695881847638" duration="2086000" />
       <workItem from="1696230208046" duration="599000" />
       <workItem from="1696399517905" duration="599000" />
-      <workItem from="1696519350407" duration="598000" />
-    </task>
-    <task id="LOCAL-00316" summary="- updates">
-      <created>1680603619592</created>
-      <option name="number" value="00316" />
-      <option name="presentableId" value="LOCAL-00316" />
-      <option name="project" value="LOCAL" />
-      <updated>1680603619593</updated>
+      <workItem from="1696519350407" duration="1352000" />
+      <workItem from="1696837586692" duration="613000" />
     </task>
     <task id="LOCAL-00317" summary="- updates">
       <created>1680608905409</created>
@@ -1020,7 +1014,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695886641134</updated>
     </task>
-    <option name="localTasksCounter" value="365" />
+    <task id="LOCAL-00365" summary="- added 84 a 85">
+      <created>1696521080027</created>
+      <option name="number" value="00365" />
+      <option name="presentableId" value="LOCAL-00365" />
+      <option name="project" value="LOCAL" />
+      <updated>1696521080027</updated>
+    </task>
+    <option name="localTasksCounter" value="366" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1087,9 +1088,9 @@
     <MESSAGE value="- updates" />
     <MESSAGE value="- added 86 and 87" />
     <MESSAGE value="- added 86 a 87" />
-    <MESSAGE value="- added 84 a 85" />
     <MESSAGE value="- added 84" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added 84" />
+    <MESSAGE value="- added 84 a 85" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added 84 a 85" />
   </component>
   <component name="masterDetails">
     <states>
