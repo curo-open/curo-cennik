@@ -31,12 +31,12 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.pocet*CBD              │ Doprava                                       │ vv.kod in ['doprava']                                        │
-│        0.025903 │ vv.bodyCelkom*1.75*cena   │ Výkony - imobilný                             │ vv.kod in ['IMB']                                            │
-│        0.025903 │ vv.bodyCelkom*1.5*cena    │ Výkony - obmedzemá hybnosť                    │ vv.kod in ['OBMH']                                           │
-│        0.025903 │ vv.bodyCelkom*1.5*cena    │ Výkony - psychiatrická diagnóza, kompenzovaný │ vv.kod in ['PSYK']                                           │
-│        0.025903 │ vv.bodyCelkom*1.75*cena   │ Výkony - psychiatrická diagnóza, dekompenzova │ vv.kod in ['PSYDK']                                          │
+│        0.025903 │ vv.bodyCelkom*1.75*cena   │ Výkony - imobilný                             │ p.fs=='I'                                                    │
+│        0.025903 │ vv.bodyCelkom*1.5*cena    │ Výkony - obmedzemá hybnosť                    │ p.fs=='H'                                                    │
+│        0.025903 │ vv.bodyCelkom*1.5*cena    │ Výkony - psychiatrická diagnóza, kompenzovaný │ p.fs=='FK'                                                   │
+│        0.025903 │ vv.bodyCelkom*1.75*cena   │ Výkony - psychiatrická diagnóza, dekompenzova │ p.fs=='FD'                                                   │
 │                 │                           │ ný                                            │                                                              │
-│        0.025903 │ vv.bodyCelkom*1.75*cena   │ Výkony - mentálná retardácia                  │ vv.kod in ['RET']                                            │
+│        0.025903 │ vv.bodyCelkom*1.75*cena   │ Výkony - mentálná retardácia                  │ p.fs=='R'                                                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
 │        0.022725 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

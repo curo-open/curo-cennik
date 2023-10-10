@@ -48,35 +48,35 @@
 		},
 		{
 			"label": "Výkony - imobilný",
-			"if": "vv.kod in ['IMB']",
+			"if": "p.fs=='I'",
 			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.75*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - obmedzemá hybnosť",
-			"if": "vv.kod in ['OBMH']",
+			"if": "p.fs=='H'",
 			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.5*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - psychiatrická diagnóza, kompenzovaný",
-			"if": "vv.kod in ['PSYK']",
+			"if": "p.fs=='FK'",
 			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.5*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - psychiatrická diagnóza, dekompenzovaný",
-			"if": "vv.kod in ['PSYDK']",
+			"if": "p.fs=='FD'",
 			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.75*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - mentálná retardácia",
-			"if": "vv.kod in ['RET']",
+			"if": "p.fs=='R'",
 			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.75*cena",
 			"instruction": null
