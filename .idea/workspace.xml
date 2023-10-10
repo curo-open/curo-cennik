@@ -676,21 +676,7 @@
       <workItem from="1696230208046" duration="599000" />
       <workItem from="1696399517905" duration="599000" />
       <workItem from="1696519350407" duration="1352000" />
-      <workItem from="1696837586692" duration="613000" />
-    </task>
-    <task id="LOCAL-00317" summary="- updates">
-      <created>1680608905409</created>
-      <option name="number" value="00317" />
-      <option name="presentableId" value="LOCAL-00317" />
-      <option name="project" value="LOCAL" />
-      <updated>1680608905410</updated>
-    </task>
-    <task id="LOCAL-00318" summary="- updates">
-      <created>1681831130005</created>
-      <option name="number" value="00318" />
-      <option name="presentableId" value="LOCAL-00318" />
-      <option name="project" value="LOCAL" />
-      <updated>1681831130005</updated>
+      <workItem from="1696837586692" duration="2639000" />
     </task>
     <task id="LOCAL-00319" summary="- updates">
       <created>1681831171483</created>
@@ -1021,7 +1007,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696521080027</updated>
     </task>
-    <option name="localTasksCounter" value="366" />
+    <task id="LOCAL-00366" summary="- added 84 a 85">
+      <created>1696881986235</created>
+      <option name="number" value="00366" />
+      <option name="presentableId" value="LOCAL-00366" />
+      <option name="project" value="LOCAL" />
+      <updated>1696881986235</updated>
+    </task>
+    <task id="LOCAL-00367" summary="- fixing 25">
+      <created>1696934654364</created>
+      <option name="number" value="00367" />
+      <option name="presentableId" value="LOCAL-00367" />
+      <option name="project" value="LOCAL" />
+      <updated>1696934654364</updated>
+    </task>
+    <option name="localTasksCounter" value="368" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1065,7 +1065,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- opravene 89" />
     <MESSAGE value="- opravene 89 added under 023" />
     <MESSAGE value="- dovera pomaha" />
     <MESSAGE value="- pridane jzs" />
@@ -1090,7 +1089,8 @@
     <MESSAGE value="- added 86 a 87" />
     <MESSAGE value="- added 84" />
     <MESSAGE value="- added 84 a 85" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added 84 a 85" />
+    <MESSAGE value="- fixing 25" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixing 25" />
   </component>
   <component name="masterDetails">
     <states>

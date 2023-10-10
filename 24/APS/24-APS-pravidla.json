@@ -1,0 +1,24 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkony APS",
+			"if": "1",
+			"value": 0.026355,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 4571a",
+			"if": "vv.kod in ['4571a']",
+			"value": 5.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {}
+}
