@@ -177,6 +177,27 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": " Iné ako SVALZ",
+			"if": "!vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

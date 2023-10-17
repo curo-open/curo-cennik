@@ -146,6 +146,20 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": " Iné ako SVALZ",
+			"if": "!vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

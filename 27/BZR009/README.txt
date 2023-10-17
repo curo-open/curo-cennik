@@ -44,6 +44,9 @@ Autor: curo.sk
 │                 │                           │                                               │ & !vv.jeSVaZL                                                │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkony 5301,5304,5316,5807                    │ vv.kod in ['5301','5304','5316','5807']                      │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ vv.jeSVaZL                                                   │
+│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - Iné ako SVALZ                  │ !vv.jeSVaZL                                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

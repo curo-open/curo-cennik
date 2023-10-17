@@ -42,6 +42,9 @@ Autor: curo.sk
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a'] && vv.kod in ['4571a']                   │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b'] && vv.kod in ['629b']                     │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
+│            null │ vv.bodyCelkom*CB          │ Iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
