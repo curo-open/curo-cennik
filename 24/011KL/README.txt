@@ -35,7 +35,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │            null │ vv.bodyCelkom*CBSVALZP    │ Preventívne USG výkony                        │ vv.kod in ['5303','5305','5708']                             │
 │          0.0055 │ vv.bodyCelkom*cena        │ DEXA                                          │ vv.kod in ['5331']                                           │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ EU ŠAS                                        │ vv.typ!='SVaLZ' && p.typ in ['BE','CU','EU']                 │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │

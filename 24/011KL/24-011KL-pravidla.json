@@ -87,8 +87,8 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "p.typ in ['BE','CU','EU']",
+			"label": "EU ŠAS",
+			"if": "vv.typ!='SVaLZ' && p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
