@@ -22,8 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- upravene 630">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/BZR049/24-BZR049-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR049/24-BZR049-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/BZR049/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR049/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/BZR003/27-BZR003-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR003/27-BZR003-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/BZR003/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR003/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/BZR232/27-BZR232-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR232/27-BZR232-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/BZR232/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR232/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +43,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/24/009JZS/24-009JZS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/010JZS/24-010JZS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/020/24-020-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/020AVLSDP/24-020AVLSDP-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/060/24-060-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/802/24-802-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/804/24-804-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/24/804/README.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/APS/24-APS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/24/APS/README.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/25/009JZS/25-009JZS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/25/010JZS/25-010JZS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/25/271/README.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/25/APS/25-APS-pravidla.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/84/84UAV/84-84UAV-pravidla.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/89/89UAS/README.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/89/BZR89UAV/89-BZR89UAV-pravidla.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -679,21 +695,8 @@
       <workItem from="1696837586692" duration="5033000" />
       <workItem from="1697003244652" duration="598000" />
       <workItem from="1697376535374" duration="1197000" />
-      <workItem from="1697439777939" duration="2363000" />
-    </task>
-    <task id="LOCAL-00323" summary="- updates">
-      <created>1681909659483</created>
-      <option name="number" value="00323" />
-      <option name="presentableId" value="LOCAL-00323" />
-      <option name="project" value="LOCAL" />
-      <updated>1681909659483</updated>
-    </task>
-    <task id="LOCAL-00324" summary="- updates">
-      <created>1682664439884</created>
-      <option name="number" value="00324" />
-      <option name="presentableId" value="LOCAL-00324" />
-      <option name="project" value="LOCAL" />
-      <updated>1682664439885</updated>
+      <workItem from="1697439777939" duration="4323000" />
+      <workItem from="1698386552816" duration="1236000" />
     </task>
     <task id="LOCAL-00325" summary="- updates">
       <created>1682676228441</created>
@@ -1024,7 +1027,21 @@
       <option name="project" value="LOCAL" />
       <updated>1697572914094</updated>
     </task>
-    <option name="localTasksCounter" value="372" />
+    <task id="LOCAL-00372" summary="- upravene 003 bzr">
+      <created>1697724158383</created>
+      <option name="number" value="00372" />
+      <option name="presentableId" value="LOCAL-00372" />
+      <option name="project" value="LOCAL" />
+      <updated>1697724158383</updated>
+    </task>
+    <task id="LOCAL-00373" summary="- upravene EU cenny dovera">
+      <created>1698063265432</created>
+      <option name="number" value="00373" />
+      <option name="presentableId" value="LOCAL-00373" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063265432</updated>
+    </task>
+    <option name="localTasksCounter" value="374" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1068,8 +1085,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- dovera pomaha" />
-    <MESSAGE value="- pridane jzs" />
     <MESSAGE value="- upraven spec vykazovanie" />
     <MESSAGE value="- upraven cena pre 023 pre test" />
     <MESSAGE value="- reverting cena pre 023 pre test" />
@@ -1093,7 +1108,9 @@
     <MESSAGE value="- fixing 25" />
     <MESSAGE value="- added 84 a 85" />
     <MESSAGE value="- upravene 630" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upravene 630" />
+    <MESSAGE value="- upravene 003 bzr" />
+    <MESSAGE value="- upravene EU cenny dovera" />
+    <option name="LAST_COMMIT_MESSAGE" value="- upravene EU cenny dovera" />
   </component>
   <component name="masterDetails">
     <states>
