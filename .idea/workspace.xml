@@ -22,14 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- avls kapitacie">
+      <change afterPath="$PROJECT_DIR$/84/84UAG/84-84UAG-pravidla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/84/84UAG/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR049/24-BZR049-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR049/24-BZR049-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR049/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR049/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR003/27-BZR003-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR003/27-BZR003-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR003/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR003/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR232/27-BZR232-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR232/27-BZR232-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR232/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR232/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/630/24-630-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/630/24-630-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/630/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/630/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -696,14 +696,7 @@
       <workItem from="1697003244652" duration="598000" />
       <workItem from="1697376535374" duration="1197000" />
       <workItem from="1697439777939" duration="4323000" />
-      <workItem from="1698386552816" duration="1236000" />
-    </task>
-    <task id="LOCAL-00325" summary="- updates">
-      <created>1682676228441</created>
-      <option name="number" value="00325" />
-      <option name="presentableId" value="LOCAL-00325" />
-      <option name="project" value="LOCAL" />
-      <updated>1682676228441</updated>
+      <workItem from="1698386552816" duration="2935000" />
     </task>
     <task id="LOCAL-00326" summary="- updates">
       <created>1682677964576</created>
@@ -1041,7 +1034,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698063265432</updated>
     </task>
-    <option name="localTasksCounter" value="374" />
+    <task id="LOCAL-00374" summary="- avls kapitacie&#10;- bzr changes">
+      <created>1698672734380</created>
+      <option name="number" value="00374" />
+      <option name="presentableId" value="LOCAL-00374" />
+      <option name="project" value="LOCAL" />
+      <updated>1698672734380</updated>
+    </task>
+    <option name="localTasksCounter" value="375" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1085,7 +1085,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upraven spec vykazovanie" />
     <MESSAGE value="- upraven cena pre 023 pre test" />
     <MESSAGE value="- reverting cena pre 023 pre test" />
     <MESSAGE value="- added soc for jzs" />
@@ -1110,7 +1109,8 @@
     <MESSAGE value="- upravene 630" />
     <MESSAGE value="- upravene 003 bzr" />
     <MESSAGE value="- upravene EU cenny dovera" />
-    <option name="LAST_COMMIT_MESSAGE" value="- upravene EU cenny dovera" />
+    <MESSAGE value="- avls kapitacie&#10;- bzr changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- avls kapitacie&#10;- bzr changes" />
   </component>
   <component name="masterDetails">
     <states>

@@ -24,18 +24,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 19 │           4.5 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
-│ vek od 19 do 27 │             3 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 27) │
-│ vek od 27 do 45 │          3.04 │ IDK+cena │ p.kapitacia && p|vekMedzi(27, 45) │
-│ vek od 45 do 51 │          3.08 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 51) │
-│ vek od 51 do 53 │          3.41 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 53) │
-│ vek od 53 do 57 │          3.94 │ IDK+cena │ p.kapitacia && p|vekMedzi(53, 57) │
-│ vek od 57 do 61 │           4.4 │ IDK+cena │ p.kapitacia && p|vekMedzi(57, 61) │
-│ vek od 61 do 64 │          5.08 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 64) │
-│ vek od 64 do 68 │          5.28 │ IDK+cena │ p.kapitacia && p|vekMedzi(64, 68) │
-│ vek od 68 do 72 │           5.5 │ IDK+cena │ p.kapitacia && p|vekMedzi(68, 72) │
-│ vek od 72 do 87 │          6.06 │ IDK+cena │ p.kapitacia && p|vekMedzi(72, 87) │
-│ vek od 87+      │          6.89 │ IDK+cena │ p.kapitacia && p|vekMedzi(87)     │
+│ vek od 18 do 19 │           5.4 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
+│ vek od 19 do 27 │           3.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 27) │
+│ vek od 27 do 45 │          3.65 │ IDK+cena │ p.kapitacia && p|vekMedzi(27, 45) │
+│ vek od 45 do 51 │           3.7 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 51) │
+│ vek od 51 do 53 │          4.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 53) │
+│ vek od 53 do 57 │          4.73 │ IDK+cena │ p.kapitacia && p|vekMedzi(53, 57) │
+│ vek od 57 do 61 │          5.28 │ IDK+cena │ p.kapitacia && p|vekMedzi(57, 61) │
+│ vek od 61 do 64 │           6.1 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 64) │
+│ vek od 64 do 68 │          6.34 │ IDK+cena │ p.kapitacia && p|vekMedzi(64, 68) │
+│ vek od 68 do 72 │           6.6 │ IDK+cena │ p.kapitacia && p|vekMedzi(68, 72) │
+│ vek od 72 do 87 │          7.27 │ IDK+cena │ p.kapitacia && p|vekMedzi(72, 87) │
+│ vek od 87+      │          8.27 │ IDK+cena │ p.kapitacia && p|vekMedzi(87)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 

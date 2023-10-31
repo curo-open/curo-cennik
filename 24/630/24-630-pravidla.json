@@ -26,7 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.016598
+			"value": 0.019002
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -40,45 +40,59 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Doprava",
+			"label": "Doprava:  do 60 km",
 			"if": "vv.kod in ['doprava']",
-			"value": null,
+			"value": 0.3,
+			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "Doprava:  + 60 km",
+			"if": "vv.kod in ['doprava']",
+			"value": 0.15,
 			"calc": "vv.pocet*CBD",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - imobilný",
 			"if": "p.fs=='I'",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*1.75*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*1.75*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - obmedzemá hybnosť",
 			"if": "p.fs=='H'",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*1.5*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*1.5*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - psychiatrická diagnóza, kompenzovaný",
 			"if": "p.fs=='FK'",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*1.5*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*1.5*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - psychiatrická diagnóza, dekompenzovaný",
 			"if": "p.fs=='FD'",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*1.75*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*1.75*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - mentálná retardácia",
 			"if": "p.fs=='R'",
-			"value": 0.025903,
-			"calc": "vv.bodyCelkom*1.75*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*1.75*CB",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
+			"if": "vv.kod in ['25M']",
+			"value": 58,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

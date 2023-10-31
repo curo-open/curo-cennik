@@ -1,23 +1,22 @@
-                                                                         =============
-                                                                         Cenník hospic
-                                                                         =============
+                                                                        ================
+                                                                        Cenník gynekolog
+                                                                        ================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬──────────────────────────────┐
-│ Názov a hodnota │ Popis                        │
-├─────────────────┼──────────────────────────────┤
-│ IPP1 = 1.17     │ IPP1                         │
-│ IPP2 = 1.89     │ IPP2                         │
-│ IPP3 = 3.19     │ IPP3                         │
-│ ZCB = 0         │ Zvýhodnená cena bodu         │
-│ CBD = 0.5       │ Cena bodu doprava            │
-│ LIMIT = 0       │ Limit                        │
-│ CB = 0.019002   │ Cena bodu                    │
-│ CBP = 0         │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0     │ Cena bodu SVaLZ              │
-└─────────────────┴──────────────────────────────┘
+┌───────────────────────┬──────────────────────────────┐
+│ Názov a hodnota       │ Popis                        │
+├───────────────────────┼──────────────────────────────┤
+│ IDK = 0               │ IDK                          │
+│ KPS = 1.58            │ KPS                          │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
+│ CB = 0.0339           │ Cena bodu                    │
+│ CBP = 0.065           │ Cena bodu preventívne výkony │
+│ CBEU = 0.0339         │ Cena bodu EU                 │
+│ CBSVALZ = 0.009574    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
+└───────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -30,31 +29,33 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│             0.3 │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava']                                        │
-│            0.15 │ vv.pocet*CBD              │ Doprava:  + 60 km                             │ vv.kod in ['doprava']                                        │
-│            null │ vv.bodyCelkom*1.75*CB     │ Výkony - imobilný                             │ p.fs=='I'                                                    │
-│            null │ vv.bodyCelkom*1.5*CB      │ Výkony - obmedzemá hybnosť                    │ p.fs=='H'                                                    │
-│            null │ vv.bodyCelkom*1.5*CB      │ Výkony - psychiatrická diagnóza, kompenzovaný │ p.fs=='FK'                                                   │
-│            null │ vv.bodyCelkom*1.75*CB     │ Výkony - psychiatrická diagnóza, dekompenzova │ p.fs=='FD'                                                   │
-│                 │                           │ ný                                            │                                                              │
-│            null │ vv.bodyCelkom*1.75*CB     │ Výkony - mentálná retardácia                  │ p.fs=='R'                                                    │
-│              58 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
-│                 │                           │ domácom prostredí                             │                                                              │
-│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
-│        0.022725 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│             2.3 │ vv.pocet*cena             │ UAO - KPU                                     │ vv.kod in ['KPU']                                            │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Preventívny výkon                       │ vv.kod in ['157U','102U','105U']                             │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Vyšetrenie a rady v gravidite           │ vv.kod in ['103U']                                           │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Ultrazvuk vrátane biometrie a posúdenie │ vv.kod in ['108U']                                           │
+│                 │                           │ vývoja orgánov                                │                                                              │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Kolposkopia                             │ vv.kod in ['1070U']                                          │
+│          0.0318 │ vv.bodyCelkom*cena        │ UAO - Komplexné vyšetrenie                    │ vv.kod in ['60U']                                            │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Očkovanie                               │ vv.kod in ['252BU','252CU']                                  │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Cytologické vyšetrenie                  │ vv.kod in ['297U']                                           │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 11AU                              │ vv.kod in ['11AU']                                           │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 1BU                               │ vv.kod in ['1BU']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 70U                               │ vv.kod in ['70U']                                            │
+│        0.009574 │ vv.bodyCelkom*cena        │ UAO - Výkony 5303U,5305U,5308U                │ vv.kod in ['5303U','5305U','5308U']                          │
+│        0.009574 │ vv.bodyCelkom*cena        │ UAO - Ultrazvuk vrátane biometrie plodu       │ vv.kod in ['5808U']                                          │
+│         0.01917 │ vv.bodyCelkom*cena        │ UAO - Externé CTG                             │ vv.kod in ['118U']                                           │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
+│            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
+│          0.0318 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Kapitovaný - SVALZ výkon                      │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Kapitovaný - iné ako SVALZ                    │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBEU        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
-├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             160 │ 1                                                                                                         │                           │
-│             160 │ 1b                                                                                                        │                           │
-│            1000 │ 1c                                                                                                        │                           │
-│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
