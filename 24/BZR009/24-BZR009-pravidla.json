@@ -36,10 +36,17 @@
 	],
 	"vykon": [
 		{
-			"label": "Výkony 102,103,105,108,297",
-			"if": "vv.kod in ['102','103','105','108','297']",
+			"label": "Preventívne zdravotné výkony",
+			"if": "vv.kod in ['157','102','103','105','108','1070','297']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','11a','70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -64,10 +71,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','11a','70']",
-			"value": 0.027,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon 60, 63",
+			"if": "vv.kod in ['60','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -76,35 +83,74 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.jeSVaZL",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !vv.jeSVaZL",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkony",
-			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
 		}
 	],
 	"kontrola": [],
 	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"102": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"103": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"105": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"108": [
+			{
+				"cond": "",
+				"value": 350
+			}
+		],
+		"118": [
+			{
+				"cond": "",
+				"value": 230
+			}
+		],
+		"157": [
+			{
+				"cond": "",
+				"value": 220
+			}
+		],
+		"168": [
+			{
+				"cond": "",
+				"value": 120
 			}
 		],
 		"297": [
@@ -113,16 +159,64 @@
 				"value": 50
 			}
 		],
+		"1070": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"5303": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"5305": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"5308": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"5808": [
+			{
+				"cond": "",
+				"value": 600
+			}
+		],
 		"1b": [
 			{
 				"cond": "",
 				"value": 160
 			}
 		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
 		"11a": [
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"252b": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"252c": [
+			{
+				"cond": "",
+				"value": 70
 			}
 		]
 	},

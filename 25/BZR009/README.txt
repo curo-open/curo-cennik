@@ -23,7 +23,7 @@ Autor: curo.sk
 ┌───────────┬───────────────┬──────────┬────────────────────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec   │ Podmienka                          │
 ├───────────┼───────────────┼──────────┼────────────────────────────────────┤
-│ Kapitácie │          1.84 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 120) │
+│ Kapitácia │          1.84 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 120) │
 └───────────┴───────────────┴──────────┴────────────────────────────────────┘
 
 
@@ -33,18 +33,26 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0318 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │            null │ vv.bodyCelkom*CBP         │ Preventívne zdravotné výkony                  │ vv.kod in ['157','102','103','105','108','1070','297']       │
+│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
 │            0.08 │ vv.bodyCelkom*cena        │ Výkon 252b, 252c                              │ vv.kod in ['252b','252C']                                    │
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
-│        0.009574 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
-│        0.009574 │ vv.bodyCelkom*cena        │ Výkon 5808                                    │ vv.kod in ['5808']                                           │
-│          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│        0.009574 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308','580 │
+│                 │                           │                                               │ 8']                                                          │
+│        0.009574 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5303','5305','5308','5808','5316' ]              │
+│          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60,63                                   │ vv.kod in ['60','63']                                        │
 │            null │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │
-│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
 │             5.2 │ vv.pocet*cena             │ Skriningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skriningový poistencov. antigénový test SARS- │ vv.kod in ['629b']                                           │
 │                 │                           │ CoV-2 imun. metód.                            │                                                              │
-│          0.0318 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
 │            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
+│            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
+│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
+│            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -54,6 +62,7 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             420 │ 60                                                                                                        │                           │
+│             200 │ 63                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             320 │ 102                                                                                                       │                           │
@@ -62,6 +71,7 @@ Autor: curo.sk
 │             350 │ 108                                                                                                       │                           │
 │             230 │ 118                                                                                                       │                           │
 │             220 │ 157                                                                                                       │                           │
+│             120 │ 168                                                                                                       │                           │
 │              50 │ 297                                                                                                       │                           │
 │             150 │ 1070                                                                                                      │                           │
 │            1000 │ 5303                                                                                                      │                           │

@@ -30,22 +30,23 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0735 │ vv.bodyCelkom*cena        │ Výkon 100,102,103,105,157,108                 │ vv.kod in ['100','102','103','105','157','108']              │
+│          0.0735 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['100','102','103','105','157','108','1070']       │
+│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │          0.0398 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ vv.kod in ['297']                                            │
 │          0.0735 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.kod in ['252b']                                           │
-│          0.0735 │ vv.bodyCelkom*cena        │ Výkon 1070                                    │ vv.kod in ['1070']                                           │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkony 5303,5305, 5308                        │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']     │
+│            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','530 │
+│                 │                           │                                               │ 8','5316','5807']                                            │
+│            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.kod in ['5301','5303','5305','5308','5316','5807']        │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
-│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60, 63                                  │ vv.kod in ['60','63']                                        │
+│              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
 │         0.00973 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & vv.jeSVaZL                                                 │
 │          0.0339 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & !vv.jeSVaZL                                                │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkony 5301,5304,5316,5807                    │ vv.kod in ['5301','5304','5316','5807']                      │
-│              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ vv.jeSVaZL                                                   │
-│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - Iné ako SVALZ                  │ !vv.jeSVaZL                                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
+│            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -54,10 +55,28 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             420 │ 60                                                                                                        │                           │
+│             200 │ 63                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
+│             320 │ 102                                                                                                       │                           │
+│             200 │ 103                                                                                                       │                           │
+│             250 │ 105                                                                                                       │                           │
+│             350 │ 108                                                                                                       │                           │
+│             230 │ 118                                                                                                       │                           │
+│             220 │ 157                                                                                                       │                           │
+│             120 │ 168                                                                                                       │                           │
+│              50 │ 297                                                                                                       │                           │
+│             150 │ 1070                                                                                                      │                           │
+│            1000 │ 5303                                                                                                      │                           │
+│            1200 │ 5305                                                                                                      │                           │
+│            1500 │ 5308                                                                                                      │                           │
+│             600 │ 5808                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
+│              70 │ 252b                                                                                                      │                           │
+│              70 │ 252c                                                                                                      │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

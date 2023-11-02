@@ -35,7 +35,7 @@
 	},
 	"pacient": [
 		{
-			"label": "Kapitácie",
+			"label": "Kapitácia",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
 			"value": 1.84,
 			"calc": "IDK+cena",
@@ -58,6 +58,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 252b, 252c",
 			"if": "vv.kod in ['252b','252C']",
 			"value": 0.08,
@@ -72,22 +79,22 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon SVALZ USG",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308']",
+			"label": "Výkon SVALZ USG ",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308','5808']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5808",
-			"if": "vv.kod in ['5808']",
+			"label": "Výkon SVALZ USG ",
+			"if": "vv.kod in ['5303','5305','5308','5808','5316' ]",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
+			"label": "Výkon 60,63",
+			"if": "vv.kod in ['60','63']",
 			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -97,13 +104,6 @@
 			"if": "vv.kod in ['67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEU",
-			"instruction": null
-		},
-		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['11a','1b','70']",
-			"value": 0.027,
-			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -123,13 +123,62 @@
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && vv.jeSVaZL",
-			"value": 0.0318,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "!vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "!vv.jeSVaZL",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -148,6 +197,12 @@
 			{
 				"cond": "",
 				"value": 420
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"67": [
@@ -196,6 +251,12 @@
 			{
 				"cond": "",
 				"value": 220
+			}
+		],
+		"168": [
+			{
+				"cond": "",
+				"value": 120
 			}
 		],
 		"297": [
