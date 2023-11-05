@@ -33,34 +33,21 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d'] && vv.kod in ['15d']                       │
+│          0.0385 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60a                                     │ vv.kod in ['60a']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250a','250b']                                    │
+│            null │ vv.bodyCelkom*CB          │ Odber biol.materiálu                          │ vv.kod in ['299a','299b']                                    │
+│            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 1a                                      │ vv.kod in ['1a']                                             │
-│        0.007303 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
-│                 │                           │ 531                                           │ ','530','531']                                               │
-│        0.007303 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│          0.0385 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63'] && vv.kod in ['60','62','63']     │
-│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67'] && vv.kod in ['65','66','67']     │
-│         0.00973 │ vv.bodyCelkom*cena        │ Výkon 5702                                    │ vv.kod in ['5702']                                           │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332'] && vv.kod in ['5330','5331' │
-│                 │                           │                                               │ ,'5332']                                                     │
-│         0.01044 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5302','5303','5304','5307','5307a' │
-│                 │                           │                                               │ ,'5312','5315','5316','5799'] && vv.kod in ['5300','5301','5 │
-│                 │                           │                                               │ 302','5303','5304','5307','5307a','5312','5315','5316','5799 │
-│                 │                           │                                               │ ']                                                           │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Zhodnotenie vyšetrení a zdrav.dokumentácie    │ vv.kod in ['5700']                                           │
+│         0.00973 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
-│            64.5 │ vv.pocet*cena             │ Výkon 760sp;760sn;760pp;760pn                 │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
-│             129 │ vv.pocet*cena             │ Výkon 763p                                    │ vv.kod in ['763p']                                           │
-│             129 │ vv.pocet*cena             │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
-│               5 │ vv.pocet*cena             │ Výkon Y0018                                   │ vv.kod in ['Y0018']                                          │
-│            4.56 │ vv.pocet*cena             │ Výkon Y0023                                   │ vv.kod in ['Y0023']                                          │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330;5331;5332                          │ vv.kod in ['5330','5331','5332']                             │
-│          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5793;5794;5795;5727                     │ vv.kod in ['5793','5794','5795','5727']                      │
-│            5.88 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007'] && vv.kod in ['H0007']                   │
-│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008'] && vv.kod in ['H0008']                   │
-│            8.95 │ vv.pocet*cena             │ Výkon 3860                                    │ vv.kod in ['3860'] && vv.kod in ['3860']                     │
-│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70'] && vv.kod in ['1b','1c','11 │
-│                 │                           │                                               │ a','70']                                                     │
-│           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a'] && vv.kod in ['4571a']                   │
+│            5.88 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
+│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│            8.95 │ vv.pocet*cena             │ Výkon 3860                                    │ vv.kod in ['3860']                                           │
+│           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
@@ -68,17 +55,14 @@ Autor: curo.sk
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
-│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
-│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b'] && vv.kod in ['629b']                     │
-│                 │                           │ luorerscenčnou metódou                        │                                                              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
 │            null │ vv.bodyCelkom*CB          │  Iné ako SVALZ                                │ !vv.jeSVaZL                                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

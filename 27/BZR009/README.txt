@@ -35,9 +35,9 @@ Autor: curo.sk
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │          0.0398 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ vv.kod in ['297']                                            │
 │          0.0735 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.kod in ['252b']                                           │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','530 │
-│                 │                           │                                               │ 8','5316','5807']                                            │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.kod in ['5301','5303','5305','5308','5316','5807']        │
+│            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']            │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony SVALZ USG                              │ vv.kod in ['5301','5303','5305','5316','5807']               │
+│         0.01044 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60, 63                                  │ vv.kod in ['60','63']                                        │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │

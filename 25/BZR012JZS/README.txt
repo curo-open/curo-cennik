@@ -21,8 +21,8 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │               1 │ vv.pocet*cena             │ Výkon 99999                                   │ vv.kod in ['99999'] || vv.kod in ['99999']                   │
-│             435 │ vv.pocet*cena             │ Výkon 8631                                    │ vv.kod in ['8631'] || vv.k in ['8361'] || vv.k25 in ['8631'] │
-│             954 │ vv.pocet*cena             │ Výkon 8631A                                   │ vv.kod in ['8631A'] || vv.k in ['8361A'] || vv.k25 in ['8631 │
+│             435 │ vv.pocet*cena             │ Výkon 8631                                    │ vv.kod in ['8631'] || vv.k in ['8631'] || vv.k25 in ['8631'] │
+│             954 │ vv.pocet*cena             │ Výkon 8631A                                   │ vv.kod in ['8631A'] || vv.k in ['8631A'] || vv.k25 in ['8631 │
 │                 │                           │                                               │ A']                                                          │
 │             379 │ vv.pocet*cena             │ Výkon 8900                                    │ vv.kod in ['8900'] || vv.k in ['8900'] || vv.k25 in ['8900'] │
 │             379 │ vv.pocet*cena             │ Výkon 8901                                    │ vv.kod in ['8901'] || vv.k in ['8901'] || vv.k25 in ['8901'] │

@@ -37,6 +37,11 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60, 63                                  │ vv.kod in ['60','63']                                        │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
+│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
+│            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

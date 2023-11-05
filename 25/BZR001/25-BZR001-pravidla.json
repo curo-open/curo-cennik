@@ -48,6 +48,41 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60a",
+			"if": "vv.kod in ['60a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,
@@ -62,94 +97,31 @@
 			"instruction": null
 		},
 		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
-			"value": 0.011618,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
-			"instruction": null
-		},
-		{
-			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 532;533a;540;541;542",
-			"if": "vv.kod in ['532','533a','540','541','542']",
-			"value": 0.011618,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 765p",
-			"if": "vv.kod in ['765p']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
+			"label": "Odber biol.materiálu",
+			"if": "vv.kod in ['299a','299b']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 65,66,67",
-			"if": "vv.kod in ['65','66','67']",
+			"label": "Zhodnotenie vyšetrení a zdrav.dokumentácie ",
+			"if": "vv.kod in ['5700']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 654",
-			"if": "vv.kod in ['654']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5702, 5715, 5716",
-			"if": "vv.kod in ['5702','5715','5716']",
+			"label": "EKG",
+			"if": "vv.kod in ['5702']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie Covid 252L",
-			"if": "vv.kod in ['252L']",
-			"value": 10,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Skríningový antigénový test SARS-CoV-2",
-			"if": "vv.kod in ['629a']",
-			"value": 5.2,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
-			"if": "vv.kod in ['629b']",
-			"value": 10,
-			"calc": "vv.pocet*cena",
+			"label": "Výkon 5715, 5716",
+			"if": "vv.kod in ['5715','5716']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{

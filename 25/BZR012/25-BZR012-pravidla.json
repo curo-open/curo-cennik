@@ -40,6 +40,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Plánovanie terapeutických postupov",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
@@ -54,13 +61,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Odber venóznej krvi",
-			"if": "vv.kod in ['250x']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,
@@ -68,10 +68,38 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odber biol.materiálu",
+			"if": "vv.kod in ['299a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie RTG dokumentácie ",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -83,7 +111,7 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5796','5799']",
+			"if": "vv.kod in ['5330','5331','5332','5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5796','5799']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null

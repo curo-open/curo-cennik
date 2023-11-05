@@ -49,11 +49,6 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
 │            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
-│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
-│            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

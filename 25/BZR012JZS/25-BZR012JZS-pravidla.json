@@ -11,14 +11,14 @@
 		},
 		{
 			"label": "Výkon 8631",
-			"if": "vv.kod in ['8631'] || vv.k in ['8361'] || vv.k25 in ['8631']",
+			"if": "vv.kod in ['8631'] || vv.k in ['8631'] || vv.k25 in ['8631']",
 			"value": 435,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8631A",
-			"if": "vv.kod in ['8631A'] || vv.k in ['8361A'] || vv.k25 in ['8631A']",
+			"if": "vv.kod in ['8631A'] || vv.k in ['8631A'] || vv.k25 in ['8631A']",
 			"value": 954,
 			"calc": "vv.pocet*cena",
 			"instruction": null
