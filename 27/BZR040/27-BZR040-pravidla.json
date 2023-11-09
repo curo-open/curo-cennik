@@ -32,6 +32,34 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Plánovanie terapeutických postupov",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Edukácia k spirometrii ",
+			"if": "vv.kod in ['10e']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Interpretácia imunologického profilu ",
+			"if": "vv.kod in ['15f']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": 0.0385,
@@ -46,10 +74,52 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 629b",
-			"if": "vv.kod in ['629b']",
-			"value": 10.2,
-			"calc": "vv.pocet*cena",
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odber venóznej krvi ",
+			"if": "vv.kod in ['250a','250b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Sledovanie pacienta",
+			"if": "vv.kod in ['40']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia do 30min",
+			"if": "vv.kod in ['271']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia viac ako 30min",
+			"if": "vv.kod in ['272']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 350-Prick testy",
+			"if": "vv.kod in ['350']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -74,38 +144,38 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon Ine SVALZ",
-			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon Ine SVALZ",
-			"if": "vv.kod in ['5766','5769','5770','5771']",
+			"label": "Výkon 5766",
+			"if": "vv.kod in ['5766']",
 			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.035,
+			"label": "Výkon 5769",
+			"if": "vv.kod in ['5769']",
+			"value": 0.0226,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5770",
+			"if": "vv.kod in ['5770']",
+			"value": 0.0226,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5771",
+			"if": "vv.kod in ['5771']",
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

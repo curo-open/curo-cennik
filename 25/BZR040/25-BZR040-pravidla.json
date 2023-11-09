@@ -40,6 +40,41 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Plánovanie terapeutických postupov",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Interpretácia imunologického profilu ",
+			"if": "vv.kod in ['15f']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,
@@ -54,23 +89,51 @@
 			"instruction": null
 		},
 		{
+			"label": "Odber biol.materiálu",
+			"if": "vv.kod in ['299a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Sledovanie pacienta",
+			"if": "vv.kod in ['40']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia do 30min",
+			"if": "vv.kod in ['271']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia viac ako 30min",
+			"if": "vv.kod in ['272']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 350-Prick testy",
+			"if": "vv.kod in ['350']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Cielené vyšetrenie pacienta pri pandémii COVID-19",
 			"if": "vv.kod in ['62a','62b']",
 			"value": 20,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Skríningový antigénový test SARS-CoV-2",
-			"if": "vv.kod in ['629a']",
-			"value": 5.2,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorescenčnou metódou",
-			"if": "vv.kod in ['629b']",
-			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -147,8 +210,8 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
 	],

@@ -183,8 +183,8 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
 	],

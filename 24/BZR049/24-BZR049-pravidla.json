@@ -28,34 +28,6 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','11a','70']",
-			"value": 0.0027,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.0193,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
-			"value": 0.011593,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 532;533a;540;541;542",
-			"if": "vv.kod in ['532','533a','540','541','542']",
-			"value": 0.011593,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
@@ -70,22 +42,64 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250a','250b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15b - zhodnotenie odberov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Echokardiografia",
+			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5330,5531,5332",
-			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "EKG",
+			"if": "vv.kod in ['5702']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"label": "Ergometria",
+			"if": "vv.kod in ['5708']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Ekg holter",
+			"if": "vv.kod in ['5712','5713','5714']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
@@ -101,13 +115,6 @@
 			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie Covid 252L",
-			"if": "vv.kod in ['252L']",
-			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -135,15 +142,15 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.008195,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.025962,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

@@ -20,6 +20,34 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Plánovanie terapeutických postupov",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Edukácia k spirometrii ",
+			"if": "vv.kod in ['10e']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Interpretácia imunologického profilu ",
+			"if": "vv.kod in ['15f']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
@@ -41,10 +69,73 @@
 			"instruction": null
 		},
 		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250a','250b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Sledovanie pacienta",
+			"if": "vv.kod in ['40']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia do 30min",
+			"if": "vv.kod in ['271']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia viac ako 30min",
+			"if": "vv.kod in ['272']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 350-Prick testy",
+			"if": "vv.kod in ['350']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 5766 ",
 			"if": "vv.kod in ['5766']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 0.01892,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5769",
+			"if": "vv.kod in ['5769']",
+			"value": 0.01892,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5770",
+			"if": "vv.kod in ['5770']",
+			"value": 0.01892,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5771",
+			"if": "vv.kod in ['5771']",
+			"value": 0.01892,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

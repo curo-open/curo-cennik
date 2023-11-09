@@ -30,13 +30,21 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
+│            null │ vv.bodyCelkom*CB          │ Zhodnotenie výsledkov                         │ vv.kod in ['15b']                                            │
+│            null │ vv.bodyCelkom*CB          │ Interpretácia imunologického profilu          │ vv.kod in ['15f']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CB          │ Odber biol.materiálu                          │ vv.kod in ['299a']                                           │
+│            null │ vv.bodyCelkom*CB          │ Sledovanie pacienta                           │ vv.kod in ['40']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 252                                     │ vv.kod in ['252']                                            │
+│            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia do 30min                 │ vv.kod in ['271']                                            │
+│            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia viac ako 30min           │ vv.kod in ['272']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 350-Prick testy                         │ vv.kod in ['350']                                            │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta pri pandémii COVI │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ D-19                                          │                                                              │
-│             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
-│              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
-│                 │                           │ luorescenčnou metódou                         │                                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1A02060','1A02077','1A03044','1A01033','40']     │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony                                        │ vv.kod in ['4H00001','4H00004','4H00005']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
@@ -47,7 +55,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

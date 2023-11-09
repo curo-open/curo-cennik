@@ -48,6 +48,20 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.02814,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 5,
@@ -57,13 +71,6 @@
 		{
 			"label": "Výkon 15b - zhodnotenie odberov",
 			"if": "vv.kod in ['15b']",
-			"value": 0.02814,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkony 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
 			"value": 0.02814,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -107,13 +114,6 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

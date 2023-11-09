@@ -36,10 +36,59 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": 0.0385,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250a','250b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber kapilárnej krvi",
+			"if": "vv.kod in ['258']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber biol.materiálu",
+			"if": "vv.kod in ['299a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1B06025, 1B05011,1B05012,1B05013,1B05014",
+			"if": "vv.kod in ['1B06025','1B05011','1B05012','1B05013','1B05014']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1A02009,1A02012,1A03007",
+			"if": "vv.kod in ['1A02009','1A02012','1A3007']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -64,9 +113,16 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 15b - zhodnotenie odberov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.006666,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -89,20 +145,6 @@
 			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Výkony 60,62,63",
-			"if": "vv.kod==['60','62','63']",
-			"value": 0.0385,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkony 65,66,67",
-			"if": "vv.kod==['65','66','67']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
