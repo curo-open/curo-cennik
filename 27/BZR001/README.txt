@@ -42,7 +42,7 @@ Autor: curo.sk
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 1a                                      │ vv.kod in ['1a']                                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Zhodnotenie vyšetrení a zdrav.dokumentácie    │ vv.kod in ['5700']                                           │
-│         0.00973 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
+│            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
 │            5.88 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
 │            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │

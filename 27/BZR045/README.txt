@@ -36,7 +36,7 @@ Autor: curo.sk
 │          0.0335 │ vv.bodyCelkom*cena        │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │         0.01044 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5302','5303','5304','5307','5307a' │
 │                 │                           │                                               │ ,'5312','5315','5316']                                       │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
@@ -44,7 +44,7 @@ Autor: curo.sk
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
 │        0.012075 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │

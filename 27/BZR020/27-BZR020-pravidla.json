@@ -267,7 +267,7 @@
 		{
 			"label": "EKG (5702)",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00861,
+			"value": 0.00973,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

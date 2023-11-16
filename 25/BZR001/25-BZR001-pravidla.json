@@ -114,7 +114,7 @@
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{

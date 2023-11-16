@@ -50,7 +50,7 @@ Autor: curo.sk
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod==['4571a']                                            │
 │         0.00973 │ vv.bodyCelkom*cena        │ Výkon 4587a                                   │ vv.kod==['4587a']                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
-│           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │

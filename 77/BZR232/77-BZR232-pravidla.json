@@ -72,8 +72,8 @@
 		{
 			"label": "Výkon 5330,5531,5332",
 			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
@@ -121,8 +121,8 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
