@@ -22,14 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- avls kapitacie">
-      <change afterPath="$PROJECT_DIR$/84/84UAG/84-84UAG-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/84/84UAG/README.txt" afterDir="false" />
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added 84UAG">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/630/24-630-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/630/24-630-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/630/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/630/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +61,12 @@
     <setting file="file://$PROJECT_DIR$/89/89UAS/README.txt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/89/BZR89UAV/89-BZR89UAV-pravidla.json" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="1Or9oeHAqfMHLqp1rC63Ji2bQRb" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -90,7 +86,8 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
@@ -696,35 +693,15 @@
       <workItem from="1697003244652" duration="598000" />
       <workItem from="1697376535374" duration="1197000" />
       <workItem from="1697439777939" duration="4323000" />
-      <workItem from="1698386552816" duration="2935000" />
-    </task>
-    <task id="LOCAL-00326" summary="- updates">
-      <created>1682677964576</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
-      <option name="project" value="LOCAL" />
-      <updated>1682677964576</updated>
-    </task>
-    <task id="LOCAL-00327" summary="- updates">
-      <created>1682965422422</created>
-      <option name="number" value="00327" />
-      <option name="presentableId" value="LOCAL-00327" />
-      <option name="project" value="LOCAL" />
-      <updated>1682965422422</updated>
-    </task>
-    <task id="LOCAL-00328" summary="- updates">
-      <created>1683024088519</created>
-      <option name="number" value="00328" />
-      <option name="presentableId" value="LOCAL-00328" />
-      <option name="project" value="LOCAL" />
-      <updated>1683024088519</updated>
-    </task>
-    <task id="LOCAL-00329" summary="- updates">
-      <created>1683029960460</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1683029960460</updated>
+      <workItem from="1698386552816" duration="4888000" />
+      <workItem from="1699448947495" duration="1887000" />
+      <workItem from="1699732335501" duration="586000" />
+      <workItem from="1699805430247" duration="599000" />
+      <workItem from="1699858509676" duration="596000" />
+      <workItem from="1699961223525" duration="1218000" />
+      <workItem from="1700494800432" duration="183000" />
+      <workItem from="1700638441609" duration="1449000" />
+      <workItem from="1701271518546" duration="598000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1041,7 +1018,35 @@
       <option name="project" value="LOCAL" />
       <updated>1698672734380</updated>
     </task>
-    <option name="localTasksCounter" value="375" />
+    <task id="LOCAL-00375" summary="- added 84UAG">
+      <created>1698741870359</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
+      <option name="project" value="LOCAL" />
+      <updated>1698741870359</updated>
+    </task>
+    <task id="LOCAL-00376" summary="- updated 009bzr">
+      <created>1698962783149</created>
+      <option name="number" value="00376" />
+      <option name="presentableId" value="LOCAL-00376" />
+      <option name="project" value="LOCAL" />
+      <updated>1698962783149</updated>
+    </task>
+    <task id="LOCAL-00377" summary="- bzr changes">
+      <created>1699213189177</created>
+      <option name="number" value="00377" />
+      <option name="presentableId" value="LOCAL-00377" />
+      <option name="project" value="LOCAL" />
+      <updated>1699213189177</updated>
+    </task>
+    <task id="LOCAL-00378" summary="- updates">
+      <created>1699518727091</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1699518727092</updated>
+    </task>
+    <option name="localTasksCounter" value="381" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1058,15 +1063,6 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -1081,14 +1077,19 @@
         </entry>
       </map>
     </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- upraven cena pre 023 pre test" />
-    <MESSAGE value="- reverting cena pre 023 pre test" />
-    <MESSAGE value="- added soc for jzs" />
-    <MESSAGE value="- update" />
     <MESSAGE value="- added bzr" />
     <MESSAGE value="- updates&#10;- added 271" />
     <MESSAGE value="- updates 005" />
@@ -1100,7 +1101,6 @@
     <MESSAGE value="- updates&#10;- added 011KL - klimek special" />
     <MESSAGE value="- test removed speacil fa for 5331" />
     <MESSAGE value="- klimek fix" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- added 86 and 87" />
     <MESSAGE value="- added 86 a 87" />
     <MESSAGE value="- added 84" />
@@ -1110,7 +1110,12 @@
     <MESSAGE value="- upravene 003 bzr" />
     <MESSAGE value="- upravene EU cenny dovera" />
     <MESSAGE value="- avls kapitacie&#10;- bzr changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- avls kapitacie&#10;- bzr changes" />
+    <MESSAGE value="- updated 009bzr" />
+    <MESSAGE value="- bzr changes" />
+    <MESSAGE value="- BZR updates" />
+    <MESSAGE value="- added 84UAG" />
+    <MESSAGE value="- updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="masterDetails">
     <states>
