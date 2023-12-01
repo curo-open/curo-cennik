@@ -1,5 +1,5 @@
                                                                           ============
-                                                                          Cenník VLD 1
+                                                                          Cenník UAVLD
                                                                           ============
 
 Autor: curo.sk
@@ -31,6 +31,36 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│             5.1 │ vv.pocet*cena             │ UAO - KPU                                     │ vv.kod in ['KPU']                                            │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Preventívna prehliadka                  │ vv.kod in ['160U']                                           │
+│        0.009574 │ vv.bodyCelkom*cena        │ UAO - EKG pri preventívnej prehliadke         │ vv.kod in ['5702PU']                                         │
+│        0.009574 │ vv.bodyCelkom*cena        │ UAO - EKG                                     │ vv.kod in ['5702U']                                          │
+│        0.021999 │ vv.bodyCelkom*cena        │ UAO - Celodenné snímanie tlaku                │ vv.kod in ['5715U']                                          │
+│        0.016597 │ vv.bodyCelkom*cena        │ UAO - Celodenné snímanie tlaku - vyhodnotenie │ vv.kod in ['5716U']                                          │
+│              15 │ vv.pocet*cena             │ UAO - Inicialne I10/E78 (H0003)               │ vv.kod in ['H0003U']                                         │
+│              15 │ vv.pocet*cena             │ UAO - Kontrolne I10/E78 (H0004)               │ vv.kod in ['H0004U']                                         │
+│               6 │ vv.pocet*cena             │ UAO - Akutne I10                              │ vv.kod in ['H0005U']                                         │
+│            5.65 │ vv.pocet*cena             │ UAO - Stratifikacia CMP                       │ vv.kod in ['H0006U']                                         │
+│             5.2 │ vv.pocet*cena             │ UAO - Kvantitatívne vyšetrenie INR POCT       │ vv.kod in ['H0007U']                                         │
+│            6.78 │ vv.pocet*cena             │ UAO - Stanovenie ABI oscilometricky           │ vv.kod in ['H0008U']                                         │
+│              12 │ vv.pocet*cena             │ UAO - TOKS pozitívny                          │ vv.kod in ['159AU']                                          │
+│              12 │ vv.pocet*cena             │ UAO - TOKS negatívny                          │ vv.kod in ['159ZU']                                          │
+│            3.02 │ vv.pocet*cena             │ UAO - TOKS znehodnotený                       │ vv.kod in ['159XU']                                          │
+│          0.0318 │ vv.bodyCelkom*cena        │ UAO - Komplexné vyšetrenie                    │ vv.kod in ['60U']                                            │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Očkovanie                               │ vv.kod in ['252BU']                                          │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Očkovanie                               │ vv.kod in ['252CU']                                          │
+│          0.0318 │ vv.bodyCelkom*cena        │ UAO - Výkon 10                                │ vv.kod in ['10U']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 11a                               │ vv.kod in ['11AU']                                           │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 1b                                │ vv.kod in ['1BU']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 70                                │ vv.kod in ['70U']                                            │
+│          0.0339 │ vv.bodyCelkom*cena        │ UAO - Návštevná služba                        │ vv.kod in ['25U']                                            │
+│          0.0339 │ vv.bodyCelkom*cena        │ UAO - Návštevná služba                        │ vv.kod in ['26U']                                            │
+│            5.75 │ vv.pocet*cena             │ UAO - Vyšetrenie C – reaktívneho proteínu     │ vv.kod in ['4571AU']                                         │
+│              16 │ vv.pocet*cena             │ UAO - Komplexné predoperačné vyšetrenie       │ vv.kod in ['60BU']                                           │
+│               2 │ vv.pocet*cena             │ UAO - Delegovaný odber krvi                   │ vv.kod in ['250DU']                                          │
+│              20 │ vv.pocet*cena             │ UAO - Cielené vyšetrenie pacienta s respiračn │ vv.kod in ['62AU']                                           │
+│                 │                           │ ým syndrómom pri pandémii COVID-19            │                                                              │
+│            6.78 │ vv.pocet*cena             │ UAO - Výkon 163                               │ vv.kod in ['163U']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Komplexné vyšetrenie                          │ vv.kod in ['60U','60u']                                      │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │              10 │ vv.pocet*cena             │ Očkovanie COVID19                             │ vv.kod in ['252L']                                           │
@@ -87,21 +117,8 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             180 │ 10                                                                                                        │                           │
-│             285 │ 25                                                                                                        │                           │
-│             500 │ 26                                                                                                        │                           │
-│             350 │ 60                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             390 │ 160                                                                                                       │                           │
-│             550 │ 5702                                                                                                      │                           │
-│             750 │ 5715                                                                                                      │                           │
-│             240 │ 5716                                                                                                      │                           │
-│             550 │ 5702P                                                                                                     │                           │
-│              70 │ 252b                                                                                                      │                           │
-│              70 │ 252c                                                                                                      │                           │
-│              70 │ 252s                                                                                                      │                           │
-│             500 │ 5702c                                                                                                     │                           │
-│             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘

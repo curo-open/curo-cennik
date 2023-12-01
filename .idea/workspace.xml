@@ -22,13 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added 84UAG">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020/24-020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/24-020-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/85/85UAV/85-85UAV-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/85/85UAV/85-85UAV-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/85/85UAV/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/85/85UAV/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/86/86UAV/86-86UAV-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/86/86UAV/86-86UAV-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/86/86UAV/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/86/86UAV/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/87/87UAP/87-87UAP-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/87/87UAP/87-87UAP-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/87/87UAP/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/87/87UAP/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/87/87UAV/87-87UAV-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/87/87UAV/87-87UAV-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/87/87UAV/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/87/87UAV/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -701,7 +704,7 @@
       <workItem from="1699961223525" duration="1218000" />
       <workItem from="1700494800432" duration="183000" />
       <workItem from="1700638441609" duration="1449000" />
-      <workItem from="1701271518546" duration="598000" />
+      <workItem from="1701271518546" duration="3330000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1046,7 +1049,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="381" />
+    <option name="localTasksCounter" value="382" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

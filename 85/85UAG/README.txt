@@ -1,21 +1,22 @@
-                                                                       =================
-                                                                       Cenník radiologia
-                                                                       =================
+                                                                        ================
+                                                                        Cenník gynekolog
+                                                                        ================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬─────────────────┐
-│ Názov a hodnota    │ Popis           │
-├────────────────────┼─────────────────┤
-│ LIMIT = 0          │ Limit           │
-│ CB = 0.007303      │ Cena bodu       │
-│ CBSVALZ = 0.007303 │ Cena bodu SVALZ │
-│ CBEU = 0.007303    │ Cena bodu EU    │
-│ CB50XX = 0.015336  │ Cena bodu 50XX  │
-│ PACS = 0.93        │ PACS            │
-│ X03501 = 32        │ X03501          │
-└────────────────────┴─────────────────┘
+┌───────────────────────┬──────────────────────────────┐
+│ Názov a hodnota       │ Popis                        │
+├───────────────────────┼──────────────────────────────┤
+│ IDK = 0               │ IDK                          │
+│ KPS = 1.58            │ KPS                          │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
+│ CB = 0.0339           │ Cena bodu                    │
+│ CBP = 0.065           │ Cena bodu preventívne výkony │
+│ CBEU = 0.0339         │ Cena bodu EU                 │
+│ CBSVALZ = 0.009574    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
+└───────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,24 +29,27 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           11.82 │ vv.pocet*cena             │ Výkon 60U                                     │ vv.kod in ['60U','60u']                                      │
-│             7.6 │ vv.pocet*cena             │ Výkon 62U                                     │ vv.kod in ['62U','62u']                                      │
-│            5.91 │ vv.pocet*cena             │ Výkon 63U                                     │ vv.kod in ['63U','63u']                                      │
-│        0.005311 │ vv.bodyCelkom*cena        │ Denzitometria                                 │ vv.kod in ['5331']                                           │
-│            null │ vv.bodyCelkom*CB          │ Mamografia                                    │ vv.kod in ['5092','5092a']                                   │
-│            null │ vv.bodyCelkom*CB50XX      │ RTG                                           │ vv.kod in ['5010','5011','5012','5015','5016','5020','5021', │
-│                 │                           │                                               │ '5022','5023','5024','5025','5030','5031','5032','5033','503 │
-│                 │                           │                                               │ 5','5050','5051','5052','5053','5056','5060','5061','5062',' │
-│                 │                           │                                               │ 5065','5070','5071','5072','5075','5076','5077','5080','5081 │
-│                 │                           │                                               │ ','5082','5083','5090','5095','5051R']                       │
-│            null │ vv.bodyCelkom*CB          │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
-│                 │                           │                                               │ '5309','5310','5312','5315','5316','5742','5743','5739','573 │
-│                 │                           │                                               │ 8','5153a']                                                  │
-│            null │ PACS                      │ Pripočitateľné položky  - PACS                │ vv.kod=='PACS'                                               │
-│            null │ X03501                    │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='X03501'                                             │
-│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.typ!='SVaLZ'                                              │
+│             2.3 │ vv.pocet*cena             │ UAO - KPU                                     │ vv.kod in ['KPU']                                            │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Preventívny výkon                       │ vv.kod in ['157U','102U','105U']                             │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Vyšetrenie a rady v gravidite           │ vv.kod in ['103U']                                           │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Ultrazvuk vrátane biometrie a posúdenie │ vv.kod in ['108U']                                           │
+│                 │                           │ vývoja orgánov                                │                                                              │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Kolposkopia                             │ vv.kod in ['1070U']                                          │
+│          0.0318 │ vv.bodyCelkom*cena        │ UAO - Komplexné vyšetrenie                    │ vv.kod in ['60U']                                            │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Očkovanie                               │ vv.kod in ['252BU','252CU']                                  │
+│            0.08 │ vv.bodyCelkom*cena        │ UAO - Cytologické vyšetrenie                  │ vv.kod in ['297U']                                           │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 11AU                              │ vv.kod in ['11AU']                                           │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 1BU                               │ vv.kod in ['1BU']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ UAO - Výkon 70U                               │ vv.kod in ['70U']                                            │
+│        0.009574 │ vv.bodyCelkom*cena        │ UAO - Výkony 5303U,5305U,5308U                │ vv.kod in ['5303U','5305U','5308U']                          │
+│        0.009574 │ vv.bodyCelkom*cena        │ UAO - Ultrazvuk vrátane biometrie plodu       │ vv.kod in ['5808U']                                          │
+│         0.01917 │ vv.bodyCelkom*cena        │ UAO - Externé CTG                             │ vv.kod in ['118U']                                           │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
+│            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
+│          0.0318 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Kapitovaný - SVALZ výkon                      │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Kapitovaný - iné ako SVALZ                    │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBEU        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
