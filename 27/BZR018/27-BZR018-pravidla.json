@@ -88,7 +88,7 @@
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 2.98,
-			"calc": "vv.pocet*(cena+NCB)",
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -127,6 +127,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 1",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": null,
@@ -137,14 +144,14 @@
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Vykony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -160,6 +167,13 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
@@ -167,7 +181,7 @@
 		"1": [
 			{
 				"cond": "",
-				"value": 160
+				"value": 80
 			}
 		],
 		"60": [

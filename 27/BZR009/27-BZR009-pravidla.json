@@ -41,7 +41,7 @@
 	"vykon": [
 		{
 			"label": "Preventívne zdravotné výkony",
-			"if": "vv.kod in ['100','102','103','105','157','108','1070']",
+			"if": "vv.kod in ['100','102','103','157','108','1070']",
 			"value": 0.0735,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -58,6 +58,13 @@
 			"if": "vv.kod in ['118']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 122",
+			"if": "p.kapitacia && vv.kod in ['122']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

@@ -30,9 +30,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0735 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['100','102','103','105','157','108','1070']       │
+│          0.0735 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['100','102','103','157','108','1070']             │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 122                                     │ p.kapitacia && vv.kod in ['122']                             │
 │          0.0398 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ vv.kod in ['297']                                            │
 │          0.0735 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.kod in ['252b']                                           │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']            │

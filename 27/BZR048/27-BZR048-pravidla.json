@@ -41,6 +41,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon ŠAS",
+			"if": "vv.kod in ['740','741','746','756','761','763','763a','765','755','760','762']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 5702",
 			"if": "vv.kod in ['5702']",
 			"value": 0.00973,
