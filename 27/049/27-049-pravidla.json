@@ -73,35 +73,35 @@
 			"instruction": null
 		},
 		{
-			"label": "Izometrický zátažový tes",
+			"label": "Izometrický zátažový tes - vv. 5727",
 			"if": "vv.kod in ['5727']",
 			"value": 0.0226,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "Echokardiografia",
+			"label": "Echokardiografia - vv. 5744, 5745, 5746, 5746b, 5754",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": 0.01044,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "Ergometria",
+			"label": "Ergometria - vv. 5708",
 			"if": "vv.kod in ['5708']",
 			"value": 0.00973,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "EKG",
+			"label": "EKG - vv.603a, 15c",
 			"if": "vv.kod in ['603a','15c']",
 			"value": 0.0305,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "Ekg holter",
+			"label": "Ekg holter - vv. 5712, 5713, 5714",
 			"if": "vv.kod in ['5712','5713','5714']",
 			"value": 0.00973,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
@@ -136,7 +136,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Stanovenie D-diméru",
+			"label": "Stanovenie D-diméru - vv. 3860",
 			"if": "vv.kod in ['3860']",
 			"value": 8.95,
 			"calc": "vv.pocet*cena",
@@ -157,7 +157,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Prístrojový antigénový test",
+			"label": "Prístrojový antigénový test - vv. 629b",
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
 			"calc": "vv.pocet*cena",

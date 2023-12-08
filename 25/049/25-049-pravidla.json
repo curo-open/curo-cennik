@@ -69,28 +69,28 @@
 			"instruction": null
 		},
 		{
-			"label": "Echokardiografia",
+			"label": "Echokardiografia - vv. 5744, 5745, 5746, 5746b, 5754",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Ergometria",
+			"label": "Ergometria - vv. 5708",
 			"if": "vv.kod in ['5708']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "EKG",
+			"label": "EKG - vv. 603a, 15c",
 			"if": "vv.kod in ['603a','15c']",
 			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Ekg holter",
+			"label": "Ekg holter - vv. 5712, 5713, 5714",
 			"if": "vv.kod in ['5712','5713','5714']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
@@ -111,7 +111,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Zhodnotenie rtg. dokumentácie",
+			"label": "Zhodnotenie rtg. dokumentácie - vv. 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
