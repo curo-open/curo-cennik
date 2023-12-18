@@ -87,7 +87,14 @@
 		},
 		{
 			"label": "Výkon SVALZ USG ",
-			"if": "vv.kod in ['5303','5305','5308','5808','5316' ]",
+			"if": "vv.kod in ['5303','5305','5808','5316' ]",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5308",
+			"if": "vv.kod in ['5308']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

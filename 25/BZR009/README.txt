@@ -38,7 +38,8 @@ Autor: curo.sk
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │        0.009574 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308','580 │
 │                 │                           │                                               │ 8']                                                          │
-│        0.009574 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5303','5305','5308','5808','5316' ]              │
+│        0.009574 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5303','5305','5808','5316' ]                     │
+│        0.009574 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60,63                                   │ vv.kod in ['60','63']                                        │
 │            null │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │
 │             5.2 │ vv.pocet*cena             │ Skriningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
