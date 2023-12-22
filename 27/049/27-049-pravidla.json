@@ -18,7 +18,7 @@
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
-			"value": 0.005
+			"value": 0
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -76,21 +76,21 @@
 			"label": "Izometrický zátažový tes - vv. 5727",
 			"if": "vv.kod in ['5727']",
 			"value": 0.0226,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Echokardiografia - vv. 5744, 5745, 5746, 5746b, 5754",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": 0.01044,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Ergometria - vv. 5708",
 			"if": "vv.kod in ['5708']",
 			"value": 0.00973,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -104,7 +104,7 @@
 			"label": "Ekg holter - vv. 5712, 5713, 5714",
 			"if": "vv.kod in ['5712','5713','5714']",
 			"value": 0.00973,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
