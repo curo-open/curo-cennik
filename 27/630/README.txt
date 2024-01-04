@@ -23,10 +23,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.pocet*CBD              │ Doprava                                       │ vv.kod in ['doprava']                                        │
-│        0.007665 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0224 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│          0.0224 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│             0.3 │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava']                                        │
+│            0.15 │ vv.pocet*CBD              │ Doprava:  + 60 km                             │ vv.kod in ['doprava']                                        │
+│              58 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
+│                 │                           │ domácom prostredí                             │                                                              │
+│           0.017 │ vv.bodyCelkom*cena        │ Výkon                                         │ vv.kod in ['503a','504a','509a','510a','512','513','514a','5 │
+│                 │                           │                                               │ 20','522','530','531','532','548']                           │
+│          0.0385 │ vv.bodyCelkom*cena        │ Výkon                                         │ vv.kod in ['3419','3420','3439','3440','3441','3447']        │
+│           0.017 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│           0.017 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│           0.017 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

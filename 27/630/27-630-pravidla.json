@@ -12,30 +12,58 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Doprava",
+			"label": "Doprava:  do 60 km",
 			"if": "vv.kod in ['doprava']",
-			"value": null,
+			"value": 0.3,
 			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "Doprava:  + 60 km",
+			"if": "vv.kod in ['doprava']",
+			"value": 0.15,
+			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
+			"if": "vv.kod in ['25M']",
+			"value": 58,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon ",
+			"if": "vv.kod in ['503a','504a','509a','510a','512','513','514a','520','522','530','531','532','548']",
+			"value": 0.017,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon",
+			"if": "vv.kod in ['3419','3420','3439','3440','3441','3447']",
+			"value": 0.0385,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.007665,
+			"value": 0.017,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": 0.0224,
+			"value": 0.017,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0224,
+			"value": 0.017,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
