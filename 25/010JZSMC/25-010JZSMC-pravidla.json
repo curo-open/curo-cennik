@@ -1,0 +1,662 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Crossektómia a parciálny stripping v. saphena magna",
+			"if": "vv.kod in ['5l1920']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Crossektómia a parciálny stripping v. saphena parva",
+			"if": "vv.kod in ['5l1921']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Crossektómia a parciálny stripping v. saphena magna a parva",
+			"if": "vv.kod in ['5l1922']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Samostatná crossektómia v. saphena magna",
+			"if": "vv.kod in ['5l1930']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Samostatná crossektómia v. saphena parva",
+			"if": "vv.kod in ['5l1931']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Samostatná crossektómia v. saphena magna a parva",
+			"if": "vv.kod in ['5l1932']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie varixov v. saphena magna bez crossektómie",
+			"if": "vv.kod in ['5l1940']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie varixov v. saphena parva bez crossektómie",
+			"if": "vv.kod in ['5l1941']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie varixov v. saphena magna a parva bez crossektómie",
+			"if": "vv.kod in ['5l1942']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie varixov nekmeňovej varikozity bez crossektómie",
+			"if": "vv.kod in ['5l1943']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie varixov bez crossektómie, ostatné",
+			"if": "vv.kod in ['5l194x']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Apendektómia, laparoskopicky pomocou slučky alebo ligatúry",
+			"if": "vv.kod in ['5n3610']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Apendektómia, laparoskopicky pomocou clampu (stapler)",
+			"if": "vv.kod in ['5n3611']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Apendektómia, laparoskopicky, ostatné",
+			"if": "vv.kod in ['5n361x']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Incízia análnej fistuly",
+			"if": "vv.kod in ['5n450']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Subkutánna excízia análnej fistuly",
+			"if": "vv.kod in ['5n4510']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intersfinkterická excízia análnej fistuly",
+			"if": "vv.kod in ['5n4511']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transsfinkterická excízia análnej fistuly",
+			"if": "vv.kod in ['5n4512']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Suprasfinkterická excízia análnej fistuly",
+			"if": "vv.kod in ['5n4513']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Extrasfinkterická excízia análnej fistuly",
+			"if": "vv.kod in ['5n4514']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Submukózna excízia análnej fistuly",
+			"if": "vv.kod in ['5n4515']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Subanodermálna excízia análnej fistuly",
+			"if": "vv.kod in ['5n4516']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia análnej fistuly, ostatné",
+			"if": "vv.kod in ['5n451x']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Závitová drenáž análnej fistuly",
+			"if": "vv.kod in ['5n452']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie análnej fistuly pomocou plugovej techniky",
+			"if": "vv.kod in ['5n453']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operatívna liečba análnej fistuly, ostatné",
+			"if": "vv.kod in ['5n459']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia hemoroidov",
+			"if": "vv.kod in ['5n45c']",
+			"value": 486,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Deštrukcia hemoroidov",
+			"if": "vv.kod in ['5n45d']",
+			"value": 486,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operačné ošetrenie hemoroidov so staplerom",
+			"if": "vv.kod in ['5n45e']",
+			"value": 486,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia hemoroidov s plastickou rekonštrukciou",
+			"if": "vv.kod in ['5n45f']",
+			"value": 486,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné operačné ošetrenie hemoroidov",
+			"if": "vv.kod in ['5n45x']",
+			"value": 486,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cholecystektómia jednoduchá bez revízie žlčových ciest, laparoskopicky",
+			"if": "vv.kod in ['5n6202']",
+			"value": 623,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] s plastikou",
+			"if": "vv.kod in ['5n811']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8130']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, laparoskopicky transperitoneálne",
+			"if": "vv.kod in ['5n8131']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, endoskopicky, totálny extraperit",
+			"if": "vv.kod in ['5n8132']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, ostatné",
+			"if": "vv.kod in ['5n813x']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8170']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, laparoskopicky tran",
+			"if": "vv.kod in ['5n8171']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, endoskopicky totáln",
+			"if": "vv.kod in ['5n8172']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, iný prístup",
+			"if": "vv.kod in ['5n817x']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie inguinálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, ostatné",
+			"if": "vv.kod in ['5n81x']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie femorálnej hernie [prietrže] s aloplastickým materiálom, laparoskopicky transperitoneálne",
+			"if": "vv.kod in ['5n8231']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie femorálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, laparoskopicky trans",
+			"if": "vv.kod in ['5n8271']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie umbilikálnej hernie [prietrže] s plastikou",
+			"if": "vv.kod in ['5n831']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie umbilikálnej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8330']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie umbilikálnej hernie [prietrže] s aloplastickým materiálom, laparoskopicky transperitoneáln",
+			"if": "vv.kod in ['5n8331']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie umbilikálnej hernie [prietrže] s aloplastickým materiálom, ostatné",
+			"if": "vv.kod in ['5n833x']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie umbilikálnej hernie [prietrže], ostatné",
+			"if": "vv.kod in ['5n83x']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie epigastrickej hernie [prietrže] s plastikou",
+			"if": "vv.kod in ['5n841']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie epigastrickej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8430']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie epigastrickej hernie [prietrže] s aloplastickým materiálom, laparoskopicky transperitoneál",
+			"if": "vv.kod in ['5n8431']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie epigastrickej hernie [prietrže] s aloplastickým materiálom, ostatné",
+			"if": "vv.kod in ['5n843x']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie hernie [prietrže] v jazve s plastikou",
+			"if": "vv.kod in ['5n851']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie hernie [prietrže] v jazve s alogénnym materiálom",
+			"if": "vv.kod in ['5n853']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie hernie [prietrže] v jazve s aloplastickým materiálom, laparoskopicky transperitoneálne",
+			"if": "vv.kod in ['5n8541']",
+			"value": 620,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie hernie [prietrže] v jazve s aloplastickým materiálom, ostatné",
+			"if": "vv.kod in ['5n854x']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie ďalších abdominálnych hernií [prietrží] s plastikou",
+			"if": "vv.kod in ['5n891']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie ďalších abdominálnych hernií [prietrží] aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8930']",
+			"value": 672,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uzavretie ďalších abdominálnych hernií [prietrží] s aloplastickým materiálom, laparoskopicky transpe",
+			"if": "vv.kod in ['5n8931']",
+			"value": 602,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t4050']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t4090']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna resekcia menisku",
+			"if": "vv.kod in ['5t42310']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] kolenného kĺbu",
+			"if": "vv.kod in ['5t42ch']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t42h0']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev ohýbača prsta",
+			"if": "vv.kod in ['5t7021']",
+			"value": 413,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev ohýbača palca",
+			"if": "vv.kod in ['5t7022']",
+			"value": 413,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev prsta",
+			"if": "vv.kod in ['5t7027']",
+			"value": 413,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev palca",
+			"if": "vv.kod in ['5t7028']",
+			"value": 413,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prerušenie väzu retinaculum flexorum",
+			"if": "vv.kod in ['5t71110']",
+			"value": 406,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prerušenie väzu retinaculum flexorum",
+			"if": "vv.kod in ['5t71110']",
+			"value": 406,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prerušenie väzu retinaculum flexorum s epineurolýzou n. medianus",
+			"if": "vv.kod in ['5t71111']",
+			"value": 406,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna fasciektómia izolovaná na dlani",
+			"if": "vv.kod in ['5t7220']",
+			"value": 448,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách, ostatné",
+			"if": "vv.kod in ['5t892x']",
+			"value": 80,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia nádoru prsníka",
+			"if": "vv.kod in ['5u111']",
+			"value": 346,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblas",
+			"if": "vv.kod in ['5v1309']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblas",
+			"if": "vv.kod in ['5v130g']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1430']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1434']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1435']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1436']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1437']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1438']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1439']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v143a']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v143b']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v143d']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v143e']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v143f']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v143g']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v143x']",
+			"value": 101,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia sinus pilonidalis",
+			"if": "vv.kod in ['5v191']",
+			"value": 379,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operačné odstránenie sinus pilonidalis, ostatné",
+			"if": "vv.kod in ['5v193']",
+			"value": 379,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "chirurg"
+}

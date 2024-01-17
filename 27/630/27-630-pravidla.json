@@ -14,21 +14,21 @@
 		{
 			"label": "Doprava:  do 60 km",
 			"if": "vv.kod in ['doprava']",
-			"value": 0.3,
+			"value": 0.35,
 			"calc": "vv.pocet*CBD",
 			"instruction": null
 		},
 		{
 			"label": "Doprava:  + 60 km",
 			"if": "vv.kod in ['doprava']",
-			"value": 0.15,
+			"value": 0.175,
 			"calc": "vv.pocet*CBD",
 			"instruction": null
 		},
 		{
 			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
 			"if": "vv.kod in ['25M']",
-			"value": 58,
+			"value": 61,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
