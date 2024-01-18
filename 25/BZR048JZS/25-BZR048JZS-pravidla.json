@@ -3,56 +3,56 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "JZS",
+			"label": "Výkon 9104",
 			"if": "vv.kod in ['9104'] || vv.k in ['9104'] || vv.k25 in ['9104']",
 			"value": 464,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "JZS",
+			"label": "Výkon 9105",
 			"if": "vv.kod in ['9105'] || vv.k in ['9105'] || vv.k25 in ['9105']",
 			"value": 427,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "JZS",
+			"label": "Výkon 8586",
 			"if": "vv.kod in ['8586'] || vv.k in ['8586'] || vv.k25 in ['8586'] ",
 			"value": 243,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "JZS",
+			"label": "Výkon 8502",
 			"if": "vv.kod in ['8502'] || vv.k in ['8502'] || vv.k25 in ['8502']",
 			"value": 527,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "JZS",
+			"label": "Výkon 9106",
 			"if": "vv.kod in ['9106'] || vv.k in ['9106'] || vv.k25 in ['9106']",
 			"value": 436,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "JZS",
+			"label": "Výkon 9103",
 			"if": "vv.kod in ['9103'] || vv.k in ['9103'] || vv.k25 in ['9103']",
 			"value": 473,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "JZS",
+			"label": "Výkon 9101",
 			"if": "vv.kod in ['9101'] || vv.k in ['9101'] || vv.k25 in ['9101']",
 			"value": 473,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "JZS",
+			"label": "Výkon 8624",
 			"if": "vv.kod in ['8624'] || vv.k in ['8624'] || vv.k25 in ['8624'] ",
 			"value": 432,
 			"calc": "vv.pocet*cena",

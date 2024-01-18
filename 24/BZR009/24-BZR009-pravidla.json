@@ -51,14 +51,14 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
+			"if": "vv.kod in ['5301','5303','5305','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null
@@ -75,6 +75,13 @@
 			"if": "vv.kod in ['60','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5308",
+			"if": "vv.kod in ['5308']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null
 		},
 		{

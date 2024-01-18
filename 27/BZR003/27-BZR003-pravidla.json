@@ -15,18 +15,6 @@
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
 			"value": 0.01044
-		},
-		"IPP1": {
-			"label": "IPP1",
-			"value": 0
-		},
-		"IPP2": {
-			"label": "IPP2",
-			"value": 0
-		},
-		"IPP3": {
-			"label": "IPP3",
-			"value": 0
 		}
 	},
 	"pacient": [],
@@ -362,36 +350,6 @@
 				"value": 80
 			}
 		],
-		"60": [
-			{
-				"cond": "",
-				"value": 420
-			}
-		],
-		"62": [
-			{
-				"cond": "",
-				"value": 270
-			}
-		],
-		"63": [
-			{
-				"cond": "",
-				"value": 210
-			}
-		],
-		"65": [
-			{
-				"cond": "",
-				"value": 200
-			}
-		],
-		"66": [
-			{
-				"cond": "",
-				"value": 320
-			}
-		],
 		"67": [
 			{
 				"cond": "",
@@ -402,12 +360,6 @@
 			{
 				"cond": "",
 				"value": 40
-			}
-		],
-		"60r": [
-			{
-				"cond": "",
-				"value": 480
 			}
 		],
 		"1b": [

@@ -80,7 +80,7 @@
 		},
 		{
 			"label": "Výkon SVALZ USG ",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5308','5808']",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305','5808']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
