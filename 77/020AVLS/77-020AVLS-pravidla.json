@@ -12,7 +12,7 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00973
 		},
-		"CBEUNK": {
+		"CBEU": {
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.0339
 		},
@@ -75,7 +75,7 @@
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU']) && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
@@ -89,7 +89,7 @@
 			"label": "EU - iné ako SVALZ",
 			"if": "(p.typ in ['EU']) && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
@@ -103,14 +103,14 @@
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
