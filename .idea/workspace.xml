@@ -22,12 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- fix pre UA cenniky">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/630/24-630-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/630/24-630-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/630/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/630/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/630/27-630-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/630/27-630-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/630/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/630/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -714,7 +710,9 @@
       <workItem from="1704441283230" duration="599000" />
       <workItem from="1704779065943" duration="1206000" />
       <workItem from="1704870689556" duration="599000" />
-      <workItem from="1705011736387" duration="3322000" />
+      <workItem from="1705011736387" duration="4594000" />
+      <workItem from="1705914186144" duration="624000" />
+      <workItem from="1706623755050" duration="693000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1059,7 +1057,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="391" />
+    <option name="localTasksCounter" value="395" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1103,8 +1101,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- urologia 25 fix" />
-    <MESSAGE value="- fixing SVaLZ" />
     <MESSAGE value="- updates&#10;- added 011KL - klimek special" />
     <MESSAGE value="- test removed speacil fa for 5331" />
     <MESSAGE value="- klimek fix" />
@@ -1122,13 +1118,15 @@
     <MESSAGE value="- BZR updates" />
     <MESSAGE value="- added 84UAG" />
     <MESSAGE value="- BZR cenniky changes" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- fix pre 25 avls" />
     <MESSAGE value="- upravy bzr" />
     <MESSAGE value="- fix pre union NBC" />
     <MESSAGE value="- 630 changes" />
     <MESSAGE value="- fix pre UA cenniky" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fix pre UA cenniky" />
+    <MESSAGE value="- medicentrum" />
+    <MESSAGE value="- bzr" />
+    <MESSAGE value="- updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
   </component>
   <component name="masterDetails">
     <states>
