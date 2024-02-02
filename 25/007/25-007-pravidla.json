@@ -1,0 +1,383 @@
+{
+	"params": {
+		"IDK": {
+			"label": "IDK",
+			"value": 0
+		},
+		"KPS": {
+			"label": "KPS",
+			"value": 1
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
+		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
+		},
+		"PP05": {
+			"label": "PP05",
+			"value": 10
+		}
+	},
+	"pacient": [
+		{
+			"label": "do  1 roku",
+			"if": "p.kapitacia && p|vekMedzi(0, 1)",
+			"value": 10.51,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od  1 do 2 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(1, 3)",
+			"value": 10.42,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od  3 do 5 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(3, 6)",
+			"value": 7.21,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od  6 do 9 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(6, 9)",
+			"value": 5.21,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 10 do 14 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(9, 14)",
+			"value": 4.77,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 15 do 17 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(14, 17)",
+			"value": 4.5,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 18 do 19 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(17, 19)",
+			"value": 4.05,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 20 do 28 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(19, 28)",
+			"value": 3.22,
+			"calc": "IDK+cena",
+			"instruction": null
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaLZ",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaLZ",
+			"value": 0.0339,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony",
+			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '951','952','953']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívna prehliadka",
+			"if": "vv.kod in ['1']",
+			"value": 0.018257,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívna prehliadka",
+			"if": "vv.kod in ['160']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivne zdravotne vykony (142)",
+			"if": "vv.kod in ['142']",
+			"value": 0.11187,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252a','252b','252c']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Rozbor a plánovanie cielených terapeutických postupov v na ovplyvnenie\nchronických ochorení",
+			"if": "vv.kod in ['10']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telekomunikácia",
+			"if": "vv.kod in ['1b','70','11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Komplexné vyšetrenie pri prevzatí do starostlivosti",
+			"if": "vv.kod in ['60','60u']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Príplatok pri sťaženom výkone - odber, očkovanie do 5 roku života",
+			"if": "vv.kod in ['67']",
+			"value": 0.029,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva služba",
+			"if": "vv.kod in ['25','26']",
+			"value": 0.0339,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "CRP",
+			"if": "vv.kod in ['4571a']",
+			"value": 5.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Predoperačné vyšetrenie",
+			"if": "vv.kod in ['60b']",
+			"value": 16,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
+			"if": "vv.kod in ['62a','62b']",
+			"value": 20,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odbery ",
+			"if": "vv.kod in ['250D']",
+			"value": 2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intenzifikovaná zdravotná starostlivosť pre rizikových poistencov s obezitou",
+			"if": "vv.kod in ['H0002']",
+			"value": 6.22,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie Covid 252L",
+			"if": "vv.kod in ['252L']",
+			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP05'",
+			"value": null,
+			"calc": "PP05",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC",
+			"instruction": null
+		}
+	],
+	"kontrola": [
+		{
+			"label": "Preventivný výkon 143 mimo dovoleného rozpǎtia (2-5 tyždne) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"143\"]')",
+			"check": "pacient.vekDni|vTyzdnoch >= 2 || pacient.vekDni|vTyzdnoch < 5",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 143a mimo dovoleného rozpǎtia (5-8 tyždne) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"143a\"]')",
+			"check": "pacient.vekDni|vTyzdnoch >= 5 || pacient.vekDni|vTyzdnoch < 8",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 144 mimo dovoleného rozpǎtia (8-11 tyždne) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"144\"]')",
+			"check": "pacient.vekDni|vTyzdnoch >= 8 || pacient.vekDni|vTyzdnoch < 11",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 145 mimo dovoleného rozpǎtia (3-5 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"145\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 3 || pacient.vekDni|vMesiacoch < 5",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 145a mimo dovoleného rozpǎtia (5-7 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"145a\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 5 || pacient.vekDni|vMesiacoch < 7",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146 mimo dovoleného rozpǎtia (7-9 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 7 || pacient.vekDni|vMesiacoch < 9",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146a mimo dovoleného rozpǎtia (9-11 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146a\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 9 || pacient.vekDni|vMesiacoch < 11",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146b mimo dovoleného rozpǎtia (11-13 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146b\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 11 || pacient.vekDni|vMesiacoch < 13",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 146c mimo dovoleného rozpǎtia (13-24 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"146c\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 13 || pacient.vekDni|vMesiacoch < 24",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148 mimo dovoleného rozpǎtia (25-48 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 25 || pacient.vekDni|vMesiacoch < 48",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148a mimo dovoleného rozpǎtia (49-60 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148a\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 49 || pacient.vekDni|vMesiacoch < 60",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148b mimo dovoleného rozpǎtia (61-84 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148b\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 61 || pacient.vekDni|vMesiacoch < 84",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148c mimo dovoleného rozpǎtia (97-120 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148c\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 97 || pacient.vekDni|vMesiacoch < 120",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149 mimo dovoleného rozpǎtia (121-144 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 121 || pacient.vekDni|vMesiacoch < 144",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149a mimo dovoleného rozpǎtia (145-168 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149a\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 145 || pacient.vekDni|vMesiacoch < 168",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149b mimo dovoleného rozpǎtia (169-192 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149b\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 169 || pacient.vekDni|vMesiacoch < 192",
+			"severity": 0
+		}
+	],
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"252a": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "pediater"
+}
