@@ -93,6 +93,9 @@ Autor: curo.sk
 │             437 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['5l1943']                                         │
 │                 │                           │ crossektómie                                  │                                                              │
 │             437 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['5l194x']                                         │
+│             902 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['5l1951']                                         │
+│                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
+│                 │                           │ u                                             │                                                              │
 │             437 │ vv.pocet*cena             │ Endovenózna liečba perforátorov na varikóznyc │ vv.kod in ['5l1955']                                         │
 │                 │                           │ h žilách                                      │                                                              │
 │             798 │ vv.pocet*cena             │ Rádioflekvenčná ablácia lokálnych varixov     │ vv.kod in ['5l1957']                                         │
@@ -1356,8 +1359,6 @@ Autor: curo.sk
 │                 │                           │ a                                             │                                                              │
 │             338 │ vv.pocet*cena             │ Artroskopická refixácia kostného defektu labr │ vv.kod in ['5t442']                                          │
 │                 │                           │ a                                             │                                                              │
-│               0 │ vv.pocet*cena             │ Artroskopická zväčšenie subakromiálneho pries │ vv.kod in ['5t443']                                          │
-│                 │                           │ toru                                          │                                                              │
 │             438 │ vv.pocet*cena             │ Artroskopická zväčšenie subakromiálneho pries │ vv.kod in ['5t443']                                          │
 │                 │                           │ toru                                          │                                                              │
 │             443 │ vv.pocet*cena             │ Artroskopická rekonštrukcia rotátorovej manže │ vv.kod in ['5t4440']                                         │

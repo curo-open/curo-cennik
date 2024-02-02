@@ -39,6 +39,9 @@ Autor: curo.sk
 │             405 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['5l1943']                                         │
 │                 │                           │ crossektómie                                  │                                                              │
 │             405 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['5l194x']                                         │
+│             902 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['5l1951']                                         │
+│                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
+│                 │                           │ u                                             │                                                              │
 │             602 │ vv.pocet*cena             │ Apendektómia, laparoskopicky pomocou slučky a │ vv.kod in ['5n3610']                                         │
 │                 │                           │ lebo ligatúry                                 │                                                              │
 │             602 │ vv.pocet*cena             │ Apendektómia, laparoskopicky pomocou clampu ( │ vv.kod in ['5n3611']                                         │
@@ -142,6 +145,8 @@ Autor: curo.sk
 │                 │                           │ astika] kolenného kĺbu                        │                                                              │
 │            1057 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h0']                                         │
 │                 │                           │ h osteofytov humeroglenoidálneho kĺbu         │                                                              │
+│             438 │ vv.pocet*cena             │ Artroskopická zväčšenie subakromiálneho pries │ vv.kod in ['5t443']                                          │
+│                 │                           │ toru                                          │                                                              │
 │             413 │ vv.pocet*cena             │ Discízia šľachových pošiev ohýbača prsta      │ vv.kod in ['5t7021']                                         │
 │             413 │ vv.pocet*cena             │ Discízia šľachových pošiev ohýbača palca      │ vv.kod in ['5t7022']                                         │
 │             413 │ vv.pocet*cena             │ Discízia šľachových pošiev prsta              │ vv.kod in ['5t7027']                                         │

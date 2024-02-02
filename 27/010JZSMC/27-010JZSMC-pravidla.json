@@ -318,6 +318,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
+			"if": "vv.kod in ['5l1951']",
+			"value": 902,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Endovenózna liečba perforátorov na varikóznych žilách",
 			"if": "vv.kod in ['5l1955']",
 			"value": 437,
@@ -4640,13 +4647,6 @@
 			"label": "Artroskopická refixácia kostného defektu labra",
 			"if": "vv.kod in ['5t442']",
 			"value": 338,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Artroskopická zväčšenie subakromiálneho priestoru",
-			"if": "vv.kod in ['5t443']",
-			"value": 0,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
