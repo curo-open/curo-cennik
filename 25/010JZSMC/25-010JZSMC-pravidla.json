@@ -425,35 +425,35 @@
 		{
 			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t4050']",
-			"value": null,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t4090']",
-			"value": null,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická parciálna resekcia menisku",
 			"if": "vv.kod in ['5t42310']",
-			"value": null,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] kolenného kĺbu",
 			"if": "vv.kod in ['5t42ch']",
-			"value": null,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t42h0']",
-			"value": null,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

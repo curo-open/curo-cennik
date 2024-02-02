@@ -4548,56 +4548,56 @@
 		{
 			"label": "Artroskopická refixácia osteochondrálneho fragmentu kolenného kĺbu",
 			"if": "vv.kod in ['5t421h']",
-			"value": null,
+			"value": 1238,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická subchondrálna spongioplastika humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t4220']",
-			"value": null,
+			"value": 1238,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická subchondrálna spongioplastika lakťového kĺbu",
 			"if": "vv.kod in ['5t4224']",
-			"value": null,
+			"value": 1238,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická subchondrálna spongioplastika lakťového kĺbu",
 			"if": "vv.kod in ['5t4224']",
-			"value": null,
+			"value": 1238,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická subchondrálna spongioplastika radiokarpálneho kĺbu",
 			"if": "vv.kod in ['5t4228']",
-			"value": null,
+			"value": 1215,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická subchondrálna spongioplastika radiokarpálneho kĺbu",
 			"if": "vv.kod in ['5t4228']",
-			"value": null,
+			"value": 1215,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická subchondrálna spongioplastika horného členkového kĺbu",
 			"if": "vv.kod in ['5t422k']",
-			"value": null,
+			"value": 1331,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická subchondrálna spongioplastika horného členkového kĺbu",
 			"if": "vv.kod in ['5t422k']",
-			"value": null,
+			"value": 1331,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

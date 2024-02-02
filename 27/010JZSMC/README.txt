@@ -1328,21 +1328,21 @@ Autor: curo.sk
 │                 │                           │ ho kĺbu                                       │                                                              │
 │             330 │ vv.pocet*cena             │ Iné artroskopické operácie na synovii lakťové │ vv.kod in ['5t41x4']                                         │
 │                 │                           │ ho kĺbu                                       │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421h']                                         │
+│            1238 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421h']                                         │
 │                 │                           │ gmentu kolenného kĺbu                         │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t4220']                                         │
+│            1238 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t4220']                                         │
 │                 │                           │ umeroglenoidálneho kĺbu                       │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika l │ vv.kod in ['5t4224']                                         │
+│            1238 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika l │ vv.kod in ['5t4224']                                         │
 │                 │                           │ akťového kĺbu                                 │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika l │ vv.kod in ['5t4224']                                         │
+│            1238 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika l │ vv.kod in ['5t4224']                                         │
 │                 │                           │ akťového kĺbu                                 │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika r │ vv.kod in ['5t4228']                                         │
+│            1215 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika r │ vv.kod in ['5t4228']                                         │
 │                 │                           │ adiokarpálneho kĺbu                           │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika r │ vv.kod in ['5t4228']                                         │
+│            1215 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika r │ vv.kod in ['5t4228']                                         │
 │                 │                           │ adiokarpálneho kĺbu                           │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t422k']                                         │
+│            1331 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t422k']                                         │
 │                 │                           │ orného členkového kĺbu                        │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t422k']                                         │
+│            1331 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t422k']                                         │
 │                 │                           │ orného členkového kĺbu                        │                                                              │
 │          446.08 │ vv.pocet*cena             │ Artroskopická refixácia labrum glenoidale ste │ vv.kod in ['5t440']                                          │
 │                 │                           │ hom                                           │                                                              │

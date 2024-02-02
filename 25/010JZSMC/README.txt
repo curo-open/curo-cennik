@@ -133,14 +133,14 @@ Autor: curo.sk
 │             602 │ vv.pocet*cena             │ Uzavretie ďalších abdominálnych hernií [priet │ vv.kod in ['5n8931']                                         │
 │                 │                           │ rží] s aloplastickým materiálom, laparoskopic │                                                              │
 │                 │                           │ ky transpe                                    │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t4050']                                         │
+│            1057 │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t4050']                                         │
 │                 │                           │ alcifikátov z humeroglenoidálneho kĺbu        │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4090']                                         │
+│            1057 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4090']                                         │
 │                 │                           │ v ligament z humeroglenoidálneho kĺbu         │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická parciálna resekcia menisku      │ vv.kod in ['5t42310']                                        │
-│             NaN │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42ch']                                         │
+│            1057 │ vv.pocet*cena             │ Artroskopická parciálna resekcia menisku      │ vv.kod in ['5t42310']                                        │
+│            1057 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42ch']                                         │
 │                 │                           │ astika] kolenného kĺbu                        │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h0']                                         │
+│            1057 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h0']                                         │
 │                 │                           │ h osteofytov humeroglenoidálneho kĺbu         │                                                              │
 │             413 │ vv.pocet*cena             │ Discízia šľachových pošiev ohýbača prsta      │ vv.kod in ['5t7021']                                         │
 │             413 │ vv.pocet*cena             │ Discízia šľachových pošiev ohýbača palca      │ vv.kod in ['5t7022']                                         │

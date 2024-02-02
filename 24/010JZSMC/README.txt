@@ -982,7 +982,7 @@ Autor: curo.sk
 │                 │                           │ ho kĺbu s drenážou                            │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopický aseptický výplach ulnokarpálneh │ vv.kod in ['5t4009']                                         │
 │                 │                           │ o kĺbu s drenážou                             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopický aseptický výplach bedrového kĺb │ vv.kod in ['5t400g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopický aseptický výplach bedrového kĺb │ vv.kod in ['5t400g']                                         │
 │                 │                           │ u s drenážou                                  │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopický aseptický výplach kolenného kĺb │ vv.kod in ['5t400h']                                         │
 │                 │                           │ u s drenážou                                  │                                                              │
@@ -1002,7 +1002,7 @@ Autor: curo.sk
 │                 │                           │ diokarpálneho kĺbu                            │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická mobilizácia kĺbu (artrolýza) ul │ vv.kod in ['5t4029']                                         │
 │                 │                           │ nokarpálneho kĺbu                             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická mobilizácia kĺbu (artrolýza) be │ vv.kod in ['5t402g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická mobilizácia kĺbu (artrolýza) be │ vv.kod in ['5t402g']                                         │
 │                 │                           │ drového kĺbu                                  │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická mobilizácia kĺbu (artrolýza) ko │ vv.kod in ['5t402h']                                         │
 │                 │                           │ lenného kĺbu                                  │                                                              │
@@ -1020,7 +1020,7 @@ Autor: curo.sk
 │                 │                           │ ateriálu z radiokarpálneho kĺbu               │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické odstránenie osteosyntetického m │ vv.kod in ['5t4039']                                         │
 │                 │                           │ ateriálu z ulnokarpálneho kĺbu                │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické odstránenie osteosyntetického m │ vv.kod in ['5t403g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopické odstránenie osteosyntetického m │ vv.kod in ['5t403g']                                         │
 │                 │                           │ ateriálu z bedrového kĺbu                     │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopické odstránenie osteosyntetického m │ vv.kod in ['5t403h']                                         │
 │                 │                           │ ateriálu z kolenného kĺbu                     │                                                              │
@@ -1036,7 +1036,7 @@ Autor: curo.sk
 │                 │                           │ diokarpálneho kĺbu                            │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické odstránenie voľných telies z ul │ vv.kod in ['5t4049']                                         │
 │                 │                           │ nokarpálneho kĺbu                             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické odstránenie voľných telies z be │ vv.kod in ['5t404g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopické odstránenie voľných telies z be │ vv.kod in ['5t404g']                                         │
 │                 │                           │ drového kĺbu                                  │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopické odstránenie voľných telies z ko │ vv.kod in ['5t404h']                                         │
 │                 │                           │ lenného kĺbu                                  │                                                              │
@@ -1052,7 +1052,7 @@ Autor: curo.sk
 │                 │                           │ alcifikátov z radiokarpálneho kĺbu            │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t4059']                                         │
 │                 │                           │ alcifikátov z ulnokarpálneho kĺbu             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t405g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t405g']                                         │
 │                 │                           │ alcifikátov z bedrového kĺbu                  │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t405k']                                         │
 │                 │                           │ alcifikátov z horného členkového kĺbu         │                                                              │
@@ -1068,7 +1068,7 @@ Autor: curo.sk
 │                 │                           │ v ligament z radiokarpálneho kĺbu             │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4099']                                         │
 │                 │                           │ v ligament z ulnokarpálneho kĺbu              │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t409g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t409g']                                         │
 │                 │                           │ v ligament z bedrového kĺbu                   │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t409h']                                         │
 │                 │                           │ v ligament z kolenného kĺbu                   │                                                              │
@@ -1084,7 +1084,7 @@ Autor: curo.sk
 │             793 │ vv.pocet*cena             │ Iné artroskopické revízie radiokarpálneho kĺb │ vv.kod in ['5t40x8']                                         │
 │                 │                           │ u                                             │                                                              │
 │             793 │ vv.pocet*cena             │ Iné artroskopické revízie ulnokarpálneho kĺbu │ vv.kod in ['5t40x9']                                         │
-│             NaN │ vv.pocet*cena             │ Iné artroskopické revízie bedrového kĺbu      │ vv.kod in ['5t40xg']                                         │
+│            1378 │ vv.pocet*cena             │ Iné artroskopické revízie bedrového kĺbu      │ vv.kod in ['5t40xg']                                         │
 │             971 │ vv.pocet*cena             │ Iné artroskopické revízie kolenného kĺbu      │ vv.kod in ['5t40xh']                                         │
 │             793 │ vv.pocet*cena             │ Iné artroskopické revízie horného členkového  │ vv.kod in ['5t40xk']                                         │
 │                 │                           │ kĺbu                                          │                                                              │
@@ -1092,7 +1092,7 @@ Autor: curo.sk
 │                 │                           │ kĺbu                                          │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická resekcia plica synovialis kolen │ vv.kod in ['5t410h']                                         │
 │                 │                           │ ného kĺbu                                     │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická resekcia tukového telesa bedrov │ vv.kod in ['5t411g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická resekcia tukového telesa bedrov │ vv.kod in ['5t411g']                                         │
 │                 │                           │ ého kĺbu                                      │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická resekcia tukového telesa kolenn │ vv.kod in ['5t411h']                                         │
 │                 │                           │ ého kĺbu                                      │                                                              │
@@ -1104,7 +1104,7 @@ Autor: curo.sk
 │                 │                           │ pálneho kĺbu                                  │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická parciálna synovektómia ulnokarp │ vv.kod in ['5t4129']                                         │
 │                 │                           │ álneho kĺbu                                   │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická parciálna synovektómia bedrovéh │ vv.kod in ['5t412g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická parciálna synovektómia bedrovéh │ vv.kod in ['5t412g']                                         │
 │                 │                           │ o kĺbu                                        │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická parciálna synovektómia kolennéh │ vv.kod in ['5t412h']                                         │
 │                 │                           │ o kĺbu                                        │                                                              │
@@ -1120,7 +1120,7 @@ Autor: curo.sk
 │                 │                           │ lneho kĺbu                                    │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická totálna synovektómia ulnokarpál │ vv.kod in ['5t4139']                                         │
 │                 │                           │ neho kĺbu                                     │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická totálna synovektómia bedrového  │ vv.kod in ['5t413g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická totálna synovektómia bedrového  │ vv.kod in ['5t413g']                                         │
 │                 │                           │ kĺbu                                          │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická totálna synovektómia kolenného  │ vv.kod in ['5t413h']                                         │
 │                 │                           │ kĺbu                                          │                                                              │
@@ -1140,7 +1140,7 @@ Autor: curo.sk
 │                 │                           │ rpálneho kĺbu                                 │                                                              │
 │             793 │ vv.pocet*cena             │ Iné artroskopické operácie na synovii ulnokar │ vv.kod in ['5t41x9']                                         │
 │                 │                           │ pálneho kĺbu                                  │                                                              │
-│             NaN │ vv.pocet*cena             │ Iné artroskopické operácie na synovii bedrové │ vv.kod in ['5t41xg']                                         │
+│            1378 │ vv.pocet*cena             │ Iné artroskopické operácie na synovii bedrové │ vv.kod in ['5t41xg']                                         │
 │                 │                           │ ho kĺbu                                       │                                                              │
 │             971 │ vv.pocet*cena             │ Iné artroskopické operácie na synovii kolenné │ vv.kod in ['5t41xh']                                         │
 │                 │                           │ ho kĺbu                                       │                                                              │
@@ -1156,7 +1156,7 @@ Autor: curo.sk
 │                 │                           │ nej chrupavky radiokarpálneho kĺbu            │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická excízia poškodeného tkaniva kĺb │ vv.kod in ['5t4209']                                         │
 │                 │                           │ nej chrupavky ulnokarpálneho kĺbu             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická excízia poškodeného tkaniva kĺb │ vv.kod in ['5t420g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická excízia poškodeného tkaniva kĺb │ vv.kod in ['5t420g']                                         │
 │                 │                           │ nej chrupavky bedrového kĺbu                  │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická excízia poškodeného tkaniva kĺb │ vv.kod in ['5t420h']                                         │
 │                 │                           │ nej chrupavky kolenného kĺbu                  │                                                              │
@@ -1172,15 +1172,15 @@ Autor: curo.sk
 │                 │                           │ gmentu radiokarpálneho kĺbu                   │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t4219']                                         │
 │                 │                           │ gmentu ulnokarpálneho kĺbu                    │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421g']                                         │
 │                 │                           │ gmentu bedrového kĺbu                         │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421h']                                         │
+│            1091 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421h']                                         │
 │                 │                           │ gmentu kolenného kĺbu                         │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421k']                                         │
 │                 │                           │ gmentu horného členkového kĺbu                │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t421m']                                         │
 │                 │                           │ gmentu dolného členkového kĺbu                │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t4220']                                         │
+│            1186 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika h │ vv.kod in ['5t4220']                                         │
 │                 │                           │ umeroglenoidálneho kĺbu                       │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika l │ vv.kod in ['5t4224']                                         │
 │                 │                           │ akťového kĺbu                                 │                                                              │
@@ -1192,7 +1192,7 @@ Autor: curo.sk
 │                 │                           │ adiokarpálneho kĺbu                           │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika u │ vv.kod in ['5t4229']                                         │
 │                 │                           │ lnokarpálneho kĺbu                            │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika b │ vv.kod in ['5t422g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika b │ vv.kod in ['5t422g']                                         │
 │                 │                           │ edrového kĺbu                                 │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika k │ vv.kod in ['5t422h']                                         │
 │                 │                           │ olenného kĺbu                                 │                                                              │
@@ -1204,9 +1204,9 @@ Autor: curo.sk
 │                 │                           │ olného členkového kĺbu                        │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická parciálna resekcia menisku      │ vv.kod in ['5t42310']                                        │
 │             971 │ vv.pocet*cena             │ Artroskopická totálna resekcia menisku        │ vv.kod in ['5t42311']                                        │
-│             NaN │ vv.pocet*cena             │ Artroskopická refixácia menisku               │ vv.kod in ['5t42320']                                        │
-│             NaN │ vv.pocet*cena             │ Artroskopická sutúra menisku, zložitá         │ vv.kod in ['5t42322']                                        │
-│             NaN │ vv.pocet*cena             │ Artroskopická implantácia umelého menisku     │ vv.kod in ['5t4233']                                         │
+│            1091 │ vv.pocet*cena             │ Artroskopická refixácia menisku               │ vv.kod in ['5t42320']                                        │
+│            1091 │ vv.pocet*cena             │ Artroskopická sutúra menisku, zložitá         │ vv.kod in ['5t42322']                                        │
+│            1091 │ vv.pocet*cena             │ Artroskopická implantácia umelého menisku     │ vv.kod in ['5t4233']                                         │
 │             971 │ vv.pocet*cena             │ Artroskopické odstránenie umelého menisku     │ vv.kod in ['5t4234']                                         │
 │             971 │ vv.pocet*cena             │ Ostatné artroskopické operácie menisku        │ vv.kod in ['5t423x']                                         │
 │             971 │ vv.pocet*cena             │ Artroskopický odber chondrálneho transplantát │ vv.kod in ['5t426h']                                         │
@@ -1217,13 +1217,13 @@ Autor: curo.sk
 │                 │                           │ arpálneho kĺbu                                │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky ulnoka │ vv.kod in ['5t4279']                                         │
 │                 │                           │ rpálneho kĺbu                                 │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky bedrov │ vv.kod in ['5t427g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky bedrov │ vv.kod in ['5t427g']                                         │
 │                 │                           │ ého kĺbu                                      │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky kolenn │ vv.kod in ['5t427h']                                         │
+│            2944 │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky kolenn │ vv.kod in ['5t427h']                                         │
 │                 │                           │ ého kĺbu                                      │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky hornéh │ vv.kod in ['5t427k']                                         │
+│            2828 │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky hornéh │ vv.kod in ['5t427k']                                         │
 │                 │                           │ o členkového kĺbu                             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky dolnéh │ vv.kod in ['5t427m']                                         │
+│            2828 │ vv.pocet*cena             │ Artroskopická transplantácia chrupavky dolnéh │ vv.kod in ['5t427m']                                         │
 │                 │                           │ o členkového kĺbu                             │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t4284']                                         │
 │                 │                           │ ých tkanivových kultúr lakťového kĺbu         │                                                              │
@@ -1231,14 +1231,14 @@ Autor: curo.sk
 │                 │                           │ ých tkanivových kultúr radiokarpálneho kĺbu   │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t4289']                                         │
 │                 │                           │ ých tkanivových kultúr ulnokarpálneho kĺbu    │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428g']                                         │
 │                 │                           │ ých tkanivových kultúr bedrového kĺbu         │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428h']                                         │
+│            2944 │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428h']                                         │
 │                 │                           │ ých tkanivových kultúr kolenného kĺbu         │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428k']                                         │
+│            2828 │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428k']                                         │
 │                 │                           │ ých tkanivových kultúr horného členkového kĺb │                                                              │
 │                 │                           │ u                                             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428m']                                         │
+│            2828 │ vv.pocet*cena             │ Artroskopická implantácia in vitro vypestovan │ vv.kod in ['5t428m']                                         │
 │                 │                           │ ých tkanivových kultúr dolného členkového kĺb │                                                              │
 │                 │                           │ u                                             │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42c0']                                         │
@@ -1249,7 +1249,7 @@ Autor: curo.sk
 │                 │                           │ astika] radiokarpálneho kĺbu                  │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42c9']                                         │
 │                 │                           │ astika] ulnokarpálneho kĺbu                   │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42cg']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42cg']                                         │
 │                 │                           │ astika] bedrového kĺbu                        │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42ch']                                         │
 │                 │                           │ astika] kolenného kĺbu                        │                                                              │
@@ -1265,7 +1265,7 @@ Autor: curo.sk
 │                 │                           │ adiokarpálneho kĺbu                           │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti u │ vv.kod in ['5t42d9']                                         │
 │                 │                           │ lnokarpálneho kĺbu                            │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti b │ vv.kod in ['5t42dg']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti b │ vv.kod in ['5t42dg']                                         │
 │                 │                           │ edrového kĺbu                                 │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti k │ vv.kod in ['5t42dh']                                         │
 │                 │                           │ olenného kĺbu                                 │                                                              │
@@ -1282,16 +1282,16 @@ Autor: curo.sk
 │             793 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42e9']                                         │
 │                 │                           │ implantáciou acelulárneho implantátu ulnokarp │                                                              │
 │                 │                           │ álneho kĺ                                     │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42eg']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42eg']                                         │
 │                 │                           │ implantáciou acelulárneho implantátu bedrovéh │                                                              │
 │                 │                           │ o kĺbu                                        │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42eh']                                         │
+│            1985 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42eh']                                         │
 │                 │                           │ implantáciou acelulárneho implantátu kolennéh │                                                              │
 │                 │                           │ o kĺbu                                        │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42ek']                                         │
+│            1870 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42ek']                                         │
 │                 │                           │ implantáciou acelulárneho implantátu horného  │                                                              │
 │                 │                           │ členkovéh                                     │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42em']                                         │
+│            1870 │ vv.pocet*cena             │ Artroskopické subchondrálne otvorenie kosti s │ vv.kod in ['5t42em']                                         │
 │                 │                           │ implantáciou acelulárneho implantátu dolného  │                                                              │
 │                 │                           │ členkovéh                                     │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická operácia chrupavky lakťového kĺ │ vv.kod in ['5t42f4']                                         │
@@ -1303,16 +1303,16 @@ Autor: curo.sk
 │             793 │ vv.pocet*cena             │ Artroskopická operácia chrupavky radiokarpáln │ vv.kod in ['5t42f9']                                         │
 │                 │                           │ eho kĺbu s transplantáciou chondrocytov na au │                                                              │
 │                 │                           │ tológne in                                    │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická operácia chrupavky bedrového kĺ │ vv.kod in ['5t42fg']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická operácia chrupavky bedrového kĺ │ vv.kod in ['5t42fg']                                         │
 │                 │                           │ bu s transplantáciou chondrocytov na autológn │                                                              │
 │                 │                           │ e indukova                                    │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická operácia chrupavky kolenného kĺ │ vv.kod in ['5t42fh']                                         │
+│            2944 │ vv.pocet*cena             │ Artroskopická operácia chrupavky kolenného kĺ │ vv.kod in ['5t42fh']                                         │
 │                 │                           │ bu s transplantáciou chondrocytov na autológn │                                                              │
 │                 │                           │ e indukova                                    │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická operácia chrupavky horného člen │ vv.kod in ['5t42fk']                                         │
+│            2828 │ vv.pocet*cena             │ Artroskopická operácia chrupavky horného člen │ vv.kod in ['5t42fk']                                         │
 │                 │                           │ kového kĺbu s transplantáciou chondrocytov na │                                                              │
 │                 │                           │ autológne                                     │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická operácia chrupavky dolného člen │ vv.kod in ['5t42fm']                                         │
+│            2828 │ vv.pocet*cena             │ Artroskopická operácia chrupavky dolného člen │ vv.kod in ['5t42fm']                                         │
 │                 │                           │ kového kĺbu s transplantáciou chondrocytov na │                                                              │
 │                 │                           │ autológne                                     │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h0']                                         │
@@ -1325,7 +1325,7 @@ Autor: curo.sk
 │                 │                           │ h osteofytov radiokarpálneho kĺbu             │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h9']                                         │
 │                 │                           │ h osteofytov ulnokarpálneho kĺbu              │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42hg']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42hg']                                         │
 │                 │                           │ h osteofytov bedrového kĺbu                   │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42hh']                                         │
 │                 │                           │ h osteofytov kolenného kĺbu                   │                                                              │
@@ -1335,40 +1335,40 @@ Autor: curo.sk
 │                 │                           │ h osteofytov dolného členkového kĺbu          │                                                              │
 │             971 │ vv.pocet*cena             │ Iné artroskopické operácie na chrupavke a men │ vv.kod in ['5t42ih']                                         │
 │                 │                           │ iskoch kolenného kĺbu                         │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická sutúra predného skríženého väzu │ vv.kod in ['5t430']                                          │
-│             NaN │ vv.pocet*cena             │ Artroskopická sutúra zadného skríženého väzu  │ vv.kod in ['5t431']                                          │
-│             NaN │ vv.pocet*cena             │ Artroskopická kostná refixácia skríženého väz │ vv.kod in ['5t432']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická sutúra predného skríženého väzu │ vv.kod in ['5t430']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická sutúra zadného skríženého väzu  │ vv.kod in ['5t431']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická kostná refixácia skríženého väz │ vv.kod in ['5t432']                                          │
 │                 │                           │ u                                             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika predného skríženého vä │ vv.kod in ['5t433']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika predného skríženého vä │ vv.kod in ['5t433']                                          │
 │                 │                           │ zu autológnym patelárnym ligamentom           │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika predného skríženého vä │ vv.kod in ['5t434']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika predného skríženého vä │ vv.kod in ['5t434']                                          │
 │                 │                           │ zu iným autológnym ligamentom                 │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika predného skríženého vä │ vv.kod in ['5t435']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika predného skríženého vä │ vv.kod in ['5t435']                                          │
 │                 │                           │ zu s aloplastickou náhradou                   │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika zadného skríženého väz │ vv.kod in ['5t436']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika zadného skríženého väz │ vv.kod in ['5t436']                                          │
 │                 │                           │ u s autogénnou patelárnou šľachou             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika zadného skríženého väz │ vv.kod in ['5t437']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika zadného skríženého väz │ vv.kod in ['5t437']                                          │
 │                 │                           │ u s iným autológnym ligamentom                │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika zadného skríženeho väz │ vv.kod in ['5t438']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika zadného skríženeho väz │ vv.kod in ['5t438']                                          │
 │                 │                           │ u s aloplastickou náhradou                    │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopické uvoľnenie kolenného púzdra (lat │ vv.kod in ['5t439']                                          │
 │                 │                           │ eral release)                                 │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická sutúra mediálneho kapsuloligame │ vv.kod in ['5t43a']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická sutúra mediálneho kapsuloligame │ vv.kod in ['5t43a']                                          │
 │                 │                           │ ntózneho aparátu kolenného kĺbu               │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická sutúra laterálneho kapsuloligam │ vv.kod in ['5t43b']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická sutúra laterálneho kapsuloligam │ vv.kod in ['5t43b']                                          │
 │                 │                           │ entózneho aparátu kolenného kĺbu              │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika mediálneho kapsuloliga │ vv.kod in ['5t43d']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika mediálneho kapsuloliga │ vv.kod in ['5t43d']                                          │
 │                 │                           │ mentózneho aparátu kolenného kĺbu             │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopická plastika laterálneho kapsulolig │ vv.kod in ['5t43e']                                          │
+│            1091 │ vv.pocet*cena             │ Artroskopická plastika laterálneho kapsulolig │ vv.kod in ['5t43e']                                          │
 │                 │                           │ amentózneho aparátu kolenného kĺbu            │                                                              │
-│             NaN │ vv.pocet*cena             │ Ostatné artroskopické refixácie a plastiky na │ vv.kod in ['5t43x']                                          │
+│            1091 │ vv.pocet*cena             │ Ostatné artroskopické refixácie a plastiky na │ vv.kod in ['5t43x']                                          │
 │                 │                           │ kapsuloligamentóznom aparáte kolenného kĺbu   │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické spevnenie púzdra s fixáciou na  │ vv.kod in ['5t445']                                          │
+│            1186 │ vv.pocet*cena             │ Artroskopické spevnenie púzdra s fixáciou na  │ vv.kod in ['5t445']                                          │
 │                 │                           │ glenoid stehom                                │                                                              │
 │             971 │ vv.pocet*cena             │ Artroskopická laterálna resekcia klavikuly    │ vv.kod in ['5t44a']                                          │
-│             NaN │ vv.pocet*cena             │ Artroskopická stabilizácia akromioklavikulárn │ vv.kod in ['5t44b']                                          │
+│            1186 │ vv.pocet*cena             │ Artroskopická stabilizácia akromioklavikulárn │ vv.kod in ['5t44b']                                          │
 │                 │                           │ eho kĺbu fixačným výkonom                     │                                                              │
-│             NaN │ vv.pocet*cena             │ Ostatné artroskopické refixácie a plastiky na │ vv.kod in ['5t44x']                                          │
+│            1186 │ vv.pocet*cena             │ Ostatné artroskopické refixácie a plastiky na │ vv.kod in ['5t44x']                                          │
 │                 │                           │ kapsuloligamentóznom aparáte ramenného kĺbu   │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické rozdelenie/prerušenie väzu lakť │ vv.kod in ['5t4904']                                         │
 │                 │                           │ ového kĺbu                                    │                                                              │
@@ -1376,7 +1376,7 @@ Autor: curo.sk
 │                 │                           │ okarpálneho kĺbu                              │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické rozdelenie/prerušenie väzu ulno │ vv.kod in ['5t4909']                                         │
 │                 │                           │ karpálneho kĺbu                               │                                                              │
-│             NaN │ vv.pocet*cena             │ Artroskopické rozdelenie/prerušenie väzu bedr │ vv.kod in ['5t490g']                                         │
+│            1378 │ vv.pocet*cena             │ Artroskopické rozdelenie/prerušenie väzu bedr │ vv.kod in ['5t490g']                                         │
 │                 │                           │ ového kĺbu                                    │                                                              │
 │             793 │ vv.pocet*cena             │ Artroskopické rozdelenie/prerušenie väzu horn │ vv.kod in ['5t490k']                                         │
 │                 │                           │ ého členkového kĺbu                           │                                                              │
@@ -1402,7 +1402,7 @@ Autor: curo.sk
 │                 │                           │ o kĺbu                                        │                                                              │
 │             793 │ vv.pocet*cena             │ Ostatné artroskopické operácie ulnokarpálneho │ vv.kod in ['5t49x9']                                         │
 │                 │                           │ kĺbu                                          │                                                              │
-│             NaN │ vv.pocet*cena             │ Ostatné artroskopické operácie bedrového kĺbu │ vv.kod in ['5t49xg']                                         │
+│            1378 │ vv.pocet*cena             │ Ostatné artroskopické operácie bedrového kĺbu │ vv.kod in ['5t49xg']                                         │
 │             971 │ vv.pocet*cena             │ Ostatné artroskopické operácie kolenného kĺbu │ vv.kod in ['5t49xh']                                         │
 │             793 │ vv.pocet*cena             │ Ostatné artroskopické operácie horného členko │ vv.kod in ['5t49xk']                                         │
 │                 │                           │ vého kĺbu                                     │                                                              │
@@ -1816,197 +1816,197 @@ Autor: curo.sk
 │                 │                           │ a jazvy plastikou                             │                                                              │
 │             276 │ vv.pocet*cena             │ Jednodňová ZS - Ošetrenie popáleniny v celkov │ vv.kod in ['j0005']                                          │
 │                 │                           │ ej anestéze                                   │                                                              │
-│             242 │ vv.pocet*cena             │ Biologická nekrektómia [Maggot therapy]       │ vv.kod in ['kg210']                                          │
-│             650 │ vv.pocet*cena             │ Prešitie varikozít na varikóznych žilách      │ vv.kod in ['kl1901']                                         │
-│             650 │ vv.pocet*cena             │ Lokálna excízia na varikóznych žilách         │ vv.kod in ['kl1902']                                         │
-│             650 │ vv.pocet*cena             │ Incízia varikozít na varikóznych žilách       │ vv.kod in ['kl1903']                                         │
-│             650 │ vv.pocet*cena             │ Endoskopická ligatúra perforátorov na varikóz │ vv.kod in ['kl19110']                                        │
+│             242 │ vv.pocet*cena             │ Biologická nekrektómia [Maggot therapy]       │ vv.kod in ['Kg210']                                          │
+│             650 │ vv.pocet*cena             │ Prešitie varikozít na varikóznych žilách      │ vv.kod in ['Kl1901']                                         │
+│             650 │ vv.pocet*cena             │ Lokálna excízia na varikóznych žilách         │ vv.kod in ['Kl1902']                                         │
+│             650 │ vv.pocet*cena             │ Incízia varikozít na varikóznych žilách       │ vv.kod in ['Kl1903']                                         │
+│             650 │ vv.pocet*cena             │ Endoskopická ligatúra perforátorov na varikóz │ vv.kod in ['Kl19110']                                        │
 │                 │                           │ nych žilách bez fasciotómie                   │                                                              │
-│             650 │ vv.pocet*cena             │ Endoskopická ligatúra perforátorov na varikóz │ vv.kod in ['kl19111']                                        │
+│             650 │ vv.pocet*cena             │ Endoskopická ligatúra perforátorov na varikóz │ vv.kod in ['Kl19111']                                        │
 │                 │                           │ nych žilách s fasciotómiou                    │                                                              │
-│             650 │ vv.pocet*cena             │ Transkutánna ligatúra perforátorov na varikóz │ vv.kod in ['kl1912']                                         │
+│             650 │ vv.pocet*cena             │ Transkutánna ligatúra perforátorov na varikóz │ vv.kod in ['Kl1912']                                         │
 │                 │                           │ nych žilách                                   │                                                              │
-│             650 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1920']                                         │
+│             650 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['Kl1920']                                         │
 │                 │                           │ magna                                         │                                                              │
-│             650 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1921']                                         │
+│             650 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['Kl1921']                                         │
 │                 │                           │ parva                                         │                                                              │
-│             650 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1922']                                         │
+│             650 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['Kl1922']                                         │
 │                 │                           │ magna a parva                                 │                                                              │
-│             650 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena magna      │ vv.kod in ['kl1930']                                         │
-│             650 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena parva      │ vv.kod in ['kl1931']                                         │
-│             650 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena magna a pa │ vv.kod in ['kl1932']                                         │
+│             650 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena magna      │ vv.kod in ['Kl1930']                                         │
+│             650 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena parva      │ vv.kod in ['Kl1931']                                         │
+│             650 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena magna a pa │ vv.kod in ['Kl1932']                                         │
 │                 │                           │ rva                                           │                                                              │
-│             650 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['kl1940']                                         │
+│             650 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['Kl1940']                                         │
 │                 │                           │ sektómie                                      │                                                              │
-│             650 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['kl1941']                                         │
+│             650 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['Kl1941']                                         │
 │                 │                           │ sektómie                                      │                                                              │
-│             650 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['kl1942']                                         │
+│             650 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['Kl1942']                                         │
 │                 │                           │ bez crossektómie                              │                                                              │
-│             650 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['kl1943']                                         │
+│             650 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['Kl1943']                                         │
 │                 │                           │ crossektómie                                  │                                                              │
-│             650 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['kl194x']                                         │
-│             695 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['kl1951']                                         │
+│             650 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['Kl194x']                                         │
+│             695 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['Kl1951']                                         │
 │                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
 │                 │                           │ u                                             │                                                              │
-│             650 │ vv.pocet*cena             │ Endovenózna liečba perforátorov na varikóznyc │ vv.kod in ['kl1955']                                         │
+│             650 │ vv.pocet*cena             │ Endovenózna liečba perforátorov na varikóznyc │ vv.kod in ['Kl1955']                                         │
 │                 │                           │ h žilách                                      │                                                              │
-│             695 │ vv.pocet*cena             │ Rádioflekvenčná ablácia lokálnych varixov     │ vv.kod in ['kl1957']                                         │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['kn8100']                                         │
+│             695 │ vv.pocet*cena             │ Rádioflekvenčná ablácia lokálnych varixov     │ vv.kod in ['Kl1957']                                         │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['Kn8100']                                         │
 │                 │                           │ lastiky s vysokým podviazaním vaku hernie a č │                                                              │
 │                 │                           │ iastočnou                                     │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['kn8101']                                         │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['Kn8101']                                         │
 │                 │                           │ lastiky s resekciou steny hydrokély           │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['kn8102']                                         │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['Kn8102']                                         │
 │                 │                           │ lastiky s funikulolýzou a dislokáciou semenní │                                                              │
 │                 │                           │ ka                                            │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['kn8103']                                         │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['Kn8103']                                         │
 │                 │                           │ lastiky bez ďalších výkonov                   │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['kn810x']                                         │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] bez p │ vv.kod in ['Kn810x']                                         │
 │                 │                           │ lastiky, ostatné                              │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s pla │ vv.kod in ['kn811']                                          │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s pla │ vv.kod in ['Kn811']                                          │
 │                 │                           │ stikou                                        │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s aut │ vv.kod in ['kn812']                                          │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s aut │ vv.kod in ['Kn812']                                          │
 │                 │                           │ ológnym materiálom                            │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['kn8130']                                         │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['Kn8130']                                         │
 │                 │                           │ plastickým materiálom, laparotomicky          │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['kn8132']                                         │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['Kn8132']                                         │
 │                 │                           │ plastickým materiálom, endoskopicky, totálny  │                                                              │
 │                 │                           │ extraperit                                    │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['kn813x']                                         │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['Kn813x']                                         │
 │                 │                           │ plastickým materiálom, ostatné                │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s res │ vv.kod in ['kn814']                                          │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s res │ vv.kod in ['Kn814']                                          │
 │                 │                           │ ekciou čreva bez dodatočnej laparotómie       │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn8150']                                         │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn8150']                                         │
 │                 │                           │ ecidíve s plastikou bez funikulo-orchidolýzy  │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn8151']                                         │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn8151']                                         │
 │                 │                           │ ecidíve s plastikou s funikulo-orchidolýzou   │                                                              │
-│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn816']                                          │
+│             496 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn816']                                          │
 │                 │                           │ ecidíve s autológnym materiálom               │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn8170']                                         │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn8170']                                         │
 │                 │                           │ ecidíve s aloplastickým materiálom, laparotom │                                                              │
 │                 │                           │ icky                                          │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn8172']                                         │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn8172']                                         │
 │                 │                           │ ecidíve s aloplastickým materiálom, endoskopi │                                                              │
 │                 │                           │ cky totáln                                    │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn817x']                                         │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn817x']                                         │
 │                 │                           │ ecidíve s aloplastickým materiálom, iný príst │                                                              │
 │                 │                           │ up                                            │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn818']                                          │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn818']                                          │
 │                 │                           │ ecidíve s aloplastickým materiálom, resekciou │                                                              │
 │                 │                           │ čreva bez                                     │                                                              │
-│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn81x']                                          │
+│             661 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['Kn81x']                                          │
 │                 │                           │ ecidíve s aloplastickým materiálom, ostatné   │                                                              │
-│             496 │ vv.pocet*cena             │ Resekcie (exostózy) os metatarsale I          │ vv.kod in ['kt0800']                                         │
-│             496 │ vv.pocet*cena             │ Resekcie (exostózy) článkov prstov nohy: digi │ vv.kod in ['kt080a']                                         │
+│             496 │ vv.pocet*cena             │ Resekcie (exostózy) os metatarsale I          │ vv.kod in ['Kt0800']                                         │
+│             496 │ vv.pocet*cena             │ Resekcie (exostózy) článkov prstov nohy: digi │ vv.kod in ['Kt080a']                                         │
 │                 │                           │ tus I                                         │                                                              │
-│             496 │ vv.pocet*cena             │ Korektívna operácia mäkkých častí metatarzu a │ vv.kod in ['kt0810']                                         │
+│             496 │ vv.pocet*cena             │ Korektívna operácia mäkkých častí metatarzu a │ vv.kod in ['Kt0810']                                         │
 │                 │                           │ článkov prstov nohy vo výške 1. metatarzofala │                                                              │
 │                 │                           │ ngeálneho                                     │                                                              │
-│             496 │ vv.pocet*cena             │ Osteotomia os metatarsale I                   │ vv.kod in ['kt08201']                                        │
-│             496 │ vv.pocet*cena             │ Osteotomia os metatarsale I, dvojitá osteotóm │ vv.kod in ['kt08202']                                        │
+│             496 │ vv.pocet*cena             │ Osteotomia os metatarsale I                   │ vv.kod in ['Kt08201']                                        │
+│             496 │ vv.pocet*cena             │ Osteotomia os metatarsale I, dvojitá osteotóm │ vv.kod in ['Kt08202']                                        │
 │                 │                           │ ia                                            │                                                              │
-│             496 │ vv.pocet*cena             │ Osteotomia článkov prstov nohy: digitus I     │ vv.kod in ['kt0822a']                                        │
-│             496 │ vv.pocet*cena             │ Artroplastika metatarzofalangeálneho kĺbu I   │ vv.kod in ['kt0830']                                         │
-│             496 │ vv.pocet*cena             │ Artrodéza priehlavku a stredonožia, 1 alebo 2 │ vv.kod in ['kt3891']                                         │
+│             496 │ vv.pocet*cena             │ Osteotomia článkov prstov nohy: digitus I     │ vv.kod in ['Kt0822a']                                        │
+│             496 │ vv.pocet*cena             │ Artroplastika metatarzofalangeálneho kĺbu I   │ vv.kod in ['Kt0830']                                         │
+│             496 │ vv.pocet*cena             │ Artrodéza priehlavku a stredonožia, 1 alebo 2 │ vv.kod in ['Kt3891']                                         │
 │                 │                           │ kĺby                                          │                                                              │
-│             496 │ vv.pocet*cena             │ Artrodézy metatarzofalangeálneho kĺbu palca n │ vv.kod in ['kt38aa']                                         │
+│             496 │ vv.pocet*cena             │ Artrodézy metatarzofalangeálneho kĺbu palca n │ vv.kod in ['Kt38aa']                                         │
 │                 │                           │ ohy                                           │                                                              │
-│              83 │ vv.pocet*cena             │ Excízia gangliómu na ruke                     │ vv.kod in ['kt790']                                          │
-│              83 │ vv.pocet*cena             │ Excízia gangliómu na ruke                     │ vv.kod in ['kt790']                                          │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8920']                                         │
+│              83 │ vv.pocet*cena             │ Excízia gangliómu na ruke                     │ vv.kod in ['Kt790']                                          │
+│              83 │ vv.pocet*cena             │ Excízia gangliómu na ruke                     │ vv.kod in ['Kt790']                                          │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8920']                                         │
 │                 │                           │ iách a burzách v oblasti hlavy a krku         │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8920']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8920']                                         │
 │                 │                           │ iách a burzách v oblasti hlavy a krku         │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8921']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8921']                                         │
 │                 │                           │ iách a burzách v oblasti ramena a axily       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8921']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8921']                                         │
 │                 │                           │ iách a burzách v oblasti ramena a axily       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8922']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8922']                                         │
 │                 │                           │ iách a burzách v oblasti ramena a lakťa       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8922']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8922']                                         │
 │                 │                           │ iách a burzách v oblasti ramena a lakťa       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8923']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8923']                                         │
 │                 │                           │ iách a burzách v oblasti predlaktia           │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8923']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8923']                                         │
 │                 │                           │ iách a burzách v oblasti predlaktia           │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8924']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8924']                                         │
 │                 │                           │ iách a burzách v oblasti hrudnej steny a chrb │                                                              │
 │                 │                           │ ta                                            │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8924']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8924']                                         │
 │                 │                           │ iách a burzách v oblasti hrudnej steny a chrb │                                                              │
 │                 │                           │ ta                                            │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8925']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8925']                                         │
 │                 │                           │ iách a burzách v oblasti brušnej steny        │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8925']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8925']                                         │
 │                 │                           │ iách a burzách v oblasti brušnej steny        │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8926']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8926']                                         │
 │                 │                           │ iách a burzách v inguinálnej, genitálnej a gl │                                                              │
 │                 │                           │ uteálnej o                                    │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8926']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8926']                                         │
 │                 │                           │ iách a burzách v inguinálnej, genitálnej a gl │                                                              │
 │                 │                           │ uteálnej o                                    │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8927']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8927']                                         │
 │                 │                           │ iách a burzách v oblasti stehna a kolena      │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8927']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8927']                                         │
 │                 │                           │ iách a burzách v oblasti stehna a kolena      │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8928']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8928']                                         │
 │                 │                           │ iách a burzách v oblasti predkolenia          │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8928']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8928']                                         │
 │                 │                           │ iách a burzách v oblasti predkolenia          │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8929']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8929']                                         │
 │                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8929']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt8929']                                         │
 │                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt892x']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt892x']                                         │
 │                 │                           │ iách a burzách, ostatné                       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt892x']                                         │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['Kt892x']                                         │
 │                 │                           │ iách a burzách, ostatné                       │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv1500']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv1500']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti p                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv1504']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv1504']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha o │                                                              │
 │                 │                           │ statných č                                    │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv1505']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv1505']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti k                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv1506']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv1506']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti r                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv1507']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv1507']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti r                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv1508']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv1508']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti p                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv1509']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv1509']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti r                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150a']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150a']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti h                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150b']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150b']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ brušnej o                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150c']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150c']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ inguináln                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150d']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150d']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ gluteálne                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150e']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150e']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti s                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150f']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150f']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti p                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150g']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150g']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha v │                                                              │
 │                 │                           │ oblasti n                                     │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv150x']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv150x']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, malá plocha,  │                                                              │
 │                 │                           │ ostatné                                       │                                                              │
-│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['kv15xx']                                         │
+│             242 │ vv.pocet*cena             │ Chirurgické vyčistenie rany s odstránením cho │ vv.kod in ['Kv15xx']                                         │
 │                 │                           │ rého tkaniva na koži a podkoží, ostatné       │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
