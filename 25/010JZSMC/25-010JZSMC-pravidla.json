@@ -80,13 +80,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
-			"if": "vv.kod in ['5l1951']",
-			"value": 902,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
 			"label": "Apendektómia, laparoskopicky pomocou slučky alebo ligatúry",
 			"if": "vv.kod in ['5n3610']",
 			"value": 602,
@@ -461,13 +454,6 @@
 			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t42h0']",
 			"value": 1057,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Artroskopická zväčšenie subakromiálneho priestoru",
-			"if": "vv.kod in ['5t443']",
-			"value": 438,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
