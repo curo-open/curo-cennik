@@ -11,7 +11,7 @@ Autor: curo.sk
 │ IDK = 1.53        │ NASTAVENIA IDK             │
 │ CB = 0            │ Cena bodu                  │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.0339   │ Cena bodu Nekapitovany(EU) │
+│ CBEU = 0.0339     │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8        │ AGTC                       │
 │ PP50 = 10         │ PP50                       │
 │ FOB = 2           │ FOB                        │
