@@ -5,19 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬──────────────────────────────┐
-│ Názov a hodnota │ Popis                        │
-├─────────────────┼──────────────────────────────┤
-│ IPP1 = 1.17     │ IPP1                         │
-│ IPP2 = 1.89     │ IPP2                         │
-│ IPP3 = 3.19     │ IPP3                         │
-│ ZCB = 0         │ Zvýhodnená cena bodu         │
-│ CBD = 0.5       │ Cena bodu doprava            │
-│ LIMIT = 0       │ Limit                        │
-│ CB = 0.019002   │ Cena bodu                    │
-│ CBP = 0         │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0     │ Cena bodu SVaLZ              │
-└─────────────────┴──────────────────────────────┘
+┌────────────────────┬──────────────────────────────┐
+│ Názov a hodnota    │ Popis                        │
+├────────────────────┼──────────────────────────────┤
+│ IPP1 = 1.17        │ IPP1                         │
+│ IPP2 = 1.89        │ IPP2                         │
+│ IPP3 = 3.19        │ IPP3                         │
+│ ZCB = 0            │ Zvýhodnená cena bodu         │
+│ CBD = 0.5          │ Cena bodu doprava            │
+│ LIMIT = 0          │ Limit                        │
+│ CB = 0.019002      │ Cena bodu                    │
+│ CBP = 0            │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.019002 │ Cena bodu SVaLZ              │
+└────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -40,9 +40,9 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*1.75*CB     │ Výkony - mentálná retardácia                  │ p.fs=='R'                                                    │
 │              58 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
-│        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
-│        0.022725 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
