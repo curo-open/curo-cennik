@@ -12,7 +12,7 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00861
 		},
-		"CBEUNK": {
+		"CBEU": {
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.03
 		},
@@ -75,7 +75,7 @@
 			"label": "Nekapitovaný EU - iné ako SVALZ",
 			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
@@ -89,7 +89,7 @@
 			"label": "Nekapitovaný - Neodkladna statostlivost",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
@@ -117,7 +117,7 @@
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{

@@ -11,7 +11,7 @@ Autor: curo.sk
 │ IDK = 0            │ NASTAVENIA IDK             │
 │ CB = 0.025402      │ Cena bodu                  │
 │ CBSVALZ = 0.009718 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.028704  │ Cena bodu Nekapitovany(EU) │
+│ CBEU = 0.028704    │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8         │ AGTC                       │
 │ PP50 = 10          │ PP50                       │
 └────────────────────┴────────────────────────────┘
@@ -41,7 +41,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný -  EU - SVALZ                    │ !p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'           │
-│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - EU -  iné ako SVALZ            │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
+│            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - EU -  iné ako SVALZ            │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - neodkladná starostlivosť - SVA │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
 │                 │                           │ LZ                                            │                                                              │
 │        0.025959 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná - iné ako SVALZ     │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │

@@ -11,7 +11,7 @@ Autor: curo.sk
 │ IDK = 0            │ NASTAVENIA IDK             │
 │ CB = 0             │ Cena bodu                  │
 │ CBSVALZ = 0.009718 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.028704  │ Cena bodu Nekapitovany(EU) │
+│ CBEU = 0.028704    │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8         │ AGTC                       │
 │ PP50 = 10          │ PP50                       │
 └────────────────────┴────────────────────────────┘
@@ -45,7 +45,7 @@ Autor: curo.sk
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
 │                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'           │
-│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
+│            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
 │        0.025959 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná - iné ako SVALZ     │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │

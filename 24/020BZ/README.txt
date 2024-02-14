@@ -11,7 +11,7 @@ Autor: curo.sk
 │ IDK = 1.232901     │ NASTAVENIA IDK             │
 │ CB = 0.025402      │ Cena bodu                  │
 │ CBSVALZ = 0.009718 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.028704  │ Cena bodu Nekapitovany(EU) │
+│ CBEU = 0.028704    │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8         │ AGTC                       │
 │ PP50 = 10          │ PP50                       │
 └────────────────────┴────────────────────────────┘
@@ -42,7 +42,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
 │        0.025959 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná - iné ako SVALZ     │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
-│            null │ vv.bodyCelkom*CBEUNK      │ Výkony - Bezdomovec, Cudzinec, EU             │ !p.kapitacia && p.typ in ['BE','CU','EU']                    │
+│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ !p.kapitacia && p.typ in ['BE','CU','EU']                    │
 │        0.008195 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
