@@ -12,7 +12,8 @@ Autor: curo.sk
 │ IPP2 = 1.89        │ IPP2                         │
 │ IPP3 = 3.19        │ IPP3                         │
 │ ZCB = 0            │ Zvýhodnená cena bodu         │
-│ CBD = 0.5          │ Cena bodu doprava            │
+│ CBD = 0.35         │ Cena bodu doprava do 60km    │
+│ CBD60plus = 0.175  │ Cena bodu doprava nad 60km   │
 │ LIMIT = 0          │ Limit                        │
 │ CB = 0.019002      │ Cena bodu                    │
 │ CBP = 0            │ Cena bodu preventívne výkony │
@@ -30,8 +31,8 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            0.35 │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava']                                        │
-│           0.175 │ vv.pocet*CBD              │ Doprava:  + 60 km                             │ vv.kod in ['doprava']                                        │
+│            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava']                                        │
+│            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava']                                        │
 │            null │ vv.bodyCelkom*1.75*CB     │ Výkony - imobilný                             │ p.fs=='I'                                                    │
 │            null │ vv.bodyCelkom*1.5*CB      │ Výkony - obmedzemá hybnosť                    │ p.fs=='H'                                                    │
 │            null │ vv.bodyCelkom*1.5*CB      │ Výkony - psychiatrická diagnóza, kompenzovaný │ p.fs=='FK'                                                   │

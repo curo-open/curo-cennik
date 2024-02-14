@@ -17,8 +17,12 @@
 			"value": 0
 		},
 		"CBD": {
-			"label": "Cena bodu doprava",
-			"value": 0.5
+			"label": "Cena bodu doprava do 60km",
+			"value": 0.35
+		},
+		"CBD60plus": {
+			"label": "Cena bodu doprava nad 60km",
+			"value": 0.175
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -42,15 +46,15 @@
 		{
 			"label": "Doprava:  do 60 km",
 			"if": "vv.kod in ['doprava']",
-			"value": 0.35,
+			"value": null,
 			"calc": "vv.pocet*CBD",
 			"instruction": null
 		},
 		{
 			"label": "Doprava:  + 60 km",
 			"if": "vv.kod in ['doprava']",
-			"value": 0.175,
-			"calc": "vv.pocet*CBD",
+			"value": null,
+			"calc": "vv.pocet*CBD60plus",
 			"instruction": null
 		},
 		{
