@@ -45,14 +45,14 @@
 	"vykon": [
 		{
 			"label": "Doprava:  do 60 km",
-			"if": "vv.kod in ['doprava']",
+			"if": "vv.kod in ['doprava'] && vv.pocet < 60",
 			"value": null,
 			"calc": "vv.pocet*CBD",
 			"instruction": null
 		},
 		{
 			"label": "Doprava:  + 60 km",
-			"if": "vv.kod in ['doprava']",
+			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
 			"value": null,
 			"calc": "vv.pocet*CBD60plus",
 			"instruction": null
