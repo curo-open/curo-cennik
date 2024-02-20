@@ -155,8 +155,8 @@
 		{
 			"label": "Nekapitovaný - Neodkladna statostlivost",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 0.00973,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -385,29 +385,29 @@
 		},
 		{
 			"label": "Nekapitovaný EU - SVALZ výkon",
-			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
-			"value": null,
+			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'",
+			"value": 0.009255,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný EU - iné ako SVALZ",
 			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
-			"value": null,
+			"value": 0.0254,
 			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
 			"label": "EÚ - SVALZ výkon",
 			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
-			"value": null,
+			"value": 0.009255,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "EÚ - iné ako SVALZ",
 			"if": "p.typ in ['EU'] && vv.typ!='SVaLZ'",
-			"value": null,
+			"value": 0.0254,
 			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		}
