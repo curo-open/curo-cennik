@@ -300,6 +300,13 @@
 			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Vykony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

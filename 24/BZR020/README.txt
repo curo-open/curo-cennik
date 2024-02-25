@@ -71,6 +71,7 @@ Autor: curo.sk
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │               5 │ vv.pocet*cena             │ Stratifikacia CMP (H0006)                     │ vv.kod in ['H0006']                                          │
+│            null │ vv.bodyCelkom*CB          │ Vykony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

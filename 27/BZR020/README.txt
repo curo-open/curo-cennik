@@ -96,6 +96,7 @@ Autor: curo.sk
 │                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Vykony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
