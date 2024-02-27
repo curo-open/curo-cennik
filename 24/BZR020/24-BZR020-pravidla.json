@@ -148,6 +148,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 4",
+			"if": "vv.kod in ['4']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
 			"value": 0.027,
@@ -299,6 +306,13 @@
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vykony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
 	],

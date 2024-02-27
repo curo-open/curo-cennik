@@ -178,6 +178,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 4",
+			"if": "vv.kod in ['4']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
 			"value": null,
