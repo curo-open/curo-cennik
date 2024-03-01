@@ -40,7 +40,7 @@ Autor: curo.sk
 │             7.6 │ vv.pocet*cena             │ Výkon 62U                                     │ vv.kod in ['62U','62u']                                      │
 │            5.91 │ vv.pocet*cena             │ Výkon 63U                                     │ vv.kod in ['63U','63u']                                      │
 │        0.005311 │ vv.bodyCelkom*cena        │ Denzitometria                                 │ vv.kod in ['5331']                                           │
-│            null │ vv.bodyCelkom*CB          │ Mamografia                                    │ vv.kod in ['5092','5092a']                                   │
+│            null │ vv.bodyCelkom*CBEU        │ Mamografia                                    │ vv.kod in ['5092','5092a']                                   │
 │            null │ vv.bodyCelkom*CB50XX      │ RTG                                           │ vv.kod in ['5010','5011','5012','5015','5016','5020','5021', │
 │                 │                           │                                               │ '5022','5023','5024','5025','5030','5031','5032','5033','503 │
 │                 │                           │                                               │ 5','5050','5051','5052','5053','5056','5060','5061','5062',' │

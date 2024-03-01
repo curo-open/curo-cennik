@@ -2,7 +2,11 @@
 	"params": {
 		"CBD": {
 			"label": "Cena bodu doprava",
-			"value": 0.5
+			"value": 0.35
+		},
+		"CBD60plus": {
+			"label": "Cena bodu doprava nad 60km",
+			"value": 0.15
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -22,13 +26,13 @@
 			"label": "Doprava:  + 60 km",
 			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
 			"value": 0.175,
-			"calc": "vv.pocet*CBD",
+			"calc": "vv.pocet*CBD60plus",
 			"instruction": null
 		},
 		{
 			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
 			"if": "vv.kod in ['25M']",
-			"value": 61,
+			"value": 58,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
