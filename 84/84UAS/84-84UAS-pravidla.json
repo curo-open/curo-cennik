@@ -95,7 +95,7 @@
 			"label": "Mamografia",
 			"if": "vv.kod in ['5092','5092a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{
