@@ -2,23 +2,19 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 1.04
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.026
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.015
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.0339
-		},
-		"CBEK": {
-			"label": "Cena bodu el. výkony",
-			"value": 0.027
+			"value": 0.03
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -39,30 +35,30 @@
 	},
 	"pacient": [
 		{
-			"label": "vek od 18 do 50",
+			"label": "vek od 18 do 51",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 3.07,
+			"value": 2.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 51 do 60",
+			"label": "vek od 51 do 61",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 3.53,
+			"value": 3.03,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 61 do 80",
+			"label": "vek od 61 do 81",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 5.52,
+			"value": 4.15,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 7.2,
+			"value": 4.7,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -79,14 +75,14 @@
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"calc": "vv.bodyCelkom*CBSVLAZ",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEK",
+			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		},
 		{
@@ -101,13 +97,6 @@
 			"if": "vv.kod in ['11a']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEK",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 4",
-			"if": "vv.kod in ['4']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -127,21 +116,21 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 28.83,
-			"calc": "vv.pocet*cena",
+			"value": 0.06,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zisťovanie cukru v krvi",
 			"if": "vv.kod in ['3671']",
-			"value": 0.079,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -204,119 +193,119 @@
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00973,
+			"value": 0.0082,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571A','4571a']",
-			"value": 0.015,
-			"calc": "vv.bodyCelkom*cena",
+			"value": 4.5,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29']",
-			"value": 0.0339,
+			"value": 0.03,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Vykony pocas navstevy",
 			"if": "d.vv|ma('kod in [\"25\",\"26\",\"29\"]') && vv.kod in ['4','5','6','30','40','41','64']",
-			"value": 0.0339,
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "TOKS pozitívny",
 			"if": "vv.kod in ['159a']",
-			"value": 12,
+			"value": 9.68,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "TOKS negatívny",
 			"if": "vv.kod in ['159z']",
-			"value": 12,
+			"value": 9.68,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "TOKS znehodnotený",
 			"if": "vv.kod in ['159x']",
-			"value": 12,
+			"value": 9.68,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.079,
+			"value": 0.065,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 17,
+			"value": 16,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG (5702Z)",
 			"if": "vv.kod in ['5702Z']",
-			"value": 5.36,
+			"value": 4.74,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG (5702)",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00973,
+			"value": 0.00861,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "INR",
 			"if": "vv.kod in ['3842a','H0007' ]",
-			"value": 5.88,
+			"value": 5.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "24h meranie tlaku",
 			"if": "vv.kod in ['5715']",
-			"value": 18.65,
+			"value": 16.5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301']",
-			"value": 0.01044,
+			"value": 0.00924,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "ABI (H0008)",
 			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
+			"value": 6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Kognitívny deficit",
 			"if": "vv.kod in ['163']",
-			"value": 6.78,
+			"value": 6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
 			"if": "vv.kod in ['10','H0003','H0004']",
-			"value": 13.56,
+			"value": 12,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -365,21 +354,21 @@
 		{
 			"label": "Výplach zvukovodu (jedno ucho)",
 			"if": "vv.kod in ['1540']",
-			"value": 1.13,
+			"value": 1,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Stratifikácia kardiovaskulárneho rizika",
 			"if": "vv.kod in ['H0006']",
-			"value": 5.65,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Komplexné vyšetrenie poistenca pri prevzatí dospelej osoby do zdravotnej starostlivosti",
 			"if": "vv.kod in ['60']",
-			"value": 5.09,
+			"value": null,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -400,7 +389,7 @@
 		{
 			"label": "Delegovaný odber krvi",
 			"if": "vv.kod in ['250D']",
-			"value": 1.19,
+			"value": 1.05,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -431,13 +420,6 @@
 			"value": 0.020995,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
-		},
-		{
-			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
-			"if": "vv.kod in ['62a']",
-			"value": 20,
-			"calc": "vv.pocet*cena",
-			"instruction": null
 		}
 	],
 	"kontrola": [],
@@ -452,18 +434,6 @@
 			{
 				"cond": "",
 				"value": 390
-			}
-		],
-		"5300": [
-			{
-				"cond": "",
-				"value": 1700
-			}
-		],
-		"5301": [
-			{
-				"cond": "",
-				"value": 600
 			}
 		],
 		"159a": [
@@ -505,5 +475,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "VLD"
+	"title": "VLDD"
 }

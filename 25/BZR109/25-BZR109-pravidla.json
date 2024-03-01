@@ -22,11 +22,7 @@
 		},
 		"LIMIT": {
 			"label": "Limit",
-			"value": 75900
-		},
-		"EL_POBOCKA": {
-			"label": "Používa el. pobočku ?",
-			"value": 1
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu",
@@ -44,6 +40,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Plánovanie terapeutických postupov",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
@@ -58,6 +61,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 5,
@@ -65,59 +75,59 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 15d",
+			"label": "Odber biol.materiálu",
+			"if": "vv.kod in ['299a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie RTG dokumentácie ",
 			"if": "vv.kod in ['15d']",
 			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Elektronická komunikácia",
-			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon 5153C",
+			"if": "vv.kod in ['5153C']",
+			"value": 150,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5330','5331','5332','5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5796','5799']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
-			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5796','5799']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
-			"instruction": null
-		},
-		{
-			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5793','5795','5794']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 802, 813, 819d, 803, 804",
-			"if": "vv.kod in ['802','813','819d','803','804']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 260a",
-			"if": "vv.kod in ['260a']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkony EMG",
-			"if": "vv.kod in ['810','809','811','812','819']",
-			"value": 0.02814,
+			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
+			"if": "vv.kod in ['158','158A','158B','158C','158D','159c']",
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4L03003, 4L03004",
+			"if": "vv.kod in ['4L03003','4L03004']",
+			"value": 94,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -157,21 +167,7 @@
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5796','5799'] && p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
-			"instruction": null
-		},
-		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "vv.typ!='SVaLZ' && p.typ in ['BE','CU','EU']",
+			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -209,37 +205,37 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 620
+				"value": 420
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 400
+				"value": 270
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 210
 			}
 		],
 		"65": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 0
 			}
 		],
 		"66": [
 			{
 				"cond": "",
-				"value": 320
+				"value": 0
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 200
+				"value": 0
 			}
 		],
 		"70": [
@@ -248,34 +244,16 @@
 				"value": 40
 			}
 		],
-		"802": [
+		"158": [
 			{
 				"cond": "",
-				"value": 750
+				"value": 390
 			}
 		],
-		"803": [
+		"5302": [
 			{
 				"cond": "",
-				"value": 900
-			}
-		],
-		"804": [
-			{
-				"cond": "",
-				"value": 900
-			}
-		],
-		"813": [
-			{
-				"cond": "",
-				"value": 60
-			}
-		],
-		"819d": [
-			{
-				"cond": "",
-				"value": 600
+				"value": 1000
 			}
 		],
 		"1b": [
@@ -295,21 +273,9 @@
 				"cond": "",
 				"value": 210
 			}
-		],
-		"260a": [
-			{
-				"cond": "",
-				"value": 150
-			}
-		],
-		"15d": [
-			{
-				"cond": "",
-				"value": 150
-			}
 		]
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "neurolog"
+	"title": "urologia"
 }
