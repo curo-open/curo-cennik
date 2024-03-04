@@ -22,7 +22,7 @@
 		},
 		"CBD60plus": {
 			"label": "Cena bodu doprava nad 60km",
-			"value": 0.175
+			"value": 0.15
 		},
 		"LIMIT": {
 			"label": "Limit",
