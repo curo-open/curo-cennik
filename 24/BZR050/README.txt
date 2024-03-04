@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
 │ LIMIT = 1140000    │ Limit           │
-│ CB = 0.028058      │ Cena bodu       │
+│ CB = 0.034528      │ Cena bodu       │
 │ CBV = 0.033477     │ Cena bodu vv=60 │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
 └────────────────────┴─────────────────┘
