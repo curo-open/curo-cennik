@@ -27,6 +27,10 @@
 		"X03501": {
 			"label": "X03501",
 			"value": 32
+		},
+		"X03853": {
+			"label": "X03853",
+			"value": 20
 		}
 	},
 	"pacient": [],
@@ -78,6 +82,13 @@
 			"if": "vv.kod=='X03501'",
 			"value": null,
 			"calc": "X03501",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky  - Bioptická ihla",
+			"if": "vv.kod=='X03853'",
+			"value": null,
+			"calc": "X03853",
 			"instruction": null
 		},
 		{

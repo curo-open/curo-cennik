@@ -13,6 +13,7 @@ Autor: curo.sk
 │ CBSVALZ = 0.0073 │ Cena bodu SVALZ │
 │ CBEU = 0.007838  │ Cena bodu EU    │
 │ X03501 = 32      │ X03501          │
+│ X03853 = 20      │ X03853          │
 └──────────────────┴─────────────────┘
 
 
@@ -38,6 +39,7 @@ Autor: curo.sk
 │                 │                           │                                               │ 8','5153a']                                                  │
 │              30 │ vv.pocet*cena             │ Skríningová mamografia                        │ vv.kod in ['1301','1301a','1301b','1301c','1301d','1301e']   │
 │            null │ X03501                    │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='X03501'                                             │
+│            null │ X03853                    │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='X03853'                                             │
 │            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.typ!='SVaLZ'                                              │

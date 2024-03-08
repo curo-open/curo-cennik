@@ -1,0 +1,81 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.017
+		},
+		"CBV": {
+			"label": "Cena bodu ",
+			"value": 0.0385
+		},
+		"CBD": {
+			"label": "Cena bodu doprava",
+			"value": 0.035
+		},
+		"CBD60plus": {
+			"label": "Cena bodu doprava nad 60km",
+			"value": 0.175
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Doprava:  do 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet < 60",
+			"value": null,
+			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "Doprava:  + 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
+			"value": null,
+			"calc": "vv.pocet*CBD60plus",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
+			"if": "vv.kod in ['25m']",
+			"value": 61,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 3419, 3420, 3439, 3440, 3441 a 3447 ",
+			"if": "vv.kod in ['3419','3420','3439','3440','3441','3447']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBV",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "zupa hospic"
+}
