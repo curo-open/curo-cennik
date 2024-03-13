@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -728,6 +726,7 @@
       <workItem from="1709979653720" duration="595000" />
       <workItem from="1710145837280" duration="598000" />
       <workItem from="1710151205752" duration="598000" />
+      <workItem from="1710252621125" duration="134000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1072,7 +1071,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="412" />
+    <option name="localTasksCounter" value="413" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1116,7 +1115,6 @@
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- test removed speacil fa for 5331" />
     <MESSAGE value="- klimek fix" />
     <MESSAGE value="- added 86 and 87" />
     <MESSAGE value="- added 86 a 87" />
@@ -1141,7 +1139,8 @@
     <MESSAGE value="- bzr" />
     <MESSAGE value="- updates" />
     <MESSAGE value="- updates added hospic zupa" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates added hospic zupa" />
+    <MESSAGE value="- update" />
+    <option name="LAST_COMMIT_MESSAGE" value="- update" />
   </component>
   <component name="masterDetails">
     <states>

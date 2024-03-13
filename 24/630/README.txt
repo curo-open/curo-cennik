@@ -13,7 +13,7 @@ Autor: curo.sk
 │ IPP3 = 3.19        │ IPP3                         │
 │ ZCB = 0            │ Zvýhodnená cena bodu         │
 │ CBD = 0.35         │ Cena bodu doprava do 60km    │
-│ CBD60plus = 0.15   │ Cena bodu doprava nad 60km   │
+│ CBD60plus = 0.175  │ Cena bodu doprava nad 60km   │
 │ LIMIT = 0          │ Limit                        │
 │ CB = 0.019002      │ Cena bodu                    │
 │ CBP = 0            │ Cena bodu preventívne výkony │
