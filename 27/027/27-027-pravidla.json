@@ -4,14 +4,6 @@
 			"label": "Cena bodu ",
 			"value": 0.0335
 		},
-		"CBO": {
-			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.043
-		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00973

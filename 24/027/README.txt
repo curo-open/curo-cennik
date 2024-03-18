@@ -5,16 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────────┬──────────────────────────────┐
-│ Názov a hodnota      │ Popis                        │
-├──────────────────────┼──────────────────────────────┤
-│ LIMIT = 1140000      │ Limit                        │
-│ CB = 0.026621        │ Cena bodu                    │
-│ CBP = 0.0462         │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.009737   │ Cena bodu SVaLZ              │
-│ CBSVALZSP = 0.017175 │ Cena bodu SVaLZ SP           │
-│ PP50 = 10            │ PP50                         │
-└──────────────────────┴──────────────────────────────┘
+┌──────────────────────┬────────────────────┐
+│ Názov a hodnota      │ Popis              │
+├──────────────────────┼────────────────────┤
+│ LIMIT = 0            │ Limit              │
+│ CB = 0.033881        │ Cena bodu          │
+│ CBSVALZ = 0.009737   │ Cena bodu SVaLZ    │
+│ CBSVALZSP = 0.017175 │ Cena bodu SVaLZ SP │
+└──────────────────────┴────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -33,9 +31,6 @@ Autor: curo.sk
 │          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
-│        0.008195 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
-│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
-│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

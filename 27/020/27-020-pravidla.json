@@ -69,13 +69,6 @@
 	],
 	"vykon": [
 		{
-			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
-			"instruction": null
-		},
-		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
 			"value": null,
@@ -430,6 +423,13 @@
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{

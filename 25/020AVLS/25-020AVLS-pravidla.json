@@ -451,14 +451,14 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
+			"label": "Nekapitovaný EU - SVALZ výkon",
 			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*SVALZ",
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - iné ako SVALZ",
+			"label": "Nekapitovaný EU - iné ako SVALZ",
 			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEU",

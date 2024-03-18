@@ -127,13 +127,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
-			"instruction": null
-		},
-		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
 			"value": 0.008195,
@@ -292,6 +285,13 @@
 			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
 			"value": 0.020995,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{

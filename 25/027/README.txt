@@ -5,20 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────────┬──────────────────────────────┐
-│ Názov a hodnota      │ Popis                        │
-├──────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.8           │ IPP1                         │
-│ IPP2 = 2.9           │ IPP2                         │
-│ IPP3 = 4.9           │ IPP3                         │
-│ PP50 = 10            │ PP50                         │
-│ LIMIT = 75900        │ Limit                        │
-│ EL_POBOCKA = 1       │ Používa el. pobočku ?        │
-│ CB = 0.0252          │ Cena bodu                    │
-│ CBP = 0.041          │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.00908    │ Cena bodu SVaLZ              │
-│ CBSVALZSP = 0.013166 │ Cena bodu SVaLZ SP           │
-└──────────────────────┴──────────────────────────────┘
+┌──────────────────────┬───────────────────────┐
+│ Názov a hodnota      │ Popis                 │
+├──────────────────────┼───────────────────────┤
+│ IPP1 = 2.24          │ IPP1                  │
+│ IPP2 = 3.6           │ IPP2                  │
+│ IPP3 = 6.09          │ IPP3                  │
+│ PP50 = 9.09          │ PP50                  │
+│ LIMIT = 0            │ Limit                 │
+│ EL_POBOCKA = 1       │ Používa el. pobočku ? │
+│ CB = 0.0318          │ Cena bodu             │
+│ CBSVALZ = 0.01026    │ Cena bodu SVaLZ       │
+│ CBSVALZSP = 0.016402 │ Cena bodu SVaLZ SP    │
+└──────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -39,14 +38,11 @@ Autor: curo.sk
 │                 │                           │                                               │ ','530','531']                                               │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
-│        0.008473 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
-│            2.98 │ vv.pocet*cena             │ SVALZ výkony (250X)                           │ vv.kod in ['250X']                                           │
-│          0.0202 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
+│               5 │ vv.pocet*cena             │ SVALZ výkony (250X)                           │ vv.kod in ['250X']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -55,22 +51,13 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             130 │ 512                                                                                                       │                           │
-│             250 │ 513                                                                                                       │                           │
-│             180 │ 516                                                                                                       │                           │
-│             350 │ 518                                                                                                       │                           │
-│             290 │ 522                                                                                                       │                           │
-│             180 │ 530                                                                                                       │                           │
-│             220 │ 531                                                                                                       │                           │
-│             300 │ 532                                                                                                       │                           │
-│             180 │ 540                                                                                                       │                           │
-│             350 │ 541                                                                                                       │                           │
-│             300 │ 542                                                                                                       │                           │
-│             220 │ 509a                                                                                                      │                           │
-│             450 │ 514a                                                                                                      │                           │
-│             145 │ 523a                                                                                                      │                           │
-│             450 │ 533a                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
