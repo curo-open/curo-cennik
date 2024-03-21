@@ -87,7 +87,7 @@
 			"label": "Výkon 629b",
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

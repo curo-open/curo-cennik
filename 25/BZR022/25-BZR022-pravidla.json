@@ -169,7 +169,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Preventívne prehliadky",
+			"label": "1.preventívna prehliadka u VLDD",
 			"if": "vv.kod in ['142']",
 			"value": 0.11187,
 			"calc": "vv.bodyCelkom*cena",
@@ -294,10 +294,6 @@
 			}
 		],
 		"160": [
-			{
-				"cond": "",
-				"value": 390
-			},
 			{
 				"cond": "",
 				"value": 390

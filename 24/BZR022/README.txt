@@ -37,11 +37,11 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['EU']                              │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
 │            0.78 │ vv.bodyCelkom*cena        │ Výkon 1                                       │ !p.kapitacia && vv.kod in ['1']                              │
-│            2.88 │ vv.bodyCelkom*cena        │ Výkon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
-│            3.85 │ vv.bodyCelkom*cena        │ Výkon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
-│            1.15 │ vv.bodyCelkom*cena        │ Výkon 250                                     │ !p.kapitacia && vv.kod in ['250']                            │
-│            8.63 │ vv.bodyCelkom*cena        │ Výkon 4                                       │ vv.kod in ['4']                                              │
-│           12.26 │ vv.bodyCelkom*cena        │ Výkon 8                                       │ vv.kod in ['8']                                              │
+│            2.88 │ vv.pocet*cena             │ Výkon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
+│            3.85 │ vv.pocet*cena             │ Výkon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
+│            1.15 │ vv.pocet*cena             │ Výkon 250                                     │ !p.kapitacia && vv.kod in ['250']                            │
+│            8.63 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
+│           12.26 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
 │           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b']                                    │
 │        0.110198 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['142']                                            │

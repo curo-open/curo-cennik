@@ -48,7 +48,7 @@ Autor: curo.sk
 │            0.08 │ vv.bodyCelkom*cena        │ Výkon 950,951,952,953                         │ vv.kod in ['950','951','952','953']                          │
 │           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
-│         0.11187 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['142']                                            │
+│         0.11187 │ vv.bodyCelkom*cena        │ 1.preventívna prehliadka u VLDD               │ vv.kod in ['142']                                            │
 │            0.08 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
 │                 │                           │                                               │ b','146c','148','148a','148b','148c','149','149a','149b','14 │
 │                 │                           │                                               │ 9c','149d','149f']                                           │
@@ -76,7 +76,6 @@ Autor: curo.sk
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             350 │ 142                                                                                                       │                           │
-│             390 │ 160                                                                                                       │                           │
 │             390 │ 160                                                                                                       │                           │
 │             390 │ 950                                                                                                       │                           │
 │             250 │ 951                                                                                                       │                           │

@@ -36,7 +36,7 @@ Autor: curo.sk
 │          0.1035 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['360','361','363','364','365','366','367']        │
 │          0.0226 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['5793','5794','5795']                             │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
-│            10.2 │ vv.bodyCelkom*cena        │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
+│            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
 │           0.055 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │           0.055 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │

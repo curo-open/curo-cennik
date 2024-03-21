@@ -95,35 +95,35 @@
 			"label": "Výkon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": 2.88,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
 			"if": "!p.kapitacia && vv.kod in ['8']",
 			"value": 3.85,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 250",
 			"if": "!p.kapitacia && vv.kod in ['250']",
 			"value": 1.15,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4",
 			"if": "vv.kod in ['4']",
 			"value": 8.63,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
 			"if": "vv.kod in ['8']",
 			"value": 12.26,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

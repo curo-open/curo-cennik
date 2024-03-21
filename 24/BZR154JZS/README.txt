@@ -1,6 +1,6 @@
-                                                                    ========================
-                                                                    Cenník gastroenterologia
-                                                                    ========================
+                                                                  ===========================
+                                                                  Cenník pediatrická gastroen
+                                                                  ===========================
 
 Autor: curo.sk
 
