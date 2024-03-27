@@ -12,9 +12,9 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00973
 		},
-		"CBUSG": {
-			"label": "Cena bodu USG",
-			"value": 0.01044
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -30,7 +30,7 @@
 		},
 		"CV": {
 			"label": "Výkony 60,62,63",
-			"value": 0
+			"value": 0.0335
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -105,8 +105,8 @@
 		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod==['60','62','63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CV",
+			"value": 0.0335,
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{

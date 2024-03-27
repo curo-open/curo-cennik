@@ -5,18 +5,17 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────┐
-│ Názov a hodnota   │ Popis              │
-├───────────────────┼────────────────────┤
-│ CB = 0.0335       │ Cena bodu          │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ    │
-│ CBSVALZSP = 0.008 │ Cena bodu SVaLZ SP │
-│ PP50 = 10         │ PP50               │
-│ IPP1 = 3.5        │ IPP1               │
-│ IPP2 = 3          │ IPP2               │
-│ IPP3 = 2          │ IPP3               │
-│ LIMIT = 0         │ Limit              │
-└───────────────────┴────────────────────┘
+┌─────────────────────┬────────────────────┐
+│ Názov a hodnota     │ Popis              │
+├─────────────────────┼────────────────────┤
+│ CB = 0.0335         │ Cena bodu          │
+│ CBSVALZ = 0.01032   │ Cena bodu SVaLZ    │
+│ CBSVALZSP = 0.01662 │ Cena bodu SVaLZ SP │
+│ IPP1 = 3.5          │ IPP1               │
+│ IPP2 = 3            │ IPP2               │
+│ IPP3 = 2            │ IPP3               │
+│ LIMIT = 0           │ Limit              │
+└─────────────────────┴────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -29,26 +28,23 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            9.83 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            6.32 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['62']                                             │
-│            4.91 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['63']                                             │
-│            9.41 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['60r']                                            │
 │            4.56 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['Y0023']                                          │
-│          0.0224 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['65']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60r']                                            │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65']                                             │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│             129 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','522','530','531']      │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
-│        0.013166 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['5702','5715','5716']                             │
-│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
+│         0.01633 │ vv.bodyCelkom*cena        │ Respiračná fyzioterapia                       │ vv.kod in ['3F00091','3F00091','3F00091']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│               0 │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -57,8 +53,17 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
-│             100 │ 65                                                                                                        │                           │
+│             420 │ 60                                                                                                        │                           │
+│             270 │ 62                                                                                                        │                           │
+│             210 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
+│             480 │ 60r                                                                                                       │                           │
+│             450 │ 3F00091                                                                                                   │                           │
+│             360 │ 3F00092                                                                                                   │                           │
+│             450 │ 3F00093                                                                                                   │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

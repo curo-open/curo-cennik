@@ -96,6 +96,27 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 1A03057",
+			"if": "vv.kod in ['1A03057']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1B08098",
+			"if": "vv.kod in ['1B08098']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1B08082",
+			"if": "vv.kod in ['1B08082']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,
@@ -258,6 +279,24 @@
 			{
 				"cond": "",
 				"value": 150
+			}
+		],
+		"1A03057": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"1B08098": [
+			{
+				"cond": "",
+				"value": 120
+			}
+		],
+		"1B08082": [
+			{
+				"cond": "",
+				"value": 180
 			}
 		]
 	},

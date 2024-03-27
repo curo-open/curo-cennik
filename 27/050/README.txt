@@ -11,11 +11,11 @@ Autor: curo.sk
 │ CB = 0.0335       │ Cena bodu                    │
 │ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
-│ CBUSG = 0.01044   │ Cena bodu USG                │
+│ NCB = 0           │ Navysena cena bodu           │
 │ IPP1 = 3.5        │ IPP1                         │
 │ IPP2 = 3          │ IPP2                         │
 │ IPP3 = 2          │ IPP3                         │
-│ CV = 0            │ Výkony 60,62,63              │
+│ CV = 0.0335       │ Výkony 60,62,63              │
 │ LIMIT = 0         │ Limit                        │
 └───────────────────┴──────────────────────────────┘
 
@@ -40,7 +40,7 @@ Autor: curo.sk
 │          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
-│            null │ vv.bodyCelkom*CV          │ Výkony 60,62,63                               │ vv.kod==['60','62','63']                                     │
+│          0.0335 │ vv.bodyCelkom*(cena+NCB)  │ Výkony 60,62,63                               │ vv.kod==['60','62','63']                                     │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            10.2 │ vv.pocet*cena             │ Antigénový test                               │ vv.kod in ['629b']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │

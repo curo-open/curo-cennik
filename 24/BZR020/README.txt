@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────┐
 │ Názov a hodnota    │ Popis                       │
 ├────────────────────┼─────────────────────────────┤
-│ IDK = NaN          │ NASTAVENIA IDK              │
+│ IDK = 0.294273     │ NASTAVENIA IDK              │
 │ CB = 0.028704      │ Cena bodu Kapitovany SK/EU  │
 │ CBSVALZ = 0.009718 │ Cena bodu SVaLZ             │
 │ CBEUNK = 0.025959  │ Cena bodu Nekapitovany      │

@@ -39,6 +39,9 @@ Autor: curo.sk
 │        0.005311 │ vv.bodyCelkom*cena        │ Osteodenzitometria                            │ vv.kod in ['5330','5331','5332']                             │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1A03057                                 │ vv.kod in ['1A03057']                                        │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1B08098                                 │ vv.kod in ['1B08098']                                        │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1B08082                                 │ vv.kod in ['1B08082']                                        │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -73,6 +76,9 @@ Autor: curo.sk
 │             210 │ 11a                                                                                                       │                           │
 │            1300 │ 1A02072                                                                                                   │                           │
 │             150 │ 15d                                                                                                       │                           │
+│             320 │ 1A03057                                                                                                   │                           │
+│             120 │ 1B08098                                                                                                   │                           │
+│             180 │ 1B08082                                                                                                   │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

@@ -6,15 +6,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01032
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
-			"value": 0.008
-		},
-		"PP50": {
-			"label": "PP50",
-			"value": 10
+			"value": 0.01662
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -37,34 +33,6 @@
 	"vykon": [
 		{
 			"label": "ŠAS",
-			"if": "vv.kod in ['60']",
-			"value": 9.83,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['62']",
-			"value": 6.32,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['63']",
-			"value": 4.91,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['60r']",
-			"value": 9.41,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
 			"if": "vv.kod in ['Y0023']",
 			"value": 4.56,
 			"calc": "vv.pocet*cena",
@@ -72,22 +40,43 @@
 		},
 		{
 			"label": "ŠAS",
+			"if": "vv.kod in ['60']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['62']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60r']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
 			"if": "vv.kod in ['65']",
-			"value": 0.0224,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": 0.006666,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Preventívne výkony",
-			"if": "vv.kod in ['763sp','763sn','763pp','763pn']",
-			"value": 129,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -106,17 +95,10 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['5702','5715','5716']",
-			"value": 0.013166,
+			"label": "Respiračná fyzioterapia",
+			"if": "vv.kod in ['3F00091','3F00091','3F00091']",
+			"value": 0.01633,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie Covid 252L",
-			"if": "vv.kod in ['252L']",
-			"value": 10,
-			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -138,13 +120,6 @@
 			"if": "vv.kod=='IPP3'",
 			"value": null,
 			"calc": "IPP3",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='PP50'",
-			"value": null,
-			"calc": "PP50",
 			"instruction": null
 		},
 		{
@@ -171,7 +146,7 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0,
+			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
@@ -184,16 +159,70 @@
 				"value": 160
 			}
 		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
 		"65": [
 			{
 				"cond": "",
-				"value": 100
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"60r": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		],
+		"3F00091": [
+			{
+				"cond": "",
+				"value": 450
+			}
+		],
+		"3F00092": [
+			{
+				"cond": "",
+				"value": 360
+			}
+		],
+		"3F00093": [
+			{
+				"cond": "",
+				"value": 450
 			}
 		],
 		"1b": [
