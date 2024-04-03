@@ -1,13 +1,15 @@
-                                                                    ========================
-                                                                    Cenník gastroenterologia
-                                                                    ========================
+                                                                       =================
+                                                                       Cenník rádiológia
+                                                                       =================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────┐
-│ Názov a hodnota │ Popis │
-└─────────────────┴───────┘
+┌───────────────────┬────────────────────────────────┐
+│ Názov a hodnota   │ Popis                          │
+├───────────────────┼────────────────────────────────┤
+│ ZA_BOD = 0.023236 │ Cena posudkového lekára za bod │
+└───────────────────┴────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -20,17 +22,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│             391 │ vv.pocet*cena             │ Výkon 9109                                    │ vv.kod in ['9109'] || vv.k in ['9109'] || vv.k27 in ['9109'] │
-│             302 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k27 in ['8586'] │
-│             449 │ vv.pocet*cena             │ Výkon 9104                                    │ vv.kod in ['9104'] || vv.k in ['9104'] || vv.k27 in ['9104'] │
-│             391 │ vv.pocet*cena             │ Výkon 9107                                    │ vv.kod in ['9107'] || vv.k in ['9107'] || vv.k27 in ['9107'] │
-│             370 │ vv.pocet*cena             │ Výkon 9105                                    │ vv.kod in ['9105'] || vv.k in ['9105'] || vv.k27 in ['9105'] │
-│             373 │ vv.pocet*cena             │ Výkon 9108                                    │ vv.kod in ['9108'] || vv.k in ['9108'] || vv.k27 in ['9108'] │
-│             400 │ vv.pocet*cena             │ Výkon 9106                                    │ vv.kod in ['9106'] || vv.k in ['9106'] || vv.k27 in ['9106'] │
-│             388 │ vv.pocet*cena             │ Výkon 9101                                    │ vv.kod in ['9101'] || vv.k in ['9101'] || vv.k27 in ['9101'] │
-│             373 │ vv.pocet*cena             │ Výkon 9103                                    │ vv.kod in ['9103'] || vv.k in ['9103'] || vv.k27 in ['9103'] │
-│             116 │ vv.pocet*cena             │ Výkon 8547                                    │ vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547'] │
-│            null │ vv.pocet*cena             │ Výkon 8502                                    │ vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547'] │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.DPN']                        │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.TDOS']                       │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.UDOS']                       │
+│            null │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

@@ -12,6 +12,10 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.00973
 		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.0261
+		},
 		"IPP4": {
 			"label": "IPP4",
 			"value": 5.5
@@ -30,8 +34,8 @@
 		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0385,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -155,9 +159,9 @@
 		},
 		{
 			"label": "Anestézia",
-			"if": "vv.kod in ['81']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"if": "vv.kod in ['81','80','81a','85','85a','86','86a','87','87a']",
+			"value": 0.0305,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

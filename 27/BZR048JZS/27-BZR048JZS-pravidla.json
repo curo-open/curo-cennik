@@ -71,6 +71,13 @@
 			"value": 116,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkon 8502",
+			"if": "vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547']",
+			"value": null,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
