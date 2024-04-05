@@ -67,8 +67,15 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1400,1410,1500,1540,1544a,1590,1591,1595a,1596,1597, ",
-			"if": "vv.kod in ['1400','1410','1500','1540','1544a','1590','1591','1595a','1596','1597']",
+			"label": "Výkon 1400,1410,1500,1540,1544a",
+			"if": "vv.kod in ['1400','1410','1500','1540','1544a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1590,1591,1595a,1596,1597",
+			"if": "vv.kod in ['1590','1591','1595a','1596','1597']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null

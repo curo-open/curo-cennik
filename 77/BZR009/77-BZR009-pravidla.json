@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.04
+			"value": 0.045
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.06
+			"value": 0.07
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",

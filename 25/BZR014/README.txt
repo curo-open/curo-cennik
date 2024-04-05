@@ -33,8 +33,8 @@ Autor: curo.sk
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5316']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon 1400,1410,1500,1540,1544a,1590,1591,159 │ vv.kod in ['1400','1410','1500','1540','1544a','1590','1591' │
-│                 │                           │ 5a,1596,1597,                                 │ ,'1595a','1596','1597']                                      │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1400,1410,1500,1540,1544a               │ vv.kod in ['1400','1410','1500','1540','1544a']              │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1590,1591,1595a,1596,1597               │ vv.kod in ['1590','1591','1595a','1596','1597']              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 401 - Povrchová anestézia               │ vv.kod in ['401']                                            │
 │            null │ vv.bodyCelkom*cena        │ Výkon 15b - Zhodnotenie výsledkov             │ vv.kod in ['15b']                                            │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d - Zhodnotenie rtg dokumentácie      │ vv.kod in ['15d']                                            │

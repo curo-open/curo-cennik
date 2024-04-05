@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.035
+			"value": 0.05
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.015
+			"value": 0.0095
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
@@ -35,30 +35,37 @@
 	},
 	"pacient": [
 		{
-			"label": "vek od 18 do 51",
-			"if": "p|vekMedzi(18, 51)",
-			"value": 2.83,
+			"label": "vek do 1 roka",
+			"if": "p|vekDo (1)",
+			"value": 14.1,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 51 do 61",
-			"if": "p|vekMedzi(51, 61)",
-			"value": 3.03,
+			"label": "vek od 1 do 5 vrátane",
+			"if": "p|vekMedzi(1, 6)",
+			"value": 13.9,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 61 do 81",
-			"if": "p|vekMedzi(61, 81)",
-			"value": 4.15,
+			"label": "vek od 6 do 14 vrátane",
+			"if": "p|vekMedzi(6, 15)",
+			"value": 7.7,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 81+",
-			"if": "p|vekMedzi(81)",
-			"value": 4.7,
+			"label": "vek od 15 do 18 vrátane",
+			"if": "p|vekMedzi(15, 19)",
+			"value": 6.5,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "vek od 19 do 28 vrátane",
+			"if": "p|vekMedzi(19, 29)",
+			"value": 4.5,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -88,35 +95,42 @@
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEK",
+			"value": 0.04,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEK",
+			"value": 0.04,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 64",
-			"if": "vv.kod in ['64']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"label": "Výkon 79a",
+			"if": "vv.kod in ['79a']",
+			"value": 0.04,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEK",
+			"value": 0.04,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 5.6,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.06,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -128,94 +142,59 @@
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie proti chrípke",
-			"if": "vv.kod in ['252b']",
-			"value": 0.08,
+			"label": "Očkovanie",
+			"if": "vv.kod in ['252b','252a']",
+			"value": 0.1,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie proti hepatitíde A",
-			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
-			"value": 0.08,
+			"label": "Preventívne prehliadky",
+			"if": "vv.kod in ['142']",
+			"value": 0.15,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie proti hepatitíde B",
-			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie proti hepatitíde A+B",
-			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie proti meningitíde",
-			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie proti pneumokokom",
-			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie proti kliestovej encefalitide",
-			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie proti tetanu",
-			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie proti osýpkam",
-			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
-			"value": 0.08,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon 67",
+			"if": "vv.kod in ['67']",
+			"value": 5.1,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
-			"value": 0.0082,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571A','4571a']",
-			"value": 4.5,
+			"value": 6.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1544a",
+			"if": "vv.kod in ['1544a']",
+			"value": 5.47,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29']",
-			"value": 0.03,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Vykony pocas navstevy",
 			"if": "d.vv|ma('kod in [\"25\",\"26\",\"29\"]') && vv.kod in ['4','5','6','30','40','41','64']",
-			"value": 0.015,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -242,14 +221,14 @@
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.065,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 16,
+			"value": 18,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -362,13 +341,6 @@
 			"label": "Stratifikácia kardiovaskulárneho rizika",
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Komplexné vyšetrenie poistenca pri prevzatí dospelej osoby do zdravotnej starostlivosti",
-			"if": "vv.kod in ['60']",
-			"value": null,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

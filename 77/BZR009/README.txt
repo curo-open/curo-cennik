@@ -9,8 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis                        │
 ├─────────────────┼──────────────────────────────┤
 │ IDK = 0.02      │ NASTAVENIA IDK               │
-│ CB = 0.04       │ Cena bodu                    │
-│ CBP = 0.06      │ Cena bodu preventívne výkony │
+│ CB = 0.045      │ Cena bodu                    │
+│ CBP = 0.07      │ Cena bodu preventívne výkony │
 │ CBEU = 0.03     │ Cena bodu EU                 │
 │ CBSVALZ = 0.015 │ Cena bodu SVaLZ              │
 └─────────────────┴──────────────────────────────┘

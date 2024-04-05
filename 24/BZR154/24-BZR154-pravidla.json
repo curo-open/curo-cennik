@@ -38,7 +38,14 @@
 		},
 		{
 			"label": "Výkon ŠAS",
-			"if": "vv.kod in ['732','735','736','737','740','741','745','745A','745B','746','755','756','760','761','762','763','763A']",
+			"if": "vv.kod in ['732','735','736','737','740','741','745']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon ŠAS",
+			"if": "vv.kod in ['745A','745B','746','755','756','760','761','762','763','763A']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
