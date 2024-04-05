@@ -42,7 +42,7 @@
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.007303
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
@@ -50,7 +50,7 @@
 		},
 		"CB50XX": {
 			"label": "Cena bodu 50XX",
-			"value": 0.015336
+			"value": 0.010955
 		},
 		"PACS": {
 			"label": "PACS",
@@ -113,7 +113,7 @@
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301','5302','5303','5306','5307','5308','5309','5310','5312','5315','5316','5742','5743','5739','5738','5153a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
@@ -230,7 +230,7 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
+			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5308','5312','5315','5316']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null

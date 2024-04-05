@@ -18,9 +18,9 @@ Autor: curo.sk
 │ CB = 0.02814          │ Cena bodu                    │
 │ CBP = 0.049           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.007303    │ Cena bodu SVaLZ              │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
+│ CBSVALZUSG = 0.007303 │ Cena bodu SVaLZ USG          │
 │ CBEU = 0.007303       │ Cena bodu EU                 │
-│ CB50XX = 0.015336     │ Cena bodu 50XX               │
+│ CB50XX = 0.010955     │ Cena bodu 50XX               │
 │ PACS = 0.93           │ PACS                         │
 │ X03501 = 32           │ X03501                       │
 │ X03853 = 20           │ X03853                       │
@@ -47,7 +47,7 @@ Autor: curo.sk
 │                 │                           │                                               │ 5','5050','5051','5052','5053','5056','5060','5061','5062',' │
 │                 │                           │                                               │ 5065','5070','5071','5072','5075','5076','5077','5080','5081 │
 │                 │                           │                                               │ ','5082','5083','5090','5095','5051R']                       │
-│            null │ vv.bodyCelkom*CB          │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
 │                 │                           │                                               │ '5309','5310','5312','5315','5316','5742','5743','5739','573 │
 │                 │                           │                                               │ 8','5153a']                                                  │
 │            null │ PACS                      │ Pripočitateľné položky  - PACS                │ vv.kod=='PACS'                                               │
@@ -67,7 +67,7 @@ Autor: curo.sk
 │            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5330','5331','5332','5300','5301','5303','5304', │
-│                 │                           │                                               │ '5307','5307a','5312','5315','5316']                         │
+│                 │                           │                                               │ '5307','5307a','5308','5312','5315','5316']                  │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           15.54 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │             428 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
