@@ -38,7 +38,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.007303
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
@@ -59,6 +59,10 @@
 		"X03501": {
 			"label": "X03501",
 			"value": 32
+		},
+		"X03853": {
+			"label": "X03853",
+			"value": 20
 		}
 	},
 	"pacient": [],
@@ -124,6 +128,13 @@
 			"if": "vv.kod=='X03501'",
 			"value": null,
 			"calc": "X03501",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky  - Bioptická ihla",
+			"if": "vv.kod=='X03853'",
+			"value": null,
+			"calc": "X03853",
 			"instruction": null
 		},
 		{

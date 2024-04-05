@@ -14,7 +14,7 @@ Autor: curo.sk
 │ CBEU = 0.007303    │ Cena bodu EU                                       │
 │ CB50XX = 0.010955  │ Cena bodu 50XX                                     │
 │ DO10DNI = 0        │ Text pre fakturu Z014 do 10dni za mesiac ${mesiac} │
-│ _120801 = 32       │ 120801                                             │
+│ _120801 = 20       │ 120801                                             │
 └────────────────────┴────────────────────────────────────────────────────┘
 
 
