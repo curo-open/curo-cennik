@@ -48,6 +48,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63' ,'65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "USG",
 			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
 			"value": null,
@@ -122,6 +129,13 @@
 			"if": "vv.kod in ['H0008']",
 			"value": 6.78,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

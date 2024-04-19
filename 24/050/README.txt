@@ -9,9 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
 │ LIMIT = 0          │ Limit           │
-│ CB = 0.029626      │ Cena bodu       │
-│ CBV = 0.026432     │ Cena bodu vv=60 │
-│ CBSVALZ = 0.008605 │ Cena bodu SVaLZ │
+│ CB = 0.033881      │ Cena bodu       │
+│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
 └────────────────────┴─────────────────┘
 
 
@@ -25,8 +24,8 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CBV         │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│           0.027 │ vv.bodyCelkom*cena        │ Edukácia pri diabete                          │ vv.kod in ['1B05013','1B05014']                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['1B05011','1B05012','1B05013','1B05014']          │
 │        0.028058 │ vv.bodyCelkom*cena        │ Cielené vyšetrenie nôh                        │ vv.kod in ['1A02007']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │

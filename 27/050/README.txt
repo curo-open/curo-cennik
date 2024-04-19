@@ -5,19 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────────────┐
-│ Názov a hodnota   │ Popis                        │
-├───────────────────┼──────────────────────────────┤
-│ CB = 0.0335       │ Cena bodu                    │
-│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
-│ NCB = 0           │ Navysena cena bodu           │
-│ IPP1 = 3.5        │ IPP1                         │
-│ IPP2 = 3          │ IPP2                         │
-│ IPP3 = 2          │ IPP3                         │
-│ CV = 0.0335       │ Výkony 60,62,63              │
-│ LIMIT = 0         │ Limit                        │
-└───────────────────┴──────────────────────────────┘
+┌───────────────────┬────────────────────┐
+│ Názov a hodnota   │ Popis              │
+├───────────────────┼────────────────────┤
+│ CB = 0.0305       │ Cena bodu          │
+│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ    │
+│ NCB = 0           │ Navysena cena bodu │
+│ IPP1 = 3.5        │ IPP1               │
+│ IPP2 = 3          │ IPP2               │
+│ IPP3 = 2          │ IPP3               │
+│ CV = 0.0335       │ Výkony 60,62,63    │
+│ LIMIT = 0         │ Limit              │
+└───────────────────┴────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -40,8 +39,9 @@ Autor: curo.sk
 │          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
-│          0.0335 │ vv.bodyCelkom*(cena+NCB)  │ Výkony 60,62,63                               │ vv.kod==['60','62','63']                                     │
+│          0.0335 │ vv.bodyCelkom*(cena+NCB)  │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
+│           0.015 │ vv.bodyCelkom*cena        │ Výkon C - reaktívny proteín                   │ vv.kod in ['4571a','4571A']                                  │
 │            10.2 │ vv.pocet*cena             │ Antigénový test                               │ vv.kod in ['629b']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │

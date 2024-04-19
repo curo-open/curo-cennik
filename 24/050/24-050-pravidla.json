@@ -6,29 +6,25 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.029626
-		},
-		"CBV": {
-			"label": "Cena bodu vv=60",
-			"value": 0.026432
+			"value": 0.033881
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008605
+			"value": 0.009724
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBV",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Edukácia pri diabete",
-			"if": "vv.kod in ['1B05013','1B05014']",
+			"label": "Výkony",
+			"if": "vv.kod in ['1B05011','1B05012','1B05013','1B05014']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

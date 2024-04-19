@@ -2,10 +2,6 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
-		},
-		"CBO": {
-			"label": "Cena bodu ostatné ŠAS výkony",
 			"value": 0.0305
 		},
 		"CBSVALZ": {
@@ -104,7 +100,7 @@
 		},
 		{
 			"label": "Výkony 60,62,63",
-			"if": "vv.kod==['60','62','63']",
+			"if": "vv.kod in ['60','62','63']",
 			"value": 0.0335,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
@@ -114,6 +110,13 @@
 			"if": "vv.kod in ['5702','5702a','15c']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon C - reaktívny proteín ",
+			"if": "vv.kod in ['4571a','4571A']",
+			"value": 0.015,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
