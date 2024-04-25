@@ -1,10 +1,15 @@
 {
-	"params": {},
+	"params": {
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.007967
+		}
+	},
 	"pacient": [],
 	"vykon": [
 		{
 			"label": "USG",
-			"if": "vv.kod in ['5300','5302','5303','5742','5738','5739','5307a','5736','5306','5312','5307','5308']",
+			"if": "vv.kod in ['5300','5302','5303','5742','5738','5739','5307a','5736','5306','5312','5307','5308',]",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
@@ -54,6 +59,18 @@
 				"value": 1000
 			}
 		],
+		"5315": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"5316": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
 		"5736": [
 			{
 				"cond": "",
@@ -87,5 +104,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "rádiológia"
+	"title": "diagnostika"
 }

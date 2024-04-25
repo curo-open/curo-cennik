@@ -13,9 +13,9 @@ Autor: curo.sk
 │ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 │ IPP1 = 1.34         │ IPP1                                                    │
-│ IPP2 = 2.9          │ IPP2                                                    │
-│ IPP3 = 4.9          │ IPP3                                                    │
-│ IPP4 = 4.9          │ IPP4                                                    │
+│ IPP2 = 2.16         │ IPP2                                                    │
+│ IPP3 = 3.65         │ IPP3                                                    │
+│ IPP4 = 6.65         │ IPP4                                                    │
 └─────────────────────┴─────────────────────────────────────────────────────────┘
 
 

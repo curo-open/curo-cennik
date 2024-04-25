@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 1.04
+			"value": 0.51
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -39,21 +39,21 @@
 	},
 	"pacient": [
 		{
-			"label": "vek od 18 do 50",
+			"label": "vek od 18 do 50 vrátane ",
 			"if": "p|vekMedzi(18, 51)",
 			"value": 3.07,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 51 do 60",
+			"label": "vek od 51 do 60 vrátane",
 			"if": "p|vekMedzi(51, 61)",
 			"value": 3.53,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 61 do 80",
+			"label": "vek od 61 do 80 vrátane",
 			"if": "p|vekMedzi(61, 81)",
 			"value": 5.52,
 			"calc": "IDK+cena",
@@ -190,14 +190,14 @@
 		{
 			"label": "Očkovanie proti tetanu",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.08,
+			"value": 0.0904,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti osýpkam",
 			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
-			"value": 0.08,
+			"value": 0.0904,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

@@ -9,9 +9,9 @@ Autor: curo.sk
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
 │ IPP1 = 1.34           │ IPP1                │
-│ IPP2 = 2.9            │ IPP2                │
-│ IPP3 = 4.9            │ IPP3                │
-│ IPP4 = 7.9            │ IPP4                │
+│ IPP2 = 2.16           │ IPP2                │
+│ IPP3 = 3.65           │ IPP3                │
+│ IPP4 = 6.65           │ IPP4                │
 │ IPPD = 5              │ IPPD                │
 │ LIMIT = 0             │ Limit               │
 │ CB = 0.0318           │ Cena bodu           │

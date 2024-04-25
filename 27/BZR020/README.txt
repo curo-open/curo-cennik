@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬────────────────────────────┐
 │ Názov a hodnota   │ Popis                      │
 ├───────────────────┼────────────────────────────┤
-│ IDK = 1.04        │ NASTAVENIA IDK             │
+│ IDK = 0.51        │ NASTAVENIA IDK             │
 │ CB = 0.026        │ Cena bodu                  │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.0339   │ Cena bodu Nekapitovany(EU) │
@@ -21,14 +21,14 @@ Autor: curo.sk
 
 
   CENY ZA PACIENTA
-┌─────────────────┬───────────────┬──────────┬────────────────────┐
-│ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
-├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 50 │          3.07 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 60 │          3.53 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 80 │          5.52 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+      │           7.2 │ IDK+cena │ p|vekMedzi(81)     │
-└─────────────────┴───────────────┴──────────┴────────────────────┘
+┌──────────────────────────┬───────────────┬──────────┬────────────────────┐
+│ Popis                    │ Premenná cena │ Vzorec   │ Podmienka          │
+├──────────────────────────┼───────────────┼──────────┼────────────────────┤
+│ vek od 18 do 50 vrátane  │          3.07 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 60 vrátane  │          3.53 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 80 vrátane  │          5.52 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 81+               │           7.2 │ IDK+cena │ p|vekMedzi(81)     │
+└──────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 
   CENY ZA VÝKONY
@@ -52,8 +52,8 @@ Autor: curo.sk
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
-│            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
-│            0.08 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
+│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
 │                 │                           │                                               │ vv.kod in ['252b']                                           │
 │         0.00973 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │           0.015 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │

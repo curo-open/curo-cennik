@@ -6,15 +6,15 @@
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 2.16
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 3.65
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 7.9
+			"value": 6.65
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -290,13 +290,13 @@
 		"1B08098": [
 			{
 				"cond": "",
-				"value": 120
+				"value": 300
 			}
 		],
 		"1B08082": [
 			{
 				"cond": "",
-				"value": 180
+				"value": 300
 			}
 		]
 	},
