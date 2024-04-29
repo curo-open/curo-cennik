@@ -14,15 +14,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0339
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009574
+			"value": 0.01
 		},
 		"CBEU": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.0339
+			"value": 0.035
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -45,91 +45,91 @@
 		{
 			"label": "vek do 19",
 			"if": "p.kapitacia && p|vekMedzi(19, 20)",
-			"value": 4.05,
+			"value": 4.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": 3.22,
+			"value": 3.44,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 29 do 39",
 			"if": "p.kapitacia && p|vekMedzi(29, 40)",
-			"value": 3.02,
+			"value": 3.23,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 40 do 44",
 			"if": "p.kapitacia && p|vekMedzi(40, 45)",
-			"value": 3.04,
+			"value": 3.25,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 45 do 49",
 			"if": "p.kapitacia && p|vekMedzi(45, 50)",
-			"value": 3.07,
+			"value": 3.28,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 50 do 54",
 			"if": "p.kapitacia && p|vekMedzi(50, 55)",
-			"value": 3.53,
+			"value": 3.78,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 55 do 59",
 			"if": "p.kapitacia && p|vekMedzi(55, 60)",
-			"value": 4.05,
+			"value": 4.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 60 do 64",
 			"if": "p.kapitacia && p|vekMedzi(60, 65)",
-			"value": 4.51,
+			"value": 4.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 4.88,
+			"value": 5.32,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 70 do 74",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 5.55,
+			"value": 6.05,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 75 do 79",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 6.22,
+			"value": 6.78,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 80 do 84",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 6.99,
+			"value": 7.62,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 7.3,
+			"value": 7.96,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -208,7 +208,7 @@
 		{
 			"label": "Preventívne prehliadky ",
 			"if": "vv.kod in ['160']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -250,7 +250,7 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252a','252b','252c']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -278,7 +278,7 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.0339,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -348,7 +348,7 @@
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 16,
+			"value": 17.33,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -392,6 +392,34 @@
 			"if": "vv.kod in ['62a']",
 			"value": 20,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG – vyšetrenie POCUS",
+			"if": "vv.kod in ['5301']",
+			"value": 4.38,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty Troponínu ",
+			"if": "vv.kod in ['4485']",
+			"value": 11.6,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty NT-proBNP",
+			"if": "vv.kod in ['3860']",
+			"value": 8.98,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG – vyšetrenie POCUS",
+			"if": "vv.kod in ['44418']",
+			"value": 19.78,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -444,6 +472,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Nekapitovaný EU - SVALZ výkon",
+			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný EU - iné ako SVALZ",
+			"if": "!p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
 			"label": "EÚ - SVALZ výkon",
 			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
 			"value": null,
@@ -453,6 +495,13 @@
 		{
 			"label": "EÚ - iné ako SVALZ",
 			"if": "p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "Neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null

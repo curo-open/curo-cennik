@@ -385,7 +385,7 @@
 		},
 		{
 			"label": "N-terminálny fragment (NT-pro BNP)",
-			"if": "vv.kod in ['44418']",
+			"if": "19.78",
 			"value": 19.75,
 			"calc": "vv.pocet*cena",
 			"instruction": null
