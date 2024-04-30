@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 2.24           │ IPP1                  │
-│ IPP2 = 3.6            │ IPP2                  │
-│ IPP3 = 6.09           │ IPP3                  │
-│ IPP4 = 9.09           │ IPP4                  │
+│ IPP1 = 2.44           │ IPP1                  │
+│ IPP2 = 3.92           │ IPP2                  │
+│ IPP3 = 6.64           │ IPP3                  │
+│ IPP4 = 9.64           │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.0318           │ Cena bodu             │
+│ CB = 0.03466          │ Cena bodu             │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
@@ -34,13 +34,13 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │               5 │ vv.pocet*cena             │ Výkon 250x - odbery                           │ vv.kod in ['250x']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 15b - vyodnotenie odberov               │ vv.kod in ['15b']                                            │
-│          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│         0.03466 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │        0.009574 │ vv.bodyCelkom*cena        │ Echokardiografia - vv. 5744, 5745, 5746, 5746 │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │                 │                           │ b, 5754                                       │                                                              │
 │        0.009574 │ vv.bodyCelkom*cena        │ Ergometria - vv. 5708                         │ vv.kod in ['5708']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ EKG - vv. 603a, 15c                           │ vv.kod in ['603a','15c']                                     │
 │        0.009574 │ vv.bodyCelkom*cena        │ Ekg holter - vv. 5712, 5713, 5714             │ vv.kod in ['5712','5713','5714']                             │
-│          0.0318 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│         0.03466 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │           0.026 │ vv.bodyCelkom*cena        │ Zhodnotenie rtg. dokumentácie - vv. 15d       │ vv.kod in ['15d']                                            │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
