@@ -5,29 +5,29 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────┐
-│ Názov a hodnota   │ Popis                      │
-├───────────────────┼────────────────────────────┤
-│ IDK = 0           │ NASTAVENIA IDK             │
-│ CB = 0.02         │ Cena bodu                  │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ            │
-│ CBEUNK = 0.0339   │ Cena bodu Nekapitovany(EU) │
-│ AGTC = 4.8        │ AGTC                       │
-│ PP50 = 10         │ PP50                       │
-│ PP05 = 10         │ PP05                       │
-└───────────────────┴────────────────────────────┘
+┌─────────────────┬────────────────────────────┐
+│ Názov a hodnota │ Popis                      │
+├─────────────────┼────────────────────────────┤
+│ IDK = 0         │ NASTAVENIA IDK             │
+│ CB = 0          │ Cena bodu                  │
+│ CBSVALZ = 0.01  │ Cena bodu SVaLZ            │
+│ CBEUNK = 0.0349 │ Cena bodu Nekapitovany(EU) │
+│ AGTC = 4.8      │ AGTC                       │
+│ PP50 = 10       │ PP50                       │
+│ PP05 = 10       │ PP05                       │
+└─────────────────┴────────────────────────────┘
 
 
   CENY ZA PACIENTA
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ do  1 roku                │          9.48 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
-│ od  1 do 2 rokov vratane  │          7.45 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
-│ od  3 do 5 rokov vratane  │          7.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
-│ od  6 do 14 rokov vratane │          4.96 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 14)  │
-│ od 15 do 18 rokov vratane │          3.13 │ IDK+cena │ p.kapitacia && p|vekMedzi(14, 18) │
-│ od 19 do 28 rokov vratane │          3.07 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 28) │
+│ do  1 roku                │         10.14 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
+│ od  1 do 2 rokov vratane  │             9 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
+│ od  3 do 5 rokov vratane  │          7.68 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
+│ od  6 do 14 rokov vratane │          5.26 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 14)  │
+│ od 15 do 18 rokov vratane │          3.54 │ IDK+cena │ p.kapitacia && p|vekMedzi(14, 18) │
+│ od 19 do 28 rokov vratane │           3.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 28) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -35,48 +35,48 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            0.12 │ vv.bodyCelkom*cena        │ Výkon 142                                     │ vv.kod in ['142']                                            │
-│           0.079 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza=='Z00.1' && vv.kod in ['143','143a','144','145', │
+│          0.1284 │ vv.bodyCelkom*cena        │ Výkon 142                                     │ vv.kod in ['142']                                            │
+│          0.0845 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza=='Z00.1' && vv.kod in ['143','143a','144','145', │
 │                 │                           │                                               │ '145a','146','146a','146b','146c','148','148a','148b','148c' │
 │                 │                           │                                               │ ,'149','149a','149b','149c','149d','149f','159b','950','951' │
 │                 │                           │                                               │ ,'952','953']                                                │
-│           0.087 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza in ['P07.00','P07.01','P07.02','P07.10','P07.11' │
+│          0.0931 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza in ['P07.00','P07.01','P07.02','P07.10','P07.11' │
 │                 │                           │                                               │ ] && vv.kod in ['143','143a','144','145','145a','146','146a' │
 │                 │                           │                                               │ ,'146b','146c','148']                                        │
-│           0.079 │ vv.bodyCelkom*cena        │ Výkon 159b                                    │ vv.diagnoza=='Z00.1' && vv.kod in ['159b']                   │
-│           0.079 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['367 │
+│          0.0845 │ vv.bodyCelkom*cena        │ Výkon 159b                                    │ vv.diagnoza=='Z00.1' && vv.kod in ['159b']                   │
+│          0.0845 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['367 │
 │                 │                           │                                               │ 1']                                                          │
-│           28.83 │ vv.pocet*cena             │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
+│           30.85 │ vv.pocet*cena             │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti rotavirusom                   │ vv.diagnoza in ['Z25.8','Z26.8'] && vv.kod in ['252a']       │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza in ['Z20.5','Z24.6'] && vv.kod in ['252b']       │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza in ['Z20.8','Z23.8'] && vv.kod in ['252b']       │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti varicelle                     │ vv.diagnoza=='Z26.8' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti HPV u dievčat a chlapcov o    │ vv.diagnoza=='Z25.8' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
-│          0.0339 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25','26','29']                                   │
-│          0.0339 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti rotavirusom                   │ vv.diagnoza in ['Z25.8','Z26.8'] && vv.kod in ['252a']       │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza in ['Z20.5','Z24.6'] && vv.kod in ['252b']       │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza in ['Z20.8','Z23.8'] && vv.kod in ['252b']       │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti varicelle                     │ vv.diagnoza=='Z26.8' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti HPV u dievčat a chlapcov o    │ vv.diagnoza=='Z25.8' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│          0.0349 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25','26','29']                                   │
+│          0.0349 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
 │                 │                           │                                               │ ,'29','30','40','41','67','140']                             │
-│           0.015 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a']                                          │
+│          0.0158 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a']                                          │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a', '70']                                 │
-│            5.09 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│              17 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
-│            4.63 │ vv.pocet*cena             │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
+│            5.25 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│           17.51 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│            4.77 │ vv.pocet*cena             │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
 │                 │                           │ nie do 5 roku života                          │                                                              │
-│            1.19 │ vv.pocet*cena             │ Odbery                                        │ vv.kod in ['250D']                                           │
-│         0.00973 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
-│            5.36 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702Z']                                          │
-│            4.97 │ vv.pocet*cena             │ Otoskopické vyšetrenie jednostranne           │ vv.kod in ['1544a']                                          │
+│            1.22 │ vv.pocet*cena             │ Odbery                                        │ vv.kod in ['250D']                                           │
+│            0.01 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
+│            5.52 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702Z']                                          │
+│            5.12 │ vv.pocet*cena             │ Otoskopické vyšetrenie jednostranne           │ vv.kod in ['1544a']                                          │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│           13.56 │ vv.pocet*cena             │ Starostlivosť o poistenca s obezitou, artério │ vv.kod in ['10']                                             │
+│              14 │ vv.pocet*cena             │ Starostlivosť o poistenca s obezitou, artério │ vv.kod in ['10']                                             │
 │                 │                           │ vou hypertenziou a/alebo dyslipidémiou        │                                                              │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
