@@ -38,7 +38,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301']                                    │
 │            null │ vv.bodyCelkom*CB          │ Výkon 401 - Povrchová anestézia               │ vv.kod in ['401']                                            │
-│            null │ vv.bodyCelkom*cena        │ Výkon 15b - Zhodnotenie výsledkov             │ vv.kod in ['15b']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 15b - Zhodnotenie výsledkov             │ vv.kod in ['15b']                                            │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d - Zhodnotenie rtg dokumentácie      │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Infúzia                                       │ vv.kod in ['272']                                            │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │

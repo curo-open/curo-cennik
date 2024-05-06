@@ -113,6 +113,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 15b - Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b'] ",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 25,26",
 			"if": "vv.kod in ['25','26']",
 			"value": 0.0339,
@@ -166,6 +173,20 @@
 			"if": "vv.kod in ['252a','252b','252c']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odbery",
+			"if": "vv.kod in ['299a','299b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 250,250a,250b",
+			"if": "vv.kod in ['250','250a','250b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

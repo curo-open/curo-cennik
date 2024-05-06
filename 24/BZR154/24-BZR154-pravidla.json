@@ -89,7 +89,7 @@
 			"label": "Výkon 15b - Zhodnotenie výsledkov",
 			"if": "vv.kod in ['15b'] ",
 			"value": null,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

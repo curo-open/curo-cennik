@@ -113,6 +113,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 15b - Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b'] ",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 25,26",
 			"if": "vv.kod in ['25','26']",
 			"value": 0.0339,
@@ -169,6 +176,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Odbery",
+			"if": "vv.kod in ['299a','299b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 250,250a,250b",
+			"if": "vv.kod in ['250','250a','250b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "1.preventívna prehliadka u VLDD",
 			"if": "vv.kod in ['142']",
 			"value": 0.11187,
@@ -177,7 +198,7 @@
 		},
 		{
 			"label": "Preventívne výkony ",
-			"if": "vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148','148a','148b','148c','149','149a','149b','149c','149d','159b']",
+			"if": "vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148','148a','148b','148c','149','149a','149b','149c','149d','149f']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -185,6 +206,13 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159x','159z']",
+			"value": 0.079,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cholesterol ako cast PP",
+			"if": "vv.kod in ['159b']",
 			"value": 0.079,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

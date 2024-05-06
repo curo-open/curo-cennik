@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu Kapitovany SK/EU ",
-			"value": 0
+			"value": 1.33
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -14,7 +14,7 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany",
-			"value": 0
+			"value": 1.33
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -78,52 +78,101 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1b,11a,70",
-			"if": "vv.kod in ['1b','11a','70']",
-			"value": 0.027,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon 15b - Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b'] ",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": 4.32,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": 1.08,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": 5.67,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1",
 			"if": "!p.kapitacia && vv.kod in ['1']",
-			"value": 0.78,
-			"calc": "vv.bodyCelkom*cena",
+			"value": 1.33,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
-			"value": 2.88,
+			"value": 4.95,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
 			"if": "!p.kapitacia && vv.kod in ['8']",
-			"value": 3.85,
+			"value": 6.93,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 250",
-			"if": "!p.kapitacia && vv.kod in ['250']",
-			"value": 1.15,
+			"label": "Výkon 250,250a,250b",
+			"if": "!p.kapitacia && vv.kod in ['250','250a','250b']",
+			"value": 1.96,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 4",
+			"label": "Výkon 299a,299b",
+			"if": "vv.kod in ['299a','299b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4-nekapitovaný",
 			"if": "vv.kod in ['4']",
 			"value": 8.63,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8",
+			"label": "Výkon 8-nekapitovaný",
 			"if": "vv.kod in ['8']",
 			"value": 12.26,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 10",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60,63,64",
+			"if": "vv.kod in ['60','63','64']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 67",
+			"if": "vv.kod in ['67']",
+			"value": 0.05,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

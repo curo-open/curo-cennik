@@ -40,6 +40,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['EU']                              │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 15b - Zhodnotenie výsledkov             │ vv.kod in ['15b']                                            │
 │          0.0339 │ vv.bodyCelkom*cena        │ Výkon 25,26                                   │ vv.kod in ['25','26']                                        │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │              16 │ vv.pocet*cena             │ Výkon 60b                                     │ vv.kod in ['60b']                                            │
@@ -48,11 +49,14 @@ Autor: curo.sk
 │            0.08 │ vv.bodyCelkom*cena        │ Výkon 950,951,952,953                         │ vv.kod in ['950','951','952','953']                          │
 │           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
+│            null │ vv.bodyCelkom*CB          │ Odbery                                        │ vv.kod in ['299a','299b']                                    │
+│            null │ vv.bodyCelkom*CB          │ Výkon 250,250a,250b                           │ vv.kod in ['250','250a','250b']                              │
 │         0.11187 │ vv.bodyCelkom*cena        │ 1.preventívna prehliadka u VLDD               │ vv.kod in ['142']                                            │
 │            0.08 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
 │                 │                           │                                               │ b','146c','148','148a','148b','148c','149','149a','149b','14 │
-│                 │                           │                                               │ 9c','149d','159b']                                           │
+│                 │                           │                                               │ 9c','149d','149f']                                           │
 │           0.079 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
+│           0.079 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │            0.08 │ vv.bodyCelkom*cena        │ Základná preventívna prehliadka               │ vv.kod in ['160']                                            │
 │            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            5.98 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │

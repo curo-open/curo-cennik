@@ -8,12 +8,13 @@ Autor: curo.sk
 ┌────────────────────┬───────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                             │
 ├────────────────────┼───────────────────────────────────────────────────┤
-│ IDK = 1.04         │ IDK                                               │
+│ IDK = 1.3          │ IDK                                               │
 │ KPS = 1            │ KPS                                               │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?                             │
 │ CB = 0.0318        │ Cena bodu                                         │
 │ CBSVALZ = 0.009574 │ Cena bodu SVaLZ                                   │
-│ CBEUNK = 0.0339    │ Cena bodu Nekapitovany(EU)                        │
+│ CBEUNK = 0.035     │ Cena bodu Nekapitovany(EU)                        │
+│ CBSVALZEU = 0.01   │ Cena bodu SVaLZ Nekapitovany(EU)                  │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
 │ AGTC = 4.8         │ AGTC                                              │
 │ PP50 = 10          │ PP50                                              │
@@ -25,19 +26,19 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ od 18 do 19 rokov vrátane │          4.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ od 20 do 28 rokov vrátane │          3.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ od 29 do 39 rokov vrátane │          3.02 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ od 40 do 44 rokov vrátane │          3.04 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ od 45 do 49 rokov vrátane │          3.07 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ od 50 do 54 rokov vrátane │          3.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ od 55 do 59 rokov vrátane │          4.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ od 60 do 64 rokov vrátane │          4.51 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ od 65 do 69 rokov vrátane │          4.88 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ od 70 do 74 rokov vrátane │          5.55 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ od 75 do 79 rokov vrátane │          6.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ od 80 do 84 rokov vrátane │          6.99 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ od 85+                    │           7.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ od 18 do 19 rokov vrátane │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ od 20 do 28 rokov vrátane │          3.44 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ od 29 do 39 rokov vrátane │          3.23 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ od 40 do 44 rokov vrátane │          3.25 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ od 45 do 49 rokov vrátane │          3.28 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ od 50 do 54 rokov vrátane │          3.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ od 55 do 59 rokov vrátane │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ od 60 do 64 rokov vrátane │          4.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ od 65 do 69 rokov vrátane │          5.32 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ od 70 do 74 rokov vrátane │          6.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ od 75 do 79 rokov vrátane │          6.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ od 80 do 84 rokov vrátane │          7.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ od 85+                    │          7.96 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -46,23 +47,31 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CB          │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
+│            null │ vv.bodyCelkom*CBSVALZEU   │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1                                       │ vv.kod in ['1']                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 4                                       │ vv.kod in ['4']                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkon 8                                       │ vv.kod in ['8']                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│            null │ vv.bodyCelkom*CB          │ Komunikácia v cudziom jazyku                  │ vv.kod in ['79a']                                            │
 │          0.0318 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
-│            0.08 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│           17.33 │ vv.pocet*cena             │ Predoperačné vyšetrenie (výkon 60b)           │ vv.kod in ['60b']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│          0.0073 │ vv.bodyCelkom*cena        │ Výkon 5301                                    │ vv.kod in ['5301']                                           │
+│            8.98 │ vv.pocet*cena             │ Stanovenie hodnoty D-diméru                   │ vv.kod in ['3860']                                           │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (15P)         │ vv.kod in ['15P']                                            │
 │        0.009574 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke               │ vv.kod in ['5702P']                                          │
 │        0.009574 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │        0.021999 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
-│            0.08 │ vv.bodyCelkom*cena        │ Očkovanie - 252a,252b,252c                    │ vv.kod in ['252a','252b','252c']                             │
-│          0.0339 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
+│           0.084 │ vv.bodyCelkom*cena        │ Očkovanie - 252a,252b,252c                    │ vv.kod in ['252a','252b','252c']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
+│            11.6 │ vv.pocet*cena             │ Stanovenie hodnoty troponínu                  │ vv.kod in ['4485']                                           │
+│           19.78 │ vv.pocet*cena             │ Stanovenie hodnoty NT-proBNP                  │ vv.kod in ['44418']                                          │
 │            5.75 │ vv.pocet*cena             │ Vyšetrenie C – reaktívneho proteínu           │ vv.kod in ['4571a','4571A']                                  │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
@@ -75,7 +84,6 @@ Autor: curo.sk
 │              15 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
 │               6 │ vv.pocet*cena             │ Akutne I10                                    │ vv.kod in ['H0005']                                          │
 │            5.65 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
-│              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b','60B']                                      │
 │             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
 │            6.78 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
 │               2 │ vv.pocet*cena             │ Delegovaný odber krvi                         │ vv.kod in ['250D']                                           │
@@ -101,10 +109,13 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             180 │ 10                                                                                                        │                           │
 │             285 │ 25                                                                                                        │                           │
+│             285 │ 25                                                                                                        │                           │
+│             500 │ 26                                                                                                        │                           │
 │             500 │ 26                                                                                                        │                           │
 │             620 │ 60                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             390 │ 160                                                                                                       │                           │
+│             600 │ 5301                                                                                                      │                           │
 │             550 │ 5702                                                                                                      │                           │
 │             750 │ 5715                                                                                                      │                           │
 │             240 │ 5716                                                                                                      │                           │

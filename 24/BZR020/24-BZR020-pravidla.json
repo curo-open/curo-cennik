@@ -148,8 +148,22 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 1",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 4",
 			"if": "vv.kod in ['4']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8",
+			"if": "vv.kod in ['8']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -166,6 +180,13 @@
 			"if": "vv.kod in ['70']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Komunikácia v cudziom jazyku",
+			"if": "vv.kod in ['79a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

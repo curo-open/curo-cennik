@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 1.04
+			"value": 1.3
 		},
 		"KPS": {
 			"label": "KPS",
@@ -22,7 +22,11 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.0339
+			"value": 0.035
+		},
+		"CBSVALZEU": {
+			"label": "Cena bodu SVaLZ Nekapitovany(EU)",
+			"value": 0.01
 		},
 		"FOB": {
 			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
@@ -45,91 +49,91 @@
 		{
 			"label": "od 18 do 19 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 4.05,
+			"value": 4.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 20 do 28 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": 3.22,
+			"value": 3.44,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 29 do 39 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(29, 40)",
-			"value": 3.02,
+			"value": 3.23,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 40 do 44 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(40, 45)",
-			"value": 3.04,
+			"value": 3.25,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 45 do 49 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(45, 50)",
-			"value": 3.07,
+			"value": 3.28,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 50 do 54 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(50, 55)",
-			"value": 3.53,
+			"value": 3.78,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 55 do 59 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(55, 60)",
-			"value": 4.05,
+			"value": 4.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 60 do 64 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(60, 65)",
-			"value": 4.51,
+			"value": 4.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 65 do 69 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": 4.88,
+			"value": 5.32,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 70 do 74 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": 5.55,
+			"value": 6.05,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 75 do 79 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": 6.22,
+			"value": 6.78,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 80 do 84 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": 6.99,
+			"value": 7.62,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": 7.3,
+			"value": 7.96,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -146,7 +150,7 @@
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"calc": "vv.bodyCelkom*CBSVALZEU",
 			"instruction": null
 		},
 		{
@@ -178,8 +182,22 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 1",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 4",
 			"if": "vv.kod in ['4']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8",
+			"if": "vv.kod in ['8']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -199,6 +217,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Komunikácia v cudziom jazyku",
+			"if": "vv.kod in ['79a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Vstupná prehliadka (výkon 60)",
 			"if": "vv.kod in ['60']",
 			"value": 0.0318,
@@ -206,10 +231,31 @@
 			"instruction": null
 		},
 		{
+			"label": "Predoperačné vyšetrenie (výkon 60b)",
+			"if": "vv.kod in ['60b']",
+			"value": 17.33,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5301",
+			"if": "vv.kod in ['5301']",
+			"value": 0.0073,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.98,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -250,15 +296,29 @@
 		{
 			"label": "Očkovanie - 252a,252b,252c",
 			"if": "vv.kod in ['252a','252b','252c']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.0339,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty NT-proBNP",
+			"if": "vv.kod in ['44418']",
+			"value": 19.78,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -335,13 +395,6 @@
 			"label": "Stratifikacia CMP",
 			"if": "vv.kod in ['H0006']",
 			"value": 5.65,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Predoperačné vyšetrenie",
-			"if": "vv.kod in ['60b','60B']",
-			"value": 16,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -442,9 +495,17 @@
 			{
 				"cond": "",
 				"value": 285
+			},
+			{
+				"cond": "",
+				"value": 285
 			}
 		],
 		"26": [
+			{
+				"cond": "",
+				"value": 500
+			},
 			{
 				"cond": "",
 				"value": 500
@@ -466,6 +527,12 @@
 			{
 				"cond": "",
 				"value": 390
+			}
+		],
+		"5301": [
+			{
+				"cond": "",
+				"value": 600
 			}
 		],
 		"5702": [

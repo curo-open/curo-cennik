@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                       │
 ├───────────────────┼─────────────────────────────┤
 │ IDK = NaN         │ NASTAVENIA IDK              │
-│ CB = 0            │ Cena bodu Kapitovany SK/EU  │
+│ CB = 0.00339      │ Cena bodu Kapitovany SK/EU  │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ             │
 │ CBEUNK = 0.0339   │ Cena bodu Nekapitovany      │
 │ AGTC = 4.8        │ AGTC                        │
@@ -57,6 +57,7 @@ Autor: curo.sk
 │            5.09 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │              17 │ vv.pocet*cena             │ Výkon 60b                                     │ vv.kod in ['60b']                                            │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
 │            4.63 │ vv.pocet*cena             │ Výkon 67                                      │ vv.kod in ['67']                                             │
 │            4.97 │ vv.pocet*cena             │ Výkon 1544a                                   │ vv.kod in ['1544a']                                          │
 │         0.00973 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │

@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu Kapitovany SK/EU ",
-			"value": 0
+			"value": 0.00339
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -208,6 +208,13 @@
 			"if": "vv.kod in ['62a']",
 			"value": 20,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 63",
+			"if": "vv.kod in ['63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

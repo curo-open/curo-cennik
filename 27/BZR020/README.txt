@@ -40,9 +40,12 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEK        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
 │            null │ vv.bodyCelkom*CBEK        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │            null │ vv.bodyCelkom*CBEK        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1                                       │ vv.kod in ['1']                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 4                                       │ vv.kod in ['4']                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkon 8                                       │ vv.kod in ['8']                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │            null │ vv.bodyCelkom*CBEK        │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│            null │ vv.bodyCelkom*CB          │ Komunikácia v cudziom jazyku                  │ vv.kod in ['79a']                                            │
 │           28.83 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │           0.079 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
 │          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.kod in ['252b']                                           │
