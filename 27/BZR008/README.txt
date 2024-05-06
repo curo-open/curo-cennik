@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                       │
 ├───────────────────┼─────────────────────────────┤
 │ IDK = NaN         │ NASTAVENIA IDK              │
-│ CB = 0.00339      │ Cena bodu Kapitovany SK/EU  │
+│ CB = 0.0339       │ Cena bodu Kapitovany SK/EU  │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ             │
 │ CBEUNK = 0.0339   │ Cena bodu Nekapitovany      │
 │ AGTC = 4.8        │ AGTC                        │

@@ -1,5 +1,10 @@
 {
-	"params": {},
+	"params": {
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.007303
+		}
+	},
 	"pacient": [],
 	"vykon": [
 		{

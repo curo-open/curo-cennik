@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu Kapitovany SK/EU ",
-			"value": 1.33
+			"value": 0.0318
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -14,7 +14,7 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany",
-			"value": 1.33
+			"value": 0.0318
 		},
 		"AGTC": {
 			"label": "AGTC",
