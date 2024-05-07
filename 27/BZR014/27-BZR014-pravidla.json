@@ -64,7 +64,7 @@
 		},
 		{
 			"label": "Výkon 1590,1591,1595a,1596,1597",
-			"if": "vv.kod in ['1590','1591','1595a','1596','1597']",
+			"if": "vv.kod in ['1590','1591','1591a','1595','1595a','1596','1597']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null

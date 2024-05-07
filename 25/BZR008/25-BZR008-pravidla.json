@@ -28,7 +28,7 @@
 	"pacient": [
 		{
 			"label": "vek do 1 roku života",
-			"if": "p|vekDo (1)",
+			"if": "p|vekMedzi(0, 1)",
 			"value": 10.51,
 			"calc": "IDK+cena",
 			"instruction": null

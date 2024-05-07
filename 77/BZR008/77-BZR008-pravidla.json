@@ -36,7 +36,7 @@
 	"pacient": [
 		{
 			"label": "vek do 1 roka",
-			"if": "p|vekDo (1)",
+			"if": "p|vekMedzi(0, 1)",
 			"value": 14.1,
 			"calc": "IDK+cena",
 			"instruction": null

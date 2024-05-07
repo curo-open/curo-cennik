@@ -21,7 +21,7 @@ Autor: curo.sk
 ┌─────────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                   │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek do 1 roku života    │         10.51 │ IDK+cena │ p|vekDo (1)        │
+│ vek do 1 roku života    │         10.51 │ IDK+cena │ p|vekMedzi(0, 1)   │
 │ vek od 1 do 2 vrátane   │         10.42 │ IDK+cena │ p|vekMedzi(1, 3)   │
 │ vek od 3 do 5 vrátane   │          7.21 │ IDK+cena │ p|vekMedzi(3, 6)   │
 │ vek od 6 do 9 vrátane   │          5.21 │ IDK+cena │ p|vekMedzi(6, 10)  │

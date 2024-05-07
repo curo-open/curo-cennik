@@ -32,7 +32,8 @@ Autor: curo.sk
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │            0.02 │ vv.bodyCelkom*cena        │ Zhodnotenie RTG dokumentácie                  │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1400,1410,1500,1540,1544a               │ vv.kod in ['1400','1410','1500','1540','1544a']              │
-│            null │ vv.bodyCelkom*CB          │ Výkon 1590,1591,1595a,1596,1597               │ vv.kod in ['1590','1591','1595a','1596','1597']              │
+│            null │ vv.bodyCelkom*CB          │ Výkon 1590,1591,1595a,1596,1597               │ vv.kod in ['1590','1591','1591a','1595','1595a','1596','1597 │
+│                 │                           │                                               │ ']                                                           │
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
 │            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250a','250b']                                    │
 │            null │ vv.bodyCelkom*CB          │ Odber biol.materiálu                          │ vv.kod in ['299a']                                           │

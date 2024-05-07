@@ -41,7 +41,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
 │           0.055 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │           0.055 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
-│         0.01044 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5316']                             │
+│         0.01044 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5315','5316']                      │
 │            null │ vv.bodyCelkom*CB          │ Výkon 15b - Zhodnotenie výsledkov             │ vv.kod in ['15b']                                            │
 │            null │ vv.bodyCelkom*CB          │ Infúzia                                       │ vv.kod in ['272']                                            │
 │            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250a','250b']                                    │
