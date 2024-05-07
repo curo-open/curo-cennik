@@ -1,0 +1,133 @@
+{
+	"params": {
+		"_5t7220": {
+			"label": "Výkon 5t7220",
+			"value": 380
+		},
+		"_5t7223": {
+			"label": "Výkon 5t7223",
+			"value": 380
+		},
+		"_5t815x": {
+			"label": "Výkon 5t815x",
+			"value": 380
+		},
+		"_5t818x": {
+			"label": "Výkon 5t818x",
+			"value": 380
+		},
+		"_5t7230": {
+			"label": "Výkon 5t7230",
+			"value": 390
+		},
+		"_5t7234": {
+			"label": "Výkon 5t7234",
+			"value": 390
+		},
+		"_5t7241": {
+			"label": "Výkon 5t7241",
+			"value": 390
+		},
+		"_5t7242": {
+			"label": "Výkon 5t7242",
+			"value": 390
+		},
+		"_5t71110": {
+			"label": "Výkon 5t71110",
+			"value": 400
+		},
+		"_5t71111": {
+			"label": "Výkon 5t71111",
+			"value": 400
+		},
+		"_5t7121": {
+			"label": "Výkon 5t7121",
+			"value": 400
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 5t7220",
+			"if": "vv.kod in ['5t7220'] || vv.k in ['5t7220'] || vv.k27 in ['5t7220']",
+			"value": null,
+			"calc": "vv.pocet*_5t7220",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t7223",
+			"if": "vv.kod in ['5t7223'] || vv.k in ['5t7223'] || vv.k27 in ['5t7223']",
+			"value": null,
+			"calc": "vv.pocet*_5t7223",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t815x",
+			"if": "vv.kod in ['5t815x'] || vv.k in ['5t815x'] || vv.k27 in ['5t815x']",
+			"value": null,
+			"calc": "vv.pocet*_5t815x",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t818x",
+			"if": "vv.kod in ['5t818x'] || vv.k in ['5t818x'] || vv.k27 in ['5t818x']",
+			"value": null,
+			"calc": "vv.pocet*_5t818x",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t7230",
+			"if": "vv.kod in ['5t7230'] || vv.k in ['5t7230'] || vv.k27 in ['5t7230']",
+			"value": null,
+			"calc": "vv.pocet*_5t7230",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t7234",
+			"if": "vv.kod in ['5t7234'] || vv.k in ['5t7234'] || vv.k27 in ['5t7234']",
+			"value": null,
+			"calc": "vv.pocet*_5t7234",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t7241",
+			"if": "vv.kod in ['5t7241'] || vv.k in ['5t7241'] || vv.k27 in ['5t7241']",
+			"value": null,
+			"calc": "vv.pocet*_5t7241",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t7242",
+			"if": "vv.kod in ['5t7242'] || vv.k in ['5t7242'] || vv.k27 in ['5t7242']",
+			"value": null,
+			"calc": "vv.pocet*_5t7242",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t71110",
+			"if": "vv.kod in ['5t71110'] || vv.k in ['5t71110'] || vv.k27 in ['5t71110']",
+			"value": null,
+			"calc": "vv.pocet*_5t71110",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t71111",
+			"if": "vv.kod in ['5t71111'] || vv.k in ['5t71111'] || vv.k27 in ['5t71111']",
+			"value": null,
+			"calc": "vv.pocet*_5t71111",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5t7121",
+			"if": "vv.kod in ['5t7121'] || vv.k in ['5t7121'] || vv.k27 in ['5t7121']",
+			"value": null,
+			"calc": "vv.pocet*_5t7121",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "plastik"
+}
