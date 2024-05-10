@@ -8,13 +8,16 @@ Autor: curo.sk
 ┌───────────────────┬────────────────────────────────────────────────┐
 │ Názov a hodnota   │ Popis                                          │
 ├───────────────────┼────────────────────────────────────────────────┤
-│ CB = 0.0335       │ Cena bodu                                      │
-│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony                   │
+│ IPP1 = 3.71       │ IPP1                                           │
+│ CB = 0.0365       │ Cena bodu                                      │
+│ CBO = 0.0323      │ Cena bodu ostatné ŠAS výkony                   │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ                                │
 │ CBEK = 0.035      │ Cena bodu el. výkony                           │
-│ PV = 0.0335       │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │
-│ PVD = 0.0335      │ Psych výkony deti 826,842,845                  │
+│ PV = 0.0365       │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │
+│ PVD = 0.0365      │ Psych výkony deti 826,842,845                  │
 │ NCB = 0           │ Navysena cena bodu                             │
+│ VV65 = 0          │ VV 65                                          │
+│ VV67 = 0          │ VV 67                                          │
 └───────────────────┴────────────────────────────────────────────────┘
 
 
@@ -32,7 +35,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*(PV+NCB)    │ Výkon 820;822;825;841                         │ vv.kod in ['820','821','822','825','826','841','842','845',' │
 │                 │                           │                                               │ 847','867']                                                  │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Vykon 826,842,845                             │ vv.kod in ['826','842','845']                                │
-│           0.034 │ vv.bodyCelkom*cena        │ Výkon 65,67                                   │ vv.kod in ['65','67']                                        │
+│            null │ vv.bodyCelkom*VV65        │ Výkon 65,67                                   │ vv.kod in ['65']                                             │
+│            null │ vv.bodyCelkom*VV67        │ Výkon 65,67                                   │ vv.kod in ['67']                                             │
 │            null │ vv.bodyCelkom*CBEK        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
 │            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │

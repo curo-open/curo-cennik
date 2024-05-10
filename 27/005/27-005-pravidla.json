@@ -1,12 +1,16 @@
 {
 	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 3.71
+		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0365
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+			"value": 0.0323
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -18,14 +22,22 @@
 		},
 		"PV": {
 			"label": "Psych výkony 820, 821, 822, 825, 841, 847, 867",
-			"value": 0.0335
+			"value": 0.0365
 		},
 		"PVD": {
 			"label": "Psych výkony deti 826,842,845",
-			"value": 0.0335
+			"value": 0.0365
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
+			"value": 0
+		},
+		"VV65": {
+			"label": "VV 65",
+			"value": 0
+		},
+		"VV67": {
+			"label": "VV 67",
 			"value": 0
 		}
 	},
@@ -54,9 +66,16 @@
 		},
 		{
 			"label": "Výkon 65,67",
-			"if": "vv.kod in ['65','67']",
-			"value": 0.034,
-			"calc": "vv.bodyCelkom*cena",
+			"if": "vv.kod in ['65']",
+			"value": null,
+			"calc": "vv.bodyCelkom*VV65",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,67",
+			"if": "vv.kod in ['67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*VV67",
 			"instruction": null
 		},
 		{

@@ -1,7 +1,55 @@
 {
-	"params": {},
+	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 3.71
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.0365
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
+			"value": 0.0323
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.00973
+		},
+		"CBEK": {
+			"label": "Cena bodu el. výkony",
+			"value": 0.035
+		},
+		"PV": {
+			"label": "Psych výkony 820, 821, 822, 825, 841, 847, 867",
+			"value": 0.0365
+		},
+		"PVD": {
+			"label": "Psych výkony deti 826,842,845",
+			"value": 0.0365
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
+		},
+		"VV65": {
+			"label": "VV 65",
+			"value": 0
+		},
+		"VV67": {
+			"label": "VV 67",
+			"value": 0
+		}
+	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "Vykon 60,62,63,163",
+			"if": "vv.kod in ['60','62','63','163']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
 		{
 			"label": "Výkon 820;822;825;841",
 			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
@@ -10,10 +58,24 @@
 			"instruction": null
 		},
 		{
-			"label": "Vykon 60,62,63,65,67,163",
-			"if": "vv.kod in ['60','62','63','65','163']",
+			"label": "Vykon 826,842,845",
+			"if": "vv.kod in ['826','842','845']",
 			"value": null,
 			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,67",
+			"if": "vv.kod in ['65']",
+			"value": null,
+			"calc": "vv.bodyCelkom*VV65",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,67",
+			"if": "vv.kod in ['67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*VV67",
 			"instruction": null
 		},
 		{
@@ -27,48 +89,6 @@
 			"label": "Výkon 629b",
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkony - Bezdomovec, Cudzinec, EU",
-			"if": "p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "SVALZ výkony",
-			"if": "vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkony",
-			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon Y0018",
-			"if": "vv.kod in ['Y0018']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon Y0023",
-			"if": "vv.kod in ['Y0023']",
-			"value": 4.56,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -161,6 +181,12 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		],
 		"1b": [
