@@ -29,7 +29,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 1.83,
+			"value": 1.96,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -38,7 +38,7 @@
 		{
 			"label": "Výkony 102,103,105,108,157,297,1070",
 			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
-			"value": 0.079,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

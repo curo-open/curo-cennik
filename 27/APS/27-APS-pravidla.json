@@ -5,7 +5,7 @@
 		{
 			"label": "Výkony APS",
 			"if": "1",
-			"value": 0.0261,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}

@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.6
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.09
+			"value": 6.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 9.09
+			"value": 9.64
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -30,15 +30,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0318
+			"value": 0.03466
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		}
 	},
 	"pacient": [],

@@ -53,21 +53,21 @@
 		},
 		{
 			"label": "od  6 do 14 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(6, 14)",
+			"if": "p.kapitacia && p|vekMedzi(6, 15)",
 			"value": 5.26,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 15 do 18 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(14, 18)",
+			"if": "p.kapitacia && p|vekMedzi(15, 19)",
 			"value": 3.54,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "od 19 do 28 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(18, 28)",
+			"label": "od 19 do 25 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(19, 26)",
 			"value": 3.3,
 			"calc": "IDK+cena",
 			"instruction": null

@@ -21,18 +21,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 19 │          4.51 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
-│ vek od 19 do 27 │          3.01 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 27) │
-│ vek od 27 do 45 │          3.17 │ IDK+cena │ p.kapitacia && p|vekMedzi(27, 45) │
-│ vek od 45 do 51 │          3.19 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 51) │
-│ vek od 51 do 53 │          3.39 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 53) │
-│ vek od 53 do 57 │          3.73 │ IDK+cena │ p.kapitacia && p|vekMedzi(53, 57) │
-│ vek od 57 do 61 │          4.17 │ IDK+cena │ p.kapitacia && p|vekMedzi(57, 61) │
-│ vek od 61 do 64 │          4.87 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 64) │
-│ vek od 64 do 68 │          5.35 │ IDK+cena │ p.kapitacia && p|vekMedzi(64, 68) │
-│ vek od 68 do 72 │          5.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(68, 72) │
-│ vek od 72 do 87 │          6.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(72, 87) │
-│ vek od 87+      │          6.43 │ IDK+cena │ p|vekMedzi(87)                    │
+│ vek od 18 do 19 │          4.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
+│ vek od 19 do 27 │          3.16 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 27) │
+│ vek od 27 do 45 │          3.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(27, 45) │
+│ vek od 45 do 51 │          3.35 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 51) │
+│ vek od 51 do 53 │          3.56 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 53) │
+│ vek od 53 do 57 │          3.92 │ IDK+cena │ p.kapitacia && p|vekMedzi(53, 57) │
+│ vek od 57 do 61 │          4.38 │ IDK+cena │ p.kapitacia && p|vekMedzi(57, 61) │
+│ vek od 61 do 64 │          5.11 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 64) │
+│ vek od 64 do 68 │          5.89 │ IDK+cena │ p.kapitacia && p|vekMedzi(64, 68) │
+│ vek od 68 do 72 │          6.36 │ IDK+cena │ p.kapitacia && p|vekMedzi(68, 72) │
+│ vek od 72 do 87 │          7.12 │ IDK+cena │ p.kapitacia && p|vekMedzi(72, 87) │
+│ vek od 87+      │          7.07 │ IDK+cena │ p|vekMedzi(87)                    │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -47,14 +47,14 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│           0.079 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
-│           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
+│           0.084 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159b','159x','159z']                      │
+│           0.084 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 │          0.0375 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
 │           0.057 │ vv.bodyCelkom*cena        │ Preventina prehliadka                         │ vv.kod in ['160']                                            │
-│           16.16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│           18.08 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │          0.0078 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            5.98 │ vv.pocet*cena             │ EKG (5702Z,5702ZV)                            │ vv.kod in ['5702Z','5702']                                   │
 │            5.65 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571A','4571a']                                  │

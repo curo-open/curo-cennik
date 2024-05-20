@@ -64,7 +64,7 @@
 		},
 		{
 			"label": "od 19 do dovršenia 27 rokov",
-			"if": "p|vekMedzi(19, 27)",
+			"if": "p|vekMedzi(19, 26)",
 			"value": 3.01,
 			"calc": "IDK+cena",
 			"instruction": null

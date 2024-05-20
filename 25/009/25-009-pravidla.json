@@ -22,11 +22,11 @@
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.0339
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009574
+			"value": 0.01
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
@@ -37,7 +37,7 @@
 		{
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
-			"value": 1.84,
+			"value": 1.99,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -52,15 +52,15 @@
 		},
 		{
 			"label": "Preventívne zdravotné výkony",
-			"if": "vv.kod in ['157','102','103','105','108','1070','297']",
-			"value": 0.08,
+			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b, 252c",
 			"if": "vv.kod in ['252b','252C']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -114,6 +114,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Konzultačná - expertná kolposkopia",
+			"if": "vv.kod in ['4M04004']",
+			"value": 25,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Punch biopsia",
+			"if": "vv.kod in ['4M04007']",
+			"value": 15,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Skriningový antigénový test SARS-CoV-2",
 			"if": "vv.kod in ['629a']",
 			"value": 5.2,
@@ -144,7 +158,7 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.0318,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

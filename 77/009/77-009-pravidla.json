@@ -5,27 +5,23 @@
 			"value": 0.21
 		},
 		"CB": {
-			"label": "Cena bodu",
-			"value": 0.0305
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.0583
+			"label": "Cena bodu ",
+			"value": 0
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.03
+			"value": 0.0349
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01
 		}
 	},
 	"pacient": [
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(15, 130)",
-			"value": 1.84,
+			"value": 1.97,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -34,7 +30,14 @@
 		{
 			"label": "Výkon 100,102,103,105,157",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['100','102','103','105','157']",
-			"value": 0.0583,
+			"value": 0.0801,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 108",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['108']",
+			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -48,41 +51,41 @@
 		{
 			"label": "Výkon 297",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['297']",
-			"value": 0.0352,
+			"value": 0.0434,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['252b']",
-			"value": 0.0583,
+			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1070",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['1070']",
-			"value": 0.0735,
+			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5303,5305",
+			"label": "Preventívne výkony 5303,5305",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305']",
 			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5308",
+			"label": "Preventivny výkon 5308",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5308']",
-			"value": 0.01044,
+			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5809",
-			"if": "vv.kod in ['5809']",
+			"label": "Preventívny výkon 5309",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5309']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -102,15 +105,64 @@
 			"instruction": null
 		},
 		{
+			"label": "Covid 62a",
+			"if": "vv.kod in ['62a']",
+			"value": 20,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Konzultačná - expertná kolposkopia",
+			"if": "vv.kod in ['4M04004']",
+			"value": 25,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Punch biopsia",
+			"if": "vv.kod in ['4M04007']",
+			"value": 15,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
 			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] && vv.jeSVaLZ",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*SVALZ",
+			"instruction": null
+		},
+		{
+			"label": "EÚ - SVALZ výkon",
+			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] && !vv.jeSVaLZ",
+			"label": "EÚ - iné ako SVALZ",
+			"if": "p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - SVALZ výkon",
+			"if": "vv.typ=='SVaLZ'",
+			"value": 0.01031,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
@@ -119,7 +171,7 @@
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		}
 	],

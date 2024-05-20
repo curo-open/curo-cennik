@@ -27,7 +27,7 @@ Autor: curo.sk
 │ od  1 do dovršenia 2 rokov  │         10.65 │ IDK+cena │ p|vekMedzi(1, 2)   │
 │ od  2 do dovršenia 7 rokov  │          7.34 │ IDK+cena │ p|vekMedzi(2, 7)   │
 │ od  7 do dovršenia 19 rokov │          4.51 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ od 19 do dovršenia 27 rokov │          3.01 │ IDK+cena │ p|vekMedzi(19, 27) │
+│ od 19 do dovršenia 27 rokov │          3.01 │ IDK+cena │ p|vekMedzi(19, 26) │
 └─────────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 

@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.6
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.09
+			"value": 6.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 6.09
+			"value": 9.64
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -26,11 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.035337
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.041
+			"value": 0.03466
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",

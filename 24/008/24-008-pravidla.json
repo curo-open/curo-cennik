@@ -37,35 +37,35 @@
 		{
 			"label": "do  1 roku",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 10.74,
+			"value": 11.81,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  1 do dovršenia 2 rokov",
 			"if": "p|vekMedzi(1, 2)",
-			"value": 10.65,
+			"value": 11.72,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  2 do dovršenia 7 rokov",
 			"if": "p|vekMedzi(2, 7)",
-			"value": 7.34,
+			"value": 7.85,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  7 do dovršenia 19 rokov",
 			"if": "p|vekMedzi(7, 19)",
-			"value": 4.51,
+			"value": 4.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 19 do dovršenia 27 rokov",
-			"if": "p|vekMedzi(19, 27)",
-			"value": 3.01,
+			"if": "p|vekMedzi(19, 26)",
+			"value": 3.16,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -137,7 +137,7 @@
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '149f', '159b', '950', '953', '159a', '159x', '159z','160']",
-			"value": 0.079,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

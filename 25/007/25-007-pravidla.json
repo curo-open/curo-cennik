@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0
+			"value": 1.3
 		},
 		"KPS": {
 			"label": "KPS",
@@ -29,56 +29,49 @@
 		{
 			"label": "do  1 roku",
 			"if": "p.kapitacia && p|vekMedzi(0, 1)",
-			"value": 10.51,
+			"value": 11.45,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  1 do 2 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(1, 3)",
-			"value": 10.42,
+			"value": 11.36,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  3 do 5 rokov vratane",
 			"if": "p.kapitacia && p|vekMedzi(3, 6)",
-			"value": 7.21,
+			"value": 7.71,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  6 do 9 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(6, 9)",
-			"value": 5.21,
+			"if": "p.kapitacia && p|vekMedzi(6, 10)",
+			"value": 5.57,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 10 do 14 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(9, 14)",
-			"value": 4.77,
+			"if": "p.kapitacia && p|vekMedzi(10, 15)",
+			"value": 5.1,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 15 do 17 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(14, 17)",
-			"value": 4.5,
+			"if": "p.kapitacia && p|vekMedzi(15, 18)",
+			"value": 4.81,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "od 18 do 19 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(17, 19)",
-			"value": 4.05,
-			"calc": "IDK+cena",
-			"instruction": null
-		},
-		{
-			"label": "od 20 do 28 rokov vratane",
-			"if": "p.kapitacia && p|vekMedzi(19, 28)",
-			"value": 3.22,
+			"label": "od 18 do 18 rokov vratane",
+			"if": "p.kapitacia && p|vekMedzi(18, 19)",
+			"value": 4.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -87,28 +80,14 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.0318,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.jeSVaLZ",
-			"value": 0.009574,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !vv.jeSVaLZ",
-			"value": 0.0339,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a', '146b', '146c', '148', '148a', '148b', '148c', '149', '149a', '149b', '149c', '149d', '159b', '950', '951','952','953']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -122,21 +101,21 @@
 		{
 			"label": "Preventívna prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventivne zdravotne vykony (142)",
 			"if": "vv.kod in ['142']",
-			"value": 0.11187,
+			"value": 0.1175,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252a','252b','252c']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -156,7 +135,7 @@
 		},
 		{
 			"label": "Komplexné vyšetrenie pri prevzatí do starostlivosti",
-			"if": "vv.kod in ['60','60u']",
+			"if": "vv.kod in ['60']",
 			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -171,7 +150,7 @@
 		{
 			"label": "Návšteva služba",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.0339,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -185,7 +164,7 @@
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 16,
+			"value": 17.33,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -206,7 +185,7 @@
 		{
 			"label": "Intenzifikovaná zdravotná starostlivosť pre rizikových poistencov s obezitou",
 			"if": "vv.kod in ['H0002']",
-			"value": 6.22,
+			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -250,6 +229,20 @@
 			"if": "vv.kod=='AGTC'",
 			"value": null,
 			"calc": "AGTC",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.jeSVaLZ",
+			"value": 0.01,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && !vv.jeSVaLZ",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
 	],
@@ -349,27 +342,33 @@
 			"if": "p.kapitacia && d.vv|ma('kod in [\"149b\"]')",
 			"check": "pacient.vekDni|vMesiacoch >= 169 || pacient.vekDni|vMesiacoch < 192",
 			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 148c mimo dovoleného rozpǎtia (97-120 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"148c\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 97 || pacient.vekDni|vMesiacoch < 120",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149 mimo dovoleného rozpǎtia (121-144 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 121 || pacient.vekDni|vMesiacoch < 144",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149a mimo dovoleného rozpǎtia (145-168 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149a\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 145 || pacient.vekDni|vMesiacoch < 168",
+			"severity": 0
+		},
+		{
+			"label": "Preventivný výkon 149b mimo dovoleného rozpǎtia (169-192 mesiacov) ",
+			"if": "p.kapitacia && d.vv|ma('kod in [\"149b\"]')",
+			"check": "pacient.vekDni|vMesiacoch >= 169 || pacient.vekDni|vMesiacoch < 192",
+			"severity": 0
 		}
 	],
 	"body": {
-		"60": [
-			{
-				"cond": "",
-				"value": 500
-			}
-		],
-		"62": [
-			{
-				"cond": "",
-				"value": 310
-			}
-		],
-		"63": [
-			{
-				"cond": "",
-				"value": 250
-			}
-		],
 		"70": [
 			{
 				"cond": "",

@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────┐
 │ Názov a hodnota │ Popis                 │
 ├─────────────────┼───────────────────────┤
-│ IDK = 0         │ IDK                   │
+│ IDK = 1.3       │ IDK                   │
 │ KPS = 1         │ KPS                   │
 │ EL_POBOCKA = 1  │ Používa el. pobočku ? │
 │ AGTC = 4.8      │ AGTC                  │
@@ -21,14 +21,15 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ do  1 roku                │         10.51 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
-│ od  1 do 2 rokov vratane  │         10.42 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
-│ od  3 do 5 rokov vratane  │          7.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
-│ od  6 do 9 rokov vratane  │          5.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 9)   │
-│ od 10 do 14 rokov vratane │          4.77 │ IDK+cena │ p.kapitacia && p|vekMedzi(9, 14)  │
-│ od 15 do 17 rokov vratane │           4.5 │ IDK+cena │ p.kapitacia && p|vekMedzi(14, 17) │
-│ od 18 do 19 rokov vratane │          4.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(17, 19) │
-│ od 20 do 28 rokov vratane │          3.22 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 28) │
+│ do  1 roku                │         11.45 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
+│ od  1 do 2 rokov vratane  │         11.36 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
+│ od  3 do 5 rokov vratane  │          7.71 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
+│ od  6 do 9 rokov vratane  │          5.57 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 10)  │
+│ od 10 do 14 rokov vratane │           5.1 │ IDK+cena │ p.kapitacia && p|vekMedzi(10, 15) │
+│ od 15 do 17 rokov vratane │          4.81 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 18) │
+│ od 18 do 18 rokov vratane │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
+│ od 19 do 19 rokov vratane │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 20) │
+│ od 20 do 25 rokov vratane │          3.44 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 26) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -36,32 +37,30 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0318 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│        0.009574 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaLZ                                   │
-│          0.0339 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaLZ                                  │
-│            0.08 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
+│           0.035 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
 │                 │                           │                                               │ ', '146b', '146c', '148', '148a', '148b', '148c', '149', '14 │
 │                 │                           │                                               │ 9a', '149b', '149c', '149d', '159b', '950', '951','952','953 │
 │                 │                           │                                               │ ']                                                           │
 │        0.018257 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['1']                                              │
-│            0.08 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
-│         0.11187 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
-│            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
+│          0.1175 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Rozbor a plánovanie cielených terapeutických  │ vv.kod in ['10']                                             │
 │                 │                           │ postupov v na ovplyvnenie                     │                                                              │
 │                 │                           │ chronických ochorení                          │                                                              │
 │           0.027 │ vv.bodyCelkom*cena        │ Telekomunikácia                               │ vv.kod in ['1b','70','11a']                                  │
-│          0.0318 │ vv.bodyCelkom*cena        │ Komplexné vyšetrenie pri prevzatí do starostl │ vv.kod in ['60','60u']                                       │
+│          0.0318 │ vv.bodyCelkom*cena        │ Komplexné vyšetrenie pri prevzatí do starostl │ vv.kod in ['60']                                             │
 │                 │                           │ ivosti                                        │                                                              │
 │           0.029 │ vv.bodyCelkom*cena        │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
 │                 │                           │ nie do 5 roku života                          │                                                              │
-│          0.0339 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25','26']                                        │
+│           0.035 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25','26']                                        │
 │            5.75 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a']                                          │
-│              16 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│           17.33 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
 │               2 │ vv.pocet*cena             │ Odbery                                        │ vv.kod in ['250D']                                           │
-│            6.22 │ vv.pocet*cena             │ Intenzifikovaná zdravotná starostlivosť pre r │ vv.kod in ['H0002']                                          │
+│              10 │ vv.pocet*cena             │ Intenzifikovaná zdravotná starostlivosť pre r │ vv.kod in ['H0002']                                          │
 │                 │                           │ izikových poistencov s obezitou               │                                                              │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
@@ -70,6 +69,8 @@ Autor: curo.sk
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ PP05                      │ Pripočitateľné položky                        │ vv.kod=='PP05'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            0.01 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaLZ                                   │
+│           0.035 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaLZ                                  │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -77,6 +78,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
