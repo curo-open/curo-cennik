@@ -1,0 +1,184 @@
+{
+	"params": {
+		"IDK": {
+			"label": "IDK",
+			"value": 0
+		},
+		"KPS": {
+			"label": "KPS",
+			"value": 1.58
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.0339
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.065
+		},
+		"CBEU": {
+			"label": "Cena bodu EU",
+			"value": 0.0339
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009574
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.009574
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "UAO - KPU",
+			"if": "vv.kod in ['KPU']",
+			"value": 2.3,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Preventívny výkon",
+			"if": "vv.kod in ['157U','102U','105U']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Vyšetrenie a rady v gravidite",
+			"if": "vv.kod in ['103U']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Ultrazvuk vrátane biometrie a posúdenie vývoja orgánov",
+			"if": "vv.kod in ['108U']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Kolposkopia",
+			"if": "vv.kod in ['1070U']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Komplexné vyšetrenie ",
+			"if": "vv.kod in ['60U']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Očkovanie",
+			"if": "vv.kod in ['252BU','252CU']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Cytologické vyšetrenie",
+			"if": "vv.kod in ['297U']",
+			"value": 0.08,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Výkon 11AU",
+			"if": "vv.kod in ['11AU']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Výkon 1BU",
+			"if": "vv.kod in ['1BU']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Výkon 70U",
+			"if": "vv.kod in ['70U']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Výkony 5303U,5305U,5308U",
+			"if": "vv.kod in ['5303U','5305U','5308U']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Ultrazvuk vrátane biometrie plodu",
+			"if": "vv.kod in ['5808U']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "UAO - Externé CTG",
+			"if": "vv.kod in ['118U']",
+			"value": 0.01917,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný EU - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný EU - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - SVALZ výkon",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "UA 84 gynekologia"
+}
