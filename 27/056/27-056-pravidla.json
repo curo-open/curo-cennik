@@ -2,19 +2,15 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0365
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.0455
+			"value": 0.0323
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -38,15 +34,15 @@
 		{
 			"label": "Výkon `60,`62,`63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0335,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon `60r",
 			"if": "vv.kod in ['60r']",
-			"value": 0.0335,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -73,14 +69,14 @@
 		{
 			"label": "Výkon H0007",
 			"if": "vv.kod in ['H0007']",
-			"value": 5.88,
+			"value": 6.06,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -108,7 +104,7 @@
 		{
 			"label": "Výkony 5766, 5769, 5770,5771, 5772, 5793, 5794, 5795",
 			"if": "vv.kod in ['5766','5769','5770','5771','5772','5793','5794','5795']",
-			"value": 0.0226,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

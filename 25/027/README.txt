@@ -5,19 +5,20 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────────┬───────────────────────┐
-│ Názov a hodnota      │ Popis                 │
-├──────────────────────┼───────────────────────┤
-│ IPP1 = 2.24          │ IPP1                  │
-│ IPP2 = 3.6           │ IPP2                  │
-│ IPP3 = 6.09          │ IPP3                  │
-│ PP50 = 9.09          │ PP50                  │
-│ LIMIT = 0            │ Limit                 │
-│ EL_POBOCKA = 1       │ Používa el. pobočku ? │
-│ CB = 0.0318          │ Cena bodu             │
-│ CBSVALZ = 0.01026    │ Cena bodu SVaLZ       │
-│ CBSVALZSP = 0.016402 │ Cena bodu SVaLZ SP    │
-└──────────────────────┴───────────────────────┘
+┌───────────────────────┬───────────────────────┐
+│ Názov a hodnota       │ Popis                 │
+├───────────────────────┼───────────────────────┤
+│ IPP1 = 2.44           │ IPP1                  │
+│ IPP2 = 3.92           │ IPP2                  │
+│ IPP3 = 6.64           │ IPP3                  │
+│ PP50 = 9.64           │ PP50                  │
+│ LIMIT = 0             │ Limit                 │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ? │
+│ CB = 0.03466          │ Cena bodu             │
+│ CBSVALZ = 0.01026     │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
+│ CBSVALZSP = 0.016402  │ Cena bodu SVaLZ SP    │
+└───────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -38,6 +39,7 @@ Autor: curo.sk
 │                 │                           │                                               │ ','530','531']                                               │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │               5 │ vv.pocet*cena             │ SVALZ výkony (250X)                           │ vv.kod in ['250X']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

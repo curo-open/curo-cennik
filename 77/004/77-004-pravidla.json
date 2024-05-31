@@ -6,23 +6,23 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.04
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.015
+			"value": 0.01031
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 2.49
+			"value": 5.83
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 0.73
+			"value": 4.24
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 0.57
+			"value": 3.18
 		}
 	},
 	"pacient": [],
@@ -30,7 +30,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
+			"value": 0.0365,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -51,7 +51,7 @@
 		{
 			"label": "Výkony",
 			"if": "vv.kod in ['H0008']",
-			"value": null,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -128,7 +128,7 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.012075,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

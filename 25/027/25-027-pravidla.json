@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.6
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.09
+			"value": 6.64
 		},
 		"PP50": {
 			"label": "PP50",
-			"value": 9.09
+			"value": 9.64
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -26,11 +26,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0318
+			"value": 0.03466
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01026
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.009574
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
@@ -86,6 +90,13 @@
 			"if": "vv.kod in ['503','504','505']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

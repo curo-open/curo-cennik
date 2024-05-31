@@ -5,16 +5,16 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬─────────────────┐
-│ Názov a hodnota │ Popis           │
-├─────────────────┼─────────────────┤
-│ LIMIT = 0       │ Limit           │
-│ CB = 0.04       │ Cena bodu       │
-│ CBSVALZ = 0.015 │ Cena bodu SVaLZ │
-│ IPP4 = 2.49     │ IPP4            │
-│ IPP5 = 0.73     │ IPP5            │
-│ IPP6 = 0.57     │ IPP6            │
-└─────────────────┴─────────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ LIMIT = 0         │ Limit           │
+│ CB = 0.0365       │ Cena bodu       │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ │
+│ IPP4 = 5.83       │ IPP4            │
+│ IPP5 = 4.24       │ IPP5            │
+│ IPP6 = 3.18       │ IPP6            │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -27,10 +27,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│          0.0365 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│             NaN │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
+│            6.98 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
@@ -42,7 +42,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
-│        0.012075 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

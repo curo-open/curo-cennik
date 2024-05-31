@@ -1,0 +1,241 @@
+{
+	"params": {
+		"IDK": {
+			"label": "IDK",
+			"value": 0
+		},
+		"KPS": {
+			"label": "KPS",
+			"value": 1.58
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.0339
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.065
+		},
+		"CBEU": {
+			"label": "Cena bodu EU",
+			"value": 0.035
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.01
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.009574
+		}
+	},
+	"pacient": [
+		{
+			"label": "Kapitácie",
+			"if": "p.kapitacia && p|vekMedzi(15, 120)",
+			"value": 1.99,
+			"calc": "IDK+cena",
+			"instruction": null
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.03,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony",
+			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252b, 252c",
+			"if": "vv.kod in ['252b','252C']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 118",
+			"if": "vv.kod in ['118']",
+			"value": 0.01917,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony 5303,5305,5308",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305','5308']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.kod in ['5303','5305','5308']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5808",
+			"if": "vv.kod in ['5808']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 67",
+			"if": "vv.kod in ['67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Konzultačná - expertná kolposkopia",
+			"if": "vv.kod in ['4M04004']",
+			"value": 25,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Punch biopsia",
+			"if": "vv.kod in ['4M04007']",
+			"value": 15,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skriningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skriningový poistencov. antigénový test SARS-CoV-2 imun. metód.",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný EU - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný EU - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - SVALZ výkon",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 310
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gynekolog"
+}

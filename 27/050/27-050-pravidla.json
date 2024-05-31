@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0305
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
@@ -14,19 +14,15 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 3.5
+			"value": 3.71
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3
+			"value": 3.18
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 2
-		},
-		"CV": {
-			"label": "Výkony 60,62,63",
-			"value": 0.0335
+			"value": 2.12
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -52,22 +48,29 @@
 		{
 			"label": "Výkon H0006",
 			"if": "vv.kod in ['H0006']",
-			"value": 5.65,
+			"value": 5.82,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1A02007",
+			"if": "vv.kod in ['1A02007']",
+			"value": 0.0323,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4587a",
 			"if": "vv.kod in ['4587a']",
-			"value": 0.00973,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 0.01107,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -101,8 +104,8 @@
 		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0335,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -115,7 +118,7 @@
 		{
 			"label": "Výkon C - reaktívny proteín ",
 			"if": "vv.kod in ['4571a','4571A']",
-			"value": 0.015,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

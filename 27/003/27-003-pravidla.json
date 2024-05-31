@@ -2,27 +2,27 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0365
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+			"value": 0.0323
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 5.5
+			"value": 5.83
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 4
+			"value": 4.24
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 3
+			"value": 3.18
 		}
 	},
 	"pacient": [],
@@ -30,7 +30,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0315,
+			"value": 0.0365,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -51,7 +51,7 @@
 		{
 			"label": "Výkony",
 			"if": "vv.kod in ['5727','5775','5778']",
-			"value": 0.0226,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -114,7 +114,7 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5766','5769','5770','5771','5772','5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.0226,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

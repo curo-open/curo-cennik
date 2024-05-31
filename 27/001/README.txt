@@ -8,16 +8,16 @@ Autor: curo.sk
 ┌──────────────────────┬──────────────────────────────┐
 │ Názov a hodnota      │ Popis                        │
 ├──────────────────────┼──────────────────────────────┤
-│ CB = 0.034           │ Cena bodu                    │
-│ CBO = 0.0305         │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.00973    │ Cena bodu SVaLZ              │
-│ CBSVALZUSG = 0.01044 │ Cena bodu SVaLZ USG          │
+│ CB = 0.0365          │ Cena bodu                    │
+│ CBO = 0.0323         │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01031    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG          │
 │ IPP1 = 0.57          │ IPP1                         │
 │ IPP2 = 0.36          │ IPP2                         │
 │ IPP3 = 0.28          │ IPP3                         │
-│ IPP4 = 5.5           │ IPP4                         │
-│ IPP5 = 4             │ IPP5                         │
-│ IPP6 = 3             │ IPP6                         │
+│ IPP4 = 5.83          │ IPP4                         │
+│ IPP5 = 4.24          │ IPP5                         │
+│ IPP6 = 3.18          │ IPP6                         │
 │ AGTC = 4.8           │ AGTC                         │
 │ PP50 = 10            │ PP50                         │
 │ LIMIT = 0            │ Limit                        │
@@ -52,10 +52,10 @@ Autor: curo.sk
 │               5 │ vv.pocet*cena             │ Výkon Y0018                                   │ vv.kod in ['Y0018']                                          │
 │            4.56 │ vv.pocet*cena             │ Výkon Y0023                                   │ vv.kod in ['Y0023']                                          │
 │            8.95 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
-│            5.88 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
+│            6.06 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330;5331;5332                          │ vv.kod in ['5330','5331','5332']                             │
 │         0.01275 │ vv.bodyCelkom*cena        │ Výkon 5793;5794;5795                          │ vv.kod in ['5793','5794','5795']                             │
-│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │

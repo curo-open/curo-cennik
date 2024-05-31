@@ -8,15 +8,15 @@ Autor: curo.sk
 ┌────────────────────┬───────────────────────┐
 │ Názov a hodnota    │ Popis                 │
 ├────────────────────┼───────────────────────┤
-│ IPP1 = 1.8         │ IPP1                  │
-│ IPP2 = 2.9         │ IPP2                  │
-│ IPP3 = 4.9         │ IPP3                  │
-│ IPP4 = 4.9         │ IPP4                  │
+│ IPP1 = 2.44        │ IPP1                  │
+│ IPP2 = 3.92        │ IPP2                  │
+│ IPP3 = 6.64        │ IPP3                  │
+│ IPP4 = 9.64        │ IPP4                  │
 │ IPPD = 5           │ IPPD                  │
 │ LIMIT = 0          │ Limit                 │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.0268        │ Cena bodu             │
-│ CBSVALZ = 0.008105 │ Cena bodu SVaLZ       │
+│ CB = 0.03466       │ Cena bodu             │
+│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
 └────────────────────┴───────────────────────┘
 
@@ -32,8 +32,8 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│           0.026 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
-│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│           0.035 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
+│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

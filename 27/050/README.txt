@@ -8,13 +8,12 @@ Autor: curo.sk
 ┌───────────────────┬────────────────────┐
 │ Názov a hodnota   │ Popis              │
 ├───────────────────┼────────────────────┤
-│ CB = 0.0305       │ Cena bodu          │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ    │
+│ CB = 0.0365       │ Cena bodu          │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ    │
 │ NCB = 0           │ Navysena cena bodu │
-│ IPP1 = 3.5        │ IPP1               │
-│ IPP2 = 3          │ IPP2               │
-│ IPP3 = 2          │ IPP3               │
-│ CV = 0.0335       │ Výkony 60,62,63    │
+│ IPP1 = 3.71       │ IPP1               │
+│ IPP2 = 3.18       │ IPP2               │
+│ IPP3 = 2.12       │ IPP3               │
 │ LIMIT = 0         │ Limit              │
 └───────────────────┴────────────────────┘
 
@@ -31,17 +30,18 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
 │            10.2 │ vv.pocet*cena             │ 629B                                          │ vv.kod in ['629b']                                           │
-│            5.65 │ vv.pocet*cena             │ Výkon H0006                                   │ vv.kod in ['H0006']                                          │
-│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
-│         0.00973 │ vv.bodyCelkom*CBSVALZ     │ Výkon 4587a                                   │ vv.kod in ['4587a']                                          │
+│            5.82 │ vv.pocet*cena             │ Výkon H0006                                   │ vv.kod in ['H0006']                                          │
+│            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│          0.0323 │ vv.bodyCelkom*cena        │ Výkon 1A02007                                 │ vv.kod in ['1A02007']                                        │
+│         0.01107 │ vv.bodyCelkom*cena        │ Výkon 4587a                                   │ vv.kod in ['4587a']                                          │
 │        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
 │          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
-│          0.0335 │ vv.bodyCelkom*(cena+NCB)  │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
-│           0.015 │ vv.bodyCelkom*cena        │ Výkon C - reaktívny proteín                   │ vv.kod in ['4571a','4571A']                                  │
+│          0.0158 │ vv.bodyCelkom*cena        │ Výkon C - reaktívny proteín                   │ vv.kod in ['4571a','4571A']                                  │
 │            10.2 │ vv.pocet*cena             │ Antigénový test                               │ vv.kod in ['629b']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │

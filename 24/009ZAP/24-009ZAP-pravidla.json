@@ -26,7 +26,7 @@
 		},
 		"KP": {
 			"label": "Kapitačná platba",
-			"value": 1.96
+			"value": 1.98
 		}
 	},
 	"pacient": [
@@ -63,7 +63,7 @@
 		{
 			"label": "Výkony 5303,5305,5308",
 			"if": "vv.kod in ['5303','5305','5308']",
-			"value": 0.009281,
+			"value": 0.009745,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
