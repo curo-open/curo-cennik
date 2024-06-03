@@ -123,56 +123,56 @@
 		{
 			"label": "Očkovanie proti chrípke",
 			"if": "vv.diagnoza=='Z25.1' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A",
 			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B/Tetanus",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A+B",
 			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
 			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti pneumokokom",
 			"if": "vv.diagnoza=='Z23.5' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti kliestovej encefalitide",
 			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B/Tetanus",
 			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -200,7 +200,7 @@
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
-			"value": 0.0082,
+			"value": 0.01,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

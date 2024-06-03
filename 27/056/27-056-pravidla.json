@@ -14,15 +14,15 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 0.57
+			"value": 0
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 0.36
+			"value": 0
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 0.28
+			"value": 0
 		},
 		"LIMIT": {
 			"label": "Limit",

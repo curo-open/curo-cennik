@@ -199,7 +199,7 @@
 		{
 			"label": "Preventina prehliadka",
 			"if": "vv.kod in ['160']",
-			"value": 0.057,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

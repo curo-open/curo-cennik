@@ -57,15 +57,15 @@
 		{
 			"label": "Výkon 15b - vyodnotenie odberov",
 			"if": "vv.kod in ['15b']",
-			"value": 0.0318,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.03466,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -85,8 +85,8 @@
 		{
 			"label": "EKG - vv. 603a, 15c",
 			"if": "vv.kod in ['603a','15c']",
-			"value": 0.0318,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -99,8 +99,8 @@
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.03466,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

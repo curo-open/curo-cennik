@@ -12,9 +12,6 @@ Autor: curo.sk
 │ CBO = 0.0323         │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.01031    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG          │
-│ IPP1 = 0.57          │ IPP1                         │
-│ IPP2 = 0.36          │ IPP2                         │
-│ IPP3 = 0.28          │ IPP3                         │
 │ IPP4 = 5.83          │ IPP4                         │
 │ IPP5 = 4.24          │ IPP5                         │
 │ IPP6 = 3.18          │ IPP6                         │
@@ -54,7 +51,7 @@ Autor: curo.sk
 │            8.95 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
 │            6.06 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330;5331;5332                          │ vv.kod in ['5330','5331','5332']                             │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkon 5793;5794;5795                          │ vv.kod in ['5793','5794','5795']                             │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkon 5793;5794;5795                          │ vv.kod in ['5793','5794','5795']                             │
 │            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
