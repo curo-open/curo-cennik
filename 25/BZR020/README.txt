@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬───────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                             │
 ├────────────────────┼───────────────────────────────────────────────────┤
-│ IDK = 1.3          │ IDK                                               │
+│ IDK = 1.04         │ IDK                                               │
 │ KPS = 1            │ KPS                                               │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?                             │
 │ CB = 0.0318        │ Cena bodu                                         │
@@ -47,8 +47,8 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CB          │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│            null │ vv.bodyCelkom*CBSVALZEU   │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
-│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
+│            null │ vv.bodyCelkom*CBSVALZEU   │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'      │
+│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'      │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
@@ -99,6 +99,8 @@ Autor: curo.sk
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
 │                 │                           │                                               │ '5051R','FotoR','PACSR','5702R']                             │
+│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
+│            null │ vv.bodyCelkom*CBSVALZEU   │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'           │
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

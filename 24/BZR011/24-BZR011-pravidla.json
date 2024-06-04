@@ -42,7 +42,7 @@
 		},
 		{
 			"label": "SVALZ výkony",
-			"if": "vv.kod in ['5300','5301','5702']",
+			"if": "vv.kod in ['5153a','5300','5301','5702']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null

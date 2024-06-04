@@ -113,13 +113,6 @@
 	],
 	"vykon": [
 		{
-			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
-			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
-			"value": 0.020995,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": null,
@@ -127,8 +120,15 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['EU']",
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
@@ -199,7 +199,7 @@
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.079,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -212,14 +212,14 @@
 		},
 		{
 			"label": "Očkovanie",
-			"if": "vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Návštevná služba",
-			"if": "vv.kod in ['25','26','29','30']",
+			"if": "!p.kapitacia && vv.kod in ['25','26','29','30']",
 			"value": 0.0375,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -227,7 +227,7 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.079,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -327,6 +327,27 @@
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
+			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
+			"value": 0.020995,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		}
 	],

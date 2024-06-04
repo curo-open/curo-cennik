@@ -8,14 +8,14 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.34           │ IPP1                         │
-│ IPP2 = 2.16           │ IPP2                         │
-│ IPP3 = 3.65           │ IPP3                         │
-│ IPP4 = 6.65           │ IPP4                         │
+│ IPP1 = 2.44           │ IPP1                         │
+│ IPP2 = 3.92           │ IPP2                         │
+│ IPP3 = 6.64           │ IPP3                         │
+│ IPP4 = 6.64           │ IPP4                         │
 │ IPPD = 5              │ IPPD                         │
 │ LIMIT = 75900         │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0318           │ Cena bodu                    │
+│ CB = 0.03466          │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
@@ -34,7 +34,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
-│        0.009574 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['70','1b','1c','11a']                             │

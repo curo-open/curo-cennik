@@ -14,7 +14,7 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany",
-			"value": 0.0339
+			"value": 0.035
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -29,75 +29,68 @@
 		{
 			"label": "vek do 1 roku života",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 10.51,
+			"value": 11.45,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 1 do 2 vrátane",
 			"if": "p|vekMedzi(1, 3)",
-			"value": 10.42,
+			"value": 11.36,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 3 do 5 vrátane",
 			"if": "p|vekMedzi(3, 6)",
-			"value": 7.21,
+			"value": 7.71,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 6 do 9 vrátane",
 			"if": "p|vekMedzi(6, 10)",
-			"value": 5.21,
+			"value": 5.57,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 10 do 14 vrátane",
 			"if": "p|vekMedzi(10, 15)",
-			"value": 4.77,
+			"value": 5.1,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 15 do 17 vrátane",
 			"if": "p|vekMedzi(15, 18)",
-			"value": 4.5,
+			"value": 4.81,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 18 do 19 vrátane",
-			"if": "p|vekMedzi(18, 20)",
-			"value": 4.05,
+			"label": "vek od 18 do 18 vrátane",
+			"if": "p|vekMedzi(18, 19)",
+			"value": 4.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
-			"label": "vek od 20 do 28 vrátane",
-			"if": "p|vekMedzi(20, 29)",
-			"value": 3.22,
+			"label": "vek od 19 do 19 vrátane",
+			"if": "p|vekMedzi(19, 20)",
+			"value": 4.33,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "vek od 20 do 25 vrátane",
+			"if": "p|vekMedzi(20, 26)",
+			"value": 3.44,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
 	],
 	"vykon": [
-		{
-			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
 		{
 			"label": "Výkon 1b,11a,70",
 			"if": "vv.kod in ['1b','11a','70']",
@@ -113,6 +106,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 8 - nekapitovaný",
+			"if": "!p.kapitacia && vv.kod in ['8']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4 - nekapitovaný ",
+			"if": "!p.kapitacia && vv.kod in ['4']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 15b - Zhodnotenie výsledkov",
 			"if": "vv.kod in ['15b'] ",
 			"value": null,
@@ -122,7 +129,7 @@
 		{
 			"label": "Výkon 25,26",
 			"if": "vv.kod in ['25','26']",
-			"value": 0.0339,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -136,8 +143,15 @@
 		{
 			"label": "Výkon 60b",
 			"if": "vv.kod in ['60b']",
-			"value": 16,
+			"value": 17.33,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 64",
+			"if": "vv.kod in ['64']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -157,7 +171,7 @@
 		{
 			"label": "Výkon 950,951,952,953",
 			"if": "vv.kod in ['950','951','952','953']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -171,13 +185,13 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252a','252b','252c']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odbery",
-			"if": "vv.kod in ['299a','299b']",
+			"if": "!p.kapitacia && vv.kod in ['299a','299b']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -192,14 +206,14 @@
 		{
 			"label": "1.preventívna prehliadka u VLDD",
 			"if": "vv.kod in ['142']",
-			"value": 0.11187,
+			"value": 0.01175,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne výkony ",
-			"if": "vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148','148a','148b','148c','149','149a','149b','149c','149d','149f']",
-			"value": 0.08,
+			"if": "vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148','148a','148b','148c','149','149a','149b','149c','149d','159b']",
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -211,16 +225,9 @@
 			"instruction": null
 		},
 		{
-			"label": "Cholesterol ako cast PP",
-			"if": "vv.kod in ['159b']",
-			"value": 0.079,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Základná preventívna prehliadka ",
 			"if": "vv.kod in ['160']",
-			"value": 0.08,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -283,13 +290,39 @@
 		{
 			"label": "Výkon H0002",
 			"if": "vv.kod in ['H0002']",
-			"value": 6.22,
+			"value": 10,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - Bezdomovec, Cudzinec",
+			"if": "!p.kapitacia && p.typ in ['EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		}
 	],
 	"kontrola": [],
 	"body": {
+		"25": [
+			{
+				"cond": "",
+				"value": 285
+			}
+		],
+		"26": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
 		"60": [
 			{
 				"cond": "",

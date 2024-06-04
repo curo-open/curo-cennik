@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 1.34           │ IPP1                  │
-│ IPP2 = 2.16           │ IPP2                  │
-│ IPP3 = 3.65           │ IPP3                  │
-│ IPP4 = 6.65           │ IPP4                  │
+│ IPP1 = 2.44           │ IPP1                  │
+│ IPP2 = 3.92           │ IPP2                  │
+│ IPP3 = 6.64           │ IPP3                  │
+│ IPP4 = 6.64           │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.0318           │ Cena bodu             │
+│ CB = 0.03466          │ Cena bodu             │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
@@ -39,6 +39,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │        0.008473 │ vv.bodyCelkom*cena        │ Ergometria                                    │ vv.kod in ['5708']                                           │
 │         0.02814 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['603a','15c']                                     │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ EKG                                           │ vv.kod in ['5702']                                           │
 │        0.008473 │ vv.bodyCelkom*cena        │ Ekg holter                                    │ vv.kod in ['5712','5713','5714']                             │
 │         0.02814 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
@@ -58,9 +59,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             420 │ 60                                                                                                        │                           │
-│             270 │ 62                                                                                                        │                           │
-│             210 │ 63                                                                                                        │                           │
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │            2000 │ 5744                                                                                                      │                           │
 │            1800 │ 5745                                                                                                      │                           │

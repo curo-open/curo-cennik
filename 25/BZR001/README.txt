@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 1.34           │ IPP1                  │
-│ IPP2 = 2.16           │ IPP2                  │
-│ IPP3 = 3.65           │ IPP3                  │
-│ IPP4 = 6.65           │ IPP4                  │
+│ IPP1 = 2.44           │ IPP1                  │
+│ IPP2 = 3.92           │ IPP2                  │
+│ IPP3 = 6.64           │ IPP3                  │
+│ IPP4 = 6.64           │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.0318           │ Cena bodu             │
+│ CB = 0.03466          │ Cena bodu             │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
@@ -41,7 +41,7 @@ Autor: curo.sk
 │               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Odber biol.materiálu                          │ vv.kod in ['299a','299b']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Zhodnotenie vyšetrení a zdrav.dokumentácie    │ vv.kod in ['5700']                                           │
-│            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702']                                           │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ EKG                                           │ vv.kod in ['5702']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5715, 5716                              │ vv.kod in ['5715','5716']                                    │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │

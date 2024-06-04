@@ -99,8 +99,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 4,5,6,30",
-			"if": "vv.kod in ['4','5','6','30']",
+			"label": "Výkon 4,5,6,8,30",
+			"if": "vv.kod in ['4','5','6','8','30']",
 			"value": 0.0339,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -218,6 +218,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 64",
+			"if": "vv.kod in ['64']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 67",
 			"if": "vv.kod in ['67']",
 			"value": 4.63,
@@ -278,6 +285,13 @@
 			"if": "vv.kod in ['250D']",
 			"value": 1.19,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 299a,299b",
+			"if": "vv.kod in ['299a','299b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
 	],

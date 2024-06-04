@@ -28,6 +28,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
 │            null │ vv.bodyCelkom*CB          │ Edukácia k spirometrii                        │ vv.kod in ['10e']                                            │
 │            null │ vv.bodyCelkom*CB          │ Zhodnotenie výsledkov                         │ vv.kod in ['15b']                                            │
+│          0.0193 │ vv.bodyCelkom*cena        │ Zhodnotenie RTG dokumentácie                  │ vv.kod in ['15D']                                            │
 │            null │ vv.bodyCelkom*CB          │ Interpretácia imunologického profilu          │ vv.kod in ['15f']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │

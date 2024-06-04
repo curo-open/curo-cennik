@@ -2,11 +2,11 @@
 	"params": {
 		"IDK": {
 			"label": "IDK",
-			"value": 0.51
+			"value": 0.6
 		},
 		"KPS": {
 			"label": "KPS",
-			"value": 1.84
+			"value": 1.99
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -18,15 +18,15 @@
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.08
+			"value": 0.084
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.0339
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009574
+			"value": 0.01
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
@@ -65,9 +65,23 @@
 			"instruction": null
 		},
 		{
+			"label": "Odber krvi",
+			"if": "!p.kapitacia && vv.kod in ['250a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Odber biologického materiálu",
+			"if": "!p.kapitacia && vv.kod in ['299a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 252b, 252c",
-			"if": "vv.kod in ['252b','252C']",
-			"value": 0.08,
+			"if": "!p.kapitacia && vv.kod in ['252b','252C']",
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -100,8 +114,15 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60,63",
-			"if": "vv.kod in ['60','63']",
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 63",
+			"if": "!p.kapitacia && vv.kod in ['63']",
 			"value": 0.0318,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

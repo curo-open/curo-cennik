@@ -43,6 +43,7 @@ Autor: curo.sk
 │            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │         0.01044 │ vv.bodyCelkom*cena        │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5727                                    │ vv.kod in ['5727']                                           │
+│         0.00973 │ vv.bodyCelkom*cena        │ Výkon 5702                                    │ vv.kod in ['5702']                                           │
 │         0.00973 │ vv.bodyCelkom*cena        │ Ergometria                                    │ vv.kod in ['5708']                                           │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
 │            null │ vv.bodyCelkom*CB          │ EKG                                           │ vv.kod in ['603a','15c']                                     │

@@ -38,7 +38,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['EU']                              │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
 │           13.56 │ vv.pocet*cena             │ Výkon 10                                      │ vv.kod in ['10']                                             │
-│          0.0339 │ vv.bodyCelkom*cena        │ Výkon 4,5,6,30                                │ vv.kod in ['4','5','6','30']                                 │
+│          0.0339 │ vv.bodyCelkom*cena        │ Výkon 4,5,6,8,30                              │ vv.kod in ['4','5','6','8','30']                             │
 │          0.0339 │ vv.bodyCelkom*cena        │ Výkon 40,41                                   │ vv.kod in ['40','41']                                        │
 │           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a']                                           │
@@ -58,6 +58,7 @@ Autor: curo.sk
 │              17 │ vv.pocet*cena             │ Výkon 60b                                     │ vv.kod in ['60b']                                            │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │            4.63 │ vv.pocet*cena             │ Výkon 67                                      │ vv.kod in ['67']                                             │
 │            4.97 │ vv.pocet*cena             │ Výkon 1544a                                   │ vv.kod in ['1544a']                                          │
 │         0.00973 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
@@ -68,6 +69,7 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            1.19 │ vv.pocet*cena             │ Delegovaný odber 250D                         │ vv.kod in ['250D']                                           │
+│            null │ vv.bodyCelkom*CB          │ Výkon 299a,299b                               │ vv.kod in ['299a','299b']                                    │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

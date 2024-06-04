@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0318
+			"value": 0.03466
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -14,19 +14,19 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.6
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.09
+			"value": 6.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 6.09
+			"value": 6.64
 		}
 	},
 	"pacient": [],
@@ -162,7 +162,7 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 500
 			}
 		],
 		"62": [

@@ -51,16 +51,23 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','5316','5807','5809']",
+			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5301','5303','5305','5316','5807','5809']",
+			"if": "vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Populačný skríning",
+			"if": "vv.kod in ['297']",
+			"value": 0.079,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

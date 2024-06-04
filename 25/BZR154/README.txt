@@ -5,17 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬─────────────────┐
-│ Názov a hodnota    │ Popis           │
-├────────────────────┼─────────────────┤
-│ LIMIT = 2235       │ Limit           │
-│ CB = 0.0318        │ Cena bodu       │
-│ CBSVALZ = 0.009574 │ Cena bodu SVaLZ │
-│ IPP1 = 2.24        │ IPP1            │
-│ IPP2 = 3.6         │ IPP2            │
-│ IPP3 = 6.09        │ IPP3            │
-│ IPP4 = 6.09        │ IPP4            │
-└────────────────────┴─────────────────┘
+┌───────────────────────┬────────────────────┐
+│ Názov a hodnota       │ Popis              │
+├───────────────────────┼────────────────────┤
+│ LIMIT = 2235          │ Limit              │
+│ CB = 0.03466          │ Cena bodu          │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ    │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZUSG │
+│ IPP1 = 2.44           │ IPP1               │
+│ IPP2 = 3.92           │ IPP2               │
+│ IPP3 = 6.64           │ IPP3               │
+│ IPP4 = 6.64           │ IPP4               │
+└───────────────────────┴────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -36,7 +37,7 @@ Autor: curo.sk
 │                 │                           │                                               │ ,'763','763A']                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['360','361','363','364','365','366','367']        │
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301']                                    │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301']                                    │
 │            null │ vv.bodyCelkom*CB          │ Výkon 401 - Povrchová anestézia               │ vv.kod in ['401']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 15b - Zhodnotenie výsledkov             │ vv.kod in ['15b']                                            │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d - Zhodnotenie rtg dokumentácie      │ vv.kod in ['15d']                                            │
@@ -54,7 +55,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             160 │ 1                                                                                                         │                           │
+│              80 │ 1                                                                                                         │                           │
 │             620 │ 60                                                                                                        │                           │
 │             400 │ 62                                                                                                        │                           │
 │             310 │ 63                                                                                                        │                           │

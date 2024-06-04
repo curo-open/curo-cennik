@@ -31,9 +31,10 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBP         │ Preventívne zdravotné výkony                  │ vv.kod in ['157','102','103','105','108','1070','297']       │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
-│            null │ vv.bodyCelkom*CBUSG       │ Výkon SVALZ USG                               │ vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','531 │
-│                 │                           │                                               │ 6','5807','5809']                                            │
-│            null │ vv.bodyCelkom*CBUSG       │ Výkon SVALZ USG                               │ vv.kod in ['5301','5303','5305','5316','5807','5809']        │
+│            null │ vv.bodyCelkom*CBUSG       │ Výkon SVALZ USG                               │ vv.diagnoza in ['Z'] && vv.kod in ['5301','5303','5305','530 │
+│                 │                           │                                               │ 8','5316','5807','5809']                                     │
+│            null │ vv.bodyCelkom*CBUSG       │ Výkon SVALZ USG                               │ vv.kod in ['5301','5303','5305','5308','5316','5807','5809'] │
+│           0.079 │ vv.bodyCelkom*cena        │ Populačný skríning                            │ vv.kod in ['297']                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60, 63                                  │ vv.kod in ['60','63']                                        │
 │            null │ vv.bodyCelkom*CBUSG       │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
