@@ -5,14 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────┐
-│ Názov a hodnota   │ Popis                │
-├───────────────────┼──────────────────────┤
-│ LIMIT = 2235      │ Limit                │
-│ CB = 0.031988     │ Cena bodu            │
-│ CBSVALZ = 0.00865 │ Cena bodu SVaLZ      │
-│ CBE = 0.27        │ Cena bodu el. výkony │
-└───────────────────┴──────────────────────┘
+┌────────────────────┬──────────────────────┐
+│ Názov a hodnota    │ Popis                │
+├────────────────────┼──────────────────────┤
+│ LIMIT = 0          │ Limit                │
+│ CB = 0.029461      │ Cena bodu            │
+│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ      │
+│ CBE = 0.27         │ Cena bodu el. výkony │
+└────────────────────┴──────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -25,17 +25,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│        0.011593 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
-│                 │                           │ 531                                           │ ','530','531']                                               │
-│        0.011593 │ vv.bodyCelkom*cena        │ Výkon 532;533a;540;541;542                    │ vv.kod in ['532','533a','540','541','542']                   │
-│        0.026432 │ vv.bodyCelkom*cena        │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
-│          0.0462 │ vv.bodyCelkom*cena        │ Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763 │ vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn',' │
-│                 │                           │ sp;763sn                                      │ 763sp','763sn']                                              │
+│           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│            null │ vv.bodyCelkom*CB          │ Výkon 841,847                                 │ vv.kod in ['841','847']                                      │
+│            null │ vv.bodyCelkom*CB          │ Psychiatrické výkony                          │ vv.kod in ['820','821','822','825','826','841','842','845',' │
+│                 │                           │                                               │ 847','867']                                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

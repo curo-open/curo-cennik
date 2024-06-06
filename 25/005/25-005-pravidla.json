@@ -44,13 +44,6 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 11a,1b,7,1c",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,
@@ -137,12 +130,6 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",

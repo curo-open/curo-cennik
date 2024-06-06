@@ -109,7 +109,7 @@
 			"label": "USG",
 			"if": "vv.kod in ['5300','5301','5302','5303','5306','5307','5308','5309','5310','5312','5315','5316','5742','5743','5739','5738','5153a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{

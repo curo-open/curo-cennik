@@ -44,13 +44,6 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 11a,1b,7,1c",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,
@@ -62,6 +55,13 @@
 			"if": "vv.kod in ['250x']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Psychiatrické výkony",
+			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -130,28 +130,22 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		],
 		"65": [
@@ -176,6 +170,48 @@
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"820": [
+			{
+				"cond": "",
+				"value": 950
+			}
+		],
+		"821": [
+			{
+				"cond": "",
+				"value": 890
+			}
+		],
+		"822": [
+			{
+				"cond": "",
+				"value": 360
+			}
+		],
+		"825": [
+			{
+				"cond": "",
+				"value": 470
+			}
+		],
+		"826": [
+			{
+				"cond": "",
+				"value": 750
+			}
+		],
+		"841": [
+			{
+				"cond": "",
+				"value": 2130
+			}
+		],
+		"847": [
+			{
+				"cond": "",
+				"value": 610
 			}
 		],
 		"15d": [

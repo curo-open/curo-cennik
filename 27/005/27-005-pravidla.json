@@ -14,7 +14,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBEK": {
 			"label": "Cena bodu el. výkony",
@@ -45,7 +45,7 @@
 	"vykon": [
 		{
 			"label": "Vykon 60,62,63,163",
-			"if": "vv.kod in ['60','62','63','163']",
+			"if": "vv.kod in ['60','62','63','65','67','163']",
 			"value": null,
 			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
@@ -54,28 +54,7 @@
 			"label": "Výkon 820;822;825;841",
 			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
 			"value": null,
-			"calc": "vv.bodyCelkom*(PV+NCB)",
-			"instruction": null
-		},
-		{
-			"label": "Vykon 826,842,845",
-			"if": "vv.kod in ['826','842','845']",
-			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 65,67",
-			"if": "vv.kod in ['65']",
-			"value": null,
-			"calc": "vv.bodyCelkom*VV65",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 65,67",
-			"if": "vv.kod in ['67']",
-			"value": null,
-			"calc": "vv.bodyCelkom*VV67",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -110,7 +89,7 @@
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
@@ -123,12 +102,6 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",

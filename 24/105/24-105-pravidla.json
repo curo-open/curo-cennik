@@ -2,15 +2,15 @@
 	"params": {
 		"LIMIT": {
 			"label": "Limit",
-			"value": 2235
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.031988
+			"value": 0.029461
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00865
+			"value": 0.009724
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -20,52 +20,17 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
-			"value": 0.011593,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 532;533a;540;541;542",
-			"if": "vv.kod in ['532','533a','540','541','542']",
-			"value": 0.011593,
+			"label": "Výkon 11a,1b,7,1c",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['60']",
-			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['62']",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 760sp;760sn;760pp;760pn;763pp;763pn;763sp;763sn",
-			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763pp','763pn','763sp','763sn']",
-			"value": 0.0462,
-			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -76,8 +41,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 841,847",
-			"if": "vv.kod in ['841','847']",
+			"label": "Psychiatrické výkony",
+			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
