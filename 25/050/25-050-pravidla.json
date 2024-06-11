@@ -2,11 +2,11 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.24
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.6
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0318
+			"value": 0.03466
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -66,13 +66,6 @@
 			"if": "vv.kod in ['5702','5702a','15c']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
-			"instruction": null
-		},
-		{
-			"label": "TK Holter",
-			"if": "vv.kod in ['5715','5716']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{

@@ -8,14 +8,14 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 2.24           │ IPP1                         │
-│ IPP2 = 3.6            │ IPP2                         │
+│ IPP1 = 2.44           │ IPP1                         │
+│ IPP2 = 3.92           │ IPP2                         │
 │ IPP3 = 6.09           │ IPP3                         │
 │ IPP4 = 9.09           │ IPP4                         │
 │ IPPD = 5              │ IPPD                         │
 │ LIMIT = 75900         │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0318           │ Cena bodu                    │
+│ CB = 0.03466          │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
@@ -36,7 +36,6 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
-│            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1B05011','1B05012','1B05014','4a']               │

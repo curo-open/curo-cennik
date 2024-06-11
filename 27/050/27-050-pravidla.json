@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.039
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -151,10 +151,10 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -165,10 +165,10 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
+			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
