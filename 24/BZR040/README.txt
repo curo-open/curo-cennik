@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
 │ LIMIT = 240000     │ Limit           │
-│ CB = 0.034528      │ Cena bodu       │
+│ CB = 0.037411      │ Cena bodu       │
 │ CBV = 0.026432     │ Cena bodu vv=60 │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
 └────────────────────┴─────────────────┘
@@ -42,6 +42,7 @@ Autor: curo.sk
 │         0.01892 │ vv.bodyCelkom*cena        │ Výkon 5769                                    │ vv.kod in ['5769']                                           │
 │         0.01892 │ vv.bodyCelkom*cena        │ Výkon 5770                                    │ vv.kod in ['5770']                                           │
 │         0.01892 │ vv.bodyCelkom*cena        │ Výkon 5771                                    │ vv.kod in ['5771']                                           │
+│         0.01892 │ vv.bodyCelkom*cena        │ Výkon 5772                                    │ vv.kod in ['5772']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

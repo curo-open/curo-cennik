@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.034528
+			"value": 0.037411
 		},
 		"CBV": {
 			"label": "Cena bodu vv=60",
@@ -134,6 +134,13 @@
 		{
 			"label": "Výkon 5771",
 			"if": "vv.kod in ['5771']",
+			"value": 0.01892,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5772",
+			"if": "vv.kod in ['5772']",
 			"value": 0.01892,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

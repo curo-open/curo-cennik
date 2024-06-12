@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                                   │
 ├────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.03372       │ Cena bodu                                               │
+│ CB = 0.036418      │ Cena bodu                                               │
 │ CBE = 0.027        │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0       │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
@@ -25,6 +25,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│            null │ vv.bodyCelkom*CB          │ Výkon 900                                     │ vv.kod in ['900']                                            │
 │            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65','66','67']                    │
 │            null │ vv.bodyCelkom*CBE         │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │

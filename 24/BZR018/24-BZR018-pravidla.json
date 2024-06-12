@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03372
+			"value": 0.036418
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -19,6 +19,13 @@
 	},
 	"pacient": [],
 	"vykon": [
+		{
+			"label": "Výkon 900",
+			"if": "vv.kod in ['900']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",

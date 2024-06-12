@@ -29,35 +29,35 @@
 		{
 			"label": "vek do 1 roku života",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 10.74,
+			"value": 11.81,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 1 do 2",
 			"if": "p|vekMedzi(1, 2)",
-			"value": 11.22,
+			"value": 12.34,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 2 do 7",
 			"if": "p|vekMedzi(2, 7)",
-			"value": 7.4,
+			"value": 7.92,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 7 do 19",
 			"if": "p|vekMedzi(7, 19)",
-			"value": 4.49,
+			"value": 4.8,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 19 do 26",
 			"if": "p|vekMedzi(19, 26)",
-			"value": 2.89,
+			"value": 3.03,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

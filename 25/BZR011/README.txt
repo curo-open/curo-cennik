@@ -8,10 +8,10 @@ Autor: curo.sk
 ┌───────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota       │ Popis                                                   │
 ├───────────────────────┼─────────────────────────────────────────────────────────┤
-│ IPP1 = 2.44           │ IPP1                                                    │
-│ IPP2 = 3.92           │ IPP2                                                    │
-│ IPP3 = 6.64           │ IPP3                                                    │
-│ LIMIT = 6.64          │ Limit                                                   │
+│ IPP1 = 1.46           │ IPP1                                                    │
+│ IPP2 = 2.35           │ IPP2                                                    │
+│ IPP3 = 3.98           │ IPP3                                                    │
+│ LIMIT = 6.98          │ Limit                                                   │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?                                   │
 │ CB = 0.03466          │ Cena bodu                                               │
 │ CBP = 0.041           │ Cena bodu preventívne výkony                            │

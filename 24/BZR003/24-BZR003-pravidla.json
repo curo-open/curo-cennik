@@ -146,6 +146,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 5772",
+			"if": "vv.kod in ['5772']",
+			"value": 0.01892,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
