@@ -6,27 +6,27 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0355
+			"value": 0.0373
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01044
+			"value": 0.01107
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 3.68
+			"value": 5.83
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 2.63
+			"value": 4.24
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 1.89
+			"value": 3.18
 		}
 	},
 	"pacient": [],
@@ -34,7 +34,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0385,
+			"value": 0.0415,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -62,14 +62,14 @@
 		{
 			"label": "Výkony H0007",
 			"if": "vv.kod in ['H0007']",
-			"value": 5.88,
+			"value": 6.06,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -83,7 +83,7 @@
 		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a']",
-			"value": 0.015,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -97,8 +97,8 @@
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.01044,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
@@ -118,7 +118,7 @@
 		{
 			"label": "Výkon 5793;5794;5795",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.0226,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -141,6 +141,13 @@
 			"if": "vv.kod=='IPP6'",
 			"value": null,
 			"calc": "IPP6",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
+			"value": 0.0415,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

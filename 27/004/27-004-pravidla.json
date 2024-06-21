@@ -2,31 +2,27 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.034
-		},
-		"CBO": {
-			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+			"value": 0.0323
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBV": {
 			"label": "Vyšetrenie 60,62,63,,60r",
-			"value": 0.0335
+			"value": 0.0365
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 5.5
+			"value": 5.83
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 4
+			"value": 4.24
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 3
+			"value": 3.18
 		}
 	},
 	"pacient": [],
@@ -62,7 +58,7 @@
 		{
 			"label": "Výkony",
 			"if": "vv.kod in ['H0008']",
-			"value": 6,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

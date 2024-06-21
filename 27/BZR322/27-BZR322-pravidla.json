@@ -6,15 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0335
+			"value": 0.0373
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01044
+			"value": 0.01107
 		},
 		"IPP4": {
 			"label": "IPP4",
@@ -32,14 +32,14 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkony 60,62,63",
+			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0385,
+			"value": 0.0415,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 65,66,67",
+			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
@@ -55,14 +55,14 @@
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": null,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a']",
-			"value": 0.015,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -97,21 +97,21 @@
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.01044,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['158']",
-			"value": 0.079,
+			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4L03003, 4L03004 ",
 			"if": "vv.kod in ['4L03003','4L03004']",
-			"value": 94,
+			"value": 100,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -144,6 +144,13 @@
 			"instruction": null
 		},
 		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
+			"value": 0.0415,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
@@ -159,13 +166,6 @@
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
 			"value": 0.012075,
 			"calc": "vv.bodyCelkom*cena",
@@ -174,6 +174,20 @@
 		{
 			"label": "Výkony",
 			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": " Iné ako SVALZ",
+			"if": "!vv.jeSVaZL",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null

@@ -9,12 +9,12 @@ Autor: curo.sk
 │ Názov a hodnota      │ Popis                        │
 ├──────────────────────┼──────────────────────────────┤
 │ IDK = 0.15           │ NASTAVENIA IDK               │
-│ CB = 0.0339          │ Cena bodu                    │
-│ CBP = 0.0735         │ Cena bodu preventívne výkony │
-│ CBEU = 0.0339        │ Cena bodu EU                 │
-│ CBSVALZ = 0.00973    │ Cena bodu SVaLZ              │
-│ CBSVALZEU = 0.00973  │ Cena bodu SVaLZ EU           │
-│ CBSVALZUSG = 0.01044 │ Cena bodu SVaLZ USG          │
+│ CB = 0.0349          │ Cena bodu                    │
+│ CBP = 0.0801         │ Cena bodu preventívne výkony │
+│ CBEU = 0.0349        │ Cena bodu EU                 │
+│ CBSVALZ = 0.01       │ Cena bodu SVaLZ nekapitovaný │
+│ CBSVALZEU = 0.01031  │ Cena bodu SVaLZ EU           │
+│ CBSVALZUSG = 0.01031 │ Cena bodu SVaLZ USG          │
 └──────────────────────┴──────────────────────────────┘
 
 
@@ -22,7 +22,7 @@ Autor: curo.sk
 ┌───────────┬───────────────┬──────────┬─────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec   │ Podmienka           │
 ├───────────┼───────────────┼──────────┼─────────────────────┤
-│ Kapitácia │          1.99 │ IDK+cena │ p|vekMedzi(15, 130) │
+│ Kapitácia │          2.12 │ IDK+cena │ p|vekMedzi(15, 130) │
 └───────────┴───────────────┴──────────┴─────────────────────┘
 
 
@@ -30,21 +30,21 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0735 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['100','102','103','157','108','1070']             │
+│          0.0801 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['100','102','103','105','157','108','1070']       │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 122                                     │ p.kapitacia && vv.kod in ['122']                             │
-│          0.0398 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ vv.kod in ['297']                                            │
-│          0.0735 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.kod in ['252b']                                           │
+│          0.0434 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ vv.kod in ['297']                                            │
+│          0.0801 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.kod in ['252b']                                           │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony SVALZ USG                              │ vv.kod in ['5301','5303','5305','5316','5807']               │
-│         0.01044 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
+│         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60, 63                                  │ vv.kod in ['60','63']                                        │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
-│         0.00973 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
+│            0.01 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & vv.jeSVaZL                                                 │
-│          0.0339 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
+│          0.0349 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & !vv.jeSVaZL                                                │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
 │            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │

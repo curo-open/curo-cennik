@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.1
+			"value": 1.46
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 1.76
+			"value": 2.35
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 2.99
+			"value": 3.98
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 5.99
+			"value": 6.98
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -40,24 +40,24 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkony 60,62,63",
+			"label": "Plánovanie terapeutických postupov",
+			"if": "vv.kod in ['10']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 65,66,67",
+			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Odber venóznej krvi",
-			"if": "vv.kod in ['250x']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -68,15 +68,50 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odber biol.materiálu",
+			"if": "vv.kod in ['299a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie RTG dokumentácie ",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5153C",
+			"if": "vv.kod in ['5153C']",
+			"value": 150,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5796','5799']",
+			"if": "vv.kod in ['5330','5331','5332','5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316','5796','5799']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
@@ -84,7 +119,7 @@
 		{
 			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
 			"if": "vv.kod in ['158','158A','158B','158C','158D','159c']",
-			"value": 0.049,
+			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -209,6 +244,18 @@
 				"value": 40
 			}
 		],
+		"158": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"5302": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
 		"1b": [
 			{
 				"cond": "",
@@ -225,6 +272,30 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"158A": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"158B": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"158C": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"158D": [
+			{
+				"cond": "",
+				"value": 390
 			}
 		]
 	},

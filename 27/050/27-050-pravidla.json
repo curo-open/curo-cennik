@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.039
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -69,6 +69,13 @@
 		{
 			"label": "Výkon 4587a",
 			"if": "vv.kod in ['4587a']",
+			"value": 0.01107,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5153a, 5333",
+			"if": "vv.kod in ['5153a','5333']",
 			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -227,6 +234,18 @@
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"1A02007": [
+			{
+				"cond": "",
+				"value": 180
 			}
 		],
 		"1b": [

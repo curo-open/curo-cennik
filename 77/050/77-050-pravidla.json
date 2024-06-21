@@ -1,17 +1,5 @@
 {
 	"params": {
-		"CB": {
-			"label": "Cena bodu ",
-			"value": 0.04
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.0455
-		},
-		"CBSVALZ": {
-			"label": "Cena bodu SVaLZ",
-			"value": 0.015
-		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
@@ -20,10 +8,52 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "špec. elektronické výkony",
+			"if": "vv.kod in ['70','1b','1c','11a']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "629B",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0006",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.82,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 4.5,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1A02007",
+			"if": "vv.kod in ['1A02007']",
+			"value": 0.0323,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4587a",
+			"if": "vv.kod in ['4587a']",
+			"value": 0.01107,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5153a, 5333",
+			"if": "vv.kod in ['5153a','5333']",
+			"value": 0.01107,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -43,7 +73,7 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
+			"value": 0.0226,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -52,6 +82,83 @@
 			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702','5702a','15c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon C - reaktívny proteín ",
+			"if": "vv.kod in ['4571a','4571A']",
+			"value": 0.0158,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Antigénový test",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBO",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -91,74 +198,7 @@
 		}
 	],
 	"kontrola": [],
-	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 80
-			}
-		],
-		"60": [
-			{
-				"cond": "",
-				"value": 420
-			}
-		],
-		"62": [
-			{
-				"cond": "",
-				"value": 270
-			}
-		],
-		"63": [
-			{
-				"cond": "",
-				"value": 210
-			}
-		],
-		"65": [
-			{
-				"cond": "",
-				"value": 150
-			}
-		],
-		"67": [
-			{
-				"cond": "",
-				"value": 150
-			}
-		],
-		"70": [
-			{
-				"cond": "",
-				"value": 40
-			}
-		],
-		"60r": [
-			{
-				"cond": "",
-				"value": 480
-			}
-		],
-		"1b": [
-			{
-				"cond": "",
-				"value": 80
-			}
-		],
-		"1c": [
-			{
-				"cond": "",
-				"value": 1000
-			}
-		],
-		"11a": [
-			{
-				"cond": "",
-				"value": 210
-			}
-		]
-	},
+	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "diabetolog"

@@ -68,6 +68,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon `60,`62,`63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,

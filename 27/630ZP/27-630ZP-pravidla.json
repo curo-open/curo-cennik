@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.017
+			"value": 0.019
 		},
 		"CBV": {
 			"label": "Cena bodu ",
-			"value": 0.0385
+			"value": 0.044
 		},
 		"CBD": {
 			"label": "Cena bodu doprava",
@@ -49,6 +49,20 @@
 			"if": "vv.kod in ['3419','3420','3439','3440','3441','3447']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBV",
+			"instruction": null
+		},
+		{
+			"label": "Nultá návšteva u poistenca",
+			"if": "vv.kod in ['3439a']",
+			"value": 7.36,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
+			"if": "vv.kod in ['25a']",
+			"value": 9.7,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

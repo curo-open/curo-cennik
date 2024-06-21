@@ -2,15 +2,15 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0355
+			"value": 0.0373
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01044
+			"value": 0.01107
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -46,7 +46,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0385,
+			"value": 0.0415,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -102,49 +102,49 @@
 		{
 			"label": "Výkon H0007",
 			"if": "vv.kod in ['H0007']",
-			"value": 5.88,
+			"value": 6.06,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Echokardiografia",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
-			"value": 0.01044,
+			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5727",
 			"if": "vv.kod in ['5727']",
-			"value": 0.0226,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5702",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00973,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "Ergometria",
 			"if": "vv.kod in ['5708']",
-			"value": 0.00973,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a']",
-			"value": 0.015,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -158,8 +158,8 @@
 		{
 			"label": "Ekg holter",
 			"if": "vv.kod in ['5712','5713','5714','5715']",
-			"value": 0.00973,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
@@ -195,6 +195,13 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
+			"value": 0.0415,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

@@ -5,17 +5,16 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────────────┐
-│ Názov a hodnota   │ Popis                        │
-├───────────────────┼──────────────────────────────┤
-│ CB = 0.034        │ Cena bodu                    │
-│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
-│ CBV = 0.0335      │ Vyšetrenie 60,62,63,,60r     │
-│ IPP4 = 5.5        │ IPP4                         │
-│ IPP5 = 4          │ IPP5                         │
-│ IPP6 = 3          │ IPP6                         │
-└───────────────────┴──────────────────────────────┘
+┌───────────────────┬──────────────────────────┐
+│ Názov a hodnota   │ Popis                    │
+├───────────────────┼──────────────────────────┤
+│ CB = 0.0323       │ Cena bodu                │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ          │
+│ CBV = 0.0365      │ Vyšetrenie 60,62,63,,60r │
+│ IPP4 = 5.83       │ IPP4                     │
+│ IPP5 = 4.24       │ IPP5                     │
+│ IPP6 = 3.18       │ IPP6                     │
+└───────────────────┴──────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -32,7 +31,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0226 │ vv.bodyCelkom*cena        │ Elektroencefalografické vyšetrenie            │ vv.kod in ['5793','5794','5795']                             │
-│               6 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
+│            6.98 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │

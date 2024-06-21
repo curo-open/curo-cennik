@@ -6,15 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu Kapitovany SK/EU ",
-			"value": 0.0339
+			"value": 0.0349
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01
 		},
 		"CBEUNK": {
 			"label": "Cena bodu Nekapitovany",
-			"value": 0.0339
+			"value": 0.0349
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -29,42 +29,42 @@
 		{
 			"label": "vek do 1 roku života",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 9.48,
+			"value": 10.14,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 1 do 2 vrátane",
 			"if": "p|vekMedzi(1, 3)",
-			"value": 7.45,
+			"value": 9,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 3 do 5 vrátane",
 			"if": "p|vekMedzi(3, 6)",
-			"value": 7.18,
+			"value": 7.68,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 6 do 14 vrátane",
 			"if": "p|vekMedzi(6, 15)",
-			"value": 4.96,
+			"value": 5.26,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 15 do 18 vrátane",
 			"if": "p|vekMedzi(15, 19)",
-			"value": 3.13,
+			"value": 3.54,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 19 do 28 vrátane",
 			"if": "p|vekMedzi(19, 29)",
-			"value": 3.07,
+			"value": 3.3,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -94,28 +94,28 @@
 		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
-			"value": 13.56,
+			"value": 14,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4,5,6,8,30",
 			"if": "vv.kod in ['4','5','6','8','30']",
-			"value": 0.0339,
+			"value": 0.0349,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 40,41",
 			"if": "vv.kod in ['40','41']",
-			"value": 0.0339,
+			"value": 0.0349,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Určenie glykémie glukometrom",
 			"if": "vv.kod in ['3671']",
-			"value": 0.079,
+			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -129,28 +129,28 @@
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.0904,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['142']",
-			"value": 0.12,
+			"value": 0.1284,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne výkony ",
 			"if": "vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148','148a','148b','148c','149','149a','149b','149c','149d','149f','60','950','953']",
-			"value": 0.079,
+			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne výkony ",
 			"if": "vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148']",
-			"value": 0.087,
+			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -164,42 +164,42 @@
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.079,
+			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 951,952",
 			"if": "vv.kod in ['951','952']",
-			"value": 0.079,
+			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 25,26,29",
 			"if": "vv.kod in ['25','26','29']",
-			"value": 0.0339,
+			"value": 0.0349,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 160",
 			"if": "vv.kod in ['160']",
-			"value": 28.83,
+			"value": 30.85,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60",
 			"if": "vv.kod in ['60']",
-			"value": 5.09,
+			"value": 5.25,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60b",
 			"if": "vv.kod in ['60b']",
-			"value": 17,
+			"value": 17.51,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -227,35 +227,35 @@
 		{
 			"label": "Výkon 67",
 			"if": "vv.kod in ['67']",
-			"value": 4.63,
+			"value": 4.77,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1544a",
 			"if": "vv.kod in ['1544a']",
-			"value": 4.97,
+			"value": 5.12,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00973,
+			"value": 0.01,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702Z']",
-			"value": 5.36,
+			"value": 5.52,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571a']",
-			"value": 0.015,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -283,7 +283,7 @@
 		{
 			"label": "Delegovaný odber 250D",
 			"if": "vv.kod in ['250D']",
-			"value": 1.19,
+			"value": 1.22,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

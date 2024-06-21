@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬────────────────────┐
 │ Názov a hodnota   │ Popis              │
 ├───────────────────┼────────────────────┤
-│ CB = 0.039        │ Cena bodu          │
+│ CB = 0.0365       │ Cena bodu          │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ    │
 │ NCB = 0           │ Navysena cena bodu │
 │ IPP1 = 3.71       │ IPP1               │
@@ -34,6 +34,7 @@ Autor: curo.sk
 │            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │          0.0323 │ vv.bodyCelkom*cena        │ Výkon 1A02007                                 │ vv.kod in ['1A02007']                                        │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 4587a                                   │ vv.kod in ['4587a']                                          │
+│         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5153a, 5333                             │ vv.kod in ['5153a','5333']                                   │
 │        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
 │          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
@@ -65,6 +66,8 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
+│             900 │ 62b                                                                                                       │                           │
+│             180 │ 1A02007                                                                                                   │                           │
 │              80 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

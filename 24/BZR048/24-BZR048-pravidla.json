@@ -62,6 +62,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Utlmenie pacienta",
+			"if": "vv.kod in ['93']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 5302",
 			"if": "vv.kod in ['5302']",
 			"value": null,
@@ -349,6 +356,10 @@
 			{
 				"cond": "",
 				"value": 1000
+			},
+			{
+				"cond": "",
+				"value": 2114
 			}
 		]
 	},

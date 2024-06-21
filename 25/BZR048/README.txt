@@ -46,6 +46,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Povrchová anestézia                           │ vv.kod in ['401']                                            │
+│            null │ vv.bodyCelkom*CB          │ Utlmenie pacienta                             │ vv.kod in ['93']                                             │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5330','5331','5332','5300','5301','5303','5304', │
 │                 │                           │                                               │ '5307','5307a','5312','5315','5316']                         │
@@ -80,6 +81,7 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
+│            2114 │ 93                                                                                                        │                           │
 │             100 │ 401                                                                                                       │                           │
 │            3000 │ 763P                                                                                                      │                           │
 │            3000 │ 763M                                                                                                      │                           │

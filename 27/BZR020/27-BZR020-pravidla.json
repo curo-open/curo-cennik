@@ -370,16 +370,23 @@
 			"instruction": null
 		},
 		{
-			"label": "ABI (H0008)",
-			"if": "vv.kod in ['H0008']",
-			"value": 6.98,
+			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
+			"if": "vv.kod in ['10','H0003','H0004']",
+			"value": 14,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
-			"if": "vv.kod in ['10','H0003','H0004']",
-			"value": 14,
+			"label": "Stratifikácia kardiovaskulárneho rizika",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.82,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ABI (H0008)",
+			"if": "vv.kod in ['H0008']",
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -429,13 +436,6 @@
 			"label": "Výplach zvukovodu (jedno ucho)",
 			"if": "vv.kod in ['1540']",
 			"value": 1.16,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Stratifikácia kardiovaskulárneho rizika",
-			"if": "vv.kod in ['H0006']",
-			"value": 5.82,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

@@ -31,6 +31,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
 │            null │ vv.bodyCelkom*CB          │ Prev. KS                                      │ vv.kod in ['765p']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CB          │ Utlmenie pacienta                             │ vv.kod in ['93']                                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
@@ -84,6 +85,7 @@ Autor: curo.sk
 │            1200 │ 1c                                                                                                        │                           │
 │             250 │ 11a                                                                                                       │                           │
 │            1000 │ 68a                                                                                                       │                           │
+│            2114 │ 68a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

@@ -6,34 +6,34 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0339
+			"value": 0.0349
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0735
+			"value": 0.0801
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.0339
+			"value": 0.0349
 		},
 		"CBSVALZ": {
-			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"label": "Cena bodu SVaLZ nekapitovaný",
+			"value": 0.01
 		},
 		"CBSVALZEU": {
 			"label": "Cena bodu SVaLZ EU",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01044
+			"value": 0.01031
 		}
 	},
 	"pacient": [
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(15, 130)",
-			"value": 1.99,
+			"value": 2.12,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -41,8 +41,8 @@
 	"vykon": [
 		{
 			"label": "Preventívne zdravotné výkony",
-			"if": "vv.kod in ['100','102','103','157','108','1070']",
-			"value": 0.0735,
+			"if": "vv.kod in ['100','102','103','105','157','108','1070']",
+			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -70,14 +70,14 @@
 		{
 			"label": "Výkon 297",
 			"if": "vv.kod in ['297']",
-			"value": 0.0398,
+			"value": 0.0434,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b",
 			"if": "vv.kod in ['252b']",
-			"value": 0.0735,
+			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -98,7 +98,7 @@
 		{
 			"label": "Výkon 5308",
 			"if": "vv.kod in ['5308']",
-			"value": 0.01044,
+			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -126,14 +126,14 @@
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] && vv.jeSVaZL",
-			"value": 0.00973,
+			"value": 0.01,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] && !vv.jeSVaZL",
-			"value": 0.0339,
+			"value": 0.0349,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

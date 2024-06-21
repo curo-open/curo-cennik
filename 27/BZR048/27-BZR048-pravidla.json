@@ -2,19 +2,19 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0355
+			"value": 0.0373
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01044
+			"value": 0.01107
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.0735
+			"value": 0.0779
 		}
 	},
 	"pacient": [],
@@ -22,7 +22,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0385,
+			"value": 0.0415,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -43,22 +43,29 @@
 		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['740','741','746','765']",
-			"value": 0.0355,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['755','756','760','761','762','763','763a']",
-			"value": 0.0385,
+			"value": 0.0415,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5702",
 			"if": "vv.kod in ['5702']",
-			"value": 0.00973,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Utlmenie pacienta",
+			"if": "vv.kod in ['93']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -71,8 +78,8 @@
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316']",
-			"value": 0.01044,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
@@ -148,7 +155,7 @@
 		{
 			"label": "Výkon 5793,5794,5795",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.0266,
+			"value": 0.02643,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -162,7 +169,7 @@
 		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a']",
-			"value": 0.015,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -176,7 +183,7 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
-			"value": 0.0385,
+			"value": 0.0415,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -258,6 +265,12 @@
 			{
 				"cond": "",
 				"value": 40
+			}
+		],
+		"93": [
+			{
+				"cond": "",
+				"value": 2114
 			}
 		],
 		"761": [

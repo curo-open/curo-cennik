@@ -2,11 +2,11 @@
 	"params": {
 		"LIMIT": {
 			"label": "Limit",
-			"value": 1140000
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.028058
+			"value": 0.029461
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -16,10 +16,10 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
-			"value": 0.036146,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon `60,`62,`63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{

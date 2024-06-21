@@ -2,15 +2,15 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0355
+			"value": 0.0373
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01044
+			"value": 0.01107
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -26,15 +26,15 @@
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 5.5
+			"value": 5.83
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 4
+			"value": 4.24
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 3
+			"value": 3.18
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -54,7 +54,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0385,
+			"value": 0.0415,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -131,14 +131,14 @@
 		{
 			"label": "Výkon H0007",
 			"if": "vv.kod in ['H0007']",
-			"value": 5.88,
+			"value": 6.06,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -152,7 +152,7 @@
 		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a']",
-			"value": 0.015,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -160,6 +160,13 @@
 			"label": "Očkovanie Covid 252L",
 			"if": "vv.kod in ['252L']",
 			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -217,6 +224,13 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
+			"value": 0.0415,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

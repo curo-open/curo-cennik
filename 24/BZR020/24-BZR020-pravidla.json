@@ -309,6 +309,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Stratifikacia CMP (H0006)",
+			"if": "vv.kod in ['H0006']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
@@ -320,13 +327,6 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
-			"instruction": null
-		},
-		{
-			"label": "Stratifikacia CMP (H0006)",
-			"if": "vv.kod in ['H0006']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

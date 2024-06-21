@@ -8,12 +8,12 @@ Autor: curo.sk
 ┌──────────────────────┬──────────────────────┐
 │ Názov a hodnota      │ Popis                │
 ├──────────────────────┼──────────────────────┤
-│ CB = 0.0355          │ Vypočitaná cena bodu │
-│ CBSVALZ = 0.00973    │ Cena bodu SVaLZ      │
-│ CBSVALZUSG = 0.01044 │ Cena bodu SVaLZ USG  │
-│ IPP1 = 3.5           │ IPP1                 │
-│ IPP2 = 3             │ IPP2                 │
-│ IPP3 = 2             │ IPP3                 │
+│ CB = 0.0373          │ Vypočitaná cena bodu │
+│ CBSVALZ = 0.01031    │ Cena bodu SVaLZ      │
+│ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG  │
+│ IPP1 = 3.71          │ IPP1                 │
+│ IPP2 = 3.18          │ IPP2                 │
+│ IPP3 = 2.12          │ IPP3                 │
 │ LIMIT = 0            │ Limit                │
 └──────────────────────┴──────────────────────┘
 
@@ -32,7 +32,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Edukácia k spirometrii                        │ vv.kod in ['10e']                                            │
 │            null │ vv.bodyCelkom*CB          │ Zhodnotenie výsledkov                         │ vv.kod in ['15b']                                            │
 │            null │ vv.bodyCelkom*CB          │ Interpretácia imunologického profilu          │ vv.kod in ['15f']                                            │
-│          0.0385 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│          0.0415 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250a','250b']                                    │
@@ -42,12 +42,14 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia viac ako 30min           │ vv.kod in ['272']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 350-Prick testy                         │ vv.kod in ['350']                                            │
 │            8.95 │ vv.pocet*cena             │ Výkon 3860                                    │ vv.kod in ['3860']                                           │
-│            5.88 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
-│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
-│          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5766                                    │ vv.kod in ['5766']                                           │
-│          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5769                                    │ vv.kod in ['5769']                                           │
-│          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5770                                    │ vv.kod in ['5770']                                           │
-│          0.0226 │ vv.bodyCelkom*cena        │ Výkon 5771                                    │ vv.kod in ['5771']                                           │
+│            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
+│            6.06 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
+│            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkon 5766                                    │ vv.kod in ['5766']                                           │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkon 5769                                    │ vv.kod in ['5769']                                           │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkon 5770                                    │ vv.kod in ['5770']                                           │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkon 5771                                    │ vv.kod in ['5771']                                           │
+│          0.0415 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
