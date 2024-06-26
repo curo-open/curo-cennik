@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────┐
 │ Názov a hodnota   │ Popis                    │
 ├───────────────────┼──────────────────────────┤
-│ CB = 0.0323       │ Cena bodu                │
+│ CB = 0.035        │ Cena bodu                │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ          │
 │ CBV = 0.0365      │ Vyšetrenie 60,62,63,,60r │
 │ IPP4 = 5.83       │ IPP4                     │

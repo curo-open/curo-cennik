@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
 │ LIMIT = 2235       │ Limit           │
-│ CB = 0.028058      │ Cena bodu       │
+│ CB = 0.029461      │ Cena bodu       │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
 └────────────────────┴─────────────────┘
 
@@ -25,9 +25,9 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│        0.029461 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60']                                             │
+│        0.029461 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['62']                                             │
+│        0.029461 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['63']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
@@ -37,7 +37,7 @@ Autor: curo.sk
 │        0.022449 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS - EMG                                     │ vv.kod in ['810','809','811','812','819']                    │
 │        0.026921 │ vv.bodyCelkom*cena        │ ŠAS - 800                                     │ vv.kod in ['800']                                            │
-│            null │ vv.bodyCelkom*CB          │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
+│        0.029461 │ vv.bodyCelkom*cena        │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

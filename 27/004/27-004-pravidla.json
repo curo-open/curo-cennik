@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0323
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",

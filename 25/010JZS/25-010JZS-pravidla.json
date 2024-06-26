@@ -103,6 +103,10 @@
 		"_8501C": {
 			"label": "Výkon 8501C",
 			"value": 564
+		},
+		"_5l1951": {
+			"label": "Výkon 5l1951",
+			"value": 749
 		}
 	},
 	"pacient": [],
@@ -270,23 +274,30 @@
 		},
 		{
 			"label": "Výkon 8501A",
-			"if": "vv.kod in ['8501A'] || vv.k in ['8501'] || vv.k25 in ['8501']",
+			"if": "vv.kod in ['8501A'] || vv.k in ['8501A'] || vv.k25 in ['8501A']",
 			"value": null,
 			"calc": "vv.pocet*_8501A",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8501B",
-			"if": "vv.kod in ['8501B'] || vv.k in ['8501'] || vv.k25 in ['8501']",
+			"if": "vv.kod in ['8501B'] || vv.k in ['8501B'] || vv.k25 in ['8501B']",
 			"value": null,
 			"calc": "vv.pocet*_8501B",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8501C",
-			"if": "vv.kod in ['8501C'] || vv.k in ['8501'] || vv.k25 in ['8501']",
+			"if": "vv.kod in ['8501C'] || vv.k in ['8501C'] || vv.k25 in ['8501C']",
 			"value": null,
 			"calc": "vv.pocet*_8501C",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5l1951",
+			"if": "vv.kod in ['5l1951'] || vv.k in ['5l1951'] || vv.k25 in ['5l1951']",
+			"value": null,
+			"calc": "vv.pocet*_5l1951",
 			"instruction": null
 		}
 	],
