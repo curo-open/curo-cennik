@@ -22,28 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 023 changes">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- bzr changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR008/24-BZR008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR008/24-BZR008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR022/24-BZR022-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR022/24-BZR022-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR022/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR022/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR008/25-BZR008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR008/25-BZR008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR022/25-BZR022-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR022/25-BZR022-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR022/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR022/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR008/27-BZR008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR008/27-BZR008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR014/27-BZR014-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR014/27-BZR014-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR014/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR014/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR022/27-BZR022-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR022/27-BZR022-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR022/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR022/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR154/27-BZR154-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR154/27-BZR154-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR154/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR154/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/BZR008/77-BZR008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/BZR008/77-BZR008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/BZR008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/BZR008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/BZR022/77-BZR022-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/77/BZR022/77-BZR022-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/77/BZR022/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/77/BZR022/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/011/24-011-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/011/24-011-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/011/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/011/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/040/24-040-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/040/24-040-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/040/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/040/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/040/25-040-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/040/25-040-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/040/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/040/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/040/27-040-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/040/27-040-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/040/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/040/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -763,7 +753,28 @@
       <workItem from="1714405334919" duration="672000" />
       <workItem from="1714469536757" duration="487000" />
       <workItem from="1714478975140" duration="2598000" />
-      <workItem from="1714981368452" duration="4112000" />
+      <workItem from="1714981368452" duration="4996000" />
+      <workItem from="1715240845259" duration="1738000" />
+      <workItem from="1715683756891" duration="1259000" />
+      <workItem from="1715884725357" duration="567000" />
+      <workItem from="1715947950154" duration="1645000" />
+      <workItem from="1716274940304" duration="2882000" />
+      <workItem from="1716877110788" duration="599000" />
+      <workItem from="1716967079169" duration="599000" />
+      <workItem from="1717138255482" duration="1298000" />
+      <workItem from="1717412435333" duration="249000" />
+      <workItem from="1717519980258" duration="672000" />
+      <workItem from="1717567657316" duration="1057000" />
+      <workItem from="1717655129440" duration="646000" />
+      <workItem from="1717743256687" duration="24000" />
+      <workItem from="1718087689018" duration="1882000" />
+      <workItem from="1718440911338" duration="599000" />
+      <workItem from="1718571733896" duration="573000" />
+      <workItem from="1718800158895" duration="358000" />
+      <workItem from="1718800540334" duration="1505000" />
+      <workItem from="1719233004744" duration="599000" />
+      <workItem from="1719254360706" duration="599000" />
+      <workItem from="1719321713355" duration="1218000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1108,7 +1119,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="431" />
+    <option name="localTasksCounter" value="448" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1151,11 +1162,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- fixing 25" />
-    <MESSAGE value="- added 84 a 85" />
-    <MESSAGE value="- upravene 630" />
     <MESSAGE value="- upravene 003 bzr" />
     <MESSAGE value="- upravene EU cenny dovera" />
     <MESSAGE value="- avls kapitacie&#10;- bzr changes" />
@@ -1170,15 +1180,18 @@
     <MESSAGE value="- fix pre UA cenniky" />
     <MESSAGE value="- medicentrum" />
     <MESSAGE value="- bzr" />
-    <MESSAGE value="- updates" />
     <MESSAGE value="- updates added hospic zupa" />
     <MESSAGE value="- update" />
     <MESSAGE value="- 023 changes pre 86" />
     <MESSAGE value="- 050 changes" />
     <MESSAGE value="- 020 union changes" />
     <MESSAGE value="- 023 changes" />
+    <MESSAGE value="- 038jzs changes" />
+    <MESSAGE value="- uap changes" />
+    <MESSAGE value="- updates" />
     <MESSAGE value="- bzr changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- bzr changes" />
+    <MESSAGE value="- changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changes" />
   </component>
   <component name="masterDetails">
     <states>
