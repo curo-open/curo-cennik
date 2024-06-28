@@ -5,14 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬──────────────────────────────┐
-│ Názov a hodnota    │ Popis                        │
-├────────────────────┼──────────────────────────────┤
-│ LIMIT = 1140000    │ Limit                        │
-│ CB = 0.029626      │ Cena bodu                    │
-│ CBP = 0.048972     │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.008605 │ Cena bodu SVaLZ              │
-└────────────────────┴──────────────────────────────┘
+┌────────────────────┬─────────────────┐
+│ Názov a hodnota    │ Popis           │
+├────────────────────┼─────────────────┤
+│ LIMIT = 1140000    │ Limit           │
+│ CB = 0.029461      │ Cena bodu       │
+│ CBV = 0.029461     │ Cena bodu výkon │
+│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
+└────────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -25,10 +25,12 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.026432 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CBV         │ ŠAS                                           │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CBV         │ ŠAS                                           │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CBV         │ ŠAS                                           │ vv.kod in ['63']                                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
+│          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │

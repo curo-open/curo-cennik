@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.029626
+			"value": 0.029461
 		},
 		"CBV": {
 			"label": "Cena bodu vv=60",
@@ -14,7 +14,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008605
+			"value": 0.009724
 		}
 	},
 	"pacient": [],
@@ -37,6 +37,13 @@
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon",
+			"if": "vv.kod in ['5766','5769','5770','5771','5772']",
+			"value": 0.01892,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

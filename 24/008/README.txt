@@ -24,10 +24,10 @@ Autor: curo.sk
 │ Popis                       │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────────────────┼───────────────┼──────────┼────────────────────┤
 │ do  1 roku                  │         11.81 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ od  1 do dovršenia 2 rokov  │         11.72 │ IDK+cena │ p|vekMedzi(1, 2)   │
-│ od  2 do dovršenia 7 rokov  │          7.85 │ IDK+cena │ p|vekMedzi(2, 7)   │
-│ od  7 do dovršenia 19 rokov │          4.83 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ od 19 do dovršenia 27 rokov │          3.16 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ od  1 do dovršenia 2 rokov  │         12.34 │ IDK+cena │ p|vekMedzi(1, 2)   │
+│ od  2 do dovršenia 7 rokov  │          7.92 │ IDK+cena │ p|vekMedzi(2, 7)   │
+│ od  7 do dovršenia 19 rokov │           4.8 │ IDK+cena │ p|vekMedzi(7, 19)  │
+│ od 19 do dovršenia 27 rokov │          3.03 │ IDK+cena │ p|vekMedzi(19, 26) │
 └─────────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 

@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 6.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 7.9
+			"value": 9.64
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -26,15 +26,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02814
+			"value": 0.03466
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		}
 	},
 	"pacient": [],
@@ -42,14 +42,14 @@
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.026,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

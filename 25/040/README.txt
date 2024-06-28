@@ -8,15 +8,15 @@ Autor: curo.sk
 ┌───────────────────────┬─────────────────────┐
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
-│ IPP1 = 1.19           │ IPP1                │
-│ IPP2 = 2.9            │ IPP2                │
-│ IPP3 = 4.9            │ IPP3                │
-│ IPP4 = 7.9            │ IPP4                │
+│ IPP1 = 2.44           │ IPP1                │
+│ IPP2 = 3.92           │ IPP2                │
+│ IPP3 = 6.64           │ IPP3                │
+│ IPP4 = 9.64           │ IPP4                │
 │ IPPD = 5              │ IPPD                │
 │ LIMIT = 0             │ Limit               │
-│ CB = 0.02814          │ Cena bodu           │
-│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ     │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG │
+│ CB = 0.03466          │ Cena bodu           │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ     │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
 └───────────────────────┴─────────────────────┘
 
 
@@ -30,8 +30,8 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.026 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta pri pandémii COVI │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ D-19                                          │                                                              │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │

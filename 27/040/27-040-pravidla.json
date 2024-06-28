@@ -2,31 +2,31 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.034
+			"value": 0.0323
 		},
-		"CBO": {
-			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+		"CBV": {
+			"label": "Cena bodu vv=60",
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01044
+			"value": 0.01107
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 3.5
+			"value": 3.71
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3
+			"value": 3.18
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 2
+			"value": 2.12
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -38,8 +38,8 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0305,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBV",
 			"instruction": null
 		},
 		{
@@ -47,13 +47,6 @@
 			"if": "vv.kod in ['H0008']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -66,7 +59,14 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5766','5769','5770','5771']",
-			"value": 0.0226,
+			"value": 0.02463,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": 0.022,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -95,13 +95,6 @@
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

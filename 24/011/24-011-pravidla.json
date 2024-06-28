@@ -6,15 +6,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.029626
+			"value": 0.029461
 		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.048972
+		"CBV": {
+			"label": "Cena bodu výkon",
+			"value": 0.029461
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008605
+			"value": 0.009724
 		}
 	},
 	"pacient": [],
@@ -22,22 +22,22 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
-			"value": 0.026432,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBV",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBV",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBV",
 			"instruction": null
 		},
 		{
@@ -45,6 +45,20 @@
 			"if": "vv.kod in ['5300','5301','5702']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
