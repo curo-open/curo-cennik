@@ -477,6 +477,13 @@
 			"value": 744,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkon 8800K",
+			"if": "vv.kod in ['8800K'] || vv.k in ['8800K'] || vv.k27 in ['8800K']",
+			"value": 524,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
