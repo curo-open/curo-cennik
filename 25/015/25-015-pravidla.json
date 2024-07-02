@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 6.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 4.9
+			"value": 9.64
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -22,7 +22,7 @@
 		},
 		"LIMIT": {
 			"label": "Limit",
-			"value": 75900
+			"value": 0
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -30,23 +30,23 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02814
+			"value": 0.03466
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.041
+			"value": 0
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
-			"value": 0.0252
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZP": {
 			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
-			"value": 0.008473
+			"value": 0.009574
 		}
 	},
 	"pacient": [],
@@ -89,7 +89,7 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -159,8 +159,8 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
 	],

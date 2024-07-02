@@ -8,18 +8,18 @@ Autor: curo.sk
 ┌─────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota     │ Popis                                                   │
 ├─────────────────────┼─────────────────────────────────────────────────────────┤
-│ IPP1 = 1.19         │ IPP1                                                    │
-│ IPP2 = 2.9          │ IPP2                                                    │
-│ IPP3 = 4.9          │ IPP3                                                    │
-│ IPP4 = 4.9          │ IPP4                                                    │
+│ IPP1 = 2.44         │ IPP1                                                    │
+│ IPP2 = 3.92         │ IPP2                                                    │
+│ IPP3 = 6.64         │ IPP3                                                    │
+│ IPP4 = 9.64         │ IPP4                                                    │
 │ IPPD = 5            │ IPPD                                                    │
-│ LIMIT = 75900       │ Limit                                                   │
+│ LIMIT = 0           │ Limit                                                   │
 │ EL_POBOCKA = 1      │ Používa el. pobočku ?                                   │
-│ CB = 0.02814        │ Cena bodu                                               │
-│ CBP = 0.041         │ Cena bodu preventívne výkony                            │
-│ CBE = 0.0252        │ Cena bodu el. výkony                                    │
-│ CBSVALZ = 0.008105  │ Cena bodu SVaLZ                                         │
-│ CBSVALZP = 0.008473 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
+│ CB = 0.03466        │ Cena bodu                                               │
+│ CBP = 0             │ Cena bodu preventívne výkony                            │
+│ CBE = 0.035         │ Cena bodu el. výkony                                    │
+│ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
+│ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 └─────────────────────┴─────────────────────────────────────────────────────────┘
 
 
@@ -38,7 +38,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CBSVALZP    │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
@@ -48,7 +48,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│          0.0238 │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
