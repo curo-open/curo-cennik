@@ -9,7 +9,6 @@ Autor: curo.sk
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
 │ IDK = 0               │ IDK                          │
-│ KPS = 1.58            │ KPS                          │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
 │ CB = 0.0339           │ Cena bodu                    │
 │ CBP = 0.065           │ Cena bodu preventívne výkony │

@@ -14,7 +14,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02814
+			"value": 0.03466
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -22,31 +22,31 @@
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.03
+			"value": 0.035
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBUSG": {
 			"label": "Cena bodu USG SVaLZ",
-			"value": 0.008473
+			"value": 0.009574
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.98
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.19
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 5.39
+			"value": 6.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 8.39
+			"value": 9.64
 		}
 	},
 	"pacient": [],
@@ -54,7 +54,7 @@
 		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250X']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -127,19 +127,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		],
 		"65": [

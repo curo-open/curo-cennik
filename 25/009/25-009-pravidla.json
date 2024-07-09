@@ -4,10 +4,6 @@
 			"label": "IDK",
 			"value": 0
 		},
-		"KPS": {
-			"label": "KPS",
-			"value": 1.58
-		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
 			"value": 1

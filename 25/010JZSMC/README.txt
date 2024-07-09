@@ -205,6 +205,9 @@ Autor: curo.sk
 │             379 │ vv.pocet*cena             │ Excízia sinus pilonidalis                     │ vv.kod in ['5v191']                                          │
 │             379 │ vv.pocet*cena             │ Operačné odstránenie sinus pilonidalis, ostat │ vv.kod in ['5v193']                                          │
 │                 │                           │ né                                            │                                                              │
+│             749 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['5l1951']                                         │
+│                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
+│                 │                           │ u                                             │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
