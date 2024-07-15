@@ -22,18 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- bzr changes">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/011/24-011-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/011/24-011-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/011/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/011/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/040/24-040-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/040/24-040-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/040/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/040/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/040/25-040-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/040/25-040-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/040/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/040/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/040/27-040-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/040/27-040-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/040/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/040/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -774,7 +764,11 @@
       <workItem from="1718800540334" duration="1505000" />
       <workItem from="1719233004744" duration="599000" />
       <workItem from="1719254360706" duration="599000" />
-      <workItem from="1719321713355" duration="1218000" />
+      <workItem from="1719321713355" duration="4661000" />
+      <workItem from="1719937275022" duration="591000" />
+      <workItem from="1719950523081" duration="2844000" />
+      <workItem from="1720758404480" duration="596000" />
+      <workItem from="1720964268413" duration="599000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1119,7 +1113,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="448" />
+    <option name="localTasksCounter" value="453" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

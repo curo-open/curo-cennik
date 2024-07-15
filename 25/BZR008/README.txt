@@ -53,7 +53,7 @@ Autor: curo.sk
 │           0.084 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
 │            null │ vv.bodyCelkom*CB          │ Odbery                                        │ !p.kapitacia && vv.kod in ['299a','299b']                    │
 │            null │ vv.bodyCelkom*CB          │ Výkon 250,250a,250b                           │ vv.kod in ['250','250a','250b']                              │
-│         0.01175 │ vv.bodyCelkom*cena        │ 1.preventívna prehliadka u VLDD               │ vv.kod in ['142']                                            │
+│          0.1175 │ vv.bodyCelkom*cena        │ 1.preventívna prehliadka u VLDD               │ vv.kod in ['142']                                            │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
 │                 │                           │                                               │ b','146c','148','148a','148b','148c','149','149a','149b','14 │
 │                 │                           │                                               │ 9c','149d','159b']                                           │

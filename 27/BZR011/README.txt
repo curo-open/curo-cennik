@@ -34,6 +34,7 @@ Autor: curo.sk
 │                 │                           │                                               │ ,'5312','5315','5316','5799'] && vv.kod in ['5300','5301','5 │
 │                 │                           │                                               │ 302','5303','5304','5307','5307a','5312','5315','5316','5799 │
 │                 │                           │                                               │ ']                                                           │
+│         0.01107 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5153a','5153b'] && vv.kod in ['5153a','5153b']   │
 │            6.06 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007'] && vv.kod in ['H0007']                   │
 │            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008'] && vv.kod in ['H0008']                   │
 │            8.95 │ vv.pocet*cena             │ Výkon 3860                                    │ vv.kod in ['3860'] && vv.kod in ['3860']                     │

@@ -206,7 +206,7 @@
 		{
 			"label": "1.preventívna prehliadka u VLDD",
 			"if": "vv.kod in ['142']",
-			"value": 0.01175,
+			"value": 0.1175,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
