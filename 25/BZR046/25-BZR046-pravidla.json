@@ -1,0 +1,334 @@
+{
+	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 1.46
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 2.35
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 3.98
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 6.98
+		},
+		"IPPD": {
+			"label": "IPPD",
+			"value": 0
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.03466
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009159
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.009574
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5300','5301','5302','5303','5304','5307','5307a','5312','5315','5316']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Epidurálna anestézia",
+			"if": "vv.kod in ['89']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Blokáda periférneho nervu",
+			"if": "vv.kod in ['91']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Selektívna blokáda pod USG",
+			"if": "vv.kod in ['95b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Aplikácia náplasti Qutenza",
+			"if": "vv.kod in ['410']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intraartikulárna injekcia",
+			"if": "vv.kod in ['255']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Obstreky bolestivých bodov",
+			"if": "vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Infúzia",
+			"if": "vv.kod in ['272']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "TENS ",
+			"if": "vv.kod in ['562']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Bankovanie",
+			"if": "vv.kod in ['568']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPPD'",
+			"value": null,
+			"calc": "IPPD",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "vv.kod in ['5330','5331','5332'] && p.typ in ['BE','CU','EU']",
+			"value": 0.005311,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316'] && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "vv.typ!='SVaLZ' && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 80
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 310
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 0
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 0
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 0
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"79": [
+			{
+				"cond": "",
+				"value": 600
+			}
+		],
+		"89": [
+			{
+				"cond": "",
+				"value": 5766
+			}
+		],
+		"91": [
+			{
+				"cond": "",
+				"value": 2878
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"15d": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"95b": [
+			{
+				"cond": "",
+				"value": 5156
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "algeziologia"
+}

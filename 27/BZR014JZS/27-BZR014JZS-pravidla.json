@@ -484,6 +484,13 @@
 			"value": 524,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkon Kg6071",
+			"if": "vv.kod in ['Kg6071'] ",
+			"value": 524,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
