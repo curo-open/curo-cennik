@@ -10,6 +10,7 @@ Autor: curo.sk
 ├───────────────────┼────────────────────┤
 │ CB = 0.0365       │ Cena bodu          │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ    │
+│ CBO = 0.0323      │ Ostatné ŠAS výkony │
 │ NCB = 0           │ Navysena cena bodu │
 │ IPP1 = 3.71       │ IPP1               │
 │ IPP2 = 3.18       │ IPP2               │

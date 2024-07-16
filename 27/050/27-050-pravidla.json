@@ -8,6 +8,10 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01031
 		},
+		"CBO": {
+			"label": "Ostatné ŠAS výkony",
+			"value": 0.0323
+		},
 		"NCB": {
 			"label": "Navysena cena bodu",
 			"value": 0

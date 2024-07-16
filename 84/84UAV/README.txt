@@ -61,7 +61,6 @@ Autor: curo.sk
 │              20 │ vv.pocet*cena             │ UAO - Cielené vyšetrenie pacienta s respiračn │ vv.kod in ['62AU']                                           │
 │                 │                           │ ým syndrómom pri pandémii COVID-19            │                                                              │
 │            6.78 │ vv.pocet*cena             │ UAO - Výkon 163                               │ vv.kod in ['163U']                                           │
-│          0.0318 │ vv.bodyCelkom*cena        │ Komplexné vyšetrenie                          │ vv.kod in ['60U','60u']                                      │
 │            0.08 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │              10 │ vv.pocet*cena             │ Očkovanie COVID19                             │ vv.kod in ['252L']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
