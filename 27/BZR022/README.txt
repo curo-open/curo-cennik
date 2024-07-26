@@ -40,9 +40,9 @@ Autor: curo.sk
 │              14 │ vv.pocet*cena             │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │          0.0349 │ vv.bodyCelkom*cena        │ Výkon 4,5,6,8,30                              │ vv.kod in ['4','5','6','8','30']                             │
 │          0.0349 │ vv.bodyCelkom*cena        │ Výkon 40,41                                   │ vv.kod in ['40','41']                                        │
-│          0.0845 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
-│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a']                                           │
-│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
+│          0.0845 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ !p.kapitacia && vv.kod in ['3671']                           │
+│          0.0904 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ !p.kapitacia && vv.kod in ['252a']                           │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ !p.kapitacia && vv.kod in ['252b']                           │
 │          0.1284 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['142']                                            │
 │          0.0845 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
 │                 │                           │                                               │ b','146c','148','148a','148b','148c','149','149a','149b','14 │
@@ -70,6 +70,8 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            1.22 │ vv.pocet*cena             │ Delegovaný odber 250D                         │ vv.kod in ['250D']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 299a,299b                               │ vv.kod in ['299a','299b']                                    │
+│            null │ vv.bodyCelkom*0           │ SVALZ výkon                                   │ p.kapitacia && vv.jeSVaZL                                    │
+│            null │ vv.bodyCelkom*0           │ iné ako SVALZ                                 │ p.kapitacia && !vv.jeSVaZL                                   │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

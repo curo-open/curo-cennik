@@ -92,6 +92,27 @@
 			"instruction": null
 		},
 		{
+			"label": "Odber krvi",
+			"if": "!p.kapitacia && vv.kod in ['250a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber biologického materiálu",
+			"if": "!p.kapitacia && vv.kod in ['299a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252,252b, 252c",
+			"if": "!p.kapitacia && vv.kod in ['252','252b','252C']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": null,
@@ -124,6 +145,20 @@
 			"if": "!vv.jeSVaZL",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "p.kapitacia && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
 			"instruction": null
 		},
 		{

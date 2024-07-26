@@ -147,20 +147,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZEU",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 10",
 			"if": "vv.kod in ['10']",
 			"value": 0.0318,
@@ -190,14 +176,14 @@
 		},
 		{
 			"label": "Výkon 4",
-			"if": "vv.kod in ['4']",
+			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
-			"if": "vv.kod in ['8']",
+			"if": "!p.kapitacia && vv.kod in ['8']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -295,7 +281,7 @@
 		},
 		{
 			"label": "Očkovanie - 252a,252b,252c",
-			"if": "vv.kod in ['252a','252b','252c']",
+			"if": "!p.kapitacia && vv.kod in ['252a','252b','252c']",
 			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -494,6 +480,34 @@
 			"if": "vv.kod=='FOB'",
 			"value": null,
 			"calc": "FOB",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZEU",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "p.kapitacia && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
 			"instruction": null
 		}
 	],

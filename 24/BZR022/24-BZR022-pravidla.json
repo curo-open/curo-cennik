@@ -128,7 +128,7 @@
 		},
 		{
 			"label": "Výkon 250,250a,250b",
-			"if": "vv.kod in ['250','250a','250b']",
+			"if": "!p.kapitacia && vv.kod in ['250','250a','250b']",
 			"value": 1.96,
 			"calc": "vv.pocet*cena",
 			"instruction": null
@@ -177,16 +177,23 @@
 		},
 		{
 			"label": "Určenie glykémie glukometrom",
-			"if": "vv.kod in ['3671']",
+			"if": "!p.kapitacia && vv.kod in ['3671']",
 			"value": 0.079,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
-			"if": "!p.kapitacia && vv.kod in ['252a','252b']",
+			"if": "vv.kod in ['252a','252b']",
 			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia",
+			"if": "vv.kod in ['271']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -264,6 +271,20 @@
 			"if": "vv.kod in ['252K']",
 			"value": 7.5,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "p.kapitacia && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
 			"instruction": null
 		}
 	],

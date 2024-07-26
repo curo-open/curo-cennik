@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0373
+			"value": 0.0377
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -34,7 +34,7 @@
 		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0415,
+			"value": 0.0419,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -62,21 +62,21 @@
 		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['740','741','745','745A','745B','746']",
-			"value": 0.1094,
+			"value": 0.1098,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['755','756','760','761','762','763','763A']",
-			"value": 0.1094,
+			"value": 0.1098,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['360','361','363','364','365','366','367']",
-			"value": 0.1094,
+			"value": 0.1098,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -174,7 +174,7 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
-			"value": 0.0415,
+			"value": 0.0419,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

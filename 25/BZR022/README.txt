@@ -45,14 +45,14 @@ Autor: curo.sk
 │           0.035 │ vv.bodyCelkom*cena        │ Výkon 25,26                                   │ vv.kod in ['25','26']                                        │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │           17.33 │ vv.pocet*cena             │ Výkon 60b                                     │ vv.kod in ['60b']                                            │
-│            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ !p.kapitacia && vv.kod in ['64']                             │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
 │           0.029 │ vv.bodyCelkom*cena        │ Výkon 67                                      │ vv.kod in ['67']                                             │
 │           0.084 │ vv.bodyCelkom*cena        │ Výkon 950,951,952,953                         │ vv.kod in ['950','951','952','953']                          │
 │           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │           0.084 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
 │            null │ vv.bodyCelkom*CB          │ Odbery                                        │ !p.kapitacia && vv.kod in ['299a','299b']                    │
-│            null │ vv.bodyCelkom*CB          │ Výkon 250,250a,250b                           │ vv.kod in ['250','250a','250b']                              │
+│            null │ vv.bodyCelkom*CB          │ Výkon 250,250a,250b                           │ !p.kapitacia && vv.kod in ['250','250a','250b']              │
 │          0.1175 │ vv.bodyCelkom*cena        │ 1.preventívna prehliadka u VLDD               │ vv.kod in ['142']                                            │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
 │                 │                           │                                               │ b','146c','148','148a','148b','148c','149','149a','149b','14 │
@@ -71,6 +71,8 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Výkon H0002                                   │ vv.kod in ['H0002']                                          │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - Bezdomovec, Cudzinec           │ !p.kapitacia && p.typ in ['EU']                              │
+│            null │ vv.bodyCelkom*0           │ SVALZ výkon                                   │ p.kapitacia && vv.jeSVaZL                                    │
+│            null │ vv.bodyCelkom*0           │ iné ako SVALZ                                 │ p.kapitacia && !vv.jeSVaZL                                   │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

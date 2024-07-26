@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota     │ Popis              │
 ├─────────────────────┼────────────────────┤
 │ LIMIT = 2235        │ Limit              │
-│ CB = 0.0373         │ Cena bodu          │
+│ CB = 0.0377         │ Cena bodu          │
 │ CBSVALZ = 0.01031   │ Cena bodu SVaLZ    │
 │ CBSVALZUSG = 0.0277 │ Cena bodu SVaLZUSG │
 │ IPP4 = 5.83         │ IPP4               │
@@ -28,13 +28,13 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0415 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│          0.0419 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['732','735','736','737']                          │
-│          0.1094 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['740','741','745','745A','745B','746']            │
-│          0.1094 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['755','756','760','761','762','763','763A']       │
-│          0.1094 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['360','361','363','364','365','366','367']        │
+│          0.1098 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['740','741','745','745A','745B','746']            │
+│          0.1098 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['755','756','760','761','762','763','763A']       │
+│          0.1098 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['360','361','363','364','365','366','367']        │
 │         0.02463 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['5793','5794','5795']                             │
 │          0.0158 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
 │            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
@@ -48,7 +48,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Odber biol.materiálu                          │ vv.kod in ['299a','299b']                                    │
 │            null │ vv.bodyCelkom*CB          │ Injekcia                                      │ vv.kod in ['253']                                            │
 │          0.0305 │ vv.bodyCelkom*cena        │ Anestézia                                     │ vv.kod in ['81','80','81a','85','85a','86','86a','87','87a'] │
-│          0.0415 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
+│          0.0419 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

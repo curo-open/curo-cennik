@@ -164,16 +164,16 @@
 		},
 		{
 			"label": "SVALZ výkon",
-			"if": "vv.jeSVaZL",
+			"if": "p.kapitacia && vv.jeSVaZL",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"calc": "vv.bodyCelkom*0",
 			"instruction": null
 		},
 		{
 			"label": "iné ako SVALZ",
-			"if": "!vv.jeSVaZL",
+			"if": "p.kapitacia && !vv.jeSVaZL",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*0",
 			"instruction": null
 		},
 		{

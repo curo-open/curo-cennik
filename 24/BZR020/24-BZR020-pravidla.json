@@ -120,20 +120,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
 			"value": null,
@@ -156,14 +142,14 @@
 		},
 		{
 			"label": "Výkon 4",
-			"if": "vv.kod in ['4']",
+			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
-			"if": "vv.kod in ['8']",
+			"if": "!p.kapitacia && vv.kod in ['8']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -183,8 +169,15 @@
 			"instruction": null
 		},
 		{
+			"label": "Vystavenie návrhu na kúpeľnú starostlivosť",
+			"if": "!p.kapitacia && vv.kod in ['75a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Komunikácia v cudziom jazyku",
-			"if": "vv.kod in ['79a']",
+			"if": "!p.kapitacia && vv.kod in ['79a']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -211,10 +204,38 @@
 			"instruction": null
 		},
 		{
+			"label": "Injekcia",
+			"if": "!p.kapitacia && vv.kod in ['252']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Očkovanie",
 			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia",
+			"if": "!p.kapitacia && vv.kod in ['271']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber biologického materiálu",
+			"if": "!p.kapitacia && vv.kod in ['299a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber krvi",
+			"if": "!p.kapitacia && vv.kod in ['250a','250b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -348,6 +369,34 @@
 			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "p.kapitacia && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
 			"instruction": null
 		}
 	],

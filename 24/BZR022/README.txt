@@ -42,15 +42,16 @@ Autor: curo.sk
 │            1.33 │ vv.pocet*cena             │ Výkon 1                                       │ vv.kod in ['1']                                              │
 │            4.95 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
 │            6.93 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
-│            1.96 │ vv.pocet*cena             │ Výkon 250,250a,250b                           │ vv.kod in ['250','250a','250b']                              │
+│            1.96 │ vv.pocet*cena             │ Výkon 250,250a,250b                           │ !p.kapitacia && vv.kod in ['250','250a','250b']              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 299a,299b                               │ !p.kapitacia && vv.kod in ['299a','299b']                    │
 │            8.63 │ vv.pocet*cena             │ Výkon 4-nekapitovaný                          │ !p.kapitacia && vv.kod in ['4']                              │
 │           12.26 │ vv.pocet*cena             │ Výkon 8-nekapitovaný                          │ !p.kapitacia && vv.kod in ['8']                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,63,64                                │ vv.kod in ['60','63','64']                                   │
 │            0.05 │ vv.bodyCelkom*cena        │ Výkon 67                                      │ vv.kod in ['67']                                             │
-│           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ !p.kapitacia && vv.kod in ['252a','252b']                    │
+│           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ !p.kapitacia && vv.kod in ['3671']                           │
+│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b']                                    │
+│            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia                          │ vv.kod in ['271']                                            │
 │        0.110198 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['142']                                            │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
 │                 │                           │                                               │ b','146c','148','148a','148b','148c','149','149a','149b','14 │
@@ -65,6 +66,8 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
+│            null │ vv.bodyCelkom*0           │ SVALZ výkon                                   │ p.kapitacia && vv.jeSVaZL                                    │
+│            null │ vv.bodyCelkom*0           │ iné ako SVALZ                                 │ p.kapitacia && !vv.jeSVaZL                                   │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
