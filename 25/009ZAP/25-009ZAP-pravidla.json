@@ -37,7 +37,7 @@
 		{
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
-			"value": 1.99,
+			"value": 2.06,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -60,7 +60,7 @@
 		{
 			"label": "Výkon 252b, 252c",
 			"if": "vv.kod in ['252b','252C']",
-			"value": 0.084,
+			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

@@ -25,19 +25,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 20 │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ vek od 20 do 29 │          3.44 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ vek od 29 do 40 │          3.23 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ vek od 40 do 45 │          3.25 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ vek od 45 do 50 │          3.28 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ vek od 50 do 55 │          3.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ vek od 55 do 60 │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ vek od 60 do 65 │          4.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 70 │          5.32 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 75 │          6.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ vek od 75 do 80 │          6.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 85 │          7.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek od 85+      │          7.96 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ vek od 18 do 20 │          4.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ vek od 20 do 29 │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ vek od 29 do 40 │          3.38 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ vek od 40 do 45 │           3.4 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ vek od 45 do 50 │          3.44 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ vek od 50 do 55 │          3.95 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ vek od 55 do 60 │          4.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ vek od 60 do 65 │          5.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ vek od 65 do 70 │          5.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ vek od 70 do 75 │          6.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ vek od 75 do 80 │          6.97 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ vek od 80 do 85 │          7.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ vek od 85+      │          8.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -58,7 +58,7 @@ Autor: curo.sk
 │        0.009574 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │        0.021999 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
-│           0.084 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b','252c']                                    │
+│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b','252c']                                    │
 │           0.084 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s'] │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │

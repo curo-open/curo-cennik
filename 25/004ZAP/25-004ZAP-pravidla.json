@@ -86,6 +86,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 802, 803, 804",
+			"if": "vv.kod in ['802','803','804']",
+			"value": 0.03466,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 802, 813, 819d, 803, 804",
 			"if": "vv.kod in ['802','813','819d','803','804']",
 			"value": 0.026,
