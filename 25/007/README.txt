@@ -21,13 +21,13 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ do  1 roku                │         11.45 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
-│ od  1 do 2 rokov vratane  │         11.36 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
-│ od  3 do 5 rokov vratane  │          7.71 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
-│ od  6 do 9 rokov vratane  │          5.57 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 10)  │
-│ od 10 do 14 rokov vratane │           5.1 │ IDK+cena │ p.kapitacia && p|vekMedzi(10, 15) │
-│ od 15 do 17 rokov vratane │          4.81 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 18) │
-│ od 18 do 18 rokov vratane │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
+│ do  1 roku                │         12.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
+│ od  1 do 2 rokov vratane  │         11.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
+│ od  3 do 5 rokov vratane  │          8.29 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
+│ od  6 do 9 rokov vratane  │          5.99 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 10)  │
+│ od 10 do 14 rokov vratane │          5.49 │ IDK+cena │ p.kapitacia && p|vekMedzi(10, 15) │
+│ od 15 do 17 rokov vratane │          5.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 18) │
+│ od 18 do 18 rokov vratane │          4.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -43,7 +43,7 @@ Autor: curo.sk
 │        0.018257 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['1']                                              │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
 │          0.1175 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
-│           0.084 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
+│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Rozbor a plánovanie cielených terapeutických  │ vv.kod in ['10']                                             │
 │                 │                           │ postupov v na ovplyvnenie                     │                                                              │
 │                 │                           │ chronických ochorení                          │                                                              │
