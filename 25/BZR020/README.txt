@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬───────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                             │
 ├────────────────────┼───────────────────────────────────────────────────┤
-│ IDK = 1.04         │ IDK                                               │
+│ IDK = 1.35         │ IDK                                               │
 │ KPS = 1            │ KPS                                               │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ?                             │
 │ CB = 0.0318        │ Cena bodu                                         │
@@ -26,19 +26,19 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ od 18 do 19 rokov vrátane │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ od 20 do 28 rokov vrátane │          3.44 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ od 29 do 39 rokov vrátane │          3.23 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ od 40 do 44 rokov vrátane │          3.25 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ od 45 do 49 rokov vrátane │          3.28 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ od 50 do 54 rokov vrátane │          3.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ od 55 do 59 rokov vrátane │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ od 60 do 64 rokov vrátane │          4.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ od 65 do 69 rokov vrátane │          5.32 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ od 70 do 74 rokov vrátane │          6.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ od 75 do 79 rokov vrátane │          6.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ od 80 do 84 rokov vrátane │          7.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ od 85+                    │          7.96 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ od 18 do 19 rokov vrátane │          4.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ od 20 do 28 rokov vrátane │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ od 29 do 39 rokov vrátane │          3.38 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ od 40 do 44 rokov vrátane │           3.4 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ od 45 do 49 rokov vrátane │          3.44 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ od 50 do 54 rokov vrátane │          3.95 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ od 55 do 59 rokov vrátane │          4.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ od 60 do 64 rokov vrátane │          5.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ od 65 do 69 rokov vrátane │          5.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ od 70 do 74 rokov vrátane │          6.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ od 75 do 79 rokov vrátane │          6.97 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ od 80 do 84 rokov vrátane │          7.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ od 85+                    │          8.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -66,7 +66,7 @@ Autor: curo.sk
 │        0.009574 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │        0.021999 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │
 │        0.016597 │ vv.bodyCelkom*cena        │ Celodenné snímanie tlaku - vyhodnotenie       │ vv.kod in ['5716']                                           │
-│           0.084 │ vv.bodyCelkom*cena        │ Očkovanie - 252a,252b,252c                    │ !p.kapitacia && vv.kod in ['252a','252b','252c']             │
+│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie - 252a,252b,252c                    │ !p.kapitacia && vv.kod in ['252a','252b','252c']             │
 │           0.035 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26']                                        │
 │            11.6 │ vv.pocet*cena             │ Stanovenie hodnoty troponínu                  │ vv.kod in ['4485']                                           │
 │           19.78 │ vv.pocet*cena             │ Stanovenie hodnoty NT-proBNP                  │ vv.kod in ['44418']                                          │

@@ -37,7 +37,7 @@
 	"vykon": [
 		{
 			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
+			"if": "vv.kod in ['60','62','63','60r']",
 			"value": 0.0419,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -87,7 +87,7 @@
 		{
 			"label": "Výkon 5330,5531,5332",
 			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
+			"value": 0.0103092,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -121,7 +121,7 @@
 		},
 		{
 			"label": "ŠAS",
-			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
+			"if": "vv.kod in ['60','62','63','60r'] && p.typ in ['EU']",
 			"value": 0.0419,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

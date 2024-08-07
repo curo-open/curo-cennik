@@ -28,13 +28,13 @@ Autor: curo.sk
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d'] && vv.kod in ['15d']                       │
 │          0.0419 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63'] && vv.kod in ['60','62','63']     │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67'] && vv.kod in ['65','66','67']     │
+│         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5153a                                   │ vv.kod in ['5153a','5153b'] && vv.kod in ['5153a','5153b']   │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332'] && vv.kod in ['5330','5331' │
 │                 │                           │                                               │ ,'5332']                                                     │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5302','5303','5304','5307','5307a' │
 │                 │                           │                                               │ ,'5312','5315','5316','5799'] && vv.kod in ['5300','5301','5 │
 │                 │                           │                                               │ 302','5303','5304','5307','5307a','5312','5315','5316','5799 │
 │                 │                           │                                               │ ']                                                           │
-│         0.01107 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5153a','5153b'] && vv.kod in ['5153a','5153b']   │
 │            6.06 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007'] && vv.kod in ['H0007']                   │
 │            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008'] && vv.kod in ['H0008']                   │
 │            8.95 │ vv.pocet*cena             │ Výkon 3860                                    │ vv.kod in ['3860'] && vv.kod in ['3860']                     │
