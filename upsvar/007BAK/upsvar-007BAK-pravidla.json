@@ -1,0 +1,23 @@
+{
+	"params": {
+		"ZA_BOD": {
+			"label": "Cena posudkového lekára za bod",
+			"value": 0.023236
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon pre UPSVAR",
+			"if": "vv.typ=='upsvar'",
+			"value": null,
+			"calc": "vv.bodyCelkom*ZA_BOD",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "pediater"
+}
