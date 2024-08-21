@@ -50,7 +50,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│            0.03 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
+│           0.035 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
@@ -83,7 +83,7 @@ Autor: curo.sk
 │            5.75 │ vv.pocet*cena             │ C-reaktívny proteín                           │ vv.kod in ['4571a','4571A']                                  │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
-│            4.38 │ vv.bodyCelkom*cena        │ USG – vyšetrenie POCUS                        │ vv.kod in ['5301']                                           │
+│          0.0073 │ vv.bodyCelkom*cena        │ USG – vyšetrenie POCUS                        │ vv.kod in ['5301']                                           │
 │            11.6 │ vv.bodyCelkom*cena        │ Stanovenie hodnoty Troponínu                  │ vv.kod in ['4485']                                           │
 │            8.98 │ vv.bodyCelkom*cena        │ Stanovenie hodnoty NT-proBNP                  │ vv.kod in ['3860']                                           │
 │           19.78 │ vv.bodyCelkom*cena        │ USG – vyšetrenie POCUS                        │ vv.kod in ['44418']                                          │

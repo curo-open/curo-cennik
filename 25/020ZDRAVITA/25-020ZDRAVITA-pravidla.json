@@ -173,7 +173,7 @@
 		{
 			"label": "Návštevná služba",
 			"if": "vv.kod in ['25','26','29','30']",
-			"value": 0.03,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -397,7 +397,7 @@
 		{
 			"label": "USG – vyšetrenie POCUS",
 			"if": "vv.kod in ['5301']",
-			"value": 4.38,
+			"value": 0.0073,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
