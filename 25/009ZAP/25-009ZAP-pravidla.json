@@ -16,10 +16,6 @@
 			"label": "Cena bodu",
 			"value": 0.0339
 		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.065
-		},
 		"CBEU": {
 			"label": "Cena bodu EU",
 			"value": 0.035
