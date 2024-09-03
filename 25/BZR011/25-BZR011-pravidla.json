@@ -61,6 +61,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
@@ -83,7 +90,7 @@
 		},
 		{
 			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5300','5301','5702']",
+			"if": "vv.kod in ['5300','5301','5702','5312','5316']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
@@ -119,15 +126,8 @@
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": 0.0238,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		}
 	],

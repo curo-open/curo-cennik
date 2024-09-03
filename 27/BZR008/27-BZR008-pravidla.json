@@ -289,7 +289,7 @@
 		},
 		{
 			"label": "Výkon 299a,299b",
-			"if": "vv.kod in ['299a','299b']",
+			"if": "!p.kapitacia && vv.kod in ['299a','299b']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null

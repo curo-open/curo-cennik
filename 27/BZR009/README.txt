@@ -44,12 +44,12 @@ Autor: curo.sk
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60, 63                                  │ vv.kod in ['60','63']                                        │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
-│            0.01 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
+│            0.01 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon a neodkladna       │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & vv.jeSVaZL                                                 │
-│          0.0349 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
+│          0.0349 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ a neodkladna     │ !p.kapitacia && d.od|ma('jeNeodkladna') && p.typ in ['EU'] & │
 │                 │                           │                                               │ & !vv.jeSVaZL                                                │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
-│            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
+│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
 │            null │ vv.bodyCelkom*0           │ SVALZ výkon                                   │ p.kapitacia && vv.jeSVaZL                                    │
 │            null │ vv.bodyCelkom*0           │ iné ako SVALZ                                 │ p.kapitacia && !vv.jeSVaZL                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
