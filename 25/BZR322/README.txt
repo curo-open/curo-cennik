@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌───────────────────────┬─────────────────────┐
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
-│ IPP1 = 1.46           │ IPP1                │
+│ IPP1 = 1.1            │ IPP1                │
 │ IPP2 = 2.35           │ IPP2                │
-│ IPP3 = 3.98           │ IPP3                │
+│ IPP3 = 2.99           │ IPP3                │
 │ IPP4 = 6.98           │ IPP4                │
 │ IPPD = 0              │ IPPD                │
 │ LIMIT = 0             │ Limit               │

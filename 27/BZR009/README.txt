@@ -36,6 +36,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 122                                     │ p.kapitacia && vv.kod in ['122']                             │
 │          0.0434 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ vv.kod in ['297']                                            │
 │          0.0801 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ p.kapitacia && vv.kod in ['252b']                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 299a                                    │ !p.kapitacia && vv.kod in ['299a']                           │
+│            null │ vv.bodyCelkom*CB          │ Výkon 250a                                    │ !p.kapitacia && vv.kod in ['250a']                           │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkony SVALZ USG                              │ vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony SVALZ USG                              │ vv.kod in ['5301','5303','5305','5316','5807']               │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.kod in ['5308']                                           │

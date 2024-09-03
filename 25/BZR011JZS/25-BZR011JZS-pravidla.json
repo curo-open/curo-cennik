@@ -353,6 +353,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 8535C",
+			"if": "vv.kod in ['8535C'] || vv.k in ['8535C'] || vv.k25 in ['8535C']",
+			"value": 1930,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 8535D",
 			"if": "vv.kod in ['8535D'] || vv.k in ['8535D'] || vv.k25 in ['8535D']",
 			"value": 3676,

@@ -37,7 +37,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5302','5303','5304','5307','5307a' │
 │                 │                           │                                               │ ,'5312','5315','5316']                                       │
 │        0.005311 │ vv.bodyCelkom*cena        │ Osteodenzitometria                            │ vv.kod in ['5330','5331','5332']                             │
-│           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d','15D']                                      │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1A03057                                 │ vv.kod in ['1A03057']                                        │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1B08098                                 │ vv.kod in ['1B08098']                                        │
@@ -51,8 +51,8 @@ Autor: curo.sk
 │                 │                           │                                               │ ]                                                            │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkony - Bezdomovec, Cudzinec, EU             │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316'] && p.typ in ['BE','CU','EU']                 │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony - Bezdomovec, Cudzinec, EU             │ vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']                 │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ vv.typ!='SVaLZ' && p.typ in ['BE','CU','EU']                 │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony - Bezdomovec, Cudzinec, EU             │ vv.typ=='SVaLZ' && p.typ in ['BE','CU','EU']                 │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │

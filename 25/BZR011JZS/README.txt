@@ -73,6 +73,8 @@ Autor: curo.sk
 │                 │                           │                                               │ A']                                                          │
 │            1056 │ vv.pocet*cena             │ Výkon 8535A                                   │ vv.kod in ['8535A'] || vv.k in ['8535A'] || vv.k25 in ['8535 │
 │                 │                           │                                               │ A']                                                          │
+│            1930 │ vv.pocet*cena             │ Výkon 8535C                                   │ vv.kod in ['8535C'] || vv.k in ['8535C'] || vv.k25 in ['8535 │
+│                 │                           │                                               │ C']                                                          │
 │            3676 │ vv.pocet*cena             │ Výkon 8535D                                   │ vv.kod in ['8535D'] || vv.k in ['8535D'] || vv.k25 in ['8535 │
 │                 │                           │                                               │ D']                                                          │
 │            3676 │ vv.pocet*cena             │ Výkon 8535E                                   │ vv.kod in ['8535E'] || vv.k in ['8535E'] || vv.k25 in ['8535 │

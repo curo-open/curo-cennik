@@ -82,6 +82,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 299a",
+			"if": "!p.kapitacia && vv.kod in ['299a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 250a",
+			"if": "!p.kapitacia && vv.kod in ['250a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkony SVALZ USG",
 			"if": "vv.diagnoza in ['Z'] && vv.kod in ['5303','5305']",
 			"value": 0.02,
