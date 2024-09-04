@@ -106,7 +106,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 252,252b, 252c",
+			"label": "Výkon 252,252b, 252C",
 			"if": "!p.kapitacia && vv.kod in ['252','252b','252C']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
@@ -283,7 +283,7 @@
 				"value": 70
 			}
 		],
-		"252c": [
+		"252C": [
 			{
 				"cond": "",
 				"value": 70

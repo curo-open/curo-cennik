@@ -233,7 +233,7 @@
 		},
 		{
 			"label": "EKG",
-			"if": "vv.kod in ['5702','5702C']",
+			"if": "vv.kod in ['5702','5702c']",
 			"value": 5.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null

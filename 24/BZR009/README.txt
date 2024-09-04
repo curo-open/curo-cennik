@@ -40,7 +40,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBUSG       │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
 │            null │ vv.bodyCelkom*CB          │ Odber krvi                                    │ !p.kapitacia && vv.kod in ['250a']                           │
 │            null │ vv.bodyCelkom*CB          │ Odber biologického materiálu                  │ !p.kapitacia && vv.kod in ['299a']                           │
-│            null │ vv.bodyCelkom*CB          │ Výkon 252,252b, 252c                          │ !p.kapitacia && vv.kod in ['252','252b','252C']              │
+│            null │ vv.bodyCelkom*CB          │ Výkon 252,252b, 252C                          │ !p.kapitacia && vv.kod in ['252','252b','252C']              │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
 │            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
@@ -75,7 +75,7 @@ Autor: curo.sk
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
 │              70 │ 252b                                                                                                      │                           │
-│              70 │ 252c                                                                                                      │                           │
+│              70 │ 252C                                                                                                      │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

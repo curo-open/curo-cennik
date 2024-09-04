@@ -28,8 +28,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['732','735','736','737','740','741','745']        │
-│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['745A','745B','746','755','756','760','761','762' │
-│                 │                           │                                               │ ,'763','763A']                                               │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['745a','745b','746','755','756','760','761','762' │
+│                 │                           │                                               │ ,'763','763a']                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['360','361','363','364','365','366','367']        │
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
 │           0.055 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
@@ -93,9 +93,9 @@ Autor: curo.sk
 │            3000 │ 763sn                                                                                                     │                           │
 │            3000 │ 763pp                                                                                                     │                           │
 │            3000 │ 763pn                                                                                                     │                           │
-│            1200 │ 745A                                                                                                      │                           │
-│            2540 │ 745B                                                                                                      │                           │
-│           11838 │ 763A                                                                                                      │                           │
+│            1200 │ 745a                                                                                                      │                           │
+│            2540 │ 745b                                                                                                      │                           │
+│           11838 │ 763a                                                                                                      │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

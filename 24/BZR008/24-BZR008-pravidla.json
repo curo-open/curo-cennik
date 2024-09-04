@@ -226,14 +226,14 @@
 		},
 		{
 			"label": "EKG",
-			"if": "vv.kod in ['5702','5702C']",
+			"if": "vv.kod in ['5702','5702c']",
 			"value": 5.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "EKG (5702,5702ZV)",
-			"if": "vv.kod in ['5702ZV','5702']",
+			"label": "EKG (5702,5702zv)",
+			"if": "vv.kod in ['5702zv','5702']",
 			"value": 5.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
@@ -260,14 +260,14 @@
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie Covid 252L",
+			"label": "Očkovanie Covid 252l",
 			"if": "vv.kod in ['252L']",
 			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie Covid 252K",
+			"label": "Očkovanie Covid 252k",
 			"if": "vv.kod in ['252K']",
 			"value": 7.5,
 			"calc": "vv.pocet*cena",

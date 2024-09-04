@@ -61,14 +61,14 @@
 		},
 		{
 			"label": "Výkon ŠAS",
-			"if": "vv.kod in ['740','741','745','745A','745B','746']",
+			"if": "vv.kod in ['740','741','745','745a','745b','746']",
 			"value": 0.1098,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon ŠAS",
-			"if": "vv.kod in ['755','756','760','761','762','763','763A']",
+			"if": "vv.kod in ['755','756','760','761','762','763','763a']",
 			"value": 0.1098,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -473,19 +473,19 @@
 				"value": 3000
 			}
 		],
-		"745A": [
+		"745a": [
 			{
 				"cond": "",
 				"value": 1200
 			}
 		],
-		"745B": [
+		"745b": [
 			{
 				"cond": "",
 				"value": 2540
 			}
 		],
-		"763A": [
+		"763a": [
 			{
 				"cond": "",
 				"value": 11838

@@ -157,8 +157,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie Covid 252L",
-			"if": "vv.kod in ['252L']",
+			"label": "Očkovanie Covid 252l",
+			"if": "vv.kod in ['252l']",
 			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null

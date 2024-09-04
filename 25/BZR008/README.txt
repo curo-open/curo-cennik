@@ -59,7 +59,7 @@ Autor: curo.sk
 │                 │                           │                                               │ 9c','149d','159b']                                           │
 │           0.079 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
 │           0.084 │ vv.bodyCelkom*cena        │ Základná preventívna prehliadka               │ vv.kod in ['160']                                            │
-│            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
+│            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702c']                                   │
 │            5.98 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
 │            5.75 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
