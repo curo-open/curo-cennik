@@ -2,43 +2,35 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0323
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.01031
 		},
 		"CBUSG": {
 			"label": "Cena bodu USG",
 			"value": 0.0088
 		},
-		"IPP1": {
-			"label": "IPP1",
-			"value": 0.57
-		},
-		"IPP2": {
-			"label": "IPP2",
-			"value": 0.36
-		},
-		"IPP3": {
-			"label": "IPP3",
-			"value": 0.28
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 5.5
+			"value": 5.83
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 4
+			"value": 4.24
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 3
+			"value": 3.18
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -54,7 +46,7 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.015,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -82,29 +74,29 @@
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.0305,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon `60,`62,`63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0305,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon `60r",
 			"if": "vv.kod in ['60r']",
-			"value": 0.0275,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon `65,`66,`67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.0275,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -145,7 +137,7 @@
 		{
 			"label": "Výkon 5153a;5153b;5333",
 			"if": "vv.kod in ['5153a','5153b','5333']",
-			"value": 0.0088,
+			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -157,9 +149,9 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5766, 5769, 5770,5771, 5772, 5793, 5794, 5795",
-			"if": "vv.kod in ['5766','5769','5770','5771','5772','5793','5794','5795']",
-			"value": 0.01275,
+			"label": "Výkony 5727",
+			"if": "vv.kod in ['5727']",
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -171,9 +163,16 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon H0007",
+			"if": "vv.kod in ['H0007']",
+			"value": 6.06,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 5,
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -181,6 +180,13 @@
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty NT-proBNP",
+			"if": "vv.kod in ['3860']",
+			"value": 8.95,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -354,6 +360,12 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		]
 	},
