@@ -2,27 +2,35 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0365
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
+			"value": 0.0323
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01032
+			"value": 0.01031
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
 			"value": 0.01662
 		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0.0028
+		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 3.5
+			"value": 3.71
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3
+			"value": 3.18
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 2
+			"value": 2.12
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -42,35 +50,35 @@
 			"label": "ŠAS",
 			"if": "vv.kod in ['60']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['62']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60r']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['65']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -140,14 +148,14 @@
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		}
 	],

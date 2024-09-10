@@ -371,7 +371,7 @@
 		},
 		{
 			"label": "EÚ - SVALZ výkon",
-			"if": "p.typ in ['EU'] && vv.typ=='SVaLZ'",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null

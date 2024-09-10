@@ -10,11 +10,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01031
+			"value": 0.01107
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
-			"value": 0
+			"value": 0.0028
 		}
 	},
 	"pacient": [],
@@ -28,14 +28,7 @@
 		},
 		{
 			"label": "Výkony 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
-			"instruction": null
-		},
-		{
-			"label": "Výkony",
-			"if": "vv.kod in [ '200','201','204','2018','2018a','2100','2101','2106','2000','2001','2002','2003']",
+			"if": "vv.kod in ['60','62','63','60r',]",
 			"value": null,
 			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null

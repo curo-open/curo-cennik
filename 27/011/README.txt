@@ -10,8 +10,8 @@ Autor: curo.sk
 ├───────────────────┼──────────────────────────────┤
 │ CB = 0.0365       │ Cena bodu                    │
 │ CBO = 0.0323      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
-│ NCB = 0           │ Navysena cena bodu           │
+│ CBSVALZ = 0.01107 │ Cena bodu SVaLZ              │
+│ NCB = 0.0028      │ Navysena cena bodu           │
 └───────────────────┴──────────────────────────────┘
 
 
@@ -26,9 +26,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
-│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
-│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony                                        │ vv.kod in [ '200','201','204','2018','2018a','2100','2101',' │
-│                 │                           │                                               │ 2106','2000','2001','2002','2003']                           │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony 60,62,63                               │ vv.kod in ['60','62','63','60r',]                            │
 │            0.02 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
