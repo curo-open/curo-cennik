@@ -138,8 +138,8 @@
 		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.0318,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
 		},
 		{

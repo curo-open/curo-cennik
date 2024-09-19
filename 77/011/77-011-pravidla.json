@@ -34,13 +34,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony",
-			"if": "vv.kod in [ '200','201','204','2018','2018a','2100','2101','2106','2000','2001','2002','2003']",
-			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
-			"instruction": null
-		},
-		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
 			"value": 0.02,
