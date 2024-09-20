@@ -136,13 +136,6 @@
 	],
 	"vykon": [
 		{
-			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
-			"instruction": null
-		},
-		{
 			"label": "Nekapitovaný - SVALZ výkon",
 			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'",
 			"value": null,
@@ -504,6 +497,13 @@
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "Neodkladná starostlivosť - SVaLZ",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		}
 	],
