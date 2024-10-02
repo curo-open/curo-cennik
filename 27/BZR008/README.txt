@@ -61,6 +61,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
 │            4.77 │ vv.pocet*cena             │ Výkon 67                                      │ vv.kod in ['67']                                             │
 │            5.12 │ vv.pocet*cena             │ Výkon 1544a                                   │ vv.kod in ['1544a']                                          │
+│            null │ vv.bodyCelkom*CB          │ Výkon 15b - Zhodnotenie výsledkov             │ vv.kod in ['15b']                                            │
 │            0.01 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │            5.52 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702Z']                                          │
 │          0.0158 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a']                                          │

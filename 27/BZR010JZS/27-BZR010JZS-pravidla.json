@@ -1,0 +1,39 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkon 8539",
+			"if": "vv.kod in ['8539'] || vv.k in ['8539'] || vv.k27 in ['8539']",
+			"value": 480,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8539a",
+			"if": "vv.kod in ['8539a'] || vv.k in ['8539a'] || vv.k27 in ['8539a']",
+			"value": 902,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8539k",
+			"if": "vv.kod in ['8539k'] || vv.k in ['8539k'] || vv.k27 in ['8539k']",
+			"value": 601,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9304",
+			"if": "vv.kod in ['9304'] || vv.k in ['9304'] || vv.k27 in ['9304']",
+			"value": 334,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "chirug"
+}

@@ -239,6 +239,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 15b - Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b'] ",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "EKG",
 			"if": "vv.kod in ['5702']",
 			"value": 0.01,

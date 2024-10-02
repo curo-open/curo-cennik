@@ -81,7 +81,7 @@
 		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
-			"value": 0.026,
+			"value": 0,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -103,6 +103,13 @@
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
 			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 79a",
+			"if": "vv.kod in ['79a']",
+			"value": 0,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -152,6 +159,13 @@
 			"label": "Celodenné snímanie tlaku - vyhodnotenie",
 			"if": "vv.kod in ['5716']",
 			"value": 0.016597,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odobratie krvi",
+			"if": "vv.kod in ['250a']",
+			"value": 0,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

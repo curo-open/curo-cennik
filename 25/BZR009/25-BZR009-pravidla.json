@@ -128,6 +128,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 63a",
+			"if": "vv.kod in ['63a']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 67",
 			"if": "vv.kod in ['67']",
 			"value": null,
@@ -304,6 +311,12 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"63a": [
+			{
+				"cond": "",
+				"value": 100
 			}
 		],
 		"252b": [

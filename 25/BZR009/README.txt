@@ -43,6 +43,7 @@ Autor: curo.sk
 │        0.009574 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 63                                      │ !p.kapitacia && vv.kod in ['63']                             │
+│          0.0318 │ vv.bodyCelkom*cena        │ Výkon 63a                                     │ vv.kod in ['63a']                                            │
 │            null │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │
 │             5.2 │ vv.pocet*cena             │ Skriningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skriningový poistencov. antigénový test SARS- │ vv.kod in ['629b']                                           │
@@ -79,6 +80,7 @@ Autor: curo.sk
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
+│             100 │ 63a                                                                                                       │                           │
 │              70 │ 252b                                                                                                      │                           │
 │              70 │ 252c                                                                                                      │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘

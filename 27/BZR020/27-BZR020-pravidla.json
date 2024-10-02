@@ -112,14 +112,14 @@
 		},
 		{
 			"label": "Výkon 4",
-			"if": "vv.kod in ['4']",
+			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
-			"if": "vv.kod in ['8']",
+			"if": "!p.kapitacia && vv.kod in ['8']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -140,7 +140,7 @@
 		},
 		{
 			"label": "Komunikácia v cudziom jazyku",
-			"if": "vv.kod in ['79a']",
+			"if": "!p.kapitacia && vv.kod in ['79a']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -153,8 +153,15 @@
 			"instruction": null
 		},
 		{
+			"label": "Injekcia",
+			"if": "!p.kapitacia && vv.kod in ['252']",
+			"value": 0.0931,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Očkovanie proti chrípke",
-			"if": "vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
