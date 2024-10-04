@@ -1,0 +1,164 @@
+{
+	"params": {
+		"IDK": {
+			"label": "NASTAVENIA IDK",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.022089
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.062
+		},
+		"CBEUNK": {
+			"label": "Cena bodu EU/Nekapitovaný",
+			"value": 0.022973
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.0086
+		},
+		"CBUSG": {
+			"label": "Cena bodu USG",
+			"value": 0.008839
+		},
+		"KP": {
+			"label": "Kapitačná platba",
+			"value": 1.96
+		}
+	},
+	"pacient": [
+		{
+			"label": "Kapitácia",
+			"if": "p|vekMedzi(0, 120)",
+			"value": null,
+			"calc": "KP+IDK",
+			"instruction": null
+		}
+	],
+	"vykon": [
+		{
+			"label": "Výkony 102,103,105,108,157,297,1070",
+			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
+			"if": "vv.kod in ['5301','5316','5807','5809']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.kod in ['5303','5305','5308']",
+			"value": 0.009281,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5304,5808",
+			"if": "vv.kod in ['5808','5304']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1b, 11a, 70",
+			"if": "vv.kod in ['1b','11a','70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU']) && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU']) && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSEUNK",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - SVALZ výkon",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Kapitovaný - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"297": [
+			{
+				"cond": "",
+				"value": 50
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "pediatricky gynekolog"
+}
