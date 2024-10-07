@@ -5,7 +5,7 @@
 		{
 			"label": "Výkon 8572",
 			"if": "vv.kod in ['8572'] || vv.k in ['8572'] || vv.k25 in ['8572']",
-			"value": 346,
+			"value": 324,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

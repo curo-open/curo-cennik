@@ -22,7 +22,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │             464 │ vv.pocet*cena             │ Výkon 9104                                    │ vv.kod in ['9104'] || vv.k in ['9104'] || vv.k25 in ['9104'] │
 │             427 │ vv.pocet*cena             │ Výkon 9105                                    │ vv.kod in ['9105'] || vv.k in ['9105'] || vv.k25 in ['9105'] │
-│             243 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k25 in ['8586'] │
+│             210 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k25 in ['8586'] │
 │             527 │ vv.pocet*cena             │ Výkon 8502                                    │ vv.kod in ['8502'] || vv.k in ['8502'] || vv.k25 in ['8502'] │
 │             436 │ vv.pocet*cena             │ Výkon 9106                                    │ vv.kod in ['9106'] || vv.k in ['9106'] || vv.k25 in ['9106'] │
 │             473 │ vv.pocet*cena             │ Výkon 9103                                    │ vv.kod in ['9103'] || vv.k in ['9103'] || vv.k25 in ['9103'] │

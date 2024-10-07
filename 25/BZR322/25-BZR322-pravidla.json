@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.1
+			"value": 1.22
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.35
+			"value": 1.96
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 2.99
+			"value": 3.32
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 6.98
+			"value": 6.32
 		},
 		"IPPD": {
 			"label": "IPPD",
