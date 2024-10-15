@@ -121,6 +121,26 @@ Autor: curo.sk
 │                 │                           │                                               │ A']                                                          │
 │            null │ vv.pocet*_8535A           │ Výkon 8535A                                   │ vv.kod in ['8535A'] || vv.k in ['8535A'] || vv.k25 in ['8535 │
 │                 │                           │                                               │ A']                                                          │
+│             392 │ vv.pocet*cena             │ Discízia šľachových pošiev prsta              │ vv.kod in ['5t7027']                                         │
+│             104 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1430']                                         │
+│                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
+│                 │                           │ rany histo                                    │                                                              │
+│            1003 │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t4050']                                         │
+│                 │                           │ alcifikátov z humeroglenoidálneho kĺbu        │                                                              │
+│            1003 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4090']                                         │
+│                 │                           │ v ligament z humeroglenoidálneho kĺbu         │                                                              │
+│            1003 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h0']                                         │
+│                 │                           │ h osteofytov humeroglenoidálneho kĺbu         │                                                              │
+│            1003 │ vv.pocet*cena             │ Artroskopická parciálna resekcia menisku      │ vv.kod in ['5t42310']                                        │
+│            1003 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42ch']                                         │
+│                 │                           │ astika] kolenného kĺbu                        │                                                              │
+│             385 │ vv.pocet*cena             │ Prerušenie väzu retinaculum flexorum s epineu │ vv.kod in ['5t71111']                                        │
+│                 │                           │ rolýzou n. medianus                           │                                                              │
+│             425 │ vv.pocet*cena             │ Parciálna fasciektómia izolovaná na dlani     │ vv.kod in ['5t7220']                                         │
+│             425 │ vv.pocet*cena             │ Parciálna fasciektómia jedného alebo dvoch pr │ vv.kod in ['5t7223']                                         │
+│                 │                           │ stov                                          │                                                              │
+│             460 │ vv.pocet*cena             │ Totálna fasciektómia izolovaná na dlani       │ vv.kod in ['5t7230']                                         │
+│             460 │ vv.pocet*cena             │ Totálna fasciektómia 3 a viac prstov          │ vv.kod in ['5t7234']                                         │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

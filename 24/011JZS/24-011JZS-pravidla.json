@@ -8,6 +8,34 @@
 			"value": 1,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Parciálna fasciektómia izolovaná na dlani",
+			"if": "vv.kod in ['5t7220']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna fasciektómia jedného alebo dvoch prstov",
+			"if": "vv.kod in ['5t7223']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna fasciektómia izolovaná na dlani",
+			"if": "vv.kod in ['5t7230']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna fasciektómia 3 a viac prstov",
+			"if": "vv.kod in ['5t7234']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

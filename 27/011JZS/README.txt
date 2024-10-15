@@ -158,6 +158,11 @@ Autor: curo.sk
 │            null │ vv.pocet*_9400            │ Výkon 9400                                    │ vv.kod in ['9400'] || vv.k in ['9400'] || vv.k27 in ['9400'] │
 │            null │ vv.pocet*_9522            │ Výkon 9522                                    │ vv.kod in ['9522'] || vv.k in ['9522'] || vv.k27 in ['9522'] │
 │            null │ vv.pocet*_7006            │ Výkon 7006                                    │ vv.kod in ['7006'] || vv.k in ['7006'] || vv.k27 in ['7006'] │
+│             384 │ vv.pocet*cena             │ Parciálna fasciektómia izolovaná na dlani     │ vv.kod in ['5t7220']                                         │
+│             384 │ vv.pocet*cena             │ Parciálna fasciektómia jedného alebo dvoch pr │ vv.kod in ['5t7223']                                         │
+│                 │                           │ stov                                          │                                                              │
+│             394 │ vv.pocet*cena             │ Totálna fasciektómia izolovaná na dlani       │ vv.kod in ['5t7230']                                         │
+│             394 │ vv.pocet*cena             │ Totálna fasciektómia 3 a viac prstov          │ vv.kod in ['5t7234']                                         │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

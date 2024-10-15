@@ -160,6 +160,11 @@ Autor: curo.sk
 │             405 │ vv.pocet*cena             │ Prerušenie väzu retinaculum flexorum s epineu │ vv.kod in ['5t71111']                                        │
 │                 │                           │ rolýzou n. medianus                           │                                                              │
 │             405 │ vv.pocet*cena             │ Parciálna excízia retinaculum flexorum        │ vv.kod in ['5t7121']                                         │
+│             384 │ vv.pocet*cena             │ Parciálna fasciektómia izolovaná na dlani     │ vv.kod in ['5t7220']                                         │
+│             384 │ vv.pocet*cena             │ Parciálna fasciektómia jedného alebo dvoch pr │ vv.kod in ['5t7223']                                         │
+│                 │                           │ stov                                          │                                                              │
+│             394 │ vv.pocet*cena             │ Totálna fasciektómia izolovaná na dlani       │ vv.kod in ['5t7230']                                         │
+│             394 │ vv.pocet*cena             │ Totálna fasciektómia 3 a viac prstov          │ vv.kod in ['5t7234']                                         │
 │              70 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t892x']                                         │
 │                 │                           │ iách a burzách, ostatné                       │                                                              │
 │             354 │ vv.pocet*cena             │ Excízia nádoru prsníka                        │ vv.kod in ['5u111']                                          │

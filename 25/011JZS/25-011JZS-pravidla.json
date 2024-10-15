@@ -541,6 +541,90 @@
 			"value": null,
 			"calc": "vv.pocet*_8535A",
 			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev prsta",
+			"if": "vv.kod in ['5t7027']",
+			"value": 392,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
+			"if": "vv.kod in ['5v1430']",
+			"value": 104,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t4050']",
+			"value": 1003,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t4090']",
+			"value": 1003,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t42h0']",
+			"value": 1003,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna resekcia menisku",
+			"if": "vv.kod in ['5t42310']",
+			"value": 1003,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] kolenného kĺbu",
+			"if": "vv.kod in ['5t42ch']",
+			"value": 1003,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prerušenie väzu retinaculum flexorum s epineurolýzou n. medianus",
+			"if": "vv.kod in ['5t71111']",
+			"value": 385,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna fasciektómia izolovaná na dlani",
+			"if": "vv.kod in ['5t7220']",
+			"value": 425,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna fasciektómia jedného alebo dvoch prstov",
+			"if": "vv.kod in ['5t7223']",
+			"value": 425,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna fasciektómia izolovaná na dlani",
+			"if": "vv.kod in ['5t7230']",
+			"value": 460,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna fasciektómia 3 a viac prstov",
+			"if": "vv.kod in ['5t7234']",
+			"value": 460,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
