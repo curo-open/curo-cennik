@@ -36,6 +36,5872 @@
 			"value": 375,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách, ostatné",
+			"if": "vv.kod in ['5T892X']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti stehna a kolena",
+			"if": "vv.kod in ['5T8927']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti ramena a axily",
+			"if": "vv.kod in ['5T8921']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti predlaktia",
+			"if": "vv.kod in ['5T8923']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti brušnej steny",
+			"if": "vv.kod in ['5T8925']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti nohy",
+			"if": "vv.kod in ['5T8929']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti predkolenia",
+			"if": "vv.kod in ['5T8928']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T8922']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5T8924']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v inguinálnej, genitálnej a gluteálnej oblasti",
+			"if": "vv.kod in ['5T8926']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti hlavy a krku",
+			"if": "vv.kod in ['5T8920']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Denervácia periférneho nervu",
+			"if": "vv.kod in ['5A4001']",
+			"value": 318,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia ossa metatarsalia II - V, 4 metatarzálnych kostí",
+			"if": "vv.kod in ['5T08214']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia ossa metatarsalia II - V, 3 metatarzálnych kostí",
+			"if": "vv.kod in ['5T08213']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia ossa metatarsalia II - V, 2 metatarzálnych kostí",
+			"if": "vv.kod in ['5T08212']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia ossa metatarsalia II - V, 1 metatarzálna kosť",
+			"if": "vv.kod in ['5T08211']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia článkov prstov nohy: digitus I",
+			"if": "vv.kod in ['5T0822A']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcie (exostózy) os metatarsale I",
+			"if": "vv.kod in ['KT0800']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artrodézy metatarzofalangeálneho kĺbu palca nohy",
+			"if": "vv.kod in ['KT38AA']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artrodéza priehlavku a stredonožia, 1 alebo 2 kĺby",
+			"if": "vv.kod in ['KT3891']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika metatarzofalangeálneho kĺbu I",
+			"if": "vv.kod in ['KT0830']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia článkov prstov nohy: digitus I",
+			"if": "vv.kod in ['KT0822A']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia os metatarsale I, dvojitá osteotómia",
+			"if": "vv.kod in ['KT08202']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia os metatarsale I",
+			"if": "vv.kod in ['KT08201']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Korektívna operácia mäkkých častí metatarzu a článkov prstov nohy vo výške 1. metatarzofalangeálneho lúča",
+			"if": "vv.kod in ['KT0810']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcie (exostózy) článkov prstov nohy: digitus I",
+			"if": "vv.kod in ['KT080A']",
+			"value": 530,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách, ostatné",
+			"if": "vv.kod in ['KT892X']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti nohy",
+			"if": "vv.kod in ['KT8929']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti predkolenia",
+			"if": "vv.kod in ['KT8928']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti stehna a kolena",
+			"if": "vv.kod in ['KT8927']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v inguinálnej, genitálnej a gluteálnej oblasti",
+			"if": "vv.kod in ['KT8926']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti brušnej steny",
+			"if": "vv.kod in ['KT8925']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['KT8924']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti predlaktia",
+			"if": "vv.kod in ['KT8923']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti ramena a lakťa",
+			"if": "vv.kod in ['KT8922']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti ramena a axily",
+			"if": "vv.kod in ['KT8921']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti hlavy a krku",
+			"if": "vv.kod in ['KT8920']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia gangliómu na ruke",
+			"if": "vv.kod in ['KT790']",
+			"value": 89,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42C8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] bedrového kĺbu",
+			"if": "vv.kod in ['5T42CG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] horného členkového kĺbu",
+			"if": "vv.kod in ['5T42CK']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T42C0']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] kolenného kĺbu",
+			"if": "vv.kod in ['5T42CH']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] lakťového kĺbu",
+			"if": "vv.kod in ['5T42C4']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] dolného členkového kĺbu",
+			"if": "vv.kod in ['5T42CM']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42C9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Incízia svalu priečne v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T8012']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia gangliómu na ruke",
+			"if": "vv.kod in ['5T790']",
+			"value": 70,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická operácia chrupavky bedrového kĺbu s transplantáciou chondrocytov na autológne indukovanej matrix",
+			"if": "vv.kod in ['5T42FG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická operácia chrupavky radiokarpálneho kĺbu s transplantáciou chondrocytov na autológne indukovanej matrix",
+			"if": "vv.kod in ['5T42F9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická operácia chrupavky kĺbov ruky s transplantáciou chondrocytov na autológne indukovanej matrix",
+			"if": "vv.kod in ['5T42F8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická operácia chrupavky lakťového kĺbu s transplantáciou chondrocytov na autológne indukovanej matrix",
+			"if": "vv.kod in ['5T42F4']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti s implantáciou acelulárneho implantátu dolného členkového kĺbu",
+			"if": "vv.kod in ['5T42EM']",
+			"value": 1995,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti s implantáciou acelulárneho implantátu horného členkového kĺbu",
+			"if": "vv.kod in ['5T42EK']",
+			"value": 1995,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z dolného členkového kĺbu",
+			"if": "vv.kod in ['5T405M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z horného členkového kĺbu",
+			"if": "vv.kod in ['5T405K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z bedrového kĺbu",
+			"if": "vv.kod in ['5T405G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4059']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4058']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z lakťového kĺbu",
+			"if": "vv.kod in ['5T4054']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie periartikulárnych kalcifikátov z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4050']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z dolného členkového kĺbu",
+			"if": "vv.kod in ['5T404M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti s implantáciou acelulárneho implantátu kolenného kĺbu",
+			"if": "vv.kod in ['5T42EH']",
+			"value": 2118,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti s implantáciou acelulárneho implantátu bedrového kĺbu",
+			"if": "vv.kod in ['5T42EG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti s implantáciou acelulárneho implantátu ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42E9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti s implantáciou acelulárneho implantátu radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42E8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti s implantáciou acelulárneho implantátu lakťového kĺbu",
+			"if": "vv.kod in ['5T42E4']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti dolného členkového kĺbu",
+			"if": "vv.kod in ['5T42DM']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti horného členkového kĺbu",
+			"if": "vv.kod in ['5T42DK']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z horného členkového kĺbu",
+			"if": "vv.kod in ['5T404K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z kolenného kĺbu",
+			"if": "vv.kod in ['5T404H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z bedrového kĺbu",
+			"if": "vv.kod in ['5T404G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4049']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4048']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z lakťového kĺbu",
+			"if": "vv.kod in ['5T4044']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie voľných telies z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4040']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z dolného členkového kĺbu",
+			"if": "vv.kod in ['5T403M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z horného členkového kĺbu",
+			"if": "vv.kod in ['5T403K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z kolenného kĺbu",
+			"if": "vv.kod in ['5T403H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z bedrového kĺbu",
+			"if": "vv.kod in ['5T403G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti kolenného kĺbu",
+			"if": "vv.kod in ['5T42DH']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti bedrového kĺbu",
+			"if": "vv.kod in ['5T42DG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42D9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42D8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti lakťového kĺbu",
+			"if": "vv.kod in ['5T42D4']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické subchondrálne otvorenie kosti humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T42D0']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4039']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4038']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z lakťového kĺbu",
+			"if": "vv.kod in ['5T4034']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z akromioklavikulárneho kĺbu",
+			"if": "vv.kod in ['5T4031']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie osteosyntetického materiálu z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4030']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) dolného členkového kĺbu",
+			"if": "vv.kod in ['5T402M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) horného členkového kĺbu",
+			"if": "vv.kod in ['5T402K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) kolenného kĺbu",
+			"if": "vv.kod in ['5T402H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) bedrového kĺbu",
+			"if": "vv.kod in ['5T402G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4029']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4028']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Viacpočetné artrodézy interfalangeálnych kĺbov ruky so spongioplastikou",
+			"if": "vv.kod in ['5T767']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Viacpočetné artrodézy interfalangeálnych kĺbov ruky",
+			"if": "vv.kod in ['5T766']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Jednotlivá artrodéza interfalangeálneho kĺbu ruky so spongioplastikou",
+			"if": "vv.kod in ['5T765']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Jednotlivá artrodéza interfalangeálneho kĺbu ruky",
+			"if": "vv.kod in ['5T764']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia in vitro vypestovaných tkanivových kultúr dolného členkového kĺbu",
+			"if": "vv.kod in ['5T428M']",
+			"value": 3017,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia in vitro vypestovaných tkanivových kultúr horného členkového kĺbu",
+			"if": "vv.kod in ['5T428K']",
+			"value": 3017,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia in vitro vypestovaných tkanivových kultúr kolenného kĺbu",
+			"if": "vv.kod in ['5T428H']",
+			"value": 3140,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia in vitro vypestovaných tkanivových kultúr bedrového kĺbu",
+			"if": "vv.kod in ['5T428G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia in vitro vypestovaných tkanivových kultúr ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4289']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia in vitro vypestovaných tkanivových kultúr radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4288']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie (artrolýza) ostatných kĺbov ruky",
+			"if": "vv.kod in ['5T745X']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie (artrolýza) interfalangeálnych kĺbov viacerých prstov ruky, viaceré zákroky",
+			"if": "vv.kod in ['5T7457']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie (artrolýza) interfalangeálnych kĺbov jedného prsta ruky, viaceré zákroky",
+			"if": "vv.kod in ['5T7456']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia in vitro vypestovaných tkanivových kultúr lakťového kĺbu",
+			"if": "vv.kod in ['5T4284']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická transplantácia chrupavky dolného členkového kĺbu",
+			"if": "vv.kod in ['5T427M']",
+			"value": 3017,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická transplantácia chrupavky horného členkového kĺbu",
+			"if": "vv.kod in ['5T427K']",
+			"value": 3017,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická transplantácia chrupavky kolenného kĺbu",
+			"if": "vv.kod in ['5T427H']",
+			"value": 3140,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická transplantácia chrupavky bedrového kĺbu",
+			"if": "vv.kod in ['5T427G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická transplantácia chrupavky ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4279']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická transplantácia chrupavky radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4278']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická transplantácia chrupavky lakťového kĺbu",
+			"if": "vv.kod in ['5T4274']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna excízia šľachy v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T8202']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie (artrolýza) interfalangeálneho kĺbu ruky, jeden zákrok",
+			"if": "vv.kod in ['5T7455']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie (artrolýza) metakarpofalangeálnych kĺbov, viaceré zákroky",
+			"if": "vv.kod in ['5T7454']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie (artrolýza) metakarpofalangeálneho kĺbu, jeden zákrok",
+			"if": "vv.kod in ['5T7453']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie (artrolýza) karpometakarpálneho kĺbu palca",
+			"if": "vv.kod in ['5T7452']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický odber chondrálneho transplantátu z kolenného kĺbu",
+			"if": "vv.kod in ['5T426H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika dolného členkového kĺbu",
+			"if": "vv.kod in ['5T422M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika horného členkového kĺbu",
+			"if": "vv.kod in ['5T422K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika kolenného kĺbu",
+			"if": "vv.kod in ['5T422H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika bedrového kĺbu",
+			"if": "vv.kod in ['5T422G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4229']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4228']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Fasciektómia jedného prsta s jednou neurolýzou",
+			"if": "vv.kod in ['5T7241']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika lakťového kĺbu",
+			"if": "vv.kod in ['5T4224']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická subchondrálna spongioplastika humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4220']",
+			"value": 1265,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu dolného členkového kĺbu",
+			"if": "vv.kod in ['5T421M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu horného členkového kĺbu",
+			"if": "vv.kod in ['5T421K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu kolenného kĺbu",
+			"if": "vv.kod in ['5T421H']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu bedrového kĺbu",
+			"if": "vv.kod in ['5T421G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4219']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4218']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu lakťového kĺbu",
+			"if": "vv.kod in ['5T4214']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna fasciektómia 3 a viac prstov",
+			"if": "vv.kod in ['5T7234']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna fasciektómia izolovaná na dlani",
+			"if": "vv.kod in ['5T7230']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia osteochondrálneho fragmentu humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4210']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky dolného členkového kĺbu",
+			"if": "vv.kod in ['5T420M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky horného členkového kĺbu",
+			"if": "vv.kod in ['5T420K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky kolenného kĺbu",
+			"if": "vv.kod in ['5T420H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky bedrového kĺbu",
+			"if": "vv.kod in ['5T420G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4209']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4208']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky lakťového kĺbu",
+			"if": "vv.kod in ['5T4204']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická excízia poškodeného tkaniva kĺbnej chrupavky humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4200']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii dolného členkového kĺbu",
+			"if": "vv.kod in ['5T41XM']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii horného členkového kĺbu",
+			"if": "vv.kod in ['5T41XK']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii kolenného kĺbu",
+			"if": "vv.kod in ['5T41XH']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii bedrového kĺbu",
+			"if": "vv.kod in ['5T41XG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T41X9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T41X8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii lakťového kĺbu",
+			"if": "vv.kod in ['5T41X4']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii akromioklavikulárneho kĺbu",
+			"if": "vv.kod in ['5T41X1']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na synovii humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T41X0']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachovej pošvy v oblasti predkolenia",
+			"if": "vv.kod in ['5T8548']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachovej pošvy v oblasti predkolenia",
+			"if": "vv.kod in ['5T8538']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachy v oblasti predkolenia",
+			"if": "vv.kod in ['5T8528']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachy v oblasti stehna a kolena",
+			"if": "vv.kod in ['5T8527']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická elektrotermická denervácia synovie a tkaniva kĺbneho púzdra lakťového kĺbu",
+			"if": "vv.kod in ['5T4144']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a axily",
+			"if": "vv.kod in ['5V1436']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5V1426']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v inguinálnej a genitálnej oblasti",
+			"if": "vv.kod in ['5V141C']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ramena a axily",
+			"if": "vv.kod in ['5V1416']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5V1406']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachy v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T8522']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachy v oblasti predkolenia",
+			"if": "vv.kod in ['5T8518']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachy v oblasti stehna a kolena",
+			"if": "vv.kod in ['5T8517']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Reinzercia šľachy v oblasti predkolenia",
+			"if": "vv.kod in ['5T8508']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená chirurgická tenotómia v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T8112']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia dolného členkového kĺbu",
+			"if": "vv.kod in ['5T413M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia horného členkového kĺbu",
+			"if": "vv.kod in ['5T413K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia kolenného kĺbu",
+			"if": "vv.kod in ['5T413H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia bedrového kĺbu",
+			"if": "vv.kod in ['5T413G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4139']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4138']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia lakťového kĺbu",
+			"if": "vv.kod in ['5T4134']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna synovektómia humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4130']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia dolného členkového kĺbu",
+			"if": "vv.kod in ['5T412M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia horného členkového kĺbu",
+			"if": "vv.kod in ['5T412K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5V1316']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5V1306']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné incízie svalu, šľachy a fascie v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T80X2']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Debridement šľachy v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T80C2']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie dolného členkového kĺbu",
+			"if": "vv.kod in ['5T49XM']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia kolenného kĺbu",
+			"if": "vv.kod in ['5T412H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia bedrového kĺbu",
+			"if": "vv.kod in ['5T412G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4129']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4128']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia lakťového kĺbu",
+			"if": "vv.kod in ['5T4124']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna synovektómia humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4120']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie dolného členkového kĺbu",
+			"if": "vv.kod in ['5T40XM']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie horného členkového kĺbu",
+			"if": "vv.kod in ['5T40XK']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie kolenného kĺbu",
+			"if": "vv.kod in ['5T40XH']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie bedrového kĺbu",
+			"if": "vv.kod in ['5T40XG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T40X9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T40X8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna resekcia burzy v oblasti predkolenia",
+			"if": "vv.kod in ['5T8918']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna resekcia burzy v oblasti stehna a kolena",
+			"if": "vv.kod in ['5T8917']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna resekcia burzy v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T8912']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna resekcia burzy v oblasti ramena a axily",
+			"if": "vv.kod in ['5T8911']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Predĺženie šliach v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T8402']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie horného členkového kĺbu",
+			"if": "vv.kod in ['5T49XK']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie kolenného kĺbu",
+			"if": "vv.kod in ['5T49XH']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie bedrového kĺbu",
+			"if": "vv.kod in ['5T49XG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T49X9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T49X8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie lakťového kĺbu",
+			"if": "vv.kod in ['5T49X4']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie akromioklavikulárneho kĺbu",
+			"if": "vv.kod in ['5T49X1']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T49X0']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické resekcia ganglia kolenného kĺbu",
+			"if": "vv.kod in ['5T492H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický debridement šľachy horného členkového kĺbu",
+			"if": "vv.kod in ['5T491K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické rozdelenie/prerušenie väzu dolného členkového kĺbu",
+			"if": "vv.kod in ['5T490M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické rozdelenie/prerušenie väzu horného členkového kĺbu",
+			"if": "vv.kod in ['5T490K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie lakťového kĺbu",
+			"if": "vv.kod in ['5T40X4']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie akromioklavikulárneho kĺbu",
+			"if": "vv.kod in ['5T40X1']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické revízie humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T40X0']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z dolného členkového kĺbu",
+			"if": "vv.kod in ['5T409M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z horného členkového kĺbu",
+			"if": "vv.kod in ['5T409K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z kolenného kĺbu",
+			"if": "vv.kod in ['5T409H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z bedrového kĺbu",
+			"if": "vv.kod in ['5T409G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4099']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4098']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z lakťového kĺbu",
+			"if": "vv.kod in ['5T4094']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické rozdelenie/prerušenie väzu bedrového kĺbu",
+			"if": "vv.kod in ['5T490G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické rozdelenie/prerušenie väzu ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4909']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické rozdelenie/prerušenie väzu radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T4908']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické rozdelenie/prerušenie väzu lakťového kĺbu",
+			"if": "vv.kod in ['5T4904']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická stabilizácia akromioklavikulárneho kĺbu fixačným výkonom",
+			"if": "vv.kod in ['5T44B']",
+			"value": 1265,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Iné artroskopické operácie na chrupavke a meniskoch kolenného kĺbu",
+			"if": "vv.kod in ['5T42IH']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z akromioklavikulárneho kĺbu",
+			"if": "vv.kod in ['5T4091']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4090']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov dolného členkového kĺbu",
+			"if": "vv.kod in ['5T42HM']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov horného členkového kĺbu",
+			"if": "vv.kod in ['5T42HK']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov kolenného kĺbu",
+			"if": "vv.kod in ['5T42HH']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov bedrového kĺbu",
+			"if": "vv.kod in ['5T42HG']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov ulnokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42H9']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T42H8']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov lakťového kĺbu",
+			"if": "vv.kod in ['5T42H4']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov akromioklavikulárneho kĺbu",
+			"if": "vv.kod in ['5T42H1']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T42H0']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická operácia chrupavky dolného členkového kĺbu s transplantáciou chondrocytov na autológne indukovanej matrix kosti",
+			"if": "vv.kod in ['5T42FM']",
+			"value": 3017,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická operácia chrupavky horného členkového kĺbu s transplantáciou chondrocytov na autológne indukovanej matrix",
+			"if": "vv.kod in ['5T42FK']",
+			"value": 3017,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická operácia chrupavky kolenného kĺbu s transplantáciou chondrocytov na autológne indukovanej matrix",
+			"if": "vv.kod in ['5T42FH']",
+			"value": 3140,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy ostatných kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T211X']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy falangov prstov nohy, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T211W']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy metatarzálnych kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T211V']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia distálneho femuru",
+			"if": "vv.kod in ['5T076H']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T0755']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia diafyzárneho humeru",
+			"if": "vv.kod in ['5T0752']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T074Q']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T074K']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia diafyzárneho femuru",
+			"if": "vv.kod in ['5T074G']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T0749']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T0746']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T0745']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia diafyzárneho humeru",
+			"if": "vv.kod in ['5T0742']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dlahy, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T0736']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy falangov prstov ruky, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T211C']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy metakarpálnych kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T211B']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T072Q']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T072K']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T0729']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T0726']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T0725']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia diafyzárneho humeru",
+			"if": "vv.kod in ['5T0722']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T071Q']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T071K']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T0719']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T0716']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T0715']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia diafyzárneho humeru",
+			"if": "vv.kod in ['5T0712']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy metatarzálnych kostí, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AV']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárnej fibuly, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AQ']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárneho femuru, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AG']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy krčka stehennej kosti, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AE']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy falangov prstov ruky, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AC']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy metakarpálnych kostí, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AB']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárnej ulny, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A8']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálneho radia, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A6']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárneho radia, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A5']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálneho radia, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A4']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálneho humeru, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A3']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárneho humeru, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A2']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny tarzálnych kostí, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BU']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metakarpálnych kostí, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BB']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny ostatných malých kostí, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T144X']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov nohy, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T144W']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metatarzálnych kostí, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T144V']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny tarzálnych kostí, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T144U']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov ruky, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T144C']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metakarpálnych kostí, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T144B']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny karpálnych kostí, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T144A']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny klavikuly, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T1440']",
+			"value": 482,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov nohy, osteosyntéza štandardnou dlahou",
+			"if": "vv.kod in ['5T143W']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny ostatných malých kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T141X']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov nohy, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T141W']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metatarzálnych kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T141V']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov ruky, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T141C']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metakarpálnych kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T141B']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálnej tibie, osteosyntéza zaisteným intramedulárnym klincom",
+			"if": "vv.kod in ['5T217N']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárnej tibie, osteosyntéza zaisteným intramedulárnym klincom",
+			"if": "vv.kod in ['5T217M']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálnej tibie, osteosyntéza zaisteným intramedulárnym klincom",
+			"if": "vv.kod in ['5T217K']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálneho femuru, osteosyntéza zaisteným intramedulárnym klincom",
+			"if": "vv.kod in ['5T217H']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy krčka stehennej kosti, osteosyntéza zaisteným intramedulárnym klincom",
+			"if": "vv.kod in ['5T217E']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny karpálnych kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T141A']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny klavikuly, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T1410']",
+			"value": 482,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny skapuly bez osteosyntézy",
+			"if": "vv.kod in ['5T140Z']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny na ostatných malých kostiach bez osteosyntézy",
+			"if": "vv.kod in ['5T140X']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metatarzálnych kosti bez osteosyntézy",
+			"if": "vv.kod in ['5T140V']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny tarzálnych kosti bez osteosyntézy",
+			"if": "vv.kod in ['5T140U']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov ruky bez osteosyntézy",
+			"if": "vv.kod in ['5T140C']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metakarpálnych kostí bez osteosyntézy",
+			"if": "vv.kod in ['5T140B']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny karpálnych kostí bez osteosyntézy",
+			"if": "vv.kod in ['5T140A']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálneho femuru, osteosyntéza nezaisteným predvŕtaným intramedulárnym klincom",
+			"if": "vv.kod in ['5T216F']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy falangov prstov nohy, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T214W']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy metatarzálnych kostí, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T214V']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálneho femuru, osteosyntéza uhlovou/kondylárnou dlahou",
+			"if": "vv.kod in ['5T12CF']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálnej tibie, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T124N']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti pately, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T124J']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálnej ulny, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T1249']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálnej ulny, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T1247']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálneho radia, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T1246']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálneho humeru, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T1241']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálnej fibuly, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T121R']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálnej tibie, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T121N']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálneho femuru, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T121F']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti krčka stehennej kosti, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T121E']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálnej ulny, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T1217']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálneho humeru, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T1211']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy falangov prstov ruky, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T214C']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy metakarpálnych kostí, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T214B']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy karpálnych kostí, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T214A']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v diafyzárnej oblasti radia, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T1045']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálneho femuru, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21XH']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárneho femuru, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21XG']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálneho femuru, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21XF']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy krčka stehennej kosti, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21XE']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy metakarpálnych kostí, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21XB']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálnej ulny, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21X9']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárnej ulny, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21X8']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálnej ulny, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21X7']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárneho radia, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21X5']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálneho radia, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21X4']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálnej ulny, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T2149']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálneho radia, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T2146']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy diafyzárneho radia, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T2145']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy klavikuly, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T2140']",
+			"value": 482,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika interfalangeálneho kĺbu nohy II - V, 4 kĺby",
+			"if": "vv.kod in ['5T083E']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika interfalangeálneho kĺbu nohy II - V, 3 kĺby",
+			"if": "vv.kod in ['5T083D']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika interfalangeálneho kĺbu nohy II - V, 2 kĺby",
+			"if": "vv.kod in ['5T083C']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika interfalangeálneho kĺbu nohy II - V, 1 kĺb",
+			"if": "vv.kod in ['5T083B']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálnej fibuly, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T21XR']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcie (exostózy) článkov prstov nohy: digitus I",
+			"if": "vv.kod in ['5T080A']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T07X8']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca zaisteného, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T0776']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálnej ulny, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A9']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálnej ulny, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A7']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy proximálneho humeru, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21A1']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny ostatných malých kostí, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T14AX']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny klavikuly, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T14A0']",
+			"value": 482,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálneho femuru, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T12AF']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálnej ulny, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T12A9']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálnej ulny, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T12A7']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v diafyzárnej oblasti ulny, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T10A8']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v diafyzárnej oblasti radia, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T10A5']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T07VV']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T07VU']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T07VT']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia talu",
+			"if": "vv.kod in ['5T07VS']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T07VR']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T07VQ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T07VP']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T07VN']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T07VM']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T07VK']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T07VB']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T07VA']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T07V9']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T07V8']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T07V7']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T07V6']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T07V5']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie kruhového vonkajšieho fixátora, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T07V4']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) lakťového kĺbu",
+			"if": "vv.kod in ['5T4024']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická mobilizácia kĺbu (artrolýza) humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4020']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach dolného členkového kĺbu s drenážou",
+			"if": "vv.kod in ['5T400M']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach horného členkového kĺbu s drenážou",
+			"if": "vv.kod in ['5T400K']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach humeroglenoidálneho kĺbu s drenážou",
+			"if": "vv.kod in ['5T4000']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy falangov prstov nohy, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AW']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zatvorená repozícia zlomeniny alebo epifyzeolýzy distálnej fibuly, osteosyntéza intramedulárnymi drôtmi a prútmi",
+			"if": "vv.kod in ['5T21AR']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia pre poúrazové stavy periférneho nervu na dolnej končatine",
+			"if": "vv.kod in ['5A50HA']",
+			"value": 318,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia os metatarsale I",
+			"if": "vv.kod in ['5T08201']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca zaisteného, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T077R']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca zaisteného, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T077N']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca zaisteného, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T077M']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca zaisteného, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T077K']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca zaisteného, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T077F']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca zaisteného, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T077E']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mobilizácia kĺbu (artrolýza) metatarzofalangeálnych kĺbov",
+			"if": "vv.kod in ['5T306Q']",
+			"value": 493,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mobilizácia kĺbu (artrolýza) horného členkového kĺbu",
+			"if": "vv.kod in ['5T306K']",
+			"value": 493,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mobilizácia kĺbu (artrolýza) kolenného kĺbu",
+			"if": "vv.kod in ['5T306H']",
+			"value": 493,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mobilizácia kĺbu (artrolýza) radiokarpálneho kĺbu",
+			"if": "vv.kod in ['5T3068']",
+			"value": 493,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mobilizácia kĺbu (artrolýza) lakťového kĺbu",
+			"if": "vv.kod in ['5T3064']",
+			"value": 493,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia luxácie akromioklavikulárneho kĺbu, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T19B1']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T076R']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T076Q']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T076N']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T076M']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia diafyzárneho femuru",
+			"if": "vv.kod in ['5T076G']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T076F']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútrodreňového klinca bez zaistenia, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T076E']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mobilizácia kĺbu (artrolýza) humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T3060']",
+			"value": 493,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna synovektómia lakťového kĺbu",
+			"if": "vv.kod in ['5T3054']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny skapuly, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BZ']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny ostatných malých kostí, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BX']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov nohy, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BW']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metatarzálnych kostí, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BV']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov ruky, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BC']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny karpálnych kostí, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14BA']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny klavikuly, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T14B0']",
+			"value": 482,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny na malej kosti, osteosyntéza drôtom a ťahovou serklážou skapuly",
+			"if": "vv.kod in ['5T144Z']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika metatarzofalangeálneho kĺbu II - V, 4 kĺby",
+			"if": "vv.kod in ['5T0834']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika metatarzofalangeálneho kĺbu II - V, 3 kĺby",
+			"if": "vv.kod in ['5T0833']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika metatarzofalangeálneho kĺbu II - V, 2 kĺby",
+			"if": "vv.kod in ['5T0832']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika metatarzofalangeálneho kĺbu II - V, 1 kĺb",
+			"if": "vv.kod in ['5T0831']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia skapuly",
+			"if": "vv.kod in ['5T075Z']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T075X']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T075W']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T075V']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T075U']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T075T']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia talu",
+			"if": "vv.kod in ['5T075S']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna synovektómia lakťového kĺbu",
+			"if": "vv.kod in ['5T3044']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny ostatných malých kostí, osteosyntéza štandardnou dlahou",
+			"if": "vv.kod in ['5T143X']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny metatarzálnych kostí, osteosyntéza štandardnou dlahou",
+			"if": "vv.kod in ['5T143V']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov ruky, osteosyntéza štandardnou dlahou",
+			"if": "vv.kod in ['5T143C']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny klavikuly, osteosyntéza štandardnou dlahou",
+			"if": "vv.kod in ['5T1430']",
+			"value": 482,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroplastika metatarzofalangeálneho kĺbu I",
+			"if": "vv.kod in ['5T0830']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Osteotomia os metatarsale I, dvojitá osteotómia",
+			"if": "vv.kod in ['5T08202']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Korektívna operácia mäkkých častí metatarzu a článkov prstov nohy vo výške 2.-5. metatarzofalangeálneho lúča: 4 metatarzofalangeálne lúče",
+			"if": "vv.kod in ['5T0814']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Korektívna operácia mäkkých častí metatarzu a článkov prstov nohy vo výške 2.-5. metatarzofalangeálneho lúča: 3 metatarzofalangeálne lúče",
+			"if": "vv.kod in ['5T0813']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Korektívna operácia mäkkých častí metatarzu a článkov prstov nohy vo výške 2.-5. metatarzofalangeálneho lúča: 2 metatarzofalangeálne lúče",
+			"if": "vv.kod in ['5T0812']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Korektívna operácia mäkkých častí metatarzu a článkov prstov nohy vo výške 2.-5. metatarzofalangeálneho lúča: 1 metatarzofalangeálny lúč",
+			"if": "vv.kod in ['5T0811']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Korektívna operácia mäkkých častí metatarzu a článkov prstov nohy vo výške 1. metatarzofalangeálneho lúča",
+			"if": "vv.kod in ['5T0810']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia pately",
+			"if": "vv.kod in ['5T075J']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia distálneho femuru",
+			"if": "vv.kod in ['5T075H']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia diafyzárneho femuru",
+			"if": "vv.kod in ['5T075G']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T075F']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T075E']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia panvy",
+			"if": "vv.kod in ['5T075D']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T075C']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T075B']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T075A']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T0758']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T0757']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T0754']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia luxácie akromioklavikulárneho kĺbu, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T1941']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny falangov prstov nohy bez osteosyntézy",
+			"if": "vv.kod in ['5T140W']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcie (exostózy) os metatarsale I",
+			"if": "vv.kod in ['5T0800']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T07XX']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T07XW']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T07XV']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T07XU']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T07XT']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia talu",
+			"if": "vv.kod in ['5T07XS']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T07XR']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T07XQ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T07XP']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia distálneho humeru",
+			"if": "vv.kod in ['5T0753']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia proximálneho humeru",
+			"if": "vv.kod in ['5T0751']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dynamickej kompresívnej skrutky, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T0750']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia skapuly",
+			"if": "vv.kod in ['5T074Z']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T074X']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T074W']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T074V']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T074U']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T074T']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia talu",
+			"if": "vv.kod in ['5T074S']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T074R']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T074P']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T074N']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T074M']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia pately",
+			"if": "vv.kod in ['5T074J']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia distálneho femuru",
+			"if": "vv.kod in ['5T074H']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálneho humeru, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T12X1']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T07XN']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T07XM']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T07XK']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia pately",
+			"if": "vv.kod in ['5T07XJ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T07XF']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T07XE']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T07XC']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T07XB']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T07XA']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T07X9']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T07X7']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T07X6']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie iného osteosyntetického materiálu, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T07X5']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T074F']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T074E']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia panvy",
+			"if": "vv.kod in ['5T074D']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T074C']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T074B']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T074A']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T0748']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T0747']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T0744']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia distálneho humeru",
+			"if": "vv.kod in ['5T0743']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia proximálneho humeru",
+			"if": "vv.kod in ['5T0741']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie ťahovej serkláže, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T0740']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dlahy, prípadne revízia panvy",
+			"if": "vv.kod in ['5T073D']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dlahy, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T073C']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia luxácie akromioklavikulárneho kĺbu, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T1911']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia skapuly",
+			"if": "vv.kod in ['5T07TZ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T07TX']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T07TW']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T07TV']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T07TU']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T07TT']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie dlahy, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T0730']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia skapuly",
+			"if": "vv.kod in ['5T072Z']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T072X']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T072W']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T072V']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T072U']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T072T']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia talu",
+			"if": "vv.kod in ['5T072S']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T072R']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T072P']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T072N']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T072M']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia pately",
+			"if": "vv.kod in ['5T072J']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia distálneho femuru",
+			"if": "vv.kod in ['5T072H']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia diafyzárneho femuru",
+			"if": "vv.kod in ['5T072G']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T072F']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T072E']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia panvy",
+			"if": "vv.kod in ['5T072D']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artrodézy metatarzofalangeálneho kĺbu palca nohy",
+			"if": "vv.kod in ['5T38AA']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artrodézy metatarzofalangeálnych a interfalangeálnych kĺbov prsta nohy, 1 kĺb",
+			"if": "vv.kod in ['5T38A1']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artrodéza priehlavku a stredonožia, 1 alebo 2 kĺby",
+			"if": "vv.kod in ['5T3891']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálneho femuru, osteosyntéza uhlovou/kondylárnou dlahou",
+			"if": "vv.kod in ['5T12CH']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti krčka stehennej kosti, osteosyntéza uhlovou/kondylárnou dlahou",
+			"if": "vv.kod in ['5T12CE']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia talu",
+			"if": "vv.kod in ['5T07TS']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T07TR']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T07TQ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T07TP']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T07TN']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T07TM']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T07TK']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T07TC']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T07TB']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T07TA']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T07T9']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T07T8']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T07T7']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T07T6']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T072C']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T072B']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T072A']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T0728']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T0727']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T0724']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia distálneho humeru",
+			"if": "vv.kod in ['5T0723']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia proximálneho humeru",
+			"if": "vv.kod in ['5T0721']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie drôtu, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T0720']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia skapuly",
+			"if": "vv.kod in ['5T071Z']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T071X']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T071W']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T071V']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T071U']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T071T']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia talu",
+			"if": "vv.kod in ['5T071S']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T071R']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T071P']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálneho radia, osteosyntéza uhlovostabilnou dlahou",
+			"if": "vv.kod in ['5T12B6']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T07T5']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vonkajšieho fixátora, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T07T4']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie vnútorného predlžovacieho alebo posuvného systému, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T07E0']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia skapuly",
+			"if": "vv.kod in ['5T07DZ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T07DX']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T07DW']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T07DV']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia tarzálnych kostí",
+			"if": "vv.kod in ['5T07DU']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T07DT']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia talu",
+			"if": "vv.kod in ['5T07DS']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T07DR']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T07DQ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T07DP']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T07DN']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T07DM']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T07DK']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T071N']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T071M']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia pately",
+			"if": "vv.kod in ['5T071J']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia distálneho femuru",
+			"if": "vv.kod in ['5T071H']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia diafyzárneho femuru",
+			"if": "vv.kod in ['5T071G']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T071F']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T071E']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia panvy",
+			"if": "vv.kod in ['5T071D']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T071C']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T071B']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T071A']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T0718']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T0717']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T0714']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia distálneho humeru",
+			"if": "vv.kod in ['5T0713']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia proximálneho humeru",
+			"if": "vv.kod in ['5T0711']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skrutky, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T0710']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia patela",
+			"if": "vv.kod in ['5T07DJ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia distálneho femuru",
+			"if": "vv.kod in ['5T07DH']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia diafyzárneho femuru",
+			"if": "vv.kod in ['5T07DG']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T07DF']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T07DE']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia panvy",
+			"if": "vv.kod in ['5T07DD']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T07DC']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T07DB']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia karpálnych kostí",
+			"if": "vv.kod in ['5T07DA']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T07D9']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T07D8']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T07D7']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T07D6']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T07D5']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T07D4']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia distálneho humeru",
+			"if": "vv.kod in ['5T07D3']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia diafyzárneho humeru",
+			"if": "vv.kod in ['5T07D2']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia proximálneho humeru",
+			"if": "vv.kod in ['5T07D1']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie skoby, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T07D0']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti proximálneho femuru, osteosyntéza transfixačným klincom",
+			"if": "vv.kod in ['5T129F']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti krčka stehennej kosti, osteosyntéza transfixačným klincom",
+			"if": "vv.kod in ['5T129E']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie uhlovostabilnej dlahy, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T07BW']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie uhlovostabilnej dlahy, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T07BV']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie uhlovostabilnej dlahy, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T07BR']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia luxácie akromioklavikulárneho kĺbu, osteosyntéza rezorbovateľným materiálom",
+			"if": "vv.kod in ['5T19Z1']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v diafyzárnej oblasti ulny, osteosyntéza drôtom alebo ťahovou serklážou",
+			"if": "vv.kod in ['5T1048']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie uhlovostabilnej dlahy, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T07BC']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie uhlovostabilnej dlahy, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T07BB']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie uhlovostabilnej dlahy, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T07B6']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálnej fibuly, osteosyntéza štandardnou dlahou",
+			"if": "vv.kod in ['5T123R']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie uhlovostabilnej dlahy, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T07B0']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia skapuly",
+			"if": "vv.kod in ['5T07AZ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia ostatných kostí",
+			"if": "vv.kod in ['5T07AX']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia falangov prstov nohy",
+			"if": "vv.kod in ['5T07AW']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia metatarzálnych kostí",
+			"if": "vv.kod in ['5T07AV']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia kalkanea",
+			"if": "vv.kod in ['5T07AT']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia talu",
+			"if": "vv.kod in ['5T07AS']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia distálnej fibuly",
+			"if": "vv.kod in ['5T07AR']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia diafyzárnej fibuly",
+			"if": "vv.kod in ['5T07AQ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia proximálnej fibuly",
+			"if": "vv.kod in ['5T07AP']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia distálnej tibie",
+			"if": "vv.kod in ['5T07AN']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia diafyzárnej tibie",
+			"if": "vv.kod in ['5T07AM']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia proximálnej tibie",
+			"if": "vv.kod in ['5T07AK']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia patela",
+			"if": "vv.kod in ['5T07AJ']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia distálneho femuru",
+			"if": "vv.kod in ['5T07AH']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia diafyzárneho femuru",
+			"if": "vv.kod in ['5T07AG']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia proximálneho femuru",
+			"if": "vv.kod in ['5T07AF']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia krčka stehennej kosti",
+			"if": "vv.kod in ['5T07AE']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia falangov prstov ruky",
+			"if": "vv.kod in ['5T07AC']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia luxácie akromioklavikulárneho kĺbu, osteosyntéza iným osteosyntetickým materiálom",
+			"if": "vv.kod in ['5T19X1']",
+			"value": 412,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia trieštivej zlomeniny metakarpálnych kostí, osteosyntéza drôtom a ťahovou serklážou",
+			"if": "vv.kod in ['5T154B']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia jednoduchej zlomeniny v kĺbnej oblasti distálneho radia , osteosyntéza štandardnou dlahou",
+			"if": "vv.kod in ['5T1236']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia metakarpálnych kostí",
+			"if": "vv.kod in ['5T07AB']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia distálnej ulny",
+			"if": "vv.kod in ['5T07A9']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia diafyzárnej ulny",
+			"if": "vv.kod in ['5T07A8']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia proximálnej ulny",
+			"if": "vv.kod in ['5T07A7']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia distálneho radia",
+			"if": "vv.kod in ['5T07A6']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia diafyzárneho radia",
+			"if": "vv.kod in ['5T07A5']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia proximálneho radia",
+			"if": "vv.kod in ['5T07A4']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia distálneho humeru",
+			"if": "vv.kod in ['5T07A3']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia diafyzárneho humeru",
+			"if": "vv.kod in ['5T07A2']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia proximálneho humeru",
+			"if": "vv.kod in ['5T07A1']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie intramedulárneho prúta/drôtu, prípadne revízia klavikuly",
+			"if": "vv.kod in ['5T07A0']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená repozícia trieštivej zlomeniny metakarpálnych kostí, osteosyntéza skrutkou",
+			"if": "vv.kod in ['5T151B']",
+			"value": 435,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená chirurgická parciálna fasciotómia priečna, ostatné",
+			"if": "vv.kod in ['5T815X']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v brušnej oblasti",
+			"if": "vv.kod in ['5V143B']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5V143A']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ruky",
+			"if": "vv.kod in ['5V1439']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predlaktia",
+			"if": "vv.kod in ['5V1438']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5V1437']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti krku",
+			"if": "vv.kod in ['5V1435']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5V1434']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti pery",
+			"if": "vv.kod in ['5V1430']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany, ostatné",
+			"if": "vv.kod in ['5V142X']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5V142G']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti predkolenia",
+			"if": "vv.kod in ['5V142F']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5V142E']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické operácie menisku",
+			"if": "vv.kod in ['5T423X']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické odstránenie umelého menisku",
+			"if": "vv.kod in ['5T4234']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická implantácia umelého menisku",
+			"if": "vv.kod in ['5T4233']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická sutúra menisku, zložitá",
+			"if": "vv.kod in ['5T42322']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická refixácia menisku",
+			"if": "vv.kod in ['5T42320']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická totálna resekcia menisku",
+			"if": "vv.kod in ['5T42311']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická parciálna resekcia menisku",
+			"if": "vv.kod in ['5T42310']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5V142D']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v brušnej oblasti",
+			"if": "vv.kod in ['5V142B']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5V142A']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ruky",
+			"if": "vv.kod in ['5V1429']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti predlaktia",
+			"if": "vv.kod in ['5V1428']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5V1427']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti krku",
+			"if": "vv.kod in ['5V1425']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany ostatných častí hlavy",
+			"if": "vv.kod in ['5V1424']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti pery",
+			"if": "vv.kod in ['5V1420']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované, ostatné",
+			"if": "vv.kod in ['5V141X']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5V141G']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti predkolenia",
+			"if": "vv.kod in ['5V141F']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti stehna a kolena",
+			"if": "vv.kod in ['5V141E']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v gluteálnej oblasti",
+			"if": "vv.kod in ['5V141D']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v brušnej oblasti",
+			"if": "vv.kod in ['5V141B']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5V141A']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ruky",
+			"if": "vv.kod in ['5V1419']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti predlaktia",
+			"if": "vv.kod in ['5V1418']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5V1417']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti krku",
+			"if": "vv.kod in ['5V1415']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5V1414']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachovej pošvy v oblasti nohy",
+			"if": "vv.kod in ['5T8549']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artrodézy kĺbov ruky",
+			"if": "vv.kod in ['5T76X']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Tenolýza šľachových pošiev dlane",
+			"if": "vv.kod in ['5T7079']",
+			"value": 330,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Tenolýza šľachových pošiev palca",
+			"if": "vv.kod in ['5T7078']",
+			"value": 330,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Tenolýza šľachových pošiev prsta",
+			"if": "vv.kod in ['5T7077']",
+			"value": 330,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Tenolýza vystierača palca",
+			"if": "vv.kod in ['5T7075']",
+			"value": 330,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Tenolýza vystierača prsta",
+			"if": "vv.kod in ['5T7074']",
+			"value": 330,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Tenolýza ohýbača palca",
+			"if": "vv.kod in ['5T7072']",
+			"value": 330,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Tenolýza ohýbača prsta",
+			"if": "vv.kod in ['5T7071']",
+			"value": 330,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra vystierača prsta",
+			"if": "vv.kod in ['5T7054']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické resekcie ganglia humeroglenoidálny kĺb",
+			"if": "vv.kod in ['5T4920']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický debridement šľachy kolenného kĺbu",
+			"if": "vv.kod in ['5T491H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický debridement šľachy lakťového kĺbu",
+			"if": "vv.kod in ['5T4914']",
+			"value": 350,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický debridement šľachy humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5T4910']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach kolenného kĺbu s drenážou",
+			"if": "vv.kod in ['5T400H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach bedrového kĺbu s drenážou",
+			"if": "vv.kod in ['5T400G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti pery",
+			"if": "vv.kod in ['5V1410']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany, ostatné",
+			"if": "vv.kod in ['5V140X']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5V140G']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predkolenia",
+			"if": "vv.kod in ['5V140F']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5V140E']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5V140D']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v brušnej oblasti",
+			"if": "vv.kod in ['5V140B']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5V140A']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ruky",
+			"if": "vv.kod in ['5V1409']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predlaktia",
+			"if": "vv.kod in ['5V1408']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5V1407']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti krku",
+			"if": "vv.kod in ['5V1405']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachovej pošvy v oblasti predlaktia",
+			"if": "vv.kod in ['5T8543']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachovej pošvy, ostatné",
+			"if": "vv.kod in ['5T853X']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachovej pošvy v oblasti nohy",
+			"if": "vv.kod in ['5T8539']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachovej pošvy v oblasti predlaktia",
+			"if": "vv.kod in ['5T8533']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachy v oblasti nohy",
+			"if": "vv.kod in ['5T8529']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra ohýbača prsta",
+			"if": "vv.kod in ['5T7051']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev palca",
+			"if": "vv.kod in ['5T7028']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev prsta",
+			"if": "vv.kod in ['5T7027']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach ulnokarpálneho kĺbu s drenážou",
+			"if": "vv.kod in ['5T4009']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach radiokarpálneho kĺbu s drenážou",
+			"if": "vv.kod in ['5T4008']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopický aseptický výplach lakťového kĺbu s drenážou",
+			"if": "vv.kod in ['5T4004']",
+			"value": 846,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany ostatných častí hlavy",
+			"if": "vv.kod in ['5V1404']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti pery",
+			"if": "vv.kod in ['5V1400']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sekundárna sutúra šľachy v oblasti predlaktia",
+			"if": "vv.kod in ['5T8523']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachy v oblasti nohy",
+			"if": "vv.kod in ['5T8519']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Primárna sutúra šľachy v oblasti predlaktia",
+			"if": "vv.kod in ['5T8513']",
+			"value": 470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev ohýbača palca",
+			"if": "vv.kod in ['5T7022']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev ohýbača prsta",
+			"if": "vv.kod in ['5T7021']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické refixácie a plastiky na kapsuloligamentóznom aparáte ramenného kĺbu",
+			"if": "vv.kod in ['5T44X']",
+			"value": 1265,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická laterálna resekcia klavikuly",
+			"if": "vv.kod in ['5T44A']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické spevnenie púzdra s fixáciou na glenoid stehom",
+			"if": "vv.kod in ['5T445']",
+			"value": 1265,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany , ostatné",
+			"if": "vv.kod in ['5V131X']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5V131G']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti predkolenia",
+			"if": "vv.kod in ['5V131F']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5V131E']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5V131D']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v brušnej oblasti",
+			"if": "vv.kod in ['5V131B']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5V131A']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ruky",
+			"if": "vv.kod in ['5V1319']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti predlaktia",
+			"if": "vv.kod in ['5V1318']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5V1317']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti krku",
+			"if": "vv.kod in ['5V1315']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany ostatných častí hlavy",
+			"if": "vv.kod in ['5V1314']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna resekcia burzy, ostatné",
+			"if": "vv.kod in ['5T891X']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna resekcia burzy v oblasti nohy",
+			"if": "vv.kod in ['5T8919']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna resekcia burzy v oblasti predlaktia",
+			"if": "vv.kod in ['5T8913']",
+			"value": 388,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné artroskopické refixácie a plastiky na kapsuloligamentóznom aparáte kolenného kĺbu",
+			"if": "vv.kod in ['5T43X']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika laterálneho kapsuloligamentózneho aparátu kolenného kĺbu",
+			"if": "vv.kod in ['5T43E']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika mediálneho kapsuloligamentózneho aparátu kolenného kĺbu",
+			"if": "vv.kod in ['5T43D']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická sutúra laterálneho kapsuloligamentózneho aparátu kolenného kĺbu",
+			"if": "vv.kod in ['5T43B']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická sutúra mediálneho kapsuloligamentózneho aparátu kolenného kĺbu",
+			"if": "vv.kod in ['5T43A']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopické uvoľnenie kolenného púzdra (lateral release)",
+			"if": "vv.kod in ['5T439']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika zadného skríženeho väzu s aloplastickou náhradou",
+			"if": "vv.kod in ['5T438']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika zadného skríženého väzu s iným autológnym ligamentom",
+			"if": "vv.kod in ['5T437']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika zadného skríženého väzu s autogénnou patelárnou šľachou",
+			"if": "vv.kod in ['5T436']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika predného skríženého väzu s aloplastickou náhradou",
+			"if": "vv.kod in ['5T435']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika predného skríženého väzu iným autológnym ligamentom",
+			"if": "vv.kod in ['5T434']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti pery",
+			"if": "vv.kod in ['5V1310']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany, ostatné",
+			"if": "vv.kod in ['5V130X']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5V130G']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predkolenia",
+			"if": "vv.kod in ['5V130F']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5V130E']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5V130D']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v brušnej oblasti",
+			"if": "vv.kod in ['5V130B']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5V130A']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ruky",
+			"if": "vv.kod in ['5V1309']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predlaktia",
+			"if": "vv.kod in ['5V1308']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5V1307']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti krku",
+			"if": "vv.kod in ['5V1305']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická plastika predného skríženého väzu autológnym patelárnym ligamentom",
+			"if": "vv.kod in ['5T433']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická kostná refixácia skríženého väzu",
+			"if": "vv.kod in ['5T432']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická sutúra zadného skríženého väzu",
+			"if": "vv.kod in ['5T431']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická sutúra predného skríženého väzu",
+			"if": "vv.kod in ['5T430']",
+			"value": 1164,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany ostatných častí hlavy",
+			"if": "vv.kod in ['5V1304']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti pery",
+			"if": "vv.kod in ['5V1300']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia tukového telesa kolenného kĺbu",
+			"if": "vv.kod in ['5T411H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia tukového telesa bedrového kĺbu",
+			"if": "vv.kod in ['5T411G']",
+			"value": 1470,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická resekcia plica synovialis kolenného kĺbu",
+			"if": "vv.kod in ['5T410H']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transpozícia šliach, ostatné",
+			"if": "vv.kod in ['5T842X']",
+			"value": 294,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Fasciektómia viac prstov s jednou neurolýzou",
+			"if": "vv.kod in ['5T7242']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna fasciektómia jedného alebo dvoch prstov",
+			"if": "vv.kod in ['5T7223']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna fasciektómia izolovaná na dlani",
+			"if": "vv.kod in ['5T7220']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna fasciotómia viac ako jedného prsta",
+			"if": "vv.kod in ['5T7212']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna fasciotómia jedného prsta",
+			"if": "vv.kod in ['5T7211']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna fasciotómia pozdĺžna, ostatné",
+			"if": "vv.kod in ['5T81AX']",
+			"value": 306,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Otvorená chirurgická parciálna fasciotómia pozdĺžna, jeden segment, ostatné",
+			"if": "vv.kod in ['5T818X']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna excízia retinaculum flexorum",
+			"if": "vv.kod in ['5T7121']",
+			"value": 418,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prerušenie väzu retinaculum flexorum s epineurolýzou n. medianus",
+			"if": "vv.kod in ['5T71111']",
+			"value": 418,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Prerušenie väzu retinaculum flexorum",
+			"if": "vv.kod in ['5T71110']",
+			"value": 418,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované, ostatné",
+			"if": "vv.kod in ['5V143X']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5V143G']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predkolenia",
+			"if": "vv.kod in ['5V143F']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti stehna a kolena",
+			"if": "vv.kod in ['5V143E']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v gluteálnej oblasti",
+			"if": "vv.kod in ['5V143D']",
+			"value": 59,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia pre pozápalové stavy periférneho nervu na dolnej končatine",
+			"if": "vv.kod in ['5A50HB']",
+			"value": 318,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia pre úžinový syndróm na dolnej končatine",
+			"if": "vv.kod in ['5A50H9']",
+			"value": 318,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia pre úžinový syndróm na hornej končatine, iný",
+			"if": "vv.kod in ['5A50H6X']",
+			"value": 294,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia pre syndróm kubitálneho tunela s transpozíciou nervu",
+			"if": "vv.kod in ['5A50H64']",
+			"value": 294,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia pre syndróm kubitálneho tunela s dekompresiou nervu",
+			"if": "vv.kod in ['5A50H63']",
+			"value": 294,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Dekompresia, deliberácia a uvoľnenie zrastov periférneho nervu",
+			"if": "vv.kod in ['5A50G']",
+			"value": 318,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Artroskopická biopsia kolenného kĺbu",
+			"if": "vv.kod in ['12T007']",
+			"value": 1035,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
