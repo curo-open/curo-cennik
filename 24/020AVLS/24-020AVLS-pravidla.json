@@ -377,6 +377,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Delegovaný odber krvi  (vv. 250D)",
+			"if": "vv.kod in ['250D','250d']",
+			"value": 2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,

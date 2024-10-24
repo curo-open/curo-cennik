@@ -1,51 +1,47 @@
-                                                                        ================
-                                                                        Cenník gynekolog
-                                                                        ================
+                                                                       ==================
+                                                                       Cenník psychiatria
+                                                                       ==================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────────────┐
-│ Názov a hodnota   │ Popis                        │
-├───────────────────┼──────────────────────────────┤
-│ IDK = 0           │ NASTAVENIA IDK               │
-│ CB = 0.022089     │ Cena bodu                    │
-│ CBP = 0.062       │ Cena bodu preventívne výkony │
-│ CBEUNK = 0.022973 │ Cena bodu EU/Nekapitovaný    │
-│ CBSVALZ = 0.0086  │ Cena bodu SVaLZ              │
-│ CBUSG = 0.008839  │ Cena bodu USG                │
-│ KP = 1.96         │ Kapitačná platba             │
-└───────────────────┴──────────────────────────────┘
+┌────────────────────┬───────────────────────┐
+│ Názov a hodnota    │ Popis                 │
+├────────────────────┼───────────────────────┤
+│ IPP1 = 2.44        │ IPP1                  │
+│ IPP2 = 3.92        │ IPP2                  │
+│ IPP3 = 6.64        │ IPP3                  │
+│ IPP4 = 9.64        │ IPP4                  │
+│ IPPD = 5           │ IPPD                  │
+│ LIMIT = 0          │ Limit                 │
+│ EL_POBOCKA = 1     │ Používa el. pobočku ? │
+│ CB = 0.03466       │ Cena bodu             │
+│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
+└────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
-┌───────────┬───────────────┬─────────┬────────────────────┐
-│ Popis     │ Premenná cena │ Vzorec  │ Podmienka          │
-├───────────┼───────────────┼─────────┼────────────────────┤
-│ Kapitácia │          null │ KP+IDK  │ p|vekMedzi(0, 120) │
-└───────────┴───────────────┴─────────┴────────────────────┘
+┌───────┬───────────────┬─────────┬───────────┐
+│ Popis │ Premenná cena │ Vzorec  │ Podmienka │
+└───────┴───────────────┴─────────┴───────────┘
 
 
   CENY ZA VÝKONY
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.084 │ vv.bodyCelkom*cena        │ Výkony 102,103,105,108,157,297,1070           │ vv.kod in ['102','103','105','108','157','297','1070']       │
-│            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5303,5305,5308,5316,5807,5809     │ "Z" in vv.diagnoza && vv.kod in ['5301','5303','5305','5308' │
-│                 │                           │                                               │ ,'5316','5807','5809']                                       │
-│            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5303,5305,5308,5316,5807,5809     │ vv.kod in ['5301','5316','5807','5809']                      │
-│           0.084 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ "Z" in vv.diagnoza && vv.kod in ['252b']                     │
-│        0.009281 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
-│           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b, 11a, 70                             │ vv.kod in ['1b','11a','70']                                  │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
-│                 │                           │                                               │ ) && vv.typ=='SVaLZ'                                         │
-│            null │ vv.bodyCelkom*CBSEUNK     │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
-│                 │                           │                                               │ ) && vv.typ!='SVaLZ'                                         │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.typ=='SVaLZ'                              │
-│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && vv.typ!='SVaLZ'                              │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Kapitovaný - SVALZ výkon                      │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Kapitovaný - iné ako SVALZ                    │ vv.typ!='SVaLZ'                                              │
+│           0.035 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
+│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CB          │ Výkon 820;821;822;825;826;841                 │ vv.kod in ['820','821','822','825','826','841','847']        │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ IPPD                      │ Pripočitateľné položky                        │ vv.kod=='IPPD'                                               │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -54,9 +50,24 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│              50 │ 297                                                                                                       │                           │
+│             950 │ 820                                                                                                       │                           │
+│             890 │ 821                                                                                                       │                           │
+│             360 │ 822                                                                                                       │                           │
+│             470 │ 825                                                                                                       │                           │
+│             750 │ 826                                                                                                       │                           │
+│             805 │ 840                                                                                                       │                           │
+│            2130 │ 841                                                                                                       │                           │
+│             610 │ 847                                                                                                       │                           │
+│             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 

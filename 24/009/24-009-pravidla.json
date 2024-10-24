@@ -61,6 +61,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 252b",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['252b']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkony 5303,5305,5308",
 			"if": "vv.kod in ['5303','5305','5308']",
 			"value": 0.009281,
