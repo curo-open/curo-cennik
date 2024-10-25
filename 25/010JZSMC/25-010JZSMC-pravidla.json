@@ -627,7 +627,7 @@
 		{
 			"label": "Artroskopická parciálna resekcia menisku",
 			"if": "vv.kod in ['5t42310']",
-			"value": 1057,
+			"value": 1003,
 			"calc": "vv.pocet*cena",
 			"instruction": {
 				"result": "#N/A",
@@ -677,7 +677,7 @@
 		{
 			"label": "Discízia šľachových pošiev prsta",
 			"if": "vv.kod in ['5t7027']",
-			"value": 413,
+			"value": 392,
 			"calc": "vv.pocet*cena",
 			"instruction": {
 				"result": 392,

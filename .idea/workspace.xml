@@ -24,10 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/009/24-009-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/009/24-009-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/009/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/009/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/010JZSMC/24-010JZSMC-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/010JZSMC/24-010JZSMC-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/010JZSMC/25-010JZSMC-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/010JZSMC/25-010JZSMC-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/010JZSMC/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/010JZSMC/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -787,7 +786,7 @@
       <workItem from="1728462970883" duration="595000" />
       <workItem from="1728976341420" duration="584000" />
       <workItem from="1728988169660" duration="1195000" />
-      <workItem from="1729428708098" duration="2975000" />
+      <workItem from="1729428708098" duration="3590000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1132,7 +1131,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="471" />
+    <option name="localTasksCounter" value="472" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
