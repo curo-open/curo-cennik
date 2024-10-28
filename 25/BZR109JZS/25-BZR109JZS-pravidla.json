@@ -47,7 +47,7 @@
 		{
 			"label": "Výkon 8903",
 			"if": "vv.kod in ['8903'] || vv.k in ['8903'] || vv.k25 in ['8903']",
-			"value": 433,
+			"value": 385,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -61,21 +61,21 @@
 		{
 			"label": "Výkon 8909",
 			"if": "vv.kod in ['8909'] || vv.k in ['8909'] || vv.k25 in ['8909']",
-			"value": 345,
+			"value": 307,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8910",
 			"if": "vv.kod in ['8910'] || vv.k in ['8910'] || vv.k25 in ['8910']",
-			"value": 242,
+			"value": 216,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8911",
 			"if": "vv.kod in ['8911'] || vv.k in ['8911'] || vv.k25 in ['8911']",
-			"value": 412,
+			"value": 367,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -89,7 +89,7 @@
 		{
 			"label": "Výkon 8914",
 			"if": "vv.kod in ['8914'] || vv.k in ['8914'] || vv.k25 in ['8914']",
-			"value": 400,
+			"value": 356,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -103,7 +103,7 @@
 		{
 			"label": "Výkon 9315",
 			"if": "vv.kod in ['9315'] || vv.k in ['9315'] || vv.k25 in ['9315']",
-			"value": 400,
+			"value": 356,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -159,14 +159,14 @@
 		{
 			"label": "Výkon 8924",
 			"if": "vv.kod in ['8924'] || vv.k in ['8924'] || vv.k25 in ['8924']",
-			"value": 156,
+			"value": 139,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8926",
 			"if": "vv.kod in ['8926'] || vv.k in ['8926'] || vv.k25 in ['8926']",
-			"value": 325,
+			"value": 289,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -180,14 +180,14 @@
 		{
 			"label": "Výkon 8928",
 			"if": "vv.kod in ['8928'] || vv.k in ['8928'] || vv.k25 in ['8928']",
-			"value": 144,
+			"value": 128,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8929",
 			"if": "vv.kod in ['8929'] || vv.k in ['8929'] || vv.k25 in ['8929']",
-			"value": 249,
+			"value": 221,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}
@@ -196,5 +196,5 @@
 	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "urologia"
+	"title": "pediatrická urologi"
 }

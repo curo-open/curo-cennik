@@ -220,6 +220,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 8544",
+			"if": "vv.kod in ['8544'] || vv.k in ['8544'] || vv.k25 in ['8544']",
+			"value": 365,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 8546",
 			"if": "vv.kod in ['8546'] || vv.k in ['8546'] || vv.k25 in ['8546']",
 			"value": 365,
@@ -285,7 +292,7 @@
 		{
 			"label": "Výkon 8573",
 			"if": "vv.kod in ['8573'] || vv.k in ['8573'] || vv.k25 in ['8573']",
-			"value": 75,
+			"value": 80,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -334,6 +341,13 @@
 		{
 			"label": "Výkon 8525A",
 			"if": "vv.kod in ['8525A'] || vv.k in ['8525A'] || vv.k25 in ['8525A']",
+			"value": 795,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8525K",
+			"if": "vv.kod in ['8525K'] || vv.k in ['8525K'] || vv.k25 in ['8525K']",
 			"value": 795,
 			"calc": "vv.pocet*cena",
 			"instruction": null

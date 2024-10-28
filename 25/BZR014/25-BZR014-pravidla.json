@@ -9,6 +9,10 @@
 			"value": 0.03466
 		},
 		"CBSVALZ": {
+			"label": "Cena bodu",
+			"value": 0.009159
+		},
+		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.009574
 		},
@@ -63,7 +67,7 @@
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5316'] ",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{

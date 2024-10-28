@@ -1,6 +1,6 @@
-                                                                        ===============
-                                                                        Cenník urologia
-                                                                        ===============
+                                                                   ==========================
+                                                                   Cenník pediatrická urologi
+                                                                   ==========================
 
 Autor: curo.sk
 

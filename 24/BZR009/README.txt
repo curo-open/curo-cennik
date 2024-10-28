@@ -40,10 +40,11 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBUSG       │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
 │            null │ vv.bodyCelkom*CB          │ Odber krvi                                    │ !p.kapitacia && vv.kod in ['250a']                           │
 │            null │ vv.bodyCelkom*CB          │ Odber biologického materiálu                  │ !p.kapitacia && vv.kod in ['299a']                           │
-│            null │ vv.bodyCelkom*CB          │ Výkon 252,252b, 252C                          │ !p.kapitacia && vv.kod in ['252','252b','252C']              │
+│            null │ vv.bodyCelkom*CB          │ Výkon 252, 252C                               │ !p.kapitacia && vv.kod in ['252','252C']                     │
+│           0.084 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ !p.kapitacia && vv.kod in ['252b']                           │
 │            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaZL                                   │
-│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
+│            null │ vv.bodyCelkom*CBEUNK      │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaZL                                  │
 │            null │ vv.bodyCelkom*0           │ SVALZ výkon                                   │ p.kapitacia && vv.jeSVaZL                                    │
 │            null │ vv.bodyCelkom*0           │ iné ako SVALZ                                 │ p.kapitacia && !vv.jeSVaZL                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │

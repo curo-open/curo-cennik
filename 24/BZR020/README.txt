@@ -64,7 +64,11 @@ Autor: curo.sk
 │            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            5.98 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
 │              20 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
+│            8.98 │ vv.pocet*cena             │ Stanovenie hodnoty D-diméru                   │ vv.kod in ['3860']                                           │
+│            11.6 │ vv.pocet*cena             │ Stanovenie hodnoty troponínu                  │ vv.kod in ['4485']                                           │
+│           19.78 │ vv.pocet*cena             │ Stanovenie hodnoty NT-proBNP                  │ vv.kod in ['44418']                                          │
 │            5.65 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
+│            4.38 │ vv.pocet*cena             │ Výkon 5301                                    │ vv.kod in ['5301']                                           │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │

@@ -106,10 +106,17 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 252,252b, 252C",
-			"if": "!p.kapitacia && vv.kod in ['252','252b','252C']",
+			"label": "Výkon 252, 252C",
+			"if": "!p.kapitacia && vv.kod in ['252','252C']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252b",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -130,7 +137,7 @@
 			"label": "Nekapitovaný - iné ako SVALZ",
 			"if": "!p.kapitacia && !vv.jeSVaZL",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBEUNK",
 			"instruction": null
 		},
 		{

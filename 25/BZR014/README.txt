@@ -5,17 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬─────────────────┐
-│ Názov a hodnota    │ Popis           │
-├────────────────────┼─────────────────┤
-│ LIMIT = 2235       │ Limit           │
-│ CB = 0.03466       │ Cena bodu       │
-│ CBSVALZ = 0.009574 │ Cena bodu SVaLZ │
-│ IPP1 = 1.46        │ IPP1            │
-│ IPP2 = 2.35        │ IPP2            │
-│ IPP3 = 3.98        │ IPP3            │
-│ IPP4 = 6.98        │ IPP4            │
-└────────────────────┴─────────────────┘
+┌───────────────────────┬─────────────────┐
+│ Názov a hodnota       │ Popis           │
+├───────────────────────┼─────────────────┤
+│ LIMIT = 2235          │ Limit           │
+│ CB = 0.03466          │ Cena bodu       │
+│ CBSVALZ = 0.009159    │ Cena bodu       │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ │
+│ IPP1 = 1.46           │ IPP1            │
+│ IPP2 = 2.35           │ IPP2            │
+│ IPP3 = 3.98           │ IPP3            │
+│ IPP4 = 6.98           │ IPP4            │
+└───────────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -32,7 +33,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ Plánovanie terapeutických postupov            │ vv.kod in ['10']                                             │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5316']                             │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5316']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1400,1410,1500,1540,1544a               │ vv.kod in ['1400','1410','1500','1540','1544a']              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1590,1591,1595a,1596,1597               │ vv.kod in ['1590','1591','1595a','1596','1597']              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 401 - Povrchová anestézia               │ vv.kod in ['401']                                            │

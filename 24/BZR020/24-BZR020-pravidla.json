@@ -281,9 +281,37 @@
 			"instruction": null
 		},
 		{
+			"label": "Stanovenie hodnoty D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.98,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty NT-proBNP",
+			"if": "vv.kod in ['44418']",
+			"value": 19.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571a','4571A']",
 			"value": 5.65,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5301",
+			"if": "vv.kod in ['5301']",
+			"value": 4.38,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

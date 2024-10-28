@@ -54,7 +54,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
 │            null │ vv.bodyCelkom*CB          │ Komunikácia v cudziom jazyku                  │ vv.kod in ['79a']                                            │
-│          0.0318 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ Vstupná prehliadka (výkon 60)                 │ vv.kod in ['60']                                             │
 │           17.33 │ vv.pocet*cena             │ Predoperačné vyšetrenie (výkon 60b)           │ vv.kod in ['60b']                                            │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │

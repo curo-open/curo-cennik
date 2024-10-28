@@ -3,13 +3,6 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 99999",
-			"if": "vv.kod in ['99999'] || vv.kod in ['99999']",
-			"value": 1,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 9310",
 			"if": "vv.kod in ['9310'] || vv.k in ['9310'] || vv.k24 in ['9310']",
 			"value": 203,

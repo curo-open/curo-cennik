@@ -107,7 +107,7 @@
 			"label": "Zhodnotenie vyšetrení a zdrav.dokumentácie ",
 			"if": "vv.kod in ['5700']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{
