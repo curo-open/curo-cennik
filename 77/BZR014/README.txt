@@ -9,7 +9,6 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis                                                   │
 ├────────────────────┼─────────────────────────────────────────────────────────┤
 │ CB = 0.045         │ Cena bodu                                               │
-│ CBE = 0.035        │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.015    │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.00924 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 │ IPP1 = 1.8         │ IPP1                                                    │
@@ -29,17 +28,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
-│            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
-│            null │ IPP7                      │ Pripočitateľné položky                        │ vv.kod=='IPP7'                                               │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
-│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
+│            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│            null │ vv.bodyCelkom*CB          │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Preventívne vykony                            │ 1                                                            │

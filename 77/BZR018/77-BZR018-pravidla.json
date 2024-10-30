@@ -85,31 +85,31 @@
 			"instruction": null
 		},
 		{
-			"label": "Odber venóznej krvi",
-			"if": "vv.kod in ['250x']",
-			"value": 2.98,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60,62,63,65",
+			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','11a','70']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -157,7 +157,7 @@
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 200
 			}
 		],
 		"70": [

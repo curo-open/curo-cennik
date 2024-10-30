@@ -1,63 +1,86 @@
 {
 	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
 		"CB": {
-			"label": "Cena bodu ",
+			"label": "Cena bodu",
 			"value": 0.045
-		},
-		"CBE": {
-			"label": "Cena bodu el. výkony",
-			"value": 0.035
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.07
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.015
 		},
-		"CBSVALZP": {
-			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
-			"value": 0.00924
-		},
-		"IPP1": {
-			"label": "IPP1",
-			"value": 1.8
-		},
-		"IPP2": {
-			"label": "IPP5",
-			"value": 2.9
-		},
-		"IPP3": {
-			"label": "IPP6",
-			"value": 4.9
-		},
 		"IPP4": {
-			"label": "IPP7",
-			"value": 4.9
+			"label": "IPP4",
+			"value": 2.49
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 0.73
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 0.57
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP1'",
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
-			"calc": "IPP1",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP2'",
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
 			"value": null,
-			"calc": "IPP2",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP3'",
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
 			"value": null,
-			"calc": "IPP3",
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5302",
+			"if": "vv.kod in ['5302']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5330,5531,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - Vyšetrenie na včasné rozpoznanie ochorenia na rakovinu",
+			"if": "vv.kod in ['158']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -82,38 +105,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP7'",
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "IPP7",
-			"instruction": null
-		},
-		{
-			"label": "Odber venóznej krvi",
-			"if": "vv.kod in ['250x']",
-			"value": 2.98,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60,62,63,65",
-			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 65,66,67",
-			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','11a','70']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -125,13 +120,20 @@
 		},
 		{
 			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.typ!='SVaLZ'",
+			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Preventívne vykony",
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
 			"if": "1",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
@@ -139,56 +141,7 @@
 		}
 	],
 	"kontrola": [],
-	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
-		"60": [
-			{
-				"cond": "",
-				"value": 420
-			}
-		],
-		"62": [
-			{
-				"cond": "",
-				"value": 270
-			}
-		],
-		"63": [
-			{
-				"cond": "",
-				"value": 210
-			}
-		],
-		"70": [
-			{
-				"cond": "",
-				"value": 40
-			}
-		],
-		"1b": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
-		"1c": [
-			{
-				"cond": "",
-				"value": 1000
-			}
-		],
-		"11a": [
-			{
-				"cond": "",
-				"value": 210
-			}
-		]
-	},
+	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "pediatrická gastroente"

@@ -10,7 +10,7 @@ Autor: curo.sk
 ├────────────────────┼─────────────────┤
 │ IPP1 = 1.08        │ IPP1            │
 │ LIMIT = 2235       │ Limit           │
-│ CB = 0.037411      │ Cena bodu       │
+│ CB = 0.036616      │ Cena bodu       │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
 └────────────────────┴─────────────────┘
 
@@ -31,13 +31,11 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316']                                              │
-│          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Epidurálna anestézia                          │ vv.kod in ['89']                                             │
 │            null │ vv.bodyCelkom*CB          │ Blokáda periférneho nervu                     │ vv.kod in ['91']                                             │
-│            null │ vv.bodyCelkom*CBSVALZUSG  │ Selektívna blokáda pod USG                    │ vv.kod in ['95b']                                            │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Selektívna blokáda pod USG                    │ vv.kod in ['95b']                                            │
 │            null │ vv.bodyCelkom*CB          │ Aplikácia náplasti Qutenza                    │ vv.kod in ['410']                                            │
 │            null │ vv.bodyCelkom*CB          │ Intraartikulárna injekcia                     │ vv.kod in ['255']                                            │
 │            null │ vv.bodyCelkom*CB          │ Obstreky bolestivých bodov                    │ vv.kod in ['252']                                            │

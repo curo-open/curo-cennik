@@ -36,10 +36,10 @@ Autor: curo.sk
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
 │            null │ IPP7                      │ Pripočitateľné položky                        │ vv.kod=='IPP7'                                               │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
-│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*CB          │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Preventívne vykony                            │ 1                                                            │
@@ -53,7 +53,7 @@ Autor: curo.sk
 │             160 │ 1                                                                                                         │                           │
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
-│             210 │ 63                                                                                                        │                           │
+│             200 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

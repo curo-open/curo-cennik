@@ -22,50 +22,43 @@
 		{
 			"label": "Výkony 60",
 			"if": "vv.kod in ['60']",
-			"value": 9.41,
-			"calc": "vv.pocet*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 62",
 			"if": "vv.kod in ['62']",
-			"value": 6.05,
-			"calc": "vv.pocet*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 63",
 			"if": "vv.kod in ['63']",
-			"value": 4.7,
-			"calc": "vv.pocet*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 60r",
 			"if": "vv.kod in ['60r']",
-			"value": 9.41,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 65",
-			"if": "vv.kod in ['65'] && p|vekMedzi(0, 5)",
-			"value": 3.36,
-			"calc": "vv.pocet*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65",
 			"if": "vv.kod in ['65']",
-			"value": 0.0224,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.006666,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -106,6 +99,12 @@
 	],
 	"kontrola": [],
 	"body": {
+		"63": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"65": [
 			{
 				"cond": "",

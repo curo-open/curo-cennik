@@ -4,10 +4,6 @@
 			"label": "Cena bodu ",
 			"value": 0.045
 		},
-		"CBE": {
-			"label": "Cena bodu el. výkony",
-			"value": 0.035
-		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.015
@@ -36,80 +32,31 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP1'",
-			"value": null,
-			"calc": "IPP1",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP2'",
-			"value": null,
-			"calc": "IPP2",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP3'",
-			"value": null,
-			"calc": "IPP3",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP4'",
-			"value": null,
-			"calc": "IPP4",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP5'",
-			"value": null,
-			"calc": "IPP5",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP6'",
-			"value": null,
-			"calc": "IPP6",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP7'",
-			"value": null,
-			"calc": "IPP7",
-			"instruction": null
-		},
-		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
-			"calc": "vv.pocet*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63,65",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','11a','70']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
