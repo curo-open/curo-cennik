@@ -135,7 +135,7 @@ Autor: curo.sk
 │                 │                           │ ky transpe                                    │                                                              │
 │            1057 │ vv.pocet*cena             │ Artroskopické odstránenie periartikulárnych k │ vv.kod in ['5t4050']                                         │
 │                 │                           │ alcifikátov z humeroglenoidálneho kĺbu        │                                                              │
-│            1057 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4090']                                         │
+│            1003 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4090']                                         │
 │                 │                           │ v ligament z humeroglenoidálneho kĺbu         │                                                              │
 │            1003 │ vv.pocet*cena             │ Artroskopická parciálna resekcia menisku      │ vv.kod in ['5t42310']                                        │
 │            1057 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42ch']                                         │

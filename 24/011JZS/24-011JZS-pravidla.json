@@ -157,6 +157,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Prerušenie väzu retinaculum flexorum s epineurolýzou n. medianus",
+			"if": "vv.kod in ['5t71111']",
+			"value": 418,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Resekcie (exostózy) os metatarsale I",
 			"if": "vv.kod in ['kt0800']",
 			"value": 530,

@@ -60,6 +60,8 @@ Autor: curo.sk
 │             393 │ vv.pocet*cena             │ Osteotomia ossa metatarsalia II - V, 1 metata │ vv.kod in ['5t08211']                                        │
 │                 │                           │ rzálna kosť                                   │                                                              │
 │             400 │ vv.pocet*cena             │ Osteotomia článkov prstov nohy: digitus I     │ vv.kod in ['5t0822a']                                        │
+│             418 │ vv.pocet*cena             │ Prerušenie väzu retinaculum flexorum s epineu │ vv.kod in ['5t71111']                                        │
+│                 │                           │ rolýzou n. medianus                           │                                                              │
 │             530 │ vv.pocet*cena             │ Resekcie (exostózy) os metatarsale I          │ vv.kod in ['kt0800']                                         │
 │             530 │ vv.pocet*cena             │ Artrodézy metatarzofalangeálneho kĺbu palca n │ vv.kod in ['kt38aa']                                         │
 │                 │                           │ ohy                                           │                                                              │

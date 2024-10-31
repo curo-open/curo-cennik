@@ -617,7 +617,7 @@
 		{
 			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t4090']",
-			"value": 1057,
+			"value": 1003,
 			"calc": "vv.pocet*cena",
 			"instruction": {
 				"result": 1003,
