@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────┐
 │ Názov a hodnota │ Popis                 │
 ├─────────────────┼───────────────────────┤
-│ IDK = 1.3       │ IDK                   │
+│ IDK = 1.35      │ IDK                   │
 │ KPS = 1         │ KPS                   │
 │ EL_POBOCKA = 1  │ Používa el. pobočku ? │
 │ AGTC = 4.8      │ AGTC                  │
@@ -28,6 +28,8 @@ Autor: curo.sk
 │ od 10 do 14 rokov vratane │          5.49 │ IDK+cena │ p.kapitacia && p|vekMedzi(10, 15) │
 │ od 15 do 17 rokov vratane │          5.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 18) │
 │ od 18 do 18 rokov vratane │          4.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 19) │
+│ od 19 do 19 rokov vratane │          4.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 20) │
+│ od 20 do 25 rokov vratane │           3.7 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 26) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
