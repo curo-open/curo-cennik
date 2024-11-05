@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.025402
+			"value": 0
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -150,8 +150,8 @@
 		{
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.025402,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -278,6 +278,34 @@
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.98,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie Troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "N-terminálny fragment (NT-pro BNP)",
+			"if": "vv.kod in ['44418']",
+			"value": 19.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG",
+			"if": "vv.kod in ['5301']",
+			"value": 4.38,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

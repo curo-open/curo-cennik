@@ -18,19 +18,19 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.68
+			"value": 2.07
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.7
+			"value": 3.33
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.57
+			"value": 5.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 7.57
+			"value": 8.64
 		}
 	},
 	"pacient": [],
