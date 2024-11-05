@@ -197,6 +197,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 60a",
+			"if": "vv.kod in ['60a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 60b",
 			"if": "vv.kod in ['60b']",
 			"value": 17.51,

@@ -35,7 +35,7 @@ Autor: curo.sk
 │                 │                           │                                               │ ,'5315','5316']                                              │
 │            null │ vv.bodyCelkom*CB          │ Epidurálna anestézia                          │ vv.kod in ['89']                                             │
 │            null │ vv.bodyCelkom*CB          │ Blokáda periférneho nervu                     │ vv.kod in ['91']                                             │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Selektívna blokáda pod USG                    │ vv.kod in ['95b']                                            │
+│            null │ vv.bodyCelkom*CB          │ Selektívna blokáda pod USG                    │ vv.kod in ['95b']                                            │
 │            null │ vv.bodyCelkom*CB          │ Aplikácia náplasti Qutenza                    │ vv.kod in ['410']                                            │
 │            null │ vv.bodyCelkom*CB          │ Intraartikulárna injekcia                     │ vv.kod in ['255']                                            │
 │            null │ vv.bodyCelkom*CB          │ Obstreky bolestivých bodov                    │ vv.kod in ['252']                                            │

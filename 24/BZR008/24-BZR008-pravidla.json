@@ -57,7 +57,7 @@
 		{
 			"label": "vek od 19 do 26",
 			"if": "p|vekMedzi(19, 26)",
-			"value": 3.03,
+			"value": 2.89,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

@@ -12,10 +12,6 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.015
 		},
-		"CBEUNK": {
-			"label": "Cena bodu Nekapitovany(EU)",
-			"value": 0.03
-		},
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
@@ -65,27 +61,6 @@
 	],
 	"vykon": [
 		{
-			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
-			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVLAZ",
-			"instruction": null
-		},
-		{
-			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEUNK",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 1b",
 			"if": "vv.kod in ['1b']",
 			"value": null,
@@ -100,6 +75,27 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 79a",
+			"if": "vv.kod in ['79a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60",
+			"if": "vv.kod in ['60']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 64",
 			"if": "vv.kod in ['64']",
 			"value": null,
@@ -107,10 +103,31 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 70",
-			"if": "vv.kod in ['70']",
+			"label": "Výkon 4",
+			"if": "!p.kapitacia && vv.kod in ['4']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8",
+			"if": "!p.kapitacia && vv.kod in ['8']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4",
+			"if": "vv.kod in ['4']",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8",
+			"if": "vv.kod in ['8']",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -123,69 +140,76 @@
 		{
 			"label": "Preventívne zisťovanie cukru v krvi",
 			"if": "vv.kod in ['3671']",
-			"value": 0.065,
+			"value": 0.06,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie - kapitovaný",
+			"if": "vv.kod in ['252b']",
+			"value": 0,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti chrípke",
-			"if": "vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A",
-			"if": "vv.diagnoza=='Z20.5' && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde B",
-			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti hepatitíde A+B",
-			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
-			"if": "vv.diagnoza=='Z20.8' && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti pneumokokom",
-			"if": "vv.diagnoza=='Z23.8' && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti kliestovej encefalitide",
-			"if": "vv.diagnoza=='Z24.1' && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti tetanu",
-			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
+			"if": "vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie proti osýpkam",
-			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
 			"value": 0.08,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -374,14 +398,14 @@
 		},
 		{
 			"label": "Očkovanie Covid 252L",
-			"if": "vv.kod in ['252L']",
+			"if": "!p.kapitacia && vv.kod in ['252L']",
 			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie Covid 252K",
-			"if": "vv.kod in ['252K']",
+			"if": "!p.kapitacia && vv.kod in ['252K']",
 			"value": 7.5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
@@ -420,59 +444,31 @@
 			"value": 0.020995,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - Bezdomovec, Cudzinec, EU",
+			"if": "!p.kapitacia && p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVLAZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
-	"body": {
-		"70": [
-			{
-				"cond": "",
-				"value": 40
-			}
-		],
-		"160": [
-			{
-				"cond": "",
-				"value": 390
-			}
-		],
-		"159a": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159x": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159z": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"1b": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
-		"1c": [
-			{
-				"cond": "",
-				"value": 1000
-			}
-		],
-		"11a": [
-			{
-				"cond": "",
-				"value": 210
-			}
-		]
-	},
+	"body": {},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "VLD"

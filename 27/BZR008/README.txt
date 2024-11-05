@@ -55,6 +55,7 @@ Autor: curo.sk
 │          0.0349 │ vv.bodyCelkom*cena        │ Výkon 25,26,29                                │ vv.kod in ['25','26','29']                                   │
 │           30.85 │ vv.pocet*cena             │ Výkon 160                                     │ vv.kod in ['160']                                            │
 │            5.25 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60a                                     │ vv.kod in ['60a']                                            │
 │           17.51 │ vv.pocet*cena             │ Výkon 60b                                     │ vv.kod in ['60b']                                            │
 │              20 │ vv.pocet*cena             │ Výkon 62a                                     │ vv.kod in ['62a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │

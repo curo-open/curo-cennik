@@ -25,7 +25,7 @@ Autor: curo.sk
 │ vek od 1 do 2        │         12.34 │ IDK+cena │ p|vekMedzi(1, 2)   │
 │ vek od 2 do 7        │          7.92 │ IDK+cena │ p|vekMedzi(2, 7)   │
 │ vek od 7 do 19       │           4.8 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ vek od 19 do 26      │          3.03 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ vek od 19 do 26      │          2.89 │ IDK+cena │ p|vekMedzi(19, 26) │
 └──────────────────────┴───────────────┴──────────┴────────────────────┘
 
 

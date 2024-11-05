@@ -25,7 +25,7 @@ Autor: curo.sk
 │ vek od 1 do 2        │         12.34 │ IDK+cena │ p|vekMedzi(1, 2)   │
 │ vek od 2 do 7        │          7.92 │ IDK+cena │ p|vekMedzi(2, 7)   │
 │ vek od 7 do 19       │           4.8 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ vek od 19 do 26      │          3.03 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ vek od 19 do 26      │          2.89 │ IDK+cena │ p|vekMedzi(19, 26) │
 └──────────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -39,9 +39,9 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│            1.33 │ vv.pocet*cena             │ Výkon 1                                       │ vv.kod in ['1']                                              │
-│            4.95 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
-│            6.93 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
+│            1.37 │ vv.pocet*cena             │ Výkon 1                                       │ vv.kod in ['1']                                              │
+│            5.11 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
+│            7.17 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
 │            1.96 │ vv.pocet*cena             │ Výkon 250,250a,250b                           │ !p.kapitacia && vv.kod in ['250','250a','250b']              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 299a,299b                               │ !p.kapitacia && vv.kod in ['299a','299b']                    │
 │            8.63 │ vv.pocet*cena             │ Výkon 4-nekapitovaný                          │ !p.kapitacia && vv.kod in ['4']                              │

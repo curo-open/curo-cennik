@@ -57,7 +57,7 @@
 		{
 			"label": "vek od 19 do 26",
 			"if": "p|vekMedzi(19, 26)",
-			"value": 3.03,
+			"value": 2.89,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -108,21 +108,21 @@
 		{
 			"label": "Výkon 1",
 			"if": "vv.kod in ['1']",
-			"value": 1.33,
+			"value": 1.37,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4",
 			"if": "vv.kod in ['4']",
-			"value": 4.95,
+			"value": 5.11,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
 			"if": "vv.kod in ['8']",
-			"value": 6.93,
+			"value": 7.17,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

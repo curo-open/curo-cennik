@@ -86,7 +86,7 @@
 			"label": "Selektívna blokáda pod USG",
 			"if": "vv.kod in ['95b']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
