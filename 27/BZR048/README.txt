@@ -32,6 +32,7 @@ Autor: curo.sk
 │          0.0419 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['755','756','760','761','762','763','763a']       │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5702                                    │ vv.kod in ['5702']                                           │
 │            null │ vv.bodyCelkom*CB          │ Utlmenie pacienta                             │ vv.kod in ['93']                                             │
+│            null │ vv.bodyCelkom*CB          │ Procedurálna analgosedácia                    │ vv.kod in ['44S01026']                                       │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5302','5303','5304','5307','5307a' │
 │                 │                           │                                               │ ,'5312','5315','5316']                                       │

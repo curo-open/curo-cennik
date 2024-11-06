@@ -44,6 +44,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p','763m']                                    │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
+│            null │ vv.bodyCelkom*CB          │ Procedurálna analgosedácia                    │ vv.kod in ['44S01026']                                       │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Povrchová anestézia                           │ vv.kod in ['401']                                            │
 │            null │ vv.bodyCelkom*CB          │ Utlmenie pacienta                             │ vv.kod in ['93']                                             │
@@ -104,6 +105,7 @@ Autor: curo.sk
 │            3000 │ 763sn                                                                                                     │                           │
 │            3000 │ 763pp                                                                                                     │                           │
 │            3000 │ 763pn                                                                                                     │                           │
+│            2114 │ 44S01026                                                                                                  │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

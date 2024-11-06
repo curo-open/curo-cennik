@@ -125,6 +125,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Procedurálna analgosedácia",
+			"if": "vv.kod in ['44S01026']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Odber venóznej krvi",
 			"if": "vv.kod in ['250x']",
 			"value": 5,
@@ -465,6 +472,12 @@
 			{
 				"cond": "",
 				"value": 3000
+			}
+		],
+		"44S01026": [
+			{
+				"cond": "",
+				"value": 2114
 			}
 		],
 		"1b": [

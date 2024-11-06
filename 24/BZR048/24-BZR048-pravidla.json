@@ -69,6 +69,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Procedurálna analgosedácia",
+			"if": "vv.kod in ['44S01026']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 5302",
 			"if": "vv.kod in ['5302']",
 			"value": null,
