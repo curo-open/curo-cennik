@@ -37,7 +37,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Odber biol.materiálu                          │ vv.kod in ['299a']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 1B06025, 1B05011,1B05012,1B05013,1B0501 │ vv.kod in ['1B06025','1B05011','1B05012','1B05013','1B05014' │
 │                 │                           │ 4                                             │ ]                                                            │
-│            null │ vv.bodyCelkom*CB          │ Výkon 1A02009,1A02012,1A03007                 │ vv.kod in ['1A02007','1A02009','1A02012','1A3007']           │
+│          0.0323 │ vv.bodyCelkom*cena        │ Výkon 1A02009,1A02012,1A03007                 │ vv.kod in ['1A02007','1A02009','1A02012','1A3007']           │
 │            5.82 │ vv.pocet*cena             │ Výkon H0006                                   │ vv.kod in ['H0006']                                          │
 │            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │

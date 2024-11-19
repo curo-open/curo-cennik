@@ -1,6 +1,6 @@
-                                                                      ===================
-                                                                      Cenník algeziologia
-                                                                      ===================
+                                                                        ================
+                                                                        Cenník chirurgia
+                                                                        ================
 
 Autor: curo.sk
 
@@ -34,19 +34,41 @@ Autor: curo.sk
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│            null │ vv.bodyCelkom*CB          │ Komunikácia v svetovom jazyku                 │ vv.kod in ['79a']                                            │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5302','5303','5304','5307','5307a' │
 │                 │                           │                                               │ ,'5312','5315','5316']                                       │
-│            null │ vv.bodyCelkom*CB          │ Epidurálna anestézia                          │ vv.kod in ['89']                                             │
-│            null │ vv.bodyCelkom*CB          │ Blokáda periférneho nervu                     │ vv.kod in ['91']                                             │
-│            null │ vv.bodyCelkom*CB          │ Selektívna blokáda pod USG                    │ vv.kod in ['95b']                                            │
-│            null │ vv.bodyCelkom*CB          │ Aplikácia náplasti Qutenza                    │ vv.kod in ['410']                                            │
-│            null │ vv.bodyCelkom*CB          │ Intraartikulárna injekcia                     │ vv.kod in ['255']                                            │
-│            null │ vv.bodyCelkom*CB          │ Obstreky bolestivých bodov                    │ vv.kod in ['252']                                            │
-│            null │ vv.bodyCelkom*CB          │ Infúzia                                       │ vv.kod in ['272']                                            │
-│            null │ vv.bodyCelkom*CB          │ TENS                                          │ vv.kod in ['562']                                            │
-│            null │ vv.bodyCelkom*CB          │ Bankovanie                                    │ vv.kod in ['568']                                            │
+│            null │ vv.bodyCelkom*CB          │ Odstránenie sutury alebo stehov z veľkej rany │ vv.kod in ['2007']                                           │
+│            null │ vv.bodyCelkom*CB          │ Cirkulárny obväz hlavy, drieku                │ vv.kod in ['204']                                            │
+│            null │ vv.bodyCelkom*CB          │ Ošetrenie malej rany hojacej sa per secundam  │ vv.kod in ['2018']                                           │
+│            null │ vv.bodyCelkom*CB          │ Ošetrenie veľkej rany hojacej sa per secundam │ vv.kod in ['2018a']                                          │
+│            null │ vv.bodyCelkom*CB          │ Príplatok za nekrektómie na ruke a nohe       │ vv.kod in ['2019']                                           │
+│            null │ vv.bodyCelkom*CB          │ Príplatok za nekrektómie na trupe             │ vv.kod in ['2019c']                                          │
+│            null │ vv.bodyCelkom*CB          │ Zavedenie jedného alebo viacerých drénov do r │ vv.kod in ['2030']                                           │
+│                 │                           │ any                                           │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Zavedenie centrálneho cievneho katétra vrátan │ vv.kod in ['260']                                            │
+│                 │                           │ e fixácie katétra a preväzu                   │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Zavedenie katétra do periférnej cievy         │ vv.kod in ['260a']                                           │
+│            null │ vv.bodyCelkom*CB          │ Zhodnotenie výsledkov                         │ vv.kod in ['15b']                                            │
+│            null │ vv.bodyCelkom*CB          │ Punkcia cysty, ganglia, serómu, hygrómu, hema │ vv.kod in ['303a']                                           │
+│                 │                           │ tómu alebo abscesu                            │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Otvorenie abscesu ležiaceho povrchovo pod kož │ vv.kod in ['2141']                                           │
+│                 │                           │ ou, sliznicou alebo excízia furunkla          │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Otvorenie hlboko ležiaceho abscesu            │ vv.kod in ['2145']                                           │
+│            null │ vv.bodyCelkom*CB          │ Zavedenie jedného alebo viacerých drénov do r │ vv.kod in ['2030']                                           │
+│                 │                           │ any                                           │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Intrakutánna, subkutánna, submukózna, subkonj │ vv.kod in ['252']                                            │
+│                 │                           │ uktiválna alebo intramuskulárna injekcia.     │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Injekcia intravenózna                         │ vv.kod in ['253']                                            │
+│            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia v trvaní od 10 do 30 min │ vv.kod in ['271']                                            │
+│                 │                           │ út                                            │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia v trvaní viac ako 30 min │ vv.kod in ['272']                                            │
+│                 │                           │ út                                            │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Odber krvi                                    │ vv.kod in ['250b']                                           │
+│            null │ vv.bodyCelkom*CB          │ Stanovenie sedimentačnej rýchlosti krviniek   │ vv.kod in ['3592']                                           │
+│            null │ vv.bodyCelkom*CB          │ Infiltračná anestézia                         │ vv.kod in ['407']                                            │
+│            null │ vv.bodyCelkom*CB          │ Odber a odoslanie biologického materiálu      │ vv.kod in ['299d']                                           │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │

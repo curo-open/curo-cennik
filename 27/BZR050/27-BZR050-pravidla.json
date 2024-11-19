@@ -87,8 +87,8 @@
 		{
 			"label": "Výkon 1A02009,1A02012,1A03007",
 			"if": "vv.kod in ['1A02007','1A02009','1A02012','1A3007']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.0323,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

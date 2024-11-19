@@ -1,0 +1,642 @@
+{
+	"params": {
+		"IDK": {
+			"label": "IDK",
+			"value": 1.3
+		},
+		"KPS": {
+			"label": "KPS",
+			"value": 1
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.0318
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009574
+		},
+		"CBEUNK": {
+			"label": "Cena bodu Nekapitovany(EU)",
+			"value": 0.035
+		},
+		"CBSVALZEU": {
+			"label": "Cena bodu SVaLZ Nekapitovany(EU)",
+			"value": 0.01
+		},
+		"FOB": {
+			"label": "Pripočítaľná položka FOB k výkonom 159a,159z,159x",
+			"value": 2
+		},
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
+		},
+		"PP50": {
+			"label": "PP50",
+			"value": 10
+		},
+		"EDU": {
+			"label": "EDU k výkonom H0003, H0004",
+			"value": 2
+		}
+	},
+	"pacient": [
+		{
+			"label": "od 18 do 19 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(18, 20)",
+			"value": 4.33,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 20 do 28 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(20, 29)",
+			"value": 3.44,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 29 do 39 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(29, 40)",
+			"value": 3.23,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 40 do 44 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(40, 45)",
+			"value": 3.25,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 45 do 49 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(45, 50)",
+			"value": 3.28,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 50 do 54 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(50, 55)",
+			"value": 3.78,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 55 do 59 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(55, 60)",
+			"value": 4.33,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 60 do 64 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(60, 65)",
+			"value": 4.83,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 65 do 69 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(65, 70)",
+			"value": 5.32,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 70 do 74 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(70, 75)",
+			"value": 6.05,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 75 do 79 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(75, 80)",
+			"value": 6.78,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 80 do 84 rokov vrátane",
+			"if": "p.kapitacia && p|vekMedzi(80, 85)",
+			"value": 7.62,
+			"calc": "IDK+cena",
+			"instruction": null
+		},
+		{
+			"label": "od 85+ ",
+			"if": "p.kapitacia && p|vekMedzi(85)",
+			"value": 7.96,
+			"calc": "IDK+cena",
+			"instruction": null
+		}
+	],
+	"vykon": [
+		{
+			"label": "Nekapitovaný - neodkladná starostlivosť",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 10",
+			"if": "vv.kod in ['10']",
+			"value": 0.0318,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1",
+			"if": "vv.kod in ['1']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 4",
+			"if": "!p.kapitacia && vv.kod in ['4']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8",
+			"if": "!p.kapitacia && vv.kod in ['8']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Komunikácia v cudziom jazyku",
+			"if": "vv.kod in ['79a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Vstupná prehliadka (výkon 60)",
+			"if": "vv.kod in ['60']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Predoperačné vyšetrenie (výkon 60b)",
+			"if": "vv.kod in ['60b']",
+			"value": 17.33,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cielené vyšetrenie pacienta s respiračným syndrómom pri pandémii COVID-19",
+			"if": "vv.kod in ['62a']",
+			"value": 20,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 64",
+			"if": "vv.kod in ['64']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne prehliadky",
+			"if": "vv.kod in ['160']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5301",
+			"if": "vv.kod in ['5301']",
+			"value": 0.0073,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.98,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "EKG pri preventívnej prehliadke (15P)",
+			"if": "vv.kod in ['15P']",
+			"value": 0.039833,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "EKG pri preventívnej prehliadke",
+			"if": "vv.kod in ['5702P']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "EKG ",
+			"if": "vv.kod in ['5702']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Celodenné snímanie tlaku",
+			"if": "vv.kod in ['5715']",
+			"value": 0.021999,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Celodenné snímanie tlaku - vyhodnotenie",
+			"if": "vv.kod in ['5716']",
+			"value": 0.016597,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie - 252a,252b,252c",
+			"if": "!p.kapitacia && vv.kod in ['252a','252b','252c']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Návštevná služba",
+			"if": "vv.kod in ['25','26']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie hodnoty NT-proBNP",
+			"if": "vv.kod in ['44418']",
+			"value": 19.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vyšetrenie C – reaktívneho proteínu",
+			"if": "vv.kod in ['4571a','4571A']",
+			"value": 5.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Akútne EKG",
+			"if": "vv.kod in ['5702c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 163",
+			"if": "vv.kod in ['163']",
+			"value": 6.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "TOKS pozitívny",
+			"if": "vv.kod in ['159a']",
+			"value": 12,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "TOKS negatívny",
+			"if": "vv.kod in ['159z']",
+			"value": 12,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "TOKS znehodnotený",
+			"if": "vv.kod in ['159x']",
+			"value": 3.02,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Inicialne I10/E78 (H0003)",
+			"if": "vv.kod in ['H0003']",
+			"value": 15,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Kontrolne I10/E78 (H0004)",
+			"if": "vv.kod in ['H0004']",
+			"value": 15,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Akutne I10",
+			"if": "vv.kod in ['H0005']",
+			"value": 6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stratifikacia CMP",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.65,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Kvantitatívne vyšetrenie INR POCT",
+			"if": "vv.kod in ['H0007']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie ABI oscilometricky",
+			"if": "vv.kod in ['H0008']",
+			"value": 6.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Delegovaný odber krvi",
+			"if": "vv.kod in ['250D']",
+			"value": 2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie Covid 252L",
+			"if": "vv.kod in ['252L']",
+			"value": 10,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie Covid 252K",
+			"if": "vv.kod in ['252K']",
+			"value": 7.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='PP50'",
+			"value": null,
+			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='EDU'",
+			"value": null,
+			"calc": "EDU",
+			"instruction": null
+		},
+		{
+			"label": "Špecializovaná zdravotná starostlivosť pre pojicajtov, hasičov a záchranárov",
+			"if": "vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR','5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R','FotoR','PACSR','5702R']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZEU",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='FOB'",
+			"value": null,
+			"calc": "FOB",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZEU",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && p.typ in ['BE','CU'] && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEUNK",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "p.kapitacia && vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "p.kapitacia && !vv.jeSVaZL",
+			"value": null,
+			"calc": "vv.bodyCelkom*0",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"10": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"25": [
+			{
+				"cond": "",
+				"value": 285
+			},
+			{
+				"cond": "",
+				"value": 285
+			}
+		],
+		"26": [
+			{
+				"cond": "",
+				"value": 500
+			},
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 620
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"160": [
+			{
+				"cond": "",
+				"value": 390
+			}
+		],
+		"5301": [
+			{
+				"cond": "",
+				"value": 600
+			}
+		],
+		"5702": [
+			{
+				"cond": "",
+				"value": 550
+			}
+		],
+		"5715": [
+			{
+				"cond": "",
+				"value": 750
+			}
+		],
+		"5716": [
+			{
+				"cond": "",
+				"value": 240
+			}
+		],
+		"5702P": [
+			{
+				"cond": "",
+				"value": 550
+			}
+		],
+		"252a": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"252b": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"252c": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"252s": [
+			{
+				"cond": "",
+				"value": 70
+			}
+		],
+		"5702c": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "VLD"
+}

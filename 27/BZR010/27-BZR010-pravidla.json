@@ -71,6 +71,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Komunikácia v svetovom jazyku",
+			"if": "vv.kod in ['79a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a']",
 			"value": 0.015,
@@ -92,64 +99,155 @@
 			"instruction": null
 		},
 		{
-			"label": "Epidurálna anestézia",
-			"if": "vv.kod in ['89']",
+			"label": "Odstránenie sutury alebo stehov z veľkej rany",
+			"if": "vv.kod in ['2007']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Blokáda periférneho nervu",
-			"if": "vv.kod in ['91']",
+			"label": "Cirkulárny obväz hlavy, drieku",
+			"if": "vv.kod in ['204']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Selektívna blokáda pod USG",
-			"if": "vv.kod in ['95b']",
+			"label": "Ošetrenie malej rany hojacej sa per secundam",
+			"if": "vv.kod in ['2018']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Aplikácia náplasti Qutenza",
-			"if": "vv.kod in ['410']",
+			"label": "Ošetrenie veľkej rany hojacej sa per secundam",
+			"if": "vv.kod in ['2018a']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Intraartikulárna injekcia",
-			"if": "vv.kod in ['255']",
+			"label": "Príplatok za nekrektómie na ruke a nohe",
+			"if": "vv.kod in ['2019']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Obstreky bolestivých bodov",
+			"label": "Príplatok za nekrektómie na trupe",
+			"if": "vv.kod in ['2019c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie jedného alebo viacerých drénov do rany",
+			"if": "vv.kod in ['2030']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie centrálneho cievneho katétra vrátane fixácie katétra a preväzu",
+			"if": "vv.kod in ['260']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie katétra do periférnej cievy",
+			"if": "vv.kod in ['260a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zhodnotenie výsledkov",
+			"if": "vv.kod in ['15b']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Punkcia cysty, ganglia, serómu, hygrómu, hematómu alebo abscesu",
+			"if": "vv.kod in ['303a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Otvorenie abscesu ležiaceho povrchovo pod kožou, sliznicou alebo excízia furunkla",
+			"if": "vv.kod in ['2141']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Otvorenie hlboko ležiaceho abscesu",
+			"if": "vv.kod in ['2145']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie jedného alebo viacerých drénov do rany",
+			"if": "vv.kod in ['2030']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intrakutánna, subkutánna, submukózna, subkonjuktiválna alebo intramuskulárna injekcia.",
 			"if": "vv.kod in ['252']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Infúzia",
+			"label": "Injekcia intravenózna",
+			"if": "vv.kod in ['253']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia v trvaní od 10 do 30 minút",
+			"if": "vv.kod in ['271']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Intravenózna infúzia v trvaní viac ako 30 minút",
 			"if": "vv.kod in ['272']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "TENS ",
-			"if": "vv.kod in ['562']",
+			"label": "Odber krvi",
+			"if": "vv.kod in ['250b']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "Bankovanie",
-			"if": "vv.kod in ['568']",
+			"label": "Stanovenie sedimentačnej rýchlosti krviniek",
+			"if": "vv.kod in ['3592']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Infiltračná anestézia",
+			"if": "vv.kod in ['407']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber a odoslanie biologického materiálu",
+			"if": "vv.kod in ['299d']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -333,5 +431,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "algeziologia"
+	"title": "chirurgia"
 }
