@@ -108,10 +108,6 @@
 			"label": "Výkon 8534",
 			"value": 890
 		},
-		"_8535": {
-			"label": "Výkon 8535",
-			"value": 890
-		},
 		"_8536": {
 			"label": "Výkon 8536",
 			"value": 900
@@ -389,13 +385,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8535",
-			"if": "vv.kod in ['8535'] || vv.k in ['8535'] || vv.k25 in ['8535']",
-			"value": null,
-			"calc": "vv.pocet*_8535",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 8536",
 			"if": "vv.kod in ['8536'] || vv.k in ['8536'] || vv.k25 in ['8536']",
 			"value": null,
@@ -623,6 +612,90 @@
 			"label": "Totálna fasciektómia 3 a viac prstov",
 			"if": "vv.kod in ['5t7234']",
 			"value": 460,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách, ostatné",
+			"if": "vv.kod in ['5T8921X']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti hlavy a krku",
+			"if": "vv.kod in ['5T89210']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti ramena a axily",
+			"if": "vv.kod in ['5T89211']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5T89212']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti predlaktia",
+			"if": "vv.kod in ['5T89213']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5T89214']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti brušnej steny",
+			"if": "vv.kod in ['5T89215']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v inguinálnej, genitálnej a gluteálnej oblasti",
+			"if": "vv.kod in ['5T89216']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti stehna a kolena",
+			"if": "vv.kod in ['5T89217']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti predkolenia",
+			"if": "vv.kod in ['5T89218']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti nohy",
+			"if": "vv.kod in ['5T89219']",
+			"value": 85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia gangliónu na svaloch, šľachách, fasciách a burzách v oblasti nohy",
+			"if": "vv.kod in ['5T8921A']",
+			"value": 85,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

@@ -23,31 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/24/BZR020CL/24-BZR020CL-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24/BZR020CL/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25/BZR020CL/25-BZR020CL-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25/BZR020CL/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27/BZR010/27-BZR010-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27/BZR010/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27/BZR020CL/27-BZR020CL-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27/BZR020CL/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/77/BZR010/77-BZR010-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/77/BZR010/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/77/BZR020CL/77-BZR020CL-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/77/BZR020CL/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soc/BZR010/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soc/BZR010/soc-BZR010-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soc/BZR020CL/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soc/BZR020CL/soc-BZR020CL-pravidla.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upsvar/BZR020CL/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upsvar/BZR020CL/upsvar-BZR020CL-pravidla.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR046/24-BZR046-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR046/24-BZR046-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR046/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR046/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR046/27-BZR046-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR046/27-BZR046-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR046/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR046/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR050/27-BZR050-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR050/27-BZR050-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR050/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR050/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -813,7 +789,7 @@
       <workItem from="1730375524517" duration="5011000" />
       <workItem from="1731312661144" duration="599000" />
       <workItem from="1731664145135" duration="596000" />
-      <workItem from="1731916863691" duration="565000" />
+      <workItem from="1731916863691" duration="2095000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1158,7 +1134,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="481" />
+    <option name="localTasksCounter" value="482" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

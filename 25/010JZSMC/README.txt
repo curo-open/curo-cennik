@@ -160,7 +160,7 @@ Autor: curo.sk
 │             101 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v130g']                                         │
 │                 │                           │ na koži a podkoží bez primárneho uzavretia ra │                                                              │
 │                 │                           │ ny v oblas                                    │                                                              │
-│             101 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1430']                                         │
+│             104 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1430']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histo                                    │                                                              │
 │             104 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1434']                                         │
@@ -208,6 +208,32 @@ Autor: curo.sk
 │             749 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['5l1951']                                         │
 │                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
 │                 │                           │ u                                             │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T8921X']                                        │
+│                 │                           │ iách a burzách, ostatné                       │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89210']                                        │
+│                 │                           │ iách a burzách v oblasti hlavy a krku         │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89211']                                        │
+│                 │                           │ iách a burzách v oblasti ramena a axily       │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89212']                                        │
+│                 │                           │ iách a burzách v oblasti ramena a lakťa       │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89213']                                        │
+│                 │                           │ iách a burzách v oblasti predlaktia           │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89214']                                        │
+│                 │                           │ iách a burzách v oblasti hrudnej steny a chrb │                                                              │
+│                 │                           │ ta                                            │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89215']                                        │
+│                 │                           │ iách a burzách v oblasti brušnej steny        │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89216']                                        │
+│                 │                           │ iách a burzách v inguinálnej, genitálnej a gl │                                                              │
+│                 │                           │ uteálnej oblasti                              │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89217']                                        │
+│                 │                           │ iách a burzách v oblasti stehna a kolena      │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89218']                                        │
+│                 │                           │ iách a burzách v oblasti predkolenia          │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89219']                                        │
+│                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T8921A']                                        │
+│                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

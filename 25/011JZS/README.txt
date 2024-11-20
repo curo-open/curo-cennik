@@ -35,7 +35,6 @@ Autor: curo.sk
 │ _8532 = 368     │ Výkon 8532  │
 │ _8533 = 900     │ Výkon 8533  │
 │ _8534 = 890     │ Výkon 8534  │
-│ _8535 = 890     │ Výkon 8535  │
 │ _8536 = 900     │ Výkon 8536  │
 │ _8537 = 340     │ Výkon 8537  │
 │ _8542 = 481     │ Výkon 8542  │
@@ -97,7 +96,6 @@ Autor: curo.sk
 │            null │ vv.pocet*_8532            │ Výkon 8532                                    │ vv.kod in ['8532'] || vv.k in ['8532'] || vv.k25 in ['8532'] │
 │            null │ vv.pocet*_8533            │ Výkon 8533                                    │ vv.kod in ['8533'] || vv.k in ['8533'] || vv.k25 in ['8533'] │
 │            null │ vv.pocet*_8534            │ Výkon 8534                                    │ vv.kod in ['8534'] || vv.k in ['8534'] || vv.k25 in ['8534'] │
-│            null │ vv.pocet*_8535            │ Výkon 8535                                    │ vv.kod in ['8535'] || vv.k in ['8535'] || vv.k25 in ['8535'] │
 │            null │ vv.pocet*_8536            │ Výkon 8536                                    │ vv.kod in ['8536'] || vv.k in ['8536'] || vv.k25 in ['8536'] │
 │            null │ vv.pocet*_8537            │ Výkon 8537                                    │ vv.kod in ['8537'] || vv.k in ['8537'] || vv.k25 in ['8537'] │
 │            null │ vv.pocet*_8542            │ Výkon 8542                                    │ vv.kod in ['8542'] || vv.k in ['8542'] || vv.k25 in ['8542'] │
@@ -141,6 +139,32 @@ Autor: curo.sk
 │                 │                           │ stov                                          │                                                              │
 │             460 │ vv.pocet*cena             │ Totálna fasciektómia izolovaná na dlani       │ vv.kod in ['5t7230']                                         │
 │             460 │ vv.pocet*cena             │ Totálna fasciektómia 3 a viac prstov          │ vv.kod in ['5t7234']                                         │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T8921X']                                        │
+│                 │                           │ iách a burzách, ostatné                       │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89210']                                        │
+│                 │                           │ iách a burzách v oblasti hlavy a krku         │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89211']                                        │
+│                 │                           │ iách a burzách v oblasti ramena a axily       │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89212']                                        │
+│                 │                           │ iách a burzách v oblasti ramena a lakťa       │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89213']                                        │
+│                 │                           │ iách a burzách v oblasti predlaktia           │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89214']                                        │
+│                 │                           │ iách a burzách v oblasti hrudnej steny a chrb │                                                              │
+│                 │                           │ ta                                            │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89215']                                        │
+│                 │                           │ iách a burzách v oblasti brušnej steny        │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89216']                                        │
+│                 │                           │ iách a burzách v inguinálnej, genitálnej a gl │                                                              │
+│                 │                           │ uteálnej oblasti                              │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89217']                                        │
+│                 │                           │ iách a burzách v oblasti stehna a kolena      │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89218']                                        │
+│                 │                           │ iách a burzách v oblasti predkolenia          │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89219']                                        │
+│                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
+│              85 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T8921A']                                        │
+│                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
