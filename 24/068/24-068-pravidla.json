@@ -6,24 +6,48 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.025903
-		},
-		"CBV": {
-			"label": "Cena bodu vv=60",
-			"value": 0.026432
+			"value": 0.039399
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008195
+			"value": 0.009724
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63' ,'65','66','67']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBV",
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['200','2100','2101','2106']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['70','1b','11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -85,6 +109,12 @@
 		}
 	],
 	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
 		"60": [
 			{
 				"cond": "",

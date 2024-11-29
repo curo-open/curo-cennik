@@ -82,13 +82,6 @@
 			"instruction": null
 		},
 		{
-			"label": "špec. elektronické výkony",
-			"if": "vv.kod in ['70','1b','1c']",
-			"value": 0.0252,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60a']",
 			"value": 0.0318,

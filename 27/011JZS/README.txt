@@ -59,8 +59,6 @@ Autor: curo.sk
 │ _8578b = 1215   │ Výkon 8578b │
 │ _8580 = 330     │ Výkon 8580  │
 │ _8582 = 283     │ Výkon 8582  │
-│ _8583 = 336     │ Výkon 8583  │
-│ _8584 = 345     │ Výkon 8584  │
 │ _9219 = 587     │ Výkon 9219  │
 │ _9221 = 337     │ Výkon 9221  │
 │ _9222 = 337     │ Výkon 9222  │
@@ -146,8 +144,6 @@ Autor: curo.sk
 │                 │                           │                                               │ b']                                                          │
 │            null │ vv.pocet*_8580            │ Výkon 8580                                    │ vv.kod in ['8580'] || vv.k in ['8580'] || vv.k27 in ['8580'] │
 │            null │ vv.pocet*_8582            │ Výkon 8582                                    │ vv.kod in ['8582'] || vv.k in ['8582'] || vv.k27 in ['8582'] │
-│            null │ vv.pocet*_8583            │ Výkon 8583                                    │ vv.kod in ['8583'] || vv.k in ['8583'] || vv.k27 in ['8583'] │
-│            null │ vv.pocet*_8584            │ Výkon 8584                                    │ vv.kod in ['8584'] || vv.k in ['8584'] || vv.k27 in ['8584'] │
 │            null │ vv.pocet*_9219            │ Výkon 9219                                    │ vv.kod in ['9219'] || vv.k in ['9219'] || vv.k27 in ['9219'] │
 │            null │ vv.pocet*_9221            │ Výkon 9221                                    │ vv.kod in ['9221'] || vv.k in ['9221'] || vv.k27 in ['9221'] │
 │            null │ vv.pocet*_9222            │ Výkon 9222                                    │ vv.kod in ['9222'] || vv.k in ['9222'] || vv.k27 in ['9222'] │

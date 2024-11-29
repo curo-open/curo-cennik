@@ -204,14 +204,6 @@
 			"label": "Výkon 8582",
 			"value": 283
 		},
-		"_8583": {
-			"label": "Výkon 8583",
-			"value": 336
-		},
-		"_8584": {
-			"label": "Výkon 8584",
-			"value": 345
-		},
 		"_9219": {
 			"label": "Výkon 9219",
 			"value": 587
@@ -610,20 +602,6 @@
 			"if": "vv.kod in ['8582'] || vv.k in ['8582'] || vv.k27 in ['8582']",
 			"value": null,
 			"calc": "vv.pocet*_8582",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 8583",
-			"if": "vv.kod in ['8583'] || vv.k in ['8583'] || vv.k27 in ['8583']",
-			"value": null,
-			"calc": "vv.pocet*_8583",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 8584",
-			"if": "vv.kod in ['8584'] || vv.k in ['8584'] || vv.k27 in ['8584']",
-			"value": null,
-			"calc": "vv.pocet*_8584",
 			"instruction": null
 		},
 		{

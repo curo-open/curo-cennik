@@ -31,6 +31,7 @@ Autor: curo.sk
 │          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a']                                       │
 │              20 │ vv.pocet*cena             │ Covid 62a                                     │ vv.kod in ['62a']                                            │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

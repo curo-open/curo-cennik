@@ -5,19 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────────┬──────────────────────────────┐
-│ Názov a hodnota       │ Popis                        │
-├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.26           │ IPP1                         │
-│ IPP2 = 1.89           │ IPP2                         │
-│ IPP3 = 3.19           │ IPP3                         │
-│ LIMIT = 75900         │ Limit                        │
-│ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.0252           │ Cena bodu                    │
-│ CBP = 0.041           │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
-└───────────────────────┴──────────────────────────────┘
+┌───────────────────────┬───────────────────────┐
+│ Názov a hodnota       │ Popis                 │
+├───────────────────────┼───────────────────────┤
+│ IPP1 = 1.26           │ IPP1                  │
+│ IPP2 = 1.89           │ IPP2                  │
+│ IPP3 = 3.19           │ IPP3                  │
+│ LIMIT = 75900         │ Limit                 │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ? │
+│ CB = 0.0318           │ Cena bodu             │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
+└───────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -33,11 +32,15 @@ Autor: curo.sk
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63' ,'65','66','67']                   │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['200','2100','2101','2106']                       │
+│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['70','1b','11a']                                  │
+│           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
