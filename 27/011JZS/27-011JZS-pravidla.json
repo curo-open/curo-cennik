@@ -1,704 +1,388 @@
 {
-	"params": {
-		"_8506": {
-			"label": "Výkon 8506",
-			"value": 449
-		},
-		"_8507": {
-			"label": "Výkon 8507",
-			"value": 308
-		},
-		"_8508": {
-			"label": "Výkon 8508",
-			"value": 475
-		},
-		"_8509": {
-			"label": "Výkon 8509",
-			"value": 248
-		},
-		"_8510": {
-			"label": "Výkon 8510",
-			"value": 379
-		},
-		"_8511": {
-			"label": "Výkon 8511",
-			"value": 319
-		},
-		"_8512": {
-			"label": "Výkon 8512",
-			"value": 397
-		},
-		"_8513": {
-			"label": "Výkon 8513",
-			"value": 300
-		},
-		"_8514": {
-			"label": "Výkon 8514",
-			"value": 300
-		},
-		"_8516": {
-			"label": "Výkon 8516",
-			"value": 330
-		},
-		"_8517": {
-			"label": "Výkon 8517",
-			"value": 330
-		},
-		"_8518": {
-			"label": "Výkon 8518",
-			"value": 455
-		},
-		"_8519": {
-			"label": "Výkon 8519",
-			"value": 455
-		},
-		"_8520": {
-			"label": "Výkon 8520",
-			"value": 438
-		},
-		"_8521": {
-			"label": "Výkon 8521",
-			"value": 438
-		},
-		"_8522": {
-			"label": "Výkon 8522",
-			"value": 455
-		},
-		"_8523": {
-			"label": "Výkon 8523",
-			"value": 438
-		},
-		"_8524": {
-			"label": "Výkon 8524",
-			"value": 414
-		},
-		"_8525": {
-			"label": "Výkon 8525",
-			"value": 386
-		},
-		"_8525k": {
-			"label": "Výkon 8525k",
-			"value": 482
-		},
-		"_8526": {
-			"label": "Výkon 8526",
-			"value": 315
-		},
-		"_8527": {
-			"label": "Výkon 8527",
-			"value": 386
-		},
-		"_8528": {
-			"label": "Výkon 8528",
-			"value": 379
-		},
-		"_8529": {
-			"label": "Výkon 8529",
-			"value": 335
-		},
-		"_8530": {
-			"label": "Výkon 8530",
-			"value": 322
-		},
-		"_8531": {
-			"label": "Výkon 8531",
-			"value": 335
-		},
-		"_8532": {
-			"label": "Výkon 8532",
-			"value": 267
-		},
-		"_8533a": {
-			"label": "Výkon 8533a",
-			"value": 889
-		},
-		"_8533b": {
-			"label": "Výkon 8533b",
-			"value": 1238
-		},
-		"_8534a": {
-			"label": "Výkon 8534a",
-			"value": 906
-		},
-		"_8534b": {
-			"label": "Výkon 8534b",
-			"value": 1238
-		},
-		"_8535a": {
-			"label": "Výkon 8535a",
-			"value": 906
-		},
-		"_8535b": {
-			"label": "Výkon 8535b",
-			"value": 1238
-		},
-		"_8536a": {
-			"label": "Výkon 8536a",
-			"value": 855
-		},
-		"_8536b": {
-			"label": "Výkon 8536b",
-			"value": 1312
-		},
-		"_8537": {
-			"label": "Výkon 8537",
-			"value": 293
-		},
-		"_8542": {
-			"label": "Výkon 8542",
-			"value": 444
-		},
-		"_8543": {
-			"label": "Výkon 8543",
-			"value": 337
-		},
-		"_8547": {
-			"label": "Výkon 8547",
-			"value": 100
-		},
-		"_8548": {
-			"label": "Výkon 8548",
-			"value": 315
-		},
-		"_8549": {
-			"label": "Výkon 8549",
-			"value": 430
-		},
-		"_8550": {
-			"label": "Výkon 8550",
-			"value": 330
-		},
-		"_8551": {
-			"label": "Výkon 8551",
-			"value": 296
-		},
-		"_8552": {
-			"label": "Výkon 8552",
-			"value": 324
-		},
-		"_8553": {
-			"label": "Výkon 8553",
-			"value": 324
-		},
-		"_8570": {
-			"label": "Výkon 8570",
-			"value": 256
-		},
-		"_8573": {
-			"label": "Výkon 8573",
-			"value": 61
-		},
-		"_8578a": {
-			"label": "Výkon 8578a",
-			"value": 906
-		},
-		"_8578b": {
-			"label": "Výkon 8578b",
-			"value": 1215
-		},
-		"_8580": {
-			"label": "Výkon 8580",
-			"value": 330
-		},
-		"_8582": {
-			"label": "Výkon 8582",
-			"value": 283
-		},
-		"_8583": {
-			"label": "Výkon 8583",
-			"value": 336
-		},
-		"_8584": {
-			"label": "Výkon 8584",
-			"value": 345
-		},
-		"_9219": {
-			"label": "Výkon 9219",
-			"value": 587
-		},
-		"_9221": {
-			"label": "Výkon 9221",
-			"value": 337
-		},
-		"_9222": {
-			"label": "Výkon 9222",
-			"value": 337
-		},
-		"_9223": {
-			"label": "Výkon 9223",
-			"value": 351
-		},
-		"_9224": {
-			"label": "Výkon 9224",
-			"value": 337
-		},
-		"_9225": {
-			"label": "Výkon 9225",
-			"value": 337
-		},
-		"_9300": {
-			"label": "Výkon 9300",
-			"value": 144
-		},
-		"_9400": {
-			"label": "Výkon 9400",
-			"value": 123
-		},
-		"_9522": {
-			"label": "Výkon 9522",
-			"value": 519
-		},
-		"_7006": {
-			"label": "Výkon 7006",
-			"value": 267
-		}
-	},
+	"params": {},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 8506",
-			"if": "vv.kod in ['8506'] || vv.k in ['8506'] || vv.k27 in ['8506']",
-			"value": null,
-			"calc": "vv.pocet*_8506",
+			"label": "Crossektómia a parciálny stripping v. saphena magna",
+			"if": "vv.kod in ['5l1920']",
+			"value": 494,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8507",
-			"if": "vv.kod in ['8507'] || vv.k in ['8507'] || vv.k27 in ['8507']",
-			"value": null,
-			"calc": "vv.pocet*_8507",
+			"label": "Crossektómia a parciálny stripping v. saphena parva",
+			"if": "vv.kod in ['5l1921']",
+			"value": 494,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8508",
-			"if": "vv.kod in ['8508'] || vv.k in ['8508'] || vv.k27 in ['8508']",
-			"value": null,
-			"calc": "vv.pocet*_8508",
+			"label": "Crossektómia a parciálny stripping v. saphena magna a parva",
+			"if": "vv.kod in ['5l1922']",
+			"value": 494,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8509",
-			"if": "vv.kod in ['8509'] || vv.k in ['8509'] || vv.k27 in ['8509']",
-			"value": null,
-			"calc": "vv.pocet*_8509",
+			"label": "Odstránenie varixov v. saphena magna bez crossektómie",
+			"if": "vv.kod in ['5l1940']",
+			"value": 494,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8510",
-			"if": "vv.kod in ['8510'] || vv.k in ['8510'] || vv.k27 in ['8510']",
-			"value": null,
-			"calc": "vv.pocet*_8510",
+			"label": "Odstránenie varixov v. saphena parva bez crossektómie",
+			"if": "vv.kod in ['5l1941']",
+			"value": 494,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8511",
-			"if": "vv.kod in ['8511'] || vv.k in ['8511'] || vv.k27 in ['8511']",
-			"value": null,
-			"calc": "vv.pocet*_8511",
+			"label": "Odstránenie varixov v. saphena magna a parva bez crossektómie",
+			"if": "vv.kod in ['5l1942']",
+			"value": 494,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8512",
-			"if": "vv.kod in ['8512'] || vv.k in ['8512'] || vv.k27 in ['8512']",
-			"value": null,
-			"calc": "vv.pocet*_8512",
+			"label": "Odstránenie varixov nekmeňovej varikozity bez crossektómie",
+			"if": "vv.kod in ['5l1943']",
+			"value": 494,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8513",
-			"if": "vv.kod in ['8513'] || vv.k in ['8513'] || vv.k27 in ['8513']",
-			"value": null,
-			"calc": "vv.pocet*_8513",
+			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
+			"if": "vv.kod in ['5l1951']",
+			"value": 902,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8514",
-			"if": "vv.kod in ['8514'] || vv.k in ['8514'] || vv.k27 in ['8514']",
-			"value": null,
-			"calc": "vv.pocet*_8514",
+			"label": "Crossektómia a parciálny stripping v. saphena magna",
+			"if": "vv.kod in ['Kl1920']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8516",
-			"if": "vv.kod in ['8516'] || vv.k in ['8516'] || vv.k27 in ['8516']",
-			"value": null,
-			"calc": "vv.pocet*_8516",
+			"label": "Crossektómia a parciálny stripping v. saphena parva",
+			"if": "vv.kod in ['Kl1921']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8517",
-			"if": "vv.kod in ['8517'] || vv.k in ['8517'] || vv.k27 in ['8517']",
-			"value": null,
-			"calc": "vv.pocet*_8517",
+			"label": "Odstránenie varixov v. saphena magna bez crossektómie",
+			"if": "vv.kod in ['Kl1940']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8518",
-			"if": "vv.kod in ['8518'] || vv.k in ['8518'] || vv.k27 in ['8518']",
-			"value": null,
-			"calc": "vv.pocet*_8518",
+			"label": "Odstránenie varixov v. saphena parva bez crossektómie",
+			"if": "vv.kod in ['Kl1941']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8519",
-			"if": "vv.kod in ['8519'] || vv.k in ['8519'] || vv.k27 in ['8519']",
-			"value": null,
-			"calc": "vv.pocet*_8519",
+			"label": "Odstránenie varixov v. saphena magna a parva bez crossektómie",
+			"if": "vv.kod in ['Kl1942']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8520",
-			"if": "vv.kod in ['8520'] || vv.k in ['8520'] || vv.k27 in ['8520']",
-			"value": null,
-			"calc": "vv.pocet*_8520",
+			"label": "Odstránenie varixov nekmeňovej varikozity bez crossektómie",
+			"if": "vv.kod in ['Kl1943']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8521",
-			"if": "vv.kod in ['8521'] || vv.k in ['8521'] || vv.k27 in ['8521']",
-			"value": null,
-			"calc": "vv.pocet*_8521",
+			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
+			"if": "vv.kod in ['Kl1951']",
+			"value": 0,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8522",
-			"if": "vv.kod in ['8522'] || vv.k in ['8522'] || vv.k27 in ['8522']",
-			"value": null,
-			"calc": "vv.pocet*_8522",
+			"label": "Uzavretie inguinálnej hernie [prietrže] s plastikou",
+			"if": "vv.kod in ['5n811']",
+			"value": 397,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8523",
-			"if": "vv.kod in ['8523'] || vv.k in ['8523'] || vv.k27 in ['8523']",
-			"value": null,
-			"calc": "vv.pocet*_8523",
+			"label": "Uzavretie umbilikálnej hernie [prietrže] s plastikou",
+			"if": "vv.kod in ['5n831']",
+			"value": 397,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8524",
-			"if": "vv.kod in ['8524'] || vv.k in ['8524'] || vv.k27 in ['8524']",
-			"value": null,
-			"calc": "vv.pocet*_8524",
+			"label": "Uzavretie epigastrickej hernie [prietrže] s plastikou",
+			"if": "vv.kod in ['5n841']",
+			"value": 397,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8525",
-			"if": "vv.kod in ['8525'] || vv.k in ['8525'] || vv.k27 in ['8525']",
-			"value": null,
-			"calc": "vv.pocet*_8525",
+			"label": "Uzavretie hernie [prietrže] v jazve s plastikou",
+			"if": "vv.kod in ['5n851']",
+			"value": 397,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8525k",
-			"if": "vv.kod in ['8525k'] || vv.k in ['8525k'] || vv.k27 in ['8525k']",
-			"value": null,
-			"calc": "vv.pocet*_8525k",
+			"label": "Uzavretie umbilikálnej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8330']",
+			"value": 591,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8526",
-			"if": "vv.kod in ['8526'] || vv.k in ['8526'] || vv.k27 in ['8526']",
-			"value": null,
-			"calc": "vv.pocet*_8526",
+			"label": "Uzavretie epigastrickej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8430']",
+			"value": 591,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8527",
-			"if": "vv.kod in ['8527'] || vv.k in ['8527'] || vv.k27 in ['8527']",
-			"value": null,
-			"calc": "vv.pocet*_8527",
+			"label": "Uzavretie inguinálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8170']",
+			"value": 591,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8528",
-			"if": "vv.kod in ['8528'] || vv.k in ['8528'] || vv.k27 in ['8528']",
-			"value": null,
-			"calc": "vv.pocet*_8528",
+			"label": "Uzavretie hernie [prietrže] v jazve s alogénnym materiálom",
+			"if": "vv.kod in ['5n853']",
+			"value": 591,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8529",
-			"if": "vv.kod in ['8529'] || vv.k in ['8529'] || vv.k27 in ['8529']",
-			"value": null,
-			"calc": "vv.pocet*_8529",
+			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
+			"if": "vv.kod in ['5n8130']",
+			"value": 591,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8530",
-			"if": "vv.kod in ['8530'] || vv.k in ['8530'] || vv.k27 in ['8530']",
-			"value": null,
-			"calc": "vv.pocet*_8530",
+			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, laparoskopicky transperitoneálne",
+			"if": "vv.kod in ['5n8131']",
+			"value": 536,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8531",
-			"if": "vv.kod in ['8531'] || vv.k in ['8531'] || vv.k27 in ['8531']",
-			"value": null,
-			"calc": "vv.pocet*_8531",
+			"label": "Cholecystektómia jednoduchá bez revízie žlčových ciest, laparoskopicky",
+			"if": "vv.kod in ['5n6202']",
+			"value": 686,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8532",
-			"if": "vv.kod in ['8532'] || vv.k in ['8532'] || vv.k27 in ['8532']",
-			"value": null,
-			"calc": "vv.pocet*_8532",
+			"label": "Discízia šľachových pošiev prsta",
+			"if": "vv.kod in ['5t7027']",
+			"value": 366,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8533a",
-			"if": "vv.kod in ['8533a'] || vv.k in ['8533a'] || vv.k27 in ['8533a']",
-			"value": null,
-			"calc": "vv.pocet*_8533a",
+			"label": "Excízia sinus pilonidalis",
+			"if": "vv.kod in ['5v191']",
+			"value": 415,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8533b",
-			"if": "vv.kod in ['8533b'] || vv.k in ['8533b'] || vv.k27 in ['8533b']",
-			"value": null,
-			"calc": "vv.pocet*_8533b",
+			"label": "Subkutánna excízia análnej fistuly",
+			"if": "vv.kod in ['5n4510']",
+			"value": 433,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8534a",
-			"if": "vv.kod in ['8534a'] || vv.k in ['8534a'] || vv.k27 in ['8534a']",
-			"value": null,
-			"calc": "vv.pocet*_8534a",
+			"label": "Deštrukcia hemoroidov",
+			"if": "vv.kod in ['5n45d']",
+			"value": 462,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8534b",
-			"if": "vv.kod in ['8534b'] || vv.k in ['8534b'] || vv.k27 in ['8534b']",
-			"value": null,
-			"calc": "vv.pocet*_8534b",
+			"label": "Operačné ošetrenie hemoroidov so staplerom",
+			"if": "vv.kod in ['5n45e']",
+			"value": 462,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8535a",
-			"if": "vv.kod in ['8535a'] || vv.k in ['8535a'] || vv.k27 in ['8535a']",
-			"value": null,
-			"calc": "vv.pocet*_8535a",
+			"label": "Excízia hemoroidov s plastickou rekonštrukciou",
+			"if": "vv.kod in ['5n45f']",
+			"value": 462,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8535b",
-			"if": "vv.kod in ['8535b'] || vv.k in ['8535b'] || vv.k27 in ['8535b']",
-			"value": null,
-			"calc": "vv.pocet*_8535b",
+			"label": "Excízia nádoru prsníka",
+			"if": "vv.kod in ['5u111']",
+			"value": 354,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8536a",
-			"if": "vv.kod in ['8536a'] || vv.k in ['8536a'] || vv.k27 in ['8536a']",
-			"value": null,
-			"calc": "vv.pocet*_8536a",
+			"label": "Apendektómia, laparoskopicky pomocou slučky alebo ligatúry",
+			"if": "vv.kod in ['5n3610']",
+			"value": 617,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8536b",
-			"if": "vv.kod in ['8536b'] || vv.k in ['8536b'] || vv.k27 in ['8536b']",
-			"value": null,
-			"calc": "vv.pocet*_8536b",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti pery",
+			"if": "vv.kod in ['5v1430']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8537",
-			"if": "vv.kod in ['8537'] || vv.k in ['8537'] || vv.k27 in ['8537']",
-			"value": null,
-			"calc": "vv.pocet*_8537",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5v1434']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8542",
-			"if": "vv.kod in ['8542'] || vv.k in ['8542'] || vv.k27 in ['8542']",
-			"value": null,
-			"calc": "vv.pocet*_8542",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti krku",
+			"if": "vv.kod in ['5v1435']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8543",
-			"if": "vv.kod in ['8543'] || vv.k in ['8543'] || vv.k27 in ['8543']",
-			"value": null,
-			"calc": "vv.pocet*_8543",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1436']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8547",
-			"if": "vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547']",
-			"value": null,
-			"calc": "vv.pocet*_8547",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1437']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8548",
-			"if": "vv.kod in ['8548'] || vv.k in ['8548'] || vv.k27 in ['8548']",
-			"value": null,
-			"calc": "vv.pocet*_8548",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predlaktia",
+			"if": "vv.kod in ['5v1438']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8549",
-			"if": "vv.kod in ['8549'] || vv.k in ['8549'] || vv.k27 in ['8549']",
-			"value": null,
-			"calc": "vv.pocet*_8549",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ruky",
+			"if": "vv.kod in ['5v1439']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8550",
-			"if": "vv.kod in ['8550'] || vv.k in ['8550'] || vv.k27 in ['8550']",
-			"value": null,
-			"calc": "vv.pocet*_8550",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v143a']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8551",
-			"if": "vv.kod in ['8551'] || vv.k in ['8551'] || vv.k27 in ['8551']",
-			"value": null,
-			"calc": "vv.pocet*_8551",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v brušnej oblasti",
+			"if": "vv.kod in ['5v143b']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8552",
-			"if": "vv.kod in ['8552'] || vv.k in ['8552'] || vv.k27 in ['8552']",
-			"value": null,
-			"calc": "vv.pocet*_8552",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v gluteálnej oblasti",
+			"if": "vv.kod in ['5v143d']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8553",
-			"if": "vv.kod in ['8553'] || vv.k in ['8553'] || vv.k27 in ['8553']",
-			"value": null,
-			"calc": "vv.pocet*_8553",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v143e']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8570",
-			"if": "vv.kod in ['8570'] || vv.k in ['8570'] || vv.k27 in ['8570']",
-			"value": null,
-			"calc": "vv.pocet*_8570",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predkolenia",
+			"if": "vv.kod in ['5v143f']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8573",
-			"if": "vv.kod in ['8573'] || vv.k in ['8573'] || vv.k27 in ['8573']",
-			"value": null,
-			"calc": "vv.pocet*_8573",
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v143g']",
+			"value": 116,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8578a",
-			"if": "vv.kod in ['8578a'] || vv.k in ['8578a'] || vv.k27 in ['8578a']",
-			"value": null,
-			"calc": "vv.pocet*_8578a",
+			"label": "Implantácia bipolárnej cervikokapitálnej protézy bedrového kĺbu, necementovaná",
+			"if": "vv.kod in ['5t5040']",
+			"value": 1038,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8578b",
-			"if": "vv.kod in ['8578b'] || vv.k in ['8578b'] || vv.k27 in ['8578b']",
-			"value": null,
-			"calc": "vv.pocet*_8578b",
+			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t4090']",
+			"value": 1038,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8580",
-			"if": "vv.kod in ['8580'] || vv.k in ['8580'] || vv.k27 in ['8580']",
-			"value": null,
-			"calc": "vv.pocet*_8580",
+			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
+			"if": "vv.kod in ['5t42h0']",
+			"value": 1038,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8582",
-			"if": "vv.kod in ['8582'] || vv.k in ['8582'] || vv.k27 in ['8582']",
-			"value": null,
-			"calc": "vv.pocet*_8582",
+			"label": "Artroskopická parciálna resekcia menisku",
+			"if": "vv.kod in ['5t42310']",
+			"value": 1038,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8583",
-			"if": "vv.kod in ['8583'] || vv.k in ['8583'] || vv.k27 in ['8583']",
-			"value": null,
-			"calc": "vv.pocet*_8583",
+			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] kolenného kĺbu",
+			"if": "vv.kod in ['5t42ch']",
+			"value": 1038,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 8584",
-			"if": "vv.kod in ['8584'] || vv.k in ['8584'] || vv.k27 in ['8584']",
-			"value": null,
-			"calc": "vv.pocet*_8584",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9219",
-			"if": "vv.kod in ['9219'] || vv.k in ['9219'] || vv.k27 in ['9219']",
-			"value": null,
-			"calc": "vv.pocet*_9219",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9221",
-			"if": "vv.kod in ['9221'] || vv.k in ['9221'] || vv.k27 in ['9221']",
-			"value": null,
-			"calc": "vv.pocet*_9221",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9222",
-			"if": "vv.kod in ['9222'] || vv.k in ['9222'] || vv.k27 in ['9222']",
-			"value": null,
-			"calc": "vv.pocet*_9222",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9223",
-			"if": "vv.kod in ['9223'] || vv.k in ['9223'] || vv.k27 in ['9223']",
-			"value": null,
-			"calc": "vv.pocet*_9223",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9224",
-			"if": "vv.kod in ['9224'] || vv.k in ['9224'] || vv.k27 in ['9224']",
-			"value": null,
-			"calc": "vv.pocet*_9224",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9225",
-			"if": "vv.kod in ['9225'] || vv.k in ['9225'] || vv.k27 in ['9225']",
-			"value": null,
-			"calc": "vv.pocet*_9225",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9300",
-			"if": "vv.kod in ['9300'] || vv.k in ['9300'] || vv.k27 in ['9300']",
-			"value": null,
-			"calc": "vv.pocet*_9300",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9400",
-			"if": "vv.kod in ['9400'] || vv.k in ['9400'] || vv.k27 in ['9400']",
-			"value": null,
-			"calc": "vv.pocet*_9400",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 9522",
-			"if": "vv.kod in ['9522'] || vv.k in ['9522'] || vv.k27 in ['9522']",
-			"value": null,
-			"calc": "vv.pocet*_9522",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 7006",
-			"if": "vv.kod in ['7006'] || vv.k in ['7006'] || vv.k27 in ['7006']",
-			"value": null,
-			"calc": "vv.pocet*_7006",
+			"label": "Prerušenie väzu retinaculum flexorum s epineurolýzou n. medianus",
+			"if": "vv.kod in ['5t71111']",
+			"value": 405,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Parciálna fasciektómia izolovaná na dlani",
 			"if": "vv.kod in ['5t7220']",
+			"value": 384,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Discízia šľachových pošiev prsta",
+			"if": "vv.kod in ['5t7027']",
 			"value": 384,
 			"calc": "vv.pocet*cena",
 			"instruction": null
@@ -720,6 +404,20 @@
 		{
 			"label": "Totálna fasciektómia 3 a viac prstov",
 			"if": "vv.kod in ['5t7234']",
+			"value": 394,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Fasciektómia jedného prsta s jednou neurolýzou",
+			"if": "vv.kod in ['5t7241']",
+			"value": 394,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Fasciektómia viac prstov s jednou neurolýzou",
+			"if": "vv.kod in ['5t7242']",
 			"value": 394,
 			"calc": "vv.pocet*cena",
 			"instruction": null

@@ -66,6 +66,13 @@
 			"value": 20,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

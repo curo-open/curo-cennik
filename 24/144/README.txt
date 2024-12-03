@@ -12,7 +12,7 @@ Autor: curo.sk
 │ IPP2 = 2.03        │ IPP2                         │
 │ IPP3 = 3.43        │ IPP3                         │
 │ LIMIT = 2235       │ Limit                        │
-│ CB = 0.028719      │ Cena bodu                    │
+│ CB = 0.036616      │ Cena bodu                    │
 │ CBP = 0.041        │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.008195 │ Cena bodu SVaLZ              │
 │ CBEU = 0.025903    │ Cena bodu EU                 │

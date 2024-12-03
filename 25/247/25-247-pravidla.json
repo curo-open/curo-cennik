@@ -32,6 +32,20 @@
 			"value": 0.03466,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkon  108",
+			"if": "vv.kod in ['250x']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

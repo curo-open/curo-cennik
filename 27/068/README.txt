@@ -5,15 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────────────┐
-│ Názov a hodnota   │ Popis                        │
-├───────────────────┼──────────────────────────────┤
-│ CB = 0.0335       │ Cena bodu                    │
-│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
-│ CBP = 0.0455      │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
-│ LIMIT = 0         │ Limit                        │
-└───────────────────┴──────────────────────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ CB = 0.0402       │ Cena bodu       │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ │
+│ LIMIT = 0         │ Limit           │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -26,17 +24,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
+│            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63' ,'65','66','67']                   │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['200','2100','2101','2106']                       │
+│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['70','1b','11a']                                  │
+│            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │            8.95 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
 │            5.88 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
 │            10.2 │ vv.pocet*cena             │ Prístrojový antigénový test                   │ vv.kod in ['629b']                                           │
-│           0.015 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
 │          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
-│           0.026 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
@@ -48,7 +48,6 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             160 │ 1                                                                                                         │                           │
 │             160 │ 1                                                                                                         │                           │
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │

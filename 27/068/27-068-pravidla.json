@@ -2,19 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
-		},
-		"CBO": {
-			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.0455
+			"value": 0.0402
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -24,10 +16,38 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon H0008",
-			"if": "vv.kod in ['H0008']",
-			"value": 6.78,
-			"calc": "vv.pocet*cena",
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63' ,'65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['200','2100','2101','2106']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['70','1b','11a']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -49,13 +69,6 @@
 			"if": "vv.kod in ['629b']",
 			"value": 10.2,
 			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.015,
-			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -84,13 +97,6 @@
 			"if": "vv.kod in ['5702','5702a','15c']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -125,10 +131,6 @@
 	"kontrola": [],
 	"body": {
 		"1": [
-			{
-				"cond": "",
-				"value": 160
-			},
 			{
 				"cond": "",
 				"value": 160
