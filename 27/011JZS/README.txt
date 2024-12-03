@@ -49,9 +49,6 @@ Autor: curo.sk
 │                 │                           │ bez crossektómie                              │                                                              │
 │             612 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['Kl1943']                                         │
 │                 │                           │ crossektómie                                  │                                                              │
-│               0 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['Kl1951']                                         │
-│                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
-│                 │                           │ u                                             │                                                              │
 │             397 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s pla │ vv.kod in ['5n811']                                          │
 │                 │                           │ stikou                                        │                                                              │
 │             397 │ vv.pocet*cena             │ Uzavretie umbilikálnej hernie [prietrže] s pl │ vv.kod in ['5n831']                                          │

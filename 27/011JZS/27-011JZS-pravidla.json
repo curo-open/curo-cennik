@@ -101,13 +101,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
-			"if": "vv.kod in ['Kl1951']",
-			"value": 0,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
 			"label": "Uzavretie inguinálnej hernie [prietrže] s plastikou",
 			"if": "vv.kod in ['5n811']",
 			"value": 397,
