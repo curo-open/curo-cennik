@@ -80,28 +80,28 @@
 		},
 		{
 			"label": "Vykon 8",
-			"if": "p.kapitacia && d.zl && vv.kod in ['8']",
+			"if": "p.kapitacia || d.zl && vv.kod in ['8']",
 			"value": null,
 			"calc": "vv.pocet*VCB8",
 			"instruction": null
 		},
 		{
 			"label": "Vykon 4",
-			"if": "p.kapitacia && d.zl && vv.kod in ['4']",
+			"if": "p.kapitacia || d.zl && vv.kod in ['4']",
 			"value": null,
 			"calc": "vv.pocet*VCB4",
 			"instruction": null
 		},
 		{
 			"label": "Vykon 1",
-			"if": "p.kapitacia && d.zl && vv.kod in ['1']",
+			"if": "p.kapitacia || d.zl && vv.kod in ['1']",
 			"value": null,
 			"calc": "vv.pocet*VCB1",
 			"instruction": null
 		},
 		{
 			"label": "Vykon 250",
-			"if": "p.kapitacia && d.zl && vv.kod in ['250']",
+			"if": "p.kapitacia || d.zl && vv.kod in ['250']",
 			"value": null,
 			"calc": "vv.pocet*VCB250",
 			"instruction": null

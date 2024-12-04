@@ -36,10 +36,10 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │        0.020072 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│            null │ vv.pocet*VCB8             │ Vykon 8                                       │ p.kapitacia && d.zl && vv.kod in ['8']                       │
-│            null │ vv.pocet*VCB4             │ Vykon 4                                       │ p.kapitacia && d.zl && vv.kod in ['4']                       │
-│            null │ vv.pocet*VCB1             │ Vykon 1                                       │ p.kapitacia && d.zl && vv.kod in ['1']                       │
-│            null │ vv.pocet*VCB250           │ Vykon 250                                     │ p.kapitacia && d.zl && vv.kod in ['250']                     │
+│            null │ vv.pocet*VCB8             │ Vykon 8                                       │ p.kapitacia || d.zl && vv.kod in ['8']                       │
+│            null │ vv.pocet*VCB4             │ Vykon 4                                       │ p.kapitacia || d.zl && vv.kod in ['4']                       │
+│            null │ vv.pocet*VCB1             │ Vykon 1                                       │ p.kapitacia || d.zl && vv.kod in ['1']                       │
+│            null │ vv.pocet*VCB250           │ Vykon 250                                     │ p.kapitacia || d.zl && vv.kod in ['250']                     │
 │           12.26 │ vv.pocet*cena             │ Vykon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
 │            8.63 │ vv.pocet*cena             │ Vykon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
 │          0.0078 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaLZ                                   │
