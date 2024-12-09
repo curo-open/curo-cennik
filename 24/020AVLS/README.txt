@@ -85,7 +85,7 @@ Autor: curo.sk
 │            8.98 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
 │            11.6 │ vv.pocet*cena             │ Stanovenie Troponínu                          │ vv.kod in ['4485']                                           │
 │           19.78 │ vv.pocet*cena             │ N-terminálny fragment (NT-pro BNP)            │ vv.kod in ['44418']                                          │
-│            4.38 │ vv.pocet*cena             │ USG                                           │ vv.kod in ['5301']                                           │
+│            4.38 │ vv.pocet*cena             │ USG POCUS                                     │ vv.kod in ['5301']                                           │
 │               2 │ vv.pocet*cena             │ Delegovaný odber krvi  (vv. 250D)             │ vv.kod in ['250D','250d']                                    │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │

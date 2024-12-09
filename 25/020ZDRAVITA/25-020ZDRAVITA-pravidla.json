@@ -255,13 +255,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie proti chrípke",
-			"if": "vv.diagnoza in ['Z25.1'] && vv.kod in ['252b','252c','252s']",
-			"value": 0.057,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Očkovanie Covid 252L",
 			"if": "vv.kod in ['252L']",
 			"value": 10,

@@ -370,7 +370,7 @@
 			"instruction": null
 		},
 		{
-			"label": "USG",
+			"label": "USG POCUS",
 			"if": "vv.kod in ['5301']",
 			"value": 4.38,
 			"calc": "vv.pocet*cena",

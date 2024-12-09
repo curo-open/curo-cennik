@@ -342,6 +342,34 @@
 			"instruction": null
 		},
 		{
+			"label": "Stanovenie D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.98,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie Troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG POCUS",
+			"if": "vv.kod in ['5301']",
+			"value": 4.38,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "N-terminálny fragment (NT-pro BNP)",
+			"if": "vv.kod in ['44418']",
+			"value": 19.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='AGTC'",
 			"value": null,
