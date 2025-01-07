@@ -307,7 +307,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Stratifikacia CMP",
+			"label": "Stratifikácia kardiovaskulárneho rizika ",
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
 			"calc": "vv.pocet*cena",

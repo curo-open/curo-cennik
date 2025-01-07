@@ -73,7 +73,8 @@ Autor: curo.sk
 │              15 │ vv.pocet*cena             │ Inicialne I10/E78 (vv. H0003)                 │ vv.kod in ['H0003']                                          │
 │              15 │ vv.pocet*cena             │ Kontrolne I10/E78 (vv .H0004)                 │ vv.kod in ['H0004']                                          │
 │               6 │ vv.pocet*cena             │ Akutne I10  (vv. H0005)                       │ vv.kod in ['H0005']                                          │
-│            5.65 │ vv.pocet*cena             │ Stratifikacia CMP  (vv. H0006)                │ vv.kod in ['H0006']                                          │
+│            5.65 │ vv.pocet*cena             │ Stratifikácia kardiovaskulárneho rizika (vv.  │ vv.kod in ['H0006']                                          │
+│                 │                           │ H0006)                                        │                                                              │
 │           17.33 │ vv.pocet*cena             │ Predoperačné vyšetrenie  (vv. 60b)            │ vv.kod in ['60b']                                            │
 │             5.2 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT  (vv. H0007 │ vv.kod in ['H0007']                                          │
 │                 │                           │ )                                             │                                                              │

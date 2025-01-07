@@ -75,7 +75,7 @@ Autor: curo.sk
 │                 │                           │                                               │ ,'FotoR','PACSR']                                            │
 │              15 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['H0003','H0004']                                  │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
-│               5 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
+│               5 │ vv.pocet*cena             │ Stratifikácia kardiovaskulárneho rizika       │ vv.kod in ['H0006']                                          │
 │            6.24 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
 │             7.2 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky                 │ vv.kod in ['H0008']                                          │
 │            19.8 │ vv.pocet*cena             │ Celodenné snímanie tlaku                      │ vv.kod in ['5715']                                           │

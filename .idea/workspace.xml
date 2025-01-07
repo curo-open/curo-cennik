@@ -22,8 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/24-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -789,7 +793,18 @@
       <workItem from="1730375524517" duration="5011000" />
       <workItem from="1731312661144" duration="599000" />
       <workItem from="1731664145135" duration="596000" />
-      <workItem from="1731916863691" duration="2095000" />
+      <workItem from="1731916863691" duration="3232000" />
+      <workItem from="1732135429622" duration="599000" />
+      <workItem from="1732469985189" duration="599000" />
+      <workItem from="1732535543341" duration="599000" />
+      <workItem from="1732621973560" duration="6163000" />
+      <workItem from="1733754063722" duration="1232000" />
+      <workItem from="1733943847538" duration="593000" />
+      <workItem from="1734436767108" duration="1213000" />
+      <workItem from="1735122219740" duration="598000" />
+      <workItem from="1735583824579" duration="599000" />
+      <workItem from="1735658832239" duration="599000" />
+      <workItem from="1736241879618" duration="319000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1134,7 +1149,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="482" />
+    <option name="localTasksCounter" value="489" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
