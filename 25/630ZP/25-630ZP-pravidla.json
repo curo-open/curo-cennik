@@ -105,13 +105,6 @@
 			"instruction": null
 		},
 		{
-			"label": "STAROSTLIVOS Ť O KAVALNÝ KATÉTER A INTRAVENÓZNU KANYLU, PRAVIDELNE PREVÄZOVANIE A DEZINFEKCIA",
-			"if": "vv.kod in ['3390']",
-			"value": 5.5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
 			"label": "STAROSTLIVOSŤ O KAVALNÝ KATÉTER A INTRAVENÓZNU KANYLU, PRAVIDELNE PREVÄZOVANIE A DEZINFEKCIA",
 			"if": "vv.kod in ['3399B']",
 			"value": 2.05,

@@ -44,9 +44,6 @@ Autor: curo.sk
 │             5.5 │ vv.pocet*cena             │ OŠETROVATEĽSKÁ HYGIENA                        │ vv.kod in ['3398']                                           │
 │             5.5 │ vv.pocet*cena             │ STAROSTLIVOSŤ O CHORÉHO S PERMANENTNÝM KATÉTR │ vv.kod in ['3399A']                                          │
 │                 │                           │ OM VRÁTANE JEHO VÝMENY                        │                                                              │
-│             5.5 │ vv.pocet*cena             │ STAROSTLIVOS Ť O KAVALNÝ KATÉTER A INTRAVENÓZ │ vv.kod in ['3390']                                           │
-│                 │                           │ NU KANYLU, PRAVIDELNE PREVÄZOVANIE A DEZINFEK │                                                              │
-│                 │                           │ CIA                                           │                                                              │
 │            2.05 │ vv.pocet*cena             │ STAROSTLIVOSŤ O KAVALNÝ KATÉTER A INTRAVENÓZN │ vv.kod in ['3399B']                                          │
 │                 │                           │ U KANYLU, PRAVIDELNE PREVÄZOVANIE A DEZINFEKC │                                                              │
 │                 │                           │ IA                                            │                                                              │

@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────┐
 │ Názov a hodnota │ Popis                 │
 ├─────────────────┼───────────────────────┤
-│ IDK = 1.35      │ IDK                   │
+│ IDK = 0         │ IDK                   │
 │ KPS = 1         │ KPS                   │
 │ EL_POBOCKA = 1  │ Používa el. pobočku ? │
 │ AGTC = 4.8      │ AGTC                  │

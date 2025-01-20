@@ -17,21 +17,469 @@
 			"value": 4.9
 		},
 		"CBD": {
-			"label": "Cena bodu doprava",
-			"value": 0.5
+			"label": "Cena bodu doprava do 60km",
+			"value": 0.35
 		},
-		"EL_POBOCKA": {
-			"label": "Používa el. pobočku ?",
-			"value": 1
+		"CBD60plus": {
+			"label": "Cena bodu doprava nad 60km",
+			"value": 0.175
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Doprava",
-			"if": "vv.kod in ['doprava']",
+			"label": "Doprava:  do 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet < 60",
 			"value": null,
 			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "Doprava:  + 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
+			"value": null,
+			"calc": "vv.pocet*CBD60plus",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
+			"if": "vv.kod in ['25M']",
+			"value": 61,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PRÍJEM PACIENTA DO ADOS A ODOBRATIE SESTERSKEJ ANAMNÉZY",
+			"if": "vv.kod in ['3390']",
+			"value": 3.61,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "POUČENIE PRÍBUZNÝCH ALEBO ČLENOV KOMUNITY",
+			"if": "vv.kod in ['3392a']",
+			"value": 1.7,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VYPRACOVANIE PLÁNU KOMPLEXNEJ OŠETROVATEĽSKEJ STAROSTLIVOSTI ",
+			"if": "vv.kod in ['3393']",
+			"value": 7.24,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PRIEBEŽNÉ HODNOTENIE KOS A ZMENA PLÁNU OŠETROVATEĽSKEJ STAROSTLIVOSTI VRÁTANE DOKUMENTÁCIE A KONZULTÁCIE S OŠETRUJÚCIM LEKÁROM",
+			"if": "vv.kod in ['3394']",
+			"value": 7.82,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VYHODNOTENIE KOS A ZÁVEREČNÁ SPRÁVA",
+			"if": "vv.kod in ['3395']",
+			"value": 5.44,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ODBORNÝ NÁCVIK POTREBNÝCH VÝKONOV PRI OŠETROVANÍ CHORÉHO V DOMÁCNOSTI",
+			"if": "vv.kod in ['3396']",
+			"value": 5.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "OŠETROVATEĽSKÁ HYGIENA",
+			"if": "vv.kod in ['3398']",
+			"value": 5.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "STAROSTLIVOSŤ O CHORÉHO S PERMANENTNÝM KATÉTROM VRÁTANE JEHO VÝMENY",
+			"if": "vv.kod in ['3399A']",
+			"value": 5.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "STAROSTLIVOSŤ O KAVALNÝ KATÉTER A INTRAVENÓZNU KANYLU, PRAVIDELNE PREVÄZOVANIE A DEZINFEKCIA",
+			"if": "vv.kod in ['3399B']",
+			"value": 2.05,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "STAROSTLIVOSŤ O EZOTRACHEÁLNU, NASOTRACHEÁLNU A TRACHEOST. KANYLU",
+			"if": "vv.kod in ['3399C']",
+			"value": 2.05,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "STAROSTLIVOSŤ O EPIDURÁLNY KATÉTER",
+			"if": "vv.kod in ['3399D']",
+			"value": 4.13,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "STAROSTLIVOSŤ O VÝŽIVU V PRÍSLUŠNEJ KVALITE A KVANTITE, VYPRACOVANIE INDIVIDUÁLNEHO DIETNEHO REŽIMU, JEDEN RAZ PRE JEDNÉHO PACIENTA",
+			"if": "vv.kod in ['3401']",
+			"value": 3.11,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VÝŽIVA BEZVLÁDNEHO PACIENTA, ZA JEDEN VÝKON",
+			"if": "vv.kod in ['3402']",
+			"value": 0.96,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VÝŽIVA PACIENTA SONDOU, ZA JEDEN VÝKON",
+			"if": "vv.kod in ['3404']",
+			"value": 1.36,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "OČISTNÁ KLYZMA",
+			"if": "vv.kod in ['3405']",
+			"value": 4.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "KONTINUÁLNE SLEDOVANIE KLINICKÉHO STAVU PACIENTA ZA KAŽDÉ DVE HODINY",
+			"if": "vv.kod in ['3406']",
+			"value": 3.38,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ODMERANIE KRVNÉHO TLAKU, PULZU A TEPLOTY",
+			"if": "vv.kod in ['3407']",
+			"value": 1.02,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "SLEDOVANIE DIURÉZY, ZA KAŽDÝCH 12 HODÍN",
+			"if": "vv.kod in ['3408']",
+			"value": 0.85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "CIEVKOVANIE ŽENY",
+			"if": "vv.kod in ['3409']",
+			"value": 2.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VÝMENA STOMICKÉHO SETU S NÁSLEDNOU TOALETOU PRI STÓMIACH",
+			"if": "vv.kod in ['3410']",
+			"value": 2.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ČISTENIE TRACHEÁLNEJ KANYLY",
+			"if": "vv.kod in ['3411']",
+			"value": 0.85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "APLIKÁCIA NEINJEKČNEJ LIEČBY",
+			"if": "vv.kod in ['3413']",
+			"value": 0.74,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "APLIKÁCIA TERAPEUTICKÉHO CELOTELOVÉHO ZÁBALU ALEBO LIEČIVÉHO KÚPEĽA",
+			"if": "vv.kod in ['3414']",
+			"value": 1.19,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "APLIKÁCIA LIEČIVA INTRAMUSKULÁRNE, S.C., I.C",
+			"if": "vv.kod in ['3416']",
+			"value": 1.38,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "APLIKÁCIA LIEČIVA INTRAVENÓZNE",
+			"if": "vv.kod in ['3418']",
+			"value": 1.7,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PRÍPRAVA A PODÁVANIE INFÚZIE",
+			"if": "vv.kod in ['3419']",
+			"value": 3.42,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "SLEDOVANIE INFÚZIE, ZA KAŽDÚ HODINU",
+			"if": "vv.kod in ['3420']",
+			"value": 5.83,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PODÁVANIE LIEČIVA INFÚZNOU PUMPOU",
+			"if": "vv.kod in ['3420A']",
+			"value": 1.02,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁCVIK PODÁVANIA INZULÍNU",
+			"if": "vv.kod in ['3421']",
+			"value": 2.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "OŠETROVATEĽSKÁ STAROSTLIVOSŤ ZAMERANÁ NA PREVENCIU DEKUBITOV",
+			"if": "vv.kod in ['3422AA']",
+			"value": 4.13,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "OŠETRENIE DEKUBITU VEĽKOSTI DO 5 CM2 ",
+			"if": "vv.kod in ['3422B']",
+			"value": 6.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "OŠETRENIE DEKUBITU VEĽKOSTI NAD 5 CM2 ",
+			"if": "vv.kod in ['3422C']",
+			"value": 9.62,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VÝPLACH OKA",
+			"if": "vv.kod in ['3423']",
+			"value": 2.39,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PREVÄZ RANY VEĽKOSTI DO 5 CM2",
+			"if": "vv.kod in ['3423A']",
+			"value": 4.13,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PREVÄZ RANY VEĽKOSTI NAD 5 CM2",
+			"if": "vv.kod in ['3423B']",
+			"value": 6.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "OŠETROVATEĽSKÁ REHABILITÁCIA,TRVANIE NAJVIAC 30 MINÚT",
+			"if": "vv.kod in ['3424']",
+			"value": 4.24,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ODSÁVANIE PACIENTA",
+			"if": "vv.kod in ['3426']",
+			"value": 1.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ODSATIE ŽALÚDOČNÉHO OBSAHU",
+			"if": "vv.kod in ['3427']",
+			"value": 3.51,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VYŠETRENIE MOČU INDIKÁTOROVÝM MÉDIOM",
+			"if": "vv.kod in ['3428']",
+			"value": 3.38,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ASISTENCIA PRI VÝPLACHU MOČOVÉHO MECHÚRA",
+			"if": "vv.kod in ['3431']",
+			"value": 0.93,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PRÁCA SESTRY PRI DOMÁCEJ PERITONEÁLNEJ DIALÝZE",
+			"if": "vv.kod in ['3432']",
+			"value": 5.84,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ODBER KRVI VENEPUNKCIOU DO JEDNEJ STRIEKAČKY ALEBO JEDNEJ ODB. SÚPRAVY",
+			"if": "vv.kod in ['3433']",
+			"value": 5.34,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ODBER KAPILÁRNEJ KRVI",
+			"if": "vv.kod in ['3434']",
+			"value": 0.85,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "UMELÉ DÝCHANIE A MASÁŽ SRDCA",
+			"if": "vv.kod in ['3435']",
+			"value": 6.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ODBERY: TT, TN, VÝTER Z REKTA, ODBER SPÚTA",
+			"if": "vv.kod in ['3436']",
+			"value": 1.65,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "DOPRAVA BIOLOGICKÉHO MATERIÁLU",
+			"if": "vv.kod in ['3437']",
+			"value": 0.68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE",
+			"if": "vv.kod in ['3439']",
+			"value": 4.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19.00 DO 7.00 HODINY V SOBOTU, V NEDEĽU A VO SVIATOK)",
+			"if": "vv.kod in ['3440']",
+			"value": 9.12,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁVŠTEVA PACIENTA V RIZIKOVÝCH SKUPINÁCH POPULÁCIE - KRÍZOVA INTERVENCIA PRI ZHORŠENÍ PSYCHICKÉHO STAVU PACIENTA",
+			"if": "vv.kod in ['3441']",
+			"value": 5.83,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "PSYCHOSOMATICKÁ INTERVENCIA V TERMINÁLNOM ŠTÁDIU ŽIVOTA",
+			"if": "vv.kod in ['3447']",
+			"value": 2.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "KONTINUÁLNA STAROSTLIVOSŤ O UMIERAJÚCEHO PACIENTA, ZA KAŽDÚ HODINU",
+			"if": "vv.kod in ['3449']",
+			"value": 3.3,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "KONZULTÁCIA SESTRY O JEDNOM PACIENTOVI S OŠETRUJÚCIM LEKÁROM",
+			"if": "vv.kod in ['3451']",
+			"value": 0.68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "POSKYTNUTIE PREDLEKÁRSKEJ POMOCI PRI NÁHLYCH STAVOCH OHROZUJÚCICH ŽIVOT",
+			"if": "vv.kod in ['3452']",
+			"value": 6.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "VERBÁLNA INTERVENCIA  PRI PSYCHOSOMATICKÝCH ŤAŽKOSTIACH U PACIENTA S NÁDOROVÝM OCHORENÍM",
+			"if": "vv.kod in ['3458']",
+			"value": 5.08,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "OŠETRENIE DUTINY ÚSTNEJ U ONKOLOGICKÉHO PACIENTA ALEBO U PACIENTA S IMUNODEFICIENTNYM STAVOM",
+			"if": "vv.kod in ['3461']",
+			"value": 4.23,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "KONTROLA GLYKÉMIE GLUKOMEROM",
+			"if": "vv.kod in ['3635A']",
+			"value": 1.02,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "HYGIENA POŠVY ZA ÚĆELOM LIEČEBNÝM",
+			"if": "vv.kod in ['3474']",
+			"value": 0.77,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mäkké a mobilizačné techniky na  chrbtici, periférnych kĺboch a svaloch",
+			"if": "vv.kod in ['509a']",
+			"value": 3.72,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Individuálna   liečebná   telesná   výchova   I.   Individuálna   LTV zameraná     na   zvýšenie  svalovej   sily   a   zlepšenie   rozsahu pohybov    s  použitím  jednoduchých  metód.",
+			"if": "vv.kod in ['512']",
+			"value": 2.19,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Individuálna liečebná  telesná výchova II. Individ.  kombinovaná LTV   zameraná  na   niekoľko  cieľov,   vyžadujúca  mimoriadnu fyzickú a  psychickú záťaž.",
+			"if": "vv.kod in ['513']",
+			"value": 4.23,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Dychová gymnastika",
+			"if": "vv.kod in ['520']",
+			"value": 1.36,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Špeciálne polohovanie",
+			"if": "vv.kod in ['522']",
+			"value": 4.91,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
