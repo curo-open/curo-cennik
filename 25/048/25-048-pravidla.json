@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 1.19
+			"value": 2.44
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 2.9
+			"value": 3.92
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 4.9
+			"value": 6.64
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 4.9
+			"value": 9.64
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.02814
+			"value": 0.03466
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -38,11 +38,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.008105
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.008473
+			"value": 0.009574
 		}
 	},
 	"pacient": [],
@@ -69,10 +69,17 @@
 			"instruction": null
 		},
 		{
-			"label": "Prev. KS",
+			"label": "Povrchová anestézia orofaryngu alebo hltana, alebo hrtana a (alebo) bronchiálnej oblasti",
+			"if": "vv.kod in ['401']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie jedného polypu pomocou vysokofrekvenčnej\nelektrickej slučky",
 			"if": "vv.kod in ['765p']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -104,10 +111,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Prev. KS",
+			"label": "Preventívna prehliadka konečníka a hrubého čreva\nkolonoskopom",
 			"if": "vv.kod in ['763p','763m']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBP",
+			"value": 0.049,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -127,7 +134,7 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

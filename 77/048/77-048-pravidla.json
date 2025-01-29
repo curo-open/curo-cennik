@@ -1,16 +1,20 @@
 {
 	"params": {
 		"CB": {
-			"label": "Cena bodu",
-			"value": 0.04
+			"label": "Cena bodu ",
+			"value": 0.0323
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
+			"value": 0.0365
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0.06
+			"value": 0.0779
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.015
+			"value": 0.01031
 		}
 	},
 	"pacient": [],
@@ -18,15 +22,15 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
@@ -38,9 +42,16 @@
 		},
 		{
 			"label": "Výkon ŠAS",
-			"if": "vv.kod in ['740','741','746','756','761','763','763a','765']",
+			"if": "vv.kod in ['740','741','746','765']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon ",
+			"if": "vv.kod in ['755','756','760','761','762','763','763a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
@@ -60,7 +71,7 @@
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
-			"value": 0.0088,
+			"value": 0.00924,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -94,37 +105,23 @@
 		},
 		{
 			"label": "Prev. KS",
-			"if": "vv.kod in ['763p','763m']",
+			"if": "vv.kod in ['763p']",
+			"value": null,
+			"calc": "vv.pocet*3000*CBP",
+			"instruction": null
+		},
+		{
+			"label": "Prev. KS",
+			"if": "vv.kod in ['763p']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBP",
 			"instruction": null
 		},
 		{
 			"label": "Prev. KS",
-			"if": "vv.kod in ['763P','763M']",
+			"if": "vv.kod in ['763m']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBP",
-			"instruction": null
-		},
-		{
-			"label": "JZS",
-			"if": "vv.kod in ['8586']",
-			"value": 254,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "JZS",
-			"if": "vv.kod in ['9104']",
-			"value": 378.23,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "JZS",
-			"if": "vv.kod in ['9105']",
-			"value": 311.85,
-			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -158,8 +155,8 @@
 		{
 			"label": "ŠAS",
 			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -185,6 +182,12 @@
 		}
 	],
 	"kontrola": [
+		{
+			"label": "Výkony 760*, 763* sú vykázané pod zlou diagnózou",
+			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p']",
+			"check": "vv.diagnoza in ['Z12.1']",
+			"severity": 0
+		},
 		{
 			"label": "Výkony 760*, 763* sú vykázané pod zlou diagnózou",
 			"if": "vv.kod in ['760sp','760sn','760pp','760pn','763sp','763sn','763pp','763pn','763p']",
@@ -295,12 +298,6 @@
 				"value": 3000
 			}
 		],
-		"763p": [
-			{
-				"cond": "",
-				"value": 3000
-			}
-		],
 		"1b": [
 			{
 				"cond": "",
@@ -320,6 +317,10 @@
 			}
 		],
 		"68a": [
+			{
+				"cond": "",
+				"value": 1000
+			},
 			{
 				"cond": "",
 				"value": 1000

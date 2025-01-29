@@ -12,9 +12,9 @@ Autor: curo.sk
 │ IPP2 = 2.03        │ IPP2                         │
 │ IPP3 = 3.43        │ IPP3                         │
 │ LIMIT = 2235       │ Limit                        │
-│ CB = 0.036616      │ Cena bodu                    │
+│ CB = 0.029461      │ Cena bodu                    │
 │ CBP = 0.041        │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.008195 │ Cena bodu SVaLZ              │
+│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ              │
 │ CBEU = 0.025903    │ Cena bodu EU                 │
 └────────────────────┴──────────────────────────────┘
 
@@ -34,6 +34,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['11a','70','1b','1c']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 867,869                                 │ vv.kod in ['867','869']                                      │
 │            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

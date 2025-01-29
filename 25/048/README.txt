@@ -8,17 +8,17 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 1.19           │ IPP1                         │
-│ IPP2 = 2.9            │ IPP2                         │
-│ IPP3 = 4.9            │ IPP3                         │
-│ IPP4 = 4.9            │ IPP4                         │
+│ IPP1 = 2.44           │ IPP1                         │
+│ IPP2 = 3.92           │ IPP2                         │
+│ IPP3 = 6.64           │ IPP3                         │
+│ IPP4 = 9.64           │ IPP4                         │
 │ IPPD = 5              │ IPPD                         │
 │ LIMIT = 0             │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.02814          │ Cena bodu                    │
+│ CB = 0.03466          │ Cena bodu                    │
 │ CBP = 0.049           │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.008105    │ Cena bodu SVaLZ              │
-│ CBSVALZUSG = 0.008473 │ Cena bodu SVaLZ USG          │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
 └───────────────────────┴──────────────────────────────┘
 
 
@@ -35,15 +35,21 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│           0.026 │ vv.bodyCelkom*cena        │ Prev. KS                                      │ vv.kod in ['765p']                                           │
+│            null │ vv.bodyCelkom*CB          │ Povrchová anestézia orofaryngu alebo hltana,  │ vv.kod in ['401']                                            │
+│                 │                           │ alebo hrtana a (alebo) bronchiálnej oblasti   │                                                              │
+│            null │ vv.bodyCelkom*CB          │ Odstránenie jedného polypu pomocou vysokofrek │ vv.kod in ['765p']                                           │
+│                 │                           │ venčnej                                       │                                                              │
+│                 │                           │ elektrickej slučky                            │                                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p','763m']                                    │
+│           0.049 │ vv.bodyCelkom*CB          │ Preventívna prehliadka konečníka a hrubého čr │ vv.kod in ['763p','763m']                                    │
+│                 │                           │ eva                                           │                                                              │
+│                 │                           │ kolonoskopom                                  │                                                              │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
-│            2.98 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5330','5331','5332','5300','5301','5303','5304', │
 │                 │                           │                                               │ '5307','5307a','5312','5315','5316']                         │

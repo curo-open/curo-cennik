@@ -8,10 +8,10 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.034        │ Cena bodu                    │
-│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
-│ CBP = 0.0735      │ Cena bodu preventívne výkony │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
+│ CB = 0.0323       │ Cena bodu                    │
+│ CBO = 0.0365      │ Cena bodu ostatné ŠAS výkony │
+│ CBP = 0.0779      │ Cena bodu preventívne výkony │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
 └───────────────────┴──────────────────────────────┘
 
 
@@ -25,9 +25,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│            null │ vv.bodyCelkom*CBO         │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CBO         │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','765']                          │
+│            null │ vv.bodyCelkom*CBO         │ Výkon                                         │ vv.kod in ['755','756','760','761','762','763','763a']       │
 │          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
@@ -36,16 +38,14 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p','763m']                                    │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763P','763M']                                    │
-│             267 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586']                                           │
-│             397 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9104']                                           │
-│             327 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105']                                           │
+│            null │ vv.pocet*3000*CBP         │ Prev. KS                                      │ vv.kod in ['763p']                                           │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p']                                           │
+│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763m']                                           │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │        0.012083 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
 │           14.99 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
@@ -73,7 +73,6 @@ Autor: curo.sk
 │            3000 │ 763sn                                                                                                     │                           │
 │            3000 │ 763pp                                                                                                     │                           │
 │            3000 │ 763pn                                                                                                     │                           │
-│            3000 │ 763p                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
@@ -85,11 +84,6 @@ Autor: curo.sk
   CENY ZA AMBULANTNE PODANÉ LIEKY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │            Cena │ Kódy                                                                                                      │ Typ                       │
-├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│            0.95 │ 62328                                                                                                     │ liek                      │
-│            1.15 │ 62329                                                                                                     │ liek                      │
-│           133.1 │ 02578                                                                                                     │ liek                      │
-│         2012.24 │ 0358b                                                                                                     │ liek                      │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
