@@ -2,15 +2,19 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0323
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -30,15 +34,15 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.03,
-			"calc": "vv.bodyCelkom*cena",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63,65",
 			"if": "vv.kod in ['60','62','63','65']",
-			"value": 0.039,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{
@@ -49,10 +53,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony",
-			"if": "vv.kod in ['H0008']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
+			"label": "Výkon 1591,1591a,1593,1595,1595a",
+			"if": "vv.kod in ['1591','1591a','1593','1595','1595a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -80,7 +84,7 @@
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -91,17 +95,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.01275,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -162,12 +159,6 @@
 				"value": 40
 			}
 		],
-		"741": [
-			{
-				"cond": "",
-				"value": 3292
-			}
-		],
 		"15d": [
 			{
 				"cond": "",
@@ -196,6 +187,12 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		]
 	},

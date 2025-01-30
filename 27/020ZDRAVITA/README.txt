@@ -95,9 +95,9 @@ Autor: curo.sk
 │            5.25 │ vv.pocet*cena             │ Komplexné vyšetrenie pacienta                 │ vv.kod in ['60']                                             │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
-│            8.95 │ vv.bodyCelkom*cena        │ Stanovenie hodnoty NT-proBNP                  │ vv.kod in ['3860']                                           │
-│            11.5 │ vv.bodyCelkom*cena        │ Stanovenie hodnoty Troponínu                  │ vv.kod in ['4485']                                           │
-│           19.75 │ vv.bodyCelkom*cena        │ USG – vyšetrenie POCUS                        │ vv.kod in ['44418']                                          │
+│            8.95 │ vv.pocet*cena             │ Stanovenie hodnoty NT-proBNP                  │ vv.kod in ['3860']                                           │
+│            11.5 │ vv.pocet*cena             │ Stanovenie hodnoty Troponínu                  │ vv.kod in ['4485']                                           │
+│           19.75 │ vv.pocet*cena             │ USG – vyšetrenie POCUS                        │ vv.kod in ['44418']                                          │
 │            1.22 │ vv.pocet*cena             │ Delegovaný odber                              │ vv.kod in ['250D','250d']                                    │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │

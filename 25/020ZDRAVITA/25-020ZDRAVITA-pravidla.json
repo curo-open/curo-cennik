@@ -398,21 +398,21 @@
 			"label": "Stanovenie hodnoty Troponínu ",
 			"if": "vv.kod in ['4485']",
 			"value": 11.6,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Stanovenie hodnoty NT-proBNP",
 			"if": "vv.kod in ['3860']",
 			"value": 8.98,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "USG – vyšetrenie POCUS",
 			"if": "vv.kod in ['44418']",
 			"value": 19.78,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "pocet*cena",
 			"instruction": null
 		},
 		{

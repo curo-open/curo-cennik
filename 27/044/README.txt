@@ -8,9 +8,10 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.0335       │ Cena bodu                    │
-│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
+│ CB = 0.0323       │ Cena bodu                    │
+│ CBO = 0.0365      │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
+│ NCB = 0           │ Navysena cena bodu           │
 │ IPP1 = 0.57       │ IPP1                         │
 │ IPP2 = 0.36       │ IPP2                         │
 │ IPP3 = 0.28       │ IPP3                         │
@@ -27,17 +28,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            0.03 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│           0.039 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65']                              │
+│            0.02 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65']                              │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 1591,1591a,1593,1595,1595a              │ vv.kod in ['1591','1591a','1593','1595','1595a']             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -54,12 +54,12 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│            3292 │ 741                                                                                                       │                           │
 │             150 │ 15d                                                                                                       │                           │
 │             480 │ 60r                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
+│             900 │ 62b                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

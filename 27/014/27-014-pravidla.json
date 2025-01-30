@@ -2,15 +2,19 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0323
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -31,21 +35,14 @@
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
 			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 60,62,63,65",
 			"if": "vv.kod in ['60','62','63','65']",
-			"value": 0.039,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 200,2100,2101,2106",
-			"if": "vv.kod in ['200','2100','2101','2106']",
-			"value": 0.033,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{
@@ -56,17 +53,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5153a, 5153b,5333",
-			"if": "vv.kod in ['5153a','5153b','5333']",
-			"value": 0.00924,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5330, 5331,5332",
-			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon 1410,1591,1593,1595,1596,1597,1599a,1599b,1599c",
+			"if": "vv.kod in ['1410','1591','1593','1595','1596','1597','1599a','1599b','1599c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -74,13 +64,6 @@
 			"if": "vv.kod in ['4571a','4571A']",
 			"value": 0.0132,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkony",
-			"if": "vv.kod in ['H0008']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -108,7 +91,7 @@
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -119,17 +102,10 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkony - iné ako SVALZ",
-			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.0226,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -190,12 +166,6 @@
 				"value": 40
 			}
 		],
-		"741": [
-			{
-				"cond": "",
-				"value": 3292
-			}
-		],
 		"15d": [
 			{
 				"cond": "",
@@ -224,6 +194,12 @@
 			{
 				"cond": "",
 				"value": 210
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		]
 	},

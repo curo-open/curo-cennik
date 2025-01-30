@@ -5,13 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬─────────────────┐
-│ Názov a hodnota    │ Popis           │
-├────────────────────┼─────────────────┤
-│ LIMIT = 2235       │ Limit           │
-│ CB = 0.03372       │ Cena bodu       │
-│ CBSVALZ = 0.008195 │ Cena bodu SVaLZ │
-└────────────────────┴─────────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ LIMIT = 2235      │ Limit           │
+│ CB = 0.031062     │ Cena bodu       │
+│ CBSVALZ = 0.01021 │ Cena bodu SVaLZ │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -24,8 +24,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│        0.026432 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in['60']                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in['60']                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62', '63']                                       │
 │          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15D']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['1b','11a','70']                                  │
