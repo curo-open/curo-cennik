@@ -339,6 +339,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Discízia šľachových pošiev ohýbača prsta",
+			"if": "vv.kod in ['5t7021']",
+			"value": 392,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Discízia šľachových pošiev prsta",
 			"if": "vv.kod in ['5t7027']",
 			"value": 392,

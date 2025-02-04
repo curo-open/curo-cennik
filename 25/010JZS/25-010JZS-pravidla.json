@@ -103,6 +103,10 @@
 		"_8501C": {
 			"label": "Výkon 8501C",
 			"value": 564
+		},
+		"_5T7021": {
+			"label": "Výkon 5T7021",
+			"value": 392
 		}
 	},
 	"pacient": [],
