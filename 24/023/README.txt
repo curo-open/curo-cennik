@@ -38,6 +38,7 @@ Autor: curo.sk
 │        0.007969 │ vv.bodyCelkom*cena        │ Mamografia unilaterálna                       │ vv.diagnoza=='Z01.4' && vv.kod in ['5092a']                  │
 │          0.0055 │ vv.bodyCelkom*cena        │ Denzitometria                                 │ vv.kod in ['5331']                                           │
 │            null │ vv.bodyCelkom*CB          │ Mamografia                                    │ vv.kod in ['5092','5092a']                                   │
+│            20.5 │ vv.pocet*cena             │ Bioptická ihla                                │ vv.kod in ['120801']                                         │
 │            null │ vv.bodyCelkom*CB50XX      │ RTG                                           │ vv.kod in ['5010','5011','5012','5015','5016','5020','5021', │
 │                 │                           │                                               │ '5022','5023','5024','5025','5030','5031','5032','5033','503 │
 │                 │                           │                                               │ 5','5050','5051','5052','5053','5056','5060','5061','5062',' │

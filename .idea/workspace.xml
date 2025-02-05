@@ -24,12 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/010JZS/25-010JZS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/010JZS/25-010JZS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/010JZS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/010JZS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/011JZS/25-011JZS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/011JZS/25-011JZS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/011JZS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/011JZS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/005/27-005-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/27-005-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/005/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/005/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -809,7 +803,7 @@
       <workItem from="1736241879618" duration="1594000" />
       <workItem from="1737378036787" duration="31000" />
       <workItem from="1738135738965" duration="672000" />
-      <workItem from="1738248068314" duration="597000" />
+      <workItem from="1738248068314" duration="1871000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1154,7 +1148,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="493" />
+    <option name="localTasksCounter" value="494" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
