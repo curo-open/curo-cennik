@@ -22,18 +22,11 @@
 		},
 		"X03853": {
 			"label": "X03853",
-			"value": 20
+			"value": 20.5
 		}
 	},
 	"pacient": [],
 	"vykon": [
-		{
-			"label": "Bioptická ihla",
-			"if": "vv.kod in ['X03853']",
-			"value": 20.5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
 		{
 			"label": "Denzitometria ",
 			"if": "vv.kod in ['5331']",

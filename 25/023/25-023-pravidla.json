@@ -30,7 +30,7 @@
 		},
 		"X03853": {
 			"label": "X03853",
-			"value": 20
+			"value": 20.5
 		}
 	},
 	"pacient": [],
@@ -47,13 +47,6 @@
 			"if": "vv.kod in ['5092','5092a']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Bioptická ihla",
-			"if": "vv.kod in ['X03853']",
-			"value": 20.5,
-			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
