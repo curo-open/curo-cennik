@@ -56,7 +56,7 @@
 		{
 			"label": "Výkon 252b, 252c",
 			"if": "vv.kod in ['252b','252C']",
-			"value": 0.09,
+			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

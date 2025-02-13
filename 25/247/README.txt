@@ -10,8 +10,12 @@ Autor: curo.sk
 ├───────────────────────┼─────────────────────┤
 │ CB = 0.035            │ Cena bodu           │
 │ CBEU = 0.03466        │ Cena bodu EU        │
-│ CBSVALZ = 0.0091159   │ Cena bodu SVaLZ     │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
+│ IPP1 = 2.44           │ IPP1                │
+│ IPP2 = 3.92           │ IPP2                │
+│ IPP3 = 6.64           │ IPP3                │
+│ IPP4 = 9.64           │ IPP4                │
 └───────────────────────┴─────────────────────┘
 
 
@@ -28,6 +32,10 @@ Autor: curo.sk
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
 │         0.03466 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['60','62','63' ,'65','66','67']                   │
 │               5 │ vv.pocet*cena             │ Výkon  108                                    │ vv.kod in ['250x']                                           │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

@@ -32,7 +32,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            0.03 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['102','103','105','108','157','297','1070']       │
-│            0.09 │ vv.bodyCelkom*cena        │ Výkon 252b, 252c                              │ vv.kod in ['252b','252C']                                    │
+│           0.084 │ vv.bodyCelkom*cena        │ Výkon 252b, 252c                              │ vv.kod in ['252b','252C']                                    │
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony 5303,5305,5308             │ "Z" in vv.diagnoza && vv.kod in ['5303','5305','5308']       │
 │        0.009574 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
