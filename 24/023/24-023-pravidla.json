@@ -76,7 +76,7 @@
 		{
 			"label": "Denzitometria ",
 			"if": "vv.kod in ['5331']",
-			"value": 0.055,
+			"value": 0.0055,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

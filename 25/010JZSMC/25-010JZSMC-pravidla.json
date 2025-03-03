@@ -542,6 +542,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5v1414']",
+			"value": 104,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histo",
 			"if": "vv.kod in ['5v1430']",
 			"value": 104,

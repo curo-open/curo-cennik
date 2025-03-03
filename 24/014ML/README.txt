@@ -1,21 +1,17 @@
-                                                                       =================
-                                                                       Cenník radiologia
-                                                                       =================
+                                                                           ==========
+                                                                           Cenník ORL
+                                                                           ==========
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬────────────────────────────────────────────────────┐
-│ Názov a hodnota │ Popis                                              │
-├─────────────────┼────────────────────────────────────────────────────┤
-│ LIMIT = 0       │ Limit                                              │
-│ CB = 0.008      │ Cena bodu                                          │
-│ CBSVALZ = 0.008 │ Cena bodu SVALZ                                    │
-│ CBEU = 0.008    │ Cena bodu EU                                       │
-│ CB50XX = 0.011  │ Cena bodu 50XX                                     │
-│ DO10DNI = 0     │ Text pre fakturu Z014 do 10dni za mesiac ${mesiac} │
-│ _120801 = 20.5  │ 120801                                             │
-└─────────────────┴────────────────────────────────────────────────────┘
+┌───────────────────┬─────────────────┐
+│ Názov a hodnota   │ Popis           │
+├───────────────────┼─────────────────┤
+│ LIMIT = 2235      │ Limit           │
+│ CB = 0.031062     │ Cena bodu       │
+│ CBSVALZ = 0.01021 │ Cena bodu SVaLZ │
+└───────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,35 +24,34 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.009 │ vv.bodyCelkom*cena        │ Ultrazvukové vyšetrenie obidvoch prsníkov, ax │ vv.diagnoza=='Z01.4' && vv.kod in ['5308.DO10']              │
-│                 │                           │ íl a regionálnych lymfatických uzlín.         │                                                              │
-│           0.009 │ vv.bodyCelkom*cena        │ Mamografia bilaterálna                        │ vv.diagnoza=='Z01.4' && vv.kod in ['5092.DO10']              │
-│           0.009 │ vv.bodyCelkom*cena        │ Mamografia unilaterálna                       │ vv.diagnoza=='Z01.4' && vv.kod in ['5092a.DO10']             │
-│           0.009 │ vv.bodyCelkom*cena        │ Ultrazvukové vyšetrenie obidvoch prsníkov, ax │ vv.diagnoza=='Z01.4' && vv.kod in ['5308']                   │
-│                 │                           │ íl a regionálnych lymfatických uzlín.         │                                                              │
-│           0.009 │ vv.bodyCelkom*cena        │ Mamografia bilaterálna                        │ vv.diagnoza=='Z01.4' && vv.kod in ['5092']                   │
-│           0.009 │ vv.bodyCelkom*cena        │ Mamografia unilaterálna                       │ vv.diagnoza=='Z01.4' && vv.kod in ['5092a']                  │
-│          0.0055 │ vv.bodyCelkom*cena        │ Denzitometria                                 │ vv.kod in ['5331']                                           │
-│            null │ vv.bodyCelkom*CB          │ Mamografia                                    │ vv.kod in ['5092','5092a']                                   │
-│            null │ vv.bodyCelkom*CB50XX      │ RTG                                           │ vv.kod in ['5010','5011','5012','5015','5016','5020','5021', │
-│                 │                           │                                               │ '5022','5023','5024','5025','5030','5031','5032','5033','503 │
-│                 │                           │                                               │ 5','5050','5051','5052','5053','5056','5060','5061','5062',' │
-│                 │                           │                                               │ 5065','5070','5071','5072','5075','5076','5077','5080','5081 │
-│                 │                           │                                               │ ','5082','5083','5090','5095','5051R']                       │
-│            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5300','5301','5302','5303','5306','5307','5308', │
-│                 │                           │                                               │ '5309','5310','5312','5315','5316','5742','5743','5739','573 │
-│                 │                           │                                               │ 8','5153a']                                                  │
-│              30 │ vv.pocet*cena             │ Skríningová mamografia                        │ vv.kod in ['1301','1301a','1301b','1301c','1301d','1301e']   │
-│            null │ _120801                   │ Pripočitateľné položky  - Bioptická ihla      │ vv.kod=='120801'                                             │
-│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in['60']                                              │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62', '63']                                       │
+│          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15D']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['1b','11a','70']                                  │
+│         0.01261 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
+│        0.028719 │ vv.bodyCelkom*cena        │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
+│              40 │ 70                                                                                                        │                           │
+│             150 │ 15D                                                                                                       │                           │
+│             160 │ 1b                                                                                                        │                           │
+│            1000 │ 1c                                                                                                        │                           │
+│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

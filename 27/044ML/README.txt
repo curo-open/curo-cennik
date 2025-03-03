@@ -1,6 +1,6 @@
-                                                                     ======================
-                                                                     Cenník gastroenterolog
-                                                                     ======================
+                                                                        ================
+                                                                        Cenník foniatria
+                                                                        ================
 
 Autor: curo.sk
 
@@ -8,10 +8,13 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.0365       │ Cena bodu                    │
-│ CBO = 0.0348      │ Cena bodu ostatné ŠAS výkony │
-│ CBP = 0.0779      │ Cena bodu preventívne výkony │
+│ CB = 0.0323       │ Cena bodu                    │
+│ CBO = 0.0365      │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
+│ NCB = 0           │ Navysena cena bodu           │
+│ IPP1 = 0.57       │ IPP1                         │
+│ IPP2 = 0.36       │ IPP2                         │
+│ IPP3 = 0.28       │ IPP3                         │
 └───────────────────┴──────────────────────────────┘
 
 
@@ -25,29 +28,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
-│            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│            0.02 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63','65']                              │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│            null │ vv.bodyCelkom*CBO         │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','765']                          │
-│            null │ vv.bodyCelkom*CB          │ Výkon                                         │ vv.kod in ['755','756','760','761','762','763','763a']       │
-│          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
-│         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
-│                 │                           │                                               │ ,'5315','5316']                                              │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760SP','760SN','760PP','760PN']                  │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763SP','763SN','763PP','763PN']                  │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763sp','763sn','763pp','763pn']                  │
-│            null │ vv.pocet*3000*CBP         │ Prev. KS                                      │ vv.kod in ['763p']                                           │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763p']                                           │
-│            null │ vv.bodyCelkom*CBP         │ Prev. KS                                      │ vv.kod in ['763m']                                           │
-│        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│        0.012083 │ vv.bodyCelkom*cena        │ Výkon 5793,5794,5795                          │ vv.kod in ['5793','5794','5795']                             │
-│           14.99 │ vv.pocet*cena             │ Výkon 8899 - Stacionár                        │ vv.kod in ['8899']                                           │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 1591,1591a,1593,1595,1595a              │ vv.kod in ['1591','1591a','1593','1595','1595a']             │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -56,6 +46,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             160 │ 1                                                                                                         │                           │
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
@@ -63,21 +54,12 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│            2426 │ 761                                                                                                       │                           │
-│            3000 │ 763                                                                                                       │                           │
-│            1500 │ 760sp                                                                                                     │                           │
-│            1500 │ 760sn                                                                                                     │                           │
-│            1500 │ 760pp                                                                                                     │                           │
-│            1500 │ 760pn                                                                                                     │                           │
-│            3000 │ 763sp                                                                                                     │                           │
-│            3000 │ 763sn                                                                                                     │                           │
-│            3000 │ 763pp                                                                                                     │                           │
-│            3000 │ 763pn                                                                                                     │                           │
+│             150 │ 15d                                                                                                       │                           │
+│             480 │ 60r                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
-│            1000 │ 68a                                                                                                       │                           │
-│            1000 │ 68a                                                                                                       │                           │
+│             900 │ 62b                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
@@ -90,8 +72,5 @@ Autor: curo.sk
   KONTROLA DEKURZU
 ┌─────────────────────────────────┬────────────┬──────────────────────────────────────────────────────┬──────────────────────────────────────────────────────┐
 │ Popis                           │ Dôležitosť │ Ak platí ...                                         │ tak má platiť                                        │
-├─────────────────────────────────┼────────────┼──────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
-│ Výkony 760*, 763* sú vykázané p │     0      │ vv.kod in ['760sp','760sn','760pp','760pn','763sp',' │ vv.diagnoza in ['Z12.1']                             │
-│ od zlou diagnózou               │            │ 763sn','763pp','763pn','763p']                       │                                                      │
 └─────────────────────────────────┴────────────┴──────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘
 
