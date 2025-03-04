@@ -14,6 +14,7 @@ Autor: curo.sk
 │ CBEU = 0.026     │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8       │ AGTC                       │
 │ PP50 = 10        │ PP50                       │
+│ EDU = 2          │ EDU k výkonom  H0004       │
 └──────────────────┴────────────────────────────┘
 
 
@@ -67,6 +68,7 @@ Autor: curo.sk
 │            1.05 │ vv.pocet*cena             │ Delegovaný odber krvi                         │ vv.kod in ['250D','250d']                                    │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ p.typ in ['EU'] && vv.typ!='SVaLZ'                           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │

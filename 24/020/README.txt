@@ -14,6 +14,7 @@ Autor: curo.sk
 │ CBEU = 0.028704    │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8         │ AGTC                       │
 │ PP50 = 10          │ PP50                       │
+│ EDU = 2            │ EDU                        │
 └────────────────────┴────────────────────────────┘
 
 
@@ -70,6 +71,7 @@ Autor: curo.sk
 │               5 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'           │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │

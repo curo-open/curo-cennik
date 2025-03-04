@@ -14,6 +14,7 @@ Autor: curo.sk
 │ CBEU = 0.028704    │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8         │ AGTC                       │
 │ PP50 = 10          │ PP50                       │
+│ EDU = 2            │ EDU k výkonom  H0004       │
 └────────────────────┴────────────────────────────┘
 
 
@@ -63,6 +64,7 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
 │               5 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
 │            8.98 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │

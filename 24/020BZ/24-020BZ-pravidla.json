@@ -23,6 +23,10 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"EDU": {
+			"label": "EDU k výkonom  H0004",
+			"value": 2
 		}
 	},
 	"pacient": [
@@ -264,6 +268,13 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='EDU'",
+			"value": null,
+			"calc": "EDU",
 			"instruction": null
 		},
 		{
