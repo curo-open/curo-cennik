@@ -131,7 +131,7 @@
 		{
 			"label": "Výkon 8529",
 			"if": "vv.kod in ['8529'] || vv.k in ['8529'] || vv.k24 in ['8529']",
-			"value": 365,
+			"value": 392,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

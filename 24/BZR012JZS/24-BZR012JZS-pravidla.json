@@ -166,7 +166,7 @@
 		{
 			"label": "Výkon 8924",
 			"if": "vv.kod in ['8924'] || vv.k in ['8924'] || vv.k24 in ['8924']",
-			"value": 76,
+			"value": 73,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

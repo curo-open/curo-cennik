@@ -44,7 +44,7 @@ Autor: curo.sk
 │             349 │ vv.pocet*cena             │ Výkon 8634                                    │ vv.kod in ['8634'] || vv.k in ['8634'] || vv.k24 in ['8634'] │
 │             121 │ vv.pocet*cena             │ Výkon 8635                                    │ vv.kod in ['8635'] || vv.k in ['8635'] || vv.k24 in ['8635'] │
 │             229 │ vv.pocet*cena             │ Výkon 8636                                    │ vv.kod in ['8636'] || vv.k in ['8636'] || vv.k24 in ['8636'] │
-│             273 │ vv.pocet*cena             │ Výkon 8640                                    │ vv.kod in ['8640'] || vv.k in ['8640'] || vv.k24 in ['8640'] │
+│             284 │ vv.pocet*cena             │ Výkon 8640                                    │ vv.kod in ['8640'] || vv.k in ['8640'] || vv.k24 in ['8640'] │
 │             392 │ vv.pocet*cena             │ Výkon 8641                                    │ vv.kod in ['8641'] || vv.k in ['8641'] || vv.k24 in ['8641'] │
 │             437 │ vv.pocet*cena             │ Výkon 8642                                    │ vv.kod in ['8642'] || vv.k in ['8642'] || vv.k24 in ['8642'] │
 │             392 │ vv.pocet*cena             │ Výkon 8643                                    │ vv.kod in ['8643'] || vv.k in ['8643'] || vv.k24 in ['8643'] │

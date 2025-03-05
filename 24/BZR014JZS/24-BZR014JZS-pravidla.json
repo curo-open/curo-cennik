@@ -376,7 +376,7 @@
 		{
 			"label": "Výkon 8800K",
 			"if": "vv.kod in ['8800K'] || vv.k in ['8800K'] || vv.k24 in ['8800K']",
-			"value": 530,
+			"value": 603,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

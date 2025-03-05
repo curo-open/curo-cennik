@@ -46,7 +46,7 @@ Autor: curo.sk
 │             172 │ vv.pocet*cena             │ Výkon 8921                                    │ vv.kod in ['8921'] || vv.k in ['8921'] || vv.k24 in ['8921'] │
 │              61 │ vv.pocet*cena             │ Výkon 8922                                    │ vv.kod in ['8922'] || vv.k in ['8922'] || vv.k24 in ['8922'] │
 │             614 │ vv.pocet*cena             │ Výkon 8923                                    │ vv.kod in ['8923'] || vv.k in ['8923'] || vv.k24 in ['8923'] │
-│              76 │ vv.pocet*cena             │ Výkon 8924                                    │ vv.kod in ['8924'] || vv.k in ['8924'] || vv.k24 in ['8924'] │
+│              73 │ vv.pocet*cena             │ Výkon 8924                                    │ vv.kod in ['8924'] || vv.k in ['8924'] || vv.k24 in ['8924'] │
 │             515 │ vv.pocet*cena             │ Výkon 8925                                    │ vv.kod in ['8925'] || vv.k in ['8925'] || vv.k24 in ['8925'] │
 │             344 │ vv.pocet*cena             │ Výkon 8926                                    │ vv.kod in ['8926'] || vv.k in ['8926'] || vv.k24 in ['8926'] │
 │             368 │ vv.pocet*cena             │ Výkon 8927                                    │ vv.kod in ['8927'] || vv.k in ['8927'] || vv.k24 in ['8927'] │

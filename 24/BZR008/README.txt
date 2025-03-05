@@ -39,10 +39,10 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│            1.37 │ vv.pocet*cena             │ Výkon 1                                       │ vv.kod in ['1']                                              │
-│            5.11 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
-│            7.17 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
-│            2.03 │ vv.pocet*cena             │ Výkon 250,250a,250b                           │ !p.kapitacia && vv.kod in ['250','250a','250b']              │
+│            1.49 │ vv.pocet*cena             │ Výkon 1                                       │ vv.kod in ['1']                                              │
+│            5.58 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
+│            7.88 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
+│            2.21 │ vv.pocet*cena             │ Výkon 250,250a,250b                           │ !p.kapitacia && vv.kod in ['250','250a','250b']              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 299a,299b                               │ !p.kapitacia && vv.kod in ['299a','299b']                    │
 │            8.63 │ vv.pocet*cena             │ Výkon 4-nekapitovaný                          │ !p.kapitacia && vv.kod in ['4']                              │
 │           12.26 │ vv.pocet*cena             │ Výkon 8-nekapitovaný                          │ !p.kapitacia && vv.kod in ['8']                              │

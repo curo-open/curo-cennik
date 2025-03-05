@@ -108,28 +108,28 @@
 		{
 			"label": "Výkon 1",
 			"if": "vv.kod in ['1']",
-			"value": 1.37,
+			"value": 1.49,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 4",
 			"if": "vv.kod in ['4']",
-			"value": 5.11,
+			"value": 5.58,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8",
 			"if": "vv.kod in ['8']",
-			"value": 7.17,
+			"value": 7.88,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 250,250a,250b",
 			"if": "!p.kapitacia && vv.kod in ['250','250a','250b']",
-			"value": 2.03,
+			"value": 2.21,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

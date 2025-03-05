@@ -19,7 +19,7 @@
 		{
 			"label": "Výkon 9100",
 			"if": "vv.kod in ['9100'] || vv.k in ['9100'] || vv.k24 in ['9100'] ",
-			"value": 285,
+			"value": 273,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
