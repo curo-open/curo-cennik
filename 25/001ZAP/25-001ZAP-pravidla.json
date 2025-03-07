@@ -2,23 +2,23 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.94
+			"value": 1.83
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 4
+			"value": 2.94
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.64
+			"value": 4.98
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 9.64
+			"value": 10.98
 		},
 		"LIMIT": {
 			"label": "Limit",
-			"value": 75900
+			"value": 0
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -241,19 +241,19 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 620
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 400
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 250
 			}
 		],
 		"65": [

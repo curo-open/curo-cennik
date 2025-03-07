@@ -1,40 +1,32 @@
 {
 	"params": {
-		"IPP1": {
-			"label": "IPP1",
-			"value": 2.94
-		},
-		"IPP2": {
-			"label": "IPP2",
-			"value": 4
-		},
-		"IPP3": {
-			"label": "IPP3",
-			"value": 6.64
-		},
-		"IPP4": {
-			"label": "IPP4",
-			"value": 9.64
-		},
-		"LIMIT": {
-			"label": "Limit",
-			"value": 75900
-		},
-		"EL_POBOCKA": {
-			"label": "Používa el. pobočku ?",
-			"value": 1
-		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03466
+			"value": 0.0323
+		},
+		"CBO": {
+			"label": "Cena bodu ostatné",
+			"value": 0.0365
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009159
+			"value": 0.01031
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.009574
+			"value": 0.01107
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 5.83
+		},
+		"IPP5": {
+			"label": "IPP5",
+			"value": 4.24
+		},
+		"IPP6": {
+			"label": "IPP6",
+			"value": 3.18
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -43,6 +35,10 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
 		}
 	},
 	"pacient": [],
@@ -50,85 +46,43 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.026,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 250x",
-			"if": "vv.kod in ['250x']",
-			"value": 5,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Elektronická komunikácia",
-			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 509a;512;513;514a;516;518;522;523a;530;531",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
-			"value": 0.011618,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5302",
-			"if": "vv.kod in ['5302']",
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
-			"instruction": null
-		},
-		{
-			"label": "Výkon SVALZ USG",
-			"if": "vv.kod in ['5330','5331','5332','5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 532;533a;540;541;542",
-			"if": "vv.kod in ['532','533a','540','541','542']",
-			"value": 0.011618,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 765p",
-			"if": "vv.kod in ['765p']",
-			"value": 0.026,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['62']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 60;62;63",
-			"if": "vv.kod in ['63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5302",
+			"if": "vv.kod in ['5302']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5330,5531,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon SVALZ USG",
+			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
+			"value": 0.00924,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -139,38 +93,38 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5702, 5715, 5716",
-			"if": "vv.kod in ['5702','5715','5716']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"label": "Výkon ",
+			"if": "vv.kod in ['5727']",
+			"value": 0.2463,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie Covid 252L",
-			"if": "vv.kod in ['252L']",
-			"value": 10,
+			"label": "Stanovenie D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.95,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Skríningový antigénový test SARS-CoV-2",
-			"if": "vv.kod in ['629a']",
-			"value": 5.2,
+			"label": "Výkon H0007",
+			"if": "vv.kod in ['H0007']",
+			"value": 6.06,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
-			"if": "vv.kod in ['629b']",
-			"value": 10,
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 6.98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='AGTC'",
-			"value": null,
-			"calc": "AGTC",
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -192,6 +146,48 @@
 			"if": "vv.kod=='IPP3'",
 			"value": null,
 			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP5'",
+			"value": null,
+			"calc": "IPP5",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP6'",
+			"value": null,
+			"calc": "IPP6",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2",
+			"if": "vv.kod in ['629a']",
+			"value": 5.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC",
 			"instruction": null
 		},
 		{
@@ -235,25 +231,25 @@
 		"1": [
 			{
 				"cond": "",
-				"value": 160
+				"value": 80
 			}
 		],
 		"60": [
 			{
 				"cond": "",
-				"value": 620
+				"value": 420
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 400
+				"value": 270
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 210
 			}
 		],
 		"65": [
@@ -278,12 +274,6 @@
 			{
 				"cond": "",
 				"value": 40
-			}
-		],
-		"15d": [
-			{
-				"cond": "",
-				"value": 150
 			}
 		],
 		"1b": [
