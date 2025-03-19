@@ -80,7 +80,7 @@
 		},
 		{
 			"label": "Vykon 8",
-			"if": "p.kapitacia || d.zl && vv.kod in ['8']",
+			"if": "(p.kapitacia || d.zl) && vv.kod in ['8']",
 			"value": null,
 			"calc": "vv.pocet*VCB8",
 			"instruction": null
