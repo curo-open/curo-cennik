@@ -93,6 +93,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Vykon 4",
+			"if": "d.zl && vv.kod in ['4']",
+			"value": null,
+			"calc": "vv.pocet*VCB4",
+			"instruction": null
+		},
+		{
 			"label": "Vykon 1",
 			"if": "p.kapitacia || d.zl && vv.kod in ['1']",
 			"value": null,
