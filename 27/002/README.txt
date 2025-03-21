@@ -33,7 +33,7 @@ Autor: curo.sk
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │            10.2 │ vv.pocet*cena             │ Vyšetrenie pacienta s potvrdeným ochorením Co │ vv.kod in ['629b']                                           │
 │                 │                           │ vid-19                                        │                                                              │
-│          0.0158 │ vv.bodyCelkom*cena        │ C-reaktívny proteín                           │ vv.kod in ['4571a']                                          │
+│          0.0158 │ vv.bodyCelkom*cena        │ C-reaktívny proteín                           │ vv.kod in ['4571a','4571A']                                  │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

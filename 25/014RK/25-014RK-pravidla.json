@@ -1,69 +1,99 @@
 {
 	"params": {
-		"CB": {
-			"label": "Cena bodu ",
-			"value": 0.0365
+		"IPP1": {
+			"label": "IPP1",
+			"value": 2.44
 		},
-		"CBO": {
-			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0323
+		"IPP2": {
+			"label": "IPP2",
+			"value": 3.92
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 6.64
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 9.64
+		},
+		"IPPD": {
+			"label": "IPPD",
+			"value": 5
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 75900
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.03466
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01031
+			"value": 0.009159
 		},
-		"NCB": {
-			"label": "Navysena cena bodu",
-			"value": 0.0025
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.009574
 		},
-		"IPP4": {
-			"label": "IPP1",
-			"value": 3.71
-		},
-		"IPP5": {
-			"label": "IPP2",
-			"value": 3.18
-		},
-		"IPP6": {
-			"label": "IPP3",
-			"value": 2.12
+		"AGTC": {
+			"label": "AGTC",
+			"value": 4.8
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.02,
+			"value": 0.026,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
+			"label": "špec. elektronické výkony",
+			"if": "vv.kod in ['11a','1b','1c','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Vyšetrenie pacienta s potvrdeným ochorením Covid-19",
-			"if": "vv.kod in ['629b']",
-			"value": 10.2,
-			"calc": "vv.pocet*cena",
+			"label": "Výkon 60,62,63",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
-			"label": "C-reaktívny proteín",
-			"if": "vv.kod in ['4571a','4571A']",
-			"value": 0.0158,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1410,1540,1550",
+			"if": "vv.kod in ['1410','1540','1550']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AGTC'",
+			"value": null,
+			"calc": "AGTC",
 			"instruction": null
 		},
 		{
@@ -88,6 +118,20 @@
 			"instruction": null
 		},
 		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPPD'",
+			"value": null,
+			"calc": "IPPD",
+			"instruction": null
+		},
+		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
@@ -105,7 +149,7 @@
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -118,28 +162,22 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",
-				"value": 420
+				"value": 500
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 270
+				"value": 310
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		],
 		"65": [
@@ -166,22 +204,22 @@
 				"value": 40
 			}
 		],
-		"741": [
+		"1410": [
 			{
 				"cond": "",
-				"value": 3292
+				"value": 350
 			}
 		],
-		"15d": [
+		"1540": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 60
 			}
 		],
-		"60r": [
+		"1550": [
 			{
 				"cond": "",
-				"value": 480
+				"value": 200
 			}
 		],
 		"1b": [
@@ -205,5 +243,5 @@
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "infektolog"
+	"title": "ORL"
 }

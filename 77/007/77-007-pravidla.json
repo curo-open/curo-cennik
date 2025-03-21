@@ -216,7 +216,7 @@
 		},
 		{
 			"label": "CRP",
-			"if": "vv.kod in ['4571a']",
+			"if": "vv.kod in ['4571a','4571A']",
 			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

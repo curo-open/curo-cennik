@@ -63,7 +63,7 @@ Autor: curo.sk
 │          0.0349 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25','26','29']                                   │
 │          0.0349 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
 │                 │                           │                                               │ ,'29','30','40','41','67','140']                             │
-│          0.0158 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a']                                          │
+│          0.0158 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a', '70']                                 │
 │            5.25 │ vv.pocet*cena             │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │           17.51 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │

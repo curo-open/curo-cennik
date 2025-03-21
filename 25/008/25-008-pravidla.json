@@ -170,7 +170,7 @@
 		},
 		{
 			"label": "CRP",
-			"if": "vv.kod in ['4571a']",
+			"if": "vv.kod in ['4571a','4571A']",
 			"value": 5.75,
 			"calc": "vv.pocet*cena",
 			"instruction": null
