@@ -448,6 +448,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Jeden ošetrovací deň v stacionári",
+			"if": "vv.kod in ['8899']",
+			"value": 60,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Mäkké a mobilizačné techniky na  chrbtici, periférnych kĺboch a svaloch",
 			"if": "vv.kod in ['509a']",
 			"value": 3.72,
