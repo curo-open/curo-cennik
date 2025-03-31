@@ -157,6 +157,9 @@ Autor: curo.sk
 │             101 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v1309']                                         │
 │                 │                           │ na koži a podkoží bez primárneho uzavretia ra │                                                              │
 │                 │                           │ ny v oblas                                    │                                                              │
+│             104 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v1314']                                         │
+│                 │                           │ na koži a podkoží s primárnym uzavretím rany  │                                                              │
+│                 │                           │ ostatných častí hlavy                         │                                                              │
 │             101 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v130g']                                         │
 │                 │                           │ na koži a podkoží bez primárneho uzavretia ra │                                                              │
 │                 │                           │ ny v oblas                                    │                                                              │

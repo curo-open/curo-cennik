@@ -535,6 +535,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1314']",
+			"value": 104,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblas",
 			"if": "vv.kod in ['5v130g']",
 			"value": 101,
