@@ -116,6 +116,7 @@ Autor: curo.sk
 │                 │                           │ OM                                            │                                                              │
 │            1.02 │ vv.pocet*cena             │ KONTROLA GLYKÉMIE GLUKOMEROM                  │ vv.kod in ['3635A']                                          │
 │            0.77 │ vv.pocet*cena             │ HYGIENA POŠVY ZA ÚĆELOM LIEČEBNÝM             │ vv.kod in ['3474']                                           │
+│              60 │ vv.pocet*cena             │ Jeden ošetrovací deň v stacionári             │ vv.kod in ['8899']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

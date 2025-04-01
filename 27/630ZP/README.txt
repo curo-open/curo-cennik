@@ -34,6 +34,7 @@ Autor: curo.sk
 │            7.36 │ vv.pocet*cena             │ Nultá návšteva u poistenca                    │ vv.kod in ['3439a']                                          │
 │             9.7 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25a']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
+│              60 │ vv.pocet*cena             │ Jeden ošetrovací deň v stacionári             │ vv.kod in ['8899']                                           │
 │            null │ vv.bodyCelkom*CB          │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
