@@ -1,36 +1,16 @@
 {
 	"params": {
-		"LIMIT": {
-			"label": "Limit",
-			"value": 0
-		},
 		"CB": {
-			"label": "Cena bodu",
-			"value": 0.0373
+			"label": "Cena bodu ",
+			"value": 0.036616
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01031
+			"value": 0.0055
 		},
-		"CBSVALZUSG": {
-			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01107
-		},
-		"IPP4": {
-			"label": "IPP4",
-			"value": 2.49
-		},
-		"IPP5": {
-			"label": "IPP5",
-			"value": 0.73
-		},
-		"IPP6": {
-			"label": "IPP6",
-			"value": 0.57
-		},
-		"IPP7": {
-			"label": "IPP7",
-			"value": 1.06
+		"CBUSG": {
+			"label": "Cena bodu USG",
+			"value": 0.009281
 		}
 	},
 	"pacient": [],
@@ -38,8 +18,8 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.03528,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -52,7 +32,7 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.02,
+			"value": 0.0193,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -66,7 +46,7 @@
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.035,
+			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -80,7 +60,7 @@
 		{
 			"label": "Výkon 4571a",
 			"if": "vv.kod in ['4571a']",
-			"value": 0.015,
+			"value": 0,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -253,30 +233,9 @@
 			"instruction": null
 		},
 		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP4'",
-			"value": null,
-			"calc": "IPP4",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP5'",
-			"value": null,
-			"calc": "IPP5",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPP6'",
-			"value": null,
-			"calc": "IPP6",
-			"instruction": null
-		},
-		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
-			"value": 0.0415,
+			"value": 0.036616,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
