@@ -446,13 +446,6 @@
 			"value": 0.77,
 			"calc": "vv.pocet*cena",
 			"instruction": null
-		},
-		{
-			"label": "Jeden ošetrovací deň v stacionári",
-			"if": "vv.kod in ['8899']",
-			"value": 60,
-			"calc": "vv.pocet*cena",
-			"instruction": null
 		}
 	],
 	"kontrola": [],

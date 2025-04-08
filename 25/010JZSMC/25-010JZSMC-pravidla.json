@@ -68,7 +68,7 @@
 		{
 			"label": "Odstránenie varixov nekmeňovej varikozity bez crossektómie",
 			"if": "vv.kod in ['5l1943']",
-			"value": 418,
+			"value": 428,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

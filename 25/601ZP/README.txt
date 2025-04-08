@@ -1,19 +1,13 @@
-                                                                       ==================
-                                                                       Cenník zupa hospic
-                                                                       ==================
+                                                                        ================
+                                                                        Cenník stacionar
+                                                                        ================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────┐
-│ Názov a hodnota   │ Popis                      │
-├───────────────────┼────────────────────────────┤
-│ CB = 0.019        │ Cena bodu                  │
-│ CBV = 0.044       │ Cena bodu                  │
-│ CBD = 0.035       │ Cena bodu doprava          │
-│ CBD60plus = 0.175 │ Cena bodu doprava nad 60km │
-│ LIMIT = 0         │ Limit                      │
-└───────────────────┴────────────────────────────┘
+┌─────────────────┬───────┐
+│ Názov a hodnota │ Popis │
+└─────────────────┴───────┘
 
 
   CENY ZA PACIENTA
@@ -26,17 +20,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
-│            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
-│              61 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25m']                                            │
-│                 │                           │ domácom prostredí                             │                                                              │
-│            null │ vv.bodyCelkom*CBV         │ Výkon 3419, 3420, 3439, 3440, 3441 a 3447     │ vv.kod in ['3419','3420','3439','3440','3441','3447']        │
-│            7.36 │ vv.pocet*cena             │ Nultá návšteva u poistenca                    │ vv.kod in ['3439a']                                          │
-│             9.7 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25a']                                            │
-│                 │                           │ domácom prostredí                             │                                                              │
-│            null │ vv.bodyCelkom*CB          │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│              60 │ vv.pocet*cena             │ Jeden ošetrovací deň v stacionári             │ vv.kod in ['8899']                                           │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

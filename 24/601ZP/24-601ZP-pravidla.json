@@ -1,0 +1,18 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Jeden ošetrovací deň v stacionári",
+			"if": "vv.kod in ['8899']",
+			"value": 60,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "stacionar"
+}
