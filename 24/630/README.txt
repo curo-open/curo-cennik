@@ -12,11 +12,11 @@ Autor: curo.sk
 │ IPP2 = 1.89        │ IPP2                         │
 │ IPP3 = 3.19        │ IPP3                         │
 │ ZCB = 0            │ Zvýhodnená cena bodu         │
-│ CBD = 0.35         │ Cena bodu doprava do 60km    │
-│ CBD60plus = 0.175  │ Cena bodu doprava nad 60km   │
+│ CBD = 0.37         │ Cena bodu doprava do 60km    │
+│ CBD60plus = 0.185  │ Cena bodu doprava nad 60km   │
 │ LIMIT = 0          │ Limit                        │
-│ CB = 0.019002      │ Cena bodu                    │
-│ CBP = 0            │ Cena bodu preventívne výkony │
+│ CB = 0.0192        │ Cena bodu                    │
+│ CBP = 6.88         │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.019002 │ Cena bodu SVaLZ              │
 └────────────────────┴──────────────────────────────┘
 
@@ -31,16 +31,23 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
-│            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
-│            null │ vv.bodyCelkom*1.75*CB     │ Výkony - imobilný                             │ p.fs=='I'                                                    │
-│            null │ vv.bodyCelkom*1.5*CB      │ Výkony - obmedzemá hybnosť                    │ p.fs=='H'                                                    │
-│            null │ vv.bodyCelkom*1.5*CB      │ Výkony - psychiatrická diagnóza, kompenzovaný │ p.fs=='FK'                                                   │
-│            null │ vv.bodyCelkom*1.75*CB     │ Výkony - psychiatrická diagnóza, dekompenzova │ p.fs=='FD'                                                   │
-│                 │                           │ ný                                            │                                                              │
-│            null │ vv.bodyCelkom*1.75*CB     │ Výkony - mentálná retardácia                  │ p.fs=='R'                                                    │
-│              58 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
+│            0.37 │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
+│           0.185 │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
+│              95 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
+│             110 │ vv.pocet*cena             │ Urgentná návšteva osoby v paliatívnej starost │ vv.kod in ['27']                                             │
+│                 │                           │ livosti - lekár a sestra mimo riadneho prac.  │                                                              │
+│                 │                           │ času                                          │                                                              │
+│              30 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE  │ vv.kod in ['3439']                                           │
+│              35 │ vv.pocet*cena             │ NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19 │ vv.kod in ['3440']                                           │
+│                 │                           │ .00 DO 7.00 HODINY V SOBOTU, V NEDEĽU A VO SV │                                                              │
+│                 │                           │ IATOK)                                        │                                                              │
+│        0.025903 │ vv.bodyCelkom*1.75*CB     │ Výkony - imobilný                             │ p.fs=='I'                                                    │
+│        0.025903 │ vv.bodyCelkom*1.5*CB      │ Výkony - obmedzemá hybnosť                    │ p.fs=='H'                                                    │
+│        0.025903 │ vv.bodyCelkom*1.5*CB      │ Výkony - psychiatrická diagnóza, kompenzovaný │ p.fs=='FK'                                                   │
+│        0.025903 │ vv.bodyCelkom*1.75*CB     │ Výkony - psychiatrická diagnóza, dekompenzova │ p.fs=='FD'                                                   │
+│                 │                           │ ný                                            │                                                              │
+│        0.025903 │ vv.bodyCelkom*1.75*CB     │ Výkony - mentálná retardácia                  │ p.fs=='R'                                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │        0.027614 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ ZCB && vv.typ!='SVaLZ'                                       │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

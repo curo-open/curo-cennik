@@ -27,14 +27,14 @@ Autor: curo.sk
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
 │ vek do 19       │          4.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
 │ vek od 20 do 28 │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ vek od 29 do 39 │          3.38 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ vek od 40 do 44 │           3.4 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ vek od 45 do 49 │          3.44 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ vek od 50 do 54 │          3.95 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ vek od 55 do 59 │          4.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ vek od 60 do 64 │          5.05 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 69 │          5.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 74 │          6.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ vek od 29 do 39 │          3.55 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ vek od 40 do 44 │          3.57 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ vek od 45 do 49 │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ vek od 50 do 54 │          4.15 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ vek od 55 do 59 │          4.76 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ vek od 60 do 64 │           5.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ vek od 65 do 69 │          5.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ vek od 70 do 74 │          6.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
 │ vek od 75 do 79 │          6.97 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
 │ vek od 80 do 84 │          7.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
 │ vek od 85+      │          8.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │

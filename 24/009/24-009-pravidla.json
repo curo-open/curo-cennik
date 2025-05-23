@@ -26,7 +26,7 @@
 		},
 		"KP": {
 			"label": "Kapitačná platba",
-			"value": 1.96
+			"value": 2.08
 		}
 	},
 	"pacient": [
@@ -39,6 +39,20 @@
 		}
 	],
 	"vykon": [
+		{
+			"label": "Nekapitovaný - Neodkladna statostlivost",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - Neodkladna statostlivost",
+			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
 		{
 			"label": "Výkony 102,103,105,108,157,297,1070",
 			"if": "vv.kod in ['102','103','105','108','157','297','1070']",

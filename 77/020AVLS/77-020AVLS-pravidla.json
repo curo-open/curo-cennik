@@ -31,34 +31,50 @@
 		"EDU": {
 			"label": "EDU",
 			"value": 2
+		},
+		"AAA1": {
+			"label": "AAA1",
+			"value": 3.55
+		},
+		"AAA2": {
+			"label": "AAA2",
+			"value": 3.55
+		},
+		"AAA3": {
+			"label": "AAA3",
+			"value": 3.55
+		},
+		"AAA4": {
+			"label": "AAA4",
+			"value": 3.55
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek od 18 do 50",
-			"if": "p.kapitacia && p|vekMedzi(18, 50)",
-			"value": 3.3,
+			"if": "p.kapitacia && p|vekMedzi(18, 51)",
+			"value": 3.43,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 51 do 60",
-			"if": "p.kapitacia && p|vekMedzi(50, 60)",
-			"value": 3.78,
+			"if": "p.kapitacia && p|vekMedzi(51, 61)",
+			"value": 3.93,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 61 do 80",
-			"if": "p.kapitacia && p|vekMedzi(60, 80)",
-			"value": 6.07,
+			"if": "p.kapitacia && p|vekMedzi(61, 81)",
+			"value": 6.31,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 81+",
-			"if": "p.kapitacia && p|vekMedzi(80)",
-			"value": 7.92,
+			"if": "p.kapitacia && p|vekMedzi(81)",
+			"value": 8.24,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -263,7 +279,7 @@
 		{
 			"label": "Glukóza",
 			"if": "vv.kod in ['3671']",
-			"value": 0.079,
+			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -447,6 +463,34 @@
 			"if": "vv.kod=='EDU'",
 			"value": null,
 			"calc": "EDU",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AAA1'",
+			"value": null,
+			"calc": "AAA1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AAA2'",
+			"value": null,
+			"calc": "AAA2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AAA3'",
+			"value": null,
+			"calc": "AAA3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AAA4'",
+			"value": null,
+			"calc": "AAA4",
 			"instruction": null
 		},
 		{

@@ -16,6 +16,10 @@ Autor: curo.sk
 │ PP50 = 10       │ PP50                       │
 │ FOB = 2         │ FOB                        │
 │ EDU = 2         │ EDU                        │
+│ AAA1 = 3.55     │ AAA1                       │
+│ AAA2 = 3.55     │ AAA2                       │
+│ AAA3 = 3.55     │ AAA3                       │
+│ AAA4 = 3.55     │ AAA4                       │
 └─────────────────┴────────────────────────────┘
 
 
@@ -23,10 +27,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 50 │           3.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 50) │
-│ vek od 51 do 60 │          3.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 60) │
-│ vek od 61 do 80 │          6.07 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 80) │
-│ vek od 81+      │          7.92 │ IDK+cena │ p.kapitacia && p|vekMedzi(80)     │
+│ vek od 18 do 50 │          3.43 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 51) │
+│ vek od 51 do 60 │          3.93 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 61) │
+│ vek od 61 do 80 │          6.31 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 81) │
+│ vek od 81+      │          8.24 │ IDK+cena │ p.kapitacia && p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -66,7 +70,7 @@ Autor: curo.sk
 │           12.36 │ vv.pocet*cena             │ TOKS pozitívny                                │ vv.kod in ['159a']                                           │
 │          0.0845 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │           17.51 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
-│           0.079 │ vv.bodyCelkom*cena        │ Glukóza                                       │ vv.kod in ['3671']                                           │
+│          0.0845 │ vv.bodyCelkom*cena        │ Glukóza                                       │ vv.kod in ['3671']                                           │
 │            5.52 │ vv.pocet*cena             │ EKG (5702Z)                                   │ vv.kod in ['5702Z','5702ZV']                                 │
 │            0.01 │ vv.bodyCelkom*cena        │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
 │             5.2 │ vv.pocet*cena             │ INR                                           │ vv.kod in ['3842a','H0007']                                  │
@@ -101,6 +105,10 @@ Autor: curo.sk
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 │            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
+│            null │ AAA1                      │ Pripočitateľné položky                        │ vv.kod=='AAA1'                                               │
+│            null │ AAA2                      │ Pripočitateľné položky                        │ vv.kod=='AAA2'                                               │
+│            null │ AAA3                      │ Pripočitateľné položky                        │ vv.kod=='AAA3'                                               │
+│            null │ AAA4                      │ Pripočitateľné položky                        │ vv.kod=='AAA4'                                               │
 │            null │ vv.bodyCelkom*SVALZ       │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'         │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'         │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │

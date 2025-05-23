@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
 │ IDK = 0               │ IDK                   │
-│ CKP = 2.06            │ CKP                   │
+│ CKP = 2.13            │ CKP                   │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
 │ CB = 0.035            │ Cena bodu             │
 │ CBEU = 0.035          │ Cena bodu EU          │

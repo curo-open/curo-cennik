@@ -6,7 +6,7 @@
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.03466
+			"value": 0.03553
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -45,7 +45,7 @@
 		{
 			"label": "Výkony ",
 			"if": "vv.kod in ['60','62','63' ,'65','66','67']",
-			"value": 0.03466,
+			"value": 0.03553,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

@@ -14,7 +14,7 @@ Autor: curo.sk
 │ CBEUNK = 0.022973 │ Cena bodu EU/Nekapitovaný    │
 │ CBSVALZ = 0.0086  │ Cena bodu SVaLZ              │
 │ CBUSG = 0.008839  │ Cena bodu USG                │
-│ KP = 1.96         │ Kapitačná platba             │
+│ KP = 2.08         │ Kapitačná platba             │
 └───────────────────┴──────────────────────────────┘
 
 
@@ -30,6 +30,8 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - Neodkladna statostlivost       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
+│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - Neodkladna statostlivost       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
 │           0.084 │ vv.bodyCelkom*cena        │ Výkony 102,103,105,108,157,297,1070           │ vv.kod in ['102','103','105','108','157','297','1070']       │
 │            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5303,5305,5308,5316,5807,5809     │ "Z" in vv.diagnoza && vv.kod in ['5301','5303','5305','5308' │
 │                 │                           │                                               │ ,'5316','5807','5809']                                       │

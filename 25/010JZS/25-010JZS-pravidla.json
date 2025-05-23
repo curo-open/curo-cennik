@@ -112,6 +112,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Cholecystektómia jednoduchá bez revízie žlčových ciest, roboticky",
+			"if": "vv.kod in ['5n6205']",
+			"value": 603,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 8502",
 			"if": "vv.kod in ['8502'] || vv.k in ['8502'] || vv.k25 in ['8502']",
 			"value": null,

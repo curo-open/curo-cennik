@@ -12,8 +12,8 @@ Autor: curo.sk
 │ IPP2 = 1.89       │ IPP2                       │
 │ IPP3 = 3.19       │ IPP3                       │
 │ IPP4 = 4.9        │ IPP4                       │
-│ CBD = 0.35        │ Cena bodu doprava do 60km  │
-│ CBD60plus = 0.175 │ Cena bodu doprava nad 60km │
+│ CBD = 0.37        │ Cena bodu doprava do 60km  │
+│ CBD60plus = 0.185 │ Cena bodu doprava nad 60km │
 └───────────────────┴────────────────────────────┘
 
 
@@ -29,8 +29,11 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
 │            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
-│              61 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
+│              95 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
+│             110 │ vv.pocet*cena             │ Urgentná návšteva osoby v paliatívnej starost │ vv.kod in ['27']                                             │
+│                 │                           │ livosti - lekár a sestra mimo riadneho prac.  │                                                              │
+│                 │                           │ času                                          │                                                              │
 │            3.61 │ vv.pocet*cena             │ PRÍJEM PACIENTA DO ADOS A ODOBRATIE SESTERSKE │ vv.kod in ['3390']                                           │
 │                 │                           │ J ANAMNÉZY                                    │                                                              │
 │             1.7 │ vv.pocet*cena             │ POUČENIE PRÍBUZNÝCH ALEBO ČLENOV KOMUNITY     │ vv.kod in ['3392a']                                          │
@@ -95,8 +98,8 @@ Autor: curo.sk
 │            6.88 │ vv.pocet*cena             │ UMELÉ DÝCHANIE A MASÁŽ SRDCA                  │ vv.kod in ['3435']                                           │
 │            1.65 │ vv.pocet*cena             │ ODBERY: TT, TN, VÝTER Z REKTA, ODBER SPÚTA    │ vv.kod in ['3436']                                           │
 │            0.68 │ vv.pocet*cena             │ DOPRAVA BIOLOGICKÉHO MATERIÁLU                │ vv.kod in ['3437']                                           │
-│            4.88 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE  │ vv.kod in ['3439']                                           │
-│            9.12 │ vv.pocet*cena             │ NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19 │ vv.kod in ['3440']                                           │
+│              30 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE  │ vv.kod in ['3439']                                           │
+│              35 │ vv.pocet*cena             │ NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19 │ vv.kod in ['3440']                                           │
 │                 │                           │ .00 DO 7.00 HODINY V SOBOTU, V NEDEĽU A VO SV │                                                              │
 │                 │                           │ IATOK)                                        │                                                              │
 │            5.83 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA V RIZIKOVÝCH SKUPINÁCH POPU │ vv.kod in ['3441']                                           │

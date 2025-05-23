@@ -41,84 +41,84 @@
 		{
 			"label": "vek od 18 do 19",
 			"if": "p.kapitacia && p|vekMedzi(18, 19)",
-			"value": 4.73,
+			"value": 4.92,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 19 do 27",
 			"if": "p.kapitacia && p|vekMedzi(19, 27)",
-			"value": 3.15,
+			"value": 3.28,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 27 do 45",
 			"if": "p.kapitacia && p|vekMedzi(27, 45)",
-			"value": 3.19,
+			"value": 3.41,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 45 do 51",
 			"if": "p.kapitacia && p|vekMedzi(45, 51)",
-			"value": 3.23,
+			"value": 3.46,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 51 do 53",
 			"if": "p.kapitacia && p|vekMedzi(51, 53)",
-			"value": 3.58,
+			"value": 3.83,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 53 do 57",
 			"if": "p.kapitacia && p|vekMedzi(53, 57)",
-			"value": 4.14,
+			"value": 4.43,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 57 do 61",
 			"if": "p.kapitacia && p|vekMedzi(57, 61)",
-			"value": 4.62,
+			"value": 4.94,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 61 do 64",
 			"if": "p.kapitacia && p|vekMedzi(61, 64)",
-			"value": 5.38,
+			"value": 5.76,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 64 do 68",
 			"if": "p.kapitacia && p|vekMedzi(64, 68)",
-			"value": 5.86,
+			"value": 6.09,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 68 do 72",
 			"if": "p.kapitacia && p|vekMedzi(68, 72)",
-			"value": 6.11,
+			"value": 6.35,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 72 do 87",
 			"if": "p.kapitacia && p|vekMedzi(72, 87)",
-			"value": 6.73,
+			"value": 7,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 87+ ",
 			"if": "p.kapitacia && p|vekMedzi(87)",
-			"value": 7.65,
+			"value": 7.96,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -456,6 +456,10 @@
 			}
 		],
 		"160": [
+			{
+				"cond": "",
+				"value": 390
+			},
 			{
 				"cond": "",
 				"value": 390

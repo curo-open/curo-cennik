@@ -39,7 +39,7 @@
 		},
 		{
 			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
-			"if": "vv.kod in ['25m']",
+			"if": "vv.kod in ['25M']",
 			"value": 61,
 			"calc": "vv.pocet*cena",
 			"instruction": null

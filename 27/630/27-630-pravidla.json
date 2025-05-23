@@ -2,11 +2,11 @@
 	"params": {
 		"CBD": {
 			"label": "Cena bodu doprava",
-			"value": 0.35
+			"value": 0.37
 		},
 		"CBD60plus": {
 			"label": "Cena bodu doprava nad 60km",
-			"value": 0.175
+			"value": 0.185
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -32,7 +32,28 @@
 		{
 			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
 			"if": "vv.kod in ['25M']",
-			"value": 61,
+			"value": 95,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Urgentná návšteva osoby v paliatívnej starostlivosti - lekár a sestra mimo riadneho prac. času ",
+			"if": "vv.kod in ['27']",
+			"value": 110,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE",
+			"if": "vv.kod in ['3439']",
+			"value": 30,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19.00 DO 7.00 HODINY V SOBOTU, V NEDEĽU A VO SVIATOK)",
+			"if": "vv.kod in ['3440']",
+			"value": 35,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

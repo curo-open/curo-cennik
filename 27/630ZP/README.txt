@@ -28,7 +28,7 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
 │            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
-│              61 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25m']                                            │
+│              61 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
 │            null │ vv.bodyCelkom*CBV         │ Výkon 3419, 3420, 3439, 3440, 3441 a 3447     │ vv.kod in ['3419','3420','3439','3440','3441','3447']        │
 │            7.36 │ vv.pocet*cena             │ Nultá návšteva u poistenca                    │ vv.kod in ['3439a']                                          │

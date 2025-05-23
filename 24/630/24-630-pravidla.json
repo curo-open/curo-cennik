@@ -18,11 +18,11 @@
 		},
 		"CBD": {
 			"label": "Cena bodu doprava do 60km",
-			"value": 0.35
+			"value": 0.37
 		},
 		"CBD60plus": {
 			"label": "Cena bodu doprava nad 60km",
-			"value": 0.175
+			"value": 0.185
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -30,11 +30,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.019002
+			"value": 0.0192
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
-			"value": 0
+			"value": 6.88
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -46,57 +46,78 @@
 		{
 			"label": "Doprava:  do 60 km",
 			"if": "vv.kod in ['doprava'] && vv.pocet < 60",
-			"value": null,
+			"value": 0.37,
 			"calc": "vv.pocet*CBD",
 			"instruction": null
 		},
 		{
 			"label": "Doprava:  + 60 km",
 			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
-			"value": null,
+			"value": 0.185,
 			"calc": "vv.pocet*CBD60plus",
+			"instruction": null
+		},
+		{
+			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
+			"if": "vv.kod in ['25M']",
+			"value": 95,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Urgentná návšteva osoby v paliatívnej starostlivosti - lekár a sestra mimo riadneho prac. času ",
+			"if": "vv.kod in ['27']",
+			"value": 110,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE",
+			"if": "vv.kod in ['3439']",
+			"value": 30,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19.00 DO 7.00 HODINY V SOBOTU, V NEDEĽU A VO SVIATOK)",
+			"if": "vv.kod in ['3440']",
+			"value": 35,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - imobilný",
 			"if": "p.fs=='I'",
-			"value": null,
+			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.75*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - obmedzemá hybnosť",
 			"if": "p.fs=='H'",
-			"value": null,
+			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.5*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - psychiatrická diagnóza, kompenzovaný",
 			"if": "p.fs=='FK'",
-			"value": null,
+			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.5*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - psychiatrická diagnóza, dekompenzovaný",
 			"if": "p.fs=='FD'",
-			"value": null,
+			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.75*CB",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - mentálná retardácia",
 			"if": "p.fs=='R'",
-			"value": null,
+			"value": 0.025903,
 			"calc": "vv.bodyCelkom*1.75*CB",
-			"instruction": null
-		},
-		{
-			"label": "Návšteva osoby v paliatívnej starostlivosti v domácom prostredí",
-			"if": "vv.kod in ['25M']",
-			"value": 58,
-			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

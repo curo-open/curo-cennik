@@ -17,6 +17,10 @@ Autor: curo.sk
 │ PP50 = 10       │ PP50                       │
 │ FOB = 2         │ FOB                        │
 │ EDU = 2         │ EDU                        │
+│ AAA1 = 3.55     │ AAA1                       │
+│ AAA2 = 3.55     │ AAA2                       │
+│ AAA3 = 3.55     │ AAA3                       │
+│ AAA4 = 3.55     │ AAA4                       │
 └─────────────────┴────────────────────────────┘
 
 
@@ -24,10 +28,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 51 │           3.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 51) │
-│ vek od 51 do 61 │          3.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 61) │
-│ vek od 61 do 81 │          6.07 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 81) │
-│ vek od 81+      │          7.92 │ IDK+cena │ p.kapitacia && p|vekMedzi(81)     │
+│ vek od 18 do 51 │          3.43 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 51) │
+│ vek od 51 do 61 │          3.93 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 61) │
+│ vek od 61 do 81 │          6.31 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 81) │
+│ vek od 81+      │          8.24 │ IDK+cena │ p.kapitacia && p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -95,6 +99,10 @@ Autor: curo.sk
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 │            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│            null │ AAA1                      │ Pripočitateľné položky                        │ vv.kod=='AAA1'                                               │
+│            null │ AAA2                      │ Pripočitateľné položky                        │ vv.kod=='AAA2'                                               │
+│            null │ AAA3                      │ Pripočitateľné položky                        │ vv.kod=='AAA3'                                               │
+│            null │ AAA4                      │ Pripočitateľné položky                        │ vv.kod=='AAA4'                                               │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │
 │            null │ vv.bodyCelkom*CBEU        │ EÚ - iné ako SVALZ                            │ p.typ in ['EU'] && vv.typ!='SVaLZ'                           │

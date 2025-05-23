@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
 │ CB = 0.035            │ Cena bodu           │
-│ CBEU = 0.03466        │ Cena bodu EU        │
+│ CBEU = 0.03553        │ Cena bodu EU        │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
 │ IPP1 = 2.44           │ IPP1                │
@@ -30,7 +30,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
-│         0.03466 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['60','62','63' ,'65','66','67']                   │
+│         0.03553 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['60','62','63' ,'65','66','67']                   │
 │               5 │ vv.pocet*cena             │ Výkon  108                                    │ vv.kod in ['250x']                                           │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
