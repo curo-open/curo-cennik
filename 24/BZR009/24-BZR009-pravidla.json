@@ -29,7 +29,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 1.96,
+			"value": 2.08,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -287,13 +287,13 @@
 		"252b": [
 			{
 				"cond": "",
-				"value": 70
+				"value": 160
 			}
 		],
 		"252C": [
 			{
 				"cond": "",
-				"value": 70
+				"value": 160
 			}
 		]
 	},

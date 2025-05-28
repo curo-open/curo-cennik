@@ -27,11 +27,11 @@ Autor: curo.sk
 │             412 │ vv.pocet*cena             │ Výkon 8900                                    │ vv.kod in ['8900'] || vv.k in ['8900'] || vv.k25 in ['8900'] │
 │             412 │ vv.pocet*cena             │ Výkon 8901                                    │ vv.kod in ['8901'] || vv.k in ['8901'] || vv.k25 in ['8901'] │
 │             279 │ vv.pocet*cena             │ Výkon 8902                                    │ vv.kod in ['8902'] || vv.k in ['8902'] || vv.k25 in ['8902'] │
-│             385 │ vv.pocet*cena             │ Výkon 8903                                    │ vv.kod in ['8903'] || vv.k in ['8903'] || vv.k25 in ['8903'] │
+│             398 │ vv.pocet*cena             │ Výkon 8903                                    │ vv.kod in ['8903'] || vv.k in ['8903'] || vv.k25 in ['8903'] │
 │             366 │ vv.pocet*cena             │ Výkon 8905                                    │ vv.kod in ['8905'] || vv.k in ['8905'] || vv.k25 in ['8905'] │
 │             307 │ vv.pocet*cena             │ Výkon 8909                                    │ vv.kod in ['8909'] || vv.k in ['8909'] || vv.k25 in ['8909'] │
 │             216 │ vv.pocet*cena             │ Výkon 8910                                    │ vv.kod in ['8910'] || vv.k in ['8910'] || vv.k25 in ['8910'] │
-│             367 │ vv.pocet*cena             │ Výkon 8911                                    │ vv.kod in ['8911'] || vv.k in ['8911'] || vv.k25 in ['8911'] │
+│             379 │ vv.pocet*cena             │ Výkon 8911                                    │ vv.kod in ['8911'] || vv.k in ['8911'] || vv.k25 in ['8911'] │
 │             412 │ vv.pocet*cena             │ Výkon 8912                                    │ vv.kod in ['8912'] || vv.k in ['8912'] || vv.k25 in ['8912'] │
 │             356 │ vv.pocet*cena             │ Výkon 8914                                    │ vv.kod in ['8914'] || vv.k in ['8914'] || vv.k25 in ['8914'] │
 │             280 │ vv.pocet*cena             │ Výkon 8915                                    │ vv.kod in ['8915'] || vv.k in ['8915'] || vv.k25 in ['8915'] │

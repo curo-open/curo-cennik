@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────┐
 │ Názov a hodnota    │ Popis                       │
 ├────────────────────┼─────────────────────────────┤
-│ IDK = NaN          │ NASTAVENIA IDK              │
+│ IDK = 0            │ NASTAVENIA IDK              │
 │ CB = 0.0318        │ Cena bodu Kapitovany SK/EU  │
 │ CBSVALZ = 0.009718 │ Cena bodu SVaLZ             │
 │ CBEUNK = 0.0318    │ Cena bodu Nekapitovany      │
@@ -21,11 +21,11 @@ Autor: curo.sk
 ┌──────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                │ Premenná cena │ Vzorec   │ Podmienka          │
 ├──────────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek do 1 roku života │         11.81 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ vek od 1 do 2        │         12.34 │ IDK+cena │ p|vekMedzi(1, 2)   │
-│ vek od 2 do 7        │          7.92 │ IDK+cena │ p|vekMedzi(2, 7)   │
-│ vek od 7 do 19       │           4.8 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ vek od 19 do 26      │          2.89 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ vek do 1 roku života │         12.52 │ IDK+cena │ p|vekMedzi(0, 1)   │
+│ vek od 1 do 2        │         13.08 │ IDK+cena │ p|vekMedzi(1, 2)   │
+│ vek od 2 do 7        │           8.4 │ IDK+cena │ p|vekMedzi(2, 7)   │
+│ vek od 7 do 19       │          5.09 │ IDK+cena │ p|vekMedzi(7, 19)  │
+│ vek od 19 do 26      │          3.21 │ IDK+cena │ p|vekMedzi(19, 26) │
 └──────────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -39,10 +39,10 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│            1.37 │ vv.pocet*cena             │ Výkon 1                                       │ vv.kod in ['1']                                              │
-│            5.11 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
-│            7.17 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
-│            1.96 │ vv.pocet*cena             │ Výkon 250,250a,250b                           │ !p.kapitacia && vv.kod in ['250','250a','250b']              │
+│            1.54 │ vv.pocet*cena             │ Výkon 1                                       │ vv.kod in ['1']                                              │
+│            5.75 │ vv.pocet*cena             │ Výkon 4                                       │ vv.kod in ['4']                                              │
+│            8.12 │ vv.pocet*cena             │ Výkon 8                                       │ vv.kod in ['8']                                              │
+│            2.28 │ vv.pocet*cena             │ Výkon 250,250a,250b                           │ !p.kapitacia && vv.kod in ['250','250a','250b']              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 299a,299b                               │ !p.kapitacia && vv.kod in ['299a','299b']                    │
 │            8.63 │ vv.pocet*cena             │ Výkon 4-nekapitovaný                          │ !p.kapitacia && vv.kod in ['4']                              │
 │           12.26 │ vv.pocet*cena             │ Výkon 8-nekapitovaný                          │ !p.kapitacia && vv.kod in ['8']                              │

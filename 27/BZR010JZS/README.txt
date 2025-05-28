@@ -26,6 +26,18 @@ Autor: curo.sk
 │             601 │ vv.pocet*cena             │ Výkon 8539k                                   │ vv.kod in ['8539k'] || vv.k in ['8539k'] || vv.k27 in ['8539 │
 │                 │                           │                                               │ k']                                                          │
 │             334 │ vv.pocet*cena             │ Výkon 9304                                    │ vv.kod in ['9304'] || vv.k in ['9304'] || vv.k27 in ['9304'] │
+│             542 │ vv.pocet*cena             │ Výkon 8502                                    │ vv.kod in ['8502'] || vv.k in ['8502'] || vv.k27 in ['8502'] │
+│             403 │ vv.pocet*cena             │ Výkon 8538                                    │ vv.kod in ['8538'] || vv.k in ['8538'] || vv.k27 in ['8538'] │
+│             425 │ vv.pocet*cena             │ Výkon 8540                                    │ vv.kod in ['8540'] || vv.k in ['8540'] || vv.k27 in ['8540'] │
+│             113 │ vv.pocet*cena             │ Výkon 8547                                    │ vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547'] │
+│             449 │ vv.pocet*cena             │ Výkon 8565                                    │ vv.kod in ['8565'] || vv.k in ['8565'] || vv.k27 in ['8565'] │
+│             449 │ vv.pocet*cena             │ Výkon 8566                                    │ vv.kod in ['8566'] || vv.k in ['8566'] || vv.k27 in ['8566'] │
+│             302 │ vv.pocet*cena             │ Výkon 8586                                    │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k27 in ['8586'] │
+│             124 │ vv.pocet*cena             │ Výkon 8588                                    │ vv.kod in ['8588'] || vv.k in ['8588'] || vv.k27 in ['8588'] │
+│             155 │ vv.pocet*cena             │ Výkon 8918                                    │ vv.kod in ['8918'] || vv.k in ['8918'] || vv.k27 in ['8918'] │
+│             254 │ vv.pocet*cena             │ Výkon 9302                                    │ vv.kod in ['9302'] || vv.k in ['9302'] || vv.k27 in ['9302'] │
+│             254 │ vv.pocet*cena             │ Výkon 9303                                    │ vv.kod in ['9303'] || vv.k in ['9303'] || vv.k27 in ['9303'] │
+│             319 │ vv.pocet*cena             │ Výkon 9319                                    │ vv.kod in ['9319'] || vv.k in ['9319'] || vv.k27 in ['9319'] │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

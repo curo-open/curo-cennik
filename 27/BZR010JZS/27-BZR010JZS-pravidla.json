@@ -29,6 +29,90 @@
 			"value": 334,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkon 8502",
+			"if": "vv.kod in ['8502'] || vv.k in ['8502'] || vv.k27 in ['8502']",
+			"value": 542,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8538",
+			"if": "vv.kod in ['8538'] || vv.k in ['8538'] || vv.k27 in ['8538']",
+			"value": 403,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8540",
+			"if": "vv.kod in ['8540'] || vv.k in ['8540'] || vv.k27 in ['8540']",
+			"value": 425,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8547",
+			"if": "vv.kod in ['8547'] || vv.k in ['8547'] || vv.k27 in ['8547']",
+			"value": 113,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8565",
+			"if": "vv.kod in ['8565'] || vv.k in ['8565'] || vv.k27 in ['8565']",
+			"value": 449,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8566",
+			"if": "vv.kod in ['8566'] || vv.k in ['8566'] || vv.k27 in ['8566']",
+			"value": 449,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8586",
+			"if": "vv.kod in ['8586'] || vv.k in ['8586'] || vv.k27 in ['8586']",
+			"value": 302,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8588",
+			"if": "vv.kod in ['8588'] || vv.k in ['8588'] || vv.k27 in ['8588']",
+			"value": 124,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 8918",
+			"if": "vv.kod in ['8918'] || vv.k in ['8918'] || vv.k27 in ['8918']",
+			"value": 155,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9302",
+			"if": "vv.kod in ['9302'] || vv.k in ['9302'] || vv.k27 in ['9302']",
+			"value": 254,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9303",
+			"if": "vv.kod in ['9303'] || vv.k in ['9303'] || vv.k27 in ['9303']",
+			"value": 254,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 9319",
+			"if": "vv.kod in ['9319'] || vv.k in ['9319'] || vv.k27 in ['9319']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

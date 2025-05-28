@@ -47,7 +47,7 @@
 		{
 			"label": "Výkon 8903",
 			"if": "vv.kod in ['8903'] || vv.k in ['8903'] || vv.k25 in ['8903']",
-			"value": 385,
+			"value": 398,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -75,7 +75,7 @@
 		{
 			"label": "Výkon 8911",
 			"if": "vv.kod in ['8911'] || vv.k in ['8911'] || vv.k25 in ['8911']",
-			"value": 367,
+			"value": 379,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
