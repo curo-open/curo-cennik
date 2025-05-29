@@ -28,6 +28,13 @@
 	"pacient": [],
 	"vykon": [
 		{
+			"label": "Výkon",
+			"if": "vv.kod in ['65']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
 			"label": "Denzitometria ",
 			"if": "vv.kod in ['5331']",
 			"value": 0.0055,
@@ -99,7 +106,14 @@
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "radiologia"

@@ -6,23 +6,23 @@
 		},
 		"VCB8": {
 			"label": "VCB pre výkon 8",
-			"value": 8.59
+			"value": 3.97
 		},
 		"VCB4": {
 			"label": "VCB pre výkon 4",
-			"value": 6.06
+			"value": 2.97
 		},
 		"VCB1": {
 			"label": "VCB pre výkon 1",
-			"value": 1.62
+			"value": 0.8
 		},
 		"VCB250": {
 			"label": "VCB pre výkon 250",
-			"value": 2.4
+			"value": 1.19
 		},
 		"AGTC": {
 			"label": "AGTC",
-			"value": 4.8
+			"value": 5.65
 		},
 		"PP50": {
 			"label": "PP50",
@@ -37,35 +37,35 @@
 		{
 			"label": "do  1 roku",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 11.81,
+			"value": 12.52,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  1 do dovršenia 2 rokov",
 			"if": "p|vekMedzi(1, 2)",
-			"value": 12.34,
+			"value": 13.08,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  2 do dovršenia 7 rokov",
 			"if": "p|vekMedzi(2, 7)",
-			"value": 7.92,
+			"value": 8.4,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od  7 do dovršenia 19 rokov",
 			"if": "p|vekMedzi(7, 19)",
-			"value": 4.8,
+			"value": 5.09,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 19 do dovršenia 27 rokov",
 			"if": "p|vekMedzi(19, 26)",
-			"value": 3.03,
+			"value": 3.21,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

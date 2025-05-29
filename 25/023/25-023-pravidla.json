@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.007303
+			"value": 0.00804
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVALZ",
@@ -14,11 +14,11 @@
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.007303
+			"value": 0.00804
 		},
 		"CB50XX": {
 			"label": "Cena bodu 50XX",
-			"value": 0.015336
+			"value": 0.0158
 		},
 		"PACS": {
 			"label": "PACS",

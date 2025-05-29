@@ -9,10 +9,10 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
 │ LIMIT = 0          │ Limit           │
-│ CB = 0.007303      │ Cena bodu       │
+│ CB = 0.00804       │ Cena bodu       │
 │ CBSVALZ = 0.007303 │ Cena bodu SVALZ │
-│ CBEU = 0.007303    │ Cena bodu EU    │
-│ CB50XX = 0.015336  │ Cena bodu 50XX  │
+│ CBEU = 0.00804     │ Cena bodu EU    │
+│ CB50XX = 0.0158    │ Cena bodu 50XX  │
 │ PACS = 0.93        │ PACS            │
 │ X03501 = 32        │ X03501          │
 │ X03853 = 20.5      │ X03853          │

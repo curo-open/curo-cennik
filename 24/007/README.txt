@@ -9,11 +9,11 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis             │
 ├─────────────────┼───────────────────┤
 │ IDK = 0         │ NASTAVENIA IDK    │
-│ VCB8 = 8.59     │ VCB pre výkon 8   │
-│ VCB4 = 6.06     │ VCB pre výkon 4   │
-│ VCB1 = 1.62     │ VCB pre výkon 1   │
-│ VCB250 = 2.4    │ VCB pre výkon 250 │
-│ AGTC = 4.8      │ AGTC              │
+│ VCB8 = 3.97     │ VCB pre výkon 8   │
+│ VCB4 = 2.97     │ VCB pre výkon 4   │
+│ VCB1 = 0.8      │ VCB pre výkon 1   │
+│ VCB250 = 1.19   │ VCB pre výkon 250 │
+│ AGTC = 5.65     │ AGTC              │
 │ PP50 = 10       │ PP50              │
 │ PP05 = 10       │ PP05              │
 └─────────────────┴───────────────────┘
@@ -23,11 +23,11 @@ Autor: curo.sk
 ┌─────────────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                       │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────────────────┼───────────────┼──────────┼────────────────────┤
-│ do  1 roku                  │         11.81 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ od  1 do dovršenia 2 rokov  │         12.34 │ IDK+cena │ p|vekMedzi(1, 2)   │
-│ od  2 do dovršenia 7 rokov  │          7.92 │ IDK+cena │ p|vekMedzi(2, 7)   │
-│ od  7 do dovršenia 19 rokov │           4.8 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ od 19 do dovršenia 27 rokov │          3.03 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ do  1 roku                  │         12.52 │ IDK+cena │ p|vekMedzi(0, 1)   │
+│ od  1 do dovršenia 2 rokov  │         13.08 │ IDK+cena │ p|vekMedzi(1, 2)   │
+│ od  2 do dovršenia 7 rokov  │           8.4 │ IDK+cena │ p|vekMedzi(2, 7)   │
+│ od  7 do dovršenia 19 rokov │          5.09 │ IDK+cena │ p|vekMedzi(7, 19)  │
+│ od 19 do dovršenia 27 rokov │          3.21 │ IDK+cena │ p|vekMedzi(19, 26) │
 └─────────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 

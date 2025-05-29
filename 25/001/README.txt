@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 2.94           │ IPP1                  │
-│ IPP2 = 4              │ IPP2                  │
-│ IPP3 = 6.64           │ IPP3                  │
-│ IPP4 = 9.64           │ IPP4                  │
+│ IPP1 = 2.48           │ IPP1                  │
+│ IPP2 = 3.98           │ IPP2                  │
+│ IPP3 = 6.74           │ IPP3                  │
+│ IPP4 = 9.74           │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.03466          │ Cena bodu             │
+│ CB = 0.03553          │ Cena bodu             │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 │ AGTC = 4.8            │ AGTC                  │
@@ -48,6 +48,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5702, 5715, 5716                        │ vv.kod in ['5702','5715','5716']                             │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon 5744, 5745, 5746,5754                   │ vv.kod in ['5744','5745','5746','5754']                      │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
