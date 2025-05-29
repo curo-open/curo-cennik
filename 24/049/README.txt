@@ -14,7 +14,7 @@ Autor: curo.sk
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG  │
 │ AGTC = 4.8         │ AGTC                 │
 │ PP50 = 10          │ PP50                 │
-│ PPPOHOS = 30       │ POHOS                │
+│ POHOS = 30         │ POHOS                │
 │ LIMIT = 2235       │ Limit                │
 └────────────────────┴──────────────────────┘
 
@@ -41,7 +41,7 @@ Autor: curo.sk
 │        0.009724 │ vv.bodyCelkom*cena        │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
-│            null │ PPPOHOS                   │ Pripočitateľné položky                        │ vv.kod=='PPPOHOS'                                            │
+│            null │ POHOS                     │ Pripočitateľné položky                        │ vv.kod=='POHOS'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

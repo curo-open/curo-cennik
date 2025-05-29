@@ -24,7 +24,7 @@
 			"label": "PP50",
 			"value": 10
 		},
-		"PPPOHOS": {
+		"POHOS": {
 			"label": "POHOS",
 			"value": 30
 		},
@@ -121,9 +121,9 @@
 		},
 		{
 			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='PPPOHOS'",
+			"if": "vv.kod=='POHOS'",
 			"value": null,
-			"calc": "PPPOHOS",
+			"calc": "POHOS",
 			"instruction": null
 		},
 		{
