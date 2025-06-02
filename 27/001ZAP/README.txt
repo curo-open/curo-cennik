@@ -8,8 +8,8 @@ Autor: curo.sk
 ┌──────────────────────┬─────────────────────┐
 │ Názov a hodnota      │ Popis               │
 ├──────────────────────┼─────────────────────┤
-│ CB = 0.0323          │ Cena bodu           │
-│ CBO = 0.0365         │ Cena bodu ostatné   │
+│ CB = 0.0336          │ Cena bodu           │
+│ CBO = 0.038          │ Cena bodu ostatné   │
 │ CBSVALZ = 0.01031    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG │
 │ IPP4 = 5.83          │ IPP4                │

@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0305
+			"value": 0.0336
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
@@ -34,7 +34,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0335,
+			"value": 0.038,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},

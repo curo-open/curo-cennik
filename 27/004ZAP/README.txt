@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.0305       │ Cena bodu                    │
+│ CB = 0.0336       │ Cena bodu                    │
 │ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
 │ IPP4 = 5.5        │ IPP4                         │
@@ -28,7 +28,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0335 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.038 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.02 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │

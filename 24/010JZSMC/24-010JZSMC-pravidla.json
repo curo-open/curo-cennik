@@ -382,7 +382,7 @@
 		},
 		{
 			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
-			"if": "vv.kod in ['Kl1951']",
+			"if": "vv.kod in ['kl1951']",
 			"value": 752,
 			"calc": "vv.pocet*cena",
 			"instruction": null
