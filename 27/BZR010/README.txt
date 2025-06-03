@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota      │ Popis               │
 ├──────────────────────┼─────────────────────┤
 │ LIMIT = 0            │ Limit               │
-│ CB = 0.0373          │ Cena bodu           │
+│ CB = 0.0391          │ Cena bodu           │
 │ CBSVALZ = 0.01031    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG │
 │ IPP4 = 2.49          │ IPP4                │
@@ -29,7 +29,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│         0.03528 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│          0.0435 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
@@ -72,7 +72,7 @@ Autor: curo.sk
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
-│          0.0415 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
+│          0.0435 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │           0.055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │

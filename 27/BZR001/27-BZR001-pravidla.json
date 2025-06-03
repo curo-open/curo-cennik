@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0377
+			"value": 0.0391
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -54,7 +54,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0419,
+			"value": 0.0435,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -229,7 +229,7 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
-			"value": 0.0419,
+			"value": 0.0435,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

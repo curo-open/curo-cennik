@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌──────────────────────┬─────────────────────┐
 │ Názov a hodnota      │ Popis               │
 ├──────────────────────┼─────────────────────┤
-│ CB = 0.0377          │ Cena bodu           │
+│ CB = 0.0391          │ Cena bodu           │
 │ CBSVALZ = 0.01031    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG │
 │ LIMIT = 0            │ Limit               │
@@ -26,7 +26,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d'] && vv.kod in ['15d']                       │
-│          0.0419 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63'] && vv.kod in ['60','62','63']     │
+│          0.0435 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63'] && vv.kod in ['60','62','63']     │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67'] && vv.kod in ['65','66','67']     │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5153a                                   │ vv.kod in ['5153a','5153b'] && vv.kod in ['5153a','5153b']   │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332'] && vv.kod in ['5330','5331' │
@@ -46,7 +46,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
 │            null │ vv.bodyCelkom*CB          │ Iné ako SVALZ                                 │ !vv.jeSVaZL                                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
-│          0.0415 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
+│          0.0435 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 

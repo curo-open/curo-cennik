@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis           │
 ├───────────────────┼─────────────────┤
 │ LIMIT = 2235      │ Limit           │
-│ CB = 0.0377       │ Cena bodu       │
+│ CB = 0.0391       │ Cena bodu       │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ │
 │ IPP4 = 5.5        │ IPP4            │
 │ IPP5 = 4          │ IPP5            │
@@ -27,7 +27,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0419 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│          0.0435 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
 │            0.02 │ vv.bodyCelkom*cena        │ Zhodnotenie RTG dokumentácie                  │ vv.kod in ['15d']                                            │
@@ -40,7 +40,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 1475 - výter                            │ vv.kod in ['1475']                                           │
 │           0.055 │ vv.bodyCelkom*cena        │ Výkon - Vyšetrenie na včasné rozpoznanie ocho │ vv.kod in ['159c']                                           │
 │                 │                           │ renia na rakovinu                             │                                                              │
-│          0.0419 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
+│          0.0435 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

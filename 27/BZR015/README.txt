@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬─────────────────┐
 │ Názov a hodnota   │ Popis           │
 ├───────────────────┼─────────────────┤
-│ CB = 0.0377       │ Cena bodu       │
+│ CB = 0.0391       │ Cena bodu       │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ │
 │ LIMIT = 0         │ Limit           │
 └───────────────────┴─────────────────┘
@@ -24,12 +24,12 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0419 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,                               │ vv.kod in ['60','62','63']                                   │
+│          0.0435 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │           0.015 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│          0.0419 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
+│          0.0435 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
