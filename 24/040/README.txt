@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
 │ LIMIT = 240000     │ Limit           │
-│ CB = 0.029461      │ Cena bodu       │
+│ CB = 0.03005       │ Cena bodu       │
 │ CBV = 0.026432     │ Cena bodu vv=60 │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
 └────────────────────┴─────────────────┘
@@ -25,8 +25,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CBV         │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon 62,63                                   │ vv.kod in ['62','63']                                        │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65,66,67                       │ vv.kod in ['60','62','63','65','66','67']                    │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['70','1b','1c','11a']                             │
 │         0.01892 │ vv.bodyCelkom*cena        │ Výkon                                         │ vv.kod in ['5766','5769','5770','5771','5772']               │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │

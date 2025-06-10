@@ -5,14 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────────┬──────────────────────┐
-│ Názov a hodnota     │ Popis                │
-├─────────────────────┼──────────────────────┤
-│ CB = 0.04           │ Vypočitaná cena bodu │
-│ CBSVALZ = 0.015     │ Cena bodu SVaLZ      │
-│ CBSVALZUSG = 0.0088 │ Cena bodu SVaLZ USG  │
-│ LIMIT = 0           │ Limit                │
-└─────────────────────┴──────────────────────┘
+┌──────────────────────┬─────────────────────┐
+│ Názov a hodnota      │ Popis               │
+├──────────────────────┼─────────────────────┤
+│ CB = 0.0323          │ Cena bodu           │
+│ CBV = 0.0365         │ Cena bodu vv=60     │
+│ CBSVALZ = 0.01031    │ Cena bodu SVaLZ     │
+│ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG │
+│ IPP1 = 3.71          │ IPP1                │
+│ IPP2 = 3.18          │ IPP2                │
+│ IPP3 = 2.12          │ IPP3                │
+│ LIMIT = 0            │ Limit               │
+└──────────────────────┴─────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -25,13 +29,15 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0305 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*CBV         │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │               5 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
-│         0.01275 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5766','5769','5770','5771']                      │
-│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5766','5769','5770','5771']                      │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
