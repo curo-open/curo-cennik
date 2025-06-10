@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.44
+			"value": 2.48
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.92
+			"value": 3.98
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.64
+			"value": 6.74
 		},
 		"PP50": {
 			"label": "PP50",
-			"value": 9.64
+			"value": 9.74
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -26,7 +26,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03466
+			"value": 0.03518
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -72,8 +72,36 @@
 			"instruction": null
 		},
 		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['62']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['65','66']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "SVALZ výkony",
-			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531']",
+			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZSP",
 			"instruction": null

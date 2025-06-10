@@ -8,10 +8,10 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.0365       │ Cena bodu                    │
-│ CBO = 0.0323      │ Cena bodu ostatné ŠAS výkony │
+│ CB = 0.038        │ Cena bodu                    │
+│ CBO = 0.0336      │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.01107 │ Cena bodu SVaLZ              │
-│ NCB = 0.0028      │ Navysena cena bodu           │
+│ NCB = 0.0026      │ Navysena cena bodu           │
 └───────────────────┴──────────────────────────────┘
 
 

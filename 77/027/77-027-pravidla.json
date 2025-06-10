@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.038
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0323
+			"value": 0.0336
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",

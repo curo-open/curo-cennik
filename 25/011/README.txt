@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌─────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota     │ Popis                                                   │
 ├─────────────────────┼─────────────────────────────────────────────────────────┤
-│ IPP1 = 2.44         │ IPP1                                                    │
-│ IPP2 = 3.92         │ IPP2                                                    │
-│ IPP3 = 6.64         │ IPP3                                                    │
-│ IPP4 = 9.64         │ IPP4                                                    │
+│ IPP1 = 2.48         │ IPP1                                                    │
+│ IPP2 = 3.98         │ IPP2                                                    │
+│ IPP3 = 6.74         │ IPP3                                                    │
+│ IPP4 = 9.74         │ IPP4                                                    │
 │ LIMIT = 75900       │ Limit                                                   │
 │ EL_POBOCKA = 1      │ Používa el. pobočku ?                                   │
-│ CB = 0.03466        │ Cena bodu                                               │
+│ CB = 0.03553        │ Cena bodu                                               │
 │ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
 └─────────────────────┴─────────────────────────────────────────────────────────┘
@@ -36,6 +36,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkony 3130, 3135, 3215, 5312                 │ vv.kod in ['3130','3135','3215','5312']                      │
 │           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │           0.026 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │               5 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │

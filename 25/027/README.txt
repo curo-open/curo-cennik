@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 2.44           │ IPP1                  │
-│ IPP2 = 3.92           │ IPP2                  │
-│ IPP3 = 6.64           │ IPP3                  │
-│ PP50 = 9.64           │ PP50                  │
+│ IPP1 = 2.48           │ IPP1                  │
+│ IPP2 = 3.98           │ IPP2                  │
+│ IPP3 = 6.74           │ IPP3                  │
+│ PP50 = 9.74           │ PP50                  │
 │ LIMIT = 0             │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.03466          │ Cena bodu             │
+│ CB = 0.03518          │ Cena bodu             │
 │ CBSVALZ = 0.01026     │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 │ CBSVALZSP = 0.016402  │ Cena bodu SVaLZ SP    │
@@ -35,8 +35,12 @@ Autor: curo.sk
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['60']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65','66']                                        │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
-│                 │                           │                                               │ ','530','531']                                               │
+│                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
