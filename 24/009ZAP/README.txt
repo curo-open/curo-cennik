@@ -14,7 +14,7 @@ Autor: curo.sk
 │ CBEUNK = 0.022973 │ Cena bodu EU/Nekapitovaný    │
 │ CBSVALZ = 0.0086  │ Cena bodu SVaLZ              │
 │ CBUSG = 0.008839  │ Cena bodu USG                │
-│ KP = 1.98         │ Kapitačná platba             │
+│ KP = 2.1          │ Kapitačná platba             │
 └───────────────────┴──────────────────────────────┘
 
 
