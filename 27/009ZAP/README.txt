@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬─────────────────┐
 │ Názov a hodnota │ Popis           │
 ├─────────────────┼─────────────────┤
-│ IDK = 0.21      │ NASTAVENIA IDK  │
+│ IDK = 0.15      │ NASTAVENIA IDK  │
 │ CB = 0          │ Cena bodu       │
 │ CBEU = 0.0349   │ Cena bodu EU    │
 │ CBSVALZ = 0.01  │ Cena bodu SVaLZ │
@@ -36,7 +36,7 @@ Autor: curo.sk
 │          0.0801 │ vv.bodyCelkom*cena        │ Výkon 1070                                    │ "Z" in vv.diagnoza && vv.kod in ['1070']                     │
 │            0.02 │ vv.bodyCelkom*cena        │ Preventívne výkony 5303,5305                  │ "Z" in vv.diagnoza && vv.kod in ['5303','5305']              │
 │         0.01107 │ vv.bodyCelkom*cena        │ Preventivny výkon 5308                        │ "Z" in vv.diagnoza && vv.kod in ['5308']                     │
-│          0.0266 │ vv.bodyCelkom*cena        │ Preventívny výkon 5309                        │ "Z" in vv.diagnoza && vv.kod in ['5309']                     │
+│          0.0266 │ vv.bodyCelkom*cena        │ Preventívny výkon 5809                        │ "Z" in vv.diagnoza && vv.kod in ['5809']                     │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkony 5301, 5304,5316,5807,5808              │ vv.kod in ['5301','5304','5316','5807','5808']               │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │              20 │ vv.pocet*cena             │ Covid 62a                                     │ vv.kod in ['62a']                                            │

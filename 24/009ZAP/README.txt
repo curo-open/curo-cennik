@@ -34,6 +34,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5303,5305,5308,5316,5807,5809     │ "Z" in vv.diagnoza && vv.kod in ['5301','5303','5305','5308' │
 │                 │                           │                                               │ ,'5316','5807','5809']                                       │
 │            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5303,5305,5308,5316,5807,5809     │ vv.kod in ['5301','5316','5807','5809']                      │
+│           0.084 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.kod in ['252b']                                           │
 │        0.009745 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b, 11a, 70                             │ vv.kod in ['1b','11a','70']                                  │
