@@ -22,12 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/24-008-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/24-008-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/008/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/008/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/009ZDRAVITA/25-009ZDRAVITA-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/009ZDRAVITA/25-009ZDRAVITA-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/009ZDRAVITA/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/009ZDRAVITA/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -825,7 +821,8 @@
       <workItem from="1747998476611" duration="617000" />
       <workItem from="1748458063351" duration="44000" />
       <workItem from="1748507313450" duration="5252000" />
-      <workItem from="1749541780071" duration="1916000" />
+      <workItem from="1749541780071" duration="2864000" />
+      <workItem from="1750063504565" duration="599000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1170,7 +1167,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="523" />
+    <option name="localTasksCounter" value="524" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

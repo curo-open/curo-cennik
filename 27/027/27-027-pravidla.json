@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01031
+			"value": 0.01063
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
@@ -90,22 +90,15 @@
 		},
 		{
 			"label": "SVALZ výkony",
-			"if": "vv.kod in ['509a','512','513','514a','522','530','531']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZSP",
-			"instruction": null
-		},
-		{
-			"label": "SVALZ výkony",
-			"if": "vv.kod in ['532','533a','540','541','542']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZSP",
+			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
+			"value": 0.01712,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Respiračná fyzioterapia",
 			"if": "vv.kod in ['3F00091','3F00091','3F00091']",
-			"value": 0.01633,
+			"value": 0.01712,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

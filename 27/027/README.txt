@@ -10,7 +10,7 @@ Autor: curo.sk
 ├─────────────────────┼──────────────────────────────┤
 │ CB = 0.038          │ Cena bodu                    │
 │ CBO = 0.0336        │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.01031   │ Cena bodu SVaLZ              │
+│ CBSVALZ = 0.01063   │ Cena bodu SVaLZ              │
 │ CBSVALZSP = 0.01662 │ Cena bodu SVaLZ SP           │
 │ NCB = 0.0026        │ Navysena cena bodu           │
 │ IPP1 = 3.71         │ IPP1                         │
@@ -37,9 +37,9 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*(CB+NCB)    │ ŠAS                                           │ vv.kod in ['60r']                                            │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ ŠAS                                           │ vv.kod in ['65']                                             │
 │        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','522','530','531']      │
-│            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
-│         0.01633 │ vv.bodyCelkom*cena        │ Respiračná fyzioterapia                       │ vv.kod in ['3F00091','3F00091','3F00091']                    │
+│         0.01712 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
+│         0.01712 │ vv.bodyCelkom*cena        │ Respiračná fyzioterapia                       │ vv.kod in ['3F00091','3F00091','3F00091']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.21
+			"value": 0.15
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -84,8 +84,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Preventívny výkon 5309",
-			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5309']",
+			"label": "Preventívny výkon 5809",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5809']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

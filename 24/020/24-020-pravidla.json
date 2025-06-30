@@ -33,84 +33,84 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 4.73,
+			"value": 5.09,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p.kapitacia && p|vekMedzi(20, 28)",
-			"value": 3.15,
+			"value": 3.21,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p.kapitacia && p|vekMedzi(28, 46)",
-			"value": 3.19,
+			"value": 3.29,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p.kapitacia && p|vekMedzi(46, 52)",
-			"value": 3.23,
+			"value": 3.31,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p.kapitacia && p|vekMedzi(52, 54)",
-			"value": 3.58,
+			"value": 3.61,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p.kapitacia && p|vekMedzi(54, 58)",
-			"value": 4.62,
+			"value": 4.33,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p.kapitacia && p|vekMedzi(58, 62)",
-			"value": 4.56,
+			"value": 4.74,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p.kapitacia && p|vekMedzi(62, 65)",
-			"value": 5.38,
+			"value": 5.48,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p.kapitacia && p|vekMedzi(65, 69)",
-			"value": 5.86,
+			"value": 6.3,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p.kapitacia && p|vekMedzi(69, 73)",
-			"value": 6.11,
+			"value": 6.82,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p.kapitacia && p|vekMedzi(73, 88)",
-			"value": 6.73,
+			"value": 7.49,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p.kapitacia && p|vekMedzi(88)",
-			"value": 7.65,
+			"value": 7.42,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -281,6 +281,34 @@
 			"label": "Stratifikacia CMP",
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.98,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie TroponínuT",
+			"if": "vv.kod in ['4485']",
+			"value": 11.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "N-terminálny fragment (NT-pro BNP)",
+			"if": "vv.kod in ['44418']",
+			"value": 19.78,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG vyšetrenie POCUS",
+			"if": "vv.kod in ['5301']",
+			"value": 4.38,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬─────────────────────┐
 │ Názov a hodnota   │ Popis               │
 ├───────────────────┼─────────────────────┤
-│ CB = 0.031062     │ Cena bodu           │
+│ CB = 0.032926     │ Cena bodu           │
 │ CBSVALZ = 0.01021 │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0    │ Cena bodu SVaLZ USG │
 │ AGTC = 4.8        │ AGTC                │

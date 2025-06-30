@@ -22,18 +22,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 20 │          4.73 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ vek od 20 do 28 │          3.15 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 28) │
-│ vek od 28 do 46 │          3.19 │ IDK+cena │ p.kapitacia && p|vekMedzi(28, 46) │
-│ vek od 46 do 52 │          3.23 │ IDK+cena │ p.kapitacia && p|vekMedzi(46, 52) │
-│ vek od 52 do 54 │          3.58 │ IDK+cena │ p.kapitacia && p|vekMedzi(52, 54) │
-│ vek od 54 do 58 │          4.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(54, 58) │
-│ vek od 58 do 62 │          4.56 │ IDK+cena │ p.kapitacia && p|vekMedzi(58, 62) │
-│ vek od 62 do 65 │          5.38 │ IDK+cena │ p.kapitacia && p|vekMedzi(62, 65) │
-│ vek od 65 do 69 │          5.86 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 69) │
-│ vek od 69 do 73 │          6.11 │ IDK+cena │ p.kapitacia && p|vekMedzi(69, 73) │
-│ vek od 73 do 88 │          6.73 │ IDK+cena │ p.kapitacia && p|vekMedzi(73, 88) │
-│ vek od 88+      │          7.65 │ IDK+cena │ p.kapitacia && p|vekMedzi(88)     │
+│ vek od 18 do 20 │          5.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ vek od 20 do 28 │          3.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 28) │
+│ vek od 28 do 46 │          3.29 │ IDK+cena │ p.kapitacia && p|vekMedzi(28, 46) │
+│ vek od 46 do 52 │          3.31 │ IDK+cena │ p.kapitacia && p|vekMedzi(46, 52) │
+│ vek od 52 do 54 │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(52, 54) │
+│ vek od 54 do 58 │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(54, 58) │
+│ vek od 58 do 62 │          4.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(58, 62) │
+│ vek od 62 do 65 │          5.48 │ IDK+cena │ p.kapitacia && p|vekMedzi(62, 65) │
+│ vek od 65 do 69 │           6.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 69) │
+│ vek od 69 do 73 │          6.82 │ IDK+cena │ p.kapitacia && p|vekMedzi(69, 73) │
+│ vek od 73 do 88 │          7.49 │ IDK+cena │ p.kapitacia && p|vekMedzi(73, 88) │
+│ vek od 88+      │          7.42 │ IDK+cena │ p.kapitacia && p|vekMedzi(88)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -69,6 +69,10 @@ Autor: curo.sk
 │              15 │ vv.pocet*cena             │ Inicialne I10/E78 (H0003)                     │ vv.kod in ['H0003']                                          │
 │              15 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
 │               5 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
+│            8.98 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
+│            11.6 │ vv.pocet*cena             │ Stanovenie TroponínuT                         │ vv.kod in ['4485']                                           │
+│           19.78 │ vv.pocet*cena             │ N-terminálny fragment (NT-pro BNP)            │ vv.kod in ['44418']                                          │
+│            4.38 │ vv.pocet*cena             │ USG vyšetrenie POCUS                          │ vv.kod in ['5301']                                           │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │

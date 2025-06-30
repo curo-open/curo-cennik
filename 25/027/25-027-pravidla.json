@@ -12,8 +12,8 @@
 			"label": "IPP3",
 			"value": 6.74
 		},
-		"PP50": {
-			"label": "PP50",
+		"IPP4": {
+			"label": "IPP4",
 			"value": 9.74
 		},
 		"LIMIT": {
@@ -66,9 +66,16 @@
 		},
 		{
 			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='PP50'",
+			"if": "vv.kod=='IPP4'",
 			"value": null,
-			"calc": "PP50",
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -102,8 +109,8 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZSP",
+			"value": 0.016402,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{

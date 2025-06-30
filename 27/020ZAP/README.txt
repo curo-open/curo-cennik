@@ -16,6 +16,10 @@ Autor: curo.sk
 │ PP50 = 10       │ PP50                       │
 │ FOB = 2         │ FOB                        │
 │ EDU = 2         │ EDU                        │
+│ AAA1 = 3.55     │ AAA1                       │
+│ AAA2 = 3.55     │ AAA2                       │
+│ AAA3 = 3.55     │ AAA3                       │
+│ AAA4 = 3.55     │ AAA4                       │
 └─────────────────┴────────────────────────────┘
 
 
@@ -88,6 +92,10 @@ Autor: curo.sk
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 │            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
+│            null │ AAA1                      │ Pripočitateľné položky                        │ vv.kod=='AAA1'                                               │
+│            null │ AAA2                      │ Pripočitateľné položky                        │ vv.kod=='AAA2'                                               │
+│            null │ AAA3                      │ Pripočitateľné položky                        │ vv.kod=='AAA3'                                               │
+│            null │ AAA4                      │ Pripočitateľné položky                        │ vv.kod=='AAA4'                                               │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'         │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'         │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │
