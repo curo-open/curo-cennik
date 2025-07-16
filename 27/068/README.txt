@@ -8,7 +8,8 @@ Autor: curo.sk
 ┌───────────────────┬─────────────────┐
 │ Názov a hodnota   │ Popis           │
 ├───────────────────┼─────────────────┤
-│ CB = 0.0402       │ Cena bodu       │
+│ CB = 0.0417       │ Cena bodu       │
+│ CBO = 0.0373      │ Cena bodu       │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ │
 │ LIMIT = 0         │ Limit           │
 └───────────────────┴─────────────────┘
@@ -25,7 +26,8 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63' ,'65','66','67']                   │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['200','2100','2101','2106']                       │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['200','201','204','2000','2001','2002','2003','20 │
+│                 │                           │                                               │ 18','2018a','2100','2101','2106']                            │
 │           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['70','1b','11a']                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
@@ -39,8 +41,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CBO         │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*CBO         │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

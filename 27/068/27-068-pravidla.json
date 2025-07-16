@@ -2,7 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0402
+			"value": 0.0417
+		},
+		"CBO": {
+			"label": "Cena bodu ",
+			"value": 0.0373
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -24,7 +28,7 @@
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in ['200','2100','2101','2106']",
+			"if": "vv.kod in ['200','201','204','2000','2001','2002','2003','2018','2018a','2100','2101','2106']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -117,14 +121,14 @@
 			"label": "ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		}
 	],
