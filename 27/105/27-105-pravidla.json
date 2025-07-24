@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.0336
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0323
+			"value": 0.038
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -54,7 +54,7 @@
 			"label": "Výkon 820;822;825;841",
 			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{

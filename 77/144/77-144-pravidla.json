@@ -1,50 +1,46 @@
 {
 	"params": {
-		"LIMIT": {
-			"label": "Limit",
-			"value": 0
-		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.026
+			"value": 0.0336
 		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.041
+		"CBO": {
+			"label": "Cena bodu ostatné ŠAS výkony",
+			"value": 0.038
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0082
+			"value": 0.00973
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.015,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Vykon 60,62,63,163",
+			"if": "vv.kod in ['60','62','63','65','67','163']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "Výkon H0008",
-			"if": "vv.kod in ['H0008']",
-			"value": 4.5,
+			"label": "Výkon 820;822;825;841",
+			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 11a,1b,7,1c",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEK",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 629b",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
 			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5330,5331,5332",
-			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5793,5794,5795",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.012083,
-			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -57,19 +53,19 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.0082,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Výkony ŠAS",
+			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
-			"label": "Výkony ŠAS",
+			"label": "Výkony",
 			"if": "1",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
@@ -99,25 +95,25 @@
 		"65": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
 			}
 		],
 		"70": [
 			{
 				"cond": "",
 				"value": 40
-			}
-		],
-		"60r": [
-			{
-				"cond": "",
-				"value": 480
 			}
 		],
 		"1b": [
