@@ -40,7 +40,11 @@ Autor: curo.sk
 │                 │                           │                                               │ ,'5315','5316','5799']                                       │
 │            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
 │          0.2463 │ vv.bodyCelkom*cena        │ Výkon                                         │ vv.kod in ['5727']                                           │
+│          0.0158 │ vv.bodyCelkom*cena        │ Výkon                                         │ vv.kod in ['4571a']                                          │
 │            8.95 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
+│            11.5 │ vv.pocet*cena             │ Stanovenie Troponínu                          │ vv.kod in ['4485']                                           │
+│           19.75 │ vv.pocet*cena             │ N-terminálny fragment (NT-pro BNP)            │ vv.kod in ['44418']                                          │
+│            5.82 │ vv.pocet*cena             │ Výkon H0006                                   │ vv.kod in ['H0006']                                          │
 │            6.06 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
 │            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │

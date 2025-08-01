@@ -2,19 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0335
+			"value": 0.0336
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
-		},
-		"CBEU": {
-			"label": "Cena bodu ",
-			"value": 0.0285
-		},
-		"CBP": {
-			"label": "Cena bodu preventívne výkony",
-			"value": 0.041
+			"value": 0.038
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -24,52 +16,38 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60,62,63,820,822,825,841",
-			"if": "vv.kod in ['60','62','63','820','822','825','841']",
-			"value": 0.0335,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Vykon 60,62,63,163",
+			"if": "vv.kod in ['60','62','63','65','67','163']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
-			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena",
+			"label": "Výkon 820;822;825;841",
+			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{
-			"label": "Výkon H0008",
-			"if": "vv.kod in ['H0008']",
-			"value": 5,
+			"label": "Výkon 11a,1b,7,1c",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEK",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 629b",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
 			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5330,5331,5332",
-			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5793,5794,5795",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.0226,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -80,14 +58,14 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony ŠAS",
+			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
-			"label": "Výkony ŠAS",
+			"label": "Výkony",
 			"if": "1",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",

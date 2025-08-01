@@ -33,14 +33,14 @@
 		{
 			"label": "vek od 18 do 19",
 			"if": "p.kapitacia && p|vekMedzi(18, 19)",
-			"value": 4.93,
+			"value": 5.12,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 19 do 27",
 			"if": "p.kapitacia && p|vekMedzi(19, 27)",
-			"value": 3.29,
+			"value": 3.35,
 			"calc": "IDK+cena",
 			"instruction": null
 		},

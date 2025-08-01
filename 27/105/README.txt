@@ -9,8 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                                          │
 ├───────────────────┼────────────────────────────────────────────────┤
 │ IPP1 = 3.71       │ IPP1                                           │
-│ CB = 0.0365       │ Cena bodu                                      │
-│ CBO = 0.0323      │ Cena bodu ostatné ŠAS výkony                   │
+│ CB = 0.0336       │ Cena bodu                                      │
+│ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony                   │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ                                │
 │ CBEK = 0.035      │ Cena bodu el. výkony                           │
 │ PV = 0.0365       │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │
@@ -32,7 +32,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Vykon 60,62,63,163                            │ vv.kod in ['60','62','63','65','67','163']                   │
-│            null │ vv.bodyCelkom*CB          │ Výkon 820;822;825;841                         │ vv.kod in ['820','821','822','825','826','841','842','845',' │
+│            null │ vv.bodyCelkom*CBO         │ Výkon 820;822;825;841                         │ vv.kod in ['820','821','822','825','826','841','842','845',' │
 │                 │                           │                                               │ 847','867']                                                  │
 │            null │ vv.bodyCelkom*CBEK        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
 │            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │

@@ -9,8 +9,8 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                                          │
 ├───────────────────┼────────────────────────────────────────────────┤
 │ IPP1 = 3.71       │ IPP1                                           │
-│ CB = 0.0323       │ Cena bodu                                      │
-│ CBO = 0.0365      │ Cena bodu ostatné ŠAS výkony                   │
+│ CB = 0.0336       │ Cena bodu                                      │
+│ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony                   │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ                                │
 │ CBEK = 0.035      │ Cena bodu el. výkony                           │
 │ PV = 0.0365       │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │

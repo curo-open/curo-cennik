@@ -100,9 +100,37 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon ",
+			"if": "vv.kod in ['4571a']",
+			"value": 0.0158,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Stanovenie D-diméru",
 			"if": "vv.kod in ['3860']",
 			"value": 8.95,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie Troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "N-terminálny fragment (NT-pro BNP)",
+			"if": "vv.kod in ['44418']",
+			"value": 19.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon H0006",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.82,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
