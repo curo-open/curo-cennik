@@ -520,6 +520,20 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEU",
 			"instruction": null
+		},
+		{
+			"label": "SVALZ výkon",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
 		}
 	],
 	"kontrola": [],
