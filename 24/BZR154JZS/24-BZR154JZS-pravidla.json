@@ -5,7 +5,7 @@
 		{
 			"label": "Výkon 9104",
 			"if": "vv.kod in ['9104'] || vv.k in ['9104'] || vv.k24 in ['9104'] ",
-			"value": 407,
+			"value": 395,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -19,28 +19,28 @@
 		{
 			"label": "Výkon 9100",
 			"if": "vv.kod in ['9100'] || vv.k in ['9100'] || vv.k24 in ['9100'] ",
-			"value": 273,
+			"value": 276,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 8502",
 			"if": "vv.kod in ['8502'] || vv.k in ['8502'] || vv.k24 in ['8502'] ",
-			"value": 229,
+			"value": 222,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9101",
 			"if": "vv.kod in ['9101'] || vv.k in ['9101'] || vv.k24 in ['9101'] ",
-			"value": 432,
+			"value": 419,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 9103",
 			"if": "vv.kod in ['9103'] || vv.k in ['9103'] || vv.k24 in ['9103'] ",
-			"value": 382,
+			"value": 370,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

@@ -10,7 +10,7 @@ Autor: curo.sk
 ├────────────────────┼─────────────────┤
 │ IPP1 = 1.08        │ IPP1            │
 │ LIMIT = 2235       │ Limit           │
-│ CB = 0.036616      │ Cena bodu       │
+│ CB = 0.037971      │ Cena bodu       │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
 └────────────────────┴─────────────────┘
 
