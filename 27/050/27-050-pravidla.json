@@ -27,10 +27,6 @@
 		"IPP3": {
 			"label": "IPP3",
 			"value": 2.12
-		},
-		"LIMIT": {
-			"label": "Limit",
-			"value": 0
 		}
 	},
 	"pacient": [],
@@ -101,7 +97,7 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.0226,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

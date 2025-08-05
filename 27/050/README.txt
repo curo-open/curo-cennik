@@ -15,7 +15,6 @@ Autor: curo.sk
 │ IPP1 = 3.71       │ IPP1               │
 │ IPP2 = 3.18       │ IPP2               │
 │ IPP3 = 2.12       │ IPP3               │
-│ LIMIT = 0         │ Limit              │
 └───────────────────┴────────────────────┘
 
 
@@ -38,7 +37,7 @@ Autor: curo.sk
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5153a, 5333                             │ vv.kod in ['5153a','5333']                                   │
 │        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
-│          0.0226 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
+│         0.02463 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │

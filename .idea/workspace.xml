@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes" />
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/BZR020/25-BZR020-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR020/25-BZR020-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/BZR020/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR020/README.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -839,6 +843,7 @@
       <workItem from="1751526342260" duration="2001000" />
       <workItem from="1752666461554" duration="25000" />
       <workItem from="1754029767098" duration="56000" />
+      <workItem from="1754296252362" duration="2847000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1183,7 +1188,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="530" />
+    <option name="localTasksCounter" value="532" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.033881
+			"value": 0.03005
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -24,7 +24,7 @@
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in ['1B05011','1B05012','1B05013','1B05014']",
+			"if": "vv.kod in ['1B05011','1B05012','1B05013','1B05014','1B06025','1A02009','1A02012','1A03007']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -32,7 +32,7 @@
 		{
 			"label": "Cielené vyšetrenie nôh",
 			"if": "vv.kod in ['1A02007']",
-			"value": 0.028058,
+			"value": 0.03005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -129,25 +129,25 @@
 		"70": [
 			{
 				"cond": "",
-				"value": 40
+				"value": 50
 			}
 		],
 		"1b": [
 			{
 				"cond": "",
-				"value": 160
+				"value": 190
 			}
 		],
 		"1c": [
 			{
 				"cond": "",
-				"value": 1000
+				"value": 1200
 			}
 		],
 		"11a": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		],
 		"1A02007": [

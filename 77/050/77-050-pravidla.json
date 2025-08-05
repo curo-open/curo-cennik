@@ -1,8 +1,32 @@
 {
 	"params": {
-		"LIMIT": {
-			"label": "Limit",
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.0365
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.01031
+		},
+		"CBO": {
+			"label": "Ostatné ŠAS výkony",
+			"value": 0.0323
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
 			"value": 0
+		},
+		"IPP1": {
+			"label": "IPP1",
+			"value": 3.71
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 3.18
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 2.12
 		}
 	},
 	"pacient": [],
@@ -73,7 +97,7 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.0226,
+			"value": 0.02463,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -160,45 +184,137 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
-		},
-		{
-			"label": "EKG",
-			"if": "vv.kod in ['5702','5702a','15c']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "p.typ in ['BE','CU','EU']",
-			"value": 0.022,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "SVALZ výkony",
-			"if": "vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS",
-			"if": "vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkony",
-			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 80
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 40
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
+			}
+		],
+		"1A02007": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 80
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"1B06025": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"1A02009": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"1A02012": [
+			{
+				"cond": "",
+				"value": 12000
+			}
+		],
+		"1A03007": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"1B05011": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"1B05012": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"1B05013": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"1B05014": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "diabetolog"
