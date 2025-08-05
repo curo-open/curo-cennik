@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.038
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0323
+			"value": 0.0336
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -61,8 +61,8 @@
 		{
 			"label": "Výkon 15b - zhodnotenie odberov",
 			"if": "vv.kod in ['15b']",
-			"value": 0.0323,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBO",
 			"instruction": null
 		},
 		{
@@ -75,7 +75,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0365,
+			"value": 0.038,
 			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
@@ -103,8 +103,8 @@
 		{
 			"label": "EKG - vv.603a, 15c",
 			"if": "vv.kod in ['603a','15c']",
-			"value": 0.0323,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{

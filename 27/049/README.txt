@@ -8,8 +8,8 @@ Autor: curo.sk
 ┌──────────────────────┬──────────────────────────────┐
 │ Názov a hodnota      │ Popis                        │
 ├──────────────────────┼──────────────────────────────┤
-│ CB = 0.0365          │ Cena bodu                    │
-│ CBO = 0.0323         │ Cena bodu ostatné ŠAS výkony │
+│ CB = 0.038           │ Cena bodu                    │
+│ CBO = 0.0336         │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.01031    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.01044 │ Cena bodu SVaLZ USG          │
 │ NCB = 0              │ Navysena cena bodu           │
@@ -34,14 +34,14 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0323 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 250a, 250b - odbery                     │ vv.kod in ['250a','250b']                                    │
-│          0.0323 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 15b - zhodnotenie odberov               │ vv.kod in ['15b']                                            │
+│            null │ vv.bodyCelkom*CBO         │ Výkon 15b - zhodnotenie odberov               │ vv.kod in ['15b']                                            │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d - zhodnotenie RTG dokumentácie      │ vv.kod in ['15d']                                            │
-│          0.0365 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.038 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │         0.02463 │ vv.bodyCelkom*cena        │ Izometrický zátažový tes - vv. 5727           │ vv.kod in ['5727']                                           │
 │         0.01107 │ vv.bodyCelkom*cena        │ Echokardiografia - vv. 5744, 5745, 5746, 5746 │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │                 │                           │ b, 5754                                       │                                                              │
 │         0.01031 │ vv.bodyCelkom*cena        │ Ergometria - vv. 5708                         │ vv.kod in ['5708']                                           │
-│          0.0323 │ vv.bodyCelkom*(cena+NCB)  │ EKG - vv.603a, 15c                            │ vv.kod in ['603a','15c']                                     │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ EKG - vv.603a, 15c                            │ vv.kod in ['603a','15c']                                     │
 │         0.01031 │ vv.bodyCelkom*cena        │ Ekg holter - vv. 5712, 5713, 5714             │ vv.kod in ['5712','5713','5714']                             │
 │              50 │ vv.pocet*cena             │ Výkon 4F00010                                 │ vv.kod in ['4F00010']                                        │
 │              70 │ vv.pocet*cena             │ Výkon 607A                                    │ vv.kod in ['607A']                                           │
