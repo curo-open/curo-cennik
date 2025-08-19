@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌───────────────────────┬───────────────────────┐
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
-│ IPP1 = 2.44           │ IPP1                  │
-│ IPP2 = 3.92           │ IPP2                  │
-│ IPP3 = 6.64           │ IPP3                  │
-│ IPP4 = 9.64           │ IPP4                  │
+│ IPP1 = 2.48           │ IPP1                  │
+│ IPP2 = 3.98           │ IPP2                  │
+│ IPP3 = 6.74           │ IPP3                  │
+│ IPP4 = 9.74           │ IPP4                  │
 │ LIMIT = 75900         │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.03466          │ Cena bodu             │
+│ CB = 0.03553          │ Cena bodu             │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
 └───────────────────────┴───────────────────────┘

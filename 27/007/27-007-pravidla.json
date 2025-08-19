@@ -83,7 +83,7 @@
 		},
 		{
 			"label": "Preventívne zdravotné výkony",
-			"if": "vv.diagnoza=='Z00.1' && vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148','148a','148b','148c','149','149a','149b','149c','149d','149f','159b','950','951','952','953']",
+			"if": "vv.diagnoza=='Z00.1' && vv.kod in ['143','143a','144','145','145a','146','146a','146b','146c','148','148a','148b','148c','149','149a','149b','149d','149f','159b','950','951','952','953']",
 			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -104,7 +104,7 @@
 		},
 		{
 			"label": "Výkon 3671",
-			"if": "vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['3671']",
+			"if": "vv.diagnoza in ['Z00.1','Z00.0','Z52.00','Z52.01','Z52.08','Z52.1','Z52.2','Z52.3','Z52.4','Z52.5','Z52.6','Z52.7','Z52.81','Z52.82','Z52.89','Z52.9'] && vv.kod in ['3671']",
 			"value": 0.0845,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -138,6 +138,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Očkovanie proti diftérii a tetanu, pertusis, polio,\nhepatitídy typu B, hemofilus a povinného očkovania proti pneumokokom",
+			"if": "vv.diagnoza in ['Z23.8','Z27.1','Z27.3','Z27.8','Z00.1'] && vv.kod in ['252b']",
+			"value": 0.0931,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Očkovanie proti hepatitíde A",
 			"if": "vv.diagnoza in ['Z20.5','Z24.6'] && vv.kod in ['252b']",
 			"value": 0.0931,
@@ -145,7 +152,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie proti hepatitíde B",
+			"label": "Očkovanie proti hepatitíde A+B",
 			"if": "vv.diagnoza=='Z24.6' && vv.kod in ['252b']",
 			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
@@ -153,7 +160,7 @@
 		},
 		{
 			"label": "Očkovanie proti meningitíde",
-			"if": "vv.diagnoza in ['Z20.8','Z23.8'] && vv.kod in ['252b']",
+			"if": "vv.diagnoza in ['Z20.8','Z23.8','Z26.8'] && vv.kod in ['252b']",
 			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -180,8 +187,15 @@
 			"instruction": null
 		},
 		{
-			"label": "Očkovanie proti HPV u dievčat a chlapcov o",
+			"label": "Očkovanie proti HPV u dievčat a chlapcov ",
 			"if": "vv.diagnoza=='Z25.8' && vv.kod in ['252b']",
+			"value": 0.0931,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie proti osýpkam, rubeole, parotitíde ",
+			"if": "vv.diagnoza in ['Z27.4','Z27.8','Z24.4'] && vv.kod in ['252b']",
 			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -189,6 +203,13 @@
 		{
 			"label": "Očkovanie proti tetanu",
 			"if": "vv.diagnoza=='Z00.0' && vv.kod in ['252b']",
+			"value": 0.0931,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Očkovanie proti proti ochoreniu COVID-19",
+			"if": "vv.diagnoza in ['Z25.7','Z25.70','Z25.71','Z25.79'] && vv.kod in ['252b']",
 			"value": 0.0931,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -295,13 +316,6 @@
 			"label": "Starostlivosť o poistenca s obezitou, artériovou hypertenziou a/alebo dyslipidémiou",
 			"if": "vv.kod in ['10']",
 			"value": 14,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Očkovanie Covid 252L",
-			"if": "vv.kod in ['252L']",
-			"value": 10,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

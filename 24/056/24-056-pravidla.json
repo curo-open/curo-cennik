@@ -23,6 +23,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "USG",
 			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
 			"value": null,

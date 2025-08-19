@@ -2,19 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.44
+			"value": 2.48
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.92
+			"value": 3.98
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.64
+			"value": 6.74
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 9.64
+			"value": 9.74
 		},
 		"IPPD": {
 			"label": "IPPD",
@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03466
+			"value": 0.03553
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -175,7 +175,7 @@
 		"820": [
 			{
 				"cond": "",
-				"value": 950
+				"value": 1025
 			}
 		],
 		"821": [
@@ -187,19 +187,19 @@
 		"822": [
 			{
 				"cond": "",
-				"value": 360
+				"value": 415
 			}
 		],
 		"825": [
 			{
 				"cond": "",
-				"value": 470
+				"value": 540
 			}
 		],
 		"826": [
 			{
 				"cond": "",
-				"value": 750
+				"value": 865
 			}
 		],
 		"840": [
@@ -211,7 +211,7 @@
 		"841": [
 			{
 				"cond": "",
-				"value": 2130
+				"value": 2450
 			}
 		],
 		"847": [

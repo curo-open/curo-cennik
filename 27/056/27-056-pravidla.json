@@ -2,15 +2,19 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.038
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0323
+			"value": 0.0336
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01031
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.01107
 		},
 		"IPP1": {
 			"label": "IPP1",
@@ -31,13 +35,6 @@
 	},
 	"pacient": [],
 	"vykon": [
-		{
-			"label": "Elektronická komunikácia",
-			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.027,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
 		{
 			"label": "Výkon `60,`62,`63",
 			"if": "vv.kod in ['60','62','63']",
@@ -62,7 +59,7 @@
 		{
 			"label": "Elektronická komunikácia",
 			"if": "vv.kod in ['11a','1b','70','1c']",
-			"value": 0.0305,
+			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -90,7 +87,7 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.006666,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -194,13 +191,19 @@
 		"65": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
 			}
 		],
 		"67": [
 			{
 				"cond": "",
-				"value": 150
+				"value": 200
 			}
 		],
 		"70": [
@@ -213,6 +216,12 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		],
 		"1b": [

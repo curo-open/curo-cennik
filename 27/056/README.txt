@@ -5,17 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────────────┐
-│ Názov a hodnota   │ Popis                        │
-├───────────────────┼──────────────────────────────┤
-│ CB = 0.0365       │ Cena bodu                    │
-│ CBO = 0.0323      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
-│ IPP1 = 0          │ IPP1                         │
-│ IPP2 = 0          │ IPP2                         │
-│ IPP3 = 0          │ IPP3                         │
-│ LIMIT = 0         │ Limit                        │
-└───────────────────┴──────────────────────────────┘
+┌──────────────────────┬──────────────────────────────┐
+│ Názov a hodnota      │ Popis                        │
+├──────────────────────┼──────────────────────────────┤
+│ CB = 0.038           │ Cena bodu                    │
+│ CBO = 0.0336         │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01031    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG          │
+│ IPP1 = 0             │ IPP1                         │
+│ IPP2 = 0             │ IPP2                         │
+│ IPP3 = 0             │ IPP3                         │
+│ LIMIT = 0            │ Limit                        │
+└──────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,15 +29,14 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon `60,`62,`63                             │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon `60r                                    │ vv.kod in ['60r']                                            │
 │          0.0275 │ vv.bodyCelkom*cena        │ Výkon `65,`66,`67                             │ vv.kod in ['65','66','67']                                   │
-│          0.0305 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            8.95 │ vv.pocet*cena             │ Výkon 3860                                    │ vv.kod in ['3860']                                           │
 │            6.06 │ vv.pocet*cena             │ Výkon H0007                                   │ vv.kod in ['H0007']                                          │
 │            6.98 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
-│        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
+│            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon Ine SVALZ                               │ vv.kod in ['5330','5331','5332']                             │
 │          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5153a;5153b;5333                        │ vv.kod in ['5153a','5153b','5333']                           │
 │         0.02463 │ vv.bodyCelkom*cena        │ Výkony 5766, 5769, 5770,5771, 5772, 5793, 579 │ vv.kod in ['5766','5769','5770','5771','5772','5793','5794', │
@@ -60,10 +60,12 @@ Autor: curo.sk
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │
-│             150 │ 65                                                                                                        │                           │
-│             150 │ 67                                                                                                        │                           │
+│             200 │ 65                                                                                                        │                           │
+│             320 │ 66                                                                                                        │                           │
+│             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             480 │ 60r                                                                                                       │                           │
+│             900 │ 62b                                                                                                       │                           │
 │              80 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

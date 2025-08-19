@@ -38,27 +38,37 @@ Autor: curo.sk
 │          0.1284 │ vv.bodyCelkom*cena        │ Výkon 142                                     │ vv.kod in ['142']                                            │
 │          0.0845 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza=='Z00.1' && vv.kod in ['143','143a','144','145', │
 │                 │                           │                                               │ '145a','146','146a','146b','146c','148','148a','148b','148c' │
-│                 │                           │                                               │ ,'149','149a','149b','149c','149d','149f','159b','950','951' │
-│                 │                           │                                               │ ,'952','953']                                                │
+│                 │                           │                                               │ ,'149','149a','149b','149d','149f','159b','950','951','952', │
+│                 │                           │                                               │ '953']                                                       │
 │          0.0931 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza in ['P07.00','P07.01','P07.02','P07.10','P07.11' │
 │                 │                           │                                               │ ] && vv.kod in ['143','143a','144','145','145a','146','146a' │
 │                 │                           │                                               │ ,'146b','146c','148']                                        │
 │          0.0845 │ vv.bodyCelkom*cena        │ Výkon 159b                                    │ vv.diagnoza=='Z00.1' && vv.kod in ['159b']                   │
-│          0.0845 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['367 │
-│                 │                           │                                               │ 1']                                                          │
+│          0.0845 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.00','Z52.01','Z52.08',' │
+│                 │                           │                                               │ Z52.1','Z52.2','Z52.3','Z52.4','Z52.5','Z52.6','Z52.7','Z52. │
+│                 │                           │                                               │ 81','Z52.82','Z52.89','Z52.9'] && vv.kod in ['3671']         │
 │           30.85 │ vv.pocet*cena             │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti rotavirusom                   │ vv.diagnoza in ['Z25.8','Z26.8'] && vv.kod in ['252a']       │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti diftérii a tetanu, pertusis,  │ vv.diagnoza in ['Z23.8','Z27.1','Z27.3','Z27.8','Z00.1'] &&  │
+│                 │                           │ polio,                                        │ vv.kod in ['252b']                                           │
+│                 │                           │ hepatitídy typu B, hemofilus a povinného očko │                                                              │
+│                 │                           │ vania proti pneumokokom                       │                                                              │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza in ['Z20.5','Z24.6'] && vv.kod in ['252b']       │
-│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B                  │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
-│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza in ['Z20.8','Z23.8'] && vv.kod in ['252b']       │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza in ['Z20.8','Z23.8','Z26.8'] && vv.kod in ['252b │
+│                 │                           │                                               │ ']                                                           │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti varicelle                     │ vv.diagnoza=='Z26.8' && vv.kod in ['252b']                   │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
-│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti HPV u dievčat a chlapcov o    │ vv.diagnoza=='Z25.8' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti HPV u dievčat a chlapcov      │ vv.diagnoza=='Z25.8' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam, rubeole, parotitíde  │ vv.diagnoza in ['Z27.4','Z27.8','Z24.4'] && vv.kod in ['252b │
+│                 │                           │                                               │ ']                                                           │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie proti proti ochoreniu COVID-19      │ vv.diagnoza in ['Z25.7','Z25.70','Z25.71','Z25.79'] && vv.ko │
+│                 │                           │                                               │ d in ['252b']                                                │
 │          0.0931 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │          0.0349 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25','26','29']                                   │
 │          0.0349 │ vv.bodyCelkom*cena        │ Vykony pocas navstevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
@@ -78,7 +88,6 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │              14 │ vv.pocet*cena             │ Starostlivosť o poistenca s obezitou, artério │ vv.kod in ['10']                                             │
 │                 │                           │ vou hypertenziou a/alebo dyslipidémiou        │                                                              │
-│              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ PP05                      │ Pripočitateľné položky                        │ vv.kod=='PP05'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │

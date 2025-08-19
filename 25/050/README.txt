@@ -8,14 +8,14 @@ Autor: curo.sk
 ┌───────────────────────┬──────────────────────────────┐
 │ Názov a hodnota       │ Popis                        │
 ├───────────────────────┼──────────────────────────────┤
-│ IPP1 = 2.44           │ IPP1                         │
-│ IPP2 = 3.92           │ IPP2                         │
-│ IPP3 = 6.09           │ IPP3                         │
-│ IPP4 = 9.09           │ IPP4                         │
+│ IPP1 = 2.48           │ IPP1                         │
+│ IPP2 = 3.98           │ IPP2                         │
+│ IPP3 = 6.74           │ IPP3                         │
+│ IPP4 = 9.74           │ IPP4                         │
 │ IPPD = 5              │ IPPD                         │
 │ LIMIT = 75900         │ Limit                        │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?        │
-│ CB = 0.03466          │ Cena bodu                    │
+│ CB = 0.03553          │ Cena bodu                    │
 │ CBP = 0.041           │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG          │
@@ -33,6 +33,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63' ,'65','66','67']                   │
+│            null │ vv.bodyCelkom*CB          │ Vykonanie jednoduchého zdravotného výkonu     │ vv.kod in ['4a']                                             │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ USG                                           │ vv.kod in ['5734','5735','5736','5737','5738','5739','5740', │
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
@@ -41,6 +42,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1B05011','1B05012','1B05014','4a']               │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['1B06025','1A02009','1A02012','A03007']           │
 │             6.2 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['1A02013']                                        │
+│               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['1A02011']                                        │
 │              27 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0003']                                          │
 │            5.65 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0006']                                          │
 │            6.78 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
