@@ -6,11 +6,11 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0055
+			"value": 0.009724
 		},
 		"CBUSG": {
 			"label": "Cena bodu USG",
-			"value": 0.009281
+			"value": 0.009724
 		}
 	},
 	"pacient": [],

@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.32
+			"value": 0.15
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -33,7 +33,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(15, 130)",
-			"value": 2.04,
+			"value": 2.18,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

@@ -29,7 +29,7 @@
 		{
 			"label": "vek do 1 roku života",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 11.52,
+			"value": 11.55,
 			"calc": "IDK+cena",
 			"instruction": null
 		},

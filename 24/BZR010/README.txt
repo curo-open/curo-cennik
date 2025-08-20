@@ -5,13 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌──────────────────┬─────────────────┐
-│ Názov a hodnota  │ Popis           │
-├──────────────────┼─────────────────┤
-│ CB = 0.039609    │ Cena bodu       │
-│ CBSVALZ = 0.0055 │ Cena bodu SVaLZ │
-│ CBUSG = 0.009281 │ Cena bodu USG   │
-└──────────────────┴─────────────────┘
+┌────────────────────┬─────────────────┐
+│ Názov a hodnota    │ Popis           │
+├────────────────────┼─────────────────┤
+│ CB = 0.039609      │ Cena bodu       │
+│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
+│ CBUSG = 0.009724   │ Cena bodu USG   │
+└────────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA

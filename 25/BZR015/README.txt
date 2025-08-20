@@ -15,7 +15,7 @@ Autor: curo.sk
 │ IPPD = 5            │ IPPD                                                    │
 │ LIMIT = 75900       │ Limit                                                   │
 │ EL_POBOCKA = 1      │ Používa el. pobočku ?                                   │
-│ CB = 0.03466        │ Cena bodu                                               │
+│ CB = 0.03518        │ Cena bodu                                               │
 │ CBE = 0.035         │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │

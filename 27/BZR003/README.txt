@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota      │ Popis               │
 ├──────────────────────┼─────────────────────┤
 │ LIMIT = 0            │ Limit               │
-│ CB = 0.0391          │ Cena bodu           │
+│ CB = 0.039           │ Cena bodu           │
 │ CBSVALZ = 0.01031    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.01107 │ Cena bodu SVaLZ USG │
 │ IPP4 = 5.83          │ IPP4                │
@@ -29,7 +29,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBSVALZ     │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
-│          0.0435 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│          0.0488 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.15 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod in ['4571a']                                          │
 │            null │ vv.bodyCelkom*CB          │ Výkon 5765                                    │ vv.kod in ['5765']                                           │

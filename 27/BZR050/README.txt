@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌──────────────────────┬──────────────────────────────┐
 │ Názov a hodnota      │ Popis                        │
 ├──────────────────────┼──────────────────────────────┤
-│ CB = 0.0391          │ Cena bodu                    │
+│ CB = 0.039           │ Cena bodu                    │
 │ CBSVALZ = 0.01031    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.01107 │ Cena bodu USG                │
 │ CBP = 0.0455         │ Cena bodu preventívne výkony │
@@ -29,7 +29,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0435 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│          0.0488 │ vv.bodyCelkom*cena        │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['70','1b','1c','11a']                             │
 │            null │ vv.bodyCelkom*CB          │ Odber venóznej krvi                           │ vv.kod in ['250a','250b']                                    │
@@ -51,7 +51,7 @@ Autor: curo.sk
 │          0.0158 │ vv.bodyCelkom*cena        │ Výkon 4571a                                   │ vv.kod==['4571a']                                            │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 4587a                                   │ vv.kod==['4587a']                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
-│          0.0435 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
+│          0.0488 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['60','62','63'] && p.typ in ['EU']                │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
