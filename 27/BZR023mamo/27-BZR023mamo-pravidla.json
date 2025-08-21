@@ -1,0 +1,23 @@
+{
+	"params": {
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.0088
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "MAMO",
+			"if": "vv.kod in ['5092','5092a','5029b','5092c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "MAMO503"
+}

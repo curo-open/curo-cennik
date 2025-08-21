@@ -1,0 +1,23 @@
+{
+	"params": {
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.0117
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "RTG",
+			"if": "vv.kod in ['5010','5011','5012','5015','5016','5020','5021','5022','5023','5024','5030','5031','5032','5033','5051','5060','5061']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "RTG504"
+}

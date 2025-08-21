@@ -1,0 +1,30 @@
+{
+	"params": {
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.0042
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "MRI",
+			"if": "vv.kod in ['5600','5605','5605a','5611','5611a','5611b','5611c','5612a','5612b','5612c','5612d','5612e','5613']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "MRI kontrast",
+			"if": "vv.kod in ['6000','6001','6002','6003','6003a','6003b','6010','6011','6012','6013','6014','6016','6020','6025','6030','6060','6070','6080']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "MRI502"
+}
