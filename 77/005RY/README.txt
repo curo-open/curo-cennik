@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                                          │
 ├───────────────────┼────────────────────────────────────────────────┤
 │ IPP1 = 3.71       │ IPP1                                           │
-│ CB = 0.0365       │ Cena bodu                                      │
+│ CB = 0.038        │ Cena bodu                                      │
 │ CBO = 0.0323      │ Cena bodu ostatné ŠAS výkony                   │
 │ CBSVALZ = 0.00973 │ Cena bodu SVaLZ                                │
 │ CBEK = 0.035      │ Cena bodu el. výkony                           │

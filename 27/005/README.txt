@@ -5,20 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────────────────────────┐
-│ Názov a hodnota   │ Popis                                          │
-├───────────────────┼────────────────────────────────────────────────┤
-│ IPP1 = 3.71       │ IPP1                                           │
-│ CB = 0.0336       │ Cena bodu                                      │
-│ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony                   │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ                                │
-│ CBEK = 0.035      │ Cena bodu el. výkony                           │
-│ PV = 0.0365       │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │
-│ PVD = 0.0365      │ Psych výkony deti 826,842,845                  │
-│ NCB = 0           │ Navysena cena bodu                             │
-│ VV65 = 0          │ VV 65                                          │
-│ VV67 = 0          │ VV 67                                          │
-└───────────────────┴────────────────────────────────────────────────┘
+┌───────────────────┬──────────────────────────────┐
+│ Názov a hodnota   │ Popis                        │
+├───────────────────┼──────────────────────────────┤
+│ IPP1 = 3.71       │ IPP1                         │
+│ CB = 0.0336       │ Cena bodu                    │
+│ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
+│ CBEK = 0.035      │ Cena bodu el. výkony         │
+│ NCB = 0           │ Navysena cena bodu           │
+│ VV65 = 0          │ VV 65                        │
+│ VV67 = 0          │ VV 67                        │
+└───────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA

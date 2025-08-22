@@ -20,14 +20,6 @@
 			"label": "Cena bodu el. výkony",
 			"value": 0.035
 		},
-		"PV": {
-			"label": "Psych výkony 820, 821, 822, 825, 841, 847, 867",
-			"value": 0.0365
-		},
-		"PVD": {
-			"label": "Psych výkony deti 826,842,845",
-			"value": 0.0365
-		},
 		"NCB": {
 			"label": "Navysena cena bodu",
 			"value": 0
@@ -51,7 +43,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 820;822;825;841",
+			"label": "Psychiatrické výkony",
 			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
