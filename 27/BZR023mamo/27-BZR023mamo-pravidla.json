@@ -9,14 +9,39 @@
 	"vykon": [
 		{
 			"label": "MAMO",
-			"if": "vv.kod in ['5092','5092a','5029b','5092c']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"if": "vv.kod in ['5092' ,\n  '5092a' , '5029b' , '5092c']",
+			"value": 0.0088,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"5092": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"5092a": [
+			{
+				"cond": "",
+				"value": 800
+			}
+		],
+		"5029b": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"5092c": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "MAMO503"
