@@ -28,8 +28,8 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│            null │ vv.bodyCelkom*CB          │ Psychiatrické výkony                          │ vv.kod in ['820','821','822','825','826','841','842','845',' │
-│                 │                           │                                               │ 847','867']                                                  │
+│            null │ vv.bodyCelkom*CB          │ Psychiatrické výkony                          │ vv.kod in ['820','821','822','825','826','840','841','842',' │
+│                 │                           │                                               │ 845','847','867']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │

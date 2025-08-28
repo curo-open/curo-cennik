@@ -8,8 +8,8 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.0365       │ Cena bodu                    │
-│ CBO = 0.0348      │ Cena bodu ostatné ŠAS výkony │
+│ CB = 0.038        │ Cena bodu                    │
+│ CBO = 0.0336      │ Cena bodu ostatné ŠAS výkony │
 │ CBP = 0.0779      │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
 └───────────────────┴──────────────────────────────┘
@@ -73,6 +73,7 @@ Autor: curo.sk
 │            3000 │ 763sn                                                                                                     │                           │
 │            3000 │ 763pp                                                                                                     │                           │
 │            3000 │ 763pn                                                                                                     │                           │
+│            3000 │ 763p                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

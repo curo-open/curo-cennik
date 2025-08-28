@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota    │ Popis                        │
 ├────────────────────┼──────────────────────────────┤
 │ LIMIT = 1140000    │ Limit                        │
-│ CB = 0.036716      │ Cena bodu                    │
+│ CB = 0.03005       │ Cena bodu                    │
 │ CBP = 0.055        │ Cena bodu preventívne výkony │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ              │
 └────────────────────┴──────────────────────────────┘
@@ -29,7 +29,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62','63']                                        │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
+│            null │ vv.bodyCelkom*CBP         │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
 │            null │ vv.bodyCelkom*CB          │ Prev. KS                                      │ vv.kod in ['765p']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │

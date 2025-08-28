@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.038
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0348
+			"value": 0.0336
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -287,6 +287,12 @@
 			}
 		],
 		"763pn": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763p": [
 			{
 				"cond": "",
 				"value": 3000

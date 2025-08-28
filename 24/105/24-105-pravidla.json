@@ -42,7 +42,7 @@
 		},
 		{
 			"label": "Psychiatrické výkony",
-			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
+			"if": "vv.kod in ['820','821','822','825','826','840','841','842','845','847','867']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
