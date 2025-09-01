@@ -49,91 +49,91 @@
 		{
 			"label": "od 18 do 19 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": null,
+			"value": 5.78,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 20 do 28 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(20, 29)",
-			"value": null,
+			"value": 4.69,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 29 do 39 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(29, 40)",
-			"value": null,
+			"value": 4.45,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 40 do 44 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(40, 45)",
-			"value": null,
+			"value": 4.47,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 45 do 49 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(45, 50)",
-			"value": null,
+			"value": 4.51,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 50 do 54 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(50, 55)",
-			"value": null,
+			"value": 5.04,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 55 do 59 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(55, 60)",
-			"value": null,
+			"value": 5.64,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 60 do 64 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(60, 65)",
-			"value": null,
+			"value": 6.18,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 65 do 69 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(65, 70)",
-			"value": null,
+			"value": 6.62,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 70 do 74 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(70, 75)",
-			"value": null,
+			"value": 7.39,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 75 do 79 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(75, 80)",
-			"value": null,
+			"value": 8.17,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 80 do 84 rokov vrátane",
 			"if": "p.kapitacia && p|vekMedzi(80, 85)",
-			"value": null,
+			"value": 9.06,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "od 85+ ",
 			"if": "p.kapitacia && p|vekMedzi(85)",
-			"value": null,
+			"value": 9.43,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

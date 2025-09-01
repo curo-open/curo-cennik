@@ -26,19 +26,19 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ od 18 do 19 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ od 20 do 28 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ od 29 do 39 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ od 40 do 44 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ od 45 do 49 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ od 50 do 54 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ od 55 do 59 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ od 60 do 64 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ od 65 do 69 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ od 70 do 74 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ od 75 do 79 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ od 80 do 84 rokov vrátane │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ od 85+                    │           NaN │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ od 18 do 19 rokov vrátane │          5.78 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ od 20 do 28 rokov vrátane │          4.69 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ od 29 do 39 rokov vrátane │          4.45 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ od 40 do 44 rokov vrátane │          4.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ od 45 do 49 rokov vrátane │          4.51 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ od 50 do 54 rokov vrátane │          5.04 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ od 55 do 59 rokov vrátane │          5.64 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ od 60 do 64 rokov vrátane │          6.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ od 65 do 69 rokov vrátane │          6.62 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ od 70 do 74 rokov vrátane │          7.39 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ od 75 do 79 rokov vrátane │          8.17 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ od 80 do 84 rokov vrátane │          9.06 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ od 85+                    │          9.43 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
