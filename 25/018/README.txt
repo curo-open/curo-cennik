@@ -12,10 +12,10 @@ Autor: curo.sk
 │ CBE = 0.035         │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
-│ IPP1 = 2.07         │ IPP1                                                    │
-│ IPP2 = 3.33         │ IPP2                                                    │
-│ IPP3 = 5.64         │ IPP3                                                    │
-│ IPP4 = 8.64         │ IPP4                                                    │
+│ IPP1 = 2.11         │ IPP1                                                    │
+│ IPP2 = 3.38         │ IPP2                                                    │
+│ IPP3 = 5.73         │ IPP3                                                    │
+│ IPP4 = 8.73         │ IPP4                                                    │
 └─────────────────────┴─────────────────────────────────────────────────────────┘
 
 
