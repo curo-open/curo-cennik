@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌─────────────────┬────────────────────────────┐
 │ Názov a hodnota │ Popis                      │
 ├─────────────────┼────────────────────────────┤
-│ IDK = 0.46      │ NASTAVENIA IDK             │
+│ IDK = 0.66      │ NASTAVENIA IDK             │
 │ CB = 0.026      │ Cena bodu                  │
 │ CBSVALZ = 0.01  │ Cena bodu SVaLZ            │
 │ CBEUNK = 0.0349 │ Cena bodu Nekapitovany(EU) │
@@ -24,10 +24,10 @@ Autor: curo.sk
 ┌──────────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                    │ Premenná cena │ Vzorec   │ Podmienka          │
 ├──────────────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek od 18 do 50 vrátane  │          3.89 │ IDK+cena │ p|vekMedzi(18, 51) │
-│ vek od 51 do 60 vrátane  │          4.42 │ IDK+cena │ p|vekMedzi(51, 61) │
-│ vek od 61 do 80 vrátane  │          6.77 │ IDK+cena │ p|vekMedzi(61, 81) │
-│ vek od 81+               │           8.7 │ IDK+cena │ p|vekMedzi(81)     │
+│ vek od 18 do 50 vrátane  │          3.43 │ IDK+cena │ p|vekMedzi(18, 51) │
+│ vek od 51 do 60 vrátane  │          3.93 │ IDK+cena │ p|vekMedzi(51, 61) │
+│ vek od 61 do 80 vrátane  │          6.31 │ IDK+cena │ p|vekMedzi(61, 81) │
+│ vek od 81+               │          8.24 │ IDK+cena │ p|vekMedzi(81)     │
 └──────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 

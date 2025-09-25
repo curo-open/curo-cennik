@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.46
+			"value": 0.66
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -41,28 +41,28 @@
 		{
 			"label": "vek od 18 do 50 vrátane ",
 			"if": "p|vekMedzi(18, 51)",
-			"value": 3.89,
+			"value": 3.43,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 51 do 60 vrátane",
 			"if": "p|vekMedzi(51, 61)",
-			"value": 4.42,
+			"value": 3.93,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 61 do 80 vrátane",
 			"if": "p|vekMedzi(61, 81)",
-			"value": 6.77,
+			"value": 6.31,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 81+",
 			"if": "p|vekMedzi(81)",
-			"value": 8.7,
+			"value": 8.24,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

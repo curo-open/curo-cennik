@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": null
+			"value": 1.22
 		},
 		"CB": {
 			"label": "Cena bodu Kapitovany SK/EU ",
@@ -29,7 +29,7 @@
 		{
 			"label": "vek do 1 roku života",
 			"if": "p|vekMedzi(0, 1)",
-			"value": 11.55,
+			"value": 10.55,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
