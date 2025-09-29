@@ -1,0 +1,23 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.039336
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Osteodenzitometria",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "rádiológia"
+}

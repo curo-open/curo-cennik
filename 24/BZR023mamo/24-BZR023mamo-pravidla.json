@@ -1,0 +1,48 @@
+{
+	"params": {
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.009
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "MAMO",
+			"if": "vv.kod in ['5092' ,\n  '5092a' , '5029b' , '5092c']",
+			"value": 0.009,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"5092": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"5092a": [
+			{
+				"cond": "",
+				"value": 800
+			}
+		],
+		"5029b": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"5092c": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "MAMO503"
+}
