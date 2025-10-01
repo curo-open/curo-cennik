@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03005
+			"value": 0.038462
 		},
 		"CBO": {
 			"label": "Cena bodu ",
@@ -32,8 +32,15 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
+			"label": "15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60,63",
+			"if": "vv.kod in ['60','63']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -105,7 +112,7 @@
 			"label": "Echokardiografia",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{

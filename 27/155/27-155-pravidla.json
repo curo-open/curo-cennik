@@ -90,7 +90,7 @@
 			"label": "Echokardiografia - vv. 5744, 5745, 5746, 5746b, 5754",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{

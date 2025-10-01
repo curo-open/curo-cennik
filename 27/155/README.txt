@@ -38,7 +38,7 @@ Autor: curo.sk
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d - zhodnotenie RTG dokumentácie      │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │         0.02463 │ vv.bodyCelkom*cena        │ Izometrický zátažový tes - vv. 5727           │ vv.kod in ['5727']                                           │
-│            null │ vv.bodyCelkom*CB          │ Echokardiografia - vv. 5744, 5745, 5746, 5746 │ vv.kod in ['5744','5745','5746','5746b','5754']              │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Echokardiografia - vv. 5744, 5745, 5746, 5746 │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │                 │                           │ b, 5754                                       │                                                              │
 │            null │ vv.bodyCelkom*CB          │ Ergometria - vv. 5708                         │ vv.kod in ['5708']                                           │
 │            null │ vv.bodyCelkom*(CBO+NCB)   │ EKG - vv.603a, 15c                            │ vv.kod in ['603a','15c']                                     │

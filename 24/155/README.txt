@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────┐
 │ Názov a hodnota    │ Popis               │
 ├────────────────────┼─────────────────────┤
-│ CB = 0.03005       │ Cena bodu           │
+│ CB = 0.038462      │ Cena bodu           │
 │ CBO = 0.03005      │ Cena bodu           │
 │ CBSVALZ = 0.009724 │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG │
@@ -28,7 +28,8 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│          0.0193 │ vv.bodyCelkom*cena        │ 15d                                           │ vv.kod in ['15d']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60,63                                   │ vv.kod in ['60','63']                                        │
 │          0.0027 │ vv.bodyCelkom*cena        │ telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkon 252b - očkovanie                        │ vv.kod in ['252b']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 15b - vyhodnotenie odberov              │ vv.kod in ['15b']                                            │
@@ -38,7 +39,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 5702                                    │ vv.kod in ['5702']                                           │
 │            null │ vv.bodyCelkom*CB          │ Ergometria                                    │ vv.kod in ['5708']                                           │
 │            null │ vv.bodyCelkom*CB          │ EKG holter                                    │ vv.kod in ['5712','5713','5714']                             │
-│            null │ vv.bodyCelkom*CB          │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ POHOS                     │ Pripočitateľné položky                        │ vv.kod=='POHOS'                                              │
