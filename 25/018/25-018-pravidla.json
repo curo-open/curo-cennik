@@ -18,19 +18,19 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.11
+			"value": 2.48
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.38
+			"value": 3.98
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 5.73
+			"value": 6.74
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 8.73
+			"value": 9.74
 		}
 	},
 	"pacient": [],
@@ -61,6 +61,69 @@
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 904",
+			"if": "vv.kod in ['904']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 916",
+			"if": "vv.kod in ['916']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 917",
+			"if": "vv.kod in ['917']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 918",
+			"if": "vv.kod in ['918']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 919",
+			"if": "vv.kod in ['919']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 941",
+			"if": "vv.kod in ['941']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 944",
+			"if": "vv.kod in ['944']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 945",
+			"if": "vv.kod in ['945']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Iniciálne vyšetrenie poistenca s chronickým ochorením",
+			"if": "vv.kod in ['H0003']",
+			"value": 27,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -154,49 +217,49 @@
 		"904": [
 			{
 				"cond": "",
-				"value": 90
+				"value": 150
 			}
 		],
 		"916": [
 			{
 				"cond": "",
-				"value": 220
+				"value": 230
 			}
 		],
 		"917": [
 			{
 				"cond": "",
-				"value": 220
+				"value": 230
 			}
 		],
 		"918": [
 			{
 				"cond": "",
-				"value": 220
+				"value": 230
 			}
 		],
 		"919": [
 			{
 				"cond": "",
-				"value": 250
+				"value": 265
 			}
 		],
 		"941": [
 			{
 				"cond": "",
-				"value": 130
+				"value": 140
 			}
 		],
 		"944": [
 			{
 				"cond": "",
-				"value": 165
+				"value": 175
 			}
 		],
 		"945": [
 			{
 				"cond": "",
-				"value": 55
+				"value": 60
 			}
 		],
 		"1b": [

@@ -12,10 +12,10 @@ Autor: curo.sk
 │ CBE = 0.035         │ Cena bodu el. výkony                                    │
 │ CBSVALZ = 0.009159  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
-│ IPP1 = 2.11         │ IPP1                                                    │
-│ IPP2 = 3.38         │ IPP2                                                    │
-│ IPP3 = 5.73         │ IPP3                                                    │
-│ IPP4 = 8.73         │ IPP4                                                    │
+│ IPP1 = 2.48         │ IPP1                                                    │
+│ IPP2 = 3.98         │ IPP2                                                    │
+│ IPP3 = 6.74         │ IPP3                                                    │
+│ IPP4 = 9.74         │ IPP4                                                    │
 └─────────────────────┴─────────────────────────────────────────────────────────┘
 
 
@@ -33,6 +33,16 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
 │          0.0268 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Výkon 1b,1c,11a,70                            │ vv.kod in ['1b','1c','11a','70']                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 904                                     │ vv.kod in ['904']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 916                                     │ vv.kod in ['916']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 917                                     │ vv.kod in ['917']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 918                                     │ vv.kod in ['918']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 919                                     │ vv.kod in ['919']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 941                                     │ vv.kod in ['941']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 944                                     │ vv.kod in ['944']                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkon 945                                     │ vv.kod in ['945']                                            │
+│              27 │ vv.pocet*cena             │ Iniciálne vyšetrenie poistenca s chronickým o │ vv.kod in ['H0003']                                          │
+│                 │                           │ chorením                                      │                                                              │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -53,14 +63,14 @@ Autor: curo.sk
 │             250 │ 63                                                                                                        │                           │
 │             200 │ 65                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│              90 │ 904                                                                                                       │                           │
-│             220 │ 916                                                                                                       │                           │
-│             220 │ 917                                                                                                       │                           │
-│             220 │ 918                                                                                                       │                           │
-│             250 │ 919                                                                                                       │                           │
-│             130 │ 941                                                                                                       │                           │
-│             165 │ 944                                                                                                       │                           │
-│              55 │ 945                                                                                                       │                           │
+│             150 │ 904                                                                                                       │                           │
+│             230 │ 916                                                                                                       │                           │
+│             230 │ 917                                                                                                       │                           │
+│             230 │ 918                                                                                                       │                           │
+│             265 │ 919                                                                                                       │                           │
+│             140 │ 941                                                                                                       │                           │
+│             175 │ 944                                                                                                       │                           │
+│              60 │ 945                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │

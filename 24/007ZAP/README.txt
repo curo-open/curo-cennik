@@ -42,8 +42,8 @@ Autor: curo.sk
 │            null │ vv.pocet*VCB250           │ Vykon 250                                     │ (p.kapitacia || d.zl) && vv.kod in ['250']                   │
 │           12.26 │ vv.pocet*cena             │ Vykon 8                                       │ !p.kapitacia && vv.kod in ['8']                              │
 │            8.63 │ vv.pocet*cena             │ Vykon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
-│          0.0078 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaLZ                                   │
-│          0.0193 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaLZ                                  │
+│          0.0078 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && !(p.typ in ['EU']) && vv.jeSVaLZ             │
+│          0.0193 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !(p.typ in ['EU']) && !vv.jeSVaLZ            │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
 │                 │                           │                                               │ ', '146b', '146c', '148', '148a', '148b', '148c', '149', '14 │
 │                 │                           │                                               │ 9a', '149b', '149c', '149d', '149f', '159b', '950', '953', ' │
@@ -66,6 +66,8 @@ Autor: curo.sk
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ PP05                      │ Pripočitateľné položky                        │ vv.kod=='PP05'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
+│          0.0078 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && vv.jeSVaLZ                                   │
+│          0.0193 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !vv.jeSVaLZ                                  │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
