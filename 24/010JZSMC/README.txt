@@ -373,7 +373,7 @@ Autor: curo.sk
 │             238 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1446']                                         │
 │                 │                           │ niva na koži a podkoží s transplantáciou aleb │                                                              │
 │                 │                           │ o transpozíciou v oblasti ramena a axily      │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1436']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1436']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti rame │                                                              │
 │                 │                           │ na a axily                                    │                                                              │
@@ -1023,33 +1023,33 @@ Autor: curo.sk
 │             310 │ vv.pocet*cena             │ Odstránenie intramedulárneho prúta/drôtu, prí │ vv.kod in ['5t07a0']                                         │
 │                 │                           │ padne revízia klavikuly                       │                                                              │
 │             418 │ vv.pocet*cena             │ Laparoskopia bez otvorenia pneumoperitonea    │ vv.kod in ['5z1121']                                         │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143b']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143b']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v brušnej obla │                                                              │
 │                 │                           │ sti                                           │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143a']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143a']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti hrud │                                                              │
 │                 │                           │ nej steny a chrbta                            │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1439']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1439']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti ruky │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1438']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1438']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti pred │                                                              │
 │                 │                           │ laktia                                        │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1437']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1437']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti rame │                                                              │
 │                 │                           │ na a lakťa                                    │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1435']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1435']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti krku │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1434']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1434']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované ostatných čast │                                                              │
 │                 │                           │ í hlavy                                       │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1430']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1430']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti pery │                                                              │
 │              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v142x']                                         │
@@ -1472,19 +1472,19 @@ Autor: curo.sk
 │              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143x']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované, ostatné       │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143g']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143g']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti nohy │                                                              │
 │                 │                           │ (chodidlo)                                    │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143f']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143f']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti pred │                                                              │
 │                 │                           │ kolenia                                       │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143e']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143e']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti steh │                                                              │
 │                 │                           │ na a kolena                                   │                                                              │
-│              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143d']                                         │
+│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143d']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v gluteálnej o │                                                              │
 │                 │                           │ blasti                                        │                                                              │
