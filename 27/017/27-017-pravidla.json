@@ -4,10 +4,6 @@
 			"label": "NASTAVENIA IDK",
 			"value": 0.21
 		},
-		"CB": {
-			"label": "Cena bodu ",
-			"value": 0
-		},
 		"CBEU": {
 			"label": "Cena bodu EU",
 			"value": 0.0349
@@ -28,42 +24,42 @@
 	],
 	"vykon": [
 		{
-			"label": "Výkon 100,102,103,105,157",
+			"label": "Preventívne výkony 100,102,103,105,157",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['100','102','103','105','157']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 108",
+			"label": "Preventívny výkon 108",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['108']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 118",
+			"label": "Preventívny výkon 118",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['118']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 297",
+			"label": "Preventívny výkon 297",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['297']",
 			"value": 0.0434,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 252b",
+			"label": "Preventívny výkon 252b",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['252b']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1070",
+			"label": "Preventívny výkon 1070",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['1070']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
@@ -77,7 +73,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Preventivny výkon 5308",
+			"label": "Preventívny výkon 5308",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5308']",
 			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
@@ -93,6 +89,13 @@
 		{
 			"label": "Výkony 5301, 5304,5316,5807,5808",
 			"if": "vv.kod in ['5301','5304','5316','5807','5808']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5303,5305",
+			"if": "vv.kod in ['5303','5305']",
 			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -133,7 +136,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
+			"label": "Nekapitovaný - neodkladná starostlivosť - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*SVALZ",

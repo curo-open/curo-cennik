@@ -1,0 +1,3 @@
+- zaujimaju nas len zlozky 24,25,27
+- v kazdej zlozke mame slozky pre jednotlive odbornosti
+- 
