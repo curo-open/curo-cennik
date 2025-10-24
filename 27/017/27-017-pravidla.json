@@ -4,6 +4,10 @@
 			"label": "NASTAVENIA IDK",
 			"value": 0.21
 		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.0363
+		},
 		"CBEU": {
 			"label": "Cena bodu EU",
 			"value": 0.0349
@@ -87,6 +91,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Vyšetrenie šijového prejasnenia (NT) plodu",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5809']",
+			"value": 0.0266,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkony 5301, 5304,5316,5807,5808",
 			"if": "vv.kod in ['5301','5304','5316','5807','5808']",
 			"value": 0.02,
@@ -126,6 +137,20 @@
 			"if": "vv.kod in ['4M04007']",
 			"value": 15,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 60,62,63,65",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
@@ -180,6 +205,42 @@
 	],
 	"kontrola": [],
 	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"70": [
 			{
 				"cond": "",

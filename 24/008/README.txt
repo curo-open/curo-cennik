@@ -9,10 +9,10 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis             │
 ├─────────────────┼───────────────────┤
 │ IDK = 0         │ NASTAVENIA IDK    │
-│ VCB8 = 3.97     │ VCB pre výkon 8   │
-│ VCB4 = 2.97     │ VCB pre výkon 4   │
-│ VCB1 = 0.8      │ VCB pre výkon 1   │
-│ VCB250 = 1.19   │ VCB pre výkon 250 │
+│ VCB8 = 3.69     │ VCB pre výkon 8   │
+│ VCB4 = 2.76     │ VCB pre výkon 4   │
+│ VCB1 = 0.73     │ VCB pre výkon 1   │
+│ VCB250 = 1.09   │ VCB pre výkon 250 │
 │ AGTC = 4.8      │ AGTC              │
 │ PP50 = 10       │ PP50              │
 │ PP05 = 10       │ PP05              │
@@ -24,10 +24,10 @@ Autor: curo.sk
 │ Popis                       │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────────────────┼───────────────┼──────────┼────────────────────┤
 │ do  1 roku                  │         12.52 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ od  1 do dovršenia 2 rokov  │         13.08 │ IDK+cena │ p|vekMedzi(1, 2)   │
-│ od  2 do dovršenia 7 rokov  │           8.4 │ IDK+cena │ p|vekMedzi(2, 7)   │
-│ od  7 do dovršenia 19 rokov │          5.09 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ od 19 do dovršenia 27 rokov │          3.21 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ od  1 do dovršenia 2 rokov  │         12.42 │ IDK+cena │ p|vekMedzi(1, 2)   │
+│ od  2 do dovršenia 7 rokov  │          8.32 │ IDK+cena │ p|vekMedzi(2, 7)   │
+│ od  7 do dovršenia 19 rokov │          5.12 │ IDK+cena │ p|vekMedzi(7, 19)  │
+│ od 19 do dovršenia 27 rokov │          3.35 │ IDK+cena │ p|vekMedzi(19, 26) │
 └─────────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -35,7 +35,6 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│        0.020072 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │            null │ vv.pocet*VCB8             │ Vykon 8                                       │ p.kapitacia || d.zl && vv.kod in ['8']                       │
 │            null │ vv.pocet*VCB4             │ Vykon 4                                       │ p.kapitacia || d.zl && vv.kod in ['4']                       │
 │            null │ vv.pocet*VCB1             │ Vykon 1                                       │ p.kapitacia || d.zl && vv.kod in ['1']                       │

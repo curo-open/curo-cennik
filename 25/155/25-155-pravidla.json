@@ -2,23 +2,19 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 2.44
+			"value": 2.48
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.92
+			"value": 3.98
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 6.64
+			"value": 6.74
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 9.64
-		},
-		"LIMIT": {
-			"label": "Limit",
-			"value": 75900
+			"value": 9.74
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -26,15 +22,15 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0
+			"value": 0.03553
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0
+			"value": 0.009159
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0
+			"value": 0.009574
 		},
 		"AGTC": {
 			"label": "AGTC",
@@ -69,6 +65,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 65,66,67",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "Echokardiografia - vv. 5744, 5745, 5746, 5746b, 5754",
 			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
 			"value": 0.009574,
@@ -94,13 +97,6 @@
 			"if": "vv.kod in ['5712','5713','5714']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 65,66,67",
-			"if": "vv.kod in ['65','66','67']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -201,6 +197,24 @@
 				"value": 250
 			}
 		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"70": [
 			{
 				"cond": "",
@@ -229,6 +243,12 @@
 			{
 				"cond": "",
 				"value": 750
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
 			}
 		]
 	},

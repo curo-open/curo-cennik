@@ -72,13 +72,6 @@
 	],
 	"vykon": [
 		{
-			"label": "Nekapitovaný - neodkladná starostlivosť",
-			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
-			"value": 0.020072,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
 			"label": "Vykon 8",
 			"if": "p.kapitacia || d.zl && vv.kod in ['8']",
 			"value": null,
