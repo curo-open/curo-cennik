@@ -1221,7 +1221,7 @@ Autor: curo.sk
 │              60 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v1315']                                         │
 │                 │                           │ na koži a podkoží s primárnym uzavretím rany  │                                                              │
 │                 │                           │ v oblasti krku                                │                                                              │
-│              60 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v1314']                                         │
+│              63 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v1314']                                         │
 │                 │                           │ na koži a podkoží s primárnym uzavretím rany  │                                                              │
 │                 │                           │ ostatných častí hlavy                         │                                                              │
 │             238 │ vv.pocet*cena             │ Lokálna laloková plastika kože a podkožia, W- │ vv.kod in ['5v23ag']                                         │
