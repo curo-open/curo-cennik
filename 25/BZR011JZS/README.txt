@@ -93,6 +93,10 @@ Autor: curo.sk
 │             417 │ vv.pocet*cena             │ Výkon 9234                                    │ vv.kod in ['9234'] || vv.k in ['9234'] || vv.k25 in ['9234'] │
 │             417 │ vv.pocet*cena             │ Výkon 9235                                    │ vv.kod in ['9235'] || vv.k in ['9235'] || vv.k25 in ['9235'] │
 │             292 │ vv.pocet*cena             │ Výkon 9222                                    │ vv.kod in ['9222'] || vv.k in ['9222'] || vv.k25 in ['9222'] │
+│            1003 │ vv.pocet*cena             │ Výkon 5o49d                                   │ vv.kod in ['5o49d'] || vv.k in ['5o49d'] || vv.k25 in ['5o49 │
+│                 │                           │                                               │ d']                                                          │
+│            1003 │ vv.pocet*cena             │ Výkon 5o49e                                   │ vv.kod in ['5o49e'] || vv.k in ['5o49e'] || vv.k25 in ['5o49 │
+│                 │                           │                                               │ e']                                                          │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

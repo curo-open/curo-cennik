@@ -487,8 +487,15 @@
 		},
 		{
 			"label": "Výkon Kg6071",
-			"if": "vv.kod in ['Kg6071'] ",
+			"if": "vv.kod in ['kg6071'] || vv.k in ['kg6071'] || vv.k27 in ['kg6071']",
 			"value": 524,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon kf1971\n",
+			"if": "vv.kod in ['kf1971'] || vv.k in ['kf1971'] || vv.k27 in ['kf1971']",
+			"value": 676,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

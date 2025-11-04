@@ -3,12 +3,23 @@
 		"CB": {
 			"label": "Cena bodu",
 			"value": 0.039
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.0081
 		}
 	},
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon 5330,5531,5332",
+			"label": "USG",
+			"if": "vv.kod in ['5092','5300','5301','5302','5303','5311','5742','5738','5739','5307a','5736','5306','5312','5307','5308','5316','5315','5743','5153a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Osteodenzitometria",
 			"if": "vv.kod in ['5330','5331','5332']",
 			"value": 0.0103092,
 			"calc": "vv.bodyCelkom*cena",
@@ -16,7 +27,110 @@
 		}
 	],
 	"kontrola": [],
-	"body": {},
+	"body": {
+		"5300": [
+			{
+				"cond": "",
+				"value": 1700
+			}
+		],
+		"5301": [
+			{
+				"cond": "",
+				"value": 600
+			}
+		],
+		"5302": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"5303": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"5306": [
+			{
+				"cond": "",
+				"value": 1100
+			}
+		],
+		"5307": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"5308": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"5312": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"5315": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"5316": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"5736": [
+			{
+				"cond": "",
+				"value": 600
+			}
+		],
+		"5738": [
+			{
+				"cond": "",
+				"value": 2200
+			}
+		],
+		"5739": [
+			{
+				"cond": "",
+				"value": 2200
+			}
+		],
+		"5742": [
+			{
+				"cond": "",
+				"value": 2000
+			}
+		],
+		"5743": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"5153a": [
+			{
+				"cond": "",
+				"value": 5000
+			}
+		],
+		"5307a": [
+			{
+				"cond": "",
+				"value": 800
+			}
+		]
+	},
 	"liekByCode": {},
 	"liekByAtc": {},
 	"title": "rádiológia"

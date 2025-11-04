@@ -442,6 +442,20 @@
 			"value": 292,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "Výkon 5o49d",
+			"if": "vv.kod in ['5o49d'] || vv.k in ['5o49d'] || vv.k25 in ['5o49d']",
+			"value": 1003,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5o49e",
+			"if": "vv.kod in ['5o49e'] || vv.k in ['5o49e'] || vv.k25 in ['5o49e']",
+			"value": 1003,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

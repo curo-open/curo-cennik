@@ -30,6 +30,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+      <option value="repository" />
+    </option>
+  </component>
   <component name="ComposerSettings">
     <execution />
   </component>
@@ -862,7 +868,7 @@
       <workItem from="1761289460800" duration="576000" />
       <workItem from="1761653131058" duration="690000" />
       <workItem from="1761815157171" duration="19000" />
-      <workItem from="1761893763361" duration="2503000" />
+      <workItem from="1761893763361" duration="3259000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1207,7 +1213,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="550" />
+    <option name="localTasksCounter" value="551" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
