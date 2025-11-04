@@ -1,6 +1,6 @@
-                                                                  ===========================
-                                                                  Cenník klinicka psychologia
-                                                                  ===========================
+                                                                      ====================
+                                                                      Cenník psychoterapia
+                                                                      ====================
 
 Autor: curo.sk
 

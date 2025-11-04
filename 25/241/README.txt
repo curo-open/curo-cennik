@@ -1,21 +1,20 @@
-                                                                  ===========================
-                                                                  Cenník klinicka psychologia
-                                                                  ===========================
+                                                                      ====================
+                                                                      Cenník psychoterapia
+                                                                      ====================
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬─────────────────┐
-│ Názov a hodnota    │ Popis           │
-├────────────────────┼─────────────────┤
-│ IPP1 = 1.26        │ IPP1            │
-│ IPP2 = 2.03        │ IPP2            │
-│ IPP3 = 3.43        │ IPP3            │
-│ LIMIT = 2235       │ Limit           │
-│ CB = 0.03005       │ Cena bodu       │
-│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ │
-│ CBEU = 0.025903    │ Cena bodu EU    │
-└────────────────────┴─────────────────┘
+┌─────────────────┬───────────────────────┐
+│ Názov a hodnota │ Popis                 │
+├─────────────────┼───────────────────────┤
+│ IPP1 = 0        │ IPP1                  │
+│ IPP2 = 0        │ IPP2                  │
+│ IPP3 = 0        │ IPP3                  │
+│ IPP4 = 0        │ IPP4                  │
+│ LIMIT = 0       │ Limit                 │
+│ EL_POBOCKA = 0  │ Používa el. pobočku ? │
+└─────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,16 +27,20 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│            null │ vv.bodyCelkom*CB          │ Výkon 60                                      │ vv.kod in ['60']                                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon 62                                      │ vv.kod in ['62']                                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon 63                                      │ vv.kod in ['63']                                             │
-│           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['11a','70','1b','1c']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkon 867,869                                 │ vv.kod in ['867','869']                                      │
-│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
+│            null │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60'] && EL_POBOCKA                               │
+│            null │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62'] && EL_POBOCKA                               │
+│            null │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63'] && EL_POBOCKA                               │
+│            null │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
+│            null │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
+│            null │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
+│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
+│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
+│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
+│            null │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ EL_POBOCKA && p.typ in ['BE','CU','EU']                      │
+│            null │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*cena        │ Výkony                                        │ EL_POBOCKA                                                   │
+│            null │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -45,17 +48,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             500 │ 60                                                                                                        │                           │
-│             310 │ 62                                                                                                        │                           │
-│             250 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│            1200 │ 867                                                                                                       │                           │
-│            1200 │ 869                                                                                                       │                           │
-│             950 │ 3351                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
-│              50 │ 15d                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

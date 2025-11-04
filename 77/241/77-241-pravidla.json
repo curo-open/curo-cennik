@@ -1,32 +1,20 @@
 {
 	"params": {
-		"IPP1": {
-			"label": "IPP1",
-			"value": 1.26
-		},
-		"IPP2": {
-			"label": "IPP2",
-			"value": 2.03
-		},
-		"IPP3": {
-			"label": "IPP3",
-			"value": 3.43
-		},
 		"LIMIT": {
 			"label": "Limit",
-			"value": 2235
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03005
+			"value": 0.026
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.041
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009724
-		},
-		"CBEU": {
-			"label": "Cena bodu EU",
-			"value": 0.025903
+			"value": 0.0082
 		}
 	},
 	"pacient": [],
@@ -34,61 +22,47 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.0193,
+			"value": 0.015,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 60",
-			"if": "vv.kod in ['60']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"label": "Výkon H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 4.5,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 62",
-			"if": "vv.kod in ['62']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 63",
-			"if": "vv.kod in ['63']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "špec. elektronické výkony",
-			"if": "vv.kod in ['11a','70','1b','1c']",
-			"value": 0.027,
+			"label": "Výkon 5330,5331,5332",
+			"if": "vv.kod in ['5330','5331','5332']",
+			"value": 0.0055,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 867,869",
-			"if": "vv.kod in ['867','869']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"label": "Výkon 5793,5794,5795",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.012083,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony - Bezdomovec, Cudzinec, EU",
 			"if": "p.typ in ['BE','CU','EU']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 0.0082,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkony - iné ako SVALZ",
+			"label": "Výkony ŠAS",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
@@ -107,19 +81,31 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 500
+				"value": 420
 			}
 		],
 		"62": [
 			{
 				"cond": "",
-				"value": 310
+				"value": 270
 			}
 		],
 		"63": [
 			{
 				"cond": "",
-				"value": 250
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 150
 			}
 		],
 		"70": [
@@ -128,22 +114,10 @@
 				"value": 40
 			}
 		],
-		"867": [
+		"60r": [
 			{
 				"cond": "",
-				"value": 1200
-			}
-		],
-		"869": [
-			{
-				"cond": "",
-				"value": 1200
-			}
-		],
-		"3351": [
-			{
-				"cond": "",
-				"value": 950
+				"value": 480
 			}
 		],
 		"1b": [
@@ -163,15 +137,9 @@
 				"cond": "",
 				"value": 210
 			}
-		],
-		"15d": [
-			{
-				"cond": "",
-				"value": 50
-			}
 		]
 	},
 	"liekByCode": {},
 	"liekByAtc": {},
-	"title": "klinicka psychologia"
+	"title": "psychoterapia"
 }
