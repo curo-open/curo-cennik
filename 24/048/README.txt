@@ -29,7 +29,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62','63']                                        │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65','66','67']                                   │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│            null │ vv.bodyCelkom*CBP         │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
+│            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','756','761','763','763a','765'] │
 │            null │ vv.bodyCelkom*CB          │ Prev. KS                                      │ vv.kod in ['765p']                                           │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
@@ -77,10 +77,10 @@ Autor: curo.sk
 │            1500 │ 760sn                                                                                                     │                           │
 │            1500 │ 760pp                                                                                                     │                           │
 │            1500 │ 760pn                                                                                                     │                           │
-│            2230 │ 763sp                                                                                                     │                           │
-│            2230 │ 763sn                                                                                                     │                           │
-│            2230 │ 763pp                                                                                                     │                           │
-│            2230 │ 763pn                                                                                                     │                           │
+│            3000 │ 763sp                                                                                                     │                           │
+│            3000 │ 763sn                                                                                                     │                           │
+│            3000 │ 763pp                                                                                                     │                           │
+│            3000 │ 763pn                                                                                                     │                           │
 │             190 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             250 │ 11a                                                                                                       │                           │

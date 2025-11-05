@@ -51,7 +51,7 @@
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['740','741','746','756','761','763','763a','765']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBP",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
@@ -313,25 +313,25 @@
 		"763sp": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"763sn": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"763pp": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"763pn": [
 			{
 				"cond": "",
-				"value": 2230
+				"value": 3000
 			}
 		],
 		"1b": [
