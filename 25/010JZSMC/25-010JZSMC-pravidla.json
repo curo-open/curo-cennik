@@ -243,7 +243,7 @@
 		{
 			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, laparoskopicky transperitoneálne",
 			"if": "vv.kod in ['5n8131']",
-			"value": 711,
+			"value": 636,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

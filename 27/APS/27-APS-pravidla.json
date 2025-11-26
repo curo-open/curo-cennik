@@ -3,17 +3,101 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkony APS",
-			"if": "1",
+			"label": "Výkon APS - 4",
+			"if": "vv.kod in ['4']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon APS - 62a",
-			"if": "vv.kod in ['62a']",
-			"value": 20,
-			"calc": "vv.pocet*cena",
+			"label": "Výkon APS - 5",
+			"if": "vv.kod in ['5']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 6",
+			"if": "vv.kod in ['6']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 8",
+			"if": "vv.kod in ['8']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 15c",
+			"if": "vv.kod in ['15c']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 64",
+			"if": "vv.kod in ['64']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 71",
+			"if": "vv.kod in ['71']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 252",
+			"if": "vv.kod in ['252']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 253",
+			"if": "vv.kod in ['253']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 603a",
+			"if": "vv.kod in ['603a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 3525",
+			"if": "vv.kod in ['3525']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 3635a",
+			"if": "vv.kod in ['3635a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 4571a",
+			"if": "vv.kod in ['4571a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony APS",
+			"if": "1",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
 	],

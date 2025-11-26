@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03005
+			"value": 0.032926
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -14,7 +14,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009724
+			"value": 0.01021
 		}
 	},
 	"pacient": [],
@@ -78,8 +78,8 @@
 		{
 			"label": "Výkon 5330,5531,5332",
 			"if": "vv.kod in ['5330','5331','5332']",
-			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
 			"instruction": null
 		},
 		{
@@ -190,12 +190,6 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",
@@ -230,12 +224,6 @@
 			{
 				"cond": "",
 				"value": 200
-			}
-		],
-		"70": [
-			{
-				"cond": "",
-				"value": 50
 			}
 		],
 		"760SP": [

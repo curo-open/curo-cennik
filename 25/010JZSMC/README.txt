@@ -69,7 +69,7 @@ Autor: curo.sk
 │                 │                           │ stikou                                        │                                                              │
 │             711 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8130']                                         │
 │                 │                           │ plastickým materiálom, laparotomicky          │                                                              │
-│             711 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8131']                                         │
+│             636 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8131']                                         │
 │                 │                           │ plastickým materiálom, laparoskopicky transpe │                                                              │
 │                 │                           │ ritoneálne                                    │                                                              │
 │             672 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8132']                                         │

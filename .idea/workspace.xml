@@ -24,6 +24,26 @@
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/014/24-014-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/014/24-014-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/014/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/014/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/023/24-023-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/023/24-023-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/023/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/023/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/048/24-048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/048/24-048-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/048/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/APS/24-APS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/APS/24-APS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/APS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/APS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/010JZSMC/25-010JZSMC-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/010JZSMC/25-010JZSMC-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/010JZSMC/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/010JZSMC/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/014/25-014-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/014/25-014-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/014/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/014/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/25-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/023/25-023-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/023/25-023-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/023/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/023/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/27-020AVLS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020AVLS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/020AVLS/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/APS/27-APS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/APS/27-APS-pravidla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/APS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/APS/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -868,7 +888,14 @@
       <workItem from="1761289460800" duration="576000" />
       <workItem from="1761653131058" duration="690000" />
       <workItem from="1761815157171" duration="19000" />
-      <workItem from="1761893763361" duration="4519000" />
+      <workItem from="1761893763361" duration="6702000" />
+      <workItem from="1762461056194" duration="1201000" />
+      <workItem from="1762546147286" duration="594000" />
+      <workItem from="1762610115483" duration="598000" />
+      <workItem from="1763021561321" duration="615000" />
+      <workItem from="1763065828623" duration="526000" />
+      <workItem from="1763198778777" duration="90000" />
+      <workItem from="1763198878155" duration="1214000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1213,7 +1240,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="552" />
+    <option name="localTasksCounter" value="553" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

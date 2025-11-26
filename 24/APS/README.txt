@@ -16,7 +16,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            5.75 │ vv.pocet*cena             │ Výkon APS - 4571a                             │ vv.kod in ['4571a']                                          │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 4                                 │ vv.kod in ['4']                                              │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 5                                 │ vv.kod in ['5']                                              │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 6                                 │ vv.kod in ['6']                                              │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 8                                 │ vv.kod in ['8']                                              │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 15c                               │ vv.kod in ['15c']                                            │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 64                                │ vv.kod in ['64']                                             │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 71                                │ vv.kod in ['71']                                             │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 252                               │ vv.kod in ['252']                                            │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 253                               │ vv.kod in ['253']                                            │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 603a                              │ vv.kod in ['603a']                                           │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 3525                              │ vv.kod in ['3525']                                           │
+│        0.026355 │ vv.bodyCelkom*cena        │ Výkon APS - 3635a                             │ vv.kod in ['3635a']                                          │
+│               5 │ vv.pocet*cena             │ Výkon APS - 4571a                             │ vv.kod in ['4571a']                                          │
 │        0.026355 │ vv.bodyCelkom*cena        │ Výkony APS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
