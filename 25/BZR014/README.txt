@@ -12,10 +12,10 @@ Autor: curo.sk
 │ CB = 0.03553          │ Cena bodu       │
 │ CBSVALZ = 0.009159    │ Cena bodu       │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ │
-│ IPP1 = 1.46           │ IPP1            │
-│ IPP2 = 2.35           │ IPP2            │
-│ IPP3 = 3.98           │ IPP3            │
-│ IPP4 = 6.98           │ IPP4            │
+│ IPP1 = 1.49           │ IPP1            │
+│ IPP2 = 2.39           │ IPP2            │
+│ IPP3 = 4.04           │ IPP3            │
+│ IPP4 = 7.04           │ IPP4            │
 └───────────────────────┴─────────────────┘
 
 
