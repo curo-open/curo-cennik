@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes BZR">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes PED">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -876,7 +876,7 @@
       <workItem from="1763021561321" duration="615000" />
       <workItem from="1763065828623" duration="526000" />
       <workItem from="1763198778777" duration="90000" />
-      <workItem from="1763198878155" duration="4810000" />
+      <workItem from="1763198878155" duration="5798000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1221,7 +1221,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="555" />
+    <option name="localTasksCounter" value="556" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1268,7 +1268,6 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- BZR cenniky changes" />
     <MESSAGE value="- fix pre 25 avls" />
     <MESSAGE value="- upravy bzr" />
     <MESSAGE value="- fix pre union NBC" />
@@ -1293,7 +1292,8 @@
     <MESSAGE value="- bzr changes" />
     <MESSAGE value="- changes" />
     <MESSAGE value="- changes BZR" />
-    <option name="LAST_COMMIT_MESSAGE" value="- changes BZR" />
+    <MESSAGE value="- changes PED" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changes PED" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
