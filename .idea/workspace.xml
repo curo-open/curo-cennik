@@ -22,46 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes BZR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR023/24-BZR023-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR023/24-BZR023-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/BZR023/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/BZR023/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR001/25-BZR001-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR001/25-BZR001-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR001/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR001/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR004/25-BZR004-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR004/25-BZR004-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR004/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR004/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR011/25-BZR011-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR011/25-BZR011-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR011/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR011/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR012/25-BZR012-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR012/25-BZR012-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR012/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR012/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR014/25-BZR014-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR014/25-BZR014-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR014/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR014/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR015/25-BZR015-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR015/25-BZR015-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR015/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR015/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR018/25-BZR018-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR018/25-BZR018-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR018/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR018/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR023/25-BZR023-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR023/25-BZR023-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR023/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR023/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR040/25-BZR040-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR040/25-BZR040-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR040/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR040/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR045/25-BZR045-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR045/25-BZR045-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR045/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR045/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR046/25-BZR046-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR046/25-BZR046-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR046/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR046/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR048/25-BZR048-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR048/25-BZR048-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR048/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR048/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR049/25-BZR049-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR049/25-BZR049-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR049/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR049/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR050/25-BZR050-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR050/25-BZR050-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR050/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR050/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR064/25-BZR064-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR064/25-BZR064-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR064/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR064/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR154/25-BZR154-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR154/25-BZR154-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR154/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR154/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR322/25-BZR322-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR322/25-BZR322-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR322/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR322/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR023/27-BZR023-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR023/27-BZR023-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR023/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR023/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,27 +84,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/daniel/Dev/curo/curo-cennik&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/daniel/Dev/curo/curo-cennik",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -913,7 +876,7 @@
       <workItem from="1763021561321" duration="615000" />
       <workItem from="1763065828623" duration="526000" />
       <workItem from="1763198778777" duration="90000" />
-      <workItem from="1763198878155" duration="3448000" />
+      <workItem from="1763198878155" duration="4810000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1258,7 +1221,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="554" />
+    <option name="localTasksCounter" value="555" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1305,7 +1268,6 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- added 84UAG" />
     <MESSAGE value="- BZR cenniky changes" />
     <MESSAGE value="- fix pre 25 avls" />
     <MESSAGE value="- upravy bzr" />
@@ -1330,7 +1292,8 @@
     <MESSAGE value="- added 017" />
     <MESSAGE value="- bzr changes" />
     <MESSAGE value="- changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- changes" />
+    <MESSAGE value="- changes BZR" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changes BZR" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

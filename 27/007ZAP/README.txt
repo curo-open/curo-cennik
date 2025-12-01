@@ -40,9 +40,9 @@ Autor: curo.sk
 │                 │                           │                                               │ '145a','146','146a','146b','146c','148','148a','148b','148c' │
 │                 │                           │                                               │ ,'149','149a','149b','149c','149d','149f','159b','950','951' │
 │                 │                           │                                               │ ,'952','953']                                                │
-│          0.0931 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza in ['P07.00','P07.01','P07.02','P07.10','P07.11' │
-│                 │                           │                                               │ ] && vv.kod in ['143','143a','144','145','145a','146','146a' │
-│                 │                           │                                               │ ,'146b','146c','148']                                        │
+│          0.0931 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony pre P07*         │ vv.diagnoza in ['P07.00','P07.01','P07.02','P07.10','P07.11' │
+│                 │                           │                                               │ ,'P07.12'] && vv.kod in ['143','143a','144','145','145a','14 │
+│                 │                           │                                               │ 6','146a','146b','146c','148']                               │
 │          0.0845 │ vv.bodyCelkom*cena        │ Výkon 159b                                    │ vv.diagnoza=='Z00.1' && vv.kod in ['159b']                   │
 │          0.0845 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['367 │
 │                 │                           │                                               │ 1']                                                          │
