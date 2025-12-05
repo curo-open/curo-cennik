@@ -5,308 +5,308 @@
 		{
 			"label": "Výkon APS - 4",
 			"if": "vv.kod in ['4']",
-			"value": 4.75,
+			"value": 4.8,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 5",
 			"if": "vv.kod in ['5']",
-			"value": 8.31,
+			"value": 8.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 6",
 			"if": "vv.kod in ['6']",
-			"value": 9.49,
+			"value": 9.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 8",
 			"if": "vv.kod in ['8']",
-			"value": 5.93,
+			"value": 6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 15c",
 			"if": "vv.kod in ['15c']",
-			"value": 2.37,
+			"value": 2.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 26",
 			"if": "vv.kod in ['26']",
-			"value": 11.87,
+			"value": 12,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 29",
 			"if": "vv.kod in ['29']",
-			"value": 21.36,
+			"value": 21.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 30",
 			"if": "vv.kod in ['30']",
-			"value": 10.68,
+			"value": 10.8,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 64",
 			"if": "vv.kod in ['64']",
-			"value": 1.66,
+			"value": 1.68,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 67",
 			"if": "vv.kod in ['67']",
-			"value": 2.37,
+			"value": 2.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 71",
 			"if": "vv.kod in ['71']",
-			"value": 0.83,
+			"value": 0.84,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 71b",
 			"if": "vv.kod in ['71b']",
-			"value": 1.07,
+			"value": 1.08,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 200",
 			"if": "vv.kod in ['200']",
-			"value": 1.66,
+			"value": 1.68,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 201",
 			"if": "vv.kod in ['201']",
-			"value": 9.49,
+			"value": 9.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 204 ",
 			"if": "vv.kod in ['204']",
-			"value": 2.37,
+			"value": 2.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 206",
 			"if": "vv.kod in ['206']",
-			"value": 1.66,
+			"value": 1.68,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 207",
 			"if": "vv.kod in ['207']",
-			"value": 2.85,
+			"value": 2.88,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 210",
 			"if": "vv.kod in ['210']",
-			"value": 1.78,
+			"value": 1.8,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 212",
 			"if": "vv.kod in ['212']",
-			"value": 4.27,
+			"value": 4.32,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 250a",
 			"if": "vv.kod in ['250a']",
-			"value": 1.9,
+			"value": 1.92,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 250b",
 			"if": "vv.kod in ['250b']",
-			"value": 3.56,
+			"value": 3.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 252",
 			"if": "vv.kod in ['252']",
-			"value": 1.66,
+			"value": 1.68,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 253",
 			"if": "vv.kod in ['253']",
-			"value": 2.37,
+			"value": 2.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 258",
 			"if": "vv.kod in ['258']",
-			"value": 1.42,
+			"value": 1.44,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 260a",
 			"if": "vv.kod in ['260a']",
-			"value": 3.56,
+			"value": 3.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 267",
 			"if": "vv.kod in ['267']",
-			"value": 2.37,
+			"value": 2.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 271",
 			"if": "vv.kod in ['271']",
-			"value": 4.75,
+			"value": 4.8,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 320",
 			"if": "vv.kod in ['320']",
-			"value": 3.56,
+			"value": 3.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 321",
 			"if": "vv.kod in ['321']",
-			"value": 8.31,
+			"value": 8.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 322",
 			"if": "vv.kod in ['322']",
-			"value": 4.75,
+			"value": 4.8,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 323",
 			"if": "vv.kod in ['323']",
-			"value": 11.87,
+			"value": 12,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 330",
 			"if": "vv.kod in ['330']",
-			"value": 5.22,
+			"value": 5.28,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 332",
 			"if": "vv.kod in ['332']",
-			"value": 0.71,
+			"value": 0.72,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 363",
 			"if": "vv.kod in ['363']",
-			"value": 3.8,
+			"value": 3.84,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 603a",
 			"if": "vv.kod in ['603a']",
-			"value": 3.56,
+			"value": 3.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 1275",
 			"if": "vv.kod in ['1275']",
-			"value": 0.71,
+			"value": 0.72,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 1402",
 			"if": "vv.kod in ['1402']",
-			"value": 2.37,
+			"value": 2.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 2000",
 			"if": "vv.kod in ['2000']",
-			"value": 2.37,
+			"value": 2.4,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 2003",
 			"if": "vv.kod in ['2003']",
-			"value": 4.03,
+			"value": 4.08,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 2011",
 			"if": "vv.kod in ['2011']",
-			"value": 5.93,
+			"value": 6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 2011a",
 			"if": "vv.kod in ['2011a']",
-			"value": 3.56,
+			"value": 3.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 3525",
 			"if": "vv.kod in ['3525']",
-			"value": 1.11,
+			"value": 1.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 3526",
 			"if": "vv.kod in ['3526']",
-			"value": 0.78,
+			"value": 0.84,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon APS - 3635a",
 			"if": "vv.kod in ['3635a']",
-			"value": 1.33,
+			"value": 1.44,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

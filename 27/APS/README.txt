@@ -29,6 +29,7 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon APS - 3525                              │ vv.kod in ['3525']                                           │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon APS - 3635a                             │ vv.kod in ['3635a']                                          │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon APS - 4571a                             │ vv.kod in ['4571a']                                          │
+│              20 │ vv.pocet*cena             │ Výkon APS - 62a                               │ vv.kod in ['62a']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkony APS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
