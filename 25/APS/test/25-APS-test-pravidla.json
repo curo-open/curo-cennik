@@ -1,0 +1,353 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "DOPRAVA:  do 60 km APSD",
+			"if": "d.typDoprava==\"APSD\" && vv.kod in ['doprava'] && vv.pocet < 60",
+			"value": 0.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "DOPRAVA:  + 60 km LSPR",
+			"if": "d.typDoprava==\"LSPR\" && vv.kod in ['doprava'] && vv.pocet < 60",
+			"value": 0.25,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "DOPRAVA:  do 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet < 60",
+			"value": null,
+			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "DOPRAVA:  + 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
+			"value": null,
+			"calc": "vv.pocet*CBD60plus",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 4",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['4']",
+			"value": 4.8,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 5",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['5']",
+			"value": 8.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 6",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['6']",
+			"value": 9.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 8",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['8']",
+			"value": 6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 15c",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['15c']",
+			"value": 2.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 26",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['26']",
+			"value": 12,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 29",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['29']",
+			"value": 21.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 30",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['30']",
+			"value": 10.8,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 64",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['64']",
+			"value": 1.68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 67",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['67']",
+			"value": 2.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 71",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['71']",
+			"value": 0.84,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 71b",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['71b']",
+			"value": 1.08,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 200",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['200']",
+			"value": 1.68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 201",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['201']",
+			"value": 9.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 204 ",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['204']",
+			"value": 2.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 206",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['206']",
+			"value": 1.68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 207",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['207']",
+			"value": 2.88,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 210",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['210']",
+			"value": 1.8,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 212",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['212']",
+			"value": 4.32,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 250a",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['250a']",
+			"value": 1.92,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 250b",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['250b']",
+			"value": 3.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 252",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['252']",
+			"value": 1.68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 253",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['253']",
+			"value": 2.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 258",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['258']",
+			"value": 1.44,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 260a",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['260a']",
+			"value": 3.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 267",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['267']",
+			"value": 2.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 271",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['271']",
+			"value": 4.8,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 320",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['320']",
+			"value": 3.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 321",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['321']",
+			"value": 8.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 322",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['322']",
+			"value": 4.8,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 323",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['323']",
+			"value": 12,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 330",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['330']",
+			"value": 5.28,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 332",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['332']",
+			"value": 0.72,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 363",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['363']",
+			"value": 3.84,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 603a",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['603a']",
+			"value": 3.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 1275",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['1275']",
+			"value": 0.72,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 1402",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['1402']",
+			"value": 2.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 2000",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['2000']",
+			"value": 2.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 2003",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['2003']",
+			"value": 4.08,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 2011",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['2011']",
+			"value": 6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 2011a",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['2011a']",
+			"value": 3.6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 3525",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['3525']",
+			"value": 1.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 3526",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['3526']",
+			"value": 0.84,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 3635a",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['3635a']",
+			"value": 1.44,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon APS - 4571a",
+			"if": "d.typDoprava==\"APOS\" && vv.kod in ['4571a']",
+			"value": 5.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {}
+}
