@@ -3,7 +3,7 @@
 	"pacient": [],
 	"vykon": [
 		{
-			"label": "Výkon APS - 4",
+			"label": null,
 			"if": "vv.kod in ['4']",
 			"value": 4.8,
 			"calc": "vv.pocet*cena",
