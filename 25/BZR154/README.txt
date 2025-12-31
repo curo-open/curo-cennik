@@ -32,6 +32,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkony 65,66,67                               │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70','1c']                             │
+│           75.11 │ vv.pocet*cena             │ Analgosedacia                                 │ vv.kod in ['93']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['732','735','736','737','740','741','745']        │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['745a','745a','746','755','756','760','761','762' │
 │                 │                           │                                               │ ,'763','763a']                                               │

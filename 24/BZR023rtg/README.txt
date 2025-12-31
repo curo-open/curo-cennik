@@ -9,6 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota │ Popis              │
 ├─────────────────┼────────────────────┤
 │ CBSVALZ = 0.011 │ Cena bodu SVaLZUSG │
+│ CB = 0.011      │ Cena bodu SVaLZUSG │
 └─────────────────┴────────────────────┘
 
 

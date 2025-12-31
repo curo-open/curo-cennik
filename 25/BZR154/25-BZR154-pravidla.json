@@ -57,6 +57,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Analgosedacia",
+			"if": "vv.kod in ['93']",
+			"value": 75.11,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['732','735','736','737','740','741','745']",
 			"value": null,

@@ -72,6 +72,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.jeSVaZL                                                   │
 │            null │ vv.bodyCelkom*CB          │  Iné ako SVALZ                                │ !vv.jeSVaZL                                                  │
+│        0.038462 │ vv.bodyCelkom*cena        │ Výkon anestézie                               │ vv.kod in ['81','93']                                        │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

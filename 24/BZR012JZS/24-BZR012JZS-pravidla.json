@@ -211,6 +211,20 @@
 			"value": 437,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "5o9321",
+			"if": "vv.kod in ['5o9321'] || vv.k in ['5o9321'] || vv.k24 in ['5o9321']",
+			"value": 437,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "5p4031",
+			"if": "vv.kod in ['5p4031'] || vv.k in ['5p4031'] || vv.k24 in ['5p4031']",
+			"value": 414,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

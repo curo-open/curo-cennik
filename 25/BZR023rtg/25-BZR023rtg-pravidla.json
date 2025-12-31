@@ -2,11 +2,11 @@
 	"params": {
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZUSG",
-			"value": 0.011
+			"value": 0.0084
 		},
 		"CB": {
 			"label": "Cena bodu SVaLZUSG",
-			"value": 0.011
+			"value": 0.0084
 		}
 	},
 	"pacient": [],
@@ -14,7 +14,7 @@
 		{
 			"label": "RTG",
 			"if": "vv.kod in ['5010' , '5011' , '5012' , '5015' , '5016' , '5020' , '5021' , '5022' ,\n  '5023' , '5024' , '5030' , '5031' , '5032' , '5033' , '5051' , '5060' ,\n  '5061']",
-			"value": 0.011,
+			"value": 0.0158,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}

@@ -30,7 +30,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03518
+			"value": 0.03553
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",
@@ -66,6 +66,13 @@
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Analgosedacia",
+			"if": "vv.kod in ['93']",
+			"value": 75.11,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{

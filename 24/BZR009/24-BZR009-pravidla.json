@@ -120,6 +120,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon anestézie",
+			"if": "vv.kod in ['81','93']",
+			"value": 0.038462,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna')",
 			"value": null,

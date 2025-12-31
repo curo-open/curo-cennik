@@ -3,6 +3,10 @@
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZUSG",
 			"value": 0.0117
+		},
+		"CB": {
+			"label": "Cena bodu SVaLZUSG",
+			"value": 0.0117
 		}
 	},
 	"pacient": [],

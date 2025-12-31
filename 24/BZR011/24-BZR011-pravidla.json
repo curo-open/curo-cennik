@@ -69,6 +69,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon anestézie",
+			"if": "vv.kod in ['81','93']",
+			"value": 0.038462,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
