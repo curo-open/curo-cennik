@@ -45,6 +45,7 @@ Autor: curo.sk
 │             5.2 │ vv.pocet*cena             │ Skriningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skriningový poistencov. antigénový test SARS- │ vv.kod in ['629b']                                           │
 │                 │                           │ CoV-2 imun. metód.                            │                                                              │
+│               0 │ vv.bodyCelkom*cena        │ Výkony uhrádzané v rámci platy za kapitáciu   │ p.kapitacia && vv.kod in ['15b','63','63a','120','156']      │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
 │           0.035 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
@@ -58,7 +59,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             500 │ 60                                                                                                        │                           │
+│             420 │ 60                                                                                                        │                           │
 │             310 │ 62                                                                                                        │                           │
 │             250 │ 63                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │

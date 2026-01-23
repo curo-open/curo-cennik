@@ -48,14 +48,14 @@
 		{
 			"label": "Výkon H0006",
 			"if": "vv.kod in ['H0006']",
-			"value": 5.82,
+			"value": 5.65,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon H0008",
 			"if": "vv.kod in ['H0008']",
-			"value": 6.98,
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -230,10 +230,10 @@
 				"value": 200
 			}
 		],
-		"70": [
+		"271": [
 			{
 				"cond": "",
-				"value": 40
+				"value": 270
 			}
 		],
 		"62b": [

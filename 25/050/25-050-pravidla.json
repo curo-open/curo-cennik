@@ -91,7 +91,7 @@
 		},
 		{
 			"label": "Výkony",
-			"if": "vv.kod in ['1B05011','1B05012','1B05014','4a']",
+			"if": "vv.kod in ['1B05011','1B05012','1B05014']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -260,10 +260,10 @@
 				"value": 200
 			}
 		],
-		"70": [
+		"271": [
 			{
 				"cond": "",
-				"value": 40
+				"value": 270
 			}
 		],
 		"763P": [

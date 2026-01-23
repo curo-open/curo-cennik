@@ -39,7 +39,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1B05011','1B05012','1B05014','4a']               │
+│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ vv.kod in ['1B05011','1B05012','1B05014']                    │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['1B06025','1A02009','1A02012','A03007']           │
 │             6.2 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['1A02013']                                        │
 │               5 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['1A02011']                                        │
@@ -70,7 +70,7 @@ Autor: curo.sk
 │             200 │ 65                                                                                                        │                           │
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
-│              40 │ 70                                                                                                        │                           │
+│             270 │ 271                                                                                                       │                           │
 │             946 │ 763P                                                                                                      │                           │
 │             946 │ 763M                                                                                                      │                           │
 │            1500 │ 760SP                                                                                                     │                           │

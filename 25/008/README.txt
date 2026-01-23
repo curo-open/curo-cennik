@@ -45,7 +45,7 @@ Autor: curo.sk
 │        0.018257 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['1']                                              │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívna prehliadka                        │ vv.kod in ['160']                                            │
 │          0.1175 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c']                             │
+│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b','252c','252C']                      │
 │          0.0318 │ vv.bodyCelkom*cena        │ Rozbor a plánovanie cielených terapeutických  │ vv.kod in ['10']                                             │
 │                 │                           │ postupov v na ovplyvnenie                     │                                                              │
 │                 │                           │ chronických ochorení                          │                                                              │

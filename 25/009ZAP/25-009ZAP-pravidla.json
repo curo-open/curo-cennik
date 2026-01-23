@@ -138,6 +138,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkony uhrádzané v rámci platy za kapitáciu",
+			"if": "p.kapitacia && vv.kod in ['15b','63','63a','120','156']",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Nekapitovaný EU - SVALZ výkon",
 			"if": "!p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ'",
 			"value": null,

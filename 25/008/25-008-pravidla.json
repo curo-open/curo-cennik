@@ -128,7 +128,7 @@
 		},
 		{
 			"label": "Očkovanie",
-			"if": "vv.kod in ['252a','252b','252c']",
+			"if": "vv.kod in ['252a','252b','252c','252C']",
 			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
