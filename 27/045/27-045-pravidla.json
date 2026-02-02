@@ -6,27 +6,31 @@
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0305
+			"value": 0.038
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01031
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		},
 		"IPP4": {
 			"label": "IPP4",
-			"value": 2.49
+			"value": 5.83
 		},
 		"IPP5": {
 			"label": "IPP5",
-			"value": 0.73
+			"value": 4.24
 		},
 		"IPP6": {
 			"label": "IPP6",
-			"value": 0.57
+			"value": 3.18
 		},
 		"IPP7": {
 			"label": "IPP7",
-			"value": 1
+			"value": 1.06
 		}
 	},
 	"pacient": [],
@@ -34,64 +38,64 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0345,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 65,66,67",
 			"if": "vv.kod in ['65','66','67']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 15d",
-			"if": "vv.kod in ['15d']",
+			"if": "vv.kod in ['15d','15D']",
 			"value": 0.02,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 654",
 			"if": "vv.kod in ['654']",
 			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1A02072",
 			"if": "vv.kod in ['1A02072']",
-			"value": 0.029,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
 			"value": 0.035,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5302",
 			"if": "vv.kod in ['5302']",
 			"value": 0.0088,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5330,5531,5332",
 			"if": "vv.kod in ['5330','5331','5332']",
 			"value": 0.0055,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
 			"value": 0.00924,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
@@ -147,7 +151,7 @@
 			"label": "Výkony",
 			"if": "1",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CB+NCB)",
 			"instruction": null
 		}
 	],
@@ -229,6 +233,12 @@
 			{
 				"cond": "",
 				"value": 1300
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		]
 	},

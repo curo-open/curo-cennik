@@ -5,14 +5,15 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬─────────────────┐
-│ Názov a hodnota │ Popis           │
-├─────────────────┼─────────────────┤
-│ IDK = 0.21      │ NASTAVENIA IDK  │
-│ CB = 0.0363     │ Cena bodu       │
-│ CBEU = 0.0349   │ Cena bodu EU    │
-│ CBSVALZ = 0.01  │ Cena bodu SVaLZ │
-└─────────────────┴─────────────────┘
+┌─────────────────┬────────────────────┐
+│ Názov a hodnota │ Popis              │
+├─────────────────┼────────────────────┤
+│ IDK = 0.21      │ NASTAVENIA IDK     │
+│ CB = 0.0363     │ Cena bodu          │
+│ CBEU = 0.0349   │ Cena bodu EU       │
+│ CBSVALZ = 0.01  │ Cena bodu SVaLZ    │
+│ NCB = 0         │ Navysena cena bodu │
+└─────────────────┴────────────────────┘
 
 
   CENY ZA PACIENTA

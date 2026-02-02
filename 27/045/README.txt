@@ -9,12 +9,13 @@ Autor: curo.sk
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
 │ CB = 0.034        │ Cena bodu                    │
-│ CBO = 0.0305      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
-│ IPP4 = 2.49       │ IPP4                         │
-│ IPP5 = 0.73       │ IPP5                         │
-│ IPP6 = 0.57       │ IPP6                         │
-│ IPP7 = 1          │ IPP7                         │
+│ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
+│ NCB = 0           │ Navysena cena bodu           │
+│ IPP4 = 5.83       │ IPP4                         │
+│ IPP5 = 4.24       │ IPP5                         │
+│ IPP6 = 3.18       │ IPP6                         │
+│ IPP7 = 1.06       │ IPP7                         │
 └───────────────────┴──────────────────────────────┘
 
 
@@ -28,15 +29,15 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
-│            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 654                                     │ vv.kod in ['654']                                            │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
-│           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
-│          0.0088 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
-│          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
-│         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│            0.02 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 15d                                     │ vv.kod in ['15d','15D']                                      │
+│           0.029 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 654                                     │ vv.kod in ['654']                                            │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
+│           0.035 │ vv.bodyCelkom*(cena+NCB)  │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│          0.0088 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
+│          0.0055 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
+│         0.00924 │ vv.bodyCelkom*(cena+NCB)  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316']                                              │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
@@ -45,7 +46,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5330','5331','5332'] && vv.typ!='SVaLZ'          │
 │        0.012075 │ vv.bodyCelkom*cena        │ Výkony - iné ako SVALZ                        │ vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'          │
-│            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -66,6 +67,7 @@ Autor: curo.sk
 │             210 │ 11a                                                                                                       │                           │
 │             480 │ 60r                                                                                                       │                           │
 │            1300 │ 1A02072                                                                                                   │                           │
+│             900 │ 62b                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
