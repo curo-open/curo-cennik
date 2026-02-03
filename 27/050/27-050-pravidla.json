@@ -112,7 +112,7 @@
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{
@@ -175,7 +175,7 @@
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
 			"value": null,
-			"calc": "vv.bodyCelkom*CBO",
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
