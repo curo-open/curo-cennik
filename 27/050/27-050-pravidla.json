@@ -62,8 +62,8 @@
 		{
 			"label": "Výkon 1A02007",
 			"if": "vv.kod in ['1A02007']",
-			"value": 0.0323,
-			"calc": "vv.bodyCelkom*cena",
+			"value": 0.0336,
+			"calc": "vv.bodyCelkom*(cena+NCB)",
 			"instruction": null
 		},
 		{
