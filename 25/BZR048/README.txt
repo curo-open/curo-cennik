@@ -58,6 +58,7 @@ Autor: curo.sk
 │             400 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['9105'] || vv.k in ['9105'] || vv.k25 in ['9105'] │
 │             228 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8586'] || vv.k in ['8586'] || vv.k25 in ['8586'] │
 │             454 │ vv.pocet*cena             │ JZS                                           │ vv.kod in ['8502'] || vv.k in ['8502'] || vv.k25 in ['8502'] │
+│            null │ vv.bodyCelkom*CBP         │ Vykon 287                                     │ vv.kod in ['287']                                            │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

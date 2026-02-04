@@ -2,11 +2,11 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0
+			"value": 0.042904
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.022089
+			"value": 0.022973
 		},
 		"CBP": {
 			"label": "Cena bodu preventívne výkony",

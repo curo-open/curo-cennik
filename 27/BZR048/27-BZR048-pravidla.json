@@ -188,6 +188,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Vykon 287",
+			"if": "vv.kod in ['287']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBP",
+			"instruction": null
+		},
+		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['60','62','63'] && p.typ in ['EU']",
 			"value": 0.0488,
