@@ -216,17 +216,21 @@ Autor: curo.sk
 │             415 │ vv.pocet*cena             │ Excízia sinus pilonidalis                     │ vv.kod in ['5v191']                                          │
 │             415 │ vv.pocet*cena             │ Operačné odstránenie sinus pilonidalis, ostat │ vv.kod in ['5v193']                                          │
 │                 │                           │ né                                            │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['Kl1940']                                         │
+│             612 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1920']                                         │
+│                 │                           │ magna                                         │                                                              │
+│             612 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1921']                                         │
+│                 │                           │ parva                                         │                                                              │
+│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['kl1940']                                         │
 │                 │                           │ sektómie                                      │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['Kl1941']                                         │
+│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['kl1941']                                         │
 │                 │                           │ sektómie                                      │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['Kl1942']                                         │
+│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['kl1942']                                         │
 │                 │                           │ bez crossektómie                              │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['Kl1943']                                         │
+│             612 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['kl1943']                                         │
 │                 │                           │ crossektómie                                  │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['Kl194x']                                         │
-│             411 │ vv.pocet*cena             │ Operácia hydrokély semenného povrazca         │ vv.kod in ['Kp403']                                          │
-│             411 │ vv.pocet*cena             │ Operácia hydrokély testis                     │ vv.kod in ['Kp404']                                          │
+│             612 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['kl194x']                                         │
+│             411 │ vv.pocet*cena             │ Operácia hydrokély semenného povrazca         │ vv.kod in ['kp403']                                          │
+│             411 │ vv.pocet*cena             │ Operácia hydrokély testis                     │ vv.kod in ['kp404']                                          │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

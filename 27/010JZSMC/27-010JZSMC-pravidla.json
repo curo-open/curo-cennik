@@ -745,50 +745,64 @@
 			"instruction": null
 		},
 		{
+			"label": "Crossektómia a parciálny stripping v. saphena magna",
+			"if": "vv.kod in ['kl1920']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Crossektómia a parciálny stripping v. saphena parva",
+			"if": "vv.kod in ['kl1921']",
+			"value": 612,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Odstránenie varixov v. saphena magna bez crossektómie",
-			"if": "vv.kod in ['Kl1940']",
+			"if": "vv.kod in ['kl1940']",
 			"value": 612,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov v. saphena parva bez crossektómie",
-			"if": "vv.kod in ['Kl1941']",
+			"if": "vv.kod in ['kl1941']",
 			"value": 612,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov v. saphena magna a parva bez crossektómie",
-			"if": "vv.kod in ['Kl1942']",
+			"if": "vv.kod in ['kl1942']",
 			"value": 612,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov nekmeňovej varikozity bez crossektómie",
-			"if": "vv.kod in ['Kl1943']",
+			"if": "vv.kod in ['kl1943']",
 			"value": 612,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov bez crossektómie, ostatné",
-			"if": "vv.kod in ['Kl194x']",
+			"if": "vv.kod in ['kl194x']",
 			"value": 612,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Operácia hydrokély semenného povrazca",
-			"if": "vv.kod in ['Kp403']",
+			"if": "vv.kod in ['kp403']",
 			"value": 411,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Operácia hydrokély testis",
-			"if": "vv.kod in ['Kp404']",
+			"if": "vv.kod in ['kp404']",
 			"value": 411,
 			"calc": "vv.pocet*cena",
 			"instruction": null

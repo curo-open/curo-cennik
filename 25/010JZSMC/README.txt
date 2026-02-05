@@ -224,31 +224,31 @@ Autor: curo.sk
 │             749 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['5l1951']                                         │
 │                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
 │                 │                           │ u                                             │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T8921X']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t8921X']                                        │
 │                 │                           │ iách a burzách, ostatné                       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89210']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89210']                                        │
 │                 │                           │ iách a burzách v oblasti hlavy a krku         │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89211']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89211']                                        │
 │                 │                           │ iách a burzách v oblasti ramena a axily       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89212']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89212']                                        │
 │                 │                           │ iách a burzách v oblasti ramena a lakťa       │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89213']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89213']                                        │
 │                 │                           │ iách a burzách v oblasti predlaktia           │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89214']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89214']                                        │
 │                 │                           │ iách a burzách v oblasti hrudnej steny a chrb │                                                              │
 │                 │                           │ ta                                            │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89215']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89215']                                        │
 │                 │                           │ iách a burzách v oblasti brušnej steny        │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89216']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89216']                                        │
 │                 │                           │ iách a burzách v inguinálnej, genitálnej a gl │                                                              │
 │                 │                           │ uteálnej oblasti                              │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89217']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89217']                                        │
 │                 │                           │ iách a burzách v oblasti stehna a kolena      │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89218']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89218']                                        │
 │                 │                           │ iách a burzách v oblasti predkolenia          │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T89219']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t89219']                                        │
 │                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
-│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5T8921A']                                        │
+│              83 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t8921A']                                        │
 │                 │                           │ iách a burzách v oblasti nohy                 │                                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
