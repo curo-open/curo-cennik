@@ -29,7 +29,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBV         │ ŠAS                                           │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CBV         │ ŠAS                                           │ vv.kod in ['63']                                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
-│          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
+│          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d','15D']                                      │
 │           0.027 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

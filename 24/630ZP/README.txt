@@ -30,6 +30,8 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
 │            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
+│              61 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
+│                 │                           │ domácom prostredí                             │                                                              │
 │             9.7 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25A']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
 │            null │ vv.bodyCelkom*CB          │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

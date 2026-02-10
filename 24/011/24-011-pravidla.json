@@ -49,7 +49,7 @@
 		},
 		{
 			"label": "ŠAS",
-			"if": "vv.kod in ['15d']",
+			"if": "vv.kod in ['15d','15D']",
 			"value": 0.0193,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
