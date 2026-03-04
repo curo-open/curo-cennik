@@ -5,24 +5,22 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────────┬───────────────────────┐
-│ Názov a hodnota       │ Popis                 │
-├───────────────────────┼───────────────────────┤
-│ IDK = 0               │ IDK                   │
-│ CKP = 2.13            │ CKP                   │
-│ EL_POBOCKA = 1        │ Používa el. pobočku ? │
-│ CB = 0.035            │ Cena bodu             │
-│ CBEU = 0.035          │ Cena bodu EU          │
-│ CBSVALZ = 0.01        │ Cena bodu SVaLZ       │
-│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
-└───────────────────────┴───────────────────────┘
+┌───────────────────────┬─────────────────────┐
+│ Názov a hodnota       │ Popis               │
+├───────────────────────┼─────────────────────┤
+│ IDK = 0               │ IDK                 │
+│ CB = 0.035            │ Cena bodu           │
+│ CBEU = 0.035          │ Cena bodu EU        │
+│ CBSVALZ = 0.01        │ Cena bodu SVaLZ     │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
+└───────────────────────┴─────────────────────┘
 
 
   CENY ZA PACIENTA
 ┌───────────┬───────────────┬─────────┬────────────────────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec  │ Podmienka                          │
 ├───────────┼───────────────┼─────────┼────────────────────────────────────┤
-│ Kapitácie │          null │ IDK+CKP │ p.kapitacia && p|vekMedzi(15, 120) │
+│ Kapitácie │          2.13 │ IDK+CKP │ p.kapitacia && p|vekMedzi(15, 120) │
 └───────────┴───────────────┴─────────┴────────────────────────────────────┘
 
 
@@ -30,9 +28,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            0.03 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
+│           0.035 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['102','103','105','108','157','297','1070']       │
-│           0.084 │ vv.bodyCelkom*cena        │ Výkon 252b, 252c                              │ vv.kod in ['252b','252C']                                    │
+│            0.09 │ vv.bodyCelkom*cena        │ Výkon 252b, 252c                              │ vv.kod in ['252b','252C']                                    │
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
 │        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony 5303,5305,5308             │ "Z" in vv.diagnoza && vv.kod in ['5303','5305','5308']       │
 │        0.009574 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │

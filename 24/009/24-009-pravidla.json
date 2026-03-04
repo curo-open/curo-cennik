@@ -33,7 +33,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": null,
+			"value": 2.08,
 			"calc": "KP+IDK",
 			"instruction": null
 		}
@@ -76,7 +76,21 @@
 		},
 		{
 			"label": "Výkon 252b",
-			"if": "\"Z\" in vv.diagnoza && vv.kod in ['252b']",
+			"if": "!p.kapitacia && vv.kod in ['252b']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 297",
+			"if": "\"Z12.4\" in vv.diagnoza && vv.kod in ['297']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 297",
+			"if": "\"Z01.4\" in vv.diagnoza && vv.kod in ['297']",
 			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
