@@ -1,0 +1,648 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Dorzálne preťatie predkožky",
+			"if": "vv.kod in ['5p502']",
+			"value": 298,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cirkumcízia",
+			"if": "vv.kod in ['5p503']",
+			"value": 298,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Krvavá repozícia na predkožke pre parafimózu v celkovej anestézii",
+			"if": "vv.kod in ['5p5051']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekrvavá repozícia na predkožke pre parafimózu v celkovej anestézii",
+			"if": "vv.kod in ['5p5052']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie prepuciálnych zrastov na predkožke [synechiolýza]",
+			"if": "vv.kod in ['5p506']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácie na predkožke, ostatné",
+			"if": "vv.kod in ['5p509']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti pery",
+			"if": "vv.kod in ['5v1300']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1304']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti krku",
+			"if": "vv.kod in ['5v1305']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1306']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1307']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1308']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ruky",
+			"if": "vv.kod in ['5v1309']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v130a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v brušnej oblasti",
+			"if": "vv.kod in ['5v130b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v130d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v130e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v130f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v130g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany, ostatné",
+			"if": "vv.kod in ['5v130x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti pery",
+			"if": "vv.kod in ['5v1310']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1314']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti krku",
+			"if": "vv.kod in ['5v1315']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1316']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1317']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1318']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ruky",
+			"if": "vv.kod in ['5v1319']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v131a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v brušnej oblasti",
+			"if": "vv.kod in ['5v131b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v131d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v131e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v131f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v131g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany , ostatné",
+			"if": "vv.kod in ['5v131x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti pery",
+			"if": "vv.kod in ['5v1400']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1404']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti krku",
+			"if": "vv.kod in ['5v1405']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1406']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1407']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1408']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ruky",
+			"if": "vv.kod in ['5v1409']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v140a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v brušnej oblasti",
+			"if": "vv.kod in ['5v140b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v140d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v140e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v140f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v140g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany, ostatné",
+			"if": "vv.kod in ['5v140x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti pery",
+			"if": "vv.kod in ['5v1410']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5v1414']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti krku",
+			"if": "vv.kod in ['5v1415']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1416']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1417']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti predlaktia",
+			"if": "vv.kod in ['5v1418']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ruky",
+			"if": "vv.kod in ['5v1419']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v141a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v brušnej oblasti",
+			"if": "vv.kod in ['5v141b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v inguinálnej a genitálnej oblasti",
+			"if": "vv.kod in ['5v141c']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v gluteálnej oblasti",
+			"if": "vv.kod in ['5v141d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v141e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti predkolenia",
+			"if": "vv.kod in ['5v141f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v141g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované, ostatné",
+			"if": "vv.kod in ['5v141x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti pery",
+			"if": "vv.kod in ['5v1420']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1424']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti krku",
+			"if": "vv.kod in ['5v1425']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1426']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1427']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1428']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ruky",
+			"if": "vv.kod in ['5v1429']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v142a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s s primárnym uzavretím rany rany v brušnej oblasti ",
+			"if": "vv.kod in ['5v142b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v142d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v142e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v142f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v142g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany, ostatné",
+			"if": "vv.kod in ['5v142x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti pery",
+			"if": "vv.kod in ['5v1430']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5v1434']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti krku",
+			"if": "vv.kod in ['5v1435']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1436']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1437']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predlaktia",
+			"if": "vv.kod in ['5v1438']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ruky",
+			"if": "vv.kod in ['5v1439']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v143a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v brušnej oblasti",
+			"if": "vv.kod in ['5v143b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v gluteálnej oblasti",
+			"if": "vv.kod in ['5v143d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v143e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predkolenia",
+			"if": "vv.kod in ['5v143f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v143g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované, ostatné",
+			"if": "vv.kod in ['5v143x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "plastik"
+}

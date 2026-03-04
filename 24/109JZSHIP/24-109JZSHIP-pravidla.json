@@ -1,0 +1,445 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Transuretrálna biopsia močového mechúra",
+			"if": "vv.kod in ['12o012']",
+			"value": 111,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna biopsia penisu s použitím zobrazovacích metód",
+			"if": "vv.kod in ['12o203']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna (ihlová) biopsia penisu",
+			"if": "vv.kod in ['12p103']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Biopsia s incíziou glans penis",
+			"if": "vv.kod in ['13p010']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická ureteroskopia",
+			"if": "vv.kod in ['14o01']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická uretrocystoskopia",
+			"if": "vv.kod in ['14o02']",
+			"value": 68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická uretrocystoskopia, stómický prístup",
+			"if": "vv.kod in ['14o111']",
+			"value": 68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ureterorenoskopia",
+			"if": "vv.kod in ['14o301']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cystoskopia",
+			"if": "vv.kod in ['14o302']",
+			"value": 68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie konkrementu z obličky dezintegráciou [litotripsia], ureterorenoskopicky",
+			"if": "vv.kod in ['5o1336']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sondáž močovodu, transuretrálne antegrádne",
+			"if": "vv.kod in ['5o242a']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sondáž močovodu, transuretrálne retrográdne",
+			"if": "vv.kod in ['5o242r']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ureterotómia a odstránenie konkrementu pre ureterolitiázu [litotripsia], ureterorenoskopicky",
+			"if": "vv.kod in ['5o2566']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Optická uretrotómia",
+			"if": "vv.kod in ['5o4111']",
+			"value": 220,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transuretrálna incízia chorého tkaniva močovej rúry, vnútorná uretrotómia pod optickou kontrolou",
+			"if": "vv.kod in ['5o4301']",
+			"value": 220,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Plastická meatotómia močovej rúry, meatoplastika",
+			"if": "vv.kod in ['5o441']",
+			"value": 242,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Meatotómia",
+			"if": "vv.kod in ['5o442']",
+			"value": 242,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Divulzia močovej rúry",
+			"if": "vv.kod in ['5o499']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia bez epididymektómie, inguinálna retencia semenníka",
+			"if": "vv.kod in ['5p3010']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia bez epididymektómie skrotálne",
+			"if": "vv.kod in ['5p3012']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia s epididymektómiou, inguinálna retencia semenníka",
+			"if": "vv.kod in ['5p3020']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia s epididymektómiou skrotálne",
+			"if": "vv.kod in ['5p3022']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie zostávajúceho (solitárneho) semenníka, inguinálne",
+			"if": "vv.kod in ['5p3050']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie zostávajúceho (solitárneho) semenníka, skrotálne",
+			"if": "vv.kod in ['5p3052']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia s funikulolýzou",
+			"if": "vv.kod in ['5p311']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia skrotálne",
+			"if": "vv.kod in ['5p312']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia, ostatné",
+			"if": "vv.kod in ['5p31x']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, inguinálne",
+			"if": "vv.kod in ['5p4020']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, otvorene mikrochirurgicky",
+			"if": "vv.kod in ['5p4021']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, lumbálne",
+			"if": "vv.kod in ['5p4023']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, laparoskopicky",
+			"if": "vv.kod in ['5p4024']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia cysty v oblasti nadsemenníka",
+			"if": "vv.kod in ['5p411']",
+			"value": 364,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Frenulotómia predkožky",
+			"if": "vv.kod in ['5p501']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Dorzálne preťatie predkožky",
+			"if": "vv.kod in ['5p502']",
+			"value": 298,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cirkumcízia",
+			"if": "vv.kod in ['5p503']",
+			"value": 298,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Frenuloplastika a plastika predkožky",
+			"if": "vv.kod in ['5p504']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Krvavá repozícia na predkožke pre parafimózu v celkovej anestézii",
+			"if": "vv.kod in ['5p5051']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekrvavá repozícia na predkožke pre parafimózu v celkovej anestézii",
+			"if": "vv.kod in ['5p5052']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie prepuciálnych zrastov na predkožke [synechiolýza]",
+			"if": "vv.kod in ['5p506']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácie na predkožke, ostatné",
+			"if": "vv.kod in ['5p509']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna excízia chorého tkaniva penisu",
+			"if": "vv.kod in ['5p511']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna deštrukcia chorého tkaniva penisu",
+			"if": "vv.kod in ['5p512']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna excízia a deštrukcia chorého tkaniva penisu, ostatné",
+			"if": "vv.kod in ['5p51x']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Plastická rekonštrukcia hypospádie u muža, ostatné",
+			"if": "vv.kod in ['5p55x']",
+			"value": 242,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Litotripsia konkrementu extrakorporálnou rázovou vlnou v močovode",
+			"if": "vv.kod in ['8c3201']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Litotripsia konkrementu extrakorporálnou rázovou vlnou v obličke",
+			"if": "vv.kod in ['8c3202']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Litotripsia konkrementu extrakorporálnou rázovou vlnou v iných orgánoch",
+			"if": "vv.kod in ['8c320x']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Extrakorporálna litotripsia",
+			"if": "vv.kod in ['8c323']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie bradavíc alebo porovnateľných kožných zmien",
+			"if": "vv.kod in ['8z211']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia s funikulolýzou",
+			"if": "vv.kod in ['kp311']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia skrotálne",
+			"if": "vv.kod in ['kp312']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia, ostatné",
+			"if": "vv.kod in ['kp31x']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, inguinálne",
+			"if": "vv.kod in ['kp4020']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, otvorene mikrochirurgicky",
+			"if": "vv.kod in ['kp4021']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, lumbálne",
+			"if": "vv.kod in ['kp4023']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, laparoskopicky",
+			"if": "vv.kod in ['kp4024']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély semenného povrazca",
+			"if": "vv.kod in ['kp403']",
+			"value": 419,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély testis",
+			"if": "vv.kod in ['kp404']",
+			"value": 419,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia karunkuly chorého tkaniva močovej rúry",
+			"if": "vv.kod in ['5o4201']",
+			"value": 220,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély semenného povrazca",
+			"if": "vv.kod in ['5p4030']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély testis",
+			"if": "vv.kod in ['5p4031']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálna orchiektómia s epididymektómiou a odstránením \"spermatic cord\"",
+			"if": "vv.kod in ['5p3071']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "ped. urologia"
+}

@@ -1,0 +1,1264 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Transuretrálna biopsia močového mechúra",
+			"if": "vv.kod in ['12o012']",
+			"value": 111,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna biopsia prostaty s použitím zobrazovacích metód",
+			"if": "vv.kod in ['12o201']",
+			"value": 154,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna biopsia penisu s použitím zobrazovacích metód",
+			"if": "vv.kod in ['12o203']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna (ihlová) biopsia prostaty",
+			"if": "vv.kod in ['12p101']",
+			"value": 154,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna (ihlová) biopsia penisu",
+			"if": "vv.kod in ['12p103']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ihlová biopsia prostaty transrektálne, menej ako 20 vzoriek",
+			"if": "vv.kod in ['12p3001']",
+			"value": 154,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ihlová biopsia prostaty transrektálne, 20 a viac vzoriek",
+			"if": "vv.kod in ['12p3002']",
+			"value": 154,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Biopsia s incíziou glans penis",
+			"if": "vv.kod in ['13p010']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická ureteroskopia",
+			"if": "vv.kod in ['14o01']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická uretrocystoskopia",
+			"if": "vv.kod in ['14o02']",
+			"value": 68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická uretrocystoskopia, stómický prístup",
+			"if": "vv.kod in ['14o111']",
+			"value": 68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ureterorenoskopia",
+			"if": "vv.kod in ['14o301']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cystoskopia",
+			"if": "vv.kod in ['14o302']",
+			"value": 68,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nefrostómia punkčná",
+			"if": "vv.kod in ['5o1310']",
+			"value": 166,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nefrostómia perkutánne",
+			"if": "vv.kod in ['5o1312']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nefrostómia transplantovanej obličky, perkutánne",
+			"if": "vv.kod in ['5o1313']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie konkrementu z obličky dezintegráciou [litotripsia], ureterorenoskopicky",
+			"if": "vv.kod in ['5o1336']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sondáž močovodu, transuretrálne antegrádne",
+			"if": "vv.kod in ['5o242a']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sondáž močovodu, transuretrálne retrográdne",
+			"if": "vv.kod in ['5o242r']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie trvalého kovového stentu do močovodu, transuretrálne retrográdne",
+			"if": "vv.kod in ['5o243r1']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie iného trvalého stentu do močovodu, transuretrálne retrográdne",
+			"if": "vv.kod in ['5o243r2']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie trvalého kovového stentu do močovodu, perkutánne - transrenálne retrográdne",
+			"if": "vv.kod in ['5o246r1']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie iného trvalého stentu do močovodu, perkutánne-transrenálne retrográdne",
+			"if": "vv.kod in ['5o246r2']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie stentu z močovodu, retrográdne",
+			"if": "vv.kod in ['5o247r']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ureterotómia a odstránenie konkrementu pre ureterolitiázu [litotripsia], ureterorenoskopicky",
+			"if": "vv.kod in ['5o2566']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Optická uretrotómia",
+			"if": "vv.kod in ['5o4111']",
+			"value": 220,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transuretrálna incízia chorého tkaniva močovej rúry, vnútorná uretrotómia pod optickou kontrolou",
+			"if": "vv.kod in ['5o4301']",
+			"value": 220,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Divulzia močovej rúry",
+			"if": "vv.kod in ['5o499']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transvaginálna závesná operácia s použitím aloplastického materiálu bezťahová vaginálna páska [TVT] alebo transobturatórna páska [TOT]",
+			"if": "vv.kod in ['5o9321']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia bez epididymektómie, inguinálna retencia semenníka",
+			"if": "vv.kod in ['5p3010']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia bez epididymektómie skrotálne",
+			"if": "vv.kod in ['5p3012']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia s epididymektómiou, inguinálna retencia semenníka",
+			"if": "vv.kod in ['5p3020']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiektómia s epididymektómiou skrotálne",
+			"if": "vv.kod in ['5p3022']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie zostávajúceho (solitárneho) semenníka, inguinálne",
+			"if": "vv.kod in ['5p3050']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie zostávajúceho (solitárneho) semenníka, skrotálne",
+			"if": "vv.kod in ['5p3052']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia s funikulolýzou",
+			"if": "vv.kod in ['5p311']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia skrotálne",
+			"if": "vv.kod in ['5p312']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia, ostatné",
+			"if": "vv.kod in ['5p31x']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, inguinálne",
+			"if": "vv.kod in ['5p4020']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, otvorene mikrochirurgicky",
+			"if": "vv.kod in ['5p4021']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, lumbálne",
+			"if": "vv.kod in ['5p4023']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, laparoskopicky",
+			"if": "vv.kod in ['5p4024']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia cysty v oblasti nadsemenníka",
+			"if": "vv.kod in ['5p411']",
+			"value": 364,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna epididymektómia",
+			"if": "vv.kod in ['5p421']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna epididymektómia",
+			"if": "vv.kod in ['5p422']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Epididymektómia, ostatné",
+			"if": "vv.kod in ['5p42x']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sklerotizácia semenovodu",
+			"if": "vv.kod in ['5p451']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ligatúra semenovodu",
+			"if": "vv.kod in ['5p452']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia semenovodu [vazoresekcia]",
+			"if": "vv.kod in ['5p453']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Deštrukcia, ligatúra a resekcia semenovodu, ostatné",
+			"if": "vv.kod in ['5p45x']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Frenulotómia predkožky",
+			"if": "vv.kod in ['5p501']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Dorzálne preťatie predkožky",
+			"if": "vv.kod in ['5p502']",
+			"value": 298,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Cirkumcízia",
+			"if": "vv.kod in ['5p503']",
+			"value": 298,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Frenuloplastika a plastika predkožky",
+			"if": "vv.kod in ['5p504']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Krvavá repozícia na predkožke pre parafimózu v celkovej anestézii",
+			"if": "vv.kod in ['5p5051']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Nekrvavá repozícia na predkožke pre parafimózu v celkovej anestézii",
+			"if": "vv.kod in ['5p5052']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Uvoľnenie prepuciálnych zrastov na predkožke [synechiolýza]",
+			"if": "vv.kod in ['5p506']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácie na predkožke, ostatné",
+			"if": "vv.kod in ['5p509']",
+			"value": 188,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna excízia chorého tkaniva penisu",
+			"if": "vv.kod in ['5p511']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna deštrukcia chorého tkaniva penisu",
+			"if": "vv.kod in ['5p512']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna excízia a deštrukcia chorého tkaniva penisu, ostatné",
+			"if": "vv.kod in ['5p51x']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti pery",
+			"if": "vv.kod in ['5v1300']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1304']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti krku",
+			"if": "vv.kod in ['5v1305']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1306']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1307']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1308']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ruky",
+			"if": "vv.kod in ['5v1309']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v130a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v brušnej oblasti",
+			"if": "vv.kod in ['5v130b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v130d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v130e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v130f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v130g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany, ostatné",
+			"if": "vv.kod in ['5v130x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti pery",
+			"if": "vv.kod in ['5v1310']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1314']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti krku",
+			"if": "vv.kod in ['5v1315']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1316']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1317']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1318']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti ruky",
+			"if": "vv.kod in ['5v1319']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v131a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v brušnej oblasti",
+			"if": "vv.kod in ['5v131b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v131d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v131e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v131f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v131g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálne operačné odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany , ostatné",
+			"if": "vv.kod in ['5v131x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti pery",
+			"if": "vv.kod in ['5v1400']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1404']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti krku",
+			"if": "vv.kod in ['5v1405']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1406']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1407']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1408']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti ruky",
+			"if": "vv.kod in ['5v1409']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v140a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v brušnej oblasti",
+			"if": "vv.kod in ['5v140b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v140d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v140e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v140f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v140g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany, ostatné",
+			"if": "vv.kod in ['5v140x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti pery",
+			"if": "vv.kod in ['5v1410']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5v1414']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti krku",
+			"if": "vv.kod in ['5v1415']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1416']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1417']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti predlaktia",
+			"if": "vv.kod in ['5v1418']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti ruky",
+			"if": "vv.kod in ['5v1419']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v141a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v brušnej oblasti",
+			"if": "vv.kod in ['5v141b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v inguinálnej a genitálnej oblasti",
+			"if": "vv.kod in ['5v141c']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v gluteálnej oblasti",
+			"if": "vv.kod in ['5v141d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v141e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti predkolenia",
+			"if": "vv.kod in ['5v141f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v141g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží bez primárneho uzavretia rany histologicky kontrolované, ostatné",
+			"if": "vv.kod in ['5v141x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti pery",
+			"if": "vv.kod in ['5v1420']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany ostatných častí hlavy",
+			"if": "vv.kod in ['5v1424']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti krku",
+			"if": "vv.kod in ['5v1425']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1426']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1427']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti predlaktia",
+			"if": "vv.kod in ['5v1428']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti ruky",
+			"if": "vv.kod in ['5v1429']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v142a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s  s primárnym uzavretím rany rany v buršnej oblasti ",
+			"if": "vv.kod in ['5v142b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v gluteálnej oblasti",
+			"if": "vv.kod in ['5v142d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v142e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti predkolenia",
+			"if": "vv.kod in ['5v142f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v142g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany rany, ostatné",
+			"if": "vv.kod in ['5v142x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti pery",
+			"if": "vv.kod in ['5v1430']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované ostatných častí hlavy",
+			"if": "vv.kod in ['5v1434']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti krku",
+			"if": "vv.kod in ['5v1435']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a axily",
+			"if": "vv.kod in ['5v1436']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a lakťa",
+			"if": "vv.kod in ['5v1437']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predlaktia",
+			"if": "vv.kod in ['5v1438']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ruky",
+			"if": "vv.kod in ['5v1439']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
+			"if": "vv.kod in ['5v143a']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v brušnej oblasti",
+			"if": "vv.kod in ['5v143b']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v gluteálnej oblasti",
+			"if": "vv.kod in ['5v143d']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti stehna a kolena",
+			"if": "vv.kod in ['5v143e']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predkolenia",
+			"if": "vv.kod in ['5v143f']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti nohy (chodidlo)",
+			"if": "vv.kod in ['5v143g']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované, ostatné",
+			"if": "vv.kod in ['5v143x']",
+			"value": 55,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Litotripsia konkrementu extrakorporálnou rázovou vlnou v močovode",
+			"if": "vv.kod in ['8c3201']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Litotripsia konkrementu extrakorporálnou rázovou vlnou v obličke",
+			"if": "vv.kod in ['8c3202']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Litotripsia konkrementu extrakorporálnou rázovou vlnou v iných orgánoch",
+			"if": "vv.kod in ['8c320x']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Extrakorporálna litotripsia",
+			"if": "vv.kod in ['8c323']",
+			"value": 463,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Perkutánna terapeutická punkcia a aspirácia obličkovej panvičky",
+			"if": "vv.kod in ['8f3041']",
+			"value": 166,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie bradavíc alebo porovnateľných kožných zmien",
+			"if": "vv.kod in ['8z211']",
+			"value": 231,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie trvalého kovového stentu do močovodu, transuretrálne retrográdne",
+			"if": "vv.kod in ['ko243r1']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie iného trvalého stentu do močovodu, transuretrálne retrográdne",
+			"if": "vv.kod in ['ko243r2']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie trvalého kovového stentu do močovodu, perkutánne - transrenálne retrográdne",
+			"if": "vv.kod in ['ko246r1']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Zavedenie iného trvalého stentu do močovodu, perkutánne-transrenálne retrográdne",
+			"if": "vv.kod in ['ko246r2']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Odstránenie stentu z močovodu, retrográdne",
+			"if": "vv.kod in ['ko247r']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Implantácia double pigtailu do močových ciest",
+			"if": "vv.kod in ['ko29a']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Implantácia stentu do močových ciest",
+			"if": "vv.kod in ['ko29b']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia s funikulolýzou",
+			"if": "vv.kod in ['kp311']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia skrotálne",
+			"if": "vv.kod in ['kp312']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Orchiopexia, ostatné",
+			"if": "vv.kod in ['kp31x']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, inguinálne",
+			"if": "vv.kod in ['kp4020']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, otvorene mikrochirurgicky",
+			"if": "vv.kod in ['kp4021']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, lumbálne",
+			"if": "vv.kod in ['kp4023']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Resekcia testikulárnej žily a testikulárnej tepny, laparoskopicky",
+			"if": "vv.kod in ['kp4024']",
+			"value": 518,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély semenného povrazca",
+			"if": "vv.kod in ['kp403']",
+			"value": 419,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély testis",
+			"if": "vv.kod in ['kp404']",
+			"value": 419,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Implantácia double pigtailu do močových ciest",
+			"if": "vv.kod in ['5o29d3']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Implantácia stentu do močových ciest",
+			"if": "vv.kod in ['5o29d4']",
+			"value": 319,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Excízia karunkuly chorého tkaniva močovej rúry",
+			"if": "vv.kod in ['5o4201']",
+			"value": 220,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transuretrálna endoresekcia tkaniva prostaty, intersticiálna laserová deštrukcia",
+			"if": "vv.kod in ['5p14c']",
+			"value": 552,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transuretrálna endoresekcia tkaniva prostaty, vizuálne kontrolovaná laserová ablácia [VLAP]",
+			"if": "vv.kod in ['5p14d']",
+			"value": 552,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transuretrálna endoresekcia tkaniva prostaty, laserová vaporizácia prostaty",
+			"if": "vv.kod in ['5p14e']",
+			"value": 552,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Transuretrálna endoresekcia tkaniva prostaty, laserová deštrukcia iná",
+			"if": "vv.kod in ['5p14f']",
+			"value": 552,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély semenného povrazca",
+			"if": "vv.kod in ['5p4030']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Operácia hydrokély testis",
+			"if": "vv.kod in ['5p4031']",
+			"value": 387,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výmena nefrostomického katétra",
+			"if": "vv.kod in ['8d130']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Radikálna orchiektómia s epididymektómiou a odstránením \"spermatic cord\"",
+			"if": "vv.kod in ['5p3071']",
+			"value": 377,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "urologia"
+}

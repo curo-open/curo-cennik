@@ -1,0 +1,18 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Transvaginálna závesná operácia s použitím aloplastického materiálu bezťahová vaginálna páska [TVT] alebo transobturatórna páska [TOT]",
+			"if": "vv.kod in ['5o9321']",
+			"value": 408,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gynekolog"
+}

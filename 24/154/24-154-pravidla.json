@@ -1,0 +1,280 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.038462
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009724
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60','62','63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Elektronická komunikácia",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 670
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 440
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 340
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 220
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 350
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 220
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 50
+			}
+		],
+		"360": [
+			{
+				"cond": "",
+				"value": 180
+			}
+		],
+		"361": [
+			{
+				"cond": "",
+				"value": 360
+			}
+		],
+		"363": [
+			{
+				"cond": "",
+				"value": 480
+			}
+		],
+		"364": [
+			{
+				"cond": "",
+				"value": 240
+			}
+		],
+		"365": [
+			{
+				"cond": "",
+				"value": 660
+			}
+		],
+		"366": [
+			{
+				"cond": "",
+				"value": 600
+			}
+		],
+		"367": [
+			{
+				"cond": "",
+				"value": 600
+			}
+		],
+		"735": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"736": [
+			{
+				"cond": "",
+				"value": 1800
+			}
+		],
+		"737": [
+			{
+				"cond": "",
+				"value": 1800
+			}
+		],
+		"740": [
+			{
+				"cond": "",
+				"value": 2840
+			}
+		],
+		"741": [
+			{
+				"cond": "",
+				"value": 4940
+			}
+		],
+		"745": [
+			{
+				"cond": "",
+				"value": 4040
+			}
+		],
+		"746": [
+			{
+				"cond": "",
+				"value": 5840
+			}
+		],
+		"755": [
+			{
+				"cond": "",
+				"value": 2240
+			}
+		],
+		"756": [
+			{
+				"cond": "",
+				"value": 4340
+			}
+		],
+		"760": [
+			{
+				"cond": "",
+				"value": 5840
+			}
+		],
+		"761": [
+			{
+				"cond": "",
+				"value": 7340
+			}
+		],
+		"762": [
+			{
+				"cond": "",
+				"value": 8840
+			}
+		],
+		"763": [
+			{
+				"cond": "",
+				"value": 10340
+			}
+		],
+		"5300": [
+			{
+				"cond": "",
+				"value": 4250
+			}
+		],
+		"5301": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 190
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"745a": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"745b": [
+			{
+				"cond": "",
+				"value": 2540
+			}
+		],
+		"763a": [
+			{
+				"cond": "",
+				"value": 11838
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "pediatricky gastroenterolo"
+}

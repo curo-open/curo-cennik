@@ -22,18 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- added hip027">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- bzr changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR014/25-BZR014-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR014/25-BZR014-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR014/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR014/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR014JZS/25-BZR014JZS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR014JZS/25-BZR014JZS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/BZR014JZS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/BZR014JZS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR010JZS/27-BZR010JZS-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR010JZS/27-BZR010JZS-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR010JZS/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR010JZS/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR045/27-BZR045-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR045/27-BZR045-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR045/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR045/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR232/27-BZR232-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR232/27-BZR232-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27/BZR232/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/27/BZR232/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -891,7 +881,7 @@
       <workItem from="1766146949065" duration="3346000" />
       <workItem from="1769888992590" duration="6839000" />
       <workItem from="1771509791758" duration="597000" />
-      <workItem from="1772108776767" duration="3149000" />
+      <workItem from="1772108776767" duration="4468000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1236,7 +1226,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="573" />
+    <option name="localTasksCounter" value="574" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1303,12 +1293,12 @@
     <MESSAGE value="- updates" />
     <MESSAGE value="- changes&#10;- added 009ZDRAVITA" />
     <MESSAGE value="- added 017" />
-    <MESSAGE value="- bzr changes" />
     <MESSAGE value="- changes PED" />
     <MESSAGE value="- changes BZR" />
     <MESSAGE value="- changes" />
     <MESSAGE value="- added hip027" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added hip027" />
+    <MESSAGE value="- bzr changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- bzr changes" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
