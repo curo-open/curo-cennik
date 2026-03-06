@@ -13,6 +13,7 @@ Autor: curo.sk
 │ CBEU = 0.035          │ Cena bodu EU        │
 │ CBSVALZ = 0.01        │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
+│ KP = 2.13             │ Kapitačná platba    │
 └───────────────────────┴─────────────────────┘
 
 
@@ -20,7 +21,7 @@ Autor: curo.sk
 ┌───────────┬───────────────┬─────────┬────────────────────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec  │ Podmienka                          │
 ├───────────┼───────────────┼─────────┼────────────────────────────────────┤
-│ Kapitácie │          2.13 │ IDK+CKP │ p.kapitacia && p|vekMedzi(15, 120) │
+│ Kapitácie │          null │ IDK+CKP │ p.kapitacia && p|vekMedzi(15, 120) │
 └───────────┴───────────────┴─────────┴────────────────────────────────────┘
 
 

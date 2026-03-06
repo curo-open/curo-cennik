@@ -19,13 +19,17 @@
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
 			"value": 0.009574
+		},
+		"KP": {
+			"label": "Kapitačná platba",
+			"value": 2.13
 		}
 	},
 	"pacient": [
 		{
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
-			"value": 2.13,
+			"value": null,
 			"calc": "IDK+CKP",
 			"instruction": null
 		}

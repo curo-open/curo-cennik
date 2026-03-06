@@ -2,7 +2,7 @@
 	"params": {
 		"IDK": {
 			"label": "NASTAVENIA IDK",
-			"value": 0.15
+			"value": 0
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -15,13 +15,17 @@
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01
+		},
+		"KP": {
+			"label": "Kapitačná platba",
+			"value": 2.03
 		}
 	},
 	"pacient": [
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(15, 130)",
-			"value": 2.03,
+			"value": null,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

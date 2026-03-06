@@ -5,21 +5,22 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬─────────────────┐
-│ Názov a hodnota │ Popis           │
-├─────────────────┼─────────────────┤
-│ IDK = 0.15      │ NASTAVENIA IDK  │
-│ CB = 0          │ Cena bodu       │
-│ CBEU = 0.0349   │ Cena bodu EU    │
-│ CBSVALZ = 0.01  │ Cena bodu SVaLZ │
-└─────────────────┴─────────────────┘
+┌─────────────────┬──────────────────┐
+│ Názov a hodnota │ Popis            │
+├─────────────────┼──────────────────┤
+│ IDK = 0.15      │ NASTAVENIA IDK   │
+│ CB = 0          │ Cena bodu        │
+│ CBEU = 0.0349   │ Cena bodu EU     │
+│ CBSVALZ = 0.01  │ Cena bodu SVaLZ  │
+│ KP = 2.03       │ Kapitačná platba │
+└─────────────────┴──────────────────┘
 
 
   CENY ZA PACIENTA
 ┌───────────┬───────────────┬──────────┬─────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec   │ Podmienka           │
 ├───────────┼───────────────┼──────────┼─────────────────────┤
-│ Kapitácia │          2.03 │ IDK+cena │ p|vekMedzi(15, 130) │
+│ Kapitácia │          null │ IDK+cena │ p|vekMedzi(15, 130) │
 └───────────┴───────────────┴──────────┴─────────────────────┘
 
 

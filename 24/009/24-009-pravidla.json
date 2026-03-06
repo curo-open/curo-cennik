@@ -33,7 +33,7 @@
 		{
 			"label": "Kapitácia",
 			"if": "p|vekMedzi(0, 120)",
-			"value": 2.08,
+			"value": null,
 			"calc": "KP+IDK",
 			"instruction": null
 		}

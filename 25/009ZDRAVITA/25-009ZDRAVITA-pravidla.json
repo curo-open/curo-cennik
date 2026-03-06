@@ -4,9 +4,9 @@
 			"label": "IDK",
 			"value": 0
 		},
-		"KPS": {
-			"label": "KPS",
-			"value": 0
+		"KP": {
+			"label": "Kapitačná platba",
+			"value": 2.13
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -33,7 +33,7 @@
 		{
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
-			"value": 2.13,
+			"value": null,
 			"calc": "IDK+cena",
 			"instruction": null
 		}

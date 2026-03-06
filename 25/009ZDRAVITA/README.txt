@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota       │ Popis                 │
 ├───────────────────────┼───────────────────────┤
 │ IDK = 0               │ IDK                   │
-│ KPS = 0               │ KPS                   │
+│ KP = 2.13             │ Kapitačná platba      │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
 │ CB = 0.0339           │ Cena bodu             │
 │ CBEU = 0.035          │ Cena bodu EU          │
@@ -22,7 +22,7 @@ Autor: curo.sk
 ┌───────────┬───────────────┬──────────┬────────────────────────────────────┐
 │ Popis     │ Premenná cena │ Vzorec   │ Podmienka                          │
 ├───────────┼───────────────┼──────────┼────────────────────────────────────┤
-│ Kapitácie │          2.13 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 120) │
+│ Kapitácie │          null │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 120) │
 └───────────┴───────────────┴──────────┴────────────────────────────────────┘
 
 
