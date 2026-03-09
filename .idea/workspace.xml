@@ -22,12 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- JZS changes">
+    <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- 009 changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/009/24-009-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/24/009/24-009-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24/009/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/24/009/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/009/25-009-pravidla.json" beforeDir="false" afterPath="$PROJECT_DIR$/25/009/25-009-pravidla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25/009/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/25/009/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -885,7 +881,7 @@
       <workItem from="1766146949065" duration="3346000" />
       <workItem from="1769888992590" duration="6839000" />
       <workItem from="1771509791758" duration="597000" />
-      <workItem from="1772108776767" duration="5395000" />
+      <workItem from="1772108776767" duration="6611000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1230,7 +1226,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="575" />
+    <option name="localTasksCounter" value="576" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1277,7 +1273,6 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <MESSAGE value="- fix pre union NBC" />
     <MESSAGE value="- 630 changes" />
     <MESSAGE value="- fix pre UA cenniky" />
     <MESSAGE value="- medicentrum" />
@@ -1302,7 +1297,8 @@
     <MESSAGE value="- added hip027" />
     <MESSAGE value="- bzr changes" />
     <MESSAGE value="- JZS changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- JZS changes" />
+    <MESSAGE value="- 009 changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 009 changes" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

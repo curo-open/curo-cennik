@@ -30,7 +30,7 @@
 			"label": "Kapitácie",
 			"if": "p.kapitacia && p|vekMedzi(15, 120)",
 			"value": null,
-			"calc": "IDK+CKP",
+			"calc": "IDK+KP",
 			"instruction": null
 		}
 	],
