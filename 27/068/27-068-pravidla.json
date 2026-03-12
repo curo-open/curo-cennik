@@ -12,6 +12,10 @@
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01031
 		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.01107
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
