@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.034        │ Cena bodu                    │
+│ CB = 0.0336       │ Cena bodu                    │
 │ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
 │ NCB = 0           │ Navysena cena bodu           │
@@ -37,7 +37,7 @@ Autor: curo.sk
 │           0.035 │ vv.bodyCelkom*(cena+NCB)  │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │          0.0088 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
-│         0.00924 │ vv.bodyCelkom*(cena+NCB)  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
+│            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316']                                              │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │

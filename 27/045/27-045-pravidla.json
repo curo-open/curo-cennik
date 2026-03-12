@@ -1,8 +1,8 @@
 {
 	"params": {
 		"CB": {
-			"label": "Cena bodu",
-			"value": 0.034
+			"label": "Cena bodu ",
+			"value": 0.0336
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
@@ -94,8 +94,8 @@
 		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316']",
-			"value": 0.00924,
-			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
 			"instruction": null
 		},
 		{

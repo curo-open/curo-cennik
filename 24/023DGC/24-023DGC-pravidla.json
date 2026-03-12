@@ -1,0 +1,145 @@
+{
+	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.008
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVALZ",
+			"value": 0.008
+		},
+		"CBEU": {
+			"label": "Cena bodu EU",
+			"value": 0.008
+		},
+		"CB50XX": {
+			"label": "Cena bodu 50XX",
+			"value": 0.011
+		},
+		"DO10DNI": {
+			"label": "Text pre fakturu Z014 do 10dni za mesiac ${mesiac}",
+			"value": 0
+		},
+		"_120801": {
+			"label": 120801,
+			"value": 20.5
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Ultrazvukové vyšetrenie obidvoch prsníkov, axíl a regionálnych lymfatických uzlín.",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5308.DO10']",
+			"value": 0.009,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano"
+		},
+		{
+			"label": "Mamografia bilaterálna",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092.DO10']",
+			"value": 0.009,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano"
+		},
+		{
+			"label": "Mamografia unilaterálna ",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a.DO10']",
+			"value": 0.009,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": "davka_suffix:do10dni;zachovaj_v_hlavnej_davke:nie;fa_suffix:do10dni;odstran_vv_suffix:ano"
+		},
+		{
+			"label": "Ultrazvukové vyšetrenie obidvoch prsníkov, axíl a regionálnych lymfatických uzlín.",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5308']",
+			"value": 0.009,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mamografia bilaterálna",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092']",
+			"value": 0.009,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mamografia unilaterálna ",
+			"if": "vv.diagnoza=='Z01.4' && vv.kod in ['5092a']",
+			"value": 0.009,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Denzitometria ",
+			"if": "vv.kod in ['5331']",
+			"value": 0.0055,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Mamografia",
+			"if": "vv.kod in ['5092','5092a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "RTG",
+			"if": "vv.kod in ['5010','5011','5012','5015','5016','5020','5021','5022','5023','5024','5025','5030','5031','5032','5033','5035','5050','5051','5052','5053','5056','5060','5061','5062','5065','5070','5071','5072','5075','5076','5077','5080','5081','5082','5083','5090','5095']",
+			"value": 0.013,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "USG",
+			"if": "vv.kod in ['5300','5301','5302','5303','5306','5307','5308','5309','5310','5312','5315','5316','5742','5743','5739','5738','5153a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Skríningová mamografia",
+			"if": "vv.kod in ['1301','1301a','1301b','1301c','1301d','1301e']",
+			"value": 30,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky  - Bioptická ihla",
+			"if": "vv.kod=='120801'",
+			"value": null,
+			"calc": "_120801",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - Bezdomovec, Cudzinec, EU",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBEU",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "radiologia"
+}
