@@ -30,7 +30,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
-│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.02 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 15d                                     │ vv.kod in ['15d','15D']                                      │
 │           0.029 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 654                                     │ vv.kod in ['654']                                            │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Výkon 1A02072                                 │ vv.kod in ['1A02072']                                        │
