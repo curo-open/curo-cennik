@@ -82,10 +82,17 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony 3130, 3135, 3215, 5312",
-			"if": "vv.kod in ['3130','3135','3215','5312']",
+			"label": "Výkony 3130, 3135, 3215",
+			"if": "vv.kod in ['3130','3135','3215']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "USG vyšetrenie kĺbov, svalov a mäkkých tkanív - 5312",
+			"if": "vv.kod in ['5312']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZP",
 			"instruction": null
 		},
 		{
