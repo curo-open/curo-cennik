@@ -38,7 +38,7 @@
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0
+			"value": 0.009574
 		}
 	},
 	"pacient": [],
@@ -68,6 +68,13 @@
 			"label": "Výkon 899",
 			"if": "vv.kod in ['899']",
 			"value": 25,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Jeden ošetrovací deň v stacionári - výkon 8899",
+			"if": "vv.kod in ['8899']",
+			"value": 60,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

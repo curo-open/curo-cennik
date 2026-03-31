@@ -5,20 +5,20 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬───────────────────────┐
-│ Názov a hodnota    │ Popis                 │
-├────────────────────┼───────────────────────┤
-│ IPP1 = 2.44        │ IPP1                  │
-│ IPP2 = 3.92        │ IPP2                  │
-│ IPP3 = 6.64        │ IPP3                  │
-│ IPP4 = 9.64        │ IPP4                  │
-│ IPPD = 5           │ IPPD                  │
-│ LIMIT = 0          │ Limit                 │
-│ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.03466       │ Cena bodu             │
-│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
-│ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
-└────────────────────┴───────────────────────┘
+┌───────────────────────┬───────────────────────┐
+│ Názov a hodnota       │ Popis                 │
+├───────────────────────┼───────────────────────┤
+│ IPP1 = 2.44           │ IPP1                  │
+│ IPP2 = 3.92           │ IPP2                  │
+│ IPP3 = 6.64           │ IPP3                  │
+│ IPP4 = 9.64           │ IPP4                  │
+│ IPPD = 5              │ IPPD                  │
+│ LIMIT = 0             │ Limit                 │
+│ EL_POBOCKA = 1        │ Používa el. pobočku ? │
+│ CB = 0.03466          │ Cena bodu             │
+│ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
+│ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG   │
+└───────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -35,6 +35,8 @@ Autor: curo.sk
 │               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 820;821;822;825;826;841                 │ vv.kod in ['820','821','822','825','826','841','847']        │
 │              25 │ vv.pocet*cena             │ Výkon 899                                     │ vv.kod in ['899']                                            │
+│              60 │ vv.pocet*cena             │ Jeden ošetrovací deň v stacionári - výkon 889 │ vv.kod in ['8899']                                           │
+│                 │                           │ 9                                             │                                                              │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
