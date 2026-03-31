@@ -1,0 +1,1 @@
+vygeneruj code ktory 

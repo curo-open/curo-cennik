@@ -63,7 +63,7 @@ Autor: curo.sk
 │            5.12 │ vv.pocet*cena             │ Výkon 1544a                                   │ vv.kod in ['1544a']                                          │
 │            0.01 │ vv.bodyCelkom*cena        │ EKG                                           │ vv.kod in ['5702']                                           │
 │            5.52 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702Z']                                          │
-│          0.0158 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a']                                          │
+│          0.0158 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │

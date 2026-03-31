@@ -24,6 +24,13 @@
 			"value": 0.0042,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
+		},
+		{
+			"label": "MRI enterografia",
+			"if": "vv.kod in ['Y0030' , 'Y0031']",
+			"value": 400,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

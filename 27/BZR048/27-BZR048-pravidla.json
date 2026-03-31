@@ -22,7 +22,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0488,
+			"value": 0.039,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -50,7 +50,7 @@
 		{
 			"label": "Výkon ŠAS",
 			"if": "vv.kod in ['755','756','760','761','762','763','763a']",
-			"value": 0.0488,
+			"value": 0.039,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

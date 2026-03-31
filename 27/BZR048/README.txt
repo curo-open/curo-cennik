@@ -25,11 +25,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0488 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
+│           0.039 │ vv.bodyCelkom*cena        │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon ŠAS                                     │ vv.kod in ['740','741','746','765']                          │
-│          0.0488 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['755','756','760','761','762','763','763a']       │
+│           0.039 │ vv.bodyCelkom*cena        │ Výkon ŠAS                                     │ vv.kod in ['755','756','760','761','762','763','763a']       │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5702                                    │ vv.kod in ['5702']                                           │
 │            null │ vv.bodyCelkom*CB          │ Utlmenie pacienta                             │ vv.kod in ['93']                                             │
 │            null │ vv.bodyCelkom*CB          │ Procedurálna analgosedácia                    │ vv.kod in ['44S01026']                                       │
