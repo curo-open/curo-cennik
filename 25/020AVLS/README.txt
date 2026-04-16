@@ -25,19 +25,19 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek do 19       │          4.66 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ vek od 20 do 28 │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
-│ vek od 29 do 39 │          3.55 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
-│ vek od 40 do 44 │          3.57 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
-│ vek od 45 do 49 │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
-│ vek od 50 do 54 │          4.15 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
-│ vek od 55 do 59 │          4.76 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
-│ vek od 60 do 64 │           5.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
-│ vek od 65 do 69 │          5.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
-│ vek od 70 do 74 │          6.52 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
-│ vek od 75 do 79 │          6.97 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
-│ vek od 80 do 84 │          7.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
-│ vek od 85+      │          8.18 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
+│ vek do 19       │          4.86 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ vek od 20 do 28 │          3.76 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 29) │
+│ vek od 29 do 39 │           3.7 │ IDK+cena │ p.kapitacia && p|vekMedzi(29, 40) │
+│ vek od 40 do 44 │          3.72 │ IDK+cena │ p.kapitacia && p|vekMedzi(40, 45) │
+│ vek od 45 do 49 │          3.76 │ IDK+cena │ p.kapitacia && p|vekMedzi(45, 50) │
+│ vek od 50 do 54 │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(50, 55) │
+│ vek od 55 do 59 │          4.96 │ IDK+cena │ p.kapitacia && p|vekMedzi(55, 60) │
+│ vek od 60 do 64 │          5.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(60, 65) │
+│ vek od 65 do 69 │          5.98 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 70) │
+│ vek od 70 do 74 │           6.8 │ IDK+cena │ p.kapitacia && p|vekMedzi(70, 75) │
+│ vek od 75 do 79 │          7.27 │ IDK+cena │ p.kapitacia && p|vekMedzi(75, 80) │
+│ vek od 80 do 84 │          8.16 │ IDK+cena │ p.kapitacia && p|vekMedzi(80, 85) │
+│ vek od 85+      │          8.53 │ IDK+cena │ p.kapitacia && p|vekMedzi(85)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -54,7 +54,7 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Vstupná prehliadka (vv. 60)                   │ vv.kod in ['60']                                             │
-│           0.084 │ vv.bodyCelkom*cena        │ Preventívne prehliadky (vv. 160)              │ vv.kod in ['160']                                            │
+│          0.0874 │ vv.bodyCelkom*cena        │ Preventívne prehliadky (vv. 160)              │ vv.kod in ['160']                                            │
 │        0.039833 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (vv. 15P)     │ vv.kod in ['15P']                                            │
 │        0.009574 │ vv.bodyCelkom*cena        │ EKG pri preventívnej prehliadke (vv. 5702P)   │ vv.kod in ['5702P']                                          │
 │        0.009574 │ vv.bodyCelkom*cena        │ EKG (vv. 5702)                                │ vv.kod in ['5702']                                           │
@@ -70,8 +70,8 @@ Autor: curo.sk
 │              12 │ vv.pocet*cena             │ TOKS pozitívny (vv. 159a)                     │ vv.kod in ['159a']                                           │
 │              12 │ vv.pocet*cena             │ TOKS negatívny  (vv. 159z)                    │ vv.kod in ['159z']                                           │
 │            3.02 │ vv.pocet*cena             │ TOKS znehodnotený  (vv. 159x)                 │ vv.kod in ['159x']                                           │
-│              15 │ vv.pocet*cena             │ Inicialne I10/E78 (vv. H0003)                 │ vv.kod in ['H0003']                                          │
-│              15 │ vv.pocet*cena             │ Kontrolne I10/E78 (vv .H0004)                 │ vv.kod in ['H0004']                                          │
+│            15.6 │ vv.pocet*cena             │ Inicialne I10/E78 (vv. H0003)                 │ vv.kod in ['H0003']                                          │
+│            15.6 │ vv.pocet*cena             │ Kontrolne I10/E78 (vv .H0004)                 │ vv.kod in ['H0004']                                          │
 │               6 │ vv.pocet*cena             │ Akutne I10  (vv. H0005)                       │ vv.kod in ['H0005']                                          │
 │            5.65 │ vv.pocet*cena             │ Stratifikácia kardiovaskulárneho rizika (vv.  │ vv.kod in ['H0006']                                          │
 │                 │                           │ H0006)                                        │                                                              │
@@ -81,7 +81,7 @@ Autor: curo.sk
 │            6.78 │ vv.pocet*cena             │ Stanovenie ABI oscilometricky  (vv. H0008)    │ vv.kod in ['H0008']                                          │
 │               2 │ vv.pocet*cena             │ Delegovaný odber krvi  (vv. 250D)             │ vv.kod in ['250D','250d']                                    │
 │        0.020895 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom (vv. 3671)       │ vv.kod in ['3671']                                           │
-│            5.75 │ vv.pocet*cena             │ C-reaktívny proteín  (vv. 4571A, 4571a)       │ vv.kod in ['4571a','4571A']                                  │
+│            5.98 │ vv.pocet*cena             │ C-reaktívny proteín  (vv. 4571A, 4571a)       │ vv.kod in ['4571a','4571A']                                  │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19  (vv. 62a)       │                                                              │
 │            8.98 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
