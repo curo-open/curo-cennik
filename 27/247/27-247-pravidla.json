@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0323
+			"value": 0.0366
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01031
+			"value": 0.0105
 		}
 	},
 	"pacient": [],
@@ -14,21 +14,21 @@
 		{
 			"label": "Výkon  108",
 			"if": "vv.kod in ['108']",
-			"value": 0.0801,
+			"value": 0.0841,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon  118",
 			"if": "vv.kod in ['118']",
-			"value": 0.0266,
+			"value": 0.0279,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1070",
 			"if": "vv.kod in ['1070']",
-			"value": 0.0801,
+			"value": 0.0841,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -49,14 +49,14 @@
 		{
 			"label": "Výkon 5809",
 			"if": "vv.kod in ['5809']",
-			"value": 0.0266,
+			"value": 0.0279,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','11a']",
-			"value": 0.027,
+			"value": 0.0284,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

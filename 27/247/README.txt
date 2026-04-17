@@ -5,12 +5,12 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬─────────────────┐
-│ Názov a hodnota   │ Popis           │
-├───────────────────┼─────────────────┤
-│ CB = 0.0323       │ Cena bodu       │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ │
-└───────────────────┴─────────────────┘
+┌──────────────────┬─────────────────┐
+│ Názov a hodnota  │ Popis           │
+├──────────────────┼─────────────────┤
+│ CB = 0.0366      │ Cena bodu       │
+│ CBSVALZ = 0.0105 │ Cena bodu SVaLZ │
+└──────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -23,13 +23,13 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0801 │ vv.bodyCelkom*cena        │ Výkon  108                                    │ vv.kod in ['108']                                            │
-│          0.0266 │ vv.bodyCelkom*cena        │ Výkon  118                                    │ vv.kod in ['118']                                            │
-│          0.0801 │ vv.bodyCelkom*cena        │ Výkon 1070                                    │ vv.kod in ['1070']                                           │
+│          0.0841 │ vv.bodyCelkom*cena        │ Výkon  108                                    │ vv.kod in ['108']                                            │
+│          0.0279 │ vv.bodyCelkom*cena        │ Výkon  118                                    │ vv.kod in ['118']                                            │
+│          0.0841 │ vv.bodyCelkom*cena        │ Výkon 1070                                    │ vv.kod in ['1070']                                           │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 5303,5305                               │ vv.kod in ['5303','5305']                                    │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5308                                    │ vv.kod in ['5308']                                           │
-│          0.0266 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
-│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a']                                       │
+│          0.0279 │ vv.bodyCelkom*cena        │ Výkon 5809                                    │ vv.kod in ['5809']                                           │
+│          0.0284 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a']                                       │
 │              20 │ vv.pocet*cena             │ Covid 62a                                     │ vv.kod in ['62a']                                            │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

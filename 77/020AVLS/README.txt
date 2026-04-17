@@ -9,9 +9,9 @@ Autor: curo.sk
 │ Názov a hodnota  │ Popis                      │
 ├──────────────────┼────────────────────────────┤
 │ IDK = 0          │ NASTAVENIA IDK             │
-│ CB = 0.05        │ Cena bodu                  │
-│ CBSVALZ = 0.0095 │ Cena bodu SVaLZ            │
-│ CBEU = 0.0349    │ Cena bodu Nekapitovany(EU) │
+│ CB = 0           │ Cena bodu                  │
+│ CBSVALZ = 0.0107 │ Cena bodu SVaLZ            │
+│ CBEU = 0.0372    │ Cena bodu Nekapitovany(EU) │
 │ AGTC = 4.8       │ AGTC                       │
 │ PP50 = 10        │ PP50                       │
 │ FOB = 2          │ FOB                        │
@@ -27,9 +27,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 50 │          3.75 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 51) │
-│ vek od 51 do 60 │          4.55 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 61) │
-│ vek od 61 do 80 │          7.25 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 81) │
+│ vek od 18 do 50 │           3.7 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 51) │
+│ vek od 51 do 60 │          4.24 │ IDK+cena │ p.kapitacia && p|vekMedzi(51, 61) │
+│ vek od 61 do 80 │          6.81 │ IDK+cena │ p.kapitacia && p|vekMedzi(61, 81) │
+│ vek od 81+      │           8.9 │ IDK+cena │ p.kapitacia && p|vekMedzi(81)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -42,47 +43,44 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
 │                 │                           │                                               │ ) && vv.typ!='SVaLZ'                                         │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - Bezdomovec, Cudzinec, EU       │ !p.kapitacia && p.typ in ['BE','CU']                         │
-│            0.08 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B / tetanu         │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza in ['Z00.0','Z23.5'] && vv.kod in ['252b']       │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
-│                 │                           │                                               │ vv.kod in ['252b']                                           │
-│            0.04 │ vv.bodyCelkom*cena        │ Výkon 79a                                     │ vv.kod in ['79a']                                            │
-│             7.5 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
-│            0.03 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
-│            0.03 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│            0.03 │ vv.bodyCelkom*cena        │ Výkon 1c                                      │ vv.kod in ['1c']                                             │
-│            0.03 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│            0.06 │ vv.bodyCelkom*cena        │ Komplexné vyšetrenie pacienta                 │ vv.kod in ['60']                                             │
-│          0.0845 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
+│          0.0288 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
+│          0.0288 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 64                                      │ vv.kod in ['64']                                             │
+│          0.0288 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│           32.86 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│          0.0845 │ vv.bodyCelkom*cena        │ Preventívne zisťovanie cukru v krvi           │ vv.kod in ['3671']                                           │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde B / tetanu         │ vv.diagnoza=='Z00.0' && vv.kod in ['252b']                   │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A+B                │ vv.diagnoza=='Z24.6' && vv.kod in ['252b']                   │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti meningitíde                   │ vv.diagnoza=='Z20.8' && vv.kod in ['252b']                   │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti pneumokokom                   │ vv.diagnoza=='Z23.8' && vv.kod in ['252b']                   │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti kliestovej encefalitide       │ vv.diagnoza=='Z24.1' && vv.kod in ['252b']                   │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti tetanu                        │ vv.diagnoza in ['Z00.0','Z23.5'] && vv.kod in ['252b']       │
+│          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti osýpkam                       │ vv.diagnoza in ['Z27.4','Z27.8','Z27.3','Z27.1','Z24.4'] &&  │
+│                 │                           │                                               │ vv.kod in ['252b']                                           │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
-│          0.0349 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
-│          0.0349 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
+│          0.0168 │ vv.bodyCelkom*cena        │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
+│          0.0372 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29']                                   │
+│          0.0372 │ vv.bodyCelkom*cena        │ Výkony počas navštevy                         │ d.vv|ma('kod in ["25","26","29"]') && vv.kod in ['4','5','6' │
 │                 │                           │                                               │ ,'30','40','41','64']                                        │
-│           12.36 │ vv.pocet*cena             │ TOKS negatívny                                │ vv.kod in ['159z']                                           │
-│           12.36 │ vv.pocet*cena             │ TOKS znehodnotený                             │ vv.kod in ['159x']                                           │
-│           12.36 │ vv.pocet*cena             │ TOKS pozitívny                                │ vv.kod in ['159a']                                           │
-│          0.0845 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
-│           17.51 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
-│          0.0845 │ vv.bodyCelkom*cena        │ Glukóza                                       │ vv.kod in ['3671']                                           │
-│            5.52 │ vv.pocet*cena             │ EKG (5702Z)                                   │ vv.kod in ['5702Z','5702ZV']                                 │
-│            0.01 │ vv.bodyCelkom*cena        │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
+│           13.16 │ vv.pocet*cena             │ TOKS negatívny                                │ vv.kod in ['159z']                                           │
+│           13.16 │ vv.pocet*cena             │ TOKS znehodnotený                             │ vv.kod in ['159x']                                           │
+│           13.16 │ vv.pocet*cena             │ TOKS pozitívny                                │ vv.kod in ['159a']                                           │
+│            0.09 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│           18.65 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│            0.09 │ vv.bodyCelkom*cena        │ Glukóza                                       │ vv.kod in ['3671']                                           │
+│            5.88 │ vv.pocet*cena             │ EKG (5702Z)                                   │ vv.kod in ['5702Z','5702ZV']                                 │
+│          0.0107 │ vv.bodyCelkom*cena        │ EKG (5702)                                    │ vv.kod in ['5702']                                           │
 │             5.2 │ vv.pocet*cena             │ INR                                           │ vv.kod in ['3842a','H0007']                                  │
-│           19.21 │ vv.pocet*cena             │ 24h meranie tlaku                             │ vv.kod in ['5715']                                           │
-│         0.01075 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
-│            6.98 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
-│            5.82 │ vv.pocet*cena             │ H0006                                         │ vv.kod in ['H0006']                                          │
-│            6.06 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
-│               7 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │
-│              14 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10','H0003','H0004']                             │
+│           20.46 │ vv.pocet*cena             │ 24h meranie tlaku                             │ vv.kod in ['5715']                                           │
+│          0.0114 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
+│            7.43 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
+│             6.2 │ vv.pocet*cena             │ H0006                                         │ vv.kod in ['H0006']                                          │
+│            6.45 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
+│            7.46 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │
+│            15.5 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10','H0003','H0004']                             │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
 │           30.85 │ vv.pocet*cena             │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['160R']                                           │
 │                 │                           │ jicajtov, hasičov a záchranárov - PP          │                                                              │
@@ -93,12 +91,13 @@ Autor: curo.sk
 │                 │                           │                                               │ R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R' │
 │                 │                           │                                               │ ,'FotoR','PACSR']                                            │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
-│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│           10.86 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│            1.16 │ vv.pocet*cena             │ Výplach zvukovodu                             │ vv.kod in ['1540']                                           │
-│              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
+│            1.24 │ vv.pocet*cena             │ Výplach zvukovodu                             │ vv.kod in ['1540']                                           │
+│            5.59 │ vv.pocet*cena             │ Komplexné vyšetrenie pacienta                 │ vv.kod in ['60']                                             │
+│            21.3 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta s respiračným syn │ vv.kod in ['62a']                                            │
 │                 │                           │ drómom pri pandémii COVID-19                  │                                                              │
-│            1.22 │ vv.pocet*cena             │ Delegovaný odber                              │ vv.kod in ['250D','250d']                                    │
+│               2 │ vv.pocet*cena             │ Delegovaný odber                              │ vv.kod in ['250D','250d']                                    │
 │            8.95 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
 │            11.5 │ vv.pocet*cena             │ Stanovenie Troponínu                          │ vv.kod in ['4485']                                           │
 │           19.75 │ vv.pocet*cena             │ N-terminálny fragment (NT-pro BNP)            │ vv.kod in ['44418']                                          │
@@ -110,12 +109,10 @@ Autor: curo.sk
 │            null │ AAA2                      │ Pripočitateľné položky                        │ vv.kod=='AAA2'                                               │
 │            null │ AAA3                      │ Pripočitateľné položky                        │ vv.kod=='AAA3'                                               │
 │            null │ AAA4                      │ Pripočitateľné položky                        │ vv.kod=='AAA4'                                               │
-│            null │ vv.bodyCelkom*SVALZ       │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'         │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && (p.typ in ['EU']) && vv.typ=='SVaLZ'         │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && (p.typ in ['EU']) && vv.typ!='SVaLZ'         │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │
 │            null │ vv.bodyCelkom*CBEU        │ EÚ - iné ako SVALZ                            │ p.typ in ['EU'] && vv.typ!='SVaLZ'                           │
-│            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkon                                   │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ iné ako SVALZ                                 │ vv.typ!='SVaLZ'                                              │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -131,6 +128,7 @@ Autor: curo.sk
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
+│             380 │ 4571a                                                                                                     │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 

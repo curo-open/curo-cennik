@@ -10,15 +10,15 @@
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
-			"value": 0.0349
+			"value": 0.0366
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01
+			"value": 0.0105
 		},
 		"KP": {
 			"label": "Kapitačná platba",
-			"value": 2.03
+			"value": 2.13
 		}
 	},
 	"pacient": [
@@ -34,42 +34,42 @@
 		{
 			"label": "Výkon 100,102,103,105,157",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['100','102','103','105','157']",
-			"value": 0.0801,
+			"value": 0.0841,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 108",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['108']",
-			"value": 0.0801,
+			"value": 0.0841,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 118",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['118']",
-			"value": 0.0266,
+			"value": 0.0279,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 297",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['297']",
-			"value": 0.0434,
+			"value": 0.0456,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 252b",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['252b']",
-			"value": 0.0801,
+			"value": 0.0841,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 1070",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['1070']",
-			"value": 0.0801,
+			"value": 0.0841,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -90,7 +90,7 @@
 		{
 			"label": "Preventívny výkon 5809",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5809']",
-			"value": 0.0266,
+			"value": 0.0279,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -104,7 +104,7 @@
 		{
 			"label": "Telemedicína",
 			"if": "vv.kod in ['1b','1c','11a','70']",
-			"value": 0.027,
+			"value": 0.0284,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -160,7 +160,7 @@
 		{
 			"label": "Kapitovaný - SVALZ výkon",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.01031,
+			"value": 0.0108,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
