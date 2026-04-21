@@ -1783,7 +1783,7 @@
 		{
 			"label": "Subkutánna excízia análnej fistuly",
 			"if": "vv.kod in ['5n4510']",
-			"value": 418,
+			"value": 423,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

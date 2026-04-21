@@ -299,42 +299,42 @@
 		{
 			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t4090']",
-			"value": 1033,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t42h0']",
-			"value": 1033,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopická parciálna resekcia menisku",
 			"if": "vv.kod in ['5t42310']",
-			"value": 1033,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] kolenného kĺbu",
 			"if": "vv.kod in ['5t42ch']",
-			"value": 1033,
+			"value": 1057,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Prerušenie väzu retinaculum flexorum s epineurolýzou n. medianus",
 			"if": "vv.kod in ['5t71111']",
-			"value": 396,
+			"value": 406,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Parciálna fasciektómia izolovaná na dlani",
 			"if": "vv.kod in ['5t7220']",
-			"value": 437,
+			"value": 448,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -348,42 +348,42 @@
 		{
 			"label": "Discízia šľachových pošiev prsta",
 			"if": "vv.kod in ['5t7027']",
-			"value": 404,
+			"value": 413,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Parciálna fasciektómia jedného alebo dvoch prstov",
 			"if": "vv.kod in ['5t7223']",
-			"value": 437,
+			"value": 448,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Totálna fasciektómia izolovaná na dlani",
 			"if": "vv.kod in ['5t7230']",
-			"value": 473,
+			"value": 485,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Totálna fasciektómia 3 a viac prstov",
 			"if": "vv.kod in ['5t7234']",
-			"value": 473,
+			"value": 485,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Fasciektómia jedného prsta s jednou neurolýzou",
 			"if": "vv.kod in ['5t7241']",
-			"value": 473,
+			"value": 485,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Fasciektómia viac prstov s jednou neurolýzou",
 			"if": "vv.kod in ['5t7242']",
-			"value": 473,
+			"value": 485,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
