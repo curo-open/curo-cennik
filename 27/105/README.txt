@@ -5,20 +5,18 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────────────────────────┐
-│ Názov a hodnota   │ Popis                                          │
-├───────────────────┼────────────────────────────────────────────────┤
-│ IPP1 = 3.71       │ IPP1                                           │
-│ CB = 0.0336       │ Cena bodu                                      │
-│ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony                   │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ                                │
-│ CBEK = 0.035      │ Cena bodu el. výkony                           │
-│ PV = 0.0365       │ Psych výkony 820, 821, 822, 825, 841, 847, 867 │
-│ PVD = 0.0365      │ Psych výkony deti 826,842,845                  │
-│ NCB = 0           │ Navysena cena bodu                             │
-│ VV65 = 0          │ VV 65                                          │
-│ VV67 = 0          │ VV 67                                          │
-└───────────────────┴────────────────────────────────────────────────┘
+┌───────────────────┬──────────────────────────────┐
+│ Názov a hodnota   │ Popis                        │
+├───────────────────┼──────────────────────────────┤
+│ IPP1 = 3.9        │ IPP1                         │
+│ CB = 0.0353       │ Cena bodu                    │
+│ CBO = 0.04        │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01083 │ Cena bodu SVaLZ              │
+│ CBEK = 0.035      │ Cena bodu el. výkony         │
+│ NCB = 0           │ Navysena cena bodu           │
+│ VV65 = 0          │ VV 65                        │
+│ VV67 = 0          │ VV 67                        │
+└───────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -32,10 +30,12 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Vykon 60,62,63,163                            │ vv.kod in ['60','62','63','65','67','163']                   │
-│            null │ vv.bodyCelkom*CBO         │ Výkon 820;822;825;841                         │ vv.kod in ['820','821','822','825','826','841','842','845',' │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 820;822;825;841                         │ vv.kod in ['820','821','822','825','826','841','842','845',' │
 │                 │                           │                                               │ 847','867']                                                  │
 │            null │ vv.bodyCelkom*CBEK        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
-│            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
+│           10.71 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
+│              25 │ vv.pocet*cena             │ Výkon 899 - Nadväzná psychoterapia v psychiat │ vv.kod in ['899']                                            │
+│                 │                           │ rii                                           │                                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CBO         │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
@@ -47,7 +47,6 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             160 │ 1                                                                                                         │                           │
 │             420 │ 60                                                                                                        │                           │
 │             270 │ 62                                                                                                        │                           │
 │             210 │ 63                                                                                                        │                           │

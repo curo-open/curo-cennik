@@ -2,31 +2,23 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 3.71
+			"value": 3.9
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.0365
+			"value": 0.0353
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0323
+			"value": 0.04
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.00973
+			"value": 0.01083
 		},
 		"CBEK": {
 			"label": "Cena bodu el. výkony",
 			"value": 0.035
-		},
-		"PV": {
-			"label": "Psych výkony 820, 821, 822, 825, 841, 847, 867",
-			"value": 0.0365
-		},
-		"PVD": {
-			"label": "Psych výkony deti 826,842,845",
-			"value": 0.0365
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
@@ -54,7 +46,7 @@
 			"label": "Výkon 820;822;825;841",
 			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{
@@ -67,7 +59,14 @@
 		{
 			"label": "Výkon 629b",
 			"if": "vv.kod in ['629b']",
-			"value": 10.2,
+			"value": 10.71,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 899 - Nadväzná psychoterapia v psychiatrii",
+			"if": "vv.kod in ['899']",
+			"value": 25,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -102,12 +101,6 @@
 	],
 	"kontrola": [],
 	"body": {
-		"1": [
-			{
-				"cond": "",
-				"value": 160
-			}
-		],
 		"60": [
 			{
 				"cond": "",

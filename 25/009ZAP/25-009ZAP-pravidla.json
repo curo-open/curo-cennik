@@ -6,7 +6,7 @@
 		},
 		"KP": {
 			"label": "Kapitačná platba",
-			"value": 2.13
+			"value": 2.24
 		},
 		"EL_POBOCKA": {
 			"label": "Používa el. pobočku ?",
@@ -26,7 +26,7 @@
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.009574
+			"value": 0.01005
 		}
 	},
 	"pacient": [
@@ -49,7 +49,7 @@
 		{
 			"label": "Preventívne zdravotné výkony",
 			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -70,21 +70,21 @@
 		{
 			"label": "Preventivné výkony 5303,5305,5308",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305','5308']",
-			"value": 0.009574,
+			"value": 0.01005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 5303,5305,5308",
 			"if": "vv.kod in ['5303','5305','5308']",
-			"value": 0.009574,
+			"value": 0.01005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5808",
 			"if": "vv.kod in ['5808']",
-			"value": 0.009574,
+			"value": 0.01005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -192,7 +192,7 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 500
+				"value": 420
 			}
 		],
 		"62": [
