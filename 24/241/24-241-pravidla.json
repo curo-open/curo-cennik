@@ -1,24 +1,8 @@
 {
 	"params": {
-		"IPP1": {
-			"label": "IPP1",
-			"value": 1.26
-		},
-		"IPP2": {
-			"label": "IPP2",
-			"value": 2.03
-		},
-		"IPP3": {
-			"label": "IPP3",
-			"value": 3.43
-		},
-		"LIMIT": {
-			"label": "Limit",
-			"value": 2235
-		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.03005
+			"value": 0.038462
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -69,8 +53,8 @@
 		{
 			"label": "Výkon 867,869",
 			"if": "vv.kod in ['867','869']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.03005,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -125,19 +109,19 @@
 		"70": [
 			{
 				"cond": "",
-				"value": 40
+				"value": 50
 			}
 		],
 		"867": [
 			{
 				"cond": "",
-				"value": 1560
+				"value": 1200
 			}
 		],
 		"869": [
 			{
 				"cond": "",
-				"value": 1560
+				"value": 1200
 			}
 		],
 		"3351": [
@@ -149,19 +133,19 @@
 		"1b": [
 			{
 				"cond": "",
-				"value": 160
+				"value": 190
 			}
 		],
 		"1c": [
 			{
 				"cond": "",
-				"value": 1000
+				"value": 1200
 			}
 		],
 		"11a": [
 			{
 				"cond": "",
-				"value": 210
+				"value": 250
 			}
 		],
 		"15d": [

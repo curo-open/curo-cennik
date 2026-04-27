@@ -8,13 +8,13 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────┐
 │ Názov a hodnota    │ Popis           │
 ├────────────────────┼─────────────────┤
-│ CB = 0.0268        │ Cena bodu       │
-│ CBEU = 0.0268      │ Cena bodu       │
-│ CBSVALZ = 0.008105 │ Cena bodu SVaLZ │
-│ IPP1 = 1.8         │ IPP1            │
-│ IPP2 = 2.9         │ IPP2            │
-│ IPP3 = 4.9         │ IPP3            │
-│ IPP4 = 7.9         │ IPP4            │
+│ CB = 0.03553       │ Cena bodu       │
+│ CBEU = 0           │ Cena bodu       │
+│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ │
+│ IPP1 = 2.48        │ IPP1            │
+│ IPP2 = 3.98        │ IPP2            │
+│ IPP3 = 6.74        │ IPP3            │
+│ IPP4 = 9.74        │ IPP4            │
 │ LIMIT = 0          │ Limit           │
 └────────────────────┴─────────────────┘
 
@@ -32,12 +32,12 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60'] && EL_POBOCKA                               │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62'] && EL_POBOCKA                               │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63'] && EL_POBOCKA                               │
-│           0.026 │ vv.bodyCelkom*cena        │ Výkon telemedicíny                            │ vv.kod in ['11a','1b','70','1c']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ Výkon telemedicíny                            │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│            null │ vv.bodyCelkom*CBEU        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
@@ -46,9 +46,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             420 │ 60                                                                                                        │                           │
-│             270 │ 62                                                                                                        │                           │
-│             210 │ 63                                                                                                        │                           │
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │

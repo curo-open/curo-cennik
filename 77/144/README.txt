@@ -10,7 +10,7 @@ Autor: curo.sk
 ├───────────────────┼──────────────────────────────┤
 │ CB = 0.0336       │ Cena bodu                    │
 │ CBO = 0.038       │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.00973 │ Cena bodu SVaLZ              │
+│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
 └───────────────────┴──────────────────────────────┘
 
 
@@ -27,7 +27,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*(CB+NCB)    │ Vykon 60,62,63,163                            │ vv.kod in ['60','62','63','65','67','163']                   │
 │            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 820;822;825;841                         │ vv.kod in ['820','821','822','825','826','841','842','845',' │
 │                 │                           │                                               │ 847','867']                                                  │
-│            null │ vv.bodyCelkom*CBEK        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
+│           0.035 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
 │            10.2 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

@@ -8,10 +8,10 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────┐
 │ Názov a hodnota │ Popis                 │
 ├─────────────────┼───────────────────────┤
-│ IPP1 = 0        │ IPP1                  │
-│ IPP2 = 0        │ IPP2                  │
-│ IPP3 = 0        │ IPP3                  │
-│ IPP4 = 0        │ IPP4                  │
+│ IPP1 = 2.48     │ IPP1                  │
+│ IPP2 = 3.98     │ IPP2                  │
+│ IPP3 = 6.74     │ IPP3                  │
+│ IPP4 = 9.74     │ IPP4                  │
 │ LIMIT = 0       │ Limit                 │
 │ EL_POBOCKA = 0  │ Používa el. pobočku ? │
 └─────────────────┴───────────────────────┘
@@ -27,20 +27,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60'] && EL_POBOCKA                               │
-│            null │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62'] && EL_POBOCKA                               │
-│            null │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63'] && EL_POBOCKA                               │
-│            null │ vv.pocet*420*cena         │ Výkon 60;62;63                                │ vv.kod in ['60']                                             │
-│            null │ vv.pocet*270*cena         │ Výkon 60;62;63                                │ vv.kod in ['62']                                             │
-│            null │ vv.pocet*210*cena         │ Výkon 60;62;63                                │ vv.kod in ['63']                                             │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60'] && EL_POBOCKA                               │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62'] && EL_POBOCKA                               │
+│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63'] && EL_POBOCKA                               │
+│           0.035 │ vv.bodyCelkom*cena        │ Výkon telemedicíny                            │ vv.kod in ['11a','1b','70','1c']                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│            null │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ EL_POBOCKA && p.typ in ['BE','CU','EU']                      │
-│            null │ vv.bodyCelkom*cena        │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│            null │ vv.bodyCelkom*cena        │ Výkony                                        │ EL_POBOCKA                                                   │
-│            null │ vv.bodyCelkom*cena        │ Výkony                                        │ 1                                                            │
+│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
+│            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
@@ -48,7 +44,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│              40 │ 70                                                                                                        │                           │
+│             500 │ 60                                                                                                        │                           │
+│             310 │ 62                                                                                                        │                           │
+│             250 │ 63                                                                                                        │                           │
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
