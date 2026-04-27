@@ -8,14 +8,15 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────────────────────────────────┐
 │ Názov a hodnota    │ Popis                                                   │
 ├────────────────────┼─────────────────────────────────────────────────────────┤
-│ CB = 0.04          │ Cena bodu                                               │
+│ CB = 0.036         │ Cena bodu                                               │
+│ CBO = 0.0407       │ Cena bodu ostatné ŠAS výkony                            │
 │ CBE = 0.035        │ Cena bodu el. výkony                                    │
-│ CBSVALZ = 0.015    │ Cena bodu SVaLZ                                         │
+│ CBSVALZ = 0.00973  │ Cena bodu SVaLZ                                         │
 │ CBSVALZP = 0.00924 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │
-│ IPP1 = 1.8         │ IPP1                                                    │
-│ IPP2 = 2.9         │ IPP5                                                    │
-│ IPP3 = 4.9         │ IPP6                                                    │
-│ IPP4 = 4.9         │ IPP7                                                    │
+│ IPP1 = 3.71        │ IPP1                                                    │
+│ IPP2 = 3.18        │ IPP2                                                    │
+│ IPP3 = 2.12        │ IPP3                                                    │
+│ NCB = 0            │ Navysena cena bodu                                      │
 └────────────────────┴─────────────────────────────────────────────────────────┘
 
 
@@ -36,13 +37,13 @@ Autor: curo.sk
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
 │            null │ IPP6                      │ Pripočitateľné položky                        │ vv.kod=='IPP6'                                               │
 │            null │ IPP7                      │ Pripočitateľné položky                        │ vv.kod=='IPP7'                                               │
-│            2.98 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
-│          0.0345 │ vv.bodyCelkom*cena        │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
-│           0.029 │ vv.bodyCelkom*cena        │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
+│            2.98 │ vv.pocet*(cena+NCB)       │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkon 60,62,63,65                             │ vv.kod in ['60','62','63']                                   │
+│           0.029 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │           0.035 │ vv.bodyCelkom*cena        │ Výkon 1b,11a,70                               │ vv.kod in ['1b','11a','70']                                  │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CB          │ Preventívne vykony                            │ 1                                                            │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
+│            null │ vv.bodyCelkom*(CB+NCB)    │ Vykony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
