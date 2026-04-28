@@ -2,23 +2,23 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.038
+			"value": 0.0353
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0336
+			"value": 0.04
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01031
+			"value": 0.01083
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
-			"value": 0.01107
+			"value": 0.01162
 		},
 		"NCB": {
 			"label": "Navysena cena bodu",
-			"value": 0.0026
+			"value": 0
 		}
 	},
 	"pacient": [],
@@ -34,7 +34,7 @@
 			"label": "Výkony 60,62,63",
 			"if": "vv.kod in ['60','62','63','60r',]",
 			"value": null,
-			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"calc": "vv.bodyCelkom*(CBO+NCB)",
 			"instruction": null
 		},
 		{

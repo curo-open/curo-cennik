@@ -2,15 +2,15 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.038
+			"value": 0.0353
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0336
+			"value": 0.04
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01063
+			"value": 0.0116
 		},
 		"CBSVALZSP": {
 			"label": "Cena bodu SVaLZ SP",
@@ -22,15 +22,15 @@
 		},
 		"IPP1": {
 			"label": "IPP1",
-			"value": 3.71
+			"value": 3.9
 		},
 		"IPP2": {
 			"label": "IPP2",
-			"value": 3.18
+			"value": 3.34
 		},
 		"IPP3": {
 			"label": "IPP3",
-			"value": 2.12
+			"value": 2.23
 		},
 		"LIMIT": {
 			"label": "Limit",
@@ -84,21 +84,28 @@
 		{
 			"label": "ŠAS",
 			"if": "vv.kod in ['15d']",
-			"value": 0.006666,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
 		},
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
-			"value": 0.01712,
+			"value": 0.01798,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Respiračná fyzioterapia",
 			"if": "vv.kod in ['3F00091','3F00091','3F00091']",
-			"value": 0.01712,
+			"value": 0.01798,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

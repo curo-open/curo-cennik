@@ -8,14 +8,14 @@ Autor: curo.sk
 ┌─────────────────────┬──────────────────────────────┐
 │ Názov a hodnota     │ Popis                        │
 ├─────────────────────┼──────────────────────────────┤
-│ CB = 0.038          │ Cena bodu                    │
-│ CBO = 0.0336        │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.01063   │ Cena bodu SVaLZ              │
+│ CB = 0.0353         │ Cena bodu                    │
+│ CBO = 0.04          │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.0116    │ Cena bodu SVaLZ              │
 │ CBSVALZSP = 0.01662 │ Cena bodu SVaLZ SP           │
 │ NCB = 0.0026        │ Navysena cena bodu           │
-│ IPP1 = 3.71         │ IPP1                         │
-│ IPP2 = 3.18         │ IPP2                         │
-│ IPP3 = 2.12         │ IPP3                         │
+│ IPP1 = 3.9          │ IPP1                         │
+│ IPP2 = 3.34         │ IPP2                         │
+│ IPP3 = 2.23         │ IPP3                         │
 │ LIMIT = 0           │ Limit                        │
 └─────────────────────┴──────────────────────────────┘
 
@@ -36,10 +36,11 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*(CB+NCB)    │ ŠAS                                           │ vv.kod in ['63']                                             │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ ŠAS                                           │ vv.kod in ['60r']                                            │
 │            null │ vv.bodyCelkom*(CB+NCB)    │ ŠAS                                           │ vv.kod in ['65']                                             │
-│        0.006666 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│         0.01712 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│            0.02 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
+│           0.035 │ vv.bodyCelkom*CB          │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│         0.01798 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
-│         0.01712 │ vv.bodyCelkom*cena        │ Respiračná fyzioterapia                       │ vv.kod in ['3F00091','3F00091','3F00091']                    │
+│         0.01798 │ vv.bodyCelkom*cena        │ Respiračná fyzioterapia                       │ vv.kod in ['3F00091','3F00091','3F00091']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │

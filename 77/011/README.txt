@@ -5,14 +5,15 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────────────┐
-│ Názov a hodnota   │ Popis                        │
-├───────────────────┼──────────────────────────────┤
-│ CB = 0.038        │ Cena bodu                    │
-│ CBO = 0.0336      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
-│ NCB = 0           │ Navysena cena bodu           │
-└───────────────────┴──────────────────────────────┘
+┌──────────────────────┬──────────────────────────────┐
+│ Názov a hodnota      │ Popis                        │
+├──────────────────────┼──────────────────────────────┤
+│ CB = 0.0353          │ Cena bodu                    │
+│ CBO = 0.04           │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01083    │ Cena bodu SVaLZ              │
+│ CBSVALZUSG = 0.01162 │ Cena bodu SVaLZ USG          │
+│ NCB = 0              │ Navysena cena bodu           │
+└──────────────────────┴──────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -26,7 +27,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
-│            null │ vv.bodyCelkom*(CB+NCB)    │ Výkony 60,62,63                               │ vv.kod in ['60','62','63']                                   │
+│            null │ vv.bodyCelkom*(CBO+NCB)   │ Výkony 60,62,63                               │ vv.kod in ['60','62','63','60r',]                            │
 │            0.02 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
 │          0.0055 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │           0.022 │ vv.bodyCelkom*cena        │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
