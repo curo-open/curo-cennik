@@ -22,12 +22,12 @@ Autor: curo.sk
 ┌───────────────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis                     │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├───────────────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ do  1 roku                │         10.14 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
-│ od  1 do 2 rokov vratane  │             9 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
-│ od  3 do 5 rokov vratane  │          7.68 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
-│ od  6 do 14 rokov vratane │          5.26 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 15)  │
-│ od 15 do 18 rokov vratane │          3.54 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 19) │
-│ od 19 do 25 rokov vratane │           3.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 26) │
+│ do  1 roku                │         10.55 │ IDK+cena │ p.kapitacia && p|vekMedzi(0, 1)   │
+│ od  1 do 2 rokov vratane  │          9.36 │ IDK+cena │ p.kapitacia && p|vekMedzi(1, 3)   │
+│ od  3 do 5 rokov vratane  │          7.99 │ IDK+cena │ p.kapitacia && p|vekMedzi(3, 6)   │
+│ od  6 do 14 rokov vratane │          5.47 │ IDK+cena │ p.kapitacia && p|vekMedzi(6, 15)  │
+│ od 15 do 18 rokov vratane │          3.68 │ IDK+cena │ p.kapitacia && p|vekMedzi(15, 19) │
+│ od 19 do 25 rokov vratane │          3.43 │ IDK+cena │ p.kapitacia && p|vekMedzi(19, 26) │
 └───────────────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -40,9 +40,9 @@ Autor: curo.sk
 │                 │                           │                                               │ '145a','146','146a','146b','146c','148','148a','148b','148c' │
 │                 │                           │                                               │ ,'149','149a','149b','149c','149d','149f','159b','950','951' │
 │                 │                           │                                               │ ,'952','953']                                                │
-│          0.0931 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.diagnoza in ['P07.00','P07.01','P07.02','P07.10','P07.11' │
-│                 │                           │                                               │ ] && vv.kod in ['143','143a','144','145','145a','146','146a' │
-│                 │                           │                                               │ ,'146b','146c','148']                                        │
+│          0.0931 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony pre P07*         │ vv.diagnoza in ['P07.00','P07.01','P07.02','P07.10','P07.11' │
+│                 │                           │                                               │ ,'P07.12'] && vv.kod in ['143','143a','144','145','145a','14 │
+│                 │                           │                                               │ 6','146a','146b','146c','148']                               │
 │          0.0845 │ vv.bodyCelkom*cena        │ Výkon 159b                                    │ vv.diagnoza=='Z00.1' && vv.kod in ['159b']                   │
 │          0.0845 │ vv.bodyCelkom*cena        │ Výkon 3671                                    │ vv.diagnoza in ['Z00.1','Z00.0','Z52.10'] && vv.kod in ['367 │
 │                 │                           │                                               │ 1']                                                          │
