@@ -8,7 +8,7 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────────────┐
 │ Názov a hodnota    │ Popis                       │
 ├────────────────────┼─────────────────────────────┤
-│ IDK = 1.15         │ NASTAVENIA IDK              │
+│ IDK = 1.24         │ NASTAVENIA IDK              │
 │ CB = 0.0318        │ Cena bodu Kapitovany SK/EU  │
 │ CBSVALZ = 0.009574 │ Cena bodu SVaLZ             │
 │ CBEUNK = 0.035     │ Cena bodu Nekapitovany      │
@@ -21,15 +21,15 @@ Autor: curo.sk
 ┌─────────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                   │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek do 1 roku života    │         12.53 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ vek od 1 do 2 vrátane   │         12.41 │ IDK+cena │ p|vekMedzi(1, 3)   │
-│ vek od 3 do 5 vrátane   │          8.59 │ IDK+cena │ p|vekMedzi(3, 6)   │
-│ vek od 6 do 9 vrátane   │          6.21 │ IDK+cena │ p|vekMedzi(6, 10)  │
-│ vek od 10 do 14 vrátane │          5.69 │ IDK+cena │ p|vekMedzi(10, 15) │
-│ vek od 15 do 17 vrátane │          5.37 │ IDK+cena │ p|vekMedzi(15, 18) │
-│ vek od 18 do 18 vrátane │          4.83 │ IDK+cena │ p|vekMedzi(18, 19) │
-│ vek od 19 do 19 vrátane │          4.83 │ IDK+cena │ p|vekMedzi(19, 20) │
-│ vek od 20 do 25 vrátane │          3.74 │ IDK+cena │ p|vekMedzi(20, 26) │
+│ vek do 1 roku života    │         13.06 │ IDK+cena │ p|vekMedzi(0, 1)   │
+│ vek od 1 do 2 vrátane   │         12.94 │ IDK+cena │ p|vekMedzi(1, 3)   │
+│ vek od 3 do 5 vrátane   │          8.96 │ IDK+cena │ p|vekMedzi(3, 6)   │
+│ vek od 6 do 9 vrátane   │          6.47 │ IDK+cena │ p|vekMedzi(6, 10)  │
+│ vek od 10 do 14 vrátane │          5.93 │ IDK+cena │ p|vekMedzi(10, 15) │
+│ vek od 15 do 17 vrátane │           5.6 │ IDK+cena │ p|vekMedzi(15, 18) │
+│ vek od 18 do 18 vrátane │          5.04 │ IDK+cena │ p|vekMedzi(18, 19) │
+│ vek od 19 do 19 vrátane │          5.04 │ IDK+cena │ p|vekMedzi(19, 20) │
+│ vek od 20 do 25 vrátane │           3.9 │ IDK+cena │ p|vekMedzi(20, 26) │
 └─────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 

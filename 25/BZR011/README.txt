@@ -13,7 +13,7 @@ Autor: curo.sk
 │ IPP3 = 4.04           │ IPP3                                                    │
 │ LIMIT = 7.04          │ Limit                                                   │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ?                                   │
-│ CB = 0.03553          │ Cena bodu                                               │
+│ CB = 0.03731          │ Cena bodu                                               │
 │ CBP = 0.041           │ Cena bodu preventívne výkony                            │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ                                         │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA │

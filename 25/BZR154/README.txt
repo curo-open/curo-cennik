@@ -9,7 +9,7 @@ Autor: curo.sk
 │ Názov a hodnota       │ Popis              │
 ├───────────────────────┼────────────────────┤
 │ LIMIT = 2235          │ Limit              │
-│ CB = 0.03553          │ Cena bodu          │
+│ CB = 0.03731          │ Cena bodu          │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ    │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZUSG │
 │ IPP1 = 1.49           │ IPP1               │
