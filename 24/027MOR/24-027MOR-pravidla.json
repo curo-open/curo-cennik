@@ -1,0 +1,154 @@
+{
+	"params": {
+		"LIMIT": {
+			"label": "Limit",
+			"value": 0
+		},
+		"CB": {
+			"label": "Cena bodu",
+			"value": 0.03005
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009737
+		},
+		"CBSVALZSP": {
+			"label": "Cena bodu SVaLZ SP",
+			"value": 0.017175
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['60']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['62']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.kod in ['63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15D']",
+			"value": 0.0193,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZSP",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['1b','1c','11a','70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Príplatok za poskytnutie liečebnej rehabilitačnej starostlivosti v domácom prostredí",
+			"if": "vv.kod in ['PRIPL']",
+			"value": 20,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 400
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 50
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 190
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "FBLR"
+}
