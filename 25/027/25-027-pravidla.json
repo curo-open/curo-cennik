@@ -110,7 +110,7 @@
 			"label": "SVALZ výkony",
 			"if": "vv.kod in ['509a','512','513','514a','516','518','522','523a','530','531','532','533a','540','541','542']",
 			"value": 0.016402,
-			"calc": "vv.bodyCelkom*cena",
+			"calc": "vv.bodyCelkom*CBSVALZSP",
 			"instruction": null
 		},
 		{
