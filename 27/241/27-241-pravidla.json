@@ -11,6 +11,10 @@
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01031
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		}
 	},
 	"pacient": [],

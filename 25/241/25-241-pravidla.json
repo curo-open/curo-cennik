@@ -1,5 +1,17 @@
 {
 	"params": {
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.03553
+		},
+		"CBEU": {
+			"label": "Cena bodu ",
+			"value": 0
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009159
+		},
 		"IPP1": {
 			"label": "IPP1",
 			"value": 2.48

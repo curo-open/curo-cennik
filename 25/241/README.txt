@@ -5,16 +5,19 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌─────────────────┬───────────────────────┐
-│ Názov a hodnota │ Popis                 │
-├─────────────────┼───────────────────────┤
-│ IPP1 = 2.48     │ IPP1                  │
-│ IPP2 = 3.98     │ IPP2                  │
-│ IPP3 = 6.74     │ IPP3                  │
-│ IPP4 = 9.74     │ IPP4                  │
-│ LIMIT = 0       │ Limit                 │
-│ EL_POBOCKA = 0  │ Používa el. pobočku ? │
-└─────────────────┴───────────────────────┘
+┌────────────────────┬───────────────────────┐
+│ Názov a hodnota    │ Popis                 │
+├────────────────────┼───────────────────────┤
+│ CB = 0.03553       │ Cena bodu             │
+│ CBEU = 0           │ Cena bodu             │
+│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
+│ IPP1 = 2.48        │ IPP1                  │
+│ IPP2 = 3.98        │ IPP2                  │
+│ IPP3 = 6.74        │ IPP3                  │
+│ IPP4 = 9.74        │ IPP4                  │
+│ LIMIT = 0          │ Limit                 │
+│ EL_POBOCKA = 0     │ Používa el. pobočku ? │
+└────────────────────┴───────────────────────┘
 
 
   CENY ZA PACIENTA
