@@ -1,0 +1,690 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Rigídna ezofagoskopia",
+			"if": "vv.kod in ['14N1101']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Flexibilná ezofagoskopia",
+			"if": "vv.kod in ['14N1102']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ezofagoskopia, iná",
+			"if": "vv.kod in ['14N110X']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ezofagogastroskopia",
+			"if": "vv.kod in ['14N111']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ezofagogastroduodenoskopia",
+			"if": "vv.kod in ['14N112']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Jejunoskopia",
+			"if": "vv.kod in ['14N113']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intestinoskopia \"push\" technikou",
+			"if": "vv.kod in ['14N1140']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intestinoskopia \"push-pull-back\" technikou",
+			"if": "vv.kod in ['14N1141']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Intestinoskopia, ostatné",
+			"if": "vv.kod in ['14N114X']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ezofagoskopia stómický prístup",
+			"if": "vv.kod in ['14N121']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Jejunoskopia stómický prístup",
+			"if": "vv.kod in ['14N125']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická endoskopia ostatnej hornej časti tráviaceho systému, stómický prístup",
+			"if": "vv.kod in ['14N12X']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Chromoendoskopia hornej časti tráviaceho systému",
+			"if": "vv.kod in ['14N132']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Parciálna kolonoskopia",
+			"if": "vv.kod in ['14N2100']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna kolonoskopia bez ileoskopie",
+			"if": "vv.kod in ['14N2101']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Totálna kolonoskopia s ileoskopiou",
+			"if": "vv.kod in ['14N2102']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Sigmoideoskopia (okrem stómického prístupu)",
+			"if": "vv.kod in ['14N2103']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Chromoendoskopia hrubého čreva",
+			"if": "vv.kod in ['14N2104']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné diagnostické endoskopie dolnej časti tráviaceho systému, okrem stómického prístupu",
+			"if": "vv.kod in ['14N210X']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická ileoskopia, stómický prístup",
+			"if": "vv.kod in ['14N2110']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická kolonoskopia, stómický prístup",
+			"if": "vv.kod in ['14N2111']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická sigmoideoskopia, stómický prístup",
+			"if": "vv.kod in ['14N2112']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická proktoskopia, stómický prístup",
+			"if": "vv.kod in ['14N2113']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Diagnostická rektoskopia, stómický prístup",
+			"if": "vv.kod in ['14N2114']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ostatné diagnostické endoskopie dolnej časti tráviaceho systému, stómický prístup",
+			"if": "vv.kod in ['14N211X']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Proktoskopia",
+			"if": "vv.kod in ['14N2120']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Flexibilná rektoskopia",
+			"if": "vv.kod in ['14N2121']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Rigídna rektoskopia",
+			"if": "vv.kod in ['14N2122']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva pažeráka, polypektómia 1-2 polypov slučkou",
+			"if": "vv.kod in ['5N0321']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva pažeráka, polypektómia viac ako 2 polypov slučkou",
+			"if": "vv.kod in ['5N0322']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva pažeráka, endoskopická resekcia mukózy",
+			"if": "vv.kod in ['5N0323']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická sklerotizácia pažerákových varixov",
+			"if": "vv.kod in ['5N091']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Opich pažerákových varixov",
+			"if": "vv.kod in ['5N092']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická ligatúra (Banding) pažerákových varixov",
+			"if": "vv.kod in ['5N09A']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endo-loop pažeráka",
+			"if": "vv.kod in ['5N09C']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická injekcia do pažeráka",
+			"if": "vv.kod in ['5N09E']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorobou zmeneného žalúdočného tkaniva, polypektómia 1-2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N1121']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorobou zmeneného žalúdočného tkaniva, polypektómia viac ako 2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N1122']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorobou zmeneného žalúdočného tkaniva, endoskopická resekcia mukózy",
+			"if": "vv.kod in ['5N1123']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Ligatúra (banding) varixov žalúdka, endoskopicky",
+			"if": "vv.kod in ['5N1976']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endo-Loop žalúdka, endoskopicky",
+			"if": "vv.kod in ['5N19C6']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická excízia chorého tkaniva tenkého čreva, jednoduchá (Push-technika) polypektómia 1-2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N21711']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická excízia chorého tkaniva tenkého čreva, jednoduchá (Push-technika) polypektómia viac ako 2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N21712']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická excízia chorého tkaniva tenkého čreva, jednoduchá (Push-technika) endoskopická resekcia mukózy",
+			"if": "vv.kod in ['5N21713']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva hrubého čreva, polypektómia 1-2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N2221']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva hrubého čreva, polypektómia viac ako 2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N2222']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva hrubého čreva, endoskopická resekcia mukózy",
+			"if": "vv.kod in ['5N2223']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva hrubého čreva, ostatné",
+			"if": "vv.kod in ['5N222X']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endo-Loop čreva, endoskopicky",
+			"if": "vv.kod in ['5N39C6']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Peranálna lokálna excízia a deštrukcia chorého tkaniva konečníka, resekcia slučkou peranálne",
+			"if": "vv.kod in ['5N4100']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Peranálna lokálna excízia",
+			"if": "vv.kod in ['5N4106']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Peranálna lokálna excízia a deštrukcia chorého tkaniva konečníka, resekcia slučkou endoskopicko-mikrochirurgicky",
+			"if": "vv.kod in ['5N4107']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Peranálna lokálna excízia a deštrukcia chorého tkaniva konečníka, resekcia slučkou, ostatné",
+			"if": "vv.kod in ['5N410X']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva konečníka, polypektómia 1-2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N4121']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva konečníka, polypektómia viac ako 2 polypov pomocou slučky",
+			"if": "vv.kod in ['5N4122']",
+			"value": 199,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva konečníka, endoskopická resekcia mukózy",
+			"if": "vv.kod in ['5N4123']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická excízia chorého tkaniva análneho kanála",
+			"if": "vv.kod in ['5N44C']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Lokálna endoskopická deštrukcia chorého tkaniva análneho kanála",
+			"if": "vv.kod in ['5N44D']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endo-Loop konečníka",
+			"if": "vv.kod in ['5N49E']",
+			"value": 353,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementu zo žlčových ciest košíkom",
+			"if": "vv.kod in ['5N6320']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementu zo žlčových ciest balónovým katétrom",
+			"if": "vv.kod in ['5N6321']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementu zo žlčových ciest mechanickou litotripsiou",
+			"if": "vv.kod in ['5N6322']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementu zo žlčových ciest elektrohydraulickou litotripsiou",
+			"if": "vv.kod in ['5N6323']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementu zo žlčových ciest, ostatné",
+			"if": "vv.kod in ['5N632X']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické zavedenie drenáže do žlčových ciest",
+			"if": "vv.kod in ['5N635']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické vloženie protézy bez samoexpanzie do žlčových ciest, jedna protéza",
+			"if": "vv.kod in ['5N63F1']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické vloženie protézy bez samoexpanzie do žlčových ciest, dve alebo viac protéz",
+			"if": "vv.kod in ['5N63F2']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická výmena protézy bez samoexpanzie v žlčových cestách, jedna protéza",
+			"if": "vv.kod in ['5N63H1']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická výmena protézy bez samoexpanzie v žlčových cestách, dve alebo viac protéz",
+			"if": "vv.kod in ['5N63H2']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pankreatogastrostómia",
+			"if": "vv.kod in ['5N7161']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pankreatoduodenostómia",
+			"if": "vv.kod in ['5N7162']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pankreatojejunostómia",
+			"if": "vv.kod in ['5N7163']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Vnútorná drenáž pankreasu a derivácia pseudocysty pankreasu, ostatné",
+			"if": "vv.kod in ['5N716X']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementov z pankreatických ciest košíkom",
+			"if": "vv.kod in ['5N7320']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementov z pankreatických ciest balónovým katetétrom",
+			"if": "vv.kod in ['5N7321']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementov",
+			"if": "vv.kod in ['5N7322']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementov z pankreatických ciest elektrohydraulickou litotripsiou",
+			"if": "vv.kod in ['5N7323']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementov z pankreatických ciest elektrohydraulickou litotripsiou a použitím laseru",
+			"if": "vv.kod in ['5N7324']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementov z pankreatických ciest laserovou litotripsiou",
+			"if": "vv.kod in ['5N7325']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické odstránenie konkrementov z pankreatických ciest, ostatné",
+			"if": "vv.kod in ['5N732X']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická deštrukcia na pankreatických cestách",
+			"if": "vv.kod in ['5N734']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická drenáž na pankreatických cestách",
+			"if": "vv.kod in ['5N735']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické vloženie samoexpandujúcej protézy na pankreatických cestách",
+			"if": "vv.kod in ['5N73A0']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické vloženie protézy bez samoexpanzie na pankreatických cestách",
+			"if": "vv.kod in ['5N73A1']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická výmena samoexpandujúcej protézy na pankreatických cestách",
+			"if": "vv.kod in ['5N73B0']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopická výmena protézy bez samoexpanzie na pankreatických cestách",
+			"if": "vv.kod in ['5N73B1']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické operácie na pankreatických cestách, prístup cez retrográdnu endoskopiu",
+			"if": "vv.kod in ['5N73G']",
+			"value": 375,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endoskopické operácie",
+			"if": "vv.kod in ['5N73X']",
+			"value": 331,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia pažeráka",
+			"if": "vv.kod in ['3131412']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia žalúdka",
+			"if": "vv.kod in ['3131413']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia dvanástnika",
+			"if": "vv.kod in ['3131414']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia žlčových ciest",
+			"if": "vv.kod in ['3131415']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia pankreasu",
+			"if": "vv.kod in ['3131416']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia hrubého čreva",
+			"if": "vv.kod in ['3131417']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia konečníka",
+			"if": "vv.kod in ['3131418']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia brucha, laparoskopická sonografia",
+			"if": "vv.kod in ['3131419']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Endosonografia retroperitonea",
+			"if": "vv.kod in ['313141A']",
+			"value": 244,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "gastroenterologia"
+}
