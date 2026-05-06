@@ -1,0 +1,435 @@
+{
+	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 2.48
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 3.98
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 6.74
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 9.74
+		},
+		"IPPD": {
+			"label": "IPPD",
+			"value": 5
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 75900
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.03553
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.041
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009159
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ USG",
+			"value": 0.009574
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Výkony 60,62,63",
+			"if": "vv.kod in ['60','62','63' ,'65','66','67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Vykonanie jednoduchého zdravotného výkonu",
+			"if": "vv.kod in ['4a']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "USG",
+			"if": "vv.kod in ['5734','5735','5736','5737','5738','5739','5740','5741','5742','5743']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "EKG",
+			"if": "vv.kod in ['5702','5702a','15c']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZUSG",
+			"instruction": null
+		},
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "špec. elektronické výkony",
+			"if": "vv.kod in ['70','1b','1c','11a']",
+			"value": 0.035,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['1B05011','1B05012','1B05014']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['1B06025','1A02009','1A02012','A03007']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['1A02013']",
+			"value": 6.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['1A02011']",
+			"value": 6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0003']",
+			"value": 27,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.65,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0008']",
+			"value": 7.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 15d",
+			"if": "vv.kod in ['15d']",
+			"value": 0.026,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPPD'",
+			"value": null,
+			"calc": "IPPD",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "p.typ in ['BE','CU','EU']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "ŠAS",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [
+		{
+			"label": "Výkon 250a,b nie je akceptovaný vo VšZP, použite 250X",
+			"if": "p.vek >= 0",
+			"check": "!d.vv|ma('kod in [\"250a\",\"250b\"]')",
+			"severity": 0
+		}
+	],
+	"body": {
+		"1": [
+			{
+				"cond": "",
+				"value": 80
+			}
+		],
+		"60": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 310
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"271": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"763P": [
+			{
+				"cond": "",
+				"value": 946
+			}
+		],
+		"763M": [
+			{
+				"cond": "",
+				"value": 946
+			}
+		],
+		"760SP": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760SN": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760PP": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760PN": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"763SP": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763SN": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763PP": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763PN": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763p": [
+			{
+				"cond": "",
+				"value": 946
+			}
+		],
+		"763m": [
+			{
+				"cond": "",
+				"value": 946
+			}
+		],
+		"760sp": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760sn": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760pp": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"760pn": [
+			{
+				"cond": "",
+				"value": 1500
+			}
+		],
+		"763sp": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763sn": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763pp": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"763pn": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"1B05011": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"1B05012": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"1A02009": [
+			{
+				"cond": "",
+				"value": 1000
+			}
+		],
+		"1A03007": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "diabetolog"
+}
