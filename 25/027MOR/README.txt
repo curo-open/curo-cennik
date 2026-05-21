@@ -12,7 +12,6 @@ Autor: curo.sk
 │ IPP2 = 3.98           │ IPP2                  │
 │ IPP3 = 6.74           │ IPP3                  │
 │ IPP4 = 9.74           │ IPP4                  │
-│ LIMIT = 0             │ Limit                 │
 │ EL_POBOCKA = 1        │ Používa el. pobočku ? │
 │ CB = 0.03694          │ Cena bodu             │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ       │
@@ -40,7 +39,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['63']                                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['65','66']                                        │
-│        0.016402 │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
+│        0.016402 │ vv.bodyCelkom*cena        │ SVALZ výkony                                  │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │                                               │ ','530','531','532','533a','540','541','542']                │
 │            null │ vv.bodyCelkom*CBSVALZSP   │ SVALZ výkony                                  │ vv.kod in ['532','533a','540','541','542']                   │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['503','504','505']                                │
