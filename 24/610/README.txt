@@ -29,9 +29,9 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            0.37 │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
-│           0.185 │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
-│            10.2 │ vv.pocet*cena             │ Návšteva sestry v rámci vyhľadávania TBC a ko │ vv.kod in ['25a']                                            │
+│            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
+│            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
+│           21.43 │ vv.pocet*cena             │ Návšteva sestry v rámci vyhľadávania TBC a ko │ vv.kod in ['25a']                                            │
 │                 │                           │ ntroly DDOT.                                  │                                                              │
 │            null │ vv.bodyCelkom*CB          │ Vyhodnotenie KOS a záverečná správa           │ vv.kod in ['3395']                                           │
 │            null │ vv.bodyCelkom*CB          │ Odmeranie krvného tlaku, pulzu a teploty      │ vv.kod in ['3407']                                           │
@@ -82,9 +82,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│             150 │ 3410                                                                                                      │                           │
 │             160 │ 3419                                                                                                      │                           │
 │             140 │ 3420                                                                                                      │                           │
 │             150 │ 3424                                                                                                      │                           │
+│             200 │ 3433                                                                                                      │                           │
 │             260 │ 3439                                                                                                      │                           │
 │             390 │ 3440                                                                                                      │                           │
 │             280 │ 3441                                                                                                      │                           │

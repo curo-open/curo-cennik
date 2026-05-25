@@ -38,21 +38,21 @@
 		{
 			"label": "Doprava:  do 60 km",
 			"if": "vv.kod in ['doprava'] && vv.pocet < 60",
-			"value": 0.37,
+			"value": null,
 			"calc": "vv.pocet*CBD",
 			"instruction": null
 		},
 		{
 			"label": "Doprava:  + 60 km",
 			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
-			"value": 0.185,
+			"value": null,
 			"calc": "vv.pocet*CBD60plus",
 			"instruction": null
 		},
 		{
 			"label": "Návšteva sestry v rámci vyhľadávania TBC a kontroly DDOT.",
 			"if": "vv.kod in ['25a']",
-			"value": 10.2,
+			"value": 21.43,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -276,6 +276,12 @@
 	],
 	"kontrola": [],
 	"body": {
+		"3410": [
+			{
+				"cond": "",
+				"value": 150
+			}
+		],
 		"3419": [
 			{
 				"cond": "",
@@ -292,6 +298,12 @@
 			{
 				"cond": "",
 				"value": 150
+			}
+		],
+		"3433": [
+			{
+				"cond": "",
+				"value": 200
 			}
 		],
 		"3439": [
