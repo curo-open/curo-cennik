@@ -16,10 +16,6 @@
 			"label": "IPP4",
 			"value": 9.64
 		},
-		"IPPD": {
-			"label": "IPPD",
-			"value": 5
-		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 0
@@ -128,13 +124,6 @@
 			"if": "vv.kod=='IPP4'",
 			"value": null,
 			"calc": "IPP4",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod=='IPPD'",
-			"value": null,
-			"calc": "IPPD",
 			"instruction": null
 		},
 		{

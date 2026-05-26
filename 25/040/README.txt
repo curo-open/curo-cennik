@@ -12,7 +12,6 @@ Autor: curo.sk
 │ IPP2 = 3.92           │ IPP2                │
 │ IPP3 = 6.64           │ IPP3                │
 │ IPP4 = 9.64           │ IPP4                │
-│ IPPD = 5              │ IPPD                │
 │ LIMIT = 0             │ Limit               │
 │ CB = 0.03466          │ Cena bodu           │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ     │
@@ -45,7 +44,6 @@ Autor: curo.sk
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│            null │ IPPD                      │ Pripočitateľné položky                        │ vv.kod=='IPPD'                                               │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
