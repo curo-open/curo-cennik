@@ -41,84 +41,84 @@
 		{
 			"label": "vek od 18 do 19",
 			"if": "p.kapitacia && p|vekMedzi(18, 19)",
-			"value": 4.92,
+			"value": 5.17,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 19 do 27",
 			"if": "p.kapitacia && p|vekMedzi(19, 27)",
-			"value": 3.28,
+			"value": 3.44,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 27 do 45",
 			"if": "p.kapitacia && p|vekMedzi(27, 45)",
-			"value": 3.41,
+			"value": 3.58,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 45 do 51",
 			"if": "p.kapitacia && p|vekMedzi(45, 51)",
-			"value": 3.46,
+			"value": 3.63,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 51 do 53",
 			"if": "p.kapitacia && p|vekMedzi(51, 53)",
-			"value": 3.83,
+			"value": 4.02,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 53 do 57",
 			"if": "p.kapitacia && p|vekMedzi(53, 57)",
-			"value": 4.43,
+			"value": 4.74,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 57 do 61",
 			"if": "p.kapitacia && p|vekMedzi(57, 61)",
-			"value": 4.94,
+			"value": 5.29,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 61 do 64",
 			"if": "p.kapitacia && p|vekMedzi(61, 64)",
-			"value": 5.76,
+			"value": 6.16,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 64 do 68",
 			"if": "p.kapitacia && p|vekMedzi(64, 68)",
-			"value": 6.09,
+			"value": 6.52,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 68 do 72",
 			"if": "p.kapitacia && p|vekMedzi(68, 72)",
-			"value": 6.35,
+			"value": 6.79,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 72 do 87",
 			"if": "p.kapitacia && p|vekMedzi(72, 87)",
-			"value": 7,
+			"value": 7.49,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 87+ ",
 			"if": "p.kapitacia && p|vekMedzi(87)",
-			"value": 7.96,
+			"value": 8.52,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
