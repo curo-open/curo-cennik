@@ -55,16 +55,16 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │            5.65 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702Z']                                   │
-│           0.084 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
-│           0.084 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│          0.0882 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
+│          0.0882 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
 │            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
-│           0.084 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
-│           18.08 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│          0.0882 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│           19.53 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
 │          0.0375 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
-│           0.084 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
+│          0.0882 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │           0.084 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['160R']                                           │
 │                 │                           │ jicajtov, hasičov a záchranárov - PP          │                                                              │
 │            5.98 │ vv.pocet*cena             │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5702R']                                          │
@@ -73,7 +73,7 @@ Autor: curo.sk
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','250bR','3525R','3592R','252bR','3784 │
 │                 │                           │                                               │ R','3671R','3679R','3693R','3692R','3674aR','3677aR','5051R' │
 │                 │                           │                                               │ ,'FotoR','PACSR']                                            │
-│              15 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['H0003','H0004']                                  │
+│            16.2 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['H0003','H0004']                                  │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
 │               5 │ vv.pocet*cena             │ Stratifikácia kardiovaskulárneho rizika       │ vv.kod in ['H0006']                                          │
 │            6.24 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
@@ -86,6 +86,7 @@ Autor: curo.sk
 │            11.6 │ vv.pocet*cena             │ Stanovenie Troponínu                          │ vv.kod in ['4485']                                           │
 │           19.78 │ vv.pocet*cena             │ N-terminálny fragment (NT-pro BNP)            │ vv.kod in ['44418']                                          │
 │            4.38 │ vv.pocet*cena             │ USG POCUS                                     │ vv.kod in ['5301']                                           │
+│            6.78 │ vv.pocet*cena             │ MoCA test                                     │ vv.kod in ['163']                                            │
 │               2 │ vv.pocet*cena             │ Delegovaný odber krvi  (vv. 250D)             │ vv.kod in ['250D','250d']                                    │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │

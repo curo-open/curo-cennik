@@ -276,7 +276,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 163",
+			"label": "MoCA test",
 			"if": "vv.kod in ['163']",
 			"value": 6.78,
 			"calc": "vv.pocet*cena",

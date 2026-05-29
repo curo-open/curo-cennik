@@ -211,14 +211,14 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159x','159z']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Cholesterol ako cast PP",
 			"if": "vv.kod in ['159b']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -246,14 +246,14 @@
 		{
 			"label": "Preventívne prehliadky",
 			"if": "vv.kod in ['160']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 18.08,
+			"value": 19.53,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -274,7 +274,7 @@
 		{
 			"label": "Určenie glykémie glukometrom",
 			"if": "vv.kod in ['3671']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -302,7 +302,7 @@
 		{
 			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
 			"if": "vv.kod in ['H0003','H0004']",
-			"value": 15,
+			"value": 16.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -373,6 +373,13 @@
 			"label": "USG POCUS",
 			"if": "vv.kod in ['5301']",
 			"value": 4.38,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "MoCA test",
+			"if": "vv.kod in ['163']",
+			"value": 6.78,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

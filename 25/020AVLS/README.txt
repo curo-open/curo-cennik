@@ -66,7 +66,7 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Očkovanie Covid (vv. 252L)                    │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid (vv. 252K)                    │ vv.kod in ['252K']                                           │
 │            4.78 │ vv.pocet*cena             │ Akútne EKG  (vv. 5702c)                       │ vv.kod in ['5702c']                                          │
-│            6.78 │ vv.pocet*cena             │ Výkon 163                                     │ vv.kod in ['163']                                            │
+│            6.78 │ vv.pocet*cena             │ MoCA test                                     │ vv.kod in ['163']                                            │
 │              12 │ vv.pocet*cena             │ TOKS pozitívny (vv. 159a)                     │ vv.kod in ['159a']                                           │
 │              12 │ vv.pocet*cena             │ TOKS negatívny  (vv. 159z)                    │ vv.kod in ['159z']                                           │
 │            3.02 │ vv.pocet*cena             │ TOKS znehodnotený  (vv. 159x)                 │ vv.kod in ['159x']                                           │

@@ -340,7 +340,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Kognitívny deficit",
+			"label": "MoCA test",
 			"if": "vv.kod in ['163']",
 			"value": 7.46,
 			"calc": "vv.pocet*cena",

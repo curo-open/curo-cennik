@@ -79,7 +79,7 @@ Autor: curo.sk
 │            7.43 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
 │             6.2 │ vv.pocet*cena             │ H0006                                         │ vv.kod in ['H0006']                                          │
 │            6.45 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
-│            7.46 │ vv.pocet*cena             │ Kognitívny deficit                            │ vv.kod in ['163']                                            │
+│            7.46 │ vv.pocet*cena             │ MoCA test                                     │ vv.kod in ['163']                                            │
 │            15.5 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10','H0003','H0004']                             │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
 │           30.85 │ vv.pocet*cena             │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['160R']                                           │
