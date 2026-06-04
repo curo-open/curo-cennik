@@ -23,90 +23,94 @@
 		"PP50": {
 			"label": "PP50",
 			"value": 10
+		},
+		"EDU": {
+			"label": "EDU",
+			"value": 2
 		}
 	},
 	"pacient": [
 		{
 			"label": "vek do 18 do 19",
 			"if": "p|vekMedzi(18, 19)",
-			"value": 5.09,
+			"value": 5.17,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 19 do 27",
 			"if": "p|vekMedzi(19, 27)",
-			"value": 3.21,
+			"value": 3.44,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 27 do 45",
 			"if": "p|vekMedzi(27, 45)",
-			"value": 3.29,
+			"value": 3.58,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 45 do 51",
 			"if": "p|vekMedzi(45, 51)",
-			"value": 3.47,
+			"value": 3.63,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 51 do 53",
 			"if": "p|vekMedzi(51, 53)",
-			"value": 3.78,
+			"value": 4.02,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 53 do 57",
 			"if": "p|vekMedzi(53, 57)",
-			"value": 4.53,
+			"value": 4.74,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 57 do 61",
 			"if": "p|vekMedzi(57, 61)",
-			"value": 4.87,
+			"value": 5.29,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 61 do 64",
 			"if": "p|vekMedzi(61, 64)",
-			"value": 5.34,
+			"value": 6.16,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 64 do 68",
 			"if": "p|vekMedzi(64, 68)",
-			"value": 6.13,
+			"value": 6.52,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 68 do 72",
 			"if": "p|vekMedzi(68, 72)",
-			"value": 6.63,
+			"value": 6.79,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 72 do 87",
 			"if": "p|vekMedzi(72, 87)",
-			"value": 7.31,
+			"value": 7.49,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 87+ ",
 			"if": "p|vekMedzi(87)",
-			"value": 7.21,
+			"value": 8.52,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -239,6 +243,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Odber krvi 250D",
+			"if": "!p.kapitacia && vv.kod in ['250d']",
+			"value": 2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Návštevná služba",
 			"if": "!p.kapitacia && vv.kod in ['25','26','29','30']",
 			"value": 0.0375,
@@ -253,9 +264,16 @@
 			"instruction": null
 		},
 		{
+			"label": 163,
+			"if": "vv.kod in ['163']",
+			"value": 6.78,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 18.08,
+			"value": 19.65,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -346,14 +364,14 @@
 		{
 			"label": "Inicialne I10/E78 (H0003)",
 			"if": "vv.kod in ['H0003']",
-			"value": 12,
+			"value": 16.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Kontrolne I10/E78 (H0004)",
 			"if": "vv.kod in ['H0004']",
-			"value": 12,
+			"value": 16.2,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -361,6 +379,27 @@
 			"label": "Stratifikacia CMP (H0006)",
 			"if": "vv.kod in ['H0006']",
 			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "H0007",
+			"if": "vv.kod in ['H0007']",
+			"value": 6.24,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "H0008",
+			"if": "vv.kod in ['H0008']",
+			"value": 7.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "5715 24h monitorovanie tlaku",
+			"if": "vv.kod in ['5715']",
+			"value": 19.8,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -376,6 +415,13 @@
 			"if": "vv.kod=='PP50'",
 			"value": null,
 			"calc": "PP50",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='EDU'",
+			"value": null,
+			"calc": "EDU",
 			"instruction": null
 		},
 		{

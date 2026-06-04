@@ -14,6 +14,7 @@ Autor: curo.sk
 │ CBEUNK = 0.025959  │ Cena bodu Nekapitovany      │
 │ AGTC = 4.8         │ AGTC                        │
 │ PP50 = 10          │ PP50                        │
+│ EDU = 2            │ EDU                         │
 └────────────────────┴─────────────────────────────┘
 
 
@@ -21,18 +22,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek do 18 do 19 │          5.09 │ IDK+cena │ p|vekMedzi(18, 19) │
-│ vek od 19 do 27 │          3.21 │ IDK+cena │ p|vekMedzi(19, 27) │
-│ vek od 27 do 45 │          3.29 │ IDK+cena │ p|vekMedzi(27, 45) │
-│ vek od 45 do 51 │          3.47 │ IDK+cena │ p|vekMedzi(45, 51) │
-│ vek od 51 do 53 │          3.78 │ IDK+cena │ p|vekMedzi(51, 53) │
-│ vek od 53 do 57 │          4.53 │ IDK+cena │ p|vekMedzi(53, 57) │
-│ vek od 57 do 61 │          4.87 │ IDK+cena │ p|vekMedzi(57, 61) │
-│ vek od 61 do 64 │          5.34 │ IDK+cena │ p|vekMedzi(61, 64) │
-│ vek od 64 do 68 │          6.13 │ IDK+cena │ p|vekMedzi(64, 68) │
-│ vek od 68 do 72 │          6.63 │ IDK+cena │ p|vekMedzi(68, 72) │
-│ vek od 72 do 87 │          7.31 │ IDK+cena │ p|vekMedzi(72, 87) │
-│ vek od 87+      │          7.21 │ IDK+cena │ p|vekMedzi(87)     │
+│ vek do 18 do 19 │          5.17 │ IDK+cena │ p|vekMedzi(18, 19) │
+│ vek od 19 do 27 │          3.44 │ IDK+cena │ p|vekMedzi(19, 27) │
+│ vek od 27 do 45 │          3.58 │ IDK+cena │ p|vekMedzi(27, 45) │
+│ vek od 45 do 51 │          3.63 │ IDK+cena │ p|vekMedzi(45, 51) │
+│ vek od 51 do 53 │          4.02 │ IDK+cena │ p|vekMedzi(51, 53) │
+│ vek od 53 do 57 │          4.74 │ IDK+cena │ p|vekMedzi(53, 57) │
+│ vek od 57 do 61 │          5.29 │ IDK+cena │ p|vekMedzi(57, 61) │
+│ vek od 61 do 64 │          6.16 │ IDK+cena │ p|vekMedzi(61, 64) │
+│ vek od 64 do 68 │          6.52 │ IDK+cena │ p|vekMedzi(64, 68) │
+│ vek od 68 do 72 │          6.79 │ IDK+cena │ p|vekMedzi(68, 72) │
+│ vek od 72 do 87 │          7.49 │ IDK+cena │ p|vekMedzi(72, 87) │
+│ vek od 87+      │          8.52 │ IDK+cena │ p|vekMedzi(87)     │
 └─────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -58,9 +59,11 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia                          │ !p.kapitacia && vv.kod in ['271']                            │
 │            null │ vv.bodyCelkom*CB          │ Odber biologického materiálu                  │ !p.kapitacia && vv.kod in ['299a']                           │
 │            null │ vv.bodyCelkom*CB          │ Odber krvi                                    │ !p.kapitacia && vv.kod in ['250a','250b']                    │
+│               2 │ vv.pocet*cena             │ Odber krvi 250D                               │ !p.kapitacia && vv.kod in ['250d']                           │
 │          0.0375 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ !p.kapitacia && vv.kod in ['25','26','29','30']              │
 │           0.084 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
-│           18.08 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│            6.78 │ vv.bodyCelkom*cena        │ 163                                           │ vv.kod in ['163']                                            │
+│           19.65 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            5.98 │ vv.pocet*cena             │ EKG (5702,5702ZV)                             │ vv.kod in ['5702ZV','5702']                                  │
 │              20 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
@@ -74,11 +77,15 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
-│              12 │ vv.pocet*cena             │ Inicialne I10/E78 (H0003)                     │ vv.kod in ['H0003']                                          │
-│              12 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
+│            16.2 │ vv.pocet*cena             │ Inicialne I10/E78 (H0003)                     │ vv.kod in ['H0003']                                          │
+│            16.2 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
 │               5 │ vv.pocet*cena             │ Stratifikacia CMP (H0006)                     │ vv.kod in ['H0006']                                          │
+│            6.24 │ vv.pocet*cena             │ H0007                                         │ vv.kod in ['H0007']                                          │
+│             7.2 │ vv.pocet*cena             │ H0008                                         │ vv.kod in ['H0008']                                          │
+│            19.8 │ vv.pocet*cena             │ 5715 24h monitorovanie tlaku                  │ vv.kod in ['5715']                                           │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 │        0.020995 │ vv.bodyCelkom*cena        │ Špecializovaná zdravotná starostlivosť pre po │ vv.kod in ['5766R','5708R','15bR','1227R','1255R','1544aR',' │
 │                 │                           │ jicajtov, hasičov a záchranárov               │ 5708R','1205R','1591R','160R','250bR','3525R','3592R','252bR │
 │                 │                           │                                               │ ','3784R','3671R','3679R','3693R','3692R','3674aR','3677aR', │
