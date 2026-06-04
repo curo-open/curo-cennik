@@ -5,13 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬────────────────────────────┐
-│ Názov a hodnota   │ Popis                      │
-├───────────────────┼────────────────────────────┤
-│ CBD = 0.37        │ Cena bodu doprava          │
-│ CBD60plus = 0.185 │ Cena bodu doprava nad 60km │
-│ LIMIT = 0         │ Limit                      │
-└───────────────────┴────────────────────────────┘
+┌──────────────────┬────────────────────────────┐
+│ Názov a hodnota  │ Popis                      │
+├──────────────────┼────────────────────────────┤
+│ CBD = 0.37       │ Cena bodu doprava          │
+│ CBD60plus = 0.37 │ Cena bodu doprava nad 60km │
+│ LIMIT = 0        │ Limit                      │
+└──────────────────┴────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -26,13 +26,13 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
 │            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
-│              95 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
+│             142 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
-│             110 │ vv.pocet*cena             │ Urgentná návšteva osoby v paliatívnej starost │ vv.kod in ['27']                                             │
+│             162 │ vv.pocet*cena             │ Urgentná návšteva osoby v paliatívnej starost │ vv.kod in ['27']                                             │
 │                 │                           │ livosti - lekár a sestra mimo riadneho prac.  │                                                              │
 │                 │                           │ času                                          │                                                              │
-│              30 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE  │ vv.kod in ['3439']                                           │
-│              35 │ vv.pocet*cena             │ NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19 │ vv.kod in ['3440']                                           │
+│              50 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE  │ vv.kod in ['3439']                                           │
+│              60 │ vv.pocet*cena             │ NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19 │ vv.kod in ['3440']                                           │
 │                 │                           │ .00 DO 7.00 HODINY V SOBOTU, V NEDEĽU A VO SV │                                                              │
 │                 │                           │ IATOK)                                        │                                                              │
 │           0.017 │ vv.bodyCelkom*cena        │ Výkon                                         │ vv.kod in ['503a','504a','509a','510a','512','513','514a','5 │
