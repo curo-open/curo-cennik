@@ -14,11 +14,11 @@
 		},
 		"CBEUNK": {
 			"label": "Cena bodu EU/Nekapitovaný",
-			"value": 0.022973
+			"value": 0.023193
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.0086
+			"value": 0.00903
 		},
 		"CBUSG": {
 			"label": "Cena bodu USG",
@@ -49,14 +49,14 @@
 		{
 			"label": "Nekapitovaný - Neodkladna statostlivost",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.024122,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 102,103,105,108,157,297,1070",
 			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -68,7 +68,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
+			"label": "Výkony 5301,5316,5807,5809",
 			"if": "vv.kod in ['5301','5316','5807','5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
@@ -77,28 +77,28 @@
 		{
 			"label": "Výkon 252b",
 			"if": "!p.kapitacia && vv.kod in ['252b']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 297",
 			"if": "\"Z12.4\" in vv.diagnoza && vv.kod in ['297']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 297",
 			"if": "\"Z01.4\" in vv.diagnoza && vv.kod in ['297']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony 5303,5305,5308",
 			"if": "vv.kod in ['5303','5305','5308']",
-			"value": 0.009281,
+			"value": 0.010232,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

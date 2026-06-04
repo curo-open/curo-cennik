@@ -11,8 +11,8 @@ Autor: curo.sk
 │ IDK = 0           │ NASTAVENIA IDK               │
 │ CB = 0.022089     │ Cena bodu                    │
 │ CBP = 0.062       │ Cena bodu preventívne výkony │
-│ CBEUNK = 0.022973 │ Cena bodu EU/Nekapitovaný    │
-│ CBSVALZ = 0.0086  │ Cena bodu SVaLZ              │
+│ CBEUNK = 0.023193 │ Cena bodu EU/Nekapitovaný    │
+│ CBSVALZ = 0.00903 │ Cena bodu SVaLZ              │
 │ CBUSG = 0.008839  │ Cena bodu USG                │
 │ KP = 2.16         │ Kapitačná platba             │
 └───────────────────┴──────────────────────────────┘
@@ -31,15 +31,15 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - Neodkladna statostlivost       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
-│            null │ vv.bodyCelkom*CB          │ Nekapitovaný - Neodkladna statostlivost       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
-│           0.084 │ vv.bodyCelkom*cena        │ Výkony 102,103,105,108,157,297,1070           │ vv.kod in ['102','103','105','108','157','297','1070']       │
+│        0.024122 │ vv.bodyCelkom*cena        │ Nekapitovaný - Neodkladna statostlivost       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
+│          0.0882 │ vv.bodyCelkom*cena        │ Výkony 102,103,105,108,157,297,1070           │ vv.kod in ['102','103','105','108','157','297','1070']       │
 │            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5303,5305,5308,5316,5807,5809     │ "Z" in vv.diagnoza && vv.kod in ['5301','5303','5305','5308' │
 │                 │                           │                                               │ ,'5316','5807','5809']                                       │
-│            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5303,5305,5308,5316,5807,5809     │ vv.kod in ['5301','5316','5807','5809']                      │
-│           0.084 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ !p.kapitacia && vv.kod in ['252b']                           │
-│           0.084 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ "Z12.4" in vv.diagnoza && vv.kod in ['297']                  │
-│           0.084 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ "Z01.4" in vv.diagnoza && vv.kod in ['297']                  │
-│        0.009281 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
+│            null │ vv.bodyCelkom*CBUSG       │ Výkony 5301,5316,5807,5809                    │ vv.kod in ['5301','5316','5807','5809']                      │
+│          0.0882 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ !p.kapitacia && vv.kod in ['252b']                           │
+│          0.0882 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ "Z12.4" in vv.diagnoza && vv.kod in ['297']                  │
+│          0.0882 │ vv.bodyCelkom*cena        │ Výkon 297                                     │ "Z01.4" in vv.diagnoza && vv.kod in ['297']                  │
+│        0.010232 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Výkon 5304,5808                               │ vv.kod in ['5808','5304']                                    │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b, 11a, 70                             │ vv.kod in ['1b','11a','70']                                  │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && d.od|ma('jeNeodkladna') && !(p.typ in ['EU'] │
