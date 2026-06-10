@@ -37,7 +37,7 @@ Autor: curo.sk
 │        0.022449 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
 │            null │ vv.bodyCelkom*CB          │ ŠAS - EMG                                     │ vv.kod in ['810','809','811','812','819']                    │
 │        0.026921 │ vv.bodyCelkom*cena        │ ŠAS - 800                                     │ vv.kod in ['800']                                            │
-│        0.029461 │ vv.bodyCelkom*cena        │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
+│            null │ vv.bodyCelkom*CB          │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
@@ -50,7 +50,7 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
-│             870 │ 60                                                                                                        │                           │
+│             670 │ 60                                                                                                        │                           │
 │             440 │ 62                                                                                                        │                           │
 │             340 │ 63                                                                                                        │                           │
 │             220 │ 65                                                                                                        │                           │

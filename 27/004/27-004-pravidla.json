@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0.035
+			"value": 0.0336
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -10,7 +10,7 @@
 		},
 		"CBV": {
 			"label": "Vyšetrenie 60,62,63,,60r",
-			"value": 0.0365
+			"value": 0.038
 		},
 		"IPP4": {
 			"label": "IPP4",
@@ -57,6 +57,20 @@
 		},
 		{
 			"label": "Výkony",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.82,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0007']",
+			"value": 6.06,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
 			"if": "vv.kod in ['H0008']",
 			"value": 6.98,
 			"calc": "vv.pocet*cena",
@@ -91,9 +105,30 @@
 			"instruction": null
 		},
 		{
+			"label": "Stanovenie D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.95,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie Troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "N-terminálny fragment (NT-proBNP)",
+			"if": "vv.kod in ['44418']",
+			"value": 19.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.00924,
+			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

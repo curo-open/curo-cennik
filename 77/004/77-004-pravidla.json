@@ -1,16 +1,16 @@
 {
 	"params": {
-		"LIMIT": {
-			"label": "Limit",
-			"value": 0
-		},
 		"CB": {
-			"label": "Cena bodu",
-			"value": 0.0365
+			"label": "Cena bodu ",
+			"value": 0.0336
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01031
+		},
+		"CBV": {
+			"label": "Vyšetrenie 60,62,63,,60r",
+			"value": 0.038
 		},
 		"IPP4": {
 			"label": "IPP4",
@@ -29,9 +29,9 @@
 	"vykon": [
 		{
 			"label": "Výkon 60,62,63",
-			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0365,
-			"calc": "vv.bodyCelkom*cena",
+			"if": "vv.kod in ['60','62','63','60r']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBV",
 			"instruction": null
 		},
 		{
@@ -44,8 +44,29 @@
 		{
 			"label": "Výkon 15d",
 			"if": "vv.kod in ['15d']",
-			"value": 0.015,
+			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Elektroencefalografické vyšetrenie",
+			"if": "vv.kod in ['5793','5794','5795']",
+			"value": 0.0226,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0006']",
+			"value": 5.82,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0007']",
+			"value": 6.06,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
@@ -65,7 +86,7 @@
 		{
 			"label": "Výkon 5302",
 			"if": "vv.kod in ['5302']",
-			"value": 0.0088,
+			"value": 0.00924,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -77,9 +98,37 @@
 			"instruction": null
 		},
 		{
+			"label": "Skríningový antigénový test SARS-CoV-2 imunofluorerscenčnou metódou",
+			"if": "vv.kod in ['629b']",
+			"value": 10.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie D-diméru",
+			"if": "vv.kod in ['3860']",
+			"value": 8.95,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Stanovenie Troponínu",
+			"if": "vv.kod in ['4485']",
+			"value": 11.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "N-terminálny fragment (NT-proBNP)",
+			"if": "vv.kod in ['44418']",
+			"value": 19.75,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Výkon SVALZ USG",
 			"if": "vv.kod in ['5300','5301','5303','5304','5307','5307a','5312','5315','5316','5799']",
-			"value": 0.0088,
+			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -128,7 +177,7 @@
 		{
 			"label": "Výkony - iné ako SVALZ",
 			"if": "vv.kod in ['5793','5794','5795'] && vv.typ!='SVaLZ'",
-			"value": 0.02463,
+			"value": 0.01892,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -184,6 +233,18 @@
 				"value": 40
 			}
 		],
+		"761": [
+			{
+				"cond": "",
+				"value": 2426
+			}
+		],
+		"763": [
+			{
+				"cond": "",
+				"value": 3000
+			}
+		],
 		"15d": [
 			{
 				"cond": "",
@@ -212,6 +273,12 @@
 			{
 				"cond": "",
 				"value": 480
+			}
+		],
+		"62b": [
+			{
+				"cond": "",
+				"value": 900
 			}
 		]
 	},

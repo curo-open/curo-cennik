@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────┐
 │ Názov a hodnota   │ Popis                    │
 ├───────────────────┼──────────────────────────┤
-│ CB = 0.035        │ Cena bodu                │
+│ CB = 0.0336       │ Cena bodu                │
 │ CBSVALZ = 0.01031 │ Cena bodu SVaLZ          │
-│ CBV = 0.0365      │ Vyšetrenie 60,62,63,,60r │
+│ CBV = 0.038       │ Vyšetrenie 60,62,63,,60r │
 │ IPP4 = 5.83       │ IPP4                     │
 │ IPP5 = 4.24       │ IPP5                     │
 │ IPP6 = 3.18       │ IPP6                     │
@@ -31,13 +31,18 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │          0.0226 │ vv.bodyCelkom*cena        │ Elektroencefalografické vyšetrenie            │ vv.kod in ['5793','5794','5795']                             │
+│            5.82 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0006']                                          │
+│            6.06 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0007']                                          │
 │            6.98 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
 │            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
+│            8.95 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
+│            11.5 │ vv.pocet*cena             │ Stanovenie Troponínu                          │ vv.kod in ['4485']                                           │
+│           19.75 │ vv.pocet*cena             │ N-terminálny fragment (NT-proBNP)             │ vv.kod in ['44418']                                          │
+│         0.01107 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316','5799']                                       │
 │            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
 │            null │ IPP5                      │ Pripočitateľné položky                        │ vv.kod=='IPP5'                                               │
