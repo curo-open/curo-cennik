@@ -23,11 +23,11 @@ Autor: curo.sk
 ┌─────────────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                       │ Premenná cena │ Vzorec   │ Podmienka          │
 ├─────────────────────────────┼───────────────┼──────────┼────────────────────┤
-│ do  1 roku                  │         12.52 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ od  1 do dovršenia 2 rokov  │         13.08 │ IDK+cena │ p|vekMedzi(1, 2)   │
-│ od  2 do dovršenia 7 rokov  │           8.4 │ IDK+cena │ p|vekMedzi(2, 7)   │
-│ od  7 do dovršenia 19 rokov │          5.09 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ od 19 do dovršenia 27 rokov │          3.21 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ do  1 roku                  │         13.52 │ IDK+cena │ p|vekMedzi(0, 1)   │
+│ od  1 do dovršenia 2 rokov  │         14.13 │ IDK+cena │ p|vekMedzi(1, 2)   │
+│ od  2 do dovršenia 7 rokov  │          9.07 │ IDK+cena │ p|vekMedzi(2, 7)   │
+│ od  7 do dovršenia 19 rokov │          5.34 │ IDK+cena │ p|vekMedzi(7, 19)  │
+│ od 19 do dovršenia 27 rokov │          3.37 │ IDK+cena │ p|vekMedzi(19, 26) │
 └─────────────────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -43,13 +43,13 @@ Autor: curo.sk
 │            8.63 │ vv.pocet*cena             │ Vykon 4                                       │ !p.kapitacia && vv.kod in ['4']                              │
 │          0.0078 │ vv.bodyCelkom*cena        │ Nekapitovaný - SVALZ výkon                    │ !p.kapitacia && !(p.typ in ['EU']) && vv.jeSVaLZ             │
 │          0.0193 │ vv.bodyCelkom*cena        │ Nekapitovaný - iné ako SVALZ                  │ !p.kapitacia && !(p.typ in ['EU']) && !vv.jeSVaLZ            │
-│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
+│          0.0882 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['143', '143a', '144', '145', '145a', '146', '146a │
 │                 │                           │                                               │ ', '146b', '146c', '148', '148a', '148b', '148c', '149', '14 │
 │                 │                           │                                               │ 9a', '149b', '149c', '149d', '149f', '159b', '950', '953', ' │
 │                 │                           │                                               │ 159a', '159x', '159z','160']                                 │
-│        0.110198 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b']                                    │
-│            0.05 │ vv.bodyCelkom*cena        │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
+│        0.115708 │ vv.bodyCelkom*cena        │ Preventivne zdravotne vykony (142)            │ vv.kod in ['142']                                            │
+│          0.0945 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b']                                    │
+│          0.0525 │ vv.bodyCelkom*cena        │ Príplatok pri sťaženom výkone - odber, očkova │ vv.kod in ['67']                                             │
 │                 │                           │ nie do 5 roku života                          │                                                              │
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │           0.044 │ vv.bodyCelkom*cena        │ Glykemia                                      │ vv.kod in ['3671']                                           │
