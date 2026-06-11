@@ -1,0 +1,34 @@
+{
+	"params": {
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.004232
+		},
+		"CB": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.004232
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "MRI",
+			"if": "vv.kod in ['5611A']",
+			"value": 0.004232,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "MRI enterografia a MR rekta",
+			"if": "vv.kod in ['H4002' , 'H4003']",
+			"value": 312.4,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "MRI502"
+}
