@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.03005
+			"value": 0.031252
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009724
+			"value": 0.010113
 		}
 	},
 	"pacient": [],
@@ -103,7 +103,7 @@
 		"62": [
 			{
 				"cond": "",
-				"value": 400
+				"value": 310
 			}
 		],
 		"63": [
