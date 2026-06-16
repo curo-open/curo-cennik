@@ -2,7 +2,7 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.0338
+			"value": 0.031252
 		},
 		"CBO": {
 			"label": "Cena bodu 60, 62, 63",
@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009724
+			"value": 0.010113
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
