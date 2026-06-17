@@ -33,84 +33,84 @@
 		{
 			"label": "vek od 18 do 20",
 			"if": "p.kapitacia && p|vekMedzi(18, 20)",
-			"value": 5.09,
+			"value": 5.34,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 20 do 28",
 			"if": "p.kapitacia && p|vekMedzi(20, 28)",
-			"value": 3.21,
+			"value": 3.37,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 28 do 46",
 			"if": "p.kapitacia && p|vekMedzi(28, 46)",
-			"value": 3.29,
+			"value": 3.49,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 46 do 52",
 			"if": "p.kapitacia && p|vekMedzi(46, 52)",
-			"value": 3.47,
+			"value": 3.68,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 52 do 54",
 			"if": "p.kapitacia && p|vekMedzi(52, 54)",
-			"value": 3.78,
+			"value": 4.01,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 54 do 58",
 			"if": "p.kapitacia && p|vekMedzi(54, 58)",
-			"value": 4.53,
+			"value": 4.8,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 58 do 62",
 			"if": "p.kapitacia && p|vekMedzi(58, 62)",
-			"value": 4.87,
+			"value": 5.21,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 62 do 65",
 			"if": "p.kapitacia && p|vekMedzi(62, 65)",
-			"value": 5.34,
+			"value": 5.71,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 65 do 69",
 			"if": "p.kapitacia && p|vekMedzi(65, 69)",
-			"value": 6.13,
+			"value": 6.56,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 69 do 73",
 			"if": "p.kapitacia && p|vekMedzi(69, 73)",
-			"value": 6.63,
+			"value": 7.09,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 73 do 88",
 			"if": "p.kapitacia && p|vekMedzi(73, 88)",
-			"value": 7.31,
+			"value": 7.82,
 			"calc": "IDK+cena",
 			"instruction": null
 		},
 		{
 			"label": "vek od 88+ ",
 			"if": "p.kapitacia && p|vekMedzi(88)",
-			"value": 7.21,
+			"value": 7.71,
 			"calc": "IDK+cena",
 			"instruction": null
 		}
@@ -133,8 +133,8 @@
 		{
 			"label": "SVALZ výkony",
 			"if": "vv.typ=='SVaLZ'",
-			"value": 0.008195,
-			"calc": "vv.bodyCelkom*cena",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
@@ -168,7 +168,7 @@
 		{
 			"label": "TOKS",
 			"if": "vv.kod in ['159a','159x','159z']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -182,14 +182,14 @@
 		{
 			"label": "Určenie glykémie glukometrom",
 			"if": "vv.kod in ['3671']",
-			"value": 0.084,
+			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Očkovanie",
 			"if": "vv.kod in ['252b']",
-			"value": 0.09,
+			"value": 0.0945,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -210,7 +210,7 @@
 		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
-			"value": 18.08,
+			"value": 19.53,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -231,14 +231,14 @@
 		{
 			"label": "CRP",
 			"if": "vv.kod in ['4571A','4571a']",
-			"value": 5.65,
+			"value": 5.82,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Vykon 10",
 			"if": "vv.kod in ['10']",
-			"value": 20,
+			"value": 21.6,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
