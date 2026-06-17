@@ -8,12 +8,12 @@ Autor: curo.sk
 ┌───────────────────────┬─────────────────────┐
 │ Názov a hodnota       │ Popis               │
 ├───────────────────────┼─────────────────────┤
-│ IPP1 = 2.44           │ IPP1                │
-│ IPP2 = 3.92           │ IPP2                │
-│ IPP3 = 6.64           │ IPP3                │
-│ IPP4 = 9.64           │ IPP4                │
+│ IPP1 = 2.48           │ IPP1                │
+│ IPP2 = 3.98           │ IPP2                │
+│ IPP3 = 6.74           │ IPP3                │
+│ IPP4 = 9.74           │ IPP4                │
 │ LIMIT = 0             │ Limit               │
-│ CB = 0.03466          │ Cena bodu           │
+│ CB = 0.03731          │ Cena bodu           │
 │ CBSVALZ = 0.009159    │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0.009574 │ Cena bodu SVaLZ USG │
 └───────────────────────┴─────────────────────┘
@@ -39,7 +39,7 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorescenčnou metódou                         │                                                              │
 │          0.0268 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in [' 1A02060','1A02077','1A03044']                   │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Výkony                                        │ vv.kod in ['4H00001','4H00004','4H00005']                    │
+│        0.009159 │ vv.bodyCelkom*cena        │ Výkony                                        │ vv.kod in ['4H00001','4H00004','4H00005']                    │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -67,7 +67,7 @@ Autor: curo.sk
 │             160 │ 1b                                                                                                        │                           │
 │            1000 │ 1c                                                                                                        │                           │
 │             210 │ 11a                                                                                                       │                           │
-│            1200 │ 4H00001                                                                                                   │                           │
+│            1640 │ 4H00001                                                                                                   │                           │
 │            2400 │ 4H00004                                                                                                   │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
