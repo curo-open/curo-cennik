@@ -22,18 +22,18 @@ Autor: curo.sk
 ┌─────────────────┬───────────────┬──────────┬───────────────────────────────────┐
 │ Popis           │ Premenná cena │ Vzorec   │ Podmienka                         │
 ├─────────────────┼───────────────┼──────────┼───────────────────────────────────┤
-│ vek od 18 do 20 │          5.09 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
-│ vek od 20 do 28 │          3.21 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 28) │
-│ vek od 28 do 46 │          3.29 │ IDK+cena │ p.kapitacia && p|vekMedzi(28, 46) │
-│ vek od 46 do 52 │          3.31 │ IDK+cena │ p.kapitacia && p|vekMedzi(46, 52) │
-│ vek od 52 do 54 │          3.61 │ IDK+cena │ p.kapitacia && p|vekMedzi(52, 54) │
-│ vek od 54 do 58 │          4.33 │ IDK+cena │ p.kapitacia && p|vekMedzi(54, 58) │
-│ vek od 58 do 62 │          4.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(58, 62) │
-│ vek od 62 do 65 │          5.48 │ IDK+cena │ p.kapitacia && p|vekMedzi(62, 65) │
-│ vek od 65 do 69 │           6.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 69) │
-│ vek od 69 do 73 │          6.82 │ IDK+cena │ p.kapitacia && p|vekMedzi(69, 73) │
-│ vek od 73 do 88 │          7.49 │ IDK+cena │ p.kapitacia && p|vekMedzi(73, 88) │
-│ vek od 88+      │          7.42 │ IDK+cena │ p.kapitacia && p|vekMedzi(88)     │
+│ vek od 18 do 20 │          5.34 │ IDK+cena │ p.kapitacia && p|vekMedzi(18, 20) │
+│ vek od 20 do 28 │          3.37 │ IDK+cena │ p.kapitacia && p|vekMedzi(20, 28) │
+│ vek od 28 do 46 │          3.45 │ IDK+cena │ p.kapitacia && p|vekMedzi(28, 46) │
+│ vek od 46 do 52 │          3.48 │ IDK+cena │ p.kapitacia && p|vekMedzi(46, 52) │
+│ vek od 52 do 54 │          3.83 │ IDK+cena │ p.kapitacia && p|vekMedzi(52, 54) │
+│ vek od 54 do 58 │          4.59 │ IDK+cena │ p.kapitacia && p|vekMedzi(54, 58) │
+│ vek od 58 do 62 │          5.07 │ IDK+cena │ p.kapitacia && p|vekMedzi(58, 62) │
+│ vek od 62 do 65 │          5.86 │ IDK+cena │ p.kapitacia && p|vekMedzi(62, 65) │
+│ vek od 65 do 69 │          6.74 │ IDK+cena │ p.kapitacia && p|vekMedzi(65, 69) │
+│ vek od 69 do 73 │           7.3 │ IDK+cena │ p.kapitacia && p|vekMedzi(69, 73) │
+│ vek od 73 do 88 │          8.01 │ IDK+cena │ p.kapitacia && p|vekMedzi(73, 88) │
+│ vek od 88+      │          7.94 │ IDK+cena │ p.kapitacia && p|vekMedzi(88)     │
 └─────────────────┴───────────────┴──────────┴───────────────────────────────────┘
 
 
@@ -50,13 +50,13 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
-│           0.084 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
-│           0.084 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
-│           0.084 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
+│          0.0882 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │
+│          0.0882 │ vv.bodyCelkom*cena        │ Cholesterol ako cast PP                       │ vv.kod in ['159b']                                           │
+│          0.0882 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ vv.kod in ['3671']                                           │
 │            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252b']                                           │
 │          0.0375 │ vv.bodyCelkom*cena        │ Návštevná služba                              │ vv.kod in ['25','26','29','30']                              │
-│           0.084 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
-│           18.08 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
+│          0.0882 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
+│           19.53 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │            5.98 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702','5702C']                                   │
 │            5.98 │ vv.pocet*cena             │ EKG (5702,5702Z)                              │ vv.kod in ['5702Z','5702']                                   │
 │              16 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
@@ -66,8 +66,8 @@ Autor: curo.sk
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │             7.5 │ vv.pocet*cena             │ Očkovanie Covid 252K                          │ vv.kod in ['252K']                                           │
-│              15 │ vv.pocet*cena             │ Inicialne I10/E78 (H0003)                     │ vv.kod in ['H0003']                                          │
-│              15 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
+│            16.2 │ vv.pocet*cena             │ Inicialne I10/E78 (H0003)                     │ vv.kod in ['H0003']                                          │
+│            16.2 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
 │               5 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
 │            8.98 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
 │            11.6 │ vv.pocet*cena             │ Stanovenie TroponínuT                         │ vv.kod in ['4485']                                           │
