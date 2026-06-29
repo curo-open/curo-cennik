@@ -2,11 +2,11 @@
 	"params": {
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.004232
+			"value": 0.005074
 		},
 		"CB": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.004232
+			"value": 0.005074
 		}
 	},
 	"pacient": [],
@@ -14,14 +14,14 @@
 		{
 			"label": "MRI",
 			"if": "vv.kod in ['5611A']",
-			"value": 0.004232,
+			"value": 0.005074,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "MRI enterografia a MR rekta",
 			"if": "vv.kod in ['H4002' , 'H4003']",
-			"value": 312.4,
+			"value": 374.54,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

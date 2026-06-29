@@ -21,11 +21,11 @@ Autor: curo.sk
 ┌──────────────────────┬───────────────┬──────────┬────────────────────┐
 │ Popis                │ Premenná cena │ Vzorec   │ Podmienka          │
 ├──────────────────────┼───────────────┼──────────┼────────────────────┤
-│ vek do 1 roku života │         12.52 │ IDK+cena │ p|vekMedzi(0, 1)   │
-│ vek od 1 do 2        │         13.08 │ IDK+cena │ p|vekMedzi(1, 2)   │
-│ vek od 2 do 7        │           8.4 │ IDK+cena │ p|vekMedzi(2, 7)   │
-│ vek od 7 do 19       │          5.09 │ IDK+cena │ p|vekMedzi(7, 19)  │
-│ vek od 19 do 26      │          3.21 │ IDK+cena │ p|vekMedzi(19, 26) │
+│ vek do 1 roku života │         13.52 │ IDK+cena │ p|vekMedzi(0, 1)   │
+│ vek od 1 do 2        │         14.13 │ IDK+cena │ p|vekMedzi(1, 2)   │
+│ vek od 2 do 7        │          9.07 │ IDK+cena │ p|vekMedzi(2, 7)   │
+│ vek od 7 do 19       │          5.34 │ IDK+cena │ p|vekMedzi(7, 19)  │
+│ vek od 19 do 26      │          3.37 │ IDK+cena │ p|vekMedzi(19, 26) │
 └──────────────────────┴───────────────┴──────────┴────────────────────┘
 
 
@@ -48,12 +48,12 @@ Autor: curo.sk
 │           12.26 │ vv.pocet*cena             │ Výkon 8-nekapitovaný                          │ !p.kapitacia && vv.kod in ['8']                              │
 │            null │ vv.bodyCelkom*CB          │ Výkon 10                                      │ vv.kod in ['10']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,63,64                                │ vv.kod in ['60','63','64']                                   │
-│            0.05 │ vv.bodyCelkom*cena        │ Výkon 67                                      │ vv.kod in ['67']                                             │
+│          0.0525 │ vv.bodyCelkom*cena        │ Výkon 67                                      │ vv.kod in ['67']                                             │
 │           0.079 │ vv.bodyCelkom*cena        │ Určenie glykémie glukometrom                  │ !p.kapitacia && vv.kod in ['3671']                           │
-│            0.09 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b']                                    │
+│          0.0945 │ vv.bodyCelkom*cena        │ Očkovanie                                     │ vv.kod in ['252a','252b']                                    │
 │            null │ vv.bodyCelkom*CB          │ Intravenózna infúzia                          │ vv.kod in ['271']                                            │
-│        0.110198 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['142']                                            │
-│           0.084 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
+│        0.115708 │ vv.bodyCelkom*cena        │ Preventívne prehliadky                        │ vv.kod in ['142']                                            │
+│          0.0882 │ vv.bodyCelkom*cena        │ Preventívne výkony                            │ vv.kod in ['143','143a','144','145','145a','146','146a','146 │
 │                 │                           │                                               │ b','146c','148','148a','148b','148c','149','149a','149b','14 │
 │                 │                           │                                               │ 9c','149d','149f','160','950','953']                         │
 │           0.079 │ vv.bodyCelkom*cena        │ TOKS                                          │ vv.kod in ['159a','159x','159z']                             │

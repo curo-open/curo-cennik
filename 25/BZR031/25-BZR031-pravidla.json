@@ -1,0 +1,118 @@
+{
+	"params": {
+		"IPP1": {
+			"label": "IPP1",
+			"value": 1.49
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 2.39
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 4.04
+		},
+		"LIMIT": {
+			"label": "Limit",
+			"value": 7.04
+		},
+		"EL_POBOCKA": {
+			"label": "Používa el. pobočku ?",
+			"value": 1
+		},
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.03731
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0.041
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.009159
+		},
+		"CBSVALZUSG": {
+			"label": "Cena bodu SVaLZ - ULTRAZVUK – USG a FUNKČNÁ DIAGNOSTIKA",
+			"value": 0.009574
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250x']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "analgosedácia ",
+			"if": "vv.kod in ['93']",
+			"value": 0.03731,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "SVALZ výkony",
+			"if": "vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkony - iné ako SVALZ",
+			"if": "vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne vykony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"93": [
+			{
+				"cond": "",
+				"value": 2114
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "hematológia"
+}
