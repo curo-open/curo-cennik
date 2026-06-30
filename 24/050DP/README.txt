@@ -36,6 +36,9 @@ Autor: curo.sk
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
+│             7.2 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
+│             6.2 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['1A02013']                                        │
+│               6 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['1A02011']                                        │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['70','1b','1c','11a']                             │
 │            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ p.typ in ['BE','CU','EU']                                    │

@@ -77,6 +77,27 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkony",
+			"if": "vv.kod in ['H0008']",
+			"value": 7.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['1A02013']",
+			"value": 6.2,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "vv.kod in ['1A02011']",
+			"value": 6,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "špec. elektronické výkony",
 			"if": "vv.kod in ['70','1b','1c','11a']",
 			"value": 0.027,
