@@ -13,7 +13,7 @@
 	"vykon": [
 		{
 			"label": "MRI",
-			"if": "vv.kod in ['5611A']",
+			"if": "vv.kod in ['5611a']",
 			"value": 0.005074,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
