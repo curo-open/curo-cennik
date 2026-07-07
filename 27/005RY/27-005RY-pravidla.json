@@ -2,7 +2,7 @@
 	"params": {
 		"IPP1": {
 			"label": "IPP1",
-			"value": 3.71
+			"value": 3.9
 		},
 		"CB": {
 			"label": "Cena bodu ",
@@ -10,11 +10,11 @@
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0323
+			"value": 0.0353
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01031
+			"value": 0.01083
 		},
 		"CBEK": {
 			"label": "Cena bodu el. výkony",
@@ -45,8 +45,8 @@
 		{
 			"label": "Psychiatrické výkony",
 			"if": "vv.kod in ['820','821','822','825','826','841','842','845','847','867']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0.04,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
@@ -54,6 +54,13 @@
 			"if": "vv.kod in ['11a','1b','70','1c']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBEK",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 899 - Nadväzná psychoterapia v psychiatrii",
+			"if": "vv.kod in ['899']",
+			"value": 25,
+			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
