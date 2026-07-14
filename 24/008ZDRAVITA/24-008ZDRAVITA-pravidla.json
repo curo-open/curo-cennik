@@ -20,6 +20,10 @@
 			"label": "VCB pre výkon 250",
 			"value": 1.19
 		},
+		"4571a": {
+			"label": "4571a",
+			"value": 5.65
+		},
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
@@ -177,13 +181,6 @@
 			"instruction": null
 		},
 		{
-			"label": "CRP",
-			"if": "vv.kod in ['4571a','4571A']",
-			"value": 5.65,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
 			"label": "Predoperačné vyšetrenie",
 			"if": "vv.kod in ['60b']",
 			"value": 10,
@@ -223,6 +220,13 @@
 			"if": "vv.kod in ['252L']",
 			"value": 10,
 			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='4571a'",
+			"value": null,
+			"calc": "PP4571a",
 			"instruction": null
 		},
 		{

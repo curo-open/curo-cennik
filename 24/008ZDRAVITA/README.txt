@@ -13,6 +13,7 @@ Autor: curo.sk
 │ VCB4 = 2.97     │ VCB pre výkon 4   │
 │ VCB1 = 0.8      │ VCB pre výkon 1   │
 │ VCB250 = 1.19   │ VCB pre výkon 250 │
+│ 4571a = 5.65    │ 4571a             │
 │ AGTC = 4.8      │ AGTC              │
 │ PP50 = 10       │ PP50              │
 │ PP05 = 10       │ PP05              │
@@ -54,7 +55,6 @@ Autor: curo.sk
 │           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │           0.044 │ vv.bodyCelkom*cena        │ Glykemia                                      │ vv.kod in ['3671']                                           │
 │          0.0193 │ vv.bodyCelkom*cena        │ Návšteva služba                               │ vv.kod in ['25', '26', '29', '30']                           │
-│            5.65 │ vv.pocet*cena             │ CRP                                           │ vv.kod in ['4571a','4571A']                                  │
 │              10 │ vv.pocet*cena             │ Predoperačné vyšetrenie                       │ vv.kod in ['60b']                                            │
 │             4.2 │ vv.pocet*cena             │ EKG                                           │ vv.kod in ['5702ZV']                                         │
 │            6.54 │ vv.pocet*cena             │ Vykon 10                                      │ vv.kod in ['10']                                             │
@@ -62,6 +62,7 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
+│            null │ PP4571a                   │ Pripočitateľné položky                        │ vv.kod=='4571a'                                              │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ PP05                      │ Pripočitateľné položky                        │ vv.kod=='PP05'                                               │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
