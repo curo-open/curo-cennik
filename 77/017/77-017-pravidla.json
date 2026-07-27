@@ -6,7 +6,7 @@
 		},
 		"CB": {
 			"label": "Cena bodu ",
-			"value": 0
+			"value": 0.0363
 		},
 		"CBEU": {
 			"label": "Cena bodu EU",
@@ -15,6 +15,10 @@
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
 			"value": 0.01
+		},
+		"NCB": {
+			"label": "Navysena cena bodu",
+			"value": 0
 		}
 	},
 	"pacient": [
@@ -28,85 +32,183 @@
 	],
 	"vykon": [
 		{
-			"label": "Výkon 100,102,103,105,157",
-			"if": "\"Z\" in vv.diagnoza && vv.kod in ['100','102','103','105','157']",
+			"label": "Preventívne zdravotné výkony - vv. 100",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['100']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 108",
+			"label": "Preventívne zdravotné výkony - vv. 102",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['102']",
+			"value": 0.0801,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 103",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['103']",
+			"value": 0.0801,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 105",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['105']",
+			"value": 0.0801,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 157",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['157']",
+			"value": 0.0801,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívny výkon - vv. 108",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['108']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 118",
+			"label": "Preventívny výkon - vv. 118",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['118']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 297",
+			"label": "Preventívny výkon - vv. 297",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['297']",
 			"value": 0.0434,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 252b",
+			"label": "Preventívny výkon - vv. 252b",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['252b']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1070",
+			"label": "Preventívny výkon - vv. 1070",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['1070']",
 			"value": 0.0801,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Preventívne výkony 5303,5305",
-			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305']",
+			"label": "Preventívne výkony - vv. 5303",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303']",
 			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Preventivny výkon 5308",
+			"label": "Preventívne výkony - vv. 5305",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5305']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívny výkon - vv. 5308",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5308']",
 			"value": 0.01107,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Preventívny výkon 5309",
+			"label": "Preventívny výkon - vv. 5309",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5309']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Vyšetrenie šijového prejasnenia (NT) plodu",
+			"label": "Vyšetrenie šijového prejasnenia (NT) plodu -  - vv. 5809",
 			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5809']",
 			"value": 0.0266,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5301, 5304,5316,5807,5808",
-			"if": "vv.kod in ['5301','5304','5316','5807','5808']",
+			"label": "Výkon - vv.  5301",
+			"if": "vv.kod in ['5301']",
 			"value": 0.02,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['1b','1c','11a','70']",
+			"label": "Výkon - vv.  5304",
+			"if": "vv.kod in ['5304']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv.  5316",
+			"if": "vv.kod in ['5316']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv.  5807",
+			"if": "vv.kod in ['5807']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv.  5808",
+			"if": "vv.kod in ['5808']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne výkony - vv. 5303",
+			"if": "vv.kod in ['5303']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne výkony - vv. 5305",
+			"if": "vv.kod in ['5305']",
+			"value": 0.02,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína -  vv. 11a",
+			"if": "vv.kod in ['11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína -  vv. 11b",
+			"if": "vv.kod in ['1b']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína -  vv. 70",
+			"if": "vv.kod in ['70']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína -  vv. 11c",
+			"if": "vv.kod in ['11c']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -133,6 +235,48 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon - vv. 60,62,63",
+			"if": "vv.kod in ['60']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv. 62",
+			"if": "vv.kod in ['62']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv. 63",
+			"if": "vv.kod in ['63']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv. 65",
+			"if": "vv.kod in ['65']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv. 66",
+			"if": "vv.kod in ['66']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
+			"label": "Výkon - vv. 67",
+			"if": "vv.kod in ['67']",
+			"value": null,
+			"calc": "vv.bodyCelkom*(CB+NCB)",
+			"instruction": null
+		},
+		{
 			"label": "Nekapitovaný - neodkladná starostlivosť",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'",
 			"value": null,
@@ -140,7 +284,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Nekapitovaný - SVALZ výkon",
+			"label": "Nekapitovaný - neodkladná starostlivosť - SVALZ výkon",
 			"if": "!p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'",
 			"value": null,
 			"calc": "vv.bodyCelkom*SVALZ",
@@ -184,6 +328,42 @@
 	],
 	"kontrola": [],
 	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 420
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 270
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 210
+			}
+		],
+		"65": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
+		"66": [
+			{
+				"cond": "",
+				"value": 320
+			}
+		],
+		"67": [
+			{
+				"cond": "",
+				"value": 200
+			}
+		],
 		"70": [
 			{
 				"cond": "",

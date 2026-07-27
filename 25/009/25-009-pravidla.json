@@ -43,15 +43,64 @@
 			"instruction": null
 		},
 		{
-			"label": "Preventívne zdravotné výkony",
-			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
+			"label": "Preventívne zdravotné výkony - vv. 102",
+			"if": "vv.kod in ['102']",
 			"value": 0.084,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 252b, 252c",
-			"if": "vv.kod in ['252b','252C']",
+			"label": "Preventívne zdravotné výkony - vv. 103",
+			"if": "vv.kod in ['103']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 105",
+			"if": "vv.kod in ['105']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 108",
+			"if": "vv.kod in ['108']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 157",
+			"if": "vv.kod in ['157']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 297",
+			"if": "vv.kod in ['297']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 1070",
+			"if": "vv.kod in ['1070']",
+			"value": 0.084,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252b",
+			"if": "vv.kod in ['252b']",
+			"value": 0.09,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 252C",
+			"if": "vv.kod in ['252C']",
 			"value": 0.09,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -64,15 +113,43 @@
 			"instruction": null
 		},
 		{
-			"label": "Preventivné výkony 5303,5305,5308",
-			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303','5305','5308']",
+			"label": "Preventivné výkony - vv. 5303",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5303,5305,5308",
-			"if": "vv.kod in ['5303','5305','5308']",
+			"label": "Preventivné výkony - vv. 5305",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5305']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5308",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5308']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5303",
+			"if": "vv.kod in ['5303']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5305",
+			"if": "vv.kod in ['5305']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5308",
+			"if": "vv.kod in ['5308']",
 			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -99,8 +176,22 @@
 			"instruction": null
 		},
 		{
-			"label": "Telemedicína",
-			"if": "vv.kod in ['11a','1b','70']",
+			"label": "Telemedicína - 11a",
+			"if": "vv.kod in ['11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína - 11b",
+			"if": "vv.kod in ['1b']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína - 70",
+			"if": "vv.kod in ['70']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -134,8 +225,36 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony uhrádzané v rámci platy za kapitáciu",
-			"if": "p.kapitacia && vv.kod in ['15b','63','63a','120','156']",
+			"label": "Výkony uhrádzané v rámci platy za kapitáciu - 15b",
+			"if": "p.kapitacia && vv.kod in ['15b']",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony uhrádzané v rámci platy za kapitáciu - 63",
+			"if": "p.kapitacia && vv.kod in ['63']",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony uhrádzané v rámci platy za kapitáciu - 63a",
+			"if": "p.kapitacia && vv.kod in ['63a']",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony uhrádzané v rámci platy za kapitáciu - 120",
+			"if": "p.kapitacia && vv.kod in ['120']",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony uhrádzané v rámci platy za kapitáciu - 156",
+			"if": "p.kapitacia && vv.kod in ['156']",
 			"value": 0,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

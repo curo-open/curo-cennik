@@ -54,22 +54,127 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony 102,103,105,108,157,297,1070",
-			"if": "vv.kod in ['102','103','105','108','157','297','1070']",
+			"label": "Preventívne zdravotné výkony - vv. 102",
+			"if": "vv.kod in ['102']",
 			"value": 0.0882,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5301,5303,5305,5308,5316,5807,5809",
-			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5301','5303','5305','5308','5316','5807','5809']",
+			"label": "Preventívne zdravotné výkony - vv. 103",
+			"if": "vv.kod in ['103']",
+			"value": 0.0882,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 105",
+			"if": "vv.kod in ['105']",
+			"value": 0.0882,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 108",
+			"if": "vv.kod in ['108']",
+			"value": 0.0882,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 157",
+			"if": "vv.kod in ['157']",
+			"value": 0.0882,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 297",
+			"if": "vv.kod in ['297']",
+			"value": 0.0882,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventívne zdravotné výkony - vv. 1070",
+			"if": "vv.kod in ['1070']",
+			"value": 0.0882,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5301",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5301']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5301,5316,5807,5809",
-			"if": "vv.kod in ['5301','5316','5807','5809']",
+			"label": "Preventivné výkony - vv. 5303",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5303']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5305",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5305']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5308",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5308']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5316",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5316']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5807",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5807']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5809",
+			"if": "\"Z\" in vv.diagnoza && vv.kod in ['5809']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5301",
+			"if": "vv.kod in ['5301']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5316",
+			"if": "vv.kod in ['5316']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5807",
+			"if": "vv.kod in ['5807']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBUSG",
+			"instruction": null
+		},
+		{
+			"label": "Preventivné výkony - vv. 5809",
+			"if": "vv.kod in ['5809']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBUSG",
 			"instruction": null
@@ -96,22 +201,57 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkony 5303,5305,5308",
-			"if": "vv.kod in ['5303','5305','5308']",
+			"label": "Výkony 5303",
+			"if": "vv.kod in ['5303']",
 			"value": 0.010232,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 5304,5808",
-			"if": "vv.kod in ['5808','5304']",
+			"label": "Výkony 5305",
+			"if": "vv.kod in ['5305']",
+			"value": 0.010232,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5308",
+			"if": "vv.kod in ['5308']",
+			"value": 0.010232,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5304",
+			"if": "vv.kod in ['5304']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
-			"label": "Výkon 1b, 11a, 70",
-			"if": "vv.kod in ['1b','11a','70']",
+			"label": "Výkon 5808",
+			"if": "vv.kod in ['5808']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 1b",
+			"if": "vv.kod in ['1b']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 11a",
+			"if": "vv.kod in ['11a']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 70",
+			"if": "vv.kod in ['70']",
 			"value": 0.027,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null

@@ -30,21 +30,43 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.035 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
-│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony                  │ vv.kod in ['102','103','105','108','157','297','1070']       │
-│            0.09 │ vv.bodyCelkom*cena        │ Výkon 252b, 252c                              │ vv.kod in ['252b','252C']                                    │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony - vv. 102        │ vv.kod in ['102']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony - vv. 103        │ vv.kod in ['103']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony - vv. 105        │ vv.kod in ['105']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony - vv. 108        │ vv.kod in ['108']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony - vv. 157        │ vv.kod in ['157']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony - vv. 297        │ vv.kod in ['297']                                            │
+│           0.084 │ vv.bodyCelkom*cena        │ Preventívne zdravotné výkony - vv. 1070       │ vv.kod in ['1070']                                           │
+│            0.09 │ vv.bodyCelkom*cena        │ Výkon 252b                                    │ vv.kod in ['252b']                                           │
+│            0.09 │ vv.bodyCelkom*cena        │ Výkon 252C                                    │ vv.kod in ['252C']                                           │
 │         0.01917 │ vv.bodyCelkom*cena        │ Výkon 118                                     │ vv.kod in ['118']                                            │
-│        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony 5303,5305,5308             │ "Z" in vv.diagnoza && vv.kod in ['5303','5305','5308']       │
-│        0.009574 │ vv.bodyCelkom*cena        │ Výkony 5303,5305,5308                         │ vv.kod in ['5303','5305','5308']                             │
+│        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony - vv. 5303                 │ "Z" in vv.diagnoza && vv.kod in ['5303']                     │
+│        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony - vv. 5305                 │ "Z" in vv.diagnoza && vv.kod in ['5305']                     │
+│        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony - vv. 5308                 │ "Z" in vv.diagnoza && vv.kod in ['5308']                     │
+│        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony - vv. 5303                 │ vv.kod in ['5303']                                           │
+│        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony - vv. 5305                 │ vv.kod in ['5305']                                           │
+│        0.009574 │ vv.bodyCelkom*cena        │ Preventivné výkony - vv. 5308                 │ vv.kod in ['5308']                                           │
 │        0.009574 │ vv.bodyCelkom*cena        │ Výkon 5808                                    │ vv.kod in ['5808']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Výkon 60                                      │ vv.kod in ['60']                                             │
 │            null │ vv.bodyCelkom*CBEU        │ Výkon 67                                      │ vv.kod in ['67']                                             │
-│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['11a','1b','70']                                  │
+│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína - 11a                            │ vv.kod in ['11a']                                            │
+│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína - 11b                            │ vv.kod in ['1b']                                             │
+│           0.027 │ vv.bodyCelkom*cena        │ Telemedicína - 70                             │ vv.kod in ['70']                                             │
 │              25 │ vv.pocet*cena             │ Konzultačná - expertná kolposkopia            │ vv.kod in ['4M04004']                                        │
 │              15 │ vv.pocet*cena             │ Punch biopsia                                 │ vv.kod in ['4M04007']                                        │
 │             5.2 │ vv.pocet*cena             │ Skriningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skriningový poistencov. antigénový test SARS- │ vv.kod in ['629b']                                           │
 │                 │                           │ CoV-2 imun. metód.                            │                                                              │
-│               0 │ vv.bodyCelkom*cena        │ Výkony uhrádzané v rámci platy za kapitáciu   │ p.kapitacia && vv.kod in ['15b','63','63a','120','156']      │
+│               0 │ vv.bodyCelkom*cena        │ Výkony uhrádzané v rámci platy za kapitáciu - │ p.kapitacia && vv.kod in ['15b']                             │
+│                 │                           │ 15b                                           │                                                              │
+│               0 │ vv.bodyCelkom*cena        │ Výkony uhrádzané v rámci platy za kapitáciu - │ p.kapitacia && vv.kod in ['63']                              │
+│                 │                           │ 63                                            │                                                              │
+│               0 │ vv.bodyCelkom*cena        │ Výkony uhrádzané v rámci platy za kapitáciu - │ p.kapitacia && vv.kod in ['63a']                             │
+│                 │                           │ 63a                                           │                                                              │
+│               0 │ vv.bodyCelkom*cena        │ Výkony uhrádzané v rámci platy za kapitáciu - │ p.kapitacia && vv.kod in ['120']                             │
+│                 │                           │ 120                                           │                                                              │
+│               0 │ vv.bodyCelkom*cena        │ Výkony uhrádzané v rámci platy za kapitáciu - │ p.kapitacia && vv.kod in ['156']                             │
+│                 │                           │ 156                                           │                                                              │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ=='SVaLZ' │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['BE','CU','EU'] && vv.typ!='SVaLZ' │
 │           0.035 │ vv.bodyCelkom*cena        │ Nekapitovaný - neodkladná starostlivosť       │ !p.kapitacia && d.od|ma('jeNeodkladna')                      │
