@@ -8,12 +8,12 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────┐
 │ Názov a hodnota   │ Popis                    │
 ├───────────────────┼──────────────────────────┤
-│ CB = 0.0336       │ Cena bodu                │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ          │
-│ CBV = 0.038       │ Vyšetrenie 60,62,63,,60r │
-│ IPP4 = 5.83       │ IPP4                     │
-│ IPP5 = 4.24       │ IPP5                     │
-│ IPP6 = 3.18       │ IPP6                     │
+│ CB = 0.0353       │ Cena bodu                │
+│ CBSVALZ = 0.01083 │ Cena bodu SVaLZ          │
+│ CBV = 0.04        │ Vyšetrenie 60,62,63,,60r │
+│ IPP4 = 6.12       │ IPP4                     │
+│ IPP5 = 4.45       │ IPP5                     │
+│ IPP6 = 3.34       │ IPP6                     │
 └───────────────────┴──────────────────────────┘
 
 
@@ -30,16 +30,16 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBV         │ Výkon 60,62,63                                │ vv.kod in ['60','62','63','60r']                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 65,66,67                                │ vv.kod in ['65','66','67']                                   │
 │            0.02 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
-│          0.0226 │ vv.bodyCelkom*cena        │ Elektroencefalografické vyšetrenie            │ vv.kod in ['5793','5794','5795']                             │
-│            5.82 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0006']                                          │
-│            6.06 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0007']                                          │
-│            6.98 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
+│         0.02586 │ vv.bodyCelkom*cena        │ Elektroencefalografické vyšetrenie            │ vv.kod in ['5793','5794','5795']                             │
+│            6.11 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0006']                                          │
+│            6.36 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0007']                                          │
+│            7.33 │ vv.pocet*cena             │ Výkony                                        │ vv.kod in ['H0008']                                          │
 │           0.035 │ vv.bodyCelkom*cena        │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon 5302                                    │ vv.kod in ['5302']                                           │
 │          0.0055 │ vv.bodyCelkom*cena        │ Výkon 5330,5531,5332                          │ vv.kod in ['5330','5331','5332']                             │
-│            10.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
+│           10.71 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2 imunof │ vv.kod in ['629b']                                           │
 │                 │                           │ luorerscenčnou metódou                        │                                                              │
-│            8.95 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
+│             9.4 │ vv.pocet*cena             │ Stanovenie D-diméru                           │ vv.kod in ['3860']                                           │
 │            11.5 │ vv.pocet*cena             │ Stanovenie Troponínu                          │ vv.kod in ['4485']                                           │
 │           19.75 │ vv.pocet*cena             │ N-terminálny fragment (NT-proBNP)             │ vv.kod in ['44418']                                          │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
