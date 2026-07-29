@@ -4,43 +4,64 @@
 	"vykon": [
 		{
 			"label": "JZS Výkon",
-			"if": "vv.kod in ['5l1930','5l1931','5l1932','5l1943','5l1955']",
-			"value": 380,
+			"if": "vv.kod in ['5v130x','5v131d','5v131x','5v140d','5v140x']",
+			"value": 98,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
-			"if": "vv.kod in ['5n450','5n4510','5n4515','5n4516','5n451x','5n452','5n459']",
-			"value": 364,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "JZS Výkon",
-			"if": "vv.kod in ['5n45b','5n45c','5n45d','5n45e','5n45x','5n45f']",
-			"value": 456,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "JZS Výkon",
-			"if": "vv.kod in ['5v191','5v193','5v194']",
-			"value": 355,
+			"if": "vv.kod in ['14n2120','14n2122']",
+			"value": 217,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kv150c','kv150d']",
-			"value": 252,
+			"value": 260,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
-			"if": "vv.kod in ['5l1957','5l1951']",
-			"value": 749,
+			"if": "vv.kod in ['13m104']",
+			"value": 309,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
+			"if": "vv.kod in ['5v191','5v193','5v194']",
+			"value": 367,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
+			"if": "vv.kod in ['5n450','5n4510','5n4515','5n4516','5n451x','5n452','5n459']",
+			"value": 376,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
+			"if": "vv.kod in ['5l1930','5l1931','5l1932','5l1943','5l1955']",
+			"value": 393,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
+			"if": "vv.kod in ['5n4100','5n410x']",
+			"value": 469,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
+			"if": "vv.kod in ['5n45b','5n45c','5n45d','5n45e','5n45f','5n45x']",
+			"value": 471,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

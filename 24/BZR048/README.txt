@@ -52,7 +52,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
 │            null │ vv.bodyCelkom*CBP         │ Vykon 287                                     │ vv.kod in ['287']                                            │
-│        0.038462 │ vv.bodyCelkom*cena        │ Výkon anestézie                               │ vv.kod in ['81','93']                                        │
+│         0.04091 │ vv.bodyCelkom*cena        │ Výkon anestézie                               │ vv.kod in ['81','93']                                        │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

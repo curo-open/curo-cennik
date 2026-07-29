@@ -20,13 +20,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│             380 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5l1930','5l1931','5l1932','5l1943','5l1955']     │
-│             364 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5n450','5n4510','5n4515','5n4516','5n451x','5n45 │
+│              98 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5v130x','5v131d','5v131x','5v140d','5v140x']     │
+│             217 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['14n2120','14n2122']                              │
+│             260 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['kv150c','kv150d']                                │
+│             309 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['13m104']                                         │
+│             367 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5v191','5v193','5v194']                          │
+│             376 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5n450','5n4510','5n4515','5n4516','5n451x','5n45 │
 │                 │                           │                                               │ 2','5n459']                                                  │
-│             456 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5n45b','5n45c','5n45d','5n45e','5n45x','5n45f']  │
-│             355 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5v191','5v193','5v194']                          │
-│             252 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['kv150c','kv150d']                                │
-│             749 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5l1957','5l1951']                                │
+│             393 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5l1930','5l1931','5l1932','5l1943','5l1955']     │
+│             469 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5n4100','5n410x']                                │
+│             471 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5n45b','5n45c','5n45d','5n45e','5n45f','5n45x']  │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

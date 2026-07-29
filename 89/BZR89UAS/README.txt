@@ -81,6 +81,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.typ!='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony                                        │ 1                                                            │
+│        0.005074 │ vv.bodyCelkom*cena        │ MRI                                           │ vv.kod in ['5611a']                                          │
+│          374.54 │ vv.pocet*cena             │ MRI enterografia a MR rekta                   │ vv.kod in ['H4002' , 'H4003']                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

@@ -328,6 +328,20 @@
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
+		},
+		{
+			"label": "MRI",
+			"if": "vv.kod in ['5611a']",
+			"value": 0.005074,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "MRI enterografia a MR rekta",
+			"if": "vv.kod in ['H4002' , 'H4003']",
+			"value": 374.54,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [

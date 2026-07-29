@@ -20,34 +20,16 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│               1 │ vv.pocet*cena             │ Výkon 99999                                   │ vv.kod in ['99999'] || vv.kod in ['99999']                   │
-│             473 │ vv.pocet*cena             │ Výkon 8631                                    │ vv.kod in ['8631'] || vv.k in ['8631'] || vv.k25 in ['8631'] │
-│            1030 │ vv.pocet*cena             │ Výkon 8631A                                   │ vv.kod in ['8631A'] || vv.k in ['8631A'] || vv.k25 in ['8631 │
-│                 │                           │                                               │ A']                                                          │
-│             412 │ vv.pocet*cena             │ Výkon 8900                                    │ vv.kod in ['8900'] || vv.k in ['8900'] || vv.k25 in ['8900'] │
-│             412 │ vv.pocet*cena             │ Výkon 8901                                    │ vv.kod in ['8901'] || vv.k in ['8901'] || vv.k25 in ['8901'] │
-│             279 │ vv.pocet*cena             │ Výkon 8902                                    │ vv.kod in ['8902'] || vv.k in ['8902'] || vv.k25 in ['8902'] │
-│             398 │ vv.pocet*cena             │ Výkon 8903                                    │ vv.kod in ['8903'] || vv.k in ['8903'] || vv.k25 in ['8903'] │
-│             366 │ vv.pocet*cena             │ Výkon 8905                                    │ vv.kod in ['8905'] || vv.k in ['8905'] || vv.k25 in ['8905'] │
-│             307 │ vv.pocet*cena             │ Výkon 8909                                    │ vv.kod in ['8909'] || vv.k in ['8909'] || vv.k25 in ['8909'] │
-│             216 │ vv.pocet*cena             │ Výkon 8910                                    │ vv.kod in ['8910'] || vv.k in ['8910'] || vv.k25 in ['8910'] │
-│             379 │ vv.pocet*cena             │ Výkon 8911                                    │ vv.kod in ['8911'] || vv.k in ['8911'] || vv.k25 in ['8911'] │
-│             412 │ vv.pocet*cena             │ Výkon 8912                                    │ vv.kod in ['8912'] || vv.k in ['8912'] || vv.k25 in ['8912'] │
-│             356 │ vv.pocet*cena             │ Výkon 8914                                    │ vv.kod in ['8914'] || vv.k in ['8914'] || vv.k25 in ['8914'] │
-│             280 │ vv.pocet*cena             │ Výkon 8915                                    │ vv.kod in ['8915'] || vv.k in ['8915'] || vv.k25 in ['8915'] │
-│             356 │ vv.pocet*cena             │ Výkon 9315                                    │ vv.kod in ['9315'] || vv.k in ['9315'] || vv.k25 in ['9315'] │
-│             335 │ vv.pocet*cena             │ Výkon 8916                                    │ vv.kod in ['8916'] || vv.k in ['8916'] || vv.k25 in ['8916'] │
-│             233 │ vv.pocet*cena             │ Výkon 8917                                    │ vv.kod in ['8917'] || vv.k in ['8917'] || vv.k25 in ['8917'] │
-│             166 │ vv.pocet*cena             │ Výkon 8918                                    │ vv.kod in ['8918'] || vv.k in ['8918'] || vv.k25 in ['8918'] │
-│             117 │ vv.pocet*cena             │ Výkon 8919                                    │ vv.kod in ['8919'] || vv.k in ['8919'] || vv.k25 in ['8919'] │
-│             289 │ vv.pocet*cena             │ Výkon 8920                                    │ vv.kod in ['8920'] || vv.k in ['8920'] || vv.k25 in ['8920'] │
-│             237 │ vv.pocet*cena             │ Výkon 8921                                    │ vv.kod in ['8921'] || vv.k in ['8921'] || vv.k25 in ['8921'] │
-│             122 │ vv.pocet*cena             │ Výkon 8922                                    │ vv.kod in ['8922'] || vv.k in ['8922'] || vv.k25 in ['8922'] │
-│             139 │ vv.pocet*cena             │ Výkon 8924                                    │ vv.kod in ['8924'] || vv.k in ['8924'] || vv.k25 in ['8924'] │
-│             289 │ vv.pocet*cena             │ Výkon 8926                                    │ vv.kod in ['8926'] || vv.k in ['8926'] || vv.k25 in ['8926'] │
-│             400 │ vv.pocet*cena             │ Výkon 8927                                    │ vv.kod in ['8927'] || vv.k in ['8927'] || vv.k25 in ['8927'] │
-│             128 │ vv.pocet*cena             │ Výkon 8928                                    │ vv.kod in ['8928'] || vv.k in ['8928'] || vv.k25 in ['8928'] │
-│             221 │ vv.pocet*cena             │ Výkon 8929                                    │ vv.kod in ['8929'] || vv.k in ['8929'] || vv.k25 in ['8929'] │
+│             128 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5o450','5o452','5o45x','8d142']                  │
+│             139 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['14o02','14o111','14o302']                        │
+│             216 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5o499']                                          │
+│             221 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5p5051','5p5052','5p506','5p509']                │
+│             250 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5p501','5p504']                                  │
+│             289 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['14o01','14o301','5o242a','5o242r']               │
+│             307 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5p502','5p503']                                  │
+│             356 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5p4030','5p4031','5p4032']                       │
+│             367 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5p4020','5p4021','5p4023','5p4024']              │
+│             385 │ vv.pocet*cena             │ JZS Výkon                                     │ vv.kod in ['5p311','5p312','5p31x']                          │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
