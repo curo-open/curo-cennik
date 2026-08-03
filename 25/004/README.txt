@@ -39,7 +39,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ Výkon SVALZ USG                               │ vv.kod in ['5330','5331','5332','5300','5301','5303','5304', │
 │                 │                           │                                               │ '5307','5307a','5312','5315','5316','5796','5799']           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 802, 813, 819d, 803, 804                │ vv.kod in ['802','813','819d','803','804','260a']            │
-│         0.02814 │ vv.bodyCelkom*cena        │ Výkony EMG                                    │ vv.kod in ['810','809','811','812','819']                    │
+│            null │ vv.bodyCelkom*CB          │ Výkony EMG                                    │ vv.kod in ['810','809','811','812','819']                    │
 │           0.026 │ vv.bodyCelkom*cena        │ Zhodnotenie rtg. dokumentácie                 │ vv.kod in ['15d']                                            │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
