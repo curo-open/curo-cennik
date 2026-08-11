@@ -235,7 +235,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Kapitovaný - SVALZ výkon",
+			"label": "Nepreventívne výkony SVALZ (vrátane prístrojových) - kapitovaný ",
 			"if": "vv.typ=='SVaLZ'",
 			"value": 0.0108,
 			"calc": "vv.bodyCelkom*cena",
