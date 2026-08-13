@@ -28,6 +28,10 @@
 			"label": "POHOS",
 			"value": 30
 		},
+		"AKUT": {
+			"label": "AKUT",
+			"value": 7
+		},
 		"LIMIT": {
 			"label": "Limit",
 			"value": 2235
@@ -124,6 +128,13 @@
 			"if": "vv.kod=='POHOS'",
 			"value": null,
 			"calc": "POHOS",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='AKUT'",
+			"value": null,
+			"calc": "AKUT",
 			"instruction": null
 		},
 		{

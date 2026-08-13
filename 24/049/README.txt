@@ -15,6 +15,7 @@ Autor: curo.sk
 │ AGTC = 4.8         │ AGTC                 │
 │ PP50 = 10          │ PP50                 │
 │ POHOS = 30         │ POHOS                │
+│ AKUT = 7           │ AKUT                 │
 │ LIMIT = 2235       │ Limit                │
 └────────────────────┴──────────────────────┘
 
@@ -42,6 +43,7 @@ Autor: curo.sk
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ POHOS                     │ Pripočitateľné položky                        │ vv.kod=='POHOS'                                              │
+│            null │ AKUT                      │ Pripočitateľné položky                        │ vv.kod=='AKUT'                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
