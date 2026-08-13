@@ -5,14 +5,14 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬──────────────────────┐
-│ Názov a hodnota   │ Popis                │
-├───────────────────┼──────────────────────┤
-│ LIMIT = 0         │ Limit                │
-│ CB = 0.031252     │ Cena bodu            │
-│ CBSVALZ = 0.01021 │ Cena bodu SVaLZ      │
-│ CBE = 0.027       │ Cena bodu el. výkony │
-└───────────────────┴──────────────────────┘
+┌────────────────────┬──────────────────────┐
+│ Názov a hodnota    │ Popis                │
+├────────────────────┼──────────────────────┤
+│ LIMIT = 0          │ Limit                │
+│ CB = 0.031252      │ Cena bodu            │
+│ CBSVALZ = 0.010113 │ Cena bodu SVaLZ      │
+│ CBE = 0.027        │ Cena bodu el. výkony │
+└────────────────────┴──────────────────────┘
 
 
   CENY ZA PACIENTA
