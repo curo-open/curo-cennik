@@ -12,6 +12,7 @@ Autor: curo.sk
 │ CB = 0.031252      │ Cena bodu            │
 │ CBSVALZ = 0.010113 │ Cena bodu SVaLZ      │
 │ CBE = 0.027        │ Cena bodu el. výkony │
+│ AKUT = 7           │ AKUT                 │
 └────────────────────┴──────────────────────┘
 
 
@@ -28,6 +29,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60','62','63']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 820;821;822;825;841                     │ vv.kod in ['820','821','822','825','841','847']              │
 │            null │ vv.bodyCelkom*CBE         │ Telemedicína                                  │ vv.kod in ['1b','1c','11a','70']                             │
+│            null │ AKUT                      │ Pripočitateľné položky                        │ vv.kod=='AKUT'                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
