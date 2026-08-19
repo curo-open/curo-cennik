@@ -5,28 +5,28 @@
 		{
 			"label": "Parciálna fasciektómia izolovaná na dlani",
 			"if": "vv.kod in ['5t7220']",
-			"value": 331,
+			"value": 405,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Parciálna fasciektómia jedného alebo dvoch prstov",
 			"if": "vv.kod in ['5t7223']",
-			"value": 331,
+			"value": 405,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Totálna fasciektómia izolovaná na dlani",
 			"if": "vv.kod in ['5t7230']",
-			"value": 375,
+			"value": 459,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Totálna fasciektómia 3 a viac prstov",
 			"if": "vv.kod in ['5t7234']",
-			"value": 375,
+			"value": 459,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -334,7 +334,7 @@
 		{
 			"label": "Artroskopické vyhladenie chrupavky [chondroplastika] kolenného kĺbu",
 			"if": "vv.kod in ['5t42ch']",
-			"value": 1035,
+			"value": 1188,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -950,7 +950,7 @@
 		{
 			"label": "Fasciektómia jedného prsta s jednou neurolýzou",
 			"if": "vv.kod in ['5t7241']",
-			"value": 400,
+			"value": 459,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -1014,20 +1014,6 @@
 			"label": "Artroskopická refixácia osteochondrálneho fragmentu lakťového kĺbu",
 			"if": "vv.kod in ['5t4214']",
 			"value": 846,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Totálna fasciektómia 3 a viac prstov",
-			"if": "vv.kod in ['5t7234']",
-			"value": 400,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Totálna fasciektómia izolovaná na dlani",
-			"if": "vv.kod in ['5t7230']",
-			"value": 400,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -1692,7 +1678,7 @@
 		{
 			"label": "Artroskopická resekcia častí ligament, zbytkov ligament z humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t4090']",
-			"value": 1035,
+			"value": 1188,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -1755,7 +1741,7 @@
 		{
 			"label": "Artroskopická resekcia jedného alebo viacerých osteofytov humeroglenoidálneho kĺbu",
 			"if": "vv.kod in ['5t42h0']",
-			"value": 1035,
+			"value": 1188,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4919,7 +4905,7 @@
 		{
 			"label": "Artroskopická parciálna resekcia menisku",
 			"if": "vv.kod in ['5t42310']",
-			"value": 1035,
+			"value": 1188,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -5318,7 +5304,7 @@
 		{
 			"label": "Discízia šľachových pošiev prsta",
 			"if": "vv.kod in ['5t7027']",
-			"value": 353,
+			"value": 405,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -5752,21 +5738,7 @@
 		{
 			"label": "Fasciektómia viac prstov s jednou neurolýzou",
 			"if": "vv.kod in ['5t7242']",
-			"value": 400,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Parciálna fasciektómia jedného alebo dvoch prstov",
-			"if": "vv.kod in ['5t7223']",
-			"value": 353,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Parciálna fasciektómia izolovaná na dlani",
-			"if": "vv.kod in ['5t7220']",
-			"value": 353,
+			"value": 459,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -5808,7 +5780,7 @@
 		{
 			"label": "Prerušenie väzu retinaculum flexorum s epineurolýzou n. medianus",
 			"if": "vv.kod in ['5t71111']",
-			"value": 418,
+			"value": 480,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

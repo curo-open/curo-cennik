@@ -72,7 +72,7 @@ Autor: curo.sk
 │                 │                           │ extraperit                                    │                                                              │
 │             591 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n813x']                                         │
 │                 │                           │ plastickým materiálom, ostatné                │                                                              │
-│             591 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['5n8170']                                         │
+│             680 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['5n8170']                                         │
 │                 │                           │ ecidíve s aloplastickým materiálom, laparotom │                                                              │
 │                 │                           │ icky                                          │                                                              │
 │             536 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['5n8171']                                         │
@@ -220,13 +220,13 @@ Autor: curo.sk
 │                 │                           │ magna                                         │                                                              │
 │             612 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1921']                                         │
 │                 │                           │ parva                                         │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['kl1940']                                         │
+│             817 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['kl1940']                                         │
 │                 │                           │ sektómie                                      │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['kl1941']                                         │
+│             817 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['kl1941']                                         │
 │                 │                           │ sektómie                                      │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['kl1942']                                         │
+│             817 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['kl1942']                                         │
 │                 │                           │ bez crossektómie                              │                                                              │
-│             612 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['kl1943']                                         │
+│             817 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['kl1943']                                         │
 │                 │                           │ crossektómie                                  │                                                              │
 │             612 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['kl194x']                                         │
 │             411 │ vv.pocet*cena             │ Operácia hydrokély semenného povrazca         │ vv.kod in ['kp403']                                          │

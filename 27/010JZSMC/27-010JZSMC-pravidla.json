@@ -222,7 +222,7 @@
 		{
 			"label": "Uzavretie inguinálnej hernie [prietrže] pri recidíve s aloplastickým materiálom, laparotomicky",
 			"if": "vv.kod in ['5n8170']",
-			"value": 591,
+			"value": 680,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -761,28 +761,28 @@
 		{
 			"label": "Odstránenie varixov v. saphena magna bez crossektómie",
 			"if": "vv.kod in ['kl1940']",
-			"value": 612,
+			"value": 817,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov v. saphena parva bez crossektómie",
 			"if": "vv.kod in ['kl1941']",
-			"value": 612,
+			"value": 817,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov v. saphena magna a parva bez crossektómie",
 			"if": "vv.kod in ['kl1942']",
-			"value": 612,
+			"value": 817,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov nekmeňovej varikozity bez crossektómie",
 			"if": "vv.kod in ['kl1943']",
-			"value": 612,
+			"value": 817,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

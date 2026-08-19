@@ -383,7 +383,7 @@
 		{
 			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
 			"if": "vv.kod in ['kl1951']",
-			"value": 795,
+			"value": 874,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -467,14 +467,14 @@
 		{
 			"label": "Crossektómia a parciálny stripping v. saphena parva",
 			"if": "vv.kod in ['kl1921']",
-			"value": 743,
+			"value": 817,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Crossektómia a parciálny stripping v. saphena magna",
 			"if": "vv.kod in ['kl1920']",
-			"value": 743,
+			"value": 817,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -607,7 +607,7 @@
 		{
 			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, laparoskopicky transperitoneálne",
 			"if": "vv.kod in ['5n8131']",
-			"value": 618,
+			"value": 680,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -649,7 +649,7 @@
 		{
 			"label": "Uzavretie inguinálnej hernie [prietrže] s plastikou",
 			"if": "vv.kod in ['5n811']",
-			"value": 428,
+			"value": 472,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -810,7 +810,7 @@
 		{
 			"label": "Uzavretie umbilikálnej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
 			"if": "vv.kod in ['5n8330']",
-			"value": 555,
+			"value": 611,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -852,7 +852,7 @@
 		{
 			"label": "Uzavretie inguinálnej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
 			"if": "vv.kod in ['5n8130']",
-			"value": 618,
+			"value": 680,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -866,14 +866,14 @@
 		{
 			"label": "Uzavretie umbilikálnej hernie [prietrže] s plastikou",
 			"if": "vv.kod in ['5n831']",
-			"value": 555,
+			"value": 611,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Uzavretie epigastrickej hernie [prietrže] s plastikou",
 			"if": "vv.kod in ['5n841']",
-			"value": 618,
+			"value": 680,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -992,7 +992,7 @@
 		{
 			"label": "Uzavretie epigastrickej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
 			"if": "vv.kod in ['5n8430']",
-			"value": 618,
+			"value": 680,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -1111,7 +1111,7 @@
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a axily",
 			"if": "vv.kod in ['5v1436']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -1783,7 +1783,7 @@
 		{
 			"label": "Subkutánna excízia análnej fistuly",
 			"if": "vv.kod in ['5n4510']",
-			"value": 423,
+			"value": 485,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -3470,56 +3470,56 @@
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v brušnej oblasti",
 			"if": "vv.kod in ['5v143b']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti hrudnej steny a chrbta",
 			"if": "vv.kod in ['5v143a']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ruky",
 			"if": "vv.kod in ['5v1439']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predlaktia",
 			"if": "vv.kod in ['5v1438']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti ramena a lakťa",
 			"if": "vv.kod in ['5v1437']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti krku",
 			"if": "vv.kod in ['5v1435']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované ostatných častí hlavy",
 			"if": "vv.kod in ['5v1434']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti pery",
 			"if": "vv.kod in ['5v1430']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4100,7 +4100,7 @@
 		{
 			"label": "Excízia sinus pilonidalis",
 			"if": "vv.kod in ['5v191']",
-			"value": 406,
+			"value": 472,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4385,6 +4385,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Excízia nádoru prsníka",
+			"if": "vv.kod in ['5u1111']",
+			"value": 389,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Lokálna laloková plastika kože a podkožia, plastika malej plochy rotovaným lalokom v oblasti nohy (chodidlo)",
 			"if": "vv.kod in ['5v231g']",
 			"value": 238,
@@ -4520,28 +4527,28 @@
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti nohy (chodidlo)",
 			"if": "vv.kod in ['5v143g']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti predkolenia",
 			"if": "vv.kod in ['5v143f']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v oblasti stehna a kolena",
 			"if": "vv.kod in ['5v143e']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Radikálne a rozsiahle odstránenie chorého tkaniva na koži a podkoží s primárnym uzavretím rany histologicky kontrolované v gluteálnej oblasti",
 			"if": "vv.kod in ['5v143d']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4597,7 +4604,7 @@
 		{
 			"label": "Cholecystektómia jednoduchá bez revízie žlčových ciest, laparoskopicky",
 			"if": "vv.kod in ['5n6202']",
-			"value": 996,
+			"value": 1095,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4723,21 +4730,21 @@
 		{
 			"label": "Excízia hemoroidov s plastickou rekonštrukciou",
 			"if": "vv.kod in ['5n45f']",
-			"value": 477,
+			"value": 554,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Operačné ošetrenie hemoroidov so staplerom",
 			"if": "vv.kod in ['5n45e']",
-			"value": 477,
+			"value": 554,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Deštrukcia hemoroidov",
 			"if": "vv.kod in ['5n45d']",
-			"value": 477,
+			"value": 554,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4814,7 +4821,7 @@
 		{
 			"label": "Apendektómia, laparoskopicky pomocou slučky alebo ligatúry",
 			"if": "vv.kod in ['5n3610']",
-			"value": 942,
+			"value": 1095,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4828,7 +4835,7 @@
 		{
 			"label": "Termická ablácia VSM, VSP pomocou rádiofrekvencie, endovenózne pod sonografickou navigáciou",
 			"if": "vv.kod in ['5l1951']",
-			"value": 668,
+			"value": 735,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4842,28 +4849,28 @@
 		{
 			"label": "Odstránenie varixov nekmeňovej varikozity bez crossektómie",
 			"if": "vv.kod in ['5l1943']",
-			"value": 592,
+			"value": 651,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov v. saphena magna a parva bez crossektómie",
 			"if": "vv.kod in ['5l1942']",
-			"value": 592,
+			"value": 651,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov v. saphena parva bez crossektómie",
 			"if": "vv.kod in ['5l1941']",
-			"value": 592,
+			"value": 651,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Odstránenie varixov v. saphena magna bez crossektómie",
 			"if": "vv.kod in ['5l1940']",
-			"value": 592,
+			"value": 651,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
@@ -4891,21 +4898,21 @@
 		{
 			"label": "Crossektómia a parciálny stripping v. saphena magna a parva",
 			"if": "vv.kod in ['5l1922']",
-			"value": 592,
+			"value": 651,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Crossektómia a parciálny stripping v. saphena parva",
 			"if": "vv.kod in ['5l1921']",
-			"value": 592,
+			"value": 651,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "Crossektómia a parciálny stripping v. saphena magna",
 			"if": "vv.kod in ['5l1920']",
-			"value": 592,
+			"value": 651,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

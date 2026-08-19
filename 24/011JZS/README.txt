@@ -20,11 +20,11 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│             331 │ vv.pocet*cena             │ Parciálna fasciektómia izolovaná na dlani     │ vv.kod in ['5t7220']                                         │
-│             331 │ vv.pocet*cena             │ Parciálna fasciektómia jedného alebo dvoch pr │ vv.kod in ['5t7223']                                         │
+│             405 │ vv.pocet*cena             │ Parciálna fasciektómia izolovaná na dlani     │ vv.kod in ['5t7220']                                         │
+│             405 │ vv.pocet*cena             │ Parciálna fasciektómia jedného alebo dvoch pr │ vv.kod in ['5t7223']                                         │
 │                 │                           │ stov                                          │                                                              │
-│             375 │ vv.pocet*cena             │ Totálna fasciektómia izolovaná na dlani       │ vv.kod in ['5t7230']                                         │
-│             375 │ vv.pocet*cena             │ Totálna fasciektómia 3 a viac prstov          │ vv.kod in ['5t7234']                                         │
+│             459 │ vv.pocet*cena             │ Totálna fasciektómia izolovaná na dlani       │ vv.kod in ['5t7230']                                         │
+│             459 │ vv.pocet*cena             │ Totálna fasciektómia 3 a viac prstov          │ vv.kod in ['5t7234']                                         │
 │              70 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t892x']                                         │
 │                 │                           │ iách a burzách, ostatné                       │                                                              │
 │              70 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['5t8927']                                         │
@@ -109,7 +109,7 @@ Autor: curo.sk
 │                 │                           │ astika] horného členkového kĺbu               │                                                              │
 │            1035 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42c0']                                         │
 │                 │                           │ astika] humeroglenoidálneho kĺbu              │                                                              │
-│            1035 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42ch']                                         │
+│            1188 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42ch']                                         │
 │                 │                           │ astika] kolenného kĺbu                        │                                                              │
 │             846 │ vv.pocet*cena             │ Artroskopické vyhladenie chrupavky [chondropl │ vv.kod in ['5t42c4']                                         │
 │                 │                           │ astika] lakťového kĺbu                        │                                                              │
@@ -296,7 +296,7 @@ Autor: curo.sk
 │                 │                           │ lnokarpálneho kĺbu                            │                                                              │
 │             846 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika r │ vv.kod in ['5t4228']                                         │
 │                 │                           │ adiokarpálneho kĺbu                           │                                                              │
-│             400 │ vv.pocet*cena             │ Fasciektómia jedného prsta s jednou neurolýzo │ vv.kod in ['5t7241']                                         │
+│             459 │ vv.pocet*cena             │ Fasciektómia jedného prsta s jednou neurolýzo │ vv.kod in ['5t7241']                                         │
 │                 │                           │ u                                             │                                                              │
 │             846 │ vv.pocet*cena             │ Artroskopická subchondrálna spongioplastika l │ vv.kod in ['5t4224']                                         │
 │                 │                           │ akťového kĺbu                                 │                                                              │
@@ -316,8 +316,6 @@ Autor: curo.sk
 │                 │                           │ gmentu radiokarpálneho kĺbu                   │                                                              │
 │             846 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t4214']                                         │
 │                 │                           │ gmentu lakťového kĺbu                         │                                                              │
-│             400 │ vv.pocet*cena             │ Totálna fasciektómia 3 a viac prstov          │ vv.kod in ['5t7234']                                         │
-│             400 │ vv.pocet*cena             │ Totálna fasciektómia izolovaná na dlani       │ vv.kod in ['5t7230']                                         │
 │            1035 │ vv.pocet*cena             │ Artroskopická refixácia osteochondrálneho fra │ vv.kod in ['5t4210']                                         │
 │                 │                           │ gmentu humeroglenoidálneho kĺbu               │                                                              │
 │             846 │ vv.pocet*cena             │ Artroskopická excízia poškodeného tkaniva kĺb │ vv.kod in ['5t420m']                                         │
@@ -503,7 +501,7 @@ Autor: curo.sk
 │                 │                           │ iskoch kolenného kĺbu                         │                                                              │
 │            1035 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4091']                                         │
 │                 │                           │ v ligament z akromioklavikulárneho kĺbu       │                                                              │
-│            1035 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4090']                                         │
+│            1188 │ vv.pocet*cena             │ Artroskopická resekcia častí ligament, zbytko │ vv.kod in ['5t4090']                                         │
 │                 │                           │ v ligament z humeroglenoidálneho kĺbu         │                                                              │
 │             846 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42hm']                                         │
 │                 │                           │ h osteofytov dolného členkového kĺbu          │                                                              │
@@ -521,7 +519,7 @@ Autor: curo.sk
 │                 │                           │ h osteofytov lakťového kĺbu                   │                                                              │
 │            1035 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h1']                                         │
 │                 │                           │ h osteofytov akromioklavikulárneho kĺbu       │                                                              │
-│            1035 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h0']                                         │
+│            1188 │ vv.pocet*cena             │ Artroskopická resekcia jedného alebo viacerýc │ vv.kod in ['5t42h0']                                         │
 │                 │                           │ h osteofytov humeroglenoidálneho kĺbu         │                                                              │
 │            3017 │ vv.pocet*cena             │ Artroskopická operácia chrupavky dolného člen │ vv.kod in ['5t42fm']                                         │
 │                 │                           │ kového kĺbu s transplantáciou chondrocytov na │                                                              │
@@ -1523,7 +1521,7 @@ Autor: curo.sk
 │            1164 │ vv.pocet*cena             │ Artroskopická sutúra menisku, zložitá         │ vv.kod in ['5t42322']                                        │
 │            1164 │ vv.pocet*cena             │ Artroskopická refixácia menisku               │ vv.kod in ['5t42320']                                        │
 │            1035 │ vv.pocet*cena             │ Artroskopická totálna resekcia menisku        │ vv.kod in ['5t42311']                                        │
-│            1035 │ vv.pocet*cena             │ Artroskopická parciálna resekcia menisku      │ vv.kod in ['5t42310']                                        │
+│            1188 │ vv.pocet*cena             │ Artroskopická parciálna resekcia menisku      │ vv.kod in ['5t42310']                                        │
 │              59 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v142d']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany rany v gluteálnej oblasti                │                                                              │
@@ -1668,7 +1666,7 @@ Autor: curo.sk
 │             518 │ vv.pocet*cena             │ Sekundárna sutúra šľachy v oblasti nohy       │ vv.kod in ['5t8529']                                         │
 │             470 │ vv.pocet*cena             │ Primárna sutúra ohýbača prsta                 │ vv.kod in ['5t7051']                                         │
 │             353 │ vv.pocet*cena             │ Discízia šľachových pošiev palca              │ vv.kod in ['5t7028']                                         │
-│             353 │ vv.pocet*cena             │ Discízia šľachových pošiev prsta              │ vv.kod in ['5t7027']                                         │
+│             405 │ vv.pocet*cena             │ Discízia šľachových pošiev prsta              │ vv.kod in ['5t7027']                                         │
 │             846 │ vv.pocet*cena             │ Artroskopický aseptický výplach ulnokarpálneh │ vv.kod in ['5t4009']                                         │
 │                 │                           │ o kĺbu s drenážou                             │                                                              │
 │             846 │ vv.pocet*cena             │ Artroskopický aseptický výplach radiokarpálne │ vv.kod in ['5t4008']                                         │
@@ -1807,17 +1805,14 @@ Autor: curo.sk
 │            1035 │ vv.pocet*cena             │ Artroskopická resekcia plica synovialis kolen │ vv.kod in ['5t410h']                                         │
 │                 │                           │ ného kĺbu                                     │                                                              │
 │             294 │ vv.pocet*cena             │ Transpozícia šliach, ostatné                  │ vv.kod in ['5t842x']                                         │
-│             400 │ vv.pocet*cena             │ Fasciektómia viac prstov s jednou neurolýzou  │ vv.kod in ['5t7242']                                         │
-│             353 │ vv.pocet*cena             │ Parciálna fasciektómia jedného alebo dvoch pr │ vv.kod in ['5t7223']                                         │
-│                 │                           │ stov                                          │                                                              │
-│             353 │ vv.pocet*cena             │ Parciálna fasciektómia izolovaná na dlani     │ vv.kod in ['5t7220']                                         │
+│             459 │ vv.pocet*cena             │ Fasciektómia viac prstov s jednou neurolýzou  │ vv.kod in ['5t7242']                                         │
 │             306 │ vv.pocet*cena             │ Perkutánna fasciotómia viac ako jedného prsta │ vv.kod in ['5t7212']                                         │
 │             306 │ vv.pocet*cena             │ Perkutánna fasciotómia jedného prsta          │ vv.kod in ['5t7211']                                         │
 │             306 │ vv.pocet*cena             │ Perkutánna fasciotómia pozdĺžna, ostatné      │ vv.kod in ['5t81ax']                                         │
 │             353 │ vv.pocet*cena             │ Otvorená chirurgická parciálna fasciotómia po │ vv.kod in ['5t818x']                                         │
 │                 │                           │ zdĺžna, jeden segment, ostatné                │                                                              │
 │             418 │ vv.pocet*cena             │ Parciálna excízia retinaculum flexorum        │ vv.kod in ['5t7121']                                         │
-│             418 │ vv.pocet*cena             │ Prerušenie väzu retinaculum flexorum s epineu │ vv.kod in ['5t71111']                                        │
+│             480 │ vv.pocet*cena             │ Prerušenie väzu retinaculum flexorum s epineu │ vv.kod in ['5t71111']                                        │
 │                 │                           │ rolýzou n. medianus                           │                                                              │
 │             418 │ vv.pocet*cena             │ Prerušenie väzu retinaculum flexorum          │ vv.kod in ['5t71110']                                        │
 │              59 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143x']                                         │

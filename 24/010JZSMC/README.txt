@@ -135,7 +135,7 @@ Autor: curo.sk
 │              90 │ vv.pocet*cena             │ Resekcia gangliónu na svaloch, šľachách, fasc │ vv.kod in ['kt8920']                                         │
 │                 │                           │ iách a burzách v oblasti hlavy a krku         │                                                              │
 │              90 │ vv.pocet*cena             │ Excízia gangliómu na ruke                     │ vv.kod in ['kt790']                                          │
-│             795 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['kl1951']                                         │
+│             874 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['kl1951']                                         │
 │                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
 │                 │                           │ u                                             │                                                              │
 │             752 │ vv.pocet*cena             │ Rádioflekvenčná ablácia lokálnych varixov     │ vv.kod in ['kl1957']                                         │
@@ -156,9 +156,9 @@ Autor: curo.sk
 │             703 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena magna      │ vv.kod in ['kl1930']                                         │
 │             703 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1922']                                         │
 │                 │                           │ magna a parva                                 │                                                              │
-│             743 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1921']                                         │
+│             817 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1921']                                         │
 │                 │                           │ parva                                         │                                                              │
-│             743 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1920']                                         │
+│             817 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['kl1920']                                         │
 │                 │                           │ magna                                         │                                                              │
 │             703 │ vv.pocet*cena             │ Transkutánna ligatúra perforátorov na varikóz │ vv.kod in ['kl1912']                                         │
 │                 │                           │ nych žilách                                   │                                                              │
@@ -202,7 +202,7 @@ Autor: curo.sk
 │             585 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['5n817x']                                         │
 │                 │                           │ ecidíve s aloplastickým materiálom, iný príst │                                                              │
 │                 │                           │ up                                            │                                                              │
-│             618 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8131']                                         │
+│             680 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8131']                                         │
 │                 │                           │ plastickým materiálom, laparoskopicky transpe │                                                              │
 │                 │                           │ ritoneálne                                    │                                                              │
 │             585 │ vv.pocet*cena             │ Uzavretie ďalších abdominálnych hernií [priet │ vv.kod in ['5n8930']                                         │
@@ -215,7 +215,7 @@ Autor: curo.sk
 │                 │                           │ rží] s aloplastickým materiálom, ostatné      │                                                              │
 │             406 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s res │ vv.kod in ['5n814']                                          │
 │                 │                           │ ekciou čreva bez dodatočnej laparotómie       │                                                              │
-│             428 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s pla │ vv.kod in ['5n811']                                          │
+│             472 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s pla │ vv.kod in ['5n811']                                          │
 │                 │                           │ stikou                                        │                                                              │
 │             537 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['kn8150']                                         │
 │                 │                           │ ecidíve s plastikou bez funikulo-orchidolýzy  │                                                              │
@@ -267,7 +267,7 @@ Autor: curo.sk
 │             585 │ vv.pocet*cena             │ Uzavretie hernie [prietrže] v jazve s aloplas │ vv.kod in ['5n8541']                                         │
 │                 │                           │ tickým materiálom, laparoskopicky transperito │                                                              │
 │                 │                           │ neálne                                        │                                                              │
-│             555 │ vv.pocet*cena             │ Uzavretie umbilikálnej hernie [prietrže] s al │ vv.kod in ['5n8330']                                         │
+│             611 │ vv.pocet*cena             │ Uzavretie umbilikálnej hernie [prietrže] s al │ vv.kod in ['5n8330']                                         │
 │                 │                           │ oplastickým materiálom, laparotomicky         │                                                              │
 │             585 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s a │ vv.kod in ['5n8431']                                         │
 │                 │                           │ loplastickým materiálom, laparoskopicky trans │                                                              │
@@ -281,13 +281,13 @@ Autor: curo.sk
 │                 │                           │ cky totálny extraperitoneálny prístup         │                                                              │
 │             585 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s a │ vv.kod in ['5n842']                                          │
 │                 │                           │ utológnym materiálom                          │                                                              │
-│             618 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8130']                                         │
+│             680 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s alo │ vv.kod in ['5n8130']                                         │
 │                 │                           │ plastickým materiálom, laparotomicky          │                                                              │
 │             585 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s a │ vv.kod in ['5n843x']                                         │
 │                 │                           │ loplastickým materiálom, ostatné              │                                                              │
-│             555 │ vv.pocet*cena             │ Uzavretie umbilikálnej hernie [prietrže] s pl │ vv.kod in ['5n831']                                          │
+│             611 │ vv.pocet*cena             │ Uzavretie umbilikálnej hernie [prietrže] s pl │ vv.kod in ['5n831']                                          │
 │                 │                           │ astikou                                       │                                                              │
-│             618 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s p │ vv.kod in ['5n841']                                          │
+│             680 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s p │ vv.kod in ['5n841']                                          │
 │                 │                           │ lastikou                                      │                                                              │
 │             406 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] pri r │ vv.kod in ['5n8150']                                         │
 │                 │                           │ ecidíve s plastikou bez funikulo-orchidolýzy  │                                                              │
@@ -327,7 +327,7 @@ Autor: curo.sk
 │                 │                           │ icky transperitoneálne                        │                                                              │
 │             406 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s aut │ vv.kod in ['5n812']                                          │
 │                 │                           │ ológnym materiálom                            │                                                              │
-│             618 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s a │ vv.kod in ['5n8430']                                         │
+│             680 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s a │ vv.kod in ['5n8430']                                         │
 │                 │                           │ loplastickým materiálom, laparotomicky        │                                                              │
 │             585 │ vv.pocet*cena             │ Uzavretie ďalších abdominálnych hernií [priet │ vv.kod in ['5n8932']                                         │
 │                 │                           │ rží] s aloplastickým materiálom, endoskopicky │                                                              │
@@ -373,7 +373,7 @@ Autor: curo.sk
 │             238 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1446']                                         │
 │                 │                           │ niva na koži a podkoží s transplantáciou aleb │                                                              │
 │                 │                           │ o transpozíciou v oblasti ramena a axily      │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1436']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1436']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti rame │                                                              │
 │                 │                           │ na a axily                                    │                                                              │
@@ -567,7 +567,7 @@ Autor: curo.sk
 │             418 │ vv.pocet*cena             │ Extrasfinkterická excízia análnej fistuly     │ vv.kod in ['5n4514']                                         │
 │             418 │ vv.pocet*cena             │ Suprasfinkterická excízia análnej fistuly     │ vv.kod in ['5n4513']                                         │
 │             418 │ vv.pocet*cena             │ Transsfinkterická excízia análnej fistuly     │ vv.kod in ['5n4512']                                         │
-│             423 │ vv.pocet*cena             │ Subkutánna excízia análnej fistuly            │ vv.kod in ['5n4510']                                         │
+│             485 │ vv.pocet*cena             │ Subkutánna excízia análnej fistuly            │ vv.kod in ['5n4510']                                         │
 │             561 │ vv.pocet*cena             │ Endoskopická ligatúra perforátorov na varikóz │ vv.kod in ['5l19111']                                        │
 │                 │                           │ nych žilách s fasciotómiou                    │                                                              │
 │             561 │ vv.pocet*cena             │ Endoskopická ligatúra perforátorov na varikóz │ vv.kod in ['5l19110']                                        │
@@ -1023,33 +1023,33 @@ Autor: curo.sk
 │             310 │ vv.pocet*cena             │ Odstránenie intramedulárneho prúta/drôtu, prí │ vv.kod in ['5t07a0']                                         │
 │                 │                           │ padne revízia klavikuly                       │                                                              │
 │             418 │ vv.pocet*cena             │ Laparoskopia bez otvorenia pneumoperitonea    │ vv.kod in ['5z1121']                                         │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143b']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143b']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v brušnej obla │                                                              │
 │                 │                           │ sti                                           │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143a']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143a']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti hrud │                                                              │
 │                 │                           │ nej steny a chrbta                            │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1439']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1439']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti ruky │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1438']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1438']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti pred │                                                              │
 │                 │                           │ laktia                                        │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1437']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1437']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti rame │                                                              │
 │                 │                           │ na a lakťa                                    │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1435']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1435']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti krku │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1434']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1434']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované ostatných čast │                                                              │
 │                 │                           │ í hlavy                                       │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1430']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v1430']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti pery │                                                              │
 │              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v142x']                                         │
@@ -1291,7 +1291,7 @@ Autor: curo.sk
 │             406 │ vv.pocet*cena             │ Incízia sinus pilonidalis                     │ vv.kod in ['5v194']                                          │
 │             406 │ vv.pocet*cena             │ Operačné odstránenie sinus pilonidalis, ostat │ vv.kod in ['5v193']                                          │
 │                 │                           │ né                                            │                                                              │
-│             406 │ vv.pocet*cena             │ Excízia sinus pilonidalis                     │ vv.kod in ['5v191']                                          │
+│             472 │ vv.pocet*cena             │ Excízia sinus pilonidalis                     │ vv.kod in ['5v191']                                          │
 │              60 │ vv.pocet*cena             │ Lokálne operačné odstránenie chorého tkaniva  │ vv.kod in ['5v1304']                                         │
 │                 │                           │ na koži a podkoží bez primárneho uzavretia ra │                                                              │
 │                 │                           │ ny ostatných častí hlavy                      │                                                              │
@@ -1415,6 +1415,7 @@ Autor: curo.sk
 │                 │                           │ o transpozíciou v oblasti hrudnej steny a chr │                                                              │
 │                 │                           │ bta                                           │                                                              │
 │             334 │ vv.pocet*cena             │ Mikroduktektómia prsníka                      │ vv.kod in ['5u114']                                          │
+│             389 │ vv.pocet*cena             │ Excízia nádoru prsníka                        │ vv.kod in ['5u1111']                                         │
 │             238 │ vv.pocet*cena             │ Lokálna laloková plastika kože a podkožia, pl │ vv.kod in ['5v231g']                                         │
 │                 │                           │ astika malej plochy rotovaným lalokom v oblas │                                                              │
 │                 │                           │ ti nohy (chodidlo)                            │                                                              │
@@ -1472,19 +1473,19 @@ Autor: curo.sk
 │              60 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143x']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované, ostatné       │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143g']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143g']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti nohy │                                                              │
 │                 │                           │ (chodidlo)                                    │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143f']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143f']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti pred │                                                              │
 │                 │                           │ kolenia                                       │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143e']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143e']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v oblasti steh │                                                              │
 │                 │                           │ na a kolena                                   │                                                              │
-│              63 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143d']                                         │
+│              69 │ vv.pocet*cena             │ Radikálne a rozsiahle odstránenie chorého tka │ vv.kod in ['5v143d']                                         │
 │                 │                           │ niva na koži a podkoží s primárnym uzavretím  │                                                              │
 │                 │                           │ rany histologicky kontrolované v gluteálnej o │                                                              │
 │                 │                           │ blasti                                        │                                                              │
@@ -1504,7 +1505,7 @@ Autor: curo.sk
 │             215 │ vv.pocet*cena             │ Lokálna endoskopická excízia chorého tkaniva  │ vv.kod in ['5n2221']                                         │
 │                 │                           │ hrubého čreva, polypektómia 1-2 polypov pomoc │                                                              │
 │                 │                           │ ou slučky                                     │                                                              │
-│             996 │ vv.pocet*cena             │ Cholecystektómia jednoduchá bez revízie žlčov │ vv.kod in ['5n6202']                                         │
+│            1095 │ vv.pocet*cena             │ Cholecystektómia jednoduchá bez revízie žlčov │ vv.kod in ['5n6202']                                         │
 │                 │                           │ ých ciest, laparoskopicky                     │                                                              │
 │             406 │ vv.pocet*cena             │ Endoskopická deštrukcia na pankreatických ces │ vv.kod in ['5n734']                                          │
 │                 │                           │ tách                                          │                                                              │
@@ -1546,10 +1547,10 @@ Autor: curo.sk
 │             477 │ vv.pocet*cena             │ Plastická operácia diastázy priamych brušných │ vv.kod in ['5n9341']                                         │
 │                 │                           │ svalov                                        │                                                              │
 │             477 │ vv.pocet*cena             │ Iné operačné ošetrenie hemoroidov             │ vv.kod in ['5n45x']                                          │
-│             477 │ vv.pocet*cena             │ Excízia hemoroidov s plastickou rekonštrukcio │ vv.kod in ['5n45f']                                          │
+│             554 │ vv.pocet*cena             │ Excízia hemoroidov s plastickou rekonštrukcio │ vv.kod in ['5n45f']                                          │
 │                 │                           │ u                                             │                                                              │
-│             477 │ vv.pocet*cena             │ Operačné ošetrenie hemoroidov so staplerom    │ vv.kod in ['5n45e']                                          │
-│             477 │ vv.pocet*cena             │ Deštrukcia hemoroidov                         │ vv.kod in ['5n45d']                                          │
+│             554 │ vv.pocet*cena             │ Operačné ošetrenie hemoroidov so staplerom    │ vv.kod in ['5n45e']                                          │
+│             554 │ vv.pocet*cena             │ Deštrukcia hemoroidov                         │ vv.kod in ['5n45d']                                          │
 │             477 │ vv.pocet*cena             │ Excízia hemoroidov                            │ vv.kod in ['5n45c']                                          │
 │             477 │ vv.pocet*cena             │ Sklerotizácia hemoroidov                      │ vv.kod in ['5n45b']                                          │
 │             418 │ vv.pocet*cena             │ Operatívna liečba análnej fistuly, ostatné    │ vv.kod in ['5n459']                                          │
@@ -1562,30 +1563,30 @@ Autor: curo.sk
 │             238 │ vv.pocet*cena             │ Incízia chorého tkaniva análneho kanála/tkani │ vv.kod in ['5n440']                                          │
 │                 │                           │ va perianálnej oblasti                        │                                                              │
 │             942 │ vv.pocet*cena             │ Apendektómia, laparoskopicky, ostatné         │ vv.kod in ['5n361x']                                         │
-│             942 │ vv.pocet*cena             │ Apendektómia, laparoskopicky pomocou slučky a │ vv.kod in ['5n3610']                                         │
+│            1095 │ vv.pocet*cena             │ Apendektómia, laparoskopicky pomocou slučky a │ vv.kod in ['5n3610']                                         │
 │                 │                           │ lebo ligatúry                                 │                                                              │
 │             632 │ vv.pocet*cena             │ Rádioflekvenčná ablácia lokálnych varixov     │ vv.kod in ['5l1957']                                         │
-│             668 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['5l1951']                                         │
+│             735 │ vv.pocet*cena             │ Termická ablácia VSM, VSP pomocou rádiofrekve │ vv.kod in ['5l1951']                                         │
 │                 │                           │ ncie, endovenózne pod sonografickou navigácio │                                                              │
 │                 │                           │ u                                             │                                                              │
 │             561 │ vv.pocet*cena             │ Odstránenie varixov bez crossektómie, ostatné │ vv.kod in ['5l194x']                                         │
-│             592 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['5l1943']                                         │
+│             651 │ vv.pocet*cena             │ Odstránenie varixov nekmeňovej varikozity bez │ vv.kod in ['5l1943']                                         │
 │                 │                           │ crossektómie                                  │                                                              │
-│             592 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['5l1942']                                         │
+│             651 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna a parva  │ vv.kod in ['5l1942']                                         │
 │                 │                           │ bez crossektómie                              │                                                              │
-│             592 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['5l1941']                                         │
+│             651 │ vv.pocet*cena             │ Odstránenie varixov v. saphena parva bez cros │ vv.kod in ['5l1941']                                         │
 │                 │                           │ sektómie                                      │                                                              │
-│             592 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['5l1940']                                         │
+│             651 │ vv.pocet*cena             │ Odstránenie varixov v. saphena magna bez cros │ vv.kod in ['5l1940']                                         │
 │                 │                           │ sektómie                                      │                                                              │
 │             561 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena magna a pa │ vv.kod in ['5l1932']                                         │
 │                 │                           │ rva                                           │                                                              │
 │             561 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena parva      │ vv.kod in ['5l1931']                                         │
 │             561 │ vv.pocet*cena             │ Samostatná crossektómia v. saphena magna      │ vv.kod in ['5l1930']                                         │
-│             592 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['5l1922']                                         │
+│             651 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['5l1922']                                         │
 │                 │                           │ magna a parva                                 │                                                              │
-│             592 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['5l1921']                                         │
+│             651 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['5l1921']                                         │
 │                 │                           │ parva                                         │                                                              │
-│             592 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['5l1920']                                         │
+│             651 │ vv.pocet*cena             │ Crossektómia a parciálny stripping v. saphena │ vv.kod in ['5l1920']                                         │
 │                 │                           │ magna                                         │                                                              │
 │             453 │ vv.pocet*cena             │ Vytvorenie arterio-venóznej fistuly, ostatné  │ vv.kod in ['5l502x']                                         │
 │             238 │ vv.pocet*cena             │ Zrušenie A-V fistuly s rekonštrukciou tepny   │ vv.kod in ['5l502c1']                                        │
