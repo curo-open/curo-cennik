@@ -10,7 +10,7 @@ Autor: curo.sk
 ├────────────────────┼─────────────────────┤
 │ CB = 0.038462      │ Cena bodu           │
 │ CBO = 0.03005      │ Cena bodu           │
-│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ     │
+│ CBSVALZ = 0.010113 │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG │
 │ AGTC = 4.8         │ AGTC                │
 │ PP50 = 10          │ PP50                │
@@ -30,16 +30,15 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0193 │ vv.bodyCelkom*cena        │ 15d                                           │ vv.kod in ['15d']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,63                                   │ vv.kod in ['60','63']                                        │
+│            null │ vv.bodyCelkom*CB          │ Výkon 65;66                                   │ vv.kod in ['65','66']                                        │
 │          0.0027 │ vv.bodyCelkom*cena        │ telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │            null │ vv.bodyCelkom*CB          │ Výkon 252b - očkovanie                        │ vv.kod in ['252b']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 15b - vyhodnotenie odberov              │ vv.kod in ['15b']                                            │
-│            null │ vv.bodyCelkom*CB          │ Výkon 65;66,67                                │ vv.kod in ['65','66','67']                                   │
 │            null │ vv.bodyCelkom*CB          │ Výkon 250a,b - odbery                         │ vv.kod in ['250a','250b']                                    │
-│            null │ vv.bodyCelkom*CB          │ EKG                                           │ vv.kod in ['603a','15c']                                     │
-│            null │ vv.bodyCelkom*CB          │ Výkon 5702                                    │ vv.kod in ['5702']                                           │
-│            null │ vv.bodyCelkom*CB          │ Ergometria                                    │ vv.kod in ['5708']                                           │
-│            null │ vv.bodyCelkom*CB          │ EKG holter                                    │ vv.kod in ['5712','5713','5714']                             │
-│            null │ vv.bodyCelkom*CBSVALZ     │ Echokardiografia                              │ vv.kod in ['5744','5745','5746','5746b','5754']              │
+│            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a']                                   │
+│            null │ vv.bodyCelkom*CBSVALZ     │ EKG holter                                    │ vv.kod in ['5713']                                           │
+│            null │ vv.bodyCelkom*CBSVALZ     │ Echokardiografia                              │ vv.kod in ['5744','5745','5745a','5745b','5746','5746a','574 │
+│                 │                           │                                               │ 6b','5754']                                                  │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ POHOS                     │ Pripočitateľné položky                        │ vv.kod=='POHOS'                                              │
@@ -61,7 +60,7 @@ Autor: curo.sk
 │             350 │ 66                                                                                                        │                           │
 │             220 │ 67                                                                                                        │                           │
 │            2000 │ 5712                                                                                                      │                           │
-│             450 │ 5713                                                                                                      │                           │
+│             500 │ 5713                                                                                                      │                           │
 │             190 │ 1b                                                                                                        │                           │
 │             160 │ 252b                                                                                                      │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘

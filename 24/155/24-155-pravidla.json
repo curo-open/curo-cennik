@@ -10,7 +10,7 @@
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.009724
+			"value": 0.010113
 		},
 		"CBSVALZUSG": {
 			"label": "Cena bodu SVaLZ USG",
@@ -46,6 +46,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 65;66",
+			"if": "vv.kod in ['65','66']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
 			"label": "telemedicína",
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.0027,
@@ -67,13 +74,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 65;66,67",
-			"if": "vv.kod in ['65','66','67']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 250a,b - odbery",
 			"if": "vv.kod in ['250a','250b']",
 			"value": null,
@@ -82,35 +82,21 @@
 		},
 		{
 			"label": "EKG",
-			"if": "vv.kod in ['603a','15c']",
+			"if": "vv.kod in ['5702','5702a']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Výkon 5702",
-			"if": "vv.kod in ['5702']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
-			"instruction": null
-		},
-		{
-			"label": "Ergometria",
-			"if": "vv.kod in ['5708']",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "EKG holter",
-			"if": "vv.kod in ['5712','5713','5714']",
+			"if": "vv.kod in ['5713']",
 			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
 		},
 		{
 			"label": "Echokardiografia",
-			"if": "vv.kod in ['5744','5745','5746','5746b','5754']",
+			"if": "vv.kod in ['5744','5745','5745a','5745b','5746','5746a','5746b','5754']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CBSVALZ",
 			"instruction": null
@@ -212,7 +198,7 @@
 		"5713": [
 			{
 				"cond": "",
-				"value": 450
+				"value": 500
 			}
 		],
 		"1b": [
