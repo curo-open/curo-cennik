@@ -119,22 +119,22 @@
 		{
 			"label": "Kapitovaný - SVALZ výkon",
 			"if": "vv.typ=='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBSVALZ",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Kapitovaný - iné ako SVALZ",
 			"if": "vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkony",
 			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CB",
+			"value": 0,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		}
 	],
