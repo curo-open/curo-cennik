@@ -59,7 +59,7 @@
 		{
 			"label": "Výkon Ine SVALZ",
 			"if": "vv.kod in ['5766','5769','5770','5771']",
-			"value": 0.02463,
+			"value": 0.02586,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
