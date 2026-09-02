@@ -5,140 +5,140 @@
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['12o203','12p103','13p010','5o499','5v1300','5v1304','5v1305','5v1306','5v1307','5v1308','5v1309','5v130a','5v130b','5v130d','5v130e','5v130f','5v130g','5v130x','5v1310','5v1314','5v1315','5v1316','5v1317','5v1318','5v1319','5v131a','5v131b','5v131d','5v131e','5v131f','5v131g','5v131x','5v1400','5v1404','5v1405','5v1406','5v1407','5v1408','5v1409','5v140a','5v140b','5v140d','5v140e','5v140f','5v140g','5v140x','5v1410','5v1414','5v1415','5v1416','5v1417','5v1418','5v1419','5v141a','5v141b','5v141c','5v141d','5v141e','5v141f','5v141g','5v141x','5v1420','5v1424','5v1425','5v1426','5v1427','5v1428','5v1429','5v142a','5v142b','5v142d','5v142e','5v142f','5v142g','5v142x','5v1430','5v1434','5v1435','5v1436','5v1437','5v1438','5v1439','5v143a','5v143b','5v143d','5v143e','5v143f','5v143g','5v143x']",
-			"value": 61,
+			"value": 67,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['14o02','14o111','14o302']",
-			"value": 76,
+			"value": 84,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['12o012']",
-			"value": 123,
+			"value": 135,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['12o201','12p101','12p3001','12p3002']",
-			"value": 171,
+			"value": 188,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5o1310','8f3041']",
-			"value": 184,
+			"value": 202,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5p5051','5p5052','5p506','5p509']",
-			"value": 208,
+			"value": 228,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5o4111','5o4201','5o4301']",
-			"value": 244,
+			"value": 268,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5p501','5p504','5p511','5p512','5p51x','8z211']",
-			"value": 256,
+			"value": 282,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5p502','5p503']",
-			"value": 330,
+			"value": 364,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['14o01','14o301','5o242a','5o242r','5p421','5p422','5p42x','5p451','5p452','5p453','5p45x']",
-			"value": 342,
+			"value": 377,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5o243r1','5o243r2','5o246r1','5o246r2','5o247r','5o29d3','5o29d4']",
-			"value": 354,
+			"value": 389,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5o1312','5o1313','5o1336','5o2566','5p311','5p312','5p31x','8d130']",
-			"value": 366,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "JZS Výkon",
-			"if": "vv.kod in ['5p411']",
 			"value": 403,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
+			"if": "vv.kod in ['5p411']",
+			"value": 443,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
 			"if": "vv.kod in ['5p3010','5p3012','5p3020','5p3022','5p3050','5p3052','5p3071']",
-			"value": 417,
+			"value": 459,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5p4020','5p4021','5p4023','5p4024','5p4030','5p4031','ko243r1','ko243r2','ko246r1','ko246r2','ko247r','ko29a','ko29b']",
-			"value": 428,
+			"value": 470,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5o9321','kp311','kp312','kp31x']",
-			"value": 451,
+			"value": 496,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kp403','kp404']",
-			"value": 464,
+			"value": 510,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['8c3201','8c3202','8c320x','8c323']",
-			"value": 512,
+			"value": 563,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kp4020','kp4021','kp4023','kp4024']",
-			"value": 574,
+			"value": 631,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5p14c','5p14d','5p14e','5p14f']",
-			"value": 611,
+			"value": 672,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

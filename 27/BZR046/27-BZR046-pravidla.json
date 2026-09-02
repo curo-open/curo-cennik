@@ -38,7 +38,7 @@
 		{
 			"label": "Výkon 60,62,63",
 			"if": "vv.kod in ['60','62','63']",
-			"value": 0.0488,
+			"value": 0.038,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},

@@ -64,6 +64,13 @@
 			"value": 471,
 			"calc": "vv.pocet*cena",
 			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
+			"if": "vv.kod in ['5l1957','5l1951']",
+			"value": 749,
+			"calc": "vv.pocet*cena",
+			"instruction": null
 		}
 	],
 	"kontrola": [],

@@ -5,189 +5,189 @@
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5v1300','5v1304','5v1305','5v1306','5v1307','5v1308','5v1309','5v130a','5v130b','5v130d','5v130e','5v130f','5v130g','5v130x','5v1310','5v1314','5v1315','5v1316','5v1317','5v1318','5v1319','5v131a','5v131b','5v131d','5v131e','5v131f','5v131g','5v131x','5v1400','5v1404','5v1405','5v1406','5v1407','5v1408','5v1409','5v140a','5v140b','5v140d','5v140e','5v140f','5v140g','5v140x','5v1410','5v1414','5v1415','5v1416','5v1417','5v1418','5v1419','5v141a','5v141b','5v141c','5v141d','5v141e','5v141f','5v141g','5v141x','5v1420','5v1424','5v1425','5v1426','5v1427','5v1428','5v1429','5v142a','5v142b','5v142d','5v142e','5v142f','5v142g','5v142x','5v1430','5v1434','5v1435','5v1436','5v1437','5v1438','5v1439','5v143a','5v143b','5v143d','5v143e','5v143f','5v143g','5v143x']",
-			"value": 63,
+			"value": 69,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['12t130','12t131','12t132','12t133','12t134','12t135','12t136','12t137','12t13x','12t230','12t231','12t232','12t233','12t234','12t235','12t236','12t237','12t23x','12v000','12v001','12v002','12v003','12v004','12v005','12v006','12v007','12v008','12v00x','13t100','13t101','13t102','13t103','13t104','13t105','13t106','13t107','13t10x','5t790','5t89210','5t89211','5t89212','5t89213','5t89215','5t89216','5t89217','5t89218','5t89219','5t8921a','5t8921x','5t933','5t935']",
-			"value": 76,
+			"value": 84,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kt790','kt8920','kt8921','kt8922','kt8923','kt8924','kt8925','kt8926','kt8927','kt8928','kt8929','kt892x']",
-			"value": 96,
+			"value": 106,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5m103']",
-			"value": 128,
+			"value": 141,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5n2221','5n2222','5n4100','5n4106','5n4107','5n410x','5n4121','5n4122']",
-			"value": 229,
+			"value": 252,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['12m110','12m111','12m112','12m113','12m114','12m115','12m116','12m117','12m210','12m211','12m212','12m213','12m214','12m215','12m216','13m100','13m101','13m102','13m103','13m104','13m105','13m106','13m107','13m10x','5b1663','5b1664','5g92101','5g92102','5m100','5m101','5m102','5m130']",
-			"value": 235,
+			"value": 259,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5v482']",
-			"value": 242,
+			"value": 266,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5l502c0','5l502c1','5n440','5v1440','5v1444','5v1445','5v1446','5v1447','5v1448','5v1449','5v144a','5v144b','5v144d','5v144e','5v144f','5v144g','5v144x','5v1450','5v1454','5v1455','5v1456','5v1457','5v1458','5v1459','5v145a','5v145b','5v145c','5v145d','5v145e','5v145f','5v145g','5v145x','5v175','5v176','5v179','5v17a','5v2310','5v2314','5v2315','5v2316','5v2317','5v2318','5v2319','5v231a','5v231b','5v231c','5v231d','5v231e','5v231f','5v231g','5v231x','5v23a0','5v23a4','5v23a5','5v23a6','5v23a7','5v23a8','5v23a9','5v23aa','5v23ab','5v23ac','5v23ad','5v23ae','5v23af','5v23ag','5v23xx']",
-			"value": 254,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "JZS Výkon",
-			"if": "vv.kod in ['j0004','kg210','kv1500','kv1504','kv1505','kv1506','kv1507','kv1508','kv1509','kv150a','kv150b','kv150c','kv150d','kv150e','kv150f','kv150g','kv150x','kv15xx']",
 			"value": 280,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
+			"if": "vv.kod in ['j0004','kg210','kv1500','kv1504','kv1505','kv1506','kv1507','kv1508','kv1509','kv150a','kv150b','kv150c','kv150d','kv150e','kv150f','kv150g','kv150x','kv15xx']",
+			"value": 307,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "JZS Výkon",
 			"if": "vv.kod in ['14n1101','14n1102','14n110x','14n111','14n112','14n113','14n1140','14n1141','14n114x','14n121','14n125','14n12x','14n132','14n2100','14n2101','14n2102','14n2103','14n2104','14n210x','14n2110','14n2111','14n2112','14n2113','14n2114','14n211x','14n2120','14n2121','14n2122','3131412','3131413','3131414','3131415','3131416','3131417','3131418','3131419','313141a']",
-			"value": 285,
+			"value": 314,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['j0005']",
-			"value": 317,
+			"value": 349,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5t0710','5t0711','5t0712','5t0713','5t0718','5t0719','5t071a','5t071b','5t071c','5t071d','5t071e','5t071f','5t071g','5t071h','5t071j','5t071s','5t071t','5t071u','5t071v','5t071w','5t071x','5t071z','5t0720','5t0721','5t0722','5t0723','5t0724','5t0725','5t0726','5t0727','5t0728','5t0729','5t072a','5t072b','5t072c','5t072d','5t072e','5t072f','5t072g','5t072h','5t072j','5t072k','5t072m','5t072n','5t072p','5t072q','5t072r','5t072s','5t072t','5t072u','5t072v','5t072w','5t072x','5t072z','5t0730','5t0736','5t073c','5t073d','5t0740','5t0741','5t0742','5t0743','5t0744','5t0745','5t0746','5t0747','5t0748','5t0749','5t074a','5t074b','5t074c','5t074d','5t074e','5t074f','5t074g','5t074h','5t074j','5t074k','5t074m','5t074n','5t074p','5t074q','5t074r','5t074s','5t074t','5t074u','5t074v','5t074w','5t074x','5t074z','5t0750','5t0751','5t0752','5t0753','5t0754','5t0755','5t0757','5t0758','5t075a','5t075b','5t075c','5t075d','5t075e','5t075f','5t075g','5t075h','5t075j','5t075s','5t075t','5t075u','5t075v','5t075w','5t075x','5t075z','5t076e','5t076f','5t076g','5t076h','5t076m','5t076n','5t076q','5t076r','5t0776','5t077e','5t077f','5t077k','5t077m','5t077n','5t077r','5t07a0','5t07a1','5t07a2','5t07a3','5t07a4','5t07a5','5t07a6','5t07a7','5t07a8','5t07a9','5t07ab','5t07ac','5t07ae','5t07af','5t07ag','5t07ah','5t07aj','5t07ak','5t07am','5t07an','5t07ap','5t07aq','5t07ar','5t07as','5t07at','5t07av','5t07aw','5t07ax','5t07az','5t07b0','5t07b6','5t07bb','5t07bc','5t07br','5t07bv','5t07bw','5t07d0','5t07d1','5t07d2','5t07d3','5t07d4','5t07d5','5t07d6','5t07d7','5t07d8','5t07d9','5t07da','5t07db','5t07dc','5t07dd','5t07de','5t07df','5t07dg','5t07dh','5t07dj','5t07dk','5t07dm','5t07dn','5t07dp','5t07dq','5t07dr','5t07ds','5t07dt','5t07du','5t07dv','5t07dw','5t07dx','5t07dz','5t07e0','5t07t4','5t07t5','5t07t6','5t07t7','5t07t8','5t07t9','5t07ta','5t07tb','5t07tc','5t07tk','5t07tm','5t07tn','5t07tp','5t07tq','5t07tr','5t07ts','5t07tt','5t07tu','5t07tv','5t07tw','5t07tx','5t07tz','5t07v4','5t07v5','5t07v6','5t07v7','5t07v8','5t07v9','5t07va','5t07vb','5t07vk','5t07vm','5t07vn','5t07vp','5t07vq','5t07vr','5t07vs','5t07vt','5t07vu','5t07vv','5t07x5','5t07x6','5t07x7','5t07x8','5t07x9','5t07xa','5t07xb','5t07xc','5t07xe','5t07xf','5t07xj','5t07xk','5t07xm','5t07xn','5t07xp','5t07xq','5t07xr','5t07xs','5t07xt','5t07xu','5t07xv','5t07xw','5t07xx']",
-			"value": 331,
+			"value": 364,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5u1100','5u1101','5u1111','5u112','5u114']",
-			"value": 357,
+			"value": 393,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5n6320','5n6321','5n6322','5n6323','5n632x','5n7320','5n7321','5n7322','5n7323','5n7324','5n7325','5n732x','5n734','5n73g','5n8100','5n8101','5n8102','5n8103','5n810x','5n811','5n812','5n814','5n8150','5n8151','5n816','5v191','5v193','5v194']",
-			"value": 432,
+			"value": 476,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['14v11','5n450','5n4510','5n4511','5n4512','5n4513','5n4514','5n4515','5n4516','5n451x','5n452','5n453','5n459','5z1121']",
-			"value": 445,
+			"value": 490,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5n3922','5n9981']",
-			"value": 458,
+			"value": 504,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5l50210','5l50211','5l5022','5l50230','5l50231','5l50232','5l50240','5l50241','5l50250','5l50251','5l5026','5l50270','5l50271','5l50272','5l50273','5l5028','5l5029','5l502a0','5l502a1','5l502a2','5l502a3','5l502a4','5l502a5','5l502ax','5l502b','5l502x']",
-			"value": 483,
+			"value": 531,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5n45b','5n45c','5n45d','5n45e','5n45f','5n45x','5n9341','5n9342']",
-			"value": 509,
+			"value": 559,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5n8301','5n8302','5n8303','5n830x','5n831','5n832','5n8330','5n8332','5n833x','5n83x']",
-			"value": 560,
+			"value": 617,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kn8100','kn8101','kn8102','kn8103','kn810x','kn811','kn812','kn814','kn8150','kn8151','kn816']",
-			"value": 573,
+			"value": 630,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5l1901','5l1902','5l1903','5l19110','5l19111','5l1912','5l1920','5l1921','5l1922','5l1930','5l1931','5l1932','5l1940','5l1941','5l1942','5l1943','5l194x','5l1955']",
-			"value": 598,
+			"value": 657,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5n8130','5n8131','5n8132','5n813x','5n8170','5n8171','5n8172','5n817x','5n818','5n81x','5n8231','5n8271','5n8331','5n840','5n841','5n842','5n8430','5n8431','5n8432','5n843x','5n84x','5n8541','5n890','5n891','5n892','5n8930','5n8931','5n8932','5n893x','5n89x']",
-			"value": 623,
+			"value": 686,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5l1951','5l1957']",
-			"value": 674,
+			"value": 741,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kl1901','kl1902','kl1903','kl19110','kl19111','kl1912','kl1920','kl1921','kl1922','kl1930','kl1931','kl1932','kl1940','kl1941','kl1942','kl1943','kl194x','kl1955']",
-			"value": 749,
+			"value": 825,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kn8130','kn8132','kn813x','kn8170','kn8172','kn817x','kn818','kn81x']",
-			"value": 763,
+			"value": 840,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['kl1951','kl1957']",
-			"value": 802,
+			"value": 882,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
 		{
 			"label": "JZS Výkon",
 			"if": "vv.kod in ['5n3610','5n3611','5n361x','5n6202']",
-			"value": 1005,
+			"value": 1105,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}
