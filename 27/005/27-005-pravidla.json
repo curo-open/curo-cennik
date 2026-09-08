@@ -71,6 +71,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Jeden ošetrovací deň v stacionári - výkon 8899",
+			"if": "vv.kod in ['8899']",
+			"value": 60,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,

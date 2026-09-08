@@ -36,6 +36,8 @@ Autor: curo.sk
 │           10.71 │ vv.pocet*cena             │ Výkon 629b                                    │ vv.kod in ['629b']                                           │
 │              25 │ vv.pocet*cena             │ Výkon 899 - Nadväzná psychoterapia v psychiat │ vv.kod in ['899']                                            │
 │                 │                           │ rii                                           │                                                              │
+│              60 │ vv.pocet*cena             │ Jeden ošetrovací deň v stacionári - výkon 889 │ vv.kod in ['8899']                                           │
+│                 │                           │ 9                                             │                                                              │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
