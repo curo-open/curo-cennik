@@ -269,9 +269,16 @@
 			"instruction": null
 		},
 		{
-			"label": "Akútne EKG",
-			"if": "vv.kod in ['5702c']",
-			"value": 0.007303,
+			"label": "EKG",
+			"if": "vv.kod in ['5702']",
+			"value": 0.009574,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "EKG pri preventívnej prehladke poistencov 40 ročných a starších",
+			"if": "vv.kod in ['5702P']",
+			"value": 0.009574,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
