@@ -15,7 +15,7 @@ Autor: curo.sk
 │ IPPD = 5           │ IPPD                  │
 │ LIMIT = 0          │ Limit                 │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.03553       │ Cena bodu             │
+│ CB = 0.03731       │ Cena bodu             │
 │ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
 └────────────────────┴───────────────────────┘
@@ -58,8 +58,8 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│            1025 │ 820                                                                                                       │                           │
-│             890 │ 821                                                                                                       │                           │
+│            1095 │ 820                                                                                                       │                           │
+│            1025 │ 821                                                                                                       │                           │
 │             415 │ 822                                                                                                       │                           │
 │             540 │ 825                                                                                                       │                           │
 │             865 │ 826                                                                                                       │                           │
