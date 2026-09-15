@@ -22,7 +22,7 @@
 		},
 		"KP": {
 			"label": "Kapitačná platba",
-			"value": 2.13
+			"value": 2.24
 		}
 	},
 	"pacient": [
@@ -45,49 +45,49 @@
 		{
 			"label": "Preventívne zdravotné výkony - vv. 102",
 			"if": "vv.kod in ['102']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony - vv. 103",
 			"if": "vv.kod in ['103']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony - vv. 105",
 			"if": "vv.kod in ['105']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony - vv. 108",
 			"if": "vv.kod in ['108']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony - vv. 157",
 			"if": "vv.kod in ['157']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony - vv. 297",
 			"if": "vv.kod in ['297']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventívne zdravotné výkony - vv. 1070",
 			"if": "vv.kod in ['1070']",
-			"value": 0.084,
+			"value": 0.0874,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -136,28 +136,28 @@
 		{
 			"label": "Preventivné výkony - vv. 5303",
 			"if": "vv.kod in ['5303']",
-			"value": 0.009574,
+			"value": 0.01005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventivné výkony - vv. 5305",
 			"if": "vv.kod in ['5305']",
-			"value": 0.009574,
+			"value": 0.01005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Preventivné výkony - vv. 5308",
 			"if": "vv.kod in ['5308']",
-			"value": 0.009574,
+			"value": 0.01005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 5808",
 			"if": "vv.kod in ['5808']",
-			"value": 0.009574,
+			"value": 0.01005,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
