@@ -1,23 +1,15 @@
-                                                                      ====================
-                                                                      Cenník psychoterapia
-                                                                      ====================
+                                                                           ==========
+                                                                           Cenník VLD
+                                                                           ==========
 
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌────────────────────┬───────────────────────┐
-│ Názov a hodnota    │ Popis                 │
-├────────────────────┼───────────────────────┤
-│ CB = 0.03731       │ Cena bodu             │
-│ CBEU = 0           │ Cena bodu             │
-│ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
-│ IPP1 = 2.48        │ IPP1                  │
-│ IPP2 = 3.98        │ IPP2                  │
-│ IPP3 = 6.74        │ IPP3                  │
-│ IPP4 = 9.74        │ IPP4                  │
-│ LIMIT = 0          │ Limit                 │
-│ EL_POBOCKA = 0     │ Používa el. pobočku ? │
-└────────────────────┴───────────────────────┘
+┌───────────────────┬────────────────────────────────┐
+│ Názov a hodnota   │ Popis                          │
+├───────────────────┼────────────────────────────────┤
+│ ZA_BOD = 0.023236 │ Cena posudkového lekára za bod │
+└───────────────────┴────────────────────────────────┘
 
 
   CENY ZA PACIENTA
@@ -30,29 +22,17 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['60'] && EL_POBOCKA                               │
-│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['62'] && EL_POBOCKA                               │
-│            null │ vv.bodyCelkom*CB          │ Výkon 60;62;63                                │ vv.kod in ['63'] && EL_POBOCKA                               │
-│           0.035 │ vv.bodyCelkom*cena        │ Výkon telemedicíny                            │ vv.kod in ['11a','1b','70','1c']                             │
-│            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
-│            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
-│            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
-│            null │ IPP4                      │ Pripočitateľné položky                        │ vv.kod=='IPP4'                                               │
-│            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
-│            null │ vv.bodyCelkom*CB          │ Výkony ŠAS                                    │ 1                                                            │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.OCR']                        │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.DPN']                        │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.TDOS']                       │
+│        0.028547 │ vv.bodyCelkom*cena        │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc' && vv.kod in ['71.UDOS']                       │
+│            null │ vv.bodyCelkom*ZA_BOD      │ Výkon pre soc. poisťovňu                      │ vv.typ=='soc'                                                │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
   BODY ZA VÝKONY
 ┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
-├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
-│             500 │ 60                                                                                                        │                           │
-│             310 │ 62                                                                                                        │                           │
-│             250 │ 63                                                                                                        │                           │
-│             160 │ 1b                                                                                                        │                           │
-│            1000 │ 1c                                                                                                        │                           │
-│             210 │ 11a                                                                                                       │                           │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────┘
 
 
