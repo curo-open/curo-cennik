@@ -115,14 +115,14 @@
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && !(p.typ in ['EU']) && vv.jeSVaLZ",
+			"if": "!p.kapitacia && !(p.typ in ['EU']) && vv.typ=='SVaLZ'",
 			"value": 0.0078,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !(p.typ in ['EU']) && !vv.jeSVaLZ",
+			"if": "!p.kapitacia && !(p.typ in ['EU']) && vv.typ!='SVaLZ'",
 			"value": 0.0193,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
@@ -248,14 +248,14 @@
 		},
 		{
 			"label": "Nekapitovaný - SVALZ výkon",
-			"if": "!p.kapitacia && vv.jeSVaLZ",
+			"if": "!p.kapitacia && vv.typ=='SVaLZ'",
 			"value": 0.0078,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Nekapitovaný - iné ako SVALZ",
-			"if": "!p.kapitacia && !vv.jeSVaLZ",
+			"if": "!p.kapitacia && vv.typ!='SVaLZ'",
 			"value": 0.0193,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
