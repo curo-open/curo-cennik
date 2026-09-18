@@ -41,8 +41,8 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný - Neodkladna statostlivost       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ=='SVaLZ'   │
 │            null │ vv.bodyCelkom*CBEU        │ Nekapitovaný - Neodkladna statostlivost       │ !p.kapitacia && d.od|ma('jeNeodkladna') && vv.typ!='SVaLZ'   │
 │          0.0288 │ vv.bodyCelkom*cena        │ Výkon 1b                                      │ vv.kod in ['1b']                                             │
-│           0.027 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
-│           0.027 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
+│          0.0288 │ vv.bodyCelkom*cena        │ Výkon 11a                                     │ vv.kod in ['11a']                                            │
+│          0.0288 │ vv.bodyCelkom*cena        │ Výkon 70                                      │ vv.kod in ['70']                                             │
 │           32.86 │ vv.pocet*cena             │ Preventívne prehliadky                        │ vv.kod in ['160']                                            │
 │          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti chrípke                       │ vv.diagnoza=='Z25.1' && vv.kod in ['252b']                   │
 │          0.0992 │ vv.bodyCelkom*cena        │ Očkovanie proti hepatitíde A                  │ vv.diagnoza=='Z20.5' && vv.kod in ['252b']                   │
@@ -72,7 +72,7 @@ Autor: curo.sk
 │          0.0114 │ vv.bodyCelkom*cena        │ USG                                           │ vv.kod in ['5300','5301']                                    │
 │            15.5 │ vv.pocet*cena             │ Inicialne I10/E78 (H0003)                     │ vv.kod in ['H0003']                                          │
 │            15.5 │ vv.pocet*cena             │ Kontrolne I10/E78 (H0004)                     │ vv.kod in ['H0004']                                          │
-│             6.2 │ vv.pocet*cena             │ Stratifikacia CMP                             │ vv.kod in ['H0006']                                          │
+│             6.2 │ vv.pocet*cena             │ Stratifikacia CMP nad 40 rokov                │ vv.kod in ['H0006']                                          │
 │            6.45 │ vv.pocet*cena             │ Kvantitatívne vyšetrenie INR POCT             │ vv.kod in ['H0007']                                          │
 │            7.43 │ vv.pocet*cena             │ ABI (H0008)                                   │ vv.kod in ['H0008']                                          │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │
@@ -82,7 +82,6 @@ Autor: curo.sk
 │            1.24 │ vv.pocet*cena             │ Odstránenie ušného mazu                       │ vv.kod in ['1540']                                           │
 │              10 │ vv.pocet*cena             │ Starostlivosť o poistenca s artériovou hypert │ vv.kod in ['10']                                             │
 │                 │                           │ enziou, dyslipidémiou a/alebo obezitou        │                                                              │
-│            5.65 │ vv.pocet*cena             │ Kardio riziko                                 │ vv.kod in ['H0006']                                          │
 │            5.59 │ vv.pocet*cena             │ Komplexné vyšetrenie pri prevzatí pacienta do │ vv.kod in ['60']                                             │
 │                 │                           │ starostlivosti                                │                                                              │
 │               2 │ vv.pocet*cena             │ Delegovaný odber                              │ vv.kod in ['250D','250d']                                    │

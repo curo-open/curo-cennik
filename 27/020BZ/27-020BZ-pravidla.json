@@ -104,14 +104,14 @@
 		{
 			"label": "Výkon 11a",
 			"if": "vv.kod in ['11a']",
-			"value": 0.027,
+			"value": 0.0288,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
 			"label": "Výkon 70",
 			"if": "vv.kod in ['70']",
-			"value": 0.027,
+			"value": 0.0288,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
@@ -305,7 +305,7 @@
 			"instruction": null
 		},
 		{
-			"label": "Stratifikacia CMP",
+			"label": "Stratifikacia CMP nad 40 rokov",
 			"if": "vv.kod in ['H0006']",
 			"value": 6.2,
 			"calc": "vv.pocet*cena",
@@ -357,13 +357,6 @@
 			"label": "Starostlivosť o poistenca s artériovou hypertenziou, dyslipidémiou a/alebo obezitou",
 			"if": "vv.kod in ['10']",
 			"value": 10,
-			"calc": "vv.pocet*cena",
-			"instruction": null
-		},
-		{
-			"label": "Kardio riziko",
-			"if": "vv.kod in ['H0006']",
-			"value": 5.65,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
