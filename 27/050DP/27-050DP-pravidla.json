@@ -67,6 +67,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Výkon 1A02011",
+			"if": "vv.kod in ['1A02011']",
+			"value": 0.0605,
+			"calc": "vv.bodyCelkom*(cena+NCB)",
+			"instruction": null
+		},
+		{
 			"label": "Výkon 4587a",
 			"if": "vv.kod in ['4587a']",
 			"value": 0.01107,
@@ -282,6 +289,12 @@
 			{
 				"cond": "",
 				"value": 1000
+			}
+		],
+		"1A02011": [
+			{
+				"cond": "",
+				"value": 180
 			}
 		],
 		"1A02012": [

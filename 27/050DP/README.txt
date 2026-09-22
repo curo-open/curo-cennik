@@ -33,6 +33,7 @@ Autor: curo.sk
 │            5.65 │ vv.pocet*cena             │ Výkon H0006                                   │ vv.kod in ['H0006']                                          │
 │            6.78 │ vv.pocet*cena             │ Výkon H0008                                   │ vv.kod in ['H0008']                                          │
 │          0.0336 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 1A02007                                 │ vv.kod in ['1A02007']                                        │
+│          0.0605 │ vv.bodyCelkom*(cena+NCB)  │ Výkon 1A02011                                 │ vv.kod in ['1A02011']                                        │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 4587a                                   │ vv.kod in ['4587a']                                          │
 │         0.01107 │ vv.bodyCelkom*cena        │ Výkon 5153a, 5333                             │ vv.kod in ['5153a','5333']                                   │
 │        0.006666 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
@@ -74,6 +75,7 @@ Autor: curo.sk
 │             210 │ 11a                                                                                                       │                           │
 │            1200 │ 1B06025                                                                                                   │                           │
 │            1000 │ 1A02009                                                                                                   │                           │
+│             180 │ 1A02011                                                                                                   │                           │
 │           12000 │ 1A02012                                                                                                   │                           │
 │            1200 │ 1A03007                                                                                                   │                           │
 │             420 │ 1B05011                                                                                                   │                           │
