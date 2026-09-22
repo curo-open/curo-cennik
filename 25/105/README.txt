@@ -8,14 +8,14 @@ Autor: curo.sk
 ┌────────────────────┬───────────────────────┐
 │ Názov a hodnota    │ Popis                 │
 ├────────────────────┼───────────────────────┤
-│ IPP1 = 2.44        │ IPP1                  │
-│ IPP2 = 3.92        │ IPP2                  │
-│ IPP3 = 6.64        │ IPP3                  │
-│ IPP4 = 9.64        │ IPP4                  │
+│ IPP1 = 2.48        │ IPP1                  │
+│ IPP2 = 3.98        │ IPP2                  │
+│ IPP3 = 6.74        │ IPP3                  │
+│ IPP4 = 9.74        │ IPP4                  │
 │ IPPD = 5           │ IPPD                  │
 │ LIMIT = 0          │ Limit                 │
 │ EL_POBOCKA = 1     │ Používa el. pobočku ? │
-│ CB = 0.03466       │ Cena bodu             │
+│ CB = 0.03731       │ Cena bodu             │
 │ CBSVALZ = 0.009159 │ Cena bodu SVaLZ       │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG   │
 └────────────────────┴───────────────────────┘
@@ -35,6 +35,9 @@ Autor: curo.sk
 │               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
 │            null │ vv.bodyCelkom*CB          │ Psychiatrické výkony                          │ vv.kod in ['820','821','822','825','826','841','842','845',' │
 │                 │                           │                                               │ 847','867']                                                  │
+│              25 │ vv.pocet*cena             │ Výkon 899                                     │ vv.kod in ['899']                                            │
+│              60 │ vv.pocet*cena             │ Jeden ošetrovací deň v stacionári - výkon 889 │ vv.kod in ['8899']                                           │
+│                 │                           │ 9                                             │                                                              │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │
 │            null │ IPP2                      │ Pripočitateľné položky                        │ vv.kod=='IPP2'                                               │
 │            null │ IPP3                      │ Pripočitateľné položky                        │ vv.kod=='IPP3'                                               │
@@ -58,14 +61,14 @@ Autor: curo.sk
 │             320 │ 66                                                                                                        │                           │
 │             200 │ 67                                                                                                        │                           │
 │              40 │ 70                                                                                                        │                           │
-│             950 │ 820                                                                                                       │                           │
-│             890 │ 821                                                                                                       │                           │
-│             360 │ 822                                                                                                       │                           │
-│             470 │ 825                                                                                                       │                           │
-│             750 │ 826                                                                                                       │                           │
-│             700 │ 840                                                                                                       │                           │
-│            2130 │ 841                                                                                                       │                           │
-│             900 │ 842                                                                                                       │                           │
+│            1095 │ 820                                                                                                       │                           │
+│            1025 │ 821                                                                                                       │                           │
+│             415 │ 822                                                                                                       │                           │
+│             540 │ 825                                                                                                       │                           │
+│             865 │ 826                                                                                                       │                           │
+│             805 │ 840                                                                                                       │                           │
+│            2450 │ 841                                                                                                       │                           │
+│            1035 │ 842                                                                                                       │                           │
 │             610 │ 847                                                                                                       │                           │
 │             150 │ 15d                                                                                                       │                           │
 │             160 │ 1b                                                                                                        │                           │
