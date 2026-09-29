@@ -16,10 +16,6 @@
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.0254
 		},
-		"_4571a": {
-			"label": "4571a",
-			"value": 5.65
-		},
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
@@ -416,13 +412,6 @@
 			"if": "vv.kod=='EDU'",
 			"value": null,
 			"calc": "EDU",
-			"instruction": null
-		},
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod in ['4571a','4571A']",
-			"value": null,
-			"calc": "_4571a",
 			"instruction": null
 		},
 		{

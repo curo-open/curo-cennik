@@ -12,7 +12,6 @@ Autor: curo.sk
 │ CB = 0.0254        │ Cena bodu                                         │
 │ CBSVALZ = 0.009255 │ Cena bodu SVaLZ                                   │
 │ CBEU = 0.0254      │ Cena bodu Nekapitovany(EU)                        │
-│ _4571a = 5.65      │ 4571a                                             │
 │ AGTC = 4.8         │ AGTC                                              │
 │ PP50 = 10          │ PP50                                              │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
@@ -92,7 +91,6 @@ Autor: curo.sk
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
 │            null │ FOB                       │ Pripočitateľné položky                        │ vv.kod=='FOB'                                                │
 │            null │ EDU                       │ Pripočitateľné položky                        │ vv.kod=='EDU'                                                │
-│            null │ _4571a                    │ Pripočitateľné položky                        │ vv.kod in ['4571a','4571A']                                  │
 │        0.009255 │ vv.bodyCelkom*cena        │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'           │
 │          0.0254 │ vv.bodyCelkom*cena        │ Nekapitovaný EU - iné ako SVALZ               │ !p.kapitacia && p.typ in ['EU'] && vv.typ!='SVaLZ'           │
 │        0.009255 │ vv.bodyCelkom*cena        │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │
