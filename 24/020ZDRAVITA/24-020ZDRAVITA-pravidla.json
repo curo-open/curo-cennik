@@ -16,10 +16,6 @@
 			"label": "Cena bodu Nekapitovany(EU)",
 			"value": 0.028704
 		},
-		"_4571a": {
-			"label": "4571a",
-			"value": 5
-		},
 		"AGTC": {
 			"label": "AGTC",
 			"value": 4.8
@@ -124,13 +120,6 @@
 		}
 	],
 	"vykon": [
-		{
-			"label": "Pripočitateľné položky",
-			"if": "vv.kod in ['4571a','4571A']",
-			"value": null,
-			"calc": "_4571a",
-			"instruction": null
-		},
 		{
 			"label": "Nekapitovaný - Vykon 4",
 			"if": "!p.kapitacia && vv.kod in ['4']",
@@ -434,12 +423,6 @@
 			}
 		],
 		"159a": [
-			{
-				"cond": "",
-				"value": 180
-			}
-		],
-		"159b": [
 			{
 				"cond": "",
 				"value": 180

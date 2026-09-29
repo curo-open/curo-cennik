@@ -12,7 +12,6 @@ Autor: curo.sk
 │ CB = 0             │ Cena bodu                                         │
 │ CBSVALZ = 0.009718 │ Cena bodu SVaLZ                                   │
 │ CBEU = 0.028704    │ Cena bodu Nekapitovany(EU)                        │
-│ _4571a = 5         │ 4571a                                             │
 │ AGTC = 4.8         │ AGTC                                              │
 │ PP50 = 10          │ PP50                                              │
 │ FOB = 2            │ Pripočítaľná položka FOB k výkonom 159a,159z,159x │
@@ -43,7 +42,6 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│            null │ _4571a                    │ Pripočitateľné položky                        │ vv.kod in ['4571a','4571A']                                  │
 │            4.79 │ vv.pocet*cena             │ Nekapitovaný - Vykon 4                        │ !p.kapitacia && vv.kod in ['4']                              │
 │            6.38 │ vv.pocet*cena             │ Nekapitovaný - Vykon 8                        │ !p.kapitacia && vv.kod in ['8']                              │
 │            null │ vv.bodyCelkom*CBSVALZ     │ Nekapitovaný EU - SVALZ výkon                 │ !p.kapitacia && p.typ in ['EU'] && vv.typ=='SVaLZ'           │
@@ -100,7 +98,6 @@ Autor: curo.sk
 │              40 │ 70                                                                                                        │                           │
 │             390 │ 160                                                                                                       │                           │
 │             180 │ 159a                                                                                                      │                           │
-│             180 │ 159b                                                                                                      │                           │
 │             180 │ 159x                                                                                                      │                           │
 │             180 │ 159z                                                                                                      │                           │
 │             160 │ 1b                                                                                                        │                           │
