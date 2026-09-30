@@ -59,8 +59,6 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBEU        │ EÚ - iné ako SVALZ                            │ p.typ in ['EU'] && vv.typ!='SVaLZ'                           │
 │          0.0108 │ vv.bodyCelkom*cena        │ Nepreventívne výkony SVALZ (vrátane prístrojo │ vv.typ=='SVaLZ'                                              │
 │                 │                           │ vých) - kapitovaný                            │                                                              │
-│            null │ vv.bodyCelkom*CBEU        │ Kapitovaný - iné ako SVALZ                    │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CBEU        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 

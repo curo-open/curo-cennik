@@ -240,20 +240,6 @@
 			"value": 0.0108,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
-		},
-		{
-			"label": "Kapitovaný - iné ako SVALZ",
-			"if": "vv.typ!='SVaLZ'",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
-			"instruction": null
-		},
-		{
-			"label": "Výkony",
-			"if": "1",
-			"value": null,
-			"calc": "vv.bodyCelkom*CBEU",
-			"instruction": null
 		}
 	],
 	"kontrola": [],

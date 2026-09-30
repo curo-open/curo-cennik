@@ -58,8 +58,6 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CBSVALZ     │ EÚ - SVALZ výkon                              │ p.typ in ['EU'] && vv.typ=='SVaLZ'                           │
 │            null │ vv.bodyCelkom*CBEU        │ EÚ - iné ako SVALZ                            │ p.typ in ['EU'] && vv.typ!='SVaLZ'                           │
 │          0.0108 │ vv.bodyCelkom*cena        │ Kapitovaný - SVALZ výkon                      │ vv.typ=='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CBEU        │ Kapitovaný - iné ako SVALZ                    │ vv.typ!='SVaLZ'                                              │
-│            null │ vv.bodyCelkom*CBEU        │ Výkony                                        │ 1                                                            │
 └─────────────────┴───────────────────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
 
 
