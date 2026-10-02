@@ -23,8 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95def7f2-8f33-43b7-bc50-8fad3dfeed53" name="Default" comment="- changes">
-      <change afterPath="$PROJECT_DIR$/ai/autoupdate/work/a.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/AVLS/24-020-AVLS-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/020/AVLS/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/APS/test/24-APS-test-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/APS/test/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/tmp2/24-tmp2-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24/tmp2/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020/AVLS/25-020-AVLS-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/020/AVLS/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/APS/test/25-APS-test-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/APS/test/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/doprava/news/25-doprava-news-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/doprava/news/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/tmp2/25-tmp2-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25/tmp2/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/AVLS/27-020-AVLS-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/020/AVLS/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/APS/test/27-APS-test-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/APS/test/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/tmp2/27-tmp2-pravidla.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27/tmp2/README.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,8 +177,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+        <option value="bundled-jdk-9823dce3aa75-84258761d1cc-intellij.indexing.shared.core-IU-243.28141.18" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.28141.18" />
       </set>
     </attachedChunks>
   </component>
@@ -884,6 +903,18 @@
       <workItem from="1771509791758" duration="597000" />
       <workItem from="1772108776767" duration="10246000" />
       <workItem from="1773347554908" duration="1255000" />
+      <workItem from="1774966165794" duration="49000" />
+      <workItem from="1775070300012" duration="16143000" />
+      <workItem from="1776848120975" duration="2374000" />
+      <workItem from="1778085856589" duration="599000" />
+      <workItem from="1780577683654" duration="598000" />
+      <workItem from="1781006976893" duration="598000" />
+      <workItem from="1783578343327" duration="597000" />
+      <workItem from="1784275468385" duration="597000" />
+      <workItem from="1787342742543" duration="599000" />
+      <workItem from="1788707660969" duration="117000" />
+      <workItem from="1788707798108" duration="837000" />
+      <workItem from="1790928577656" duration="537000" />
     </task>
     <task id="LOCAL-00330" summary="- updates">
       <created>1683192797828</created>
@@ -1228,7 +1259,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699518727092</updated>
     </task>
-    <option name="localTasksCounter" value="579" />
+    <option name="localTasksCounter" value="580" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
