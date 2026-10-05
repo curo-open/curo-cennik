@@ -1,0 +1,38 @@
+{
+	"params": {},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "DOPRAVA:  do 60 km APSD",
+			"if": "vv.typ==\"APSD\" && vv.kod in ['doprava'] && vv.pocet < 60",
+			"value": 0.5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "DOPRAVA:  do 60 km LSPR",
+			"if": "vv.typ==\"LSPR\" && vv.kod in ['doprava'] && vv.pocet < 60",
+			"value": 0.25,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "DOPRAVA:  do 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet < 60",
+			"value": null,
+			"calc": "vv.pocet*CBD",
+			"instruction": null
+		},
+		{
+			"label": "DOPRAVA:  + 60 km",
+			"if": "vv.kod in ['doprava'] && vv.pocet >= 60",
+			"value": null,
+			"calc": "vv.pocet*CBD60plus",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {},
+	"liekByCode": {},
+	"liekByAtc": {}
+}
