@@ -29,9 +29,9 @@ Autor: curo.sk
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │            null │ vv.pocet*CBD              │ Doprava:  do 60 km                            │ vv.kod in ['doprava'] && vv.pocet < 60                       │
 │            null │ vv.pocet*CBD60plus        │ Doprava:  + 60 km                             │ vv.kod in ['doprava'] && vv.pocet >= 60                      │
-│              95 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
+│             142 │ vv.pocet*cena             │ Návšteva osoby v paliatívnej starostlivosti v │ vv.kod in ['25M']                                            │
 │                 │                           │ domácom prostredí                             │                                                              │
-│             110 │ vv.pocet*cena             │ Urgentná návšteva osoby v paliatívnej starost │ vv.kod in ['27']                                             │
+│             162 │ vv.pocet*cena             │ Urgentná návšteva osoby v paliatívnej starost │ vv.kod in ['27']                                             │
 │                 │                           │ livosti - lekár a sestra mimo riadneho prac.  │                                                              │
 │                 │                           │ času                                          │                                                              │
 │            3.61 │ vv.pocet*cena             │ PRÍJEM PACIENTA DO ADOS A ODOBRATIE SESTERSKE │ vv.kod in ['3390']                                           │
@@ -98,8 +98,8 @@ Autor: curo.sk
 │            6.88 │ vv.pocet*cena             │ UMELÉ DÝCHANIE A MASÁŽ SRDCA                  │ vv.kod in ['3435']                                           │
 │            1.65 │ vv.pocet*cena             │ ODBERY: TT, TN, VÝTER Z REKTA, ODBER SPÚTA    │ vv.kod in ['3436']                                           │
 │            0.68 │ vv.pocet*cena             │ DOPRAVA BIOLOGICKÉHO MATERIÁLU                │ vv.kod in ['3437']                                           │
-│              30 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE  │ vv.kod in ['3439']                                           │
-│              35 │ vv.pocet*cena             │ NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19 │ vv.kod in ['3440']                                           │
+│              50 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA (KLIENTA) V PRACOVNOM ČASE  │ vv.kod in ['3439']                                           │
+│              60 │ vv.pocet*cena             │ NÁVŠTEVA MIMO RIADNEHO PRACOVNÉHO ČASU (OD 19 │ vv.kod in ['3440']                                           │
 │                 │                           │ .00 DO 7.00 HODINY V SOBOTU, V NEDEĽU A VO SV │                                                              │
 │                 │                           │ IATOK)                                        │                                                              │
 │            5.83 │ vv.pocet*cena             │ NÁVŠTEVA PACIENTA V RIZIKOVÝCH SKUPINÁCH POPU │ vv.kod in ['3441']                                           │
