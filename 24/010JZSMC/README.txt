@@ -327,7 +327,7 @@ Autor: curo.sk
 │                 │                           │ icky transperitoneálne                        │                                                              │
 │             406 │ vv.pocet*cena             │ Uzavretie inguinálnej hernie [prietrže] s aut │ vv.kod in ['5n812']                                          │
 │                 │                           │ ológnym materiálom                            │                                                              │
-│             680 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s a │ vv.kod in ['5n8430']                                         │
+│             770 │ vv.pocet*cena             │ Uzavretie epigastrickej hernie [prietrže] s a │ vv.kod in ['5n8430']                                         │
 │                 │                           │ loplastickým materiálom, laparotomicky        │                                                              │
 │             585 │ vv.pocet*cena             │ Uzavretie ďalších abdominálnych hernií [priet │ vv.kod in ['5n8932']                                         │
 │                 │                           │ rží] s aloplastickým materiálom, endoskopicky │                                                              │

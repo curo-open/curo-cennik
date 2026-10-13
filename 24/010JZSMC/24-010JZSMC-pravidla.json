@@ -992,7 +992,7 @@
 		{
 			"label": "Uzavretie epigastrickej hernie [prietrže] s aloplastickým materiálom, laparotomicky",
 			"if": "vv.kod in ['5n8430']",
-			"value": 680,
+			"value": 770,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},
