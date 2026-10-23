@@ -37,7 +37,7 @@
 	"vykon": [
 		{
 			"label": "Výkon 250x",
-			"if": "vv.kod in ['250x']",
+			"if": "vv.kod in ['250X']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
