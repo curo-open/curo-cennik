@@ -32,7 +32,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │           0.035 │ vv.bodyCelkom*cena        │ Výkon 11a,1b,7,1c                             │ vv.kod in ['11a','1b','70','1c']                             │
-│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Výkon 250x                                    │ vv.kod in ['250X']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 820;821;822;825;826;841                 │ vv.kod in ['820','821','822','825','826','841','847']        │
 │              25 │ vv.pocet*cena             │ Výkon 899                                     │ vv.kod in ['899']                                            │
 │              60 │ vv.pocet*cena             │ Jeden ošetrovací deň v stacionári - výkon 889 │ vv.kod in ['8899']                                           │

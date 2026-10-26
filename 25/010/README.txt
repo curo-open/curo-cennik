@@ -31,7 +31,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250X']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70','11a']                             │
 │          0.0318 │ vv.bodyCelkom*cena        │ Chirurgické výkony                            │ vv.kod in ['200','2100','2101','2106']                       │
 │            null │ vv.bodyCelkom*CBE         │ ŠAS                                           │ vv.kod in ['15d']                                            │

@@ -32,7 +32,7 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ Zotrvávanie pri pacientovi                    │ vv.kod in ['40']                                             │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63,65,66,67                       │ vv.kod in ['60','62','63','65','66','67']                    │
 │           0.035 │ vv.bodyCelkom*cena        │ Elektronická komunikácia                      │ vv.kod in ['11a','1b','70','1c']                             │
-│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250X']                                           │
 │              20 │ vv.pocet*cena             │ Cielené vyšetrenie pacienta pri pandémii COVI │ vv.kod in ['62a','62b']                                      │
 │                 │                           │ D-19                                          │                                                              │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test SARS-CoV-2        │ vv.kod in ['629a']                                           │

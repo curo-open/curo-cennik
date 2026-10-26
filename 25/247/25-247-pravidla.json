@@ -50,8 +50,8 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon  108",
-			"if": "vv.kod in ['250x']",
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250X']",
 			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null

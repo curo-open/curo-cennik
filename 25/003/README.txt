@@ -33,7 +33,7 @@ Autor: curo.sk
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │          0.0318 │ vv.bodyCelkom*cena        │ Pneumofizeologické vyšetrenie                 │ vv.kod in ['1A01033','1A02060','1A02077','1A03044']          │
-│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│            2.98 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250X']                                           │
 │           0.026 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │           0.035 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['11a','1b','1c','70']                             │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │

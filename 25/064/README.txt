@@ -36,7 +36,7 @@ Autor: curo.sk
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZUSG  │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
-│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250X']                                           │
 │          0.0318 │ vv.bodyCelkom*cena        │ Predoperačné vyšetrenie                       │ vv.kod in ['60a']                                            │
 │          0.0318 │ vv.bodyCelkom*cena        │ Príplatok pri sťaženom výkone                 │ vv.kod in ['67']                                             │
 │            null │ IPP1                      │ Pripočitateľné položky                        │ vv.kod=='IPP1'                                               │

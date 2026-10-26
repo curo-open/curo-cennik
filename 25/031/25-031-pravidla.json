@@ -35,6 +35,13 @@
 			"instruction": null
 		},
 		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250X']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
 			"label": "Pripočitateľné položky",
 			"if": "vv.kod=='IPP1'",
 			"value": null,

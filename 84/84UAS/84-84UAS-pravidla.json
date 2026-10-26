@@ -204,9 +204,9 @@
 			"instruction": null
 		},
 		{
-			"label": "ŠAS",
-			"if": "vv.kod in ['250x']",
-			"value": 2.98,
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250X']",
+			"value": 5,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		},

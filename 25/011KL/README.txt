@@ -44,7 +44,7 @@ Autor: curo.sk
 │          10.176 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['66']                                             │
 │             150 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['5153C']                                          │
 │           0.026 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15d']                                            │
-│               5 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ ŠAS                                           │ vv.kod in ['250X']                                           │
 │           0.035 │ vv.bodyCelkom*cena        │ ŠAS el. výkony                                │ vv.kod in ['1b','1c','70','11a']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.kod in ['5300','5301','5702']                             │
 │            null │ vv.bodyCelkom*CBPSVALZ    │ Preventívne USG výkony                        │ vv.kod in ['5303','5305','5708']                             │

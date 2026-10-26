@@ -40,7 +40,7 @@ Autor: curo.sk
 │                 │                           │                                               │ '5741','5742','5743']                                        │
 │            null │ vv.bodyCelkom*CBSVALZ     │ EKG                                           │ vv.kod in ['5702','5702a','15c']                             │
 │            null │ vv.bodyCelkom*CBSVALZ     │ TK Holter                                     │ vv.kod in ['5715','5716']                                    │
-│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250X']                                           │
 │             5.2 │ vv.pocet*cena             │ Skríningový antigénový test t SARS-cov-2      │ vv.kod in ['629a']                                           │
 │              10 │ vv.pocet*cena             │ Skríningový antigénový test t SARS-cov-2 imun │ vv.kod in ['629b']                                           │
 │                 │                           │ ofluorescenčnou metódou                       │                                                              │

@@ -32,7 +32,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│               5 │ vv.pocet*cena             │ Výkon 250x - odbery                           │ vv.kod in ['250x']                                           │
+│               5 │ vv.pocet*cena             │ Odber venóznej krvi                           │ vv.kod in ['250X']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkon 15b - vyodnotenie odberov               │ vv.kod in ['15b']                                            │
 │            null │ vv.bodyCelkom*CB          │ Výkon 60,62,63                                │ vv.kod in ['60','62','63']                                   │
 │        0.009574 │ vv.bodyCelkom*cena        │ Echokardiografia - vv. 5744, 5745, 5746, 5746 │ vv.kod in ['5744','5745','5746','5746b','5754']              │
