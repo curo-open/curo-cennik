@@ -1,0 +1,167 @@
+{
+	"params": {
+		"CB": {
+			"label": "Cena bodu ",
+			"value": 0.031252
+		},
+		"CBP": {
+			"label": "Cena bodu preventívne výkony",
+			"value": 0
+		},
+		"CBEU": {
+			"label": "Cena bodu EU",
+			"value": 0.035
+		},
+		"CBSVALZ": {
+			"label": "Cena bodu SVaLZ",
+			"value": 0.010113
+		},
+		"CBUSG": {
+			"label": "Cena bodu USG SVaLZ",
+			"value": 0.009574
+		},
+		"IPP1": {
+			"label": "IPP1",
+			"value": 2.44
+		},
+		"IPP2": {
+			"label": "IPP2",
+			"value": 3.92
+		},
+		"IPP3": {
+			"label": "IPP3",
+			"value": 6.64
+		},
+		"IPP4": {
+			"label": "IPP4",
+			"value": 9.64
+		}
+	},
+	"pacient": [],
+	"vykon": [
+		{
+			"label": "Odber venóznej krvi",
+			"if": "vv.kod in ['250X']",
+			"value": 5,
+			"calc": "vv.pocet*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkony 5303,5305,5308",
+			"if": "vv.kod in ['5303','5305','5308']",
+			"value": 0.010232,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Telemedicína",
+			"if": "vv.kod in ['11a','1b','70','1c']",
+			"value": 0.027,
+			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP1'",
+			"value": null,
+			"calc": "IPP1",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP2'",
+			"value": null,
+			"calc": "IPP2",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP3'",
+			"value": null,
+			"calc": "IPP3",
+			"instruction": null
+		},
+		{
+			"label": "Pripočitateľné položky",
+			"if": "vv.kod=='IPP4'",
+			"value": null,
+			"calc": "IPP4",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - SVALZ výkon",
+			"if": "!p.kapitacia && vv.typ=='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CBSVALZ",
+			"instruction": null
+		},
+		{
+			"label": "Nekapitovaný - iné ako SVALZ",
+			"if": "!p.kapitacia && vv.typ!='SVaLZ'",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkony",
+			"if": "1",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		}
+	],
+	"kontrola": [],
+	"body": {
+		"60": [
+			{
+				"cond": "",
+				"value": 500
+			}
+		],
+		"62": [
+			{
+				"cond": "",
+				"value": 310
+			}
+		],
+		"63": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"70": [
+			{
+				"cond": "",
+				"value": 50
+			}
+		],
+		"252b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"1b": [
+			{
+				"cond": "",
+				"value": 160
+			}
+		],
+		"11a": [
+			{
+				"cond": "",
+				"value": 250
+			}
+		],
+		"1c": [
+			{
+				"cond": "",
+				"value": 1200
+			}
+		]
+	},
+	"liekByCode": {},
+	"liekByAtc": {},
+	"title": "mamologia"
+}
