@@ -89,13 +89,6 @@
 			"instruction": null
 		},
 		{
-			"label": "Výkon 250x",
-			"if": "vv.kod in ['250x']",
-			"value": 2.98,
-			"calc": "vv.pocet*(cena+NCB)",
-			"instruction": null
-		},
-		{
 			"label": "Výkon 60,62,63,65",
 			"if": "vv.kod in ['60','62','63']",
 			"value": null,
@@ -114,6 +107,13 @@
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.035,
 			"calc": "vv.bodyCelkom*cena",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 944",
+			"if": "vv.kod in ['944']",
+			"value": 30,
+			"calc": "vv.pocet*(cena+NCB)",
 			"instruction": null
 		},
 		{
