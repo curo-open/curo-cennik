@@ -5,7 +5,7 @@
 		{
 			"label": "Jeden ošetrovací deň v stacionári",
 			"if": "vv.kod in ['8899']",
-			"value": 17,
+			"value": 19,
 			"calc": "vv.pocet*cena",
 			"instruction": null
 		}

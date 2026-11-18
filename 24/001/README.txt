@@ -8,11 +8,12 @@ Autor: curo.sk
 ┌────────────────────┬─────────────────────┐
 │ Názov a hodnota    │ Popis               │
 ├────────────────────┼─────────────────────┤
-│ CB = 0.03005       │ Cena bodu           │
-│ CBSVALZ = 0.009724 │ Cena bodu SVaLZ     │
+│ CB = 0.031252      │ Cena bodu           │
+│ CBSVALZ = 0.010113 │ Cena bodu SVaLZ     │
 │ CBSVALZUSG = 0     │ Cena bodu SVaLZ USG │
 │ AGTC = 4.8         │ AGTC                │
 │ PP50 = 10          │ PP50                │
+│ POHOS = 30         │ POHOS               │
 │ LIMIT = 2235       │ Limit               │
 └────────────────────┴─────────────────────┘
 
@@ -27,7 +28,7 @@ Autor: curo.sk
 ┌─────────────────┬───────────────────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │   Premenná cena │ Vzorec                    │ Popis                                         │ Podmienka                                                    │
 ├─────────────────┼───────────────────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│          0.0027 │ vv.bodyCelkom*cena        │ telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
+│           0.027 │ vv.bodyCelkom*cena        │ telemedicína                                  │ vv.kod in ['1b','11a','70']                                  │
 │          0.0193 │ vv.bodyCelkom*cena        │ Výkon 15d                                     │ vv.kod in ['15d']                                            │
 │        0.011593 │ vv.bodyCelkom*cena        │ Výkon 509a;512;513;514a;516;518;522;523a;530; │ vv.kod in ['509a','512','513','514a','516','518','522','523a │
 │                 │                           │ 531                                           │ ','530','531']                                               │
@@ -48,6 +49,7 @@ Autor: curo.sk
 │              10 │ vv.pocet*cena             │ Očkovanie Covid 252L                          │ vv.kod in ['252L']                                           │
 │            null │ AGTC                      │ Pripočitateľné položky                        │ vv.kod=='AGTC'                                               │
 │            null │ PP50                      │ Pripočitateľné položky                        │ vv.kod=='PP50'                                               │
+│            null │ POHOS                     │ Pripočitateľné položky                        │ vv.kod=='POHOS'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │
 │            null │ vv.bodyCelkom*CB          │ Výkony - iné ako SVALZ                        │ vv.typ!='SVaLZ'                                              │
@@ -60,7 +62,7 @@ Autor: curo.sk
 │     Počet bodov │ Kódy výkonov                                                                                              │ Podmienka                 │
 ├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
 │             160 │ 1                                                                                                         │                           │
-│             870 │ 60                                                                                                        │                           │
+│             670 │ 60                                                                                                        │                           │
 │             440 │ 62                                                                                                        │                           │
 │             340 │ 63                                                                                                        │                           │
 │             220 │ 65                                                                                                        │                           │
