@@ -5,13 +5,13 @@
 Autor: curo.sk
 
   PREMENNÉ PARAMETRE
-┌───────────────────┬─────────────────┐
-│ Názov a hodnota   │ Popis           │
-├───────────────────┼─────────────────┤
-│ LIMIT = 2235      │ Limit           │
-│ CB = 0.031062     │ Cena bodu       │
-│ CBSVALZ = 0.01021 │ Cena bodu SVaLZ │
-└───────────────────┴─────────────────┘
+┌────────────────────┬─────────────────┐
+│ Názov a hodnota    │ Popis           │
+├────────────────────┼─────────────────┤
+│ LIMIT = 2235       │ Limit           │
+│ CB = 0.031252      │ Cena bodu       │
+│ CBSVALZ = 0.010113 │ Cena bodu SVaLZ │
+└────────────────────┴─────────────────┘
 
 
   CENY ZA PACIENTA
@@ -28,7 +28,6 @@ Autor: curo.sk
 │            null │ vv.bodyCelkom*CB          │ ŠAS                                           │ vv.kod in ['62', '63']                                       │
 │          0.0193 │ vv.bodyCelkom*cena        │ ŠAS                                           │ vv.kod in ['15D']                                            │
 │           0.027 │ vv.bodyCelkom*cena        │ špec. elektronické výkony                     │ vv.kod in ['1b','11a','70']                                  │
-│         0.01261 │ vv.bodyCelkom*cena        │ ŠAS - EEG                                     │ vv.kod in ['5793','5794','5795']                             │
 │        0.028719 │ vv.bodyCelkom*cena        │ ŠAS - 819d                                    │ vv.kod in ['819d']                                           │
 │            null │ vv.bodyCelkom*CB          │ Výkony - Bezdomovec, Cudzinec, EU             │ p.typ in ['BE','CU','EU']                                    │
 │            null │ vv.bodyCelkom*CBSVALZ     │ SVALZ výkony                                  │ vv.typ=='SVaLZ'                                              │

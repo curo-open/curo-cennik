@@ -8,9 +8,9 @@ Autor: curo.sk
 ┌───────────────────┬──────────────────────────────┐
 │ Názov a hodnota   │ Popis                        │
 ├───────────────────┼──────────────────────────────┤
-│ CB = 0.0323       │ Cena bodu                    │
-│ CBO = 0.0365      │ Cena bodu ostatné ŠAS výkony │
-│ CBSVALZ = 0.01031 │ Cena bodu SVaLZ              │
+│ CB = 0.0353       │ Cena bodu                    │
+│ CBO = 0.04        │ Cena bodu ostatné ŠAS výkony │
+│ CBSVALZ = 0.01083 │ Cena bodu SVaLZ              │
 │ NCB = 0           │ Navysena cena bodu           │
 │ IPP1 = 0.57       │ IPP1                         │
 │ IPP2 = 0.36       │ IPP2                         │

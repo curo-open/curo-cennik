@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.031062
+			"value": 0.031252
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01021
+			"value": 0.010113
 		}
 	},
 	"pacient": [],
@@ -40,13 +40,6 @@
 			"label": "špec. elektronické výkony",
 			"if": "vv.kod in ['1b','11a','70']",
 			"value": 0.027,
-			"calc": "vv.bodyCelkom*cena",
-			"instruction": null
-		},
-		{
-			"label": "ŠAS - EEG",
-			"if": "vv.kod in ['5793','5794','5795']",
-			"value": 0.01261,
 			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
