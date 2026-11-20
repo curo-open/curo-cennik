@@ -6,11 +6,11 @@
 		},
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.033639
+			"value": 0.031252
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
-			"value": 0.01021
+			"value": 0.010113
 		},
 		"CBE": {
 			"label": "Cena bodu el. výkony",
@@ -33,6 +33,13 @@
 		{
 			"label": "Výkon 820;821;822;825;841",
 			"if": "vv.kod in ['820','821','822','825','841','847']",
+			"value": null,
+			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 899",
+			"if": "vv.kod in ['899']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
 			"instruction": null
@@ -85,7 +92,7 @@
 		"60": [
 			{
 				"cond": "",
-				"value": 650
+				"value": 500
 			}
 		],
 		"62": [
@@ -109,7 +116,7 @@
 		"820": [
 			{
 				"cond": "",
-				"value": 1350
+				"value": 1040
 			}
 		],
 		"821": [
