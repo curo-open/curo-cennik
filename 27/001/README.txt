@@ -8,8 +8,8 @@ Autor: curo.sk
 ┌──────────────────────┬──────────────────────────────┐
 │ Názov a hodnota      │ Popis                        │
 ├──────────────────────┼──────────────────────────────┤
-│ CB = 0.036           │ Cena bodu                    │
-│ CBO = 0.0407         │ Cena bodu ostatné ŠAS výkony │
+│ CB = 0.0353          │ Cena bodu                    │
+│ CBO = 0.04           │ Cena bodu ostatné ŠAS výkony │
 │ CBSVALZ = 0.01083    │ Cena bodu SVaLZ              │
 │ CBSVALZUSG = 0.01162 │ Cena bodu SVaLZ USG          │
 │ IPP4 = 6.12          │ IPP4                         │
@@ -44,6 +44,7 @@ Autor: curo.sk
 │         0.00924 │ vv.bodyCelkom*cena        │ Výkon SVALZ USG                               │ vv.kod in ['5300','5301','5303','5304','5307','5307a','5312' │
 │                 │                           │                                               │ ,'5315','5316','5799']                                       │
 │            null │ vv.bodyCelkom*CB          │ Výkon 654                                     │ vv.kod in ['654']                                            │
+│         0.02586 │ vv.bodyCelkom*cena        │ Výkon 5715, 5716, 5727                        │ vv.kod in ['5715','5716','5727']                             │
 │            64.5 │ vv.pocet*cena             │ Výkon 760sp;760sn;760pp;760pn                 │ vv.kod in ['760sp','760sn','760pp','760pn']                  │
 │             129 │ vv.pocet*cena             │ Výkon 763p                                    │ vv.kod in ['763p']                                           │
 │             129 │ vv.pocet*cena             │ Výkon 763sp;763sn;763pp;763pn                 │ vv.kod in ['763sp','763sn','763pp','763pn']                  │

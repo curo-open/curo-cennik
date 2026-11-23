@@ -2,11 +2,11 @@
 	"params": {
 		"CB": {
 			"label": "Cena bodu",
-			"value": 0.036
+			"value": 0.0353
 		},
 		"CBO": {
 			"label": "Cena bodu ostatné ŠAS výkony",
-			"value": 0.0407
+			"value": 0.04
 		},
 		"CBSVALZ": {
 			"label": "Cena bodu SVaLZ",
@@ -118,6 +118,13 @@
 			"if": "vv.kod in ['654']",
 			"value": null,
 			"calc": "vv.bodyCelkom*CB",
+			"instruction": null
+		},
+		{
+			"label": "Výkon 5715, 5716, 5727 ",
+			"if": "vv.kod in ['5715','5716','5727']",
+			"value": 0.02586,
+			"calc": "vv.bodyCelkom*cena",
 			"instruction": null
 		},
 		{
